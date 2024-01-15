@@ -1,0 +1,35 @@
+@import '../../Assets/saas/Main.scss';
+
+
+.top_header{
+    background:$blue;
+    padding: 7px 0;
+
+    a{
+        font-size: 13px;
+    }
+    .header_social_icons a{
+        font-size: $font18;
+    }
+
+  
+}
+.cta_button{
+    background: #32a4d5;
+    padding: 11px 25px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    display: inline-block;
+}
+.cta_button:hover{
+    // transform: scale(.2,.2);
+    background: #24688f;
+    text-decoration: none;
+}
+
+.menu_link{
+    
+}
