@@ -1,0 +1,1 @@
+export const FOOTER_LOGO = require("../../Assets/images/footer_logo.png");

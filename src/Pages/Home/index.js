@@ -42,7 +42,7 @@ export const Home = () => {
               <FaLightbulb />
             </div>
             <div className="content">
-              <h3>Professional Service</h3>
+              <h3 className="">Professional Service</h3>
               <p>
                 Sedut perspicias unde omnis natus error sit voluptatem accusanti
                 remqu laudantium totam rem aperiam
@@ -55,7 +55,7 @@ export const Home = () => {
               <FaLightbulb />
             </div>
             <div className="content">
-              <h3>Professional Service</h3>
+              <h3>Experince Team</h3>
               <p>
                 Sedut perspicias unde omnis natus error sit voluptatem accusanti
                 remqu laudantium totam rem aperiam
@@ -68,7 +68,7 @@ export const Home = () => {
               <FaLightbulb />
             </div>
             <div className="content">
-              <h3>Professional Service</h3>
+              <h3>Best IT Solution</h3>
               <p>
                 Sedut perspicias unde omnis natus error sit voluptatem accusanti
                 remqu laudantium totam rem aperiam

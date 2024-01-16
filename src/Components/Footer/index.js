@@ -23,7 +23,7 @@ const Footer = () => {
       <footer className="footer_section">
         <div className="container ftr_top">
           <div className="row">
-            {/*  */}
+          {/*  */}
             <div className="col-md-3 ftr_col1">
               <img className="pb-4" src={FOOTER_LOGO} alt="" />
               <h4 className="text-decoration-underline mt-md-3">
@@ -32,13 +32,12 @@ const Footer = () => {
               <ul className=" font-medium ">
                 <li className="contact_hover">
                   <Link to="mailto:sakshath-technologies@gmail.com">
-                    <FaRegEnvelope />
-                    &nbsp; sakshath-technologies@gmail.com
+                    <FaRegEnvelope />&nbsp; sakshath-technologies@gmail.com
                   </Link>
                 </li>
                 <li className="mt-3 ftr_addr ">
                   <p>
-                    8, KV Jairam Rd, MCHS Layout, Jakkur,Bengaluru – 560 064
+                        8, KV Jairam Rd, MCHS Layout, Jakkur,Bengaluru – 560 064
                   </p>
                 </li>
                 <li className="mt-3 contact_hover">
@@ -49,7 +48,9 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link ">
-              <h5>Best Services</h5>
+              <h5>
+                Best Services
+              </h5>
               <ul className="">
                 <li className="mt-4">
                   <Link to="/">Web & IT Consulting</Link>
@@ -72,7 +73,9 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link">
-              <h5>IT Company</h5>
+              <h5>
+                IT Company
+              </h5>
               <ul>
                 <li className="mt-4">
                   <Link to="">About Company</Link>
@@ -95,7 +98,9 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link">
-              <h5>Our Support</h5>
+              <h5>
+                Our Support
+              </h5>
 
               <ul className="font-medium">
                 <li className="mt-4">
