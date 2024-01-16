@@ -1,0 +1,62 @@
+@import "../../Assets/saas/Main.scss";
+
+ul {
+  list-style: none;
+}
+
+// Footer starts
+
+.main_footer {
+  background: #25678f;
+  color: #fff;
+  background-image: url("../../Assets/images/footer_img.webp");
+}
+.social {
+  font-size: 14px;
+}
+.footer_icons a {
+  color: #fff;
+}
+.footer_links a {
+  text-decoration: none;
+  font-size: 17px;
+  // line-height: 2;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+  color: #fff;
+}
+.footer_links a::before {
+  content: "";
+  position: absolute;
+  //    font-family: FontAwesome;
+  font-size: 15px;
+  margin-top: 7px;
+}
+.footer_links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: blue;
+  left: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+.footer_links a:hover::after {
+  background-color: rgb(90, 90, 174);
+  width: 100%;
+  transition: 0.5s;
+}
+
+.footer_socail_link {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  margin-bottom: 2%;
+  font-size: 20px;
+
+  a {
+    color: #fff;
+  }
+}

@@ -1,35 +1,109 @@
-@import '../../Assets/saas/Main.scss';
+@import "../../Assets/saas/Main.scss";
 
+.top_header {
+  background: $ball_blue_color;
+  padding: 8px 0;
 
-.top_header{
-    background:$blue;
-    padding: 7px 0;
-
-    a{
-        font-size: 13px;
-    }
-    .header_social_icons a{
-        font-size: $font18;
-    }
-
-  
-}
-.cta_button{
-    background: #32a4d5;
-    padding: 11px 25px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: underline;
-    display: inline-block;
-}
-.cta_button:hover{
-    // transform: scale(.2,.2);
-    background: #24688f;
+  a {
+    color: $light_ball_blue_color;
     text-decoration: none;
+    transition: 0.3s;
+  }
+  a:hover {
+    color: $white_color;
+    transition: 0.3s;
+  }
+  .header_social_icons {
+    color: $white_color;
+    font-weight: 700;
+  }
+  .header_social_icons a {
+    font-size: $para_text;
+    color: $light_ball_blue_color;
+  }
+  .header_social_icons a:hover {
+    color: $white_color;
+  }
+
+  .top_header_location svg {
+    font-size: $font18;
+    vertical-align: text-top;
+  }
+}
+.bsb-navbar{background-color: $white_color;}
+.navbar-toggler:focus {box-shadow: none !important;}
+.header_menu li a.nav-link {
+  font-family: $rajdhani_font;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header_menu .nav-link.active{
+    color: $ball_blue_color;
+}
+.cta_button {
+  background: $ball_blue_color;
+  padding: 13px 23px;
+  margin: 12px;
+  border-radius: 5px;
+  color: $white_color;
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: inline-block;
+  font-family: $rajdhani_font;
+  font-weight: 700;
+}
+.cta_button:hover {
+  background: $light_navy_blue;
+  text-decoration: none;
 }
 
-.menu_link{
-    
+.nav-item.dropdown ul.dropdown-menu {
+  border-radius: 2px;
+  padding: 0;
+  li {
+    border-bottom: 1px solid #dbdbdb;
+  }
+  li a {
+    font-family: $rajdhani_font;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.2s;
+  }
+  li a:hover, li a:active{
+    background-color: $ball_blue_color;
+    color: $white_color;
+    transition: 0.2s;
+  }
+}
+
+.header_right{
+    .header_translator{
+        font-weight: 700;
+        font-family: $rajdhani_font;
+        svg{
+            font-size: $font18;
+        }
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .top_header{display: none;}
+}
+ 
+@media screen and (min-width:768px) and (max-width:1160px){
+    .top_header_location{display: none;}
+    .top_header a{font-size: $font14;}
+    .navbar-brand img{width: 130px;}
+
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .header_menu .header_right{display: none !important;}
+    body .navbar-expand-md .navbar-nav .nav-link{padding-left: 10px !important; padding-right: 10px;}
+
+}
+
+@media screen and (min-width:1024px) {
+    .header_menu .header_right{display: block !important;}
 }
