@@ -1,0 +1,1 @@
+export const WLOGO=require("../../Assets/images/flogo.png")

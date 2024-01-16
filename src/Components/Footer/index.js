@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaRegEnvelope } from "react-icons/fa6";
-import { CiLocationOn } from "react-icons/ci";
+//import { CiLocationOn } from "react-icons/ci";
 import { FaPhone } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { FOOTER_LOGO } from "./constant";
+import {FOOTER_LOGO} from "./Constant";
 import "./style.scss";
 
 const Footer = () => {
@@ -21,23 +21,23 @@ const Footer = () => {
       </section> */}
 
       <footer className="footer_section">
-        <div className="container ">
+        <div className="container ftr_top">
           <div className="row">
           {/*  */}
-            <div className="col-md-3 mt-3">
-              <img src={FOOTER_LOGO} alt="" />
-              <h4 className="text-decoration-underline font_color">
+            <div className="col-md-3 ftr_col1">
+              <img className="pb-4" src={FOOTER_LOGO} alt="" />
+              <h4 className="text-decoration-underline mt-md-3">
                 Don’t Hesitate to Conatct With Our Experites
               </h4>
-              <ul className=" font-medium list_type align_items">
-                <li className="mt-4 contact_hover">
+              <ul className=" font-medium ">
+                <li className="contact_hover">
                   <Link to="mailto:sakshath-technologies@gmail.com">
-                    <FaRegEnvelope /> sakshath-technologies@gmail.com
+                    <FaRegEnvelope />&nbsp; sakshath-technologies@gmail.com
                   </Link>
                 </li>
-                <li className="mt-3 ">
-                  <p className="footer_section">
-                    <CiLocationOn />  8, KV Jairam Rd, MCHS Layout, Jakkur,Bengaluru – 560 064
+                <li className="mt-3 ftr_addr ">
+                  <p>
+                        8, KV Jairam Rd, MCHS Layout, Jakkur,Bengaluru – 560 064
                   </p>
                 </li>
                 <li className="mt-3 contact_hover">
@@ -47,11 +47,11 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-md-3 footer_link mt-4">
-              <h2 className="text-decoration-underline font_color mx-2">
+            <div className="col-md-3 footer_link ">
+              <h5>
                 Best Services
-              </h2>
-              <ul className=" font_color font-medium ">
+              </h5>
+              <ul className="">
                 <li className="mt-4">
                   <Link to="/">Web & IT Consulting</Link>
                 </li>
@@ -72,11 +72,11 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-md-3 footer_link mt-4">
-              <h2 className="text-decoration-underline font_color mx-2">
+            <div className="col-md-3 footer_link">
+              <h5>
                 IT Company
-              </h2>
-              <ul className="font_color font-medium">
+              </h5>
+              <ul>
                 <li className="mt-4">
                   <Link to="">About Company</Link>
                 </li>
@@ -97,12 +97,12 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-md-3 footer_link mt-4">
-              <h2 className="text-decoration-underline font_color mx-2">
+            <div className="col-md-3 footer_link">
+              <h5>
                 Our Support
-              </h2>
+              </h5>
 
-              <ul className="font_color font-medium">
+              <ul className="font-medium">
                 <li className="mt-4">
                   <Link to="">Premium Support</Link>
                 </li>
@@ -125,13 +125,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="container">
-          <hr />
-        </div>
-        <div className="container">
+
+        <div className="container ftr_bottom">
           <div className="row ">
             <div className="col-md-8">
-              <div className="font_color">
+              <div>
                 <p>
                   Copyrights © 2023 Sakshath Technologies®. All rights reserved.
                 </p>
