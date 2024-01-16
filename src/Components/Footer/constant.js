@@ -1,1 +1,1 @@
-export const FOOTER_LOGO = require("../../Assets/images/footer_logo.png");
+export const WLOGO=require("../../Assets/images/flogo.png")
