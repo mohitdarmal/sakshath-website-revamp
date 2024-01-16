@@ -7,7 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import {FOOTER_LOGO} from "./Constant";
+import { FOOTER_LOGO } from "./Constant";
 import "./style.scss";
 
 const Footer = () => {
