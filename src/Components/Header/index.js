@@ -9,6 +9,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import { LOGO } from "./Constant";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
+ import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton"
 
 const Header = () => {
  
@@ -246,7 +247,7 @@ const Header = () => {
                   <span className="header_translator">
                     <HiOutlineGlobeAlt /> English
                   </span>
-                  <Link className="cta_button">Get Free Quote</Link>
+                  <SlideAnimationButton btnName="Get Free Quote" />
                 </div>
               </div>
             </div>

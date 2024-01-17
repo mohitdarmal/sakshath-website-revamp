@@ -39,23 +39,7 @@
 }
 .header_menu .nav-link.active{
     color: $ball_blue_color !important;
-}
-.cta_button {
-  background: $light_navy_blue;
-  padding: 13px 23px;
-  margin: 12px;
-  border-radius: 5px;
-  color: $white_color;
-  text-transform: uppercase;
-  text-decoration: underline;
-  display: inline-block;
-  font-family: $rajdhani_font;
-  font-weight: 700;
-}
-.cta_button:hover {
-  background: $ball_blue_color !important;
-  text-decoration: none;
-}
+} 
 
 .nav-item.dropdown ul.dropdown-menu {
   border-radius: 2px;
