@@ -138,7 +138,7 @@ const Header = () => {
                 </li>
 
                 {/* about */}
-                <li className=" dropdown">
+                <li className="nav-item dropdown">
                   <NavLink
                     to="/about"
                     className="nav-link dropdown-toggle"
