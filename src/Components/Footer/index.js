@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaRegEnvelope } from "react-icons/fa6";
 //import { CiLocationOn } from "react-icons/ci";
-import { FaPhone } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
+import { BsTelephoneInbound } from "react-icons/bs"
+import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
+import { TfiLinkedin } from "react-icons/tfi"
 import { FOOTER_LOGO } from "./Constant";
 import "./style.scss";
 
@@ -42,7 +41,7 @@ const Footer = () => {
                 </li>
                 <li className="mt-3 contact_hover">
                   <Link to="tel:+91 80 67819878">
-                    <FaPhone /> +91 80 67819878
+                  <BsTelephoneInbound />&nbsp; +91 80 67819878
                   </Link>
                 </li>
               </ul>
@@ -138,15 +137,15 @@ const Footer = () => {
 
             <div className="col-md-4 social_media ">
               <Link to="">
-                <FaFacebookF />
+              <RiInstagramFill />
               </Link>
 
-              <Link to="">
+              {/* <Link to="">
                 <FaTwitter />
-              </Link>
+              </Link> */}
 
               <Link to="">
-                <FaLinkedin />
+              <TfiLinkedin />
               </Link>
 
               <Link to="">

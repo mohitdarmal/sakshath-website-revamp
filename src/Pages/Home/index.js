@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaLightbulb } from "react-icons/fa";
 import "./style.scss";
+import {WHO_WE_ARE} from "./Constant"
+
+
 
 export const Home = () => {
   return (
@@ -82,6 +85,32 @@ export const Home = () => {
         </div>
         </div>
       </section>
+
+       {/* SECTION - "WHO WE ARE" */}
+       <section className="who_we_are">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-7">
+              <div className="image-box ">
+                <img src={WHO_WE_ARE} alt="" />
+              </div>
+              
+            </div>
+            <div className="col-md-5">
+              <div className="text_wrapper">
+                <div className="title_area">
+                  <span className="title">Who we are</span>
+                  <h2 className="subtitle">The Enterprise Productivity Platform For Complex Data</h2>
+                </div>
+                <p>Sed perspiciatis unde omnis iste natus voluptate accusantiuy doloremque laudantium totam rem aperiam eaque quae ainvtore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos ratione volupta seque nesciunt porro quisquam doloremdolor site</p>
+                 <button>LEARN MORE ABOUT US</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
     </>
   );
 };

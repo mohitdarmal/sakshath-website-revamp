@@ -1,0 +1,1 @@
+export const WHO_WE_ARE = require("../../Assets/images/who_we_are.jpg");
