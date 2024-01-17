@@ -6,12 +6,12 @@
   position: relative;
 }
 
-.specilation_feature:before {
+.specilation_feature:after {
+  content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  right: calc((100% - 1000px) / 2);
-  content: "";
+  right: 0;
+  left: calc((100% - 1400px) / 2);
   width: 100%;
   height: 100%;
   background-color: #f8f8f8;

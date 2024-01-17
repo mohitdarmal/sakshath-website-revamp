@@ -1,4 +1,9 @@
+@import "./Assets/saas/Main.scss";
+
 body {
   margin: 0;
-  font-family:  'Poppins', sans-serif;
+  font-family:  $roboto_font;
 }
+
+p{font-size: $para_text; color: $para_color;}
+ 

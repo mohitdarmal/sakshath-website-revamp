@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./style.scss";
 import { Link, NavLink } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
@@ -9,26 +9,25 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import { LOGO } from "./Constant";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
-import CtaButton from "../Utils/Button";
+import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 
 const Header = () => {
- 
-  const [scrollClass, setScrollClass] = useState('');
+  const [scrollClass, setScrollClass] = useState("");
   const toggleClass = "sticky-top";
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.pageYOffset;
       if (currentScroll > 150) {
         setScrollClass(toggleClass);
       } else {
-        setScrollClass('');
+        setScrollClass("");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -85,7 +84,9 @@ const Header = () => {
       </section>
 
       {/* Main Header starts */}
-      <nav className={`navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret ${scrollClass}`} >
+      <nav
+        className={`navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret ${scrollClass}`}
+      >
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">
             <img src={LOGO} alt="" />
@@ -131,8 +132,8 @@ const Header = () => {
             <div className="offcanvas-body header_menu">
               <ul className="navbar-nav justify-content-center flex-grow-1">
                 {/* home */}
-                <li className="nav-item">
-                  <NavLink to="/" className="nav-link active" aria-current="page">
+                <li>
+                  <NavLink to="/" className="nav-link">
                     Home
                   </NavLink>
                 </li>
@@ -144,7 +145,7 @@ const Header = () => {
                     className="nav-link dropdown-toggle"
                     id="teamDropdown"
                     role="button"
-                    data-bs-toggle="dropdown"
+                    // data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     About Us
@@ -159,12 +160,12 @@ const Header = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="" className="dropdown-item">
+                      <NavLink to="/company-journey" className="dropdown-item">
                         Company Jounery
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="" className="dropdown-item">
+                      <NavLink to="/our-achievements" className="dropdown-item">
                         Our Achievements
                       </NavLink>
                     </li>
@@ -178,7 +179,7 @@ const Header = () => {
                     className="nav-link dropdown-toggle"
                     id="accountDropdown"
                     role="button"
-                    data-bs-toggle="dropdown"
+                    // data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Digital Service
@@ -188,7 +189,10 @@ const Header = () => {
                     aria-labelledby="accountDropdown"
                   >
                     <li>
-                      <NavLink to="/web-developement" className="dropdown-item">
+                      <NavLink
+                        to="/application-development"
+                        className="dropdown-item"
+                      >
                         Application Development
                       </NavLink>
                     </li>
@@ -198,23 +202,20 @@ const Header = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/web-developement" className="dropdown-item">
+                      <NavLink to="/analytics" className="dropdown-item">
                         Analytics
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/web-developement" className="dropdown-item">
+                      <NavLink to="/automation" className="dropdown-item">
                         Automation
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/ERP" className="dropdown-item">
+                      <NavLink to="/erp" className="dropdown-item">
                         ERP
                       </NavLink>
                     </li>
-                    {/* <li>
-                <hr className="dropdown-divider" />
-              </li> */}
                     <li>
                       <NavLink to="/automation" className="dropdown-item">
                         Automation
@@ -222,26 +223,26 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item">
-                  <Link to="/" className="nav-link " aria-current="page">
+                <li>
+                  <NavLink to="/banking-solution" className="nav-link">
                     Banking Solution
-                  </Link>
+                  </NavLink>
                 </li>
-                <li className="nav-item">
-                  <Link to="/blogs" className="nav-link">
+                <li>
+                  <NavLink to="/blogs" className="nav-link">
                     Blogs
-                  </Link>
+                  </NavLink>
                 </li>
-                <li className="nav-item">
-                  <Link to="" className="nav-link">
+                <li>
+                  <NavLink to="/careers" className="nav-link">
                     Careers
-                  </Link>
+                  </NavLink>
                 </li>
 
-                <li className="nav-item">
-                  <Link to="" className="nav-link">
+                <li>
+                  <NavLink to="/contact-us" className="nav-link">
                     Contact Us
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
 
@@ -250,15 +251,13 @@ const Header = () => {
                   <span className="header_translator">
                     <HiOutlineGlobeAlt /> English
                   </span>
-                  <Link className="cta_button">Get Free Quote</Link>
+                  <SlideAnimationButton btnName="Get Free Quote" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </nav>
-
-    
     </>
   );
 };
