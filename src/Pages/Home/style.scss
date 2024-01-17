@@ -22,18 +22,20 @@
 }
 
 .icon img {
-  width: 40%;
-  margin-left: 50%;
-  margin-top: -2%;
+  // width: 40%;
+  width: 45px;
+  
+  
   cursor: pointer;
+  font-weight: 400 !important;
 //   color: #25678f;
-transition: .5s;
+// transition: .5s;
 
 }
 .icon img:hover{
-    animation: shake 0.5s linear infinite;
+    // animation: shake 0.5s linear infinite;
     cursor: pointer;
-    transition: .7s;
+    // transition: .7s;
 }
 
 .content h3 {

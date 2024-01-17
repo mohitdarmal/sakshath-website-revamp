@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import { FaLightbulb } from "react-icons/fa";
-import { HOMEIMG1 } from "./Constant";
+import { SERVICE_IMG,IT_IMG,TEAM_IMG,P_IMG, BANNER1 } from "./Constant";
 import About from "../About";
 import "./style.scss";
 
@@ -39,24 +39,9 @@ export const Home = () => {
 // console.log(inputVal, "input value")
   return (
     <>
+    <img src={BANNER1} className="img-fluid" />
       {/* <About name="Mohit, Amar" school="UA University" sum={sum()} /> */}
-      <section className="mt-1">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
-        minima temporibus consequuntur dignissimos, fugiat laboriosam aliquam ab
-        tempora officiis architecto voluptates aut laborum ullam numquam
-        distinctio incidunt veniam similique maxime. Eum iusto, esse amet
-        accusamus velit perspiciatis in dolor, doloribus pariatur natus quam
-        quisquam odit aliquam asperiores quo delectus vel! Voluptas rerum qui
-        molestiae commodi rem id quibusdam, porro velit!. Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Doloribus, minima temporibus
-        consequuntur dignissimos, fugiat laboriosam aliquam ab tempora officiis
-        architecto voluptates aut laborum ullam numquam distinctio incidunt
-        veniam similique maxime. Eum iusto, esse amet accusamus velit
-        perspiciatis in dolor, doloribus pariatur natus quam quisquam odit
-        aliquam asperiores quo delectus vel! Voluptas rerum qui molestiae
-        commodi rem id quibusdam, porro velit!
-        {/*  */}
-      </section>
+     
 
       <section className="fancy_feature">
         <div className="container">
@@ -70,7 +55,7 @@ export const Home = () => {
           <div className="row mt-4 pt-2">
             <div className="col-md-4 d-flex ">
               <div className="icon">
-                <img src={HOMEIMG1} alt="" />
+                <img src={P_IMG} alt="" />
               </div>
               <div className="content">
                 <h3 className="text">Professional Service</h3>
@@ -85,7 +70,7 @@ export const Home = () => {
 
             <div className="col-md-4 d-flex ">
               <div className="icon">
-                <img src={HOMEIMG1} alt="" />
+                <img src={TEAM_IMG} alt="" />
               </div>
               <div className="content">
                 <h3 className="">Experience Team</h3>
@@ -100,7 +85,7 @@ export const Home = () => {
 
             <div className="col-md-4 d-flex ">
               <div className="icon">
-                <img src={HOMEIMG1} alt="" />
+                <img src={SERVICE_IMG} alt="" />
               </div>
               <div className="content">
                 <h3>Best IT Solutions</h3>
