@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./style.scss";
 import { Link, NavLink } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
@@ -9,26 +9,25 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import { LOGO } from "./Constant";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
- import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton"
+import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 
 const Header = () => {
- 
-  const [scrollClass, setScrollClass] = useState('');
+  const [scrollClass, setScrollClass] = useState("");
   const toggleClass = "sticky-top";
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.pageYOffset;
       if (currentScroll > 150) {
         setScrollClass(toggleClass);
       } else {
-        setScrollClass('');
+        setScrollClass("");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -85,7 +84,9 @@ const Header = () => {
       </section>
 
       {/* Main Header starts */}
-      <nav className={`navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret ${scrollClass}`} >
+      <nav
+        className={`navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret ${scrollClass}`}
+      >
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">
             <img src={LOGO} alt="" />
@@ -131,7 +132,7 @@ const Header = () => {
             <div className="offcanvas-body header_menu">
               <ul className="navbar-nav justify-content-center flex-grow-1">
                 {/* home */}
-                <li >
+                <li>
                   <NavLink to="/" className="nav-link">
                     Home
                   </NavLink>
@@ -188,7 +189,10 @@ const Header = () => {
                     aria-labelledby="accountDropdown"
                   >
                     <li>
-                      <NavLink to="/application-development" className="dropdown-item">
+                      <NavLink
+                        to="/application-development"
+                        className="dropdown-item"
+                      >
                         Application Development
                       </NavLink>
                     </li>
@@ -220,7 +224,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li>
-                  <NavLink to="/banking-solution" className="nav-link" >
+                  <NavLink to="/banking-solution" className="nav-link">
                     Banking Solution
                   </NavLink>
                 </li>
@@ -229,13 +233,13 @@ const Header = () => {
                     Blogs
                   </NavLink>
                 </li>
-                <li >
+                <li>
                   <NavLink to="/careers" className="nav-link">
                     Careers
                   </NavLink>
                 </li>
 
-                <li >
+                <li>
                   <NavLink to="/contact-us" className="nav-link">
                     Contact Us
                   </NavLink>
@@ -254,8 +258,6 @@ const Header = () => {
           </div>
         </div>
       </nav>
-
-    
     </>
   );
 };
