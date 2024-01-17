@@ -1,47 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-// import { FaLightbulb } from "react-icons/fa";
 import { HOMEIMG1 } from "./Constant";
-import About from "../About";
 import "./style.scss";
-import CtaButton from "../../Components/Utils/Button";
 
 export const Home = () => {
- 
-//  const sum = () => {
-//   return 10
-//  }
-
-//  const [sumofNo, setSumOfNo] = useState("");
-//  const [age, setAge] = useState("");
-//  const [inputVal, setInputVal] = useState("")
-
-
-//  useEffect(() => {
-//   console.log("First Time Render")
-//   if(sumofNo !== ""){
-//   console.log(sum(), "sumofNo");}
-//  }, [])
-
-//  useEffect(() => {
-//   console.log("Second Time render")
-//   setSumOfNo("vALUE Changed");
- 
-//  })
-
-//  const onHandleClick= () => {
-//   alert("Button Clicked")
-//  }
-
-// const onChangeValue = (e) => {
-//   console.log(e.target.value);
-//   setInputVal(e.target.value)
-// }
-// console.log(inputVal, "input value")
+  
   return (
     <>
-    <CtaButton />
-      {/* <About name="Mohit, Amar" school="UA University" sum={sum()} /> */}
+  
       <section className="mt-1">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
         minima temporibus consequuntur dignissimos, fugiat laboriosam aliquam ab

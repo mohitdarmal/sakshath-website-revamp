@@ -9,7 +9,6 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import { LOGO } from "./Constant";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
-import CtaButton from "../Utils/Button";
 
 const Header = () => {
  
@@ -131,20 +130,20 @@ const Header = () => {
             <div className="offcanvas-body header_menu">
               <ul className="navbar-nav justify-content-center flex-grow-1">
                 {/* home */}
-                <li className="nav-item">
-                  <NavLink to="/" className="nav-link active" aria-current="page">
+                <li >
+                  <NavLink to="/" className="nav-link">
                     Home
                   </NavLink>
                 </li>
 
                 {/* about */}
-                <li className="nav-item dropdown">
+                <li className=" dropdown">
                   <NavLink
                     to="/about"
                     className="nav-link dropdown-toggle"
                     id="teamDropdown"
                     role="button"
-                    data-bs-toggle="dropdown"
+                    // data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     About Us
@@ -159,12 +158,12 @@ const Header = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="" className="dropdown-item">
+                      <NavLink to="/company-journey" className="dropdown-item">
                         Company Jounery
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="" className="dropdown-item">
+                      <NavLink to="/our-achievements" className="dropdown-item">
                         Our Achievements
                       </NavLink>
                     </li>
@@ -178,7 +177,7 @@ const Header = () => {
                     className="nav-link dropdown-toggle"
                     id="accountDropdown"
                     role="button"
-                    data-bs-toggle="dropdown"
+                    // data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Digital Service
@@ -188,7 +187,7 @@ const Header = () => {
                     aria-labelledby="accountDropdown"
                   >
                     <li>
-                      <NavLink to="/web-developement" className="dropdown-item">
+                      <NavLink to="/application-development" className="dropdown-item">
                         Application Development
                       </NavLink>
                     </li>
@@ -198,23 +197,20 @@ const Header = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/web-developement" className="dropdown-item">
+                      <NavLink to="/analytics" className="dropdown-item">
                         Analytics
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/web-developement" className="dropdown-item">
+                      <NavLink to="/automation" className="dropdown-item">
                         Automation
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/ERP" className="dropdown-item">
+                      <NavLink to="/erp" className="dropdown-item">
                         ERP
                       </NavLink>
                     </li>
-                    {/* <li>
-                <hr className="dropdown-divider" />
-              </li> */}
                     <li>
                       <NavLink to="/automation" className="dropdown-item">
                         Automation
@@ -222,24 +218,24 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item">
-                  <Link to="/" className="nav-link " aria-current="page">
+                <li>
+                  <Link to="/banking-solution" className="nav-link" >
                     Banking Solution
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li>
                   <Link to="/blogs" className="nav-link">
                     Blogs
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link to="" className="nav-link">
+                <li >
+                  <Link to="/careers" className="nav-link">
                     Careers
                   </Link>
                 </li>
 
-                <li className="nav-item">
-                  <Link to="" className="nav-link">
+                <li >
+                  <Link to="/contact-us" className="nav-link">
                     Contact Us
                   </Link>
                 </li>
