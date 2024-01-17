@@ -19,7 +19,7 @@
   }
   .header_social_icons a {
     font-size: $para_text;
-    color: $light_ball_blue_color;
+    color: $white_color;
   }
   .header_social_icons a:hover {
     color: $white_color;
@@ -55,7 +55,6 @@
 .cta_button:hover {
   background: $ball_blue_color !important;
   text-decoration: none;
-  // color: black;
 }
 
 .nav-item.dropdown ul.dropdown-menu {
@@ -87,7 +86,17 @@
         }
     }
 }
-
+.header_translator{line-height: 57px; padding-right: 20px;}
+.bsb-navbar{transition: background-color 0.5s ease}
+.bsb-navbar.sticky-top{  animation: slideDown 0.5s ease;}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 
 @media screen and (max-width:767px){
     .top_header{display: none;}

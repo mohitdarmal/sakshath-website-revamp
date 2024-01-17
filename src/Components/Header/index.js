@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./style.scss";
 import { Link, NavLink } from "react-router-dom";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
@@ -9,8 +9,29 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import { LOGO } from "./Constant";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
+import CtaButton from "../Utils/Button";
 
 const Header = () => {
+ 
+  const [scrollClass, setScrollClass] = useState('');
+  const toggleClass = "sticky-top";
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 150) {
+        setScrollClass(toggleClass);
+      } else {
+        setScrollClass('');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       {/* Top Header */}
@@ -64,7 +85,7 @@ const Header = () => {
       </section>
 
       {/* Main Header starts */}
-      <nav className="navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
+      <nav className={`navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret ${scrollClass}`} >
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">
             <img src={LOGO} alt="" />
@@ -111,14 +132,14 @@ const Header = () => {
               <ul className="navbar-nav justify-content-center flex-grow-1">
                 {/* home */}
                 <li className="nav-item">
-                  <Link to="/" className="nav-link active" aria-current="page">
+                  <NavLink to="/" className="nav-link active" aria-current="page">
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
 
                 {/* about */}
                 <li className="nav-item dropdown">
-                  <Link
+                  <NavLink
                     to="/about"
                     className="nav-link dropdown-toggle"
                     id="teamDropdown"
@@ -127,25 +148,25 @@ const Header = () => {
                     aria-expanded="false"
                   >
                     About Us
-                  </Link>
+                  </NavLink>
                   <ul
                     className="dropdown-menu border-0 shadow bsb-zoomIn"
                     aria-labelledby="servicesDropdown"
                   >
                     <li>
-                      <Link to="/" className="dropdown-item">
+                      <NavLink to="/our-team" className="dropdown-item">
                         Our Team
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="" className="dropdown-item">
+                      <NavLink to="" className="dropdown-item">
                         Company Jounery
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link to="" className="dropdown-item">
+                      <NavLink to="" className="dropdown-item">
                         Our Achievements
-                      </Link>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>

@@ -1,50 +1,48 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import { FaLightbulb } from "react-icons/fa";
-import { SERVICE_IMG,IT_IMG,TEAM_IMG,P_IMG, BANNER1 } from "./Constant";
+import { SERVICE_IMG, IT_IMG, TEAM_IMG, P_IMG, BANNER1 } from "./Constant";
 import About from "../About";
 import "./style.scss";
+import CtaButton from "../../Components/Utils/Button";
 
 export const Home = () => {
- 
-//  const sum = () => {
-//   return 10
-//  }
+  //  const sum = () => {
+  //   return 10
+  //  }
 
-//  const [sumofNo, setSumOfNo] = useState("");
-//  const [age, setAge] = useState("");
-//  const [inputVal, setInputVal] = useState("")
+  //  const [sumofNo, setSumOfNo] = useState("");
+  //  const [age, setAge] = useState("");
+  //  const [inputVal, setInputVal] = useState("")
 
+  //  useEffect(() => {
+  //   console.log("First Time Render")
+  //   if(sumofNo !== ""){
+  //   console.log(sum(), "sumofNo");}
+  //  }, [])
 
-//  useEffect(() => {
-//   console.log("First Time Render")
-//   if(sumofNo !== ""){
-//   console.log(sum(), "sumofNo");}
-//  }, [])
+  //  useEffect(() => {
+  //   console.log("Second Time render")
+  //   setSumOfNo("vALUE Changed");
 
-//  useEffect(() => {
-//   console.log("Second Time render")
-//   setSumOfNo("vALUE Changed");
- 
-//  })
+  //  })
 
-//  const onHandleClick= () => {
-//   alert("Button Clicked")
-//  }
+  //  const onHandleClick= () => {
+  //   alert("Button Clicked")
+  //  }
 
-// const onChangeValue = (e) => {
-//   console.log(e.target.value);
-//   setInputVal(e.target.value)
-// }
-// console.log(inputVal, "input value")
+  // const onChangeValue = (e) => {
+  //   console.log(e.target.value);
+  //   setInputVal(e.target.value)
+  // }
+  // console.log(inputVal, "input value")
   return (
     <>
-    <img src={BANNER1} className="img-fluid" />
+      <img src={BANNER1} className="img-fluid" />
       {/* <About name="Mohit, Amar" school="UA University" sum={sum()} /> */}
-     
 
-      <section className="fancy_feature">
-        <div className="container">
+      <section className="">
+        <div className="container specilation_feature">
           <div className="row ">
             <div className="top_content text-center mt-4">
               <h6>GREAT JOURNEY FOR IT SOLUTIONS</h6>
@@ -85,7 +83,7 @@ export const Home = () => {
 
             <div className="col-md-4 d-flex ">
               <div className="icon">
-                <img src={SERVICE_IMG} alt="" />
+                <img src={IT_IMG} alt="" />
               </div>
               <div className="content">
                 <h3>Best IT Solutions</h3>

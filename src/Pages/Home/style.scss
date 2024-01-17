@@ -1,8 +1,21 @@
 @import "../../Assets/saas/Main.scss";
 
-.fancy_feature .container {
-  background: #f8f8f8;
+.specilation_feature {
+  // background: #f8f8f8;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.specilation_feature:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: calc((100% - 1000px) / 2);
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  z-index: -1;
 }
 
 .top_content h6 {
@@ -11,69 +24,71 @@
   text-decoration: underline;
   margin-top: 20px;
   margin-bottom: 13px;
+  color: $light_navy_blue;
 }
 
 .top_content h3 {
   margin-top: 13px;
   margin: 10px;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 10px;
+  font-family: $rajdhani_font;
 }
 
 .icon img {
-  // width: 40%;
   width: 45px;
-  
-  
   cursor: pointer;
-  font-weight: 400 !important;
-//   color: #25678f;
-// transition: .5s;
-
+  margin-right: 20px;
+  transition: .5s;
 }
-.icon img:hover{
-    // animation: shake 0.5s linear infinite;
-    cursor: pointer;
-    // transition: .7s;
+.icon img:hover {
+ animation: shake 0.5s linear infinite;
+  cursor: pointer;
+ transition: .7s;
 }
 
 .content h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #33a3d2;
+  font-size: 23px;
+  font-weight: 700;
   margin-bottom: 7px;
   text-decoration: underline;
+  font-family: $rajdhani_font;
 
   p {
     justify-content: flex-start;
   }
 }
 
-@media screen and (max-width:480px){
-    .top_content h3{
-        font-size: 17px;
+@media screen and (max-width: 480px) {
+  .top_content h3 {
+    font-size: 17px;
 
-
-        h6{
-            font-size: 12px;
-        }
+    h6 {
+      font-size: 12px;
     }
+  }
 }
-@media screen and (min-width:481px) and (max-width:767px){
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .top_content h3 {
+    font-size: 24px;
 
-    .top_content h3{
-        font-size: 24px;
-
-
-        h6{
-            font-size: 14px;
-        }
+    h6 {
+      font-size: 14px;
     }
-
+  }
 }
 
 @keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  0%,
+  100% {
+    transform: translateX(0);
   }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+}
