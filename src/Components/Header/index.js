@@ -10,28 +10,24 @@ import { FaYoutube } from "react-icons/fa6";
 import { LOGO } from "./Constant";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 
-
 const Header = () => {
   return (
     <>
-    {/* Top Header */}
+      {/* Top Header */}
       <section className="top_header ">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
               <Link className="top_header_location">
-                <MdOutlineLocationOn /> Jakkur Main Road &nbsp;&nbsp; | &nbsp;&nbsp;
+                <MdOutlineLocationOn /> Jakkur Main Road &nbsp;&nbsp; |
+                &nbsp;&nbsp;
               </Link>
-              <Link
-                to="mailto:sakshath@gmail.com"
-              >
+              <Link to="mailto:sakshath@gmail.com">
                 <BsEnvelope /> &nbsp;sakshath-technologies@gmail.com &nbsp;
               </Link>
             </div>
             <div className="col-md-6 text-md-end">
-              <Link
-                to="tel: +91806781987"
-              >
+              <Link to="tel: +91806781987">
                 <BsTelephoneInbound /> &nbsp;+91 80 6781987 &nbsp; | &nbsp;
                 &nbsp;
               </Link>
@@ -42,7 +38,7 @@ const Header = () => {
                   to="https://www.linkedin.com/company/sakshath-technologies/"
                   target={"_blank"}
                 >
-                &nbsp;
+                  &nbsp;
                   <TfiLinkedin />
                 </Link>{" "}
                 &nbsp;
@@ -58,7 +54,7 @@ const Header = () => {
                   to="https://www.youtube.com/watch?v=UHjZFuO8AYY"
                   target="_blank"
                 >
-                  <FaYoutube  />
+                  <FaYoutube />
                 </Link>{" "}
                 &nbsp;
               </span>
@@ -67,10 +63,10 @@ const Header = () => {
         </div>
       </section>
 
-{/* Main Header starts */}
+      {/* Main Header starts */}
       <nav className="navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
         <div className="container-fluid">
-          <Link to="/" className="navbar-brand" >
+          <Link to="/" className="navbar-brand">
             <img src={LOGO} alt="" />
           </Link>
           <button
@@ -113,16 +109,52 @@ const Header = () => {
             </div>
             <div className="offcanvas-body header_menu">
               <ul className="navbar-nav justify-content-center flex-grow-1">
-                {/* <li className="nav-item">
+                {/* home */}
+                <li className="nav-item">
                   <Link to="/" className="nav-link active" aria-current="page">
                     Home
                   </Link>
-                </li> */}
-              
+                </li>
+
+                {/* about */}
                 <li className="nav-item dropdown">
-                  <NavLink to="/service"
+                  <Link
+                    to="/about"
                     className="nav-link dropdown-toggle"
-                  
+                    id="teamDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    About Us
+                  </Link>
+                  <ul
+                    className="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="servicesDropdown"
+                  >
+                    <li>
+                      <Link to="/" className="dropdown-item">
+                        Our Team
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="" className="dropdown-item">
+                        Company Jounery
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="" className="dropdown-item">
+                        Our Achievements
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                {/* services */}
+
+                <li className="nav-item dropdown">
+                  <NavLink
+                    to="/service"
+                    className="nav-link dropdown-toggle"
                     id="accountDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -134,9 +166,9 @@ const Header = () => {
                     className="dropdown-menu border-0 shadow bsb-zoomIn"
                     aria-labelledby="accountDropdown"
                   >
-                   <li>
+                    <li>
                       <NavLink to="/web-developement" className="dropdown-item">
-                    Application Development
+                        Application Development
                       </NavLink>
                     </li>
                     <li>
@@ -146,16 +178,16 @@ const Header = () => {
                     </li>
                     <li>
                       <NavLink to="/web-developement" className="dropdown-item">
-                       Analytics
+                        Analytics
                       </NavLink>
                     </li>
                     <li>
                       <NavLink to="/web-developement" className="dropdown-item">
-                      Automation
+                        Automation
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="ERP" className="dropdown-item">
+                      <NavLink to="/ERP" className="dropdown-item">
                         ERP
                       </NavLink>
                     </li>
@@ -170,57 +202,26 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Link to="/" className="nav-link active" aria-current="page">
-                  Banking Solution
+                  <Link to="/" className="nav-link " aria-current="page">
+                    Banking Solution
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" className="nav-link" >
+                  <Link to="/blogs" className="nav-link">
                     Blogs
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link to="" className="nav-link">
-                   Careers
+                    Careers
                   </Link>
                 </li>
-                <li className="nav-item dropdown">
-                  <Link to="/about"
-                    className="nav-link dropdown-toggle"
-                    id="teamDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    About-Us
-                  </Link>
-                  <ul
-                    className="dropdown-menu border-0 shadow bsb-zoomIn"
-                    aria-labelledby="servicesDropdown"
-                  >
-                    <li>
-                      <Link to="" className="dropdown-item" >
-                      Our Team
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="" className="dropdown-item" >
-                      Company Jounery
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="" className="dropdown-item" >
-                      Our Achievements
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-               
-                {/* <li className="nav-item">
+
+                <li className="nav-item">
                   <Link to="" className="nav-link">
-                  Banking Solution
+                    Contact Us
                   </Link>
-                </li> */}
+                </li>
               </ul>
 
               <div className="d-flex header_right">
@@ -236,70 +237,7 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* <section className="main_header">
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarTogglerDemo01"
-              aria-controls="navbarTogglerDemo01"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a className="navbar-brand" href="#">
-                <img src={LOGO} alt="" />
-              </a>
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu_link" >
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" href="#">
-                    Service
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" href="#">
-                   Blogs
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" href="#">
-                    Carrers
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" href="#">
-                  About-Us
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" href="#">
-                    Company-Updates
-                  </Link>
-                </li>
-              </ul>
-             
-              <div className="d-flex">
-                <div className="dropdown">
-                  <span> <CiGlobe/> English   </span>
-                  <Link className="cta_button">
-                    Get Free Quote
-                  </Link>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </section> */}
+    
     </>
   );
 };

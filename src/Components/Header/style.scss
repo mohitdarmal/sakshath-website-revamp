@@ -1,7 +1,7 @@
 @import "../../Assets/saas/Main.scss";
 
 .top_header {
-  background: $ball_blue_color;
+  background: $light_navy_blue;
   padding: 8px 0;
 
   a {
@@ -41,7 +41,7 @@
     color: $ball_blue_color;
 }
 .cta_button {
-  background: $ball_blue_color;
+  background: $light_navy_blue;
   padding: 13px 23px;
   margin: 12px;
   border-radius: 5px;
@@ -53,8 +53,9 @@
   font-weight: 700;
 }
 .cta_button:hover {
-  background: $light_navy_blue;
+  background: $ball_blue_color !important;
   text-decoration: none;
+  // color: black;
 }
 
 .nav-item.dropdown ul.dropdown-menu {
@@ -71,7 +72,7 @@
     transition: 0.2s;
   }
   li a:hover, li a:active{
-    background-color: $ball_blue_color;
+    background-color: $light_navy_blue;
     color: $white_color;
     transition: 0.2s;
   }

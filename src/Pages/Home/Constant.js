@@ -1,0 +1,1 @@
+export const HOMEIMG1 = require("../../Assets/images/light-bulb.png")

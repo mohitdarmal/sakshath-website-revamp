@@ -1,27 +1,77 @@
 @import "../../Assets/saas/Main.scss";
 
-.fancy_feature .container{
-    background: #f8f8f8;
-    margin-bottom: 20px;
+.fancy_feature .container {
+  background: #f8f8f8;
+  margin-bottom: 20px;
 }
 
-
-.top_content h3{
-    margin-top: 13px;
-    margin: 10px;
-    
-}
-.icon{
-    // display:flex;
-    margin-right: 10px;
-    margin-left: 10px;
-//    gap: 10px;
+.top_content h6 {
+  color: $ball_blue_color;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 13px;
 }
 
-.content h3{
-    color: red;
-    font-weight: 600;
-    text-decoration: underline;
-    // margin-bottom: 12px;
-   
+.top_content h3 {
+  margin-top: 13px;
+  margin: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
 }
+
+.icon img {
+  width: 40%;
+  margin-left: 50%;
+  margin-top: -2%;
+  cursor: pointer;
+//   color: #25678f;
+transition: .5s;
+
+}
+.icon img:hover{
+    animation: shake 0.5s linear infinite;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #33a3d2;
+  margin-bottom: 7px;
+  text-decoration: underline;
+
+  p {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width:480px){
+    .top_content h3{
+        font-size: 17px;
+
+
+        h6{
+            font-size: 12px;
+        }
+    }
+}
+@media screen and (min-width:481px) and (max-width:767px){
+
+    .top_content h3{
+        font-size: 24px;
+
+
+        h6{
+            font-size: 14px;
+        }
+    }
+
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  }
