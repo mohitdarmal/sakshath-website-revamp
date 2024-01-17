@@ -219,25 +219,25 @@ const Header = () => {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/banking-solution" className="nav-link" >
+                  <NavLink to="/banking-solution" className="nav-link" >
                     Banking Solution
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/blogs" className="nav-link">
+                  <NavLink to="/blogs" className="nav-link">
                     Blogs
-                  </Link>
+                  </NavLink>
                 </li>
                 <li >
-                  <Link to="/careers" className="nav-link">
+                  <NavLink to="/careers" className="nav-link">
                     Careers
-                  </Link>
+                  </NavLink>
                 </li>
 
                 <li >
-                  <Link to="/contact-us" className="nav-link">
+                  <NavLink to="/contact-us" className="nav-link">
                     Contact Us
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
 
