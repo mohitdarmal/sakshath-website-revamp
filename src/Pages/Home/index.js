@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { HOMEIMG1 } from "./Constant";
 import About from "../About";
 import "./style.scss";
+import CtaButton from "../../Components/Utils/Button";
 
 export const Home = () => {
  
@@ -39,6 +40,7 @@ export const Home = () => {
 // console.log(inputVal, "input value")
   return (
     <>
+    <CtaButton />
       {/* <About name="Mohit, Amar" school="UA University" sum={sum()} /> */}
       <section className="mt-1">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
