@@ -1,19 +1,19 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { Helmet } from "react-helmet";
 
-const About = () => {
+const About = (props) => {
+ 
   return (
     <>
-    <Helmet>
-    <title>About - Sakshath</title>
-            <meta name="description" content="About SEO" />
-    </Helmet>
+      <Helmet>
+        <title>About - Sakshath</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
 
-
-    <div>About</div>
-    
+      {/* <div>{props.name}</div>
+      <div>{props.school} {props.sum}</div> */}
     </>
-  )
-}
+  );
+};
 
 export default About;

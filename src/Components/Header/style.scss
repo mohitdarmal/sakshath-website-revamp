@@ -1,7 +1,7 @@
 @import "../../Assets/saas/Main.scss";
 
 .top_header {
-  background: $ball_blue_color;
+  background: $light_navy_blue;
   padding: 8px 0;
 
   a {
@@ -19,7 +19,7 @@
   }
   .header_social_icons a {
     font-size: $para_text;
-    color: $light_ball_blue_color;
+    color: $white_color;
   }
   .header_social_icons a:hover {
     color: $white_color;
@@ -38,24 +38,8 @@
   text-transform: uppercase;
 }
 .header_menu .nav-link.active{
-    color: $ball_blue_color;
-}
-.cta_button {
-  background: $ball_blue_color;
-  padding: 13px 23px;
-  margin: 12px;
-  border-radius: 5px;
-  color: $white_color;
-  text-transform: uppercase;
-  text-decoration: underline;
-  display: inline-block;
-  font-family: $rajdhani_font;
-  font-weight: 700;
-}
-.cta_button:hover {
-  background: $light_navy_blue;
-  text-decoration: none;
-}
+    color: $ball_blue_color !important;
+} 
 
 .nav-item.dropdown ul.dropdown-menu {
   border-radius: 2px;
@@ -71,7 +55,7 @@
     transition: 0.2s;
   }
   li a:hover, li a:active{
-    background-color: $ball_blue_color;
+    background-color: $light_navy_blue;
     color: $white_color;
     transition: 0.2s;
   }
@@ -86,7 +70,17 @@
         }
     }
 }
-
+.header_translator{line-height: 57px; padding-right: 20px;}
+.bsb-navbar{transition: background-color 0.5s ease}
+.bsb-navbar.sticky-top{  animation: slideDown 0.5s ease;}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 
 @media screen and (max-width:767px){
     .top_header{display: none;}
