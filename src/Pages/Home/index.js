@@ -21,7 +21,7 @@ import {
 import CountUp from "react-countup";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Heading from "../../Components/Utils/Heading";
-import Title from "../../Components/Utils/Title_head";
+import Maintitle from "../../Components/Utils/Title_head";
 import "./style.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -195,11 +195,8 @@ export const Home = () => {
           <div className="row justify-content-center">
             <div className="text-center">
               <div className="title">
-                <Title title="what we do" />
-                <Heading
-                  heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE"
-                  uppercase="text-uppercase"
-                ></Heading>
+                <Maintitle mainTitle = "what we do "/>
+                <Heading heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE" uppercase="text-uppercase"></Heading>
               </div>
             </div>
           </div>
@@ -219,18 +216,18 @@ export const Home = () => {
               </div>
             </div>
             <div className="col-md-3 d-flex ">
-              <div className="what_we_do_box">
-                <div className="icon_box">
-                  <img src={ICON_2} alt="" />
-                </div>
-                <div className="text">
-                  <h3 className="text-underline">BUILD POWERFUL SOLUTIONS</h3>
+            <div className="what_we_do_box">
+              <div className=" what_ we_do_icon_box">
+                <img src={ICON_2} alt="" />
+              </div>
+              <div className="text">
+                  <h3 className="text-underline">UNLOCK TRAPPED INFORMATION</h3>
                   <p>
                     Sedut perspicias unomnis natus error sit voluptatemc
                     accusanti remqua
                   </p>
                 </div>
-              </div>
+            </div>
             </div>
 
             <div className="col-md-3 d-flex ">
@@ -266,6 +263,7 @@ export const Home = () => {
                 </div>
               </div>
             </div>
+         
           </div>
         </div>
       </section>

@@ -334,18 +334,20 @@ Button {
         z-index: 1;
     }
  
-.icon_box{
+   .what_we_do_icon_box{
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-}
+    }
  
-img{
+    img{
     width: 80px;
     height: 80px;
-}
+    }
+
+    
  
-.text h3{
+   .text h3{
     font-size: 24px;
     line-height: 32px;
     font-family: $rajdhani_font;
@@ -353,8 +355,8 @@ img{
     margin-bottom: 10px;
     text-transform: uppercase
 
-}
-}
+    }
+    }
 
  
 .popular_princial {
