@@ -1,36 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { SERVICE_IMG, IT_IMG, TEAM_IMG, P_IMG, BANNER1, ICON_1,ICON_2 ,ICON_3,ICON_4} from "./Constant";
-import "./style.scss";
-import {WHO_WE_ARE} from "./Constant"
+import {WHO_WE_ARE_IMG, POPULARANALYTICS, POPULARBANK, POPULARWEB, POPULAUTOMATION, SERVICE_IMG, IT_IMG, TEAM_IMG, P_IMG, BANNER1, ICON_1,ICON_2 ,ICON_3,ICON_4} from "./Constant";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Heading from "../../Components/Utils/Heading";
 import Title from "../../Components/Utils/Title_head";
-
-
-
-
+import "./style.scss";
 
 export const Home = () => {
   return (
     <>
-      <section className="mt-1">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
-        minima temporibus consequuntur dignissimos, fugiat laboriosam aliquam ab
-        tempora officiis architecto voluptates aut laborum ullam numquam
-        distinctio incidunt veniam similique maxime. Eum iusto, esse amet
-        accusamus velit perspiciatis in dolor, doloribus pariatur natus quam
-        quisquam odit aliquam asperiores quo delectus vel! Voluptas rerum qui
-        molestiae commodi rem id quibusdam, porro velit!. Lorem ipsum dolor sit
-        amet, consectetur adipisicing elit. Doloribus, minima temporibus
-        consequuntur dignissimos, fugiat laboriosam aliquam ab tempora officiis
-        architecto voluptates aut laborum ullam numquam distinctio incidunt
-        veniam similique maxime. Eum iusto, esse amet accusamus velit
-        perspiciatis in dolor, doloribus pariatur natus quam quisquam odit
-        aliquam asperiores quo delectus vel! Voluptas rerum qui molestiae
-        commodi rem id quibusdam, porro velit!
-        {/*  */}
-      </section>
+      <div>
+        <img src={BANNER1} alt="" className="img-fluid" />
+      </div>
 
       <section className="overflow-hidden">
         <div className="specilation_feature">
@@ -99,26 +80,33 @@ export const Home = () => {
         </div>
       </section>
 
-       {/* SECTION - "WHO WE ARE" */}
-       <section className="who_we_are">
+      {/* SECTION - "WHO WE ARE" */}
+      <section className="who_we_are">
         <div className="container">
           <div className="row">
             <div className="col-md-6">
               <div className="image-box ">
-                <img className="img-fluid" src={WHO_WE_ARE} alt="" />
+                <img className="img-fluid" src={WHO_WE_ARE_IMG} alt="" />
               </div>
-              
             </div>
             <div className="col-md-1"></div>
             <div className="col-md-5">
               <div className="text_wrapper">
                 <div className="title_area">
                   <span className="title">Who we are</span>
-                  <Heading  heading="The Enterprise Productivity Platform For Complex Data" uppercase=""/>
+                  <h2 className="subtitle">
+                    The Enterprise Productivity Platform For Complex Data
+                  </h2>
                 </div>
-                <p>Sed perspiciatis unde omnis iste natus voluptate accusantiuy doloremque laudantium totam rem aperiam eaque quae ainvtore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos ratione volupta seque nesciunt porro quisquam doloremdolor site</p>
-                <SlideAnimationButton btnName="Learn more about us" />
-                
+                <p>
+                  Sed perspiciatis unde omnis iste natus voluptate accusantiuy
+                  doloremque laudantium totam rem aperiam eaque quae ainvtore
+                  veritatis quasi architecto beatae vitae dicta sunt explicabo.
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit sed quia consequuntur magni dolores eos ratione
+                  volupta seque nesciunt porro quisquam doloremdolor site
+                </p>
+                <button>LEARN MORE ABOUT US</button>
               </div>
             </div>
           </div>
@@ -194,6 +182,125 @@ export const Home = () => {
            </div> 
         </section>
        
+
+
+{/* popular service start */}
+<section className="popular_princial  text-white ">
+        <div className="container ">
+          <div className="row ">
+            {/* Popuplar Princial Left Side Column Start */}
+            <div className="col-md-5 mt-4 left_home_principle">
+              <span>Our Popular Principle</span>
+              <h4> Best Professional IT Solutiuons</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat nihil aliquid, architecto assumenda alias vitae
+                dignissimos ab ea id tempora quibusdam maiores odit, soluta
+                doloremque accusamus distinctio aperiam sed quia!
+              </p>
+              <button>Explore More Service </button>
+            </div>
+            {/* Popuplar Princial Left Side Column End */}
+ 
+            {/* Popuplar Princial Right Side Column Start */}
+ 
+            <div className="col-md-7 right_home_principle">
+              <div className="row">
+                <div className="col-md-6 right_home_principle_left_content_box">
+                  <div className="d-flex">
+                    <div className="right_home_principle_img">
+                      <img src={POPULARWEB} alt="" /> &nbsp;
+                    </div>
+ 
+                    <div className="right_home_principle_heading">
+                      <h5 className="right_home_subheading">
+                        APPLICATION DEVELOPMENT
+                      </h5>
+                      <p className="justify-content-end  right_para ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo magni numquam saepe aperiam.
+                      </p>
+                    </div>
+                  </div>
+ 
+                  <div className="d-flex">
+                    <div className="right_home_principle_img">
+                      <img src={POPULARANALYTICS} alt="" /> &nbsp;
+                    </div>
+ 
+                    <div className="right_home_principle_heading pe-md-0">
+                      <h4 className="right_home_subheading">ANALYTICS</h4>
+                      <p className=" right_para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo magni numquam saepe aperiam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+ 
+                <div className="col-md-6 right_home_principle_right_content_box">
+                  <div className="d-flex">
+                    <div className="right_home_principle_img">
+                      <img src={POPULAUTOMATION} alt="" /> &nbsp;
+                    </div>
+ 
+                    <div className="right_home_principle_heading">
+                      <h5 className="right_home_subheading">AUTOMATION</h5>
+                      <p className="justify-content-end right_para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo magni numquam saepe aperiam.
+                      </p>
+                    </div>
+                  </div>
+ 
+                  <div className="d-flex">
+                    <div className="right_home_principle_img">
+                      <img src={POPULARBANK} alt="" /> &nbsp;
+                    </div>
+ 
+                    <div className="right_home_principle_heading">
+                      <h4 className="right_home_subheading text-decoration-underline">
+                        BANKING SOLUTION
+                      </h4>
+                      <p className=" right_para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo magni numquam saepe aperiam.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Popuplar Princial End */}
+
+
+{/* Our Services section start */}
+<section className="our_service_section">
+  <div className="container">
+    <div className="row">
+    {/* Our Service Left Column start */}
+      <div className="col-md-6 our_service_left_col">
+        <div className="our_service_content_box">
+            <h4>AI </h4>
+            <p>Description</p>
+        </div>
+      </div>
+{/* Our Service Left Column End */}
+
+{/* Our Service Right Column start */}
+      <div className="col-md-6 our_service_right_col">
+
+      </div>
+      {/* Our Service Right Column end */}
+    </div>
+  </div>
+</section>
+
+{/* Our Services section End */}
+
        </>
 
     
