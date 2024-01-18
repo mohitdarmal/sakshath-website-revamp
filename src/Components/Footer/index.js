@@ -6,7 +6,7 @@ import { BsTelephoneInbound } from "react-icons/bs"
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import { TfiLinkedin } from "react-icons/tfi"
-import { FOOTER_LOGO, SUBSCRIPTION_OFFER } from "./constant";
+import { FOOTER_LOGO, SUBSCRIPTION_OFFER } from "./Constant";
 import "./style.scss";
 import SlideAnimationButton from "../Utils/SlideAnimationButton";
 import Heading from "../Utils/Heading";
