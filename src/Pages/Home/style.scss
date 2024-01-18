@@ -11,7 +11,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  left: calc((100% - 1400px) / 2);
+  left: calc((100% - 1280px) / 2);
   width: 100%;
   height: 100%;
   background-color: #f8f8f8;
@@ -79,12 +79,12 @@ Button{
     margin:4px 2px
     
 }  
-.col-md-7{
+.who_we_are .col-md-6{
     position: relative;
     content: "";
 }
 
-.col-md-7 .image-box::after{
+.who_we_are .col-md-6 .image-box::after{
     position: absolute;
     top: -110px;
     left: 9px;
@@ -168,4 +168,40 @@ Button{
   90% {
     transform: translateX(-10px);
   }
+}
+
+.what_we_do{
+    background-color: #f7f8f9;
+    padding-top: 120px;
+    padding-bottom: 90px;
+
+      .what_we_do_box{
+        position: relative;
+        padding: 50px 35px 40px;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+.icon_box{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+.text h3{
+    font-size: 24px;
+    line-height: 32px;
+    font-family: $rajdhani_font;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase
+
+
+}
+
 }

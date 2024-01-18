@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { SERVICE_IMG, IT_IMG, TEAM_IMG, P_IMG, BANNER1 } from "./Constant";
+import { SERVICE_IMG, IT_IMG, TEAM_IMG, P_IMG, BANNER1, ICON_1,ICON_2 ,ICON_3,ICON_4} from "./Constant";
 import "./style.scss";
 import {WHO_WE_ARE} from "./Constant"
+import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
+import Heading from "../../Components/Utils/Heading";
+import Title from "../../Components/Utils/Title_head";
+
+
 
 
 
@@ -98,28 +103,100 @@ export const Home = () => {
        <section className="who_we_are">
         <div className="container">
           <div className="row">
-            <div className="col-md-7">
+            <div className="col-md-6">
               <div className="image-box ">
-                <img src={WHO_WE_ARE} alt="" />
+                <img className="img-fluid" src={WHO_WE_ARE} alt="" />
               </div>
               
             </div>
+            <div className="col-md-1"></div>
             <div className="col-md-5">
               <div className="text_wrapper">
                 <div className="title_area">
                   <span className="title">Who we are</span>
-                  <h2 className="subtitle">The Enterprise Productivity Platform For Complex Data</h2>
+                  <Heading  heading="The Enterprise Productivity Platform For Complex Data" uppercase=""/>
                 </div>
                 <p>Sed perspiciatis unde omnis iste natus voluptate accusantiuy doloremque laudantium totam rem aperiam eaque quae ainvtore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos ratione volupta seque nesciunt porro quisquam doloremdolor site</p>
-                 <button>LEARN MORE ABOUT US</button>
+                <SlideAnimationButton btnName="Learn more about us" />
                 
               </div>
             </div>
           </div>
         </div>
        </section>
+       
+       {/* @@@@@@@ WHAT WE DO @@@@@@@@@ */}
 
-    </>
+       <section className="what_we_do">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="text-center">
+              <div className="title">
+                < Title title="what we do" />
+                <Heading heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE" uppercase="text-uppercase"></Heading>
+              </div>
+            </div>
+          </div>
+          <div className="row mt-5 ">
+            <div className="col-md-3 d-flex ">
+             <div className="what_we_do_box">
+              <div className="icon_box">
+                <img src={ICON_1} alt="" />
+              </div>
+              <div className="text">
+                <h3 className="text-underline">UNLOCK TRAPPED INFORMATION</h3>
+                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
+              </div>
+              
+              </div> 
+            </div>
+            <div className="col-md-3 d-flex ">
+            <div className="what_we_do_box">
+              <div className="icon_box">
+                <img src={ICON_2} alt="" />
+              </div>
+              <div className="text">
+                <h3 className="text-underline">BUILD POWERFUL SOLUTIONS</h3>
+                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
+              </div>
+              
+              </div> 
+            </div>
+            
+            <div className="col-md-3 d-flex ">
+            <div className="what_we_do_box">
+              <div className="icon_box">
+                <img src={ICON_3} alt="" />
+              </div>
+              <div className="text">
+                <h3 className="text-underline">ACCELERATE AT ENTERPRISE SCALE</h3>
+                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
+              </div>
+              
+              </div> 
+            
+            </div>
+            
+            <div className="col-md-3 d-flex ">
+            <div className="what_we_do_box">
+              <div className="icon_box">
+                <img src={ICON_4} alt="" />
+              </div>
+              <div className="text">
+                <h3 className="text-underline">PRODUCT & DESIGN ENGINERING</h3>
+                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
+              </div>
+              
+              </div> 
+            
+            </div>
+           </div>
+           </div> 
+        </section>
+       
+       </>
+
+    
   );
 };
 

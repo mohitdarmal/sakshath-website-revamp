@@ -4,3 +4,9 @@ export const IT_IMG = require("../../Assets/images/it.png");
 export const SERVICE_IMG = require("../../Assets/images/service.png");
 export const P_IMG = require("../../Assets/images/data.png");
 export const BANNER1 = require("../../Assets/images/banner1.jpg");
+
+    // @@@@@@@@@@@@@ what we do icons@@@@@@@@@@@@
+export const ICON_1 = require("../../Assets/images/what_we_do_icon1.png");
+export const ICON_2 = require("../../Assets/images/what_we_do_icon2.png");
+export const ICON_3 = require("../../Assets/images/what_we_do_icon3.png");
+export const ICON_4 = require("../../Assets/images/what_we_do_icon4.png");
