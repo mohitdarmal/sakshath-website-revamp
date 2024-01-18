@@ -1,9 +1,9 @@
 import React from 'react'
 import "./style.scss"
-const Title = (props) => {
+const Maintitle = (props) => {
   return (
-    <span className="title">{props.title}</span>
+    <span className="main_title">{props.mainTitle}</span>
   )
 }
 
-export default Title
+export default Maintitle

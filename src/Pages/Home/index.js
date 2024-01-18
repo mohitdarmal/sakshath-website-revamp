@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {WHO_WE_ARE_IMG, POPULARANALYTICS, POPULARBANK, POPULARWEB, POPULAUTOMATION, SERVICE_IMG, IT_IMG, TEAM_IMG, P_IMG, BANNER1, ICON_1,ICON_2 ,ICON_3,ICON_4} from "./Constant";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Heading from "../../Components/Utils/Heading";
-import Title from "../../Components/Utils/Title_head";
+import Maintitle from "../../Components/Utils/Title_head";
 import "./style.scss";
 
 export const Home = () => {
@@ -120,7 +120,7 @@ export const Home = () => {
           <div className="row justify-content-center">
             <div className="text-center">
               <div className="title">
-                < Title title="what we do" />
+                <Maintitle mainTitle = "what we do "/>
                 <Heading heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE" uppercase="text-uppercase"></Heading>
               </div>
             </div>
@@ -140,7 +140,7 @@ export const Home = () => {
             </div>
             <div className="col-md-3 d-flex ">
             <div className="what_we_do_box">
-              <div className="icon_box">
+              <div className=" what_ we_do_icon_box">
                 <img src={ICON_2} alt="" />
               </div>
               <div className="text">

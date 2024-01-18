@@ -126,3 +126,70 @@ footer h5{
     color:$light_ball_blue_color; 
     padding-left: 20px;
 }
+
+.subscription_footer{
+    padding: 60px;
+    
+    .subscription_box{
+        background-image: url(../../Assets/images/Subscription_bg_footer.png);
+    
+    }
+
+    .subscription_content_box{
+     position: relative;
+     padding: 40px 80px 25px;
+     margin-bottom: -85px;
+     z-index: 2;
+    }
+    .subscription_content_box_area{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    }  
+
+    .left_content{
+    display: flex;
+    align-items: center;
+    }
+
+    .left_content_icon{
+        font-size: 90px;
+    line-height: 1;
+    margin-right: 40px;
+    }
+
+   
+}
+
+.right_subscription_content_box{
+    //  position: relative;
+    //  width: 100%;
+    //  padding-right: 50px;
+    //  padding-left: 15px;
+
+
+    .subscription_mailaddress_form{
+        padding-left: 40px;
+        .form_container{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2px;}
+
+            
+
+    
+
+    }
+
+
+}
+
+ 
+    
+    
+
+
+    
+    

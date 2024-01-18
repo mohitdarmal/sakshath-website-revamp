@@ -6,18 +6,85 @@ import { BsTelephoneInbound } from "react-icons/bs"
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import { TfiLinkedin } from "react-icons/tfi"
-import { FOOTER_LOGO } from "./Constant";
+import { FOOTER_LOGO, SUBSCRIPTION_OFFER } from "./Constant";
 import "./style.scss";
+import SlideAnimationButton from "../Utils/SlideAnimationButton";
+import Heading from "../Utils/Heading";
+import { useState } from "react";
+//import { IoLocationOutline } from "react-icons/io5";
 
 const Footer = () => {
+
+  const [formData, setFormData] = useState({
+    
+    email: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // You can handle form submission logic here
+    console.log('Form submitted:', formData);
+  };
   return (
     <>
-      {/* <section className="container">
-        <div className="row">
-          <div className="col-md-4">dfcgvh</div>
-          <div className="col-md-8">dfcgvh</div>
+       <section className="subscription_footer">
+        <div className="container subscription_box">
+          <div className="subscription_content_box">
+            <div className="row subscription_content_box_area">
+              <div className="col-md-5 left_subscription_content_box">
+                <div className="left_content">
+                  <div className="left_content_icon">
+                    <img className="img-fluid" src={SUBSCRIPTION_OFFER} alt=""  />
+                  </div>
+                  <div className="left_content">
+                    <Heading heading="Get Special Rewards" uppercase=""></Heading>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-7 right_subscription_content_box">
+                <div className="subscription_mailaddress_form">
+                  
+                    <div className="form_grp">
+                      
+                      <form onSubmit={handleSubmit} className="form_container">
+      
+                              <div className="mb-3">
+                               <label htmlFor="email" className="form-label">
+                                 
+                               </label>
+                               <input
+                                 type="email"
+                                 className="form-control"
+                                 id="email"
+                                 name="email"
+                                 value={formData.email}
+                                 onChange={handleChange}
+                                 placeholder= " Enter Address"
+                               />
+                             </div>
+                            <div className="subscribe_button">
+                             <button type="submit" className="btn btn-primary ">
+                                 Subscribe
+                             </button>
+                             </div> 
+                           </form>
+                       {/* <SlideAnimationButton  className="subscribe_button" btnName="SUBSCRIBE" /> */}
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section> */}
+      </section> 
 
       <footer className="footer_section">
         <div className="container ftr_top">
