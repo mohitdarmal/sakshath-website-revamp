@@ -1,17 +1,92 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {WHO_WE_ARE_IMG, POPULARANALYTICS, POPULARBANK, POPULARWEB, POPULAUTOMATION, SERVICE_IMG, IT_IMG, TEAM_IMG, P_IMG, BANNER1, ICON_1,ICON_2 ,ICON_3,ICON_4} from "./Constant";
+import {
+  WHO_WE_ARE_IMG,
+  POPULARANALYTICS,
+  POPULARBANK,
+  POPULARWEB,
+  POPULAUTOMATION,
+  SERVICE_IMG,
+  IT_IMG,
+  TEAM_IMG,
+  P_IMG,
+  BANNER1,
+  ICON_1,
+  ICON_2,
+  ICON_3,
+  ICON_4,
+  HAPPYCCUSTMOER,
+  HAPPYICON,
+} from "./Constant";
+import CountUp from "react-countup";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Heading from "../../Components/Utils/Heading";
 import Title from "../../Components/Utils/Title_head";
 import "./style.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-cube";
+import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 
 export const Home = () => {
   return (
     <>
-      <div>
+      {/* <div>
         <img src={BANNER1} alt="" className="img-fluid" />
-      </div>
+      </div> */}
+      <section className="banner_sec">
+        <Swiper
+          cssMode={true}
+          // autoplay={true}
+          autoplay={{
+            delay: 3000, // Delay between slides in milliseconds (adjust as needed)
+            disableOnInteraction: false, // Allow autoplay to continue after user interaction
+          }}
+          navigation={true}
+          mousewheel={true}
+          keyboard={true}
+          loop={true}
+          modules={[Pagination, Navigation, Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="banner_box">
+              <div className="banner_img">
+                <img className="img-fluid" src={BANNER1} />
+              </div>
+              <div className="banner_caption_container">
+                <div className="banner_caption">
+                  <h6>Profesional IT Solution</h6>
+                  <h3>Transforming Ideas into Intelligent Solutions </h3>
+                  <div>
+                    <Link to="/">Get Started Now</Link>{" "}
+                    <Link to="/">Explore More</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="banner_box">
+              <div className="banner_img">
+                <img className="img-fluid" src={BANNER1} />
+              </div>
+              <div className="banner_caption_container">
+                <div className="banner_caption">
+                  <h6>Profesional IT Solution</h6>
+                  <h3>Elevating Experiences, One Line at a Time</h3>
+                  <div>
+                    <Link to="/">Get Started Now</Link>{" "}
+                    <Link to="/">Explore More</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </section>
 
       <section className="overflow-hidden">
         <div className="specilation_feature">
@@ -111,81 +186,92 @@ export const Home = () => {
             </div>
           </div>
         </div>
-       </section>
-       
-       {/* @@@@@@@ WHAT WE DO @@@@@@@@@ */}
+      </section>
 
-       <section className="what_we_do">
+      {/* @@@@@@@ WHAT WE DO @@@@@@@@@ */}
+
+      <section className="what_we_do">
         <div className="container">
           <div className="row justify-content-center">
             <div className="text-center">
               <div className="title">
-                < Title title="what we do" />
-                <Heading heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE" uppercase="text-uppercase"></Heading>
+                <Title title="what we do" />
+                <Heading
+                  heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE"
+                  uppercase="text-uppercase"
+                ></Heading>
               </div>
             </div>
           </div>
           <div className="row mt-5 ">
             <div className="col-md-3 d-flex ">
-             <div className="what_we_do_box">
-              <div className="icon_box">
-                <img src={ICON_1} alt="" />
+              <div className="what_we_do_box">
+                <div className="icon_box">
+                  <img src={ICON_1} alt="" />
+                </div>
+                <div className="text">
+                  <h3 className="text-underline">UNLOCK TRAPPED INFORMATION</h3>
+                  <p>
+                    Sedut perspicias unomnis natus error sit voluptatemc
+                    accusanti remqua
+                  </p>
+                </div>
               </div>
-              <div className="text">
-                <h3 className="text-underline">UNLOCK TRAPPED INFORMATION</h3>
-                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
-              </div>
-              
-              </div> 
             </div>
             <div className="col-md-3 d-flex ">
-            <div className="what_we_do_box">
-              <div className="icon_box">
-                <img src={ICON_2} alt="" />
+              <div className="what_we_do_box">
+                <div className="icon_box">
+                  <img src={ICON_2} alt="" />
+                </div>
+                <div className="text">
+                  <h3 className="text-underline">BUILD POWERFUL SOLUTIONS</h3>
+                  <p>
+                    Sedut perspicias unomnis natus error sit voluptatemc
+                    accusanti remqua
+                  </p>
+                </div>
               </div>
-              <div className="text">
-                <h3 className="text-underline">BUILD POWERFUL SOLUTIONS</h3>
-                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
-              </div>
-              
-              </div> 
             </div>
-            
-            <div className="col-md-3 d-flex ">
-            <div className="what_we_do_box">
-              <div className="icon_box">
-                <img src={ICON_3} alt="" />
-              </div>
-              <div className="text">
-                <h3 className="text-underline">ACCELERATE AT ENTERPRISE SCALE</h3>
-                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
-              </div>
-              
-              </div> 
-            
-            </div>
-            
-            <div className="col-md-3 d-flex ">
-            <div className="what_we_do_box">
-              <div className="icon_box">
-                <img src={ICON_4} alt="" />
-              </div>
-              <div className="text">
-                <h3 className="text-underline">PRODUCT & DESIGN ENGINERING</h3>
-                <p>Sedut perspicias unomnis natus error sit voluptatemc accusanti remqua</p>
-              </div>
-              
-              </div> 
-            
-            </div>
-           </div>
-           </div> 
-        </section>
-       
 
+            <div className="col-md-3 d-flex ">
+              <div className="what_we_do_box">
+                <div className="icon_box">
+                  <img src={ICON_3} alt="" />
+                </div>
+                <div className="text">
+                  <h3 className="text-underline">
+                    ACCELERATE AT ENTERPRISE SCALE
+                  </h3>
+                  <p>
+                    Sedut perspicias unomnis natus error sit voluptatemc
+                    accusanti remqua
+                  </p>
+                </div>
+              </div>
+            </div>
 
-{/* popular service start */}
-<section className="popular_princial  text-white ">
+            <div className="col-md-3 d-flex ">
+              <div className="what_we_do_box">
+                <div className="icon_box">
+                  <img src={ICON_4} alt="" />
+                </div>
+                <div className="text">
+                  <h3 className="text-underline">
+                    PRODUCT & DESIGN ENGINERING
+                  </h3>
+                  <p>
+                    Sedut perspicias unomnis natus error sit voluptatemc
+                    accusanti remqua
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* popular service start */}
+      <section className="popular_princial  text-white ">
         <div className="container ">
           <div className="row ">
             {/* Popuplar Princial Left Side Column Start */}
@@ -198,12 +284,12 @@ export const Home = () => {
                 dignissimos ab ea id tempora quibusdam maiores odit, soluta
                 doloremque accusamus distinctio aperiam sed quia!
               </p>
-              <button>Explore More Service </button>
+              <SlideAnimationButton btnName="Read More" />
             </div>
             {/* Popuplar Princial Left Side Column End */}
- 
+
             {/* Popuplar Princial Right Side Column Start */}
- 
+
             <div className="col-md-7 right_home_principle">
               <div className="row">
                 <div className="col-md-6 right_home_principle_left_content_box">
@@ -211,7 +297,7 @@ export const Home = () => {
                     <div className="right_home_principle_img">
                       <img src={POPULARWEB} alt="" /> &nbsp;
                     </div>
- 
+
                     <div className="right_home_principle_heading">
                       <h5 className="right_home_subheading">
                         APPLICATION DEVELOPMENT
@@ -222,12 +308,12 @@ export const Home = () => {
                       </p>
                     </div>
                   </div>
- 
+
                   <div className="d-flex">
                     <div className="right_home_principle_img">
                       <img src={POPULARANALYTICS} alt="" /> &nbsp;
                     </div>
- 
+
                     <div className="right_home_principle_heading pe-md-0">
                       <h4 className="right_home_subheading">ANALYTICS</h4>
                       <p className=" right_para">
@@ -237,13 +323,13 @@ export const Home = () => {
                     </div>
                   </div>
                 </div>
- 
+
                 <div className="col-md-6 right_home_principle_right_content_box">
                   <div className="d-flex">
                     <div className="right_home_principle_img">
                       <img src={POPULAUTOMATION} alt="" /> &nbsp;
                     </div>
- 
+
                     <div className="right_home_principle_heading">
                       <h5 className="right_home_subheading">AUTOMATION</h5>
                       <p className="justify-content-end right_para">
@@ -252,12 +338,12 @@ export const Home = () => {
                       </p>
                     </div>
                   </div>
- 
+
                   <div className="d-flex">
                     <div className="right_home_principle_img">
                       <img src={POPULARBANK} alt="" /> &nbsp;
                     </div>
- 
+
                     <div className="right_home_principle_heading">
                       <h4 className="right_home_subheading text-decoration-underline">
                         BANKING SOLUTION
@@ -276,34 +362,142 @@ export const Home = () => {
       </section>
       {/* Popuplar Princial End */}
 
+      {/* Happy client counter starts */}
+      <section className="happy_client mt-5 mb-5">
+        <div className="container">
+          <div className="row">
+            {/* <div className="happy_client_img"> */}
 
-{/* Our Services section start */}
-<section className="our_service_section">
-  <div className="container">
-    <div className="row">
-    {/* Our Service Left Column start */}
-      <div className="col-md-6 our_service_left_col">
-        <div className="our_service_content_box">
-            <h4>AI </h4>
-            <p>Description</p>
+            <div className="col-md-3">
+              <div className="conter_up_item">
+                <div className="happy_client_icon">
+                  <img src={HAPPYICON} alt="" />
+                </div>
+                <div className="happy_client_number text-white">
+                  <h2>
+                    <CountUp
+                      start={0}
+                      end={500}
+                      duration={3}
+                      separator=""
+                      // decimals={4}
+                      decimal=","
+                      //  prefix="+ "
+                      suffix=" +"
+                      // onEnd={() => console.log('Ended! 👏')}
+                      // onStart={() => console.log('Started! 💨')}
+                    ></CountUp>
+                  </h2>
+                  <h5>Happy Client</h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="conter_up_item">
+                <div className="happy_client_icon">
+                  <img src={HAPPYICON} alt="" />
+                </div>
+                <div className="happy_client_number text-white">
+                  <h2>
+                    <CountUp
+                      start={0}
+                      end={400}
+                      duration={3}
+                      separator=""
+                      // decimals={4}
+                      decimal=","
+                      //  prefix="+ "
+                      suffix=" +"
+                      // onEnd={() => console.log('Ended! 👏')}
+                      // onStart={() => console.log('Started! 💨')}
+                    ></CountUp>
+                  </h2>
+                  <h5>Professional work</h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="conter_up_item">
+                <div className="happy_client_icon">
+                  <img src={HAPPYICON} alt="" />
+                </div>
+                <div className="happy_client_number text-white">
+                  <h2>
+                    <CountUp
+                      start={0}
+                      end={600}
+                      duration={3}
+                      separator=""
+                      // decimals={4}
+                      decimal=","
+                      //  prefix="+ "
+                      suffix=" +"
+                      // onEnd={() => console.log('Ended! 👏')}
+                      // onStart={() => console.log('Started! 💨')}
+                    ></CountUp>
+                  </h2>
+                  <h5>Active Countries</h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="conter_up_item">
+                <div className="happy_client_icon">
+                  <img src={HAPPYICON} alt="" />
+                </div>
+                <div className="happy_client_number text-white">
+                  <h2>
+                    <CountUp
+                      start={0}
+                      end={1000}
+                      duration={3}
+                      separator=""
+                      // decimals={4}
+                      decimal=","
+                      //  prefix="+ "
+                      suffix=" +"
+                      // onEnd={() => console.log('Ended! 👏')}
+                      // onStart={() => console.log('Started! 💨')}
+                    ></CountUp>
+                  </h2>
+                  <h5>Projects</h5>
+                </div>
+              </div>
+            </div>
+            {/* <div className="col-md-3">ce</div>
+            <div className="col-md-3">ce</div>
+            <div className="col-md-3">ce</div> */}
+          </div>
         </div>
-      </div>
-{/* Our Service Left Column End */}
+        {/* </div> */}
+      </section>
 
-{/* Our Service Right Column start */}
-      <div className="col-md-6 our_service_right_col">
+      {/* Happy client counter end */}
 
-      </div>
-      {/* Our Service Right Column end */}
-    </div>
-  </div>
-</section>
+      {/* Blogs Start */}
 
-{/* Our Services section End */}
+      <section className="blogs">
+        <div className="container">
+          <div className="row">
+            <div className="top_blog_container text-center">
+              <h4>Latest News and Blogs</h4>
+              <span
+                style={{
+                  fontSize: "42px",
+                  fontFamily: "rajdhani",
+                  fontWeight: "650",
+                }}
+              >
+                GET EVERY SINGLE UPDATE <br /> ARTICLE & TIPES
+              </span>
+            </div>
+            <div className="bottom_blog_container">dsg</div>
+          </div>
+        </div>
+      </section>
 
-       </>
-
-    
+      {/* Blogs end */}
+    </>
   );
 };
 

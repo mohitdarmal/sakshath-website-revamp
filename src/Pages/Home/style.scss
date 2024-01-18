@@ -1,4 +1,163 @@
 @import "../../Assets/saas/Main.scss";
+
+// banner css
+.banner_sec .swiper-button-prev:after, .banner_sec .swiper-button-next:after{
+  width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: $ball_blue_color;
+    text-align: center;
+    color: #fff;
+    font-size: 20px !important;
+}
+ 
+.banner_box{position: relative;}
+.banner_caption{
+  width: 1360px;
+  margin: 0 auto;
+}
+.banner_caption_container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ 
+ 
+.banner_caption div a{transition: 0.5s;}
+.banner_caption div a:first-child{
+  background: $ball_blue_color;
+  display: inline-block;
+  color: $white_color;
+  padding: 15px 35px;
+  font-family: 'Rajdhani';
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.banner_caption div a:first-child:hover{
+  background-color: $white_color;
+  color: #000;
+  transition: 0.5s;
+}
+.banner_caption div a:last-child{
+  background: $white_color;
+  display: inline-block;
+  color: #000;
+  padding: 15px 35px;
+  font-family: 'Rajdhani';
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.banner_caption div a:last-child:hover{
+  background-color: $ball_blue_color;
+  color: $white_color;
+  transition: 0.5s;
+}
+ 
+.banner_img{position: relative;}
+.banner_img::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000ab;
+  top: 0;
+  left: 0;
+}
+ 
+.banner_sec .swiper-button-prev:after{
+right: 9px;
+position: relative;
+}
+.banner_sec .swiper-button-next:after{
+  left: 9px;
+  position: relative;
+}
+ 
+.banner_caption_container h3{margin: 30px 0; color: $white_color;}
+.banner_caption_container h6{color: $white_color;}
+ 
+@media screen and (max-width:480px){
+ 
+ 
+.banner_caption div a{
+  padding: 7px 20px !important;
+  font-size: 14px !important;
+}
+.banner_caption div a:first-child{
+  margin-right: 5px;
+}
+.banner_caption_container h3 {
+  margin: 15px 0;
+  color: #fff;
+}
+}
+ 
+@media screen and (min-width:481px) and (max-width:767px){
+  .banner_caption {
+    width: 500px;
+    margin: 0 auto;
+}
+.banner_caption_container h3 {
+  margin: 20px 0;
+}
+}
+ 
+@media screen and (max-width:767px) {
+  .banner_img img{
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+ 
+}
+ 
+@media screen and (min-width:768px) and (max-width:1023px){
+  .banner_caption {
+    width: 650px;
+    margin: 0 auto;
+}
+.banner_caption_container h3 {
+  font-size: 55px !important;
+  line-height: 60px !important;
+  margin: 15px 0;
+}
+}
+ 
+@media screen and (min-width:1024px) and (max-width:1200px){
+  .banner_caption {
+    width: 950px !important;
+}
+}
+ 
+@media screen and (max-width:1300px){
+  .banner_caption_container{
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .banner_caption_container .banner_caption {
+    width: 100% ;
+}
+}
+ 
+@media screen and (min-width:768px){
+  .banner_caption_container h3{
+    font-weight: bold;
+    width: 700px;
+  }
+ 
+  .banner_caption_container h6{font-family: $rajdhani_font; text-decoration: underline; font-weight: bold; font-size: 20px; color: $ball_blue_color;}
+.banner_caption_container h3{
+  font-size: 75px; line-height: 80px; font-family: $rajdhani_font; color: $white_color;
+}
+}
+
+// banner css end
+
  
 .specilation_feature {
   z-index: 99;
@@ -386,3 +545,37 @@ img{
   }
 }
  
+
+// happy clients
+
+.happy_client{
+  // background-image: url("../../../src/Assets/images/happyClient_bg_image.jpg");
+  background-image: url("../../Assets/images/happyClient_bg_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #33a3d2;
+  width: 100%;
+  padding: 100px;
+text-align: center;
+
+  .happy_client_icon {
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+
+  }
+  .happy_client_icon img{
+    width: 55px;
+
+  }
+  .happy_client_number h2{
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+}
+
