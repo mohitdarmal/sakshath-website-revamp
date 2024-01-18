@@ -1,6 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { SERVICE_IMG, IT_IMG, TEAM_IMG, P_IMG, BANNER1 } from "./Constant";
+import {
+  SERVICE_IMG,
+  IT_IMG,
+  TEAM_IMG,
+  P_IMG,
+  BANNER1,
+  POPULARWEB,
+  POPULARANALYTICS,
+  POPULARBANK,
+  POPULAUTOMATION,
+} from "./Constant";
 import "./style.scss";
 import { WHO_WE_ARE } from "./Constant";
 // import Button from '../../Components/Utils/WaveAnimationButton';
@@ -115,9 +125,9 @@ export const Home = () => {
       <section className="popular_princial  text-white ">
         <div className="container ">
           <div className="row ">
-          {/* Popuplar Princial Left Side Column Start */}
+            {/* Popuplar Princial Left Side Column Start */}
             <div className="col-md-5 mt-4 left_home_principle">
-              <h3>Our Popular Principle</h3>
+              <span>Our Popular Principle</span>
               <h4> Best Professional IT Solutiuons</h4>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -129,81 +139,77 @@ export const Home = () => {
             </div>
             {/* Popuplar Princial Left Side Column End */}
 
-              {/* Popuplar Princial Right Side Column Start */}
+            {/* Popuplar Princial Right Side Column Start */}
 
             <div className="col-md-7 right_home_principle">
               <div className="row">
                 <div className="col-md-6 right_home_principle_left_content_box">
-                
-                
-                    <div className="d-flex">
-                      <div className="right_home_principle_img">
-                        <img src={P_IMG} alt="" /> &nbsp;
-                      </div>
-
-                      <div className="right_home_principle_heading">
-                        <h5 className="right_home_subheading">APPLICATION DEVELOPMENT</h5>
-                        <p className="justify-content-end  right_para ">
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni numquam saepe aperiam.
-                        </p>
-                      </div>
+                  <div className="d-flex">
+                    <div className="right_home_principle_img">
+                      <img src={POPULARWEB} alt="" /> &nbsp;
                     </div>
-                    
-                
-                    <div className="d-flex">
-                    
-                      <div className="right_home_principle_img">
-                        <img src={P_IMG} alt="" /> &nbsp;
-                      </div>
 
-                      <div className="right_home_principle_heading pe-md-0">
-                        <h4 className="right_home_subheading">ANALYTICS</h4>
-                        <p className=" right_para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni numquam saepe aperiam.
-                        </p>
-                      </div>
+                    <div className="right_home_principle_heading">
+                      <h5 className="right_home_subheading">
+                        APPLICATION DEVELOPMENT
+                      </h5>
+                      <p className="justify-content-end  right_para ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo magni numquam saepe aperiam.
+                      </p>
                     </div>
-                    
+                  </div>
+
+                  <div className="d-flex">
+                    <div className="right_home_principle_img">
+                      <img src={POPULARANALYTICS} alt="" /> &nbsp;
+                    </div>
+
+                    <div className="right_home_principle_heading pe-md-0">
+                      <h4 className="right_home_subheading">ANALYTICS</h4>
+                      <p className=" right_para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo magni numquam saepe aperiam.
+                      </p>
+                    </div>
+                  </div>
                 </div>
 
-
                 <div className="col-md-6 right_home_principle_right_content_box">
-           
-                    <div className="d-flex">
-
-                      <div className="right_home_principle_img">
-                        <img src={P_IMG} alt="" /> &nbsp;
-                      </div>
-
-                      <div className="right_home_principle_heading">
-                        <h5 className="right_home_subheading">AUTOMATION</h5>
-                        <p className="justify-content-end right_para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni numquam saepe aperiam.
-                        </p>
-                      </div>
+                  <div className="d-flex">
+                    <div className="right_home_principle_img">
+                      <img src={POPULAUTOMATION} alt="" /> &nbsp;
                     </div>
-                    
-                    
-                    <div className="d-flex">
-                      <div className="right_home_principle_img">
-                        <img src={P_IMG} alt="" /> &nbsp;
-                      </div>
 
-                      <div className="right_home_principle_heading">
-                        <h4 className="right_home_subheading text-decoration-underline">BANKING SOLUTION</h4>
-                        <p className=" right_para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magni numquam saepe aperiam.
-                        </p>
-                      </div>
+                    <div className="right_home_principle_heading">
+                      <h5 className="right_home_subheading">AUTOMATION</h5>
+                      <p className="justify-content-end right_para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo magni numquam saepe aperiam.
+                      </p>
                     </div>
-                  
+                  </div>
 
-                
+                  <div className="d-flex">
+                    <div className="right_home_principle_img">
+                      <img src={POPULARBANK} alt="" /> &nbsp;
+                    </div>
+
+                    <div className="right_home_principle_heading">
+                      <h4 className="right_home_subheading text-decoration-underline">
+                        BANKING SOLUTION
+                      </h4>
+                      <p className=" right_para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Explicabo magni numquam saepe aperiam.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </section>
       {/* Popuplar Princial End */}
     </>
