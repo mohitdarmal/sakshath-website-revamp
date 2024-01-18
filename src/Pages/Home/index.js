@@ -106,7 +106,7 @@ export const Home = () => {
                   odit aut fugit sed quia consequuntur magni dolores eos ratione
                   volupta seque nesciunt porro quisquam doloremdolor site
                 </p>
-                <button>LEARN MORE ABOUT US</button>
+                <SlideAnimationButton btnName ="LEARN MORE ABOUT US" />
               </div>
             </div>
           </div>
