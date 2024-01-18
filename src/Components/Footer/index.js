@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaRegEnvelope } from "react-icons/fa6";
 //import { CiLocationOn } from "react-icons/ci";
-import { BsTelephoneInbound } from "react-icons/bs"
+import { BsTelephoneInbound } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
-import { TfiLinkedin } from "react-icons/tfi"
-import { FOOTER_LOGO, SUBSCRIPTION_OFFER } from "./constant";
+import { TfiLinkedin } from "react-icons/tfi";
+import { FOOTER_LOGO, SUBSCRIPTION_OFFER } from "./Constant";
 import "./style.scss";
 import SlideAnimationButton from "../Utils/SlideAnimationButton";
 import Heading from "../Utils/Heading";
@@ -14,10 +14,8 @@ import { useState } from "react";
 //import { IoLocationOutline } from "react-icons/io5";
 
 const Footer = () => {
-
   const [formData, setFormData] = useState({
-    
-    email: '',
+    email: "",
   });
 
   const handleChange = (e) => {
@@ -31,65 +29,66 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // You can handle form submission logic here
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
   return (
     <>
-       <section className="subscription_footer">
+      <section className="subscription_footer">
         <div className="container subscription_box">
           <div className="subscription_content_box">
             <div className="row subscription_content_box_area">
               <div className="col-md-5 left_subscription_content_box">
                 <div className="left_content">
                   <div className="left_content_icon">
-                    <img className="img-fluid" src={SUBSCRIPTION_OFFER} alt=""  />
+                    <img
+                      className="img-fluid"
+                      src={SUBSCRIPTION_OFFER}
+                      alt=""
+                    />
                   </div>
                   <div className="left_content">
-                    <Heading heading="Get Special Rewards" uppercase=""></Heading>
+                    <Heading
+                      heading="Get Special Rewards"
+                      uppercase=""
+                    ></Heading>
                   </div>
                 </div>
               </div>
               <div className="col-md-7 right_subscription_content_box">
                 <div className="subscription_mailaddress_form">
-                  
-                    <div className="form_grp">
-                      
-                      <form onSubmit={handleSubmit} className="form_container">
-      
-                              <div className="mb-3">
-                               <label htmlFor="email" className="form-label">
-                                 
-                               </label>
-                               <input
-                                 type="email"
-                                 className="form-control"
-                                 id="email"
-                                 name="email"
-                                 value={formData.email}
-                                 onChange={handleChange}
-                                 placeholder= " Enter Address"
-                               />
-                             </div>
-                            <div className="subscribe_button">
-                             <button type="submit" className="btn btn-primary ">
-                                 Subscribe
-                             </button>
-                             </div> 
-                           </form>
-                       {/* <SlideAnimationButton  className="subscribe_button" btnName="SUBSCRIBE" /> */}
-                    </div>
-                  
+                  <div className="form_grp">
+                    <form onSubmit={handleSubmit} className="form_container">
+                      <div className="mb-3">
+                        <label htmlFor="email" className="form-label"></label>
+                        <input
+                          type="email"
+                          className="form-control"
+                          id="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          placeholder=" Enter Address"
+                        />
+                      </div>
+                      <div className="subscribe_button">
+                        <button type="submit" className="btn btn-primary ">
+                          Subscribe
+                        </button>
+                      </div>
+                    </form>
+                    {/* <SlideAnimationButton  className="subscribe_button" btnName="SUBSCRIBE" /> */}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
       <footer className="footer_section">
         <div className="container ftr_top">
           <div className="row">
-          {/*  */}
+            {/*  */}
             <div className="col-md-3 ftr_col1">
               <img className="pb-4" src={FOOTER_LOGO} alt="" />
               <h4 className="text-decoration-underline mt-md-3">
@@ -98,25 +97,25 @@ const Footer = () => {
               <ul className=" font-medium ">
                 <li className="contact_hover">
                   <Link to="mailto:sakshath-technologies@gmail.com">
-                    <FaRegEnvelope />&nbsp; sakshath-technologies@gmail.com
+                    <FaRegEnvelope />
+                    &nbsp; sakshath-technologies@gmail.com
                   </Link>
                 </li>
                 <li className="mt-3 ftr_addr ">
                   <p>
-                        8, KV Jairam Rd, MCHS Layout, Jakkur,Bengaluru – 560 064
+                    8, KV Jairam Rd, MCHS Layout, Jakkur,Bengaluru – 560 064
                   </p>
                 </li>
                 <li className="mt-3 contact_hover">
                   <Link to="tel:+91 80 67819878">
-                  <BsTelephoneInbound />&nbsp; +91 80 67819878
+                    <BsTelephoneInbound />
+                    &nbsp; +91 80 67819878
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="col-md-3 footer_link ">
-              <h5>
-                Best Services
-              </h5>
+              <h5>Best Services</h5>
               <ul className="">
                 <li className="mt-4">
                   <Link to="/">Web & IT Consulting</Link>
@@ -139,9 +138,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link">
-              <h5>
-                IT Company
-              </h5>
+              <h5>IT Company</h5>
               <ul>
                 <li className="mt-4">
                   <Link to="">About Company</Link>
@@ -164,9 +161,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link">
-              <h5>
-                Our Support
-              </h5>
+              <h5>Our Support</h5>
 
               <ul className="font-medium">
                 <li className="mt-4">
@@ -204,7 +199,7 @@ const Footer = () => {
 
             <div className="col-md-4 social_media ">
               <Link to="">
-              <RiInstagramFill />
+                <RiInstagramFill />
               </Link>
 
               {/* <Link to="">
@@ -212,7 +207,7 @@ const Footer = () => {
               </Link> */}
 
               <Link to="">
-              <TfiLinkedin />
+                <TfiLinkedin />
               </Link>
 
               <Link to="">
