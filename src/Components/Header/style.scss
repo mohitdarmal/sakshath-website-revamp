@@ -82,6 +82,12 @@
   }
 }
 
+@media screen and (min-width:768px){
+  .header_menu {
+    font-size: 14px !important;
+  }
+}
+
 @media screen and (max-width:767px){
     .top_header{display: none;}
 }
@@ -94,7 +100,7 @@
 }
 @media screen and (min-width:768px) and (max-width:1023px){
     .header_menu .header_right{display: none !important;}
-    body .navbar-expand-md .navbar-nav .nav-link{padding-left: 10px !important; padding-right: 10px;}
+    body .navbar-expand-md .navbar-nav .nav-link{padding-left: 7px !important; padding-right: 7px;}
 
 }
 
