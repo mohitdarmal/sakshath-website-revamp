@@ -1,12 +1,12 @@
 @import "../../Assets/saas/Main.scss";
-
+ 
 .specilation_feature {
   z-index: 99;
   margin-bottom: 20px;
   position: relative;
   // margin-top: -4%;
 }
-
+ 
 .specilation_feature:after {
   content: "";
   position: absolute;
@@ -18,7 +18,7 @@
   background-color: #f8f8f8;
   z-index: -1;
 }
-
+ 
 .content h3 {
   font-weight: 600;
   text-decoration: underline;
@@ -26,10 +26,10 @@
 .image-box img {
   padding: 8rem 0 8rem 4rem;
 }
-
+ 
 .title_area {
   padding: 8rem 8px 0 0;
-
+ 
   .title {
     font-size: $subheading_title;
     font-family: $rajdhani_font;
@@ -39,7 +39,7 @@
     text-decoration: underline;
     margin-bottom: 20px;
   }
-
+ 
   .subtitle {
     text-transform: capitalize;
     color: black;
@@ -59,7 +59,7 @@
   line-height: 30px;
   overflow-x: hidden;
 }
-
+ 
 Button {
   background-color: $ball_blue_color;
   border-radius: 10px;
@@ -73,12 +73,11 @@ Button {
   padding: 15px 32px;
   margin: 4px 2px;
 }
-.col-md-7 {
+.who_we_are .col-md-6 {
   position: relative;
-  content: "";
 }
-
-.col-md-7 .image-box::after {
+ 
+.who_we_are .col-md-6 .image-box::after {
   position: absolute;
   top: -110px;
   left: 9px;
@@ -97,7 +96,7 @@ Button {
   margin-bottom: 13px;
   color: $light_navy_blue;
 }
-
+ 
 .top_content h3 {
   margin-top: 13px;
   margin: 10px;
@@ -106,7 +105,7 @@ Button {
   margin-top: 10px;
   font-family: $rajdhani_font;
 }
-
+ 
 .icon img {
   width: 45px;
   cursor: pointer;
@@ -118,23 +117,23 @@ Button {
   cursor: pointer;
   transition: 0.7s;
 }
-
+ 
 .content h3 {
   font-size: 23px;
   font-weight: 700;
   margin-bottom: 7px;
   text-decoration: underline;
   font-family: $rajdhani_font;
-
+ 
   p {
     justify-content: flex-start;
   }
 }
-
+ 
 @media screen and (max-width: 480px) {
   .top_content h3 {
     font-size: 17px;
-
+ 
     h6 {
       font-size: 12px;
     }
@@ -143,13 +142,13 @@ Button {
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .top_content h3 {
     font-size: 24px;
-
+ 
     h6 {
       font-size: 14px;
     }
   }
 }
-
+ 
 @keyframes shake {
   0%,
   100% {
@@ -163,9 +162,42 @@ Button {
     transform: translateX(-10px);
   }
 }
+ 
+.what_we_do{
+    background-color: #f7f8f9;
+    padding-top: 120px;
+    padding-bottom: 90px;
+ 
+      .what_we_do_box{
+        position: relative;
+        padding: 50px 35px 40px;
+        background-color: #fff;
+        z-index: 1;
+    }
+ 
+.icon_box{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+ 
+img{
+    width: 80px;
+    height: 80px;
+}
+ 
+.text h3{
+    font-size: 24px;
+    line-height: 32px;
+    font-family: $rajdhani_font;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase
 
-// popular_principle
+}
+}
 
+ 
 .popular_princial {
   background: #33a3d2;
 }
@@ -175,11 +207,11 @@ Button {
   font-family: $rajdhani_font;
   font-weight: 650;
 }
-
+ 
 .left_home_principle {
   padding-top: 130px;
   padding-bottom: 90px;
-
+ 
   span {
     // color: $light_navy_blue;
     text-decoration: underline;
@@ -204,7 +236,7 @@ Button {
     width: 80%;
   }
 }
-
+ 
 .right_home_principle {
   padding-bottom: 120px;
   padding-top: 100px;
@@ -220,14 +252,14 @@ Button {
   margin-left: 20px;
   text-align: start;
 }
-
+ 
 .right_home_principle_img img {
   width: 40px;
 }
-
+ 
 @media screen and (max-width: 480px) {
 }
-
+ 
 @media screen and (max-width: 767px) {
   .left_home_principle {
     padding-top: 40px;
@@ -241,11 +273,11 @@ Button {
     padding-bottom: 0px;
     padding-top: 25px;
   }
-
-  .image-box img {
+ 
+  .who_we_are .image-box img {
     padding: 25px;
   }
-  .col-md-7 .image-box::after {
+  .who_we_are .col-md-6 .image-box::after {
     top: -20px;
     width: 100px;
     height: 100px;
@@ -261,7 +293,7 @@ Button {
     margin-bottom: 30px;
     padding-bottom: 10px;
   }
-
+ 
   .specilation_feature .col-md-4:not(:last-child) {
     border-bottom: 1px solid #c3c1c1;
   }
@@ -269,14 +301,14 @@ Button {
     left: 0;
   }
 }
-
+ 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .specilation_feature .col-md-4 {
     width: 100% !important;
     margin-bottom: 30px;
     padding-bottom: 10px;
   }
-
+ 
   .specilation_feature .col-md-4:not(:last-child) {
     border-bottom: 1px solid #c3c1c1;
   }
@@ -285,7 +317,7 @@ Button {
     padding-top: 2rem;
   }
 }
-
+ 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .header_menu .header_right {
     display: none !important;
@@ -302,22 +334,22 @@ Button {
   .who_we_are .col-md-5 {
     width: 100%;
   }
-
+ 
   .title_area {
     padding: 3rem 8px 0 0;
   }
-
+ 
   .specilation_feature:after {
     left: 0;
   }
-
+ 
   @media screen and (min-width: 1024px) and (max-width: 1200px) {
     .specilation_feature {
       padding-bottom: 4rem;
       padding-top: 2rem;
     }
   }
-
+ 
   .popular_princial .left_home_principle,
   .popular_princial .right_home_principle {
     width: 100% !important;
@@ -331,7 +363,7 @@ Button {
     padding-top: 0;
   }
 }
-
+ 
 @media screen and (min-width: 768px) {
   .right_home_principle_left_content_box {
     padding-right: 0px !important;
@@ -353,3 +385,4 @@ Button {
     }
   }
 }
+ 
