@@ -491,7 +491,19 @@ export const Home = () => {
                 GET EVERY SINGLE UPDATE <br /> ARTICLE & TIPES
               </span>
             </div>
-            <div className="bottom_blog_container">dsg</div>
+            <div className="bottom_blog_container">
+              <div className="row">
+                <div className="col-md-4 text-center">
+                vgd
+                </div>
+                <div className="col-md-4 text-center">
+                  cdc
+                </div>
+                <div className="col-md-4 text-center">
+                  cdc
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
