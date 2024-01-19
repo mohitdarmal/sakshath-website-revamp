@@ -12,6 +12,7 @@ import SlideAnimationButton from "../Utils/SlideAnimationButton";
 import Heading from "../Utils/Heading";
 import { useState } from "react";
 //import { IoLocationOutline } from "react-icons/io5";
+import Accordion from "react-bootstrap/Accordion";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -217,6 +218,49 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+
+      {/* FAQ section starts */}
+      <section className="faq_section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-2"></div>
+            <div className="col-md-8 faq_content_box">
+              <div className="faq_content">
+                <Heading heading="Frequently Asked Questions"></Heading>
+                <Accordion defaultActiveKey="0">
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header className="question_button" >Accordion Item #1</Accordion.Header>
+                    <Accordion.Body>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header>Accordion Item #2</Accordion.Header>
+                    <Accordion.Body>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </div>
+            </div>
+            <div className="col-md-2"></div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

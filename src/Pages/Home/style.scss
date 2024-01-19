@@ -581,3 +581,68 @@ text-align: center;
 
 }
 
+
+  //  planning banner css
+
+  .planning_banner{
+    background-image:url(../../Assets/images/planning_banner.png);
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    .planning_banner_content_box{
+      display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: -15px;
+    margin-left: -15px 
+    }
+
+    .left_planning_banner_content{
+      margin-bottom: 30px;
+    }
+    .left_planning_banner_content h3{
+       font-size: 35px;
+       color: #fff;
+       text-decoration: underline;
+       line-height: 50px;
+       font-family: $rajdhani_font;
+       font-weight: 700;
+    }
+
+
+    .button_box{
+      padding-left: 50px 
+      
+    }
+
+    .right_planning_banner_content{
+      margin-bottom: 0px;
+      text-align: right;
+      
+      padding-left: 30px;
+      
+    
+
+    .lets_meet_us_button{
+      padding: 25px 35px;
+      background: #33a3d2;
+      color: white;
+      border-radius: 5px;
+      font-family: $rajdhani_font;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-weight: 500;
+      display: inline-block;
+      
+    
+    }
+    .lets_meet_us_button:hover{
+      
+      
+      text-decoration:none;
+    
+    }
+  }
+  }
+

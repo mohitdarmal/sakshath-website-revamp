@@ -507,6 +507,31 @@ export const Home = () => {
       </section>
 
       {/* Blogs end */}
+
+      {/* planning banner starts */}
+      <section className="planning_banner">
+        <div className="container">
+          <div className="row planning_banner_content_box">
+              <div className="col-md-9">
+                <div className="left_planning_banner_content">
+                  <h3>Full Truckload Planning Reimagined Experts in Security Dynamic Load Planning & Dispatching</h3>
+                </div>
+              </div>
+              <div className="col-md-3 button_box">
+                <div className="right_planning_banner_content">
+                  <Link className="lets_meet_us_button">Let's meet us </Link>
+                </div>
+              </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+      {/* planning banner ends */}
+
+
+      
     </>
   );
 };
