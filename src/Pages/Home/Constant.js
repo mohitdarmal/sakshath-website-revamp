@@ -26,3 +26,9 @@ export const HAPPYCCUSTMOER= require("../../Assets/images/customer.png");
 // export const HAPPYCCUSTMOERBG_IMG=require("../../Assets/images/happyclient_bg.jpg");
 export const HAPPYBGIMG=require("../../Assets/images/happyClient_bg_image.jpg");
 export const HAPPYICON=require("../../Assets/images/customer-satisfaction.png");
+
+
+// blogs
+
+export const BLOGIMG1=require("../../Assets/images/blog_img1.jpg");
+export const BLOGCPROFILE=require("../../Assets/images/blog_cust_profile.png");
