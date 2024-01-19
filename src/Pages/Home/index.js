@@ -17,7 +17,17 @@ import {
   ICON_4,
   HAPPYCCUSTMOER,
   HAPPYICON,
+  BLOGIMG1,
+  BLOGCPROFILE,
 } from "./Constant";
+//icons starts for blogs
+import { SlCalender } from "react-icons/sl";
+import { PiChatsCircleLight } from "react-icons/pi";
+import { GiCommercialAirplane } from "react-icons/gi";
+import { FaHome } from "react-icons/fa";
+
+import {Tabs,Tab} from 'react-bootstrap';
+
 import CountUp from "react-countup";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Heading from "../../Components/Utils/Heading";
@@ -29,6 +39,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-cube";
 import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Button } from "bootstrap";
 
 export const Home = () => {
   return (
@@ -181,7 +192,7 @@ export const Home = () => {
                   odit aut fugit sed quia consequuntur magni dolores eos ratione
                   volupta seque nesciunt porro quisquam doloremdolor site
                 </p>
-                <SlideAnimationButton btnName ="LEARN MORE ABOUT US" />
+                <SlideAnimationButton btnName="LEARN MORE ABOUT US" />
               </div>
             </div>
           </div>
@@ -195,8 +206,11 @@ export const Home = () => {
           <div className="row justify-content-center">
             <div className="text-center">
               <div className="title">
-                <Maintitle mainTitle = "what we do "/>
-                <Heading heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE" uppercase="text-uppercase"></Heading>
+                <Maintitle mainTitle="what we do " />
+                <Heading
+                  heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE"
+                  uppercase="text-uppercase"
+                ></Heading>
               </div>
             </div>
           </div>
@@ -216,18 +230,18 @@ export const Home = () => {
               </div>
             </div>
             <div className="col-md-3 d-flex ">
-            <div className="what_we_do_box">
-              <div className=" what_ we_do_icon_box">
-                <img src={ICON_2} alt="" />
-              </div>
-              <div className="text">
+              <div className="what_we_do_box">
+                <div className=" what_ we_do_icon_box">
+                  <img src={ICON_2} alt="" />
+                </div>
+                <div className="text">
                   <h3 className="text-underline">UNLOCK TRAPPED INFORMATION</h3>
                   <p>
                     Sedut perspicias unomnis natus error sit voluptatemc
                     accusanti remqua
                   </p>
                 </div>
-            </div>
+              </div>
             </div>
 
             <div className="col-md-3 d-flex ">
@@ -263,7 +277,6 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-         
           </div>
         </div>
       </section>
@@ -478,27 +491,152 @@ export const Home = () => {
         <div className="container">
           <div className="row">
             <div className="top_blog_container text-center">
-              <h4>Latest News and Blogs</h4>
-              <span
-                style={{
-                  fontSize: "42px",
-                  fontFamily: "rajdhani",
-                  fontWeight: "650",
-                }}
-              >
-                GET EVERY SINGLE UPDATE <br /> ARTICLE & TIPES
-              </span>
+              <h4 className="text-decoration-underline top_blog_heading">
+                Latest News and Blogs
+              </h4>
+              <span>GET EVERY SINGLE UPDATE ARTICLE & TIPES</span>
             </div>
-            <div className="bottom_blog_container">
+            <div className="bottom_blog_container mt-5">
               <div className="row">
-                <div className="col-md-4 text-center">
-                vgd
-                </div>
-                <div className="col-md-4 text-center">
-                  cdc
-                </div>
-                <div className="col-md-4 text-center">
-                  cdc
+                <div className="blog_boxes d-flex">
+                  <div className="col-md-4  blog_box">
+                    <div className="bottom_blog_img">
+                      <img src={BLOGIMG1} alt="" />
+                    </div>
+                    <div className="blog_content">
+                      <div className="cust_profile">
+                        <div className="blog_cutomer_profile d-flex justify-content-end ">
+                          <div className="customer_img ">
+                            <img
+                              src={BLOGCPROFILE}
+                              alt=""
+                              className="cust rounded-circle"
+                            />
+                          </div>{" "}
+                          &nbsp; &nbsp;
+                          <p>Mohit Darmal</p>
+                        </div>
+                      </div>
+
+                      <div className="socail_icon">
+                        <ul className="d-flex justify-content-between list-unstyled">
+                          <li>
+                            <div className="icon">
+                              <SlCalender /> &nbsp; 18 JAN 2024
+                            </div>
+                          </li>
+                          <li>
+                            <div className="icon">
+                              <PiChatsCircleLight /> &nbsp; comments(05)
+                            </div>
+                          </li>
+                        </ul>
+                        <h5 className="blog_heading">
+                          Build Launch Powerful Responsives Websites With Editor
+                          Perfect
+                        </h5>
+                        <p className="blog_sub_heading">
+                          {" "}
+                          Sed ut perspiciatis unde omnsiste natus errors
+                          voluptatem accusantium doloremque laudatium totae rem
+                          aperiam eaque quae abillo
+                        </p>
+                        <SlideAnimationButton btnName="READ MORE" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-4  blog_box">
+                    <div className="bottom_blog_img">
+                      <img src={BLOGIMG1} alt="" />
+                    </div>
+                    <div className="blog_content">
+                      <div className="cust_profile">
+                        <div className="blog_cutomer_profile d-flex justify-content-end ">
+                          <div className="customer_img ">
+                            <img
+                              src={BLOGCPROFILE}
+                              alt=""
+                              className="cust rounded-circle"
+                            />
+                          </div>{" "}
+                          &nbsp; &nbsp;
+                          <p>Amar Singh</p>
+                        </div>
+                      </div>
+
+                      <div className="socail_icon">
+                        <ul className="d-flex justify-content-between list-unstyled">
+                          <li>
+                            <div className="icon">
+                              <SlCalender /> &nbsp; 18 JAN 2024
+                            </div>
+                          </li>
+                          <li>
+                            <div className="icon">
+                              <PiChatsCircleLight /> &nbsp; comments(05)
+                            </div>
+                          </li>
+                        </ul>
+                        <h5 className="blog_heading">
+                          Build Launch Powerful Responsives Websites With Editor
+                          Perfect
+                        </h5>
+                        <p className="blog_sub_heading">
+                          {" "}
+                          Sed ut perspiciatis unde omnsiste natus errors
+                          voluptatem accusantium doloremque laudatium totae rem
+                          aperiam eaque quae abillo
+                        </p>
+                        <SlideAnimationButton btnName="READ MORE" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-4  blog_box">
+                    <div className="bottom_blog_img">
+                      <img src={BLOGIMG1} alt="" />
+                    </div>
+                    <div className="blog_content">
+                      <div className="cust_profile">
+                        <div className="blog_cutomer_profile d-flex justify-content-end ">
+                          <div className="customer_img ">
+                            <img
+                              src={BLOGCPROFILE}
+                              alt=""
+                              className="cust rounded-circle"
+                            />
+                          </div>{" "}
+                          &nbsp; &nbsp;
+                          <p>Senthil Palanisamy</p>
+                        </div>
+                      </div>
+                      <div className="socail_icon">
+                        <ul className="d-flex justify-content-between list-unstyled">
+                          <li>
+                            <div className="icon">
+                              <SlCalender /> &nbsp; 18 JAN 2024
+                            </div>
+                          </li>
+                          <li>
+                            <div className="icon">
+                              <PiChatsCircleLight /> &nbsp; comments(05)
+                            </div>
+                          </li>
+                        </ul>
+                        <h5 className="blog_heading">
+                          Build Launch Powerful Responsives Websites With Editor
+                          Perfect
+                        </h5>
+                        <p className="blog_sub_heading">
+                          {" "}
+                          Sed ut perspiciatis unde omnsiste natus errors
+                          voluptatem accusantium doloremque laudatium totae rem
+                          aperiam eaque quae abillo
+                        </p>
+
+                        <SlideAnimationButton btnName="READ MORE" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -506,7 +644,70 @@ export const Home = () => {
         </div>
       </section>
 
+
       {/* Blogs end */}
+
+
+      {/* Happy Clients Starts */}
+      <section className="happy_client_container">
+        <div className="container">
+          <div className="row">
+            <div className="happy_client_bg_img">
+              <img src="" alt="" />
+            </div>
+
+            <div className="happy_client_content text-center">
+            <div className="happy_client_top_heading">
+              <h5 className="client_heading">
+                Popular Partners
+              </h5>
+              <p className="sub_heading">WE HAVE  <CountUp
+                      start={0}
+                      end={2345}
+                      duration={3}
+                      separator=""
+                      // decimals={4}
+                      decimal=","
+                      //  prefix="+ "
+                      suffix=" +"
+                      
+                    ></CountUp>  WORLD WIDE CLIENTS </p>
+            </div>
+
+            <div className="happy_client_bottom_heading">
+            <div className="row">
+           
+    <Tabs
+     defaultActiveKey="Domestic"
+     id="uncontrolled-tab-example"
+      className="mb-3 client_tabs"
+      
+    >
+    {/* <div className="international"> */}
+      <Tab   eventKey="home" title={ <span className="d-flex"> <p style={{fontSize:'25px'}}><GiCommercialAirplane/> </p>&nbsp; &nbsp;<p style={{fontSize:'22px', marginTop:'3px'}}>International </p> </span>}>
+        Tab content for Home
+      </Tab>
+      {/* </div> */}
+      <Tab eventKey="profile" title={<span className="d-flex"> <p style={{fontSize:'25px'}}><FaHome/> </p>&nbsp; <p style={{fontSize:'22px',marginTop:'3px'}}>Domestic </p></span>}>
+        Tab content for Profile
+      </Tab>
+      <Tab   eventKey="other" title={ <span className="d-flex"> <p style={{fontSize:'25px'}}><GiCommercialAirplane/> </p>&nbsp; &nbsp;<p style={{fontSize:'22px', marginTop:'3px'}}>Business </p> </span>}>
+        Tab content for someother
+      </Tab>
+   
+    </Tabs>
+
+
+            </div>
+
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Happy client end */}
     </>
   );
 };
