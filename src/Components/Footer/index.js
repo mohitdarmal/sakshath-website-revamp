@@ -11,7 +11,7 @@ import "./style.scss";
 import SlideAnimationButton from "../Utils/SlideAnimationButton";
 import Heading from "../Utils/Heading";
 import { useState } from "react";
-//import { IoLocationOutline } from "react-icons/io5";
+import { Fade } from "react-awesome-reveal";
 import Accordion from "react-bootstrap/Accordion";
 
 const Footer = () => {
@@ -45,7 +45,7 @@ const Footer = () => {
                       className="img-fluid"
                       src={SUBSCRIPTION_OFFER}
                       alt=""
-                    />
+                    />  
                   </div>
                   <div className="left_content">
                     <Heading
@@ -91,33 +91,38 @@ const Footer = () => {
           <div className="row">
             {/*  */}
             <div className="col-md-3 ftr_col1">
-              <img className="pb-4" src={FOOTER_LOGO} alt="" />
-              <h4 className="text-decoration-underline mt-md-3">
+            <Fade direction="up"> <img className="pb-4" src={FOOTER_LOGO} alt="" /> </Fade>
+            <Fade direction="up" delay={50}> <h4 className="text-decoration-underline mt-md-3">
                 Don’t Hesitate to Conatct With Our Experites
-              </h4>
+              </h4> </Fade>
               <ul className=" font-medium ">
+              
                 <li className="contact_hover">
-                  <Link to="mailto:sakshath-technologies@gmail.com">
+                <Fade direction="up" delay={400}> <Link to="mailto:sakshath-technologies@gmail.com">
                     <FaRegEnvelope />
-                    &nbsp; sakshath-technologies@gmail.com
+                    &nbsp; sakshath-technologies@gmail.com  
                   </Link>
+                  </Fade>
                 </li>
+               
+                <Fade direction="up" delay={150}> 
                 <li className="mt-3 ftr_addr ">
                   <p>
                     8, KV Jairam Rd, MCHS Layout, Jakkur,Bengaluru – 560 064
                   </p>
-                </li>
-                <li className="mt-3 contact_hover">
+                </li> </Fade>
+                <Fade direction="up" delay={200}><li className="mt-3 contact_hover">
                   <Link to="tel:+91 80 67819878">
                     <BsTelephoneInbound />
                     &nbsp; +91 80 67819878
                   </Link>
-                </li>
+                </li></Fade>
               </ul>
             </div>
             <div className="col-md-3 footer_link ">
               <h5>Best Services</h5>
               <ul className="">
+              <Fade direction="up" cascade damping={0.1}>
                 <li className="mt-4">
                   <Link to="/">Web & IT Consulting</Link>
                 </li>
@@ -136,11 +141,13 @@ const Footer = () => {
                 <li className="mt-3">
                   <Link to="/about">Security Solutions</Link>
                 </li>
+                </Fade>
               </ul>
             </div>
             <div className="col-md-3 footer_link">
               <h5>IT Company</h5>
               <ul>
+              <Fade direction="up" cascade damping={0.1}>
                 <li className="mt-4">
                   <Link to="">About Company</Link>
                 </li>
@@ -159,12 +166,14 @@ const Footer = () => {
                 <li className="mt-3">
                   <Link to="/about">Meet Out Teams</Link>
                 </li>
+                </Fade>
               </ul>
             </div>
             <div className="col-md-3 footer_link">
               <h5>Our Support</h5>
 
               <ul className="font-medium">
+              <Fade direction="up" cascade damping={0.1}>
                 <li className="mt-4">
                   <Link to="">Premium Support</Link>
                 </li>
@@ -183,6 +192,7 @@ const Footer = () => {
                 <li className="mt-3">
                   <Link to="/about">Privacy Policy</Link>
                 </li>
+                </Fade>
               </ul>
             </div>
           </div>
@@ -192,20 +202,18 @@ const Footer = () => {
           <div className="row ">
             <div className="col-md-8">
               <div>
-                <p>
+              <Fade direction="up">  <p>
                   Copyrights © 2023 Sakshath Technologies®. All rights reserved.
                 </p>
+                </Fade>
               </div>
             </div>
 
             <div className="col-md-4 social_media ">
+            <Fade direction="up" cascade damping={0.1}>
               <Link to="">
                 <RiInstagramFill />
               </Link>
-
-              {/* <Link to="">
-                <FaTwitter />
-              </Link> */}
 
               <Link to="">
                 <TfiLinkedin />
@@ -214,6 +222,7 @@ const Footer = () => {
               <Link to="">
                 <FaYoutube />
               </Link>
+              </Fade>
             </div>
           </div>
         </div>
