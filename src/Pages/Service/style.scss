@@ -1,0 +1,219 @@
+@import "../../Assets/saas/Main.scss";
+
+///customer
+.experience_section{
+     padding-top: 90px;
+     padding-bottom: 90px;
+     
+    .experience_section_container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;}
+
+        
+            
+            
+            
+            .experience_text .upper_textbox{
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid lightgray;
+                padding-bottom: 15px;
+                margin-bottom: 50px;
+
+                .upper_left_textbox{
+                font-size: 300px;
+                font-family: $rajdhani_font;
+                font-weight: 700;
+                color: $ball_blue_color;
+                line-height: 85px;}
+
+                .upper_right_textbox{
+                    padding-left: 35px;
+                    font-family: $rajdhani_font;
+
+                    span{
+                        
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: gray;
+                        margin-bottom: 5px;
+        
+                        
+                    }
+                    h2{
+                        font-size: 30px;
+                        line-height: 32px;
+                        margin-bottom: 15px;
+                        font-weight: 700;
+                    }
+                    blockquote{
+                        padding-left: 25px;
+                        border-left: 4px solid #0071dc;
+                    }
+
+                    
+
+
+                }
+
+                 .happy_customer_number{
+                    h2 {
+                        font-family: $rajdhani_font;
+                    }
+                }
+
+
+
+        
+    
+    }}
+
+    // Ready to get our services
+
+    .ready_to_get_our_professional_services{
+        padding-top: 135px;
+        padding-bottom: 140px;
+        background-image: url(../../Assets/images/Service_ready_to_get_our_services.png);
+        background-repeat: no-repeat;
+
+        .heading_box{
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+
+        
+        
+
+        .text_box{
+            h3{
+                font-size: 65px;
+                line-height: 75px;
+                color: #fff;
+                text-decoration: underline;
+                margin-bottom: 20px;
+                font-family: $rajdhani_font;
+                font-weight: 600;}
+
+                .buttons_box{
+                    display:flex;
+                    justify-content: center;
+                    gap: 20px;
+                }
+
+
+                 li{
+                    list-style-type: none;
+                    
+                
+                }
+
+
+                .meet_button {
+                    padding: 12px 35px;
+                    background: #33a3d2;
+                    color: white;
+                    border-radius: 5px;
+                    font-family: $rajdhani_font;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    font-weight: 700;
+                    display: inline-block;
+                  }  
+                  
+                  .meet_button:hover{
+                    text-decoration: none;
+                  }
+
+                  .our_services_button{
+                    padding: 12px 35px;
+                    background:rgb(113 65 177);
+                    color: white;
+                    border-radius: 5px;
+                    font-family: $rajdhani_font;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    font-weight: 700;
+                    display: inline-block;
+
+                  }
+                  .our_services_button:hover{
+                  text-decoration: none;
+            }
+        }
+    }
+    
+    }
+
+    ///IT Benefits css
+    
+    .it_benefits{
+        padding-top: 130px;
+        padding-bottom: 80px;
+
+        .it_benefits_box{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -15px;
+            margin-right:-15px;
+        }
+
+        .img_holder_left_top_img img{
+             border-radius: 1px 100px 100px 100px;
+             margin-bottom: 40px;
+        } 
+
+        .img_holder_left_bottom_img img{
+            border-radius: 100px 1px 100px 100px;
+        }
+
+        
+        .it_benefits_box_area{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .right_box{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .it_benefits_text_wrapper{
+            padding-left: 70px;
+            margin-bottom: 50px;
+
+            .it_benefits_heading_section{
+                margin-bottom: 25px;
+            }
+
+            span{
+                background-color: $ball_blue_color;
+                color: white;
+                font-family: $rajdhani_font;
+                padding: 5px 15px;
+                border-radius: 5px;
+                font-weight: 700;
+                font-size: 20px;
+                text-transform: uppercase;
+
+            }
+
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                gap: 20px;
+
+                li{
+                    display: flex;
+                    align-items: center;
+                    
+                    margin-bottom: 15px;
+                }
+
+            }
+        }
+
+    }
