@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React  from "react";
 import { Link } from "react-router-dom";
 import {
   WHO_WE_ARE_IMG,
@@ -6,7 +6,6 @@ import {
   POPULARBANK,
   POPULARWEB,
   POPULAUTOMATION,
-  SERVICE_IMG,
   IT_IMG,
   TEAM_IMG,
   P_IMG,
@@ -15,46 +14,40 @@ import {
   ICON_2,
   ICON_3,
   ICON_4,
-  HAPPYCCUSTMOER,
   HAPPYICON,
   BLOGIMG1,
   BLOGCPROFILE,
+  ISO_27001,
+  GREAT_PLACE_WORK,
 } from "./Constant";
 //icons starts for blogs
 import { SlCalender } from "react-icons/sl";
 import { PiChatsCircleLight } from "react-icons/pi";
-import { GiCommercialAirplane } from "react-icons/gi";
-import { FaHome } from "react-icons/fa";
-
-import {Tabs,Tab} from 'react-bootstrap';
 import CountUp from "react-countup";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Heading from "../../Components/Utils/Heading";
-import Maintitle from "../../Components/Utils/Title_head";
+import SubTitle from "../../Components/Utils/Title_head";
 import "./style.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-cube";
-import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
-import { Button } from "bootstrap";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { Fade } from "react-awesome-reveal";
+import ClientLogo from "../../Components/ClientLogo";
 
 export const Home = () => {
 
   return (
     <>
-      {/* <div>
-        <img src={BANNER1} alt="" className="img-fluid" />
-      </div> */}
       <section className="banner_sec">
         <Swiper
           cssMode={true}
           // autoplay={true}
           autoplay={{
             delay: 6000, // Delay between slides in milliseconds (adjust as needed)
-            disableOnInteraction: false, // Allow autoplay to continue after user interaction
+            disableOnInteraction: true, // Allow autoplay to continue after user interaction
           }}
           navigation={true}
           mousewheel={true}
@@ -114,8 +107,8 @@ export const Home = () => {
           <div className="container">
             <div className="row ">
               <div className="top_content text-center mt-4">
-              <Fade direction="up"><h6>GREAT JOURNEY FOR IT SOLUTIONS</h6></Fade>
-              <Fade direction="up" delay={20}><h3>SPECIALIZES IN BUILDING SERVICES</h3></Fade>
+              <Fade direction="up"><SubTitle SubTitle="Great Journey for it solutions" /></Fade>
+              <Fade direction="up" delay={20}><Heading heading="Specializes in Building Services" uppercase="text-uppercase" />   </Fade>
               </div>
             </div>
             <div className="row mt-4 pt-2">
@@ -197,10 +190,8 @@ export const Home = () => {
            
               <div className="text_wrapper">
                 <div className="title_area">
-                <Fade direction="up"><span className="title">Who we are</span> </Fade>  
-               <h2 className="subtitle">
-                    The Enterprise Productivity Platform For Complex Data
-                  </h2>  
+                <Fade direction="up"> <SubTitle SubTitle="Who we are" /></Fade>  
+                <Heading heading="The Enterprise Productivity Platform For Complex Data" uppercase="text-uppercase" />  
                 </div>
                 <p>
                   Sed perspiciatis unde omnis iste natus voluptate accusantiuy
@@ -223,14 +214,16 @@ export const Home = () => {
       <section className="what_we_do">
         <div className="container">
           <div className="row justify-content-center">
+            <div className="col-md-6" >
             <div className="text-center">
               <div className="title">
-              <Fade direction="up"> <Maintitle mainTitle="what we do " /> </Fade>
+              <Fade direction="up"> <SubTitle SubTitle="what we do " /> </Fade>
               <Fade direction="up" delay={100}> <Heading
                   heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE"
                   uppercase="text-uppercase"
-                ></Heading>
+                /> 
                 </Fade>
+              </div>
               </div>
             </div>
           </div>
@@ -255,7 +248,7 @@ export const Home = () => {
             <div className="col-md-3 d-flex ">
               <div className="what_we_do_box">
               <Fade direction="up" delay={200}> 
-                <div className=" what_ we_do_icon_box">
+                <div className="icon_box">
                   <img src={ICON_2} alt="" />
                 </div>
                 <div className="text">
@@ -310,15 +303,98 @@ export const Home = () => {
         </div>
       </section>
 
+
+
+  {/* planning banner starts */}
+  <section className="planning_banner">
+        <div className="container">
+          <div className="row planning_banner_content_box align-items-center">
+              <div className="col-md-9">
+                <div className="left_planning_banner_content">
+                <Fade direction="up">  <h3>Full Truckload Planning Reimagined Experts in Security Dynamic Load Planning & Dispatching</h3> </Fade>
+                </div>
+              </div>
+              <div className="col-md-3 button_box">
+                <div className="right_planning_banner_content">
+                <Fade direction="up" delay={300}> <Link className="lets_meet_us_button">Let's meet us </Link> </Fade>
+                </div>
+              </div>
+          </div>
+
+          
+        </div>
+      </section>
+      {/* planning banner ends */}
+
+
+      <section className="iso_certificate_sec">
+        <div className="container">
+<div className="row">
+<div className="col-md-6 mb-4 offset-md-3 text-center">
+              <Fade direction="up"> <Heading
+                  heading="iso certificates"
+                  uppercase="text-uppercase"
+                /> </Fade> 
+               <Fade direction="up" delay={100}> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p> </Fade>
+                </div>
+</div>
+
+          <div className="row">
+            
+              {/* <div className="col-md-3">
+
+              </div> */}
+
+              <div className="col">
+              <div className="row text-center iso_logo">
+           
+              <div className="col mb-4">
+              <Fade direction="up" >   <div>
+                      <img src={ISO_27001} style={{width:150}} />
+                    </div>
+                    </Fade>
+                  </div>
+                  <div className="col">
+                  <Fade direction="up" delay={100}> <div>
+                    <img src={GREAT_PLACE_WORK} style={{width:150}} /> 
+                  </div>
+                  </Fade>
+                  </div>
+                  <div className="col">
+                  <Fade direction="up" delay={100}> <div>
+                    <img src={ISO_27001} style={{width:150}} /> 
+                  </div>
+                  </Fade>
+                  </div>
+                  <div className="col">
+                  <Fade direction="up" delay={100}> <div>
+                    <img src={GREAT_PLACE_WORK} style={{width:150}} /> 
+                  </div>
+                  </Fade>
+                  </div>
+                  </div>
+              </div>
+
+              {/* <div className="col-md-3">
+
+              </div> */}
+
+           
+            
+          </div>
+        </div>
+      </section>
+
+
       {/* popular service start */}
       <section className="popular_princial  text-white ">
         <div className="container ">
           <div className="row ">
             {/* Popuplar Princial Left Side Column Start */}
             <div className="col-md-5 mt-4 left_home_principle">
-            <Fade direction="up" >   <span>Our Popular Principle</span> </Fade>
-            <Fade direction="up" >  <h4> Best Professional IT Solutiuons</h4> </Fade>
-             <Fade direction="up" >  <p>
+            <Fade direction="up"><SubTitle SubTitle="Our Popular Principle" /> </Fade>
+            <Fade direction="up"> <Heading heading="Best Professional IT Solutiuons" uppercase="text-uppercase" />  </Fade>
+             <Fade direction="up">  <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quaerat nihil aliquid, architecto assumenda alias vitae
                 dignissimos ab ea id tempora quibusdam maiores odit, soluta
@@ -410,8 +486,15 @@ export const Home = () => {
       </section>
       {/* Popuplar Princial End */}
 
+
+{/* Client Logo Start */}
+
+<ClientLogo />
+
+{/* Client Logo End */}
+
       {/* Happy client counter starts */}
-      <section className="happy_client mt-5 mb-5">
+      <section className="happy_client">
         <div className="container">
           <div className="row">
             {/* <div className="happy_client_img"> */}
@@ -532,17 +615,14 @@ export const Home = () => {
         <div className="container">
           <div className="row">
             <div className="top_blog_container text-center">
-            <Fade direction="up">  <h4 className="text-decoration-underline top_blog_heading">
-                Latest News and Blogs
-              </h4>
+            <Fade direction="up"> <SubTitle SubTitle="Latest News and Blogs" /> 
               </Fade>
-              <Fade direction="up" delay={100}>  <span>GET EVERY SINGLE UPDATE ARTICLE & TIPES</span> </Fade>
+              <Fade direction="up" delay={100}> <Heading heading="Get every single update article & tips" uppercase="text-uppercase" />  GET EVERY SINGLE UPDATE ARTICLE & TIPES  </Fade>
+            </div>
             </div>
             <div className="bottom_blog_container mt-5">
-              <div className="row">
-                <div className="blog_boxes d-flex">
+              <div className="row blog_boxes">
                   <div className="col-md-4  blog_box">
-                 
                     <div className="bottom_blog_img">
                     <Fade direction="up"> <img src={BLOGIMG1} alt="" /></Fade> 
                     </div>
@@ -688,9 +768,9 @@ export const Home = () => {
                     </div>
                     </Fade>
                   </div>
-                </div>
+               
               </div>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -698,89 +778,12 @@ export const Home = () => {
 
       {/* Blogs end */}
 
-      {/* planning banner starts */}
-      <section className="planning_banner">
-        <div className="container">
-          <div className="row planning_banner_content_box">
-              <div className="col-md-9">
-                <div className="left_planning_banner_content">
-                <Fade direction="up">  <h3>Full Truckload Planning Reimagined Experts in Security Dynamic Load Planning & Dispatching</h3> </Fade>
-                </div>
-              </div>
-              <div className="col-md-3 button_box">
-                <div className="right_planning_banner_content">
-                <Fade direction="up" delay={300}> <Link className="lets_meet_us_button">Let's meet us </Link> </Fade>
-                </div>
-              </div>
-          </div>
-
-          
-        </div>
-      </section>
-
-      {/* planning banner ends */}
+    
 
 
       
 
-      {/* Happy Clients Starts */}
-      <section className="happy_client_container">
-        <div className="container">
-          <div className="row">
-            <div className="happy_client_bg_img">
-              <img src="" alt="" />
-            </div>
-
-            <div className="happy_client_content text-center">
-            <div className="happy_client_top_heading">
-              <h5 className="client_heading">
-                Popular Partners
-              </h5>
-              <p className="sub_heading">WE HAVE  <CountUp
-                      start={0}
-                      end={2345}
-                      duration={3}
-                      separator=""
-                      decimal=","
-                      suffix=" +"
-                      
-                    ></CountUp>  WORLD WIDE CLIENTS </p>
-            </div>
-
-            <div className="happy_client_bottom_heading">
-            <div className="row">
-           
-    <Tabs
-     defaultActiveKey="Domestic"
-     id="uncontrolled-tab-example"
-      className="mb-3 client_tabs"
       
-    >
-    {/* <div className="international"> */}
-      <Tab   eventKey="home" title={ <span className="d-flex"> <p style={{fontSize:'25px'}}><GiCommercialAirplane/> </p>&nbsp; &nbsp;<p style={{fontSize:'22px', marginTop:'3px'}}>International </p> </span>}>
-        Tab content for Home
-      </Tab>
-      {/* </div> */}
-      <Tab eventKey="profile" title={<span className="d-flex"> <p style={{fontSize:'25px'}}><FaHome/> </p>&nbsp; <p style={{fontSize:'22px',marginTop:'3px'}}>Domestic </p></span>}>
-        Tab content for Profile
-      </Tab>
-      <Tab   eventKey="other" title={ <span className="d-flex"> <p style={{fontSize:'25px'}}><GiCommercialAirplane/> </p>&nbsp; &nbsp;<p style={{fontSize:'22px', marginTop:'3px'}}>Business </p> </span>}>
-        Tab content for someother
-      </Tab>
-   
-    </Tabs>
-
-
-            </div>
-
-            </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Happy client end */}
     </>
   );
 };

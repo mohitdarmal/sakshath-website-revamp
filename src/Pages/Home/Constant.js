@@ -32,3 +32,8 @@ export const HAPPYICON=require("../../Assets/images/customer-satisfaction.png");
 
 export const BLOGIMG1=require("../../Assets/images/blog_img1.jpg");
 export const BLOGCPROFILE=require("../../Assets/images/blog_cust_profile.png");
+
+// ISO Certificate
+export const ISO_27001=require("../../Assets/images/iso_27001.jpg");
+export const ISO_9001=require("../../Assets/images/ISO_9001.jpg");
+export const GREAT_PLACE_WORK = require("../../Assets/images/great_place_worl_logo.jpg");

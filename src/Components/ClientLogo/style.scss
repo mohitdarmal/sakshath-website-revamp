@@ -1,0 +1,79 @@
+@import "../../Assets/saas/Main.scss";
+
+.popular_clients {
+  background-image: url("../../Assets/images/our_client_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  background-attachment: fixed;
+}
+
+.popular_partner_heading {
+  color: black;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: $rajdhani_font;
+  line-height: 48px;
+
+  span {
+    color: #32a4d5;
+  }
+}
+
+.popular_client_tab_sec {
+  background-color: $white_color;
+  padding: 20px 20px 40px;
+  box-shadow: 0px 2px 10px #00000021;
+  text-align: center;
+}
+.popular_client_tab_sec .nav-tabs .nav-link p {
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+.popular_client_tab_sec .nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 2px solid #33a3d3;
+  border-radius: 0;
+}
+.popular_client_tab_sec .nav-tabs .nav-link.active svg,
+.popular_client_tab_sec .nav-tabs .nav-link.active p {
+  color: $ball_blue_color;
+  font-weight: bold;
+}
+.popular_client_tab_sec .nav-tabs .nav-link:hover {
+  border-bottom: 2px solid #33a3d3 !important;
+  font-weight: bold;
+}
+.popular_client_tab_sec .nav-tabs .nav-link:hover svg,
+.popular_client_tab_sec .nav-tabs .nav-link:hover p {
+  color: $ball_blue_color !important;
+  font-weight: bold;
+}
+
+.popular_client_tab_sec .nav-tabs .nav-link:hover,
+.popular_client_tab_sec .nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+}
+
+.client_tabs {
+  text-align: center;
+  color: $white_color;
+  justify-content: center;
+  border-color: #f0f0f0;
+  outline: none;
+  margin-bottom: 40px !important;
+}
+
+.popular_client_tab_sec {
+  margin-top: 30px;
+  img {
+    opacity: 0.7;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  img:hover {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
