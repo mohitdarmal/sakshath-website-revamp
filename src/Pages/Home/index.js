@@ -27,7 +27,6 @@ import { GiCommercialAirplane } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
 
 import {Tabs,Tab} from 'react-bootstrap';
-
 import CountUp from "react-countup";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Heading from "../../Components/Utils/Heading";
@@ -40,8 +39,10 @@ import "swiper/css/pagination";
 import "swiper/css/effect-cube";
 import { Parallax, Pagination, Navigation, Autoplay } from "swiper/modules";
 import { Button } from "bootstrap";
+import { Fade } from "react-awesome-reveal";
 
 export const Home = () => {
+
   return (
     <>
       {/* <div>
@@ -52,7 +53,7 @@ export const Home = () => {
           cssMode={true}
           // autoplay={true}
           autoplay={{
-            delay: 3000, // Delay between slides in milliseconds (adjust as needed)
+            delay: 6000, // Delay between slides in milliseconds (adjust as needed)
             disableOnInteraction: false, // Allow autoplay to continue after user interaction
           }}
           navigation={true}
@@ -62,6 +63,7 @@ export const Home = () => {
           modules={[Pagination, Navigation, Autoplay]}
           className="mySwiper"
         >
+
           <SwiperSlide>
             <div className="banner_box">
               <div className="banner_img">
@@ -69,30 +71,38 @@ export const Home = () => {
               </div>
               <div className="banner_caption_container">
                 <div className="banner_caption">
-                  <h6>Profesional IT Solution</h6>
-                  <h3>Transforming Ideas into Intelligent Solutions </h3>
+                  <h6><Fade direction="up" delay={150}>Profesional IT Solution </Fade></h6>
+                  <h3><Fade direction="up" delay={300}>Transforming Ideas into Intelligent Solutions </Fade></h3>
+                  <Fade direction="up" delay={500}>
                   <div>
                     <Link to="/">Get Started Now</Link>{" "}
                     <Link to="/">Explore More</Link>
                   </div>
+                  </Fade>
                 </div>
+              
               </div>
             </div>
           </SwiperSlide>
+         
           <SwiperSlide>
             <div className="banner_box">
               <div className="banner_img">
                 <img className="img-fluid" src={BANNER1} />
               </div>
               <div className="banner_caption_container">
-                <div className="banner_caption">
-                  <h6>Profesional IT Solution</h6>
-                  <h3>Elevating Experiences, One Line at a Time</h3>
+             
+              <div className="banner_caption">
+                  <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
+                  <h3><Fade direction="up" delay={1200}>Elevating Experiences, One Line at a Time </Fade></h3>
+                  <Fade direction="up" delay={800}>
                   <div>
                     <Link to="/">Get Started Now</Link>{" "}
                     <Link to="/">Explore More</Link>
                   </div>
+                  </Fade>
                 </div>
+                
               </div>
             </div>
           </SwiperSlide>
@@ -104,13 +114,13 @@ export const Home = () => {
           <div className="container">
             <div className="row ">
               <div className="top_content text-center mt-4">
-                <h6>GREAT JOURNEY FOR IT SOLUTIONS</h6>
-                {/* <input onChange={onChangeValue} /> */}
-                <h3>SPECIALIZES IN BUILDING SERVICES</h3>
+              <Fade direction="up"><h6>GREAT JOURNEY FOR IT SOLUTIONS</h6></Fade>
+              <Fade direction="up" delay={20}><h3>SPECIALIZES IN BUILDING SERVICES</h3></Fade>
               </div>
             </div>
             <div className="row mt-4 pt-2">
               <div className="col-md-4">
+              <Fade direction="up" delay={10}>
                 <div className="d-flex ">
                   <div className="icon">
                     <img src={P_IMG} alt="" />
@@ -125,9 +135,11 @@ export const Home = () => {
                     </p>
                   </div>
                 </div>
+                </Fade>
               </div>
 
               <div className="col-md-4 d-flex ">
+              <Fade direction="up" delay={200}>
                 <div className="d-flex ">
                   <div className="icon">
                     <img src={TEAM_IMG} alt="" />
@@ -142,9 +154,11 @@ export const Home = () => {
                     </p>
                   </div>
                 </div>
+                </Fade>
               </div>
 
               <div className="col-md-4 d-flex ">
+              <Fade direction="up" delay={400} >
                 <div className="d-flex ">
                   <div className="icon">
                     <img src={IT_IMG} alt="" />
@@ -160,6 +174,7 @@ export const Home = () => {
                     </p>
                   </div>
                 </div>
+                </Fade>
               </div>
             </div>
           </div>
@@ -172,17 +187,20 @@ export const Home = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="image-box ">
+              <Fade direction="left" delay={10}>
                 <img className="img-fluid" src={WHO_WE_ARE_IMG} alt="" />
+                </Fade>
               </div>
             </div>
             <div className="col-md-1"></div>
             <div className="col-md-5">
+           
               <div className="text_wrapper">
                 <div className="title_area">
-                  <span className="title">Who we are</span>
-                  <h2 className="subtitle">
+                <Fade direction="up"><span className="title">Who we are</span> </Fade>  
+               <h2 className="subtitle">
                     The Enterprise Productivity Platform For Complex Data
-                  </h2>
+                  </h2>  
                 </div>
                 <p>
                   Sed perspiciatis unde omnis iste natus voluptate accusantiuy
@@ -192,8 +210,9 @@ export const Home = () => {
                   odit aut fugit sed quia consequuntur magni dolores eos ratione
                   volupta seque nesciunt porro quisquam doloremdolor site
                 </p>
-                <SlideAnimationButton btnName="LEARN MORE ABOUT US" />
+                <Fade direction="up"> <SlideAnimationButton btnName="LEARN MORE ABOUT US" /> </Fade>
               </div>
+            
             </div>
           </div>
         </div>
@@ -206,17 +225,19 @@ export const Home = () => {
           <div className="row justify-content-center">
             <div className="text-center">
               <div className="title">
-                <Maintitle mainTitle="what we do " />
-                <Heading
+              <Fade direction="up"> <Maintitle mainTitle="what we do " /> </Fade>
+              <Fade direction="up" delay={100}> <Heading
                   heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE"
                   uppercase="text-uppercase"
                 ></Heading>
+                </Fade>
               </div>
             </div>
           </div>
           <div className="row mt-5 ">
             <div className="col-md-3 d-flex ">
               <div className="what_we_do_box">
+              <Fade direction="up"> 
                 <div className="icon_box">
                   <img src={ICON_1} alt="" />
                 </div>
@@ -227,10 +248,13 @@ export const Home = () => {
                     accusanti remqua
                   </p>
                 </div>
+                </Fade>
               </div>
             </div>
+            
             <div className="col-md-3 d-flex ">
               <div className="what_we_do_box">
+              <Fade direction="up" delay={200}> 
                 <div className=" what_ we_do_icon_box">
                   <img src={ICON_2} alt="" />
                 </div>
@@ -241,11 +265,13 @@ export const Home = () => {
                     accusanti remqua
                   </p>
                 </div>
+                </Fade>
               </div>
             </div>
 
             <div className="col-md-3 d-flex ">
               <div className="what_we_do_box">
+              <Fade direction="up" delay={400}> 
                 <div className="icon_box">
                   <img src={ICON_3} alt="" />
                 </div>
@@ -258,11 +284,13 @@ export const Home = () => {
                     accusanti remqua
                   </p>
                 </div>
+                </Fade>
               </div>
             </div>
 
             <div className="col-md-3 d-flex ">
               <div className="what_we_do_box">
+              <Fade direction="up" delay={600}> 
                 <div className="icon_box">
                   <img src={ICON_4} alt="" />
                 </div>
@@ -275,6 +303,7 @@ export const Home = () => {
                     accusanti remqua
                   </p>
                 </div>
+                </Fade>
               </div>
             </div>
           </div>
@@ -287,15 +316,15 @@ export const Home = () => {
           <div className="row ">
             {/* Popuplar Princial Left Side Column Start */}
             <div className="col-md-5 mt-4 left_home_principle">
-              <span>Our Popular Principle</span>
-              <h4> Best Professional IT Solutiuons</h4>
-              <p>
+            <Fade direction="up" >   <span>Our Popular Principle</span> </Fade>
+            <Fade direction="up" >  <h4> Best Professional IT Solutiuons</h4> </Fade>
+             <Fade direction="up" >  <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quaerat nihil aliquid, architecto assumenda alias vitae
                 dignissimos ab ea id tempora quibusdam maiores odit, soluta
                 doloremque accusamus distinctio aperiam sed quia!
-              </p>
-              <SlideAnimationButton btnName="Read More" />
+              </p> </Fade>
+              <Fade direction="up">  <SlideAnimationButton btnName="Read More" /> </Fade>
             </div>
             {/* Popuplar Princial Left Side Column End */}
 
@@ -305,6 +334,7 @@ export const Home = () => {
               <div className="row">
                 <div className="col-md-6 right_home_principle_left_content_box">
                   <div className="d-flex">
+                  <Fade direction="up" >
                     <div className="right_home_principle_img">
                       <img src={POPULARWEB} alt="" /> &nbsp;
                     </div>
@@ -318,9 +348,11 @@ export const Home = () => {
                         Explicabo magni numquam saepe aperiam.
                       </p>
                     </div>
+                    </Fade>
                   </div>
 
                   <div className="d-flex">
+                  <Fade direction="up" >
                     <div className="right_home_principle_img">
                       <img src={POPULARANALYTICS} alt="" /> &nbsp;
                     </div>
@@ -332,11 +364,13 @@ export const Home = () => {
                         Explicabo magni numquam saepe aperiam.
                       </p>
                     </div>
+                    </Fade>
                   </div>
                 </div>
 
                 <div className="col-md-6 right_home_principle_right_content_box">
                   <div className="d-flex">
+                  <Fade direction="up" delay={100}> 
                     <div className="right_home_principle_img">
                       <img src={POPULAUTOMATION} alt="" /> &nbsp;
                     </div>
@@ -348,9 +382,11 @@ export const Home = () => {
                         Explicabo magni numquam saepe aperiam.
                       </p>
                     </div>
+                    </Fade>
                   </div>
 
                   <div className="d-flex">
+                  <Fade direction="up" delay={100}> 
                     <div className="right_home_principle_img">
                       <img src={POPULARBANK} alt="" /> &nbsp;
                     </div>
@@ -364,6 +400,7 @@ export const Home = () => {
                         Explicabo magni numquam saepe aperiam.
                       </p>
                     </div>
+                    </Fade>
                   </div>
                 </div>
               </div>
@@ -381,6 +418,7 @@ export const Home = () => {
 
             <div className="col-md-3">
               <div className="conter_up_item">
+              <Fade direction="up"> 
                 <div className="happy_client_icon">
                   <img src={HAPPYICON} alt="" />
                 </div>
@@ -391,20 +429,21 @@ export const Home = () => {
                       end={500}
                       duration={3}
                       separator=""
-                      // decimals={4}
                       decimal=","
-                      //  prefix="+ "
                       suffix=" +"
-                      // onEnd={() => console.log('Ended! 👏')}
-                      // onStart={() => console.log('Started! 💨')}
+                      enableScrollSpy={true}
+                      useEasing={true}
+                      scrollSpyOnce={true}
                     ></CountUp>
                   </h2>
                   <h5>Happy Client</h5>
                 </div>
+                </Fade>
               </div>
             </div>
             <div className="col-md-3">
               <div className="conter_up_item">
+              <Fade direction="up" delay={100}> 
                 <div className="happy_client_icon">
                   <img src={HAPPYICON} alt="" />
                 </div>
@@ -415,20 +454,21 @@ export const Home = () => {
                       end={400}
                       duration={3}
                       separator=""
-                      // decimals={4}
                       decimal=","
-                      //  prefix="+ "
                       suffix=" +"
-                      // onEnd={() => console.log('Ended! 👏')}
-                      // onStart={() => console.log('Started! 💨')}
+                      enableScrollSpy={true}
+                      useEasing={true}
+                      scrollSpyOnce={true}
                     ></CountUp>
                   </h2>
                   <h5>Professional work</h5>
                 </div>
+                </Fade>
               </div>
             </div>
             <div className="col-md-3">
               <div className="conter_up_item">
+              <Fade direction="up" delay={300}> 
                 <div className="happy_client_icon">
                   <img src={HAPPYICON} alt="" />
                 </div>
@@ -439,20 +479,21 @@ export const Home = () => {
                       end={600}
                       duration={3}
                       separator=""
-                      // decimals={4}
                       decimal=","
-                      //  prefix="+ "
                       suffix=" +"
-                      // onEnd={() => console.log('Ended! 👏')}
-                      // onStart={() => console.log('Started! 💨')}
+                      enableScrollSpy={true}
+                      useEasing={true}
+                      scrollSpyOnce={true}
                     ></CountUp>
                   </h2>
                   <h5>Active Countries</h5>
                 </div>
+                </Fade>
               </div>
             </div>
             <div className="col-md-3">
               <div className="conter_up_item">
+              <Fade direction="up" delay={500}> 
                 <div className="happy_client_icon">
                   <img src={HAPPYICON} alt="" />
                 </div>
@@ -463,16 +504,16 @@ export const Home = () => {
                       end={1000}
                       duration={3}
                       separator=""
-                      // decimals={4}
                       decimal=","
-                      //  prefix="+ "
                       suffix=" +"
-                      // onEnd={() => console.log('Ended! 👏')}
-                      // onStart={() => console.log('Started! 💨')}
+                      enableScrollSpy={true}
+                      useEasing={true}
+                      scrollSpyOnce={true}
                     ></CountUp>
                   </h2>
                   <h5>Projects</h5>
                 </div>
+                </Fade>
               </div>
             </div>
             {/* <div className="col-md-3">ce</div>
@@ -491,18 +532,21 @@ export const Home = () => {
         <div className="container">
           <div className="row">
             <div className="top_blog_container text-center">
-              <h4 className="text-decoration-underline top_blog_heading">
+            <Fade direction="up">  <h4 className="text-decoration-underline top_blog_heading">
                 Latest News and Blogs
               </h4>
-              <span>GET EVERY SINGLE UPDATE ARTICLE & TIPES</span>
+              </Fade>
+              <Fade direction="up" delay={100}>  <span>GET EVERY SINGLE UPDATE ARTICLE & TIPES</span> </Fade>
             </div>
             <div className="bottom_blog_container mt-5">
               <div className="row">
                 <div className="blog_boxes d-flex">
                   <div className="col-md-4  blog_box">
+                 
                     <div className="bottom_blog_img">
-                      <img src={BLOGIMG1} alt="" />
+                    <Fade direction="up"> <img src={BLOGIMG1} alt="" /></Fade> 
                     </div>
+                    <Fade direction="up">
                     <div className="blog_content">
                       <div className="cust_profile">
                         <div className="blog_cutomer_profile d-flex justify-content-end ">
@@ -544,21 +588,24 @@ export const Home = () => {
                         <SlideAnimationButton btnName="READ MORE" />
                       </div>
                     </div>
+                    </Fade>
                   </div>
                   <div className="col-md-4  blog_box">
+                  
                     <div className="bottom_blog_img">
-                      <img src={BLOGIMG1} alt="" />
+                    <Fade direction="up">  <img src={BLOGIMG1} alt="" /></Fade>
                     </div>
+                    <Fade direction="up" delay={200}>
                     <div className="blog_content">
                       <div className="cust_profile">
                         <div className="blog_cutomer_profile d-flex justify-content-end ">
                           <div className="customer_img ">
-                            <img
+                           <img
                               src={BLOGCPROFILE}
                               alt=""
                               className="cust rounded-circle"
-                            />
-                          </div>{" "}
+                            /> 
+                          </div> 
                           &nbsp; &nbsp;
                           <p>Amar Singh</p>
                         </div>
@@ -590,20 +637,23 @@ export const Home = () => {
                         <SlideAnimationButton btnName="READ MORE" />
                       </div>
                     </div>
+                    </Fade>
                   </div>
                   <div className="col-md-4  blog_box">
+                 
                     <div className="bottom_blog_img">
-                      <img src={BLOGIMG1} alt="" />
+                    <Fade direction="up"> <img src={BLOGIMG1} alt="" /> </Fade>
                     </div>
+                    <Fade direction="up" delay={400}>
                     <div className="blog_content">
                       <div className="cust_profile">
                         <div className="blog_cutomer_profile d-flex justify-content-end ">
                           <div className="customer_img ">
-                            <img
+                          <Fade direction="up">  <img
                               src={BLOGCPROFILE}
                               alt=""
                               className="cust rounded-circle"
-                            />
+                            /> </Fade>
                           </div>{" "}
                           &nbsp; &nbsp;
                           <p>Senthil Palanisamy</p>
@@ -636,6 +686,7 @@ export const Home = () => {
                         <SlideAnimationButton btnName="READ MORE" />
                       </div>
                     </div>
+                    </Fade>
                   </div>
                 </div>
               </div>
@@ -653,12 +704,12 @@ export const Home = () => {
           <div className="row planning_banner_content_box">
               <div className="col-md-9">
                 <div className="left_planning_banner_content">
-                  <h3>Full Truckload Planning Reimagined Experts in Security Dynamic Load Planning & Dispatching</h3>
+                <Fade direction="up">  <h3>Full Truckload Planning Reimagined Experts in Security Dynamic Load Planning & Dispatching</h3> </Fade>
                 </div>
               </div>
               <div className="col-md-3 button_box">
                 <div className="right_planning_banner_content">
-                  <Link className="lets_meet_us_button">Let's meet us </Link>
+                <Fade direction="up" delay={300}> <Link className="lets_meet_us_button">Let's meet us </Link> </Fade>
                 </div>
               </div>
           </div>
@@ -690,9 +741,7 @@ export const Home = () => {
                       end={2345}
                       duration={3}
                       separator=""
-                      // decimals={4}
                       decimal=","
-                      //  prefix="+ "
                       suffix=" +"
                       
                     ></CountUp>  WORLD WIDE CLIENTS </p>
