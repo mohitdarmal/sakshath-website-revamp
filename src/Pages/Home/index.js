@@ -400,7 +400,7 @@ export const Home = () => {
                 dignissimos ab ea id tempora quibusdam maiores odit, soluta
                 doloremque accusamus distinctio aperiam sed quia!
               </p> </Fade>
-              <Fade direction="up">  <SlideAnimationButton btnName="Read More" /> </Fade>
+              <Fade direction="up"> <div className="our_principal_btn"> <SlideAnimationButton btnName="Read More" /> </div></Fade>
             </div>
             {/* Popuplar Princial Left Side Column End */}
 
