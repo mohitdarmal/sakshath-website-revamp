@@ -17,7 +17,7 @@ const Service = () => {
                 <div className="col-md-7 experience_section_textarea">
                     <div className="experience_text">
                         <div className="upper_textbox">
-                            <div className="upper_left_textbox mb-45">25</div>
+                            <div className="upper_left_textbox mb-45">13</div>
                             <div className="upper_right_textbox mb-45">
                                 <span>Years Of Experience</span>
                                 <h2>Professional IT Solutions for Business Success</h2>
