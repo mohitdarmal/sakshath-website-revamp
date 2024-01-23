@@ -12,8 +12,8 @@ const Faq = () => {
       <section className="faq_section">
         <div className="container">
           <div className="row">
-            <div className="col-md-2"></div>
-            <div className="col-md-8 faq_content_box">
+            <div className="col-md-1"></div>
+            <div className="col-md-10 faq_content_box">
               <div className="faq_content">
               <div className="text-center faq_heading">
               <SubTitle SubTitle="Do you have Question?" />
@@ -93,7 +93,7 @@ const Faq = () => {
                 </Accordion>
               </div>
             </div>
-            <div className="col-md-2"></div>
+            <div className="col-md-1"></div>
           </div>
         </div>
       </section>
