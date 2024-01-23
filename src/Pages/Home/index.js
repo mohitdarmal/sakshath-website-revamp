@@ -173,6 +173,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      {/* Specilazation Ends */}
 
       {/* SECTION - "WHO WE ARE" */}
       <section className="who_we_are">
@@ -208,6 +209,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      {/* Who we are ends */}
 
       {/* @@@@@@@ WHAT WE DO @@@@@@@@@ */}
 
@@ -599,9 +601,7 @@ export const Home = () => {
                 </Fade>
               </div>
             </div>
-            {/* <div className="col-md-3">ce</div>
-            <div className="col-md-3">ce</div>
-            <div className="col-md-3">ce</div> */}
+          
           </div>
         </div>
         {/* </div> */}

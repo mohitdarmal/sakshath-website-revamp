@@ -59,8 +59,8 @@ const Footer = () => {
                 <div className="subscription_mailaddress_form">
                   <div className="form_grp">
                     <form onSubmit={handleSubmit} className="form_container">
-                      <div className="mb-3">
-                        <label htmlFor="email" className="form-label"></label>
+                      <div className="input_form">
+                        {/* <label htmlFor="email" className="form-label">Enter Email Address</label> */}
                         <input
                           type="email"
                           className="form-control"

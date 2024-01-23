@@ -174,8 +174,8 @@ footer h5{
         .form_container{
             display:flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 2px;}
+      
+            gap: 165px;}
 
             
 
@@ -235,8 +235,14 @@ footer h5{
 //     font-weight: 550;
 //     background: #33a3d2;
   
-    
+.form_container{
+    margin-top: -1%;
 
+}
 
+.input_form input{
+    width: 200%;
+    padding: 25px 10px;
+}
     
     
