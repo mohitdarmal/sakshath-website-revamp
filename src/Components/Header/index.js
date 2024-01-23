@@ -246,7 +246,7 @@ const Header = () => {
                 </li>
               </ul>
 
-              <div className="d-flex header_right">
+              <div className="d-flex align-items-center header_right">
                 <div className="dropdown">
                   <span className="header_translator">
                     <HiOutlineGlobeAlt /> English

@@ -36,6 +36,7 @@ import "swiper/css/effect-cube";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { Fade } from "react-awesome-reveal";
 import ClientLogo from "../../Components/ClientLogo";
+import Faq from "../../Components/Faq";
 
 export const Home = () => {
 
@@ -43,14 +44,11 @@ export const Home = () => {
     <>
       <section className="banner_sec">
         <Swiper
-          cssMode={true}
-          // autoplay={true}
           autoplay={{
             delay: 6000, // Delay between slides in milliseconds (adjust as needed)
             disableOnInteraction: true, // Allow autoplay to continue after user interaction
           }}
           navigation={true}
-          mousewheel={true}
           keyboard={true}
           loop={true}
           modules={[Pagination, Navigation, Autoplay]}
@@ -73,7 +71,6 @@ export const Home = () => {
                   </div>
                   </Fade>
                 </div>
-              
               </div>
             </div>
           </SwiperSlide>
@@ -107,13 +104,13 @@ export const Home = () => {
           <div className="container">
             <div className="row ">
               <div className="top_content text-center mt-4">
-              <Fade direction="up"><SubTitle SubTitle="Great Journey for it solutions" /></Fade>
-              <Fade direction="up" delay={20}><Heading heading="Specializes in Building Services" uppercase="text-uppercase" />   </Fade>
+              <Fade direction="up" triggerOnce><SubTitle SubTitle="Great Journey for it solutions" /></Fade>
+              <Fade direction="up" delay={20} triggerOnce><Heading heading="Specializes in Building Services" uppercase="text-uppercase" />   </Fade>
               </div>
             </div>
             <div className="row mt-4 pt-2">
               <div className="col-md-4">
-              <Fade direction="up" delay={10}>
+              <Fade direction="up" delay={10} triggerOnce>
                 <div className="d-flex ">
                   <div className="icon">
                     <img src={P_IMG} alt="" />
@@ -132,7 +129,7 @@ export const Home = () => {
               </div>
 
               <div className="col-md-4 d-flex ">
-              <Fade direction="up" delay={200}>
+              <Fade direction="up" delay={200} triggerOnce>
                 <div className="d-flex ">
                   <div className="icon">
                     <img src={TEAM_IMG} alt="" />
@@ -151,7 +148,7 @@ export const Home = () => {
               </div>
 
               <div className="col-md-4 d-flex ">
-              <Fade direction="up" delay={400} >
+              <Fade direction="up" delay={400} triggerOnce>
                 <div className="d-flex ">
                   <div className="icon">
                     <img src={IT_IMG} alt="" />
@@ -180,7 +177,7 @@ export const Home = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="image-box ">
-              <Fade direction="left" delay={10}>
+              <Fade direction="left" delay={10} triggerOnce>
                 <img className="img-fluid" src={WHO_WE_ARE_IMG} alt="" />
                 </Fade>
               </div>
@@ -217,8 +214,8 @@ export const Home = () => {
             <div className="col-md-6" >
             <div className="text-center">
               <div className="title">
-              <Fade direction="up"> <SubTitle SubTitle="what we do " /> </Fade>
-              <Fade direction="up" delay={100}> <Heading
+              <Fade direction="up" triggerOnce> <SubTitle SubTitle="what we do " /> </Fade>
+              <Fade direction="up" delay={100} triggerOnce> <Heading
                   heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE"
                   uppercase="text-uppercase"
                 /> 
@@ -230,7 +227,7 @@ export const Home = () => {
           <div className="row mt-5 ">
             <div className="col-md-3 d-flex ">
               <div className="what_we_do_box">
-              <Fade direction="up"> 
+              <Fade direction="up" triggerOnce> 
                 <div className="icon_box">
                   <img src={ICON_1} alt="" />
                 </div>
@@ -247,7 +244,7 @@ export const Home = () => {
             
             <div className="col-md-3 d-flex ">
               <div className="what_we_do_box">
-              <Fade direction="up" delay={200}> 
+              <Fade direction="up" delay={200} triggerOnce> 
                 <div className="icon_box">
                   <img src={ICON_2} alt="" />
                 </div>
@@ -264,7 +261,7 @@ export const Home = () => {
 
             <div className="col-md-3 d-flex ">
               <div className="what_we_do_box">
-              <Fade direction="up" delay={400}> 
+              <Fade direction="up" delay={400} triggerOnce> 
                 <div className="icon_box">
                   <img src={ICON_3} alt="" />
                 </div>
@@ -283,7 +280,7 @@ export const Home = () => {
 
             <div className="col-md-3 d-flex ">
               <div className="what_we_do_box">
-              <Fade direction="up" delay={600}> 
+              <Fade direction="up" delay={600} triggerOnce> 
                 <div className="icon_box">
                   <img src={ICON_4} alt="" />
                 </div>
@@ -311,12 +308,12 @@ export const Home = () => {
           <div className="row planning_banner_content_box align-items-center">
               <div className="col-md-9">
                 <div className="left_planning_banner_content">
-                <Fade direction="up">  <h3>Full Truckload Planning Reimagined Experts in Security Dynamic Load Planning & Dispatching</h3> </Fade>
+                <Fade direction="up" triggerOnce>  <h3>Full Truckload Planning Reimagined Experts in Security Dynamic Load Planning & Dispatching</h3> </Fade>
                 </div>
               </div>
               <div className="col-md-3 button_box">
                 <div className="right_planning_banner_content">
-                <Fade direction="up" delay={300}> <Link className="lets_meet_us_button">Let's meet us </Link> </Fade>
+                <Fade direction="up" delay={300} triggerOnce> <Link className="lets_meet_us_button">Let's meet us </Link> </Fade>
                 </div>
               </div>
           </div>
@@ -331,11 +328,11 @@ export const Home = () => {
         <div className="container">
 <div className="row">
 <div className="col-md-6 mb-4 offset-md-3 text-center">
-              <Fade direction="up"> <Heading
+              <Fade direction="up" triggerOnce> <Heading
                   heading="iso certificates"
                   uppercase="text-uppercase"
                 /> </Fade> 
-               <Fade direction="up" delay={100}> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p> </Fade>
+               <Fade direction="up" delay={100} triggerOnce> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p> </Fade>
                 </div>
 </div>
 
@@ -349,25 +346,25 @@ export const Home = () => {
               <div className="row text-center iso_logo">
            
               <div className="col mb-4">
-              <Fade direction="up" >   <div>
+              <Fade direction="up" triggerOnce >   <div>
                       <img src={ISO_27001} style={{width:150}} />
                     </div>
                     </Fade>
                   </div>
                   <div className="col">
-                  <Fade direction="up" delay={100}> <div>
+                  <Fade direction="up" triggerOnce delay={100}> <div>
                     <img src={GREAT_PLACE_WORK} style={{width:150}} /> 
                   </div>
                   </Fade>
                   </div>
                   <div className="col">
-                  <Fade direction="up" delay={100}> <div>
+                  <Fade direction="up" triggerOnce delay={100}> <div>
                     <img src={ISO_27001} style={{width:150}} /> 
                   </div>
                   </Fade>
                   </div>
                   <div className="col">
-                  <Fade direction="up" delay={100}> <div>
+                  <Fade direction="up" triggerOnce delay={100}> <div>
                     <img src={GREAT_PLACE_WORK} style={{width:150}} /> 
                   </div>
                   </Fade>
@@ -392,15 +389,15 @@ export const Home = () => {
           <div className="row ">
             {/* Popuplar Princial Left Side Column Start */}
             <div className="col-md-5 mt-4 left_home_principle">
-            <Fade direction="up"><SubTitle SubTitle="Our Popular Principle" /> </Fade>
-            <Fade direction="up"> <Heading heading="Best Professional IT Solutiuons" uppercase="text-uppercase" />  </Fade>
-             <Fade direction="up">  <p>
+            <Fade direction="up" triggerOnce><SubTitle SubTitle="Our Popular Principle" /> </Fade>
+            <Fade direction="up" triggerOnce> <Heading heading="Best Professional IT Solutiuons" uppercase="text-uppercase" />  </Fade>
+             <Fade direction="up" triggerOnce>  <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quaerat nihil aliquid, architecto assumenda alias vitae
                 dignissimos ab ea id tempora quibusdam maiores odit, soluta
                 doloremque accusamus distinctio aperiam sed quia!
               </p> </Fade>
-              <Fade direction="up"> <div className="our_principal_btn"> <SlideAnimationButton btnName="Read More" /> </div></Fade>
+              <Fade direction="up" triggerOnce> <div className="our_principal_btn"> <SlideAnimationButton btnName="Read More" /> </div></Fade>
             </div>
             {/* Popuplar Princial Left Side Column End */}
 
@@ -410,7 +407,7 @@ export const Home = () => {
               <div className="row">
                 <div className="col-md-6 right_home_principle_left_content_box">
                   <div className="d-flex">
-                  <Fade direction="up" >
+                  <Fade direction="up" triggerOnce >
                     <div className="right_home_principle_img">
                       <img src={POPULARWEB} alt="" /> &nbsp;
                     </div>
@@ -428,7 +425,7 @@ export const Home = () => {
                   </div>
 
                   <div className="d-flex">
-                  <Fade direction="up" >
+                  <Fade direction="up" triggerOnce >
                     <div className="right_home_principle_img">
                       <img src={POPULARANALYTICS} alt="" /> &nbsp;
                     </div>
@@ -446,7 +443,7 @@ export const Home = () => {
 
                 <div className="col-md-6 right_home_principle_right_content_box">
                   <div className="d-flex">
-                  <Fade direction="up" delay={100}> 
+                  <Fade direction="up" delay={100} triggerOnce> 
                     <div className="right_home_principle_img">
                       <img src={POPULAUTOMATION} alt="" /> &nbsp;
                     </div>
@@ -462,7 +459,7 @@ export const Home = () => {
                   </div>
 
                   <div className="d-flex">
-                  <Fade direction="up" delay={100}> 
+                  <Fade direction="up" delay={100} triggerOnce> 
                     <div className="right_home_principle_img">
                       <img src={POPULARBANK} alt="" /> &nbsp;
                     </div>
@@ -501,7 +498,7 @@ export const Home = () => {
 
             <div className="col-md-3">
               <div className="conter_up_item">
-              <Fade direction="up"> 
+              <Fade direction="up" triggerOnce> 
                 <div className="happy_client_icon">
                   <img src={HAPPYICON} alt="" />
                 </div>
@@ -526,7 +523,7 @@ export const Home = () => {
             </div>
             <div className="col-md-3">
               <div className="conter_up_item">
-              <Fade direction="up" delay={100}> 
+              <Fade direction="up" delay={100} triggerOnce> 
                 <div className="happy_client_icon">
                   <img src={HAPPYICON} alt="" />
                 </div>
@@ -551,7 +548,7 @@ export const Home = () => {
             </div>
             <div className="col-md-3">
               <div className="conter_up_item">
-              <Fade direction="up" delay={300}> 
+              <Fade direction="up" delay={300} triggerOnce> 
                 <div className="happy_client_icon">
                   <img src={HAPPYICON} alt="" />
                 </div>
@@ -576,7 +573,7 @@ export const Home = () => {
             </div>
             <div className="col-md-3">
               <div className="conter_up_item">
-              <Fade direction="up" delay={500}> 
+              <Fade direction="up" delay={500} triggerOnce> 
                 <div className="happy_client_icon">
                   <img src={HAPPYICON} alt="" />
                 </div>
@@ -615,18 +612,18 @@ export const Home = () => {
         <div className="container">
           <div className="row">
             <div className="top_blog_container text-center">
-            <Fade direction="up"> <SubTitle SubTitle="Latest News and Blogs" /> 
+            <Fade direction="up" triggerOnce> <SubTitle SubTitle="Latest News and Blogs" /> 
               </Fade>
-              <Fade direction="up" delay={100}> <Heading heading="Get every single update article & tips" uppercase="text-uppercase" />  GET EVERY SINGLE UPDATE ARTICLE & TIPES  </Fade>
+              <Fade direction="up" delay={100} triggerOnce> <Heading heading="Get every single update article & tips" uppercase="text-uppercase" />  GET EVERY SINGLE UPDATE ARTICLE & TIPES  </Fade>
             </div>
             </div>
             <div className="bottom_blog_container mt-5">
               <div className="row blog_boxes">
                   <div className="col-md-4  blog_box">
                     <div className="bottom_blog_img">
-                    <Fade direction="up"> <img src={BLOGIMG1} alt="" /></Fade> 
+                    <Fade direction="up" triggerOnce> <img src={BLOGIMG1} alt="" /></Fade> 
                     </div>
-                    <Fade direction="up">
+                    <Fade direction="up" triggerOnce>
                     <div className="blog_content">
                       <div className="cust_profile">
                         <div className="blog_cutomer_profile d-flex justify-content-end ">
@@ -673,9 +670,9 @@ export const Home = () => {
                   <div className="col-md-4  blog_box">
                   
                     <div className="bottom_blog_img">
-                    <Fade direction="up">  <img src={BLOGIMG1} alt="" /></Fade>
+                    <Fade direction="up" triggerOnce>  <img src={BLOGIMG1} alt="" /></Fade>
                     </div>
-                    <Fade direction="up" delay={200}>
+                    <Fade direction="up" delay={200} triggerOnce>
                     <div className="blog_content">
                       <div className="cust_profile">
                         <div className="blog_cutomer_profile d-flex justify-content-end ">
@@ -722,14 +719,14 @@ export const Home = () => {
                   <div className="col-md-4  blog_box">
                  
                     <div className="bottom_blog_img">
-                    <Fade direction="up"> <img src={BLOGIMG1} alt="" /> </Fade>
+                    <Fade direction="up" triggerOnce> <img src={BLOGIMG1} alt="" /> </Fade>
                     </div>
-                    <Fade direction="up" delay={400}>
+                    <Fade direction="up" delay={400} triggerOnce>
                     <div className="blog_content">
                       <div className="cust_profile">
                         <div className="blog_cutomer_profile d-flex justify-content-end ">
                           <div className="customer_img ">
-                          <Fade direction="up">  <img
+                          <Fade direction="up" triggerOnce>  <img
                               src={BLOGCPROFILE}
                               alt=""
                               className="cust rounded-circle"
@@ -779,9 +776,9 @@ export const Home = () => {
       {/* Blogs end */}
 
     
-
-
-      
+ {/* FAQ section start */}
+<Faq />
+  {/* FAQ section end */}     
 
       
     </>
