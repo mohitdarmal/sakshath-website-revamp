@@ -5,12 +5,13 @@ body {
   font-family:  $roboto_font;
 }
 
-p{font-size: $para_text; color: $para_color;}
+p{font-size: $para_text; color: $para_color; line-height: 28px;}
 
-@media (min-width: 1200px){}
+@media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1190px !important;
 }
+}
 
-p{font-size: $para_text; color: $para_color; line-height: 30px;}
+ 
  
