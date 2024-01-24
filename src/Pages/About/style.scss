@@ -10,8 +10,15 @@
 .about_who_we_r_content{
     padding-right: 80px;
 }
+.about_who_we_r_content_right p{
+    padding-left: 0px;
+}
 .about_who_we_r_content p{
     text-align: start;
+}
+
+.who_we_are_img_bottom {
+    padding-right: 90px;
 }
 
 
@@ -65,15 +72,12 @@
     
   }
 
-  .form-control{
 
-    padding-top: 15px;
-    padding-bottom: 15px;
-    outline: none;
-    border: none;
-    border-style: none;
-  }
-  .form-control:focus{
-    box-shadow: none;
-  }
-//   contact ends
+//   contcat ends
+
+.contact_map_section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgb(233, 233, 234);
+
+}

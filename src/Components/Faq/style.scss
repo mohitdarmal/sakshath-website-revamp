@@ -1,0 +1,45 @@
+@import "../../Assets/saas/Main.scss";
+ 
+.faq_section{
+    // background-image: url("../../Assets/images/faq_bg_img.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.faq_content{
+    .accordion-item{
+        margin-bottom: 20px;
+    }
+    .accordion-body{
+        color: $para_color;
+        font-size: $para_text;
+    }
+    svg{
+        margin-right: 12px;
+    }
+}
+
+.faq_heading{
+    margin-bottom: 35px;
+}
+ 
+.accordion-button:not(.collapsed)::after{
+    filter: brightness(0) invert(1);
+}
+.faq_section button[aria-expanded="true"] {
+    background-color: $light_navy_blue;
+    color: $white_color;
+    font-family: $rajdhani_font;
+    font-weight: bold;
+    font-size: $font18;
+    margin: 0px;
+  }
+   .faq_section button[aria-expanded="false"] {
+        background-color: #f9f9f9;
+        margin: 0;
+        font-weight: 500;
+      }
+      .faq_section .accordion-item:not(:first-child) button[aria-expanded="false"]{border-top: 1px solid #dbdbdb;}
+      .faq_section button[aria-expanded="true"]:focus, .faq_section button[aria-expanded="false"]:focus{
+        box-shadow: none;
+    }

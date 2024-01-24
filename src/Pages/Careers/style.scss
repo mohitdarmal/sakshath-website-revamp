@@ -1,0 +1,67 @@
+
+@import '../../Assets/saas/Main.scss';
+
+.career_container{
+    p{
+        padding-top: 50px;
+        font-size: 18px;
+        font-family: rajdahni;
+    }
+}
+
+.career_mail_link
+{
+text-decoration: none;
+    font-size: 22px;
+    color: #24688f;
+
+}
+.career_mail_link:hover{
+    color:rgb(116, 116, 172);
+    text-decoration: underline;
+    
+}
+
+// .benifts_icons img :before{
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     background: #25678f;
+//     border-radius: 50%;
+//     padding: 14px 12px;
+    
+// }
+// .benfits_img img{
+//     mix-blend-mode: darken;
+// }
+
+.benfits{
+    padding-top:34px ;
+}
+
+.benfits_icon_img{
+    background: #33a3d3;
+    border-radius: 50%;
+    position: relative;
+}
+.benfits_icon_img::before{
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 50px;
+    background: rgb(127, 127, 185);
+    /* justify-content: center; */
+    left: 45px;
+    /* top: 0%; */
+    bottom: -50px;
+   
+
+
+}
+.benfits_icon_img img{
+
+
+    padding: 15px;
+    filter: brightness(0) invert(1);
+
+}

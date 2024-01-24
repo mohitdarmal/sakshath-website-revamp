@@ -7,7 +7,7 @@ import { BsEnvelope, BsTelephoneInbound } from "react-icons/bs";
 import { TfiLinkedin } from "react-icons/tfi";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
-import { LOGO } from "./Constant";
+import { INSTAGRAM_ICON, LINKEDIN_ICON, LOGO, YOUTUBE_ICON } from "./Constant";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 
@@ -59,7 +59,7 @@ const Header = () => {
                   target={"_blank"}
                 >
                   &nbsp;
-                  <TfiLinkedin />
+                  {/* <TfiLinkedin /> */} <img src={LINKEDIN_ICON} />
                 </Link>{" "}
                 &nbsp;
                 <Link
@@ -67,14 +67,14 @@ const Header = () => {
                   target={"_blank"}
                   rel="noopener"
                 >
-                  <RiInstagramFill />
+                  {/* <RiInstagramFill /> */} <img src={INSTAGRAM_ICON} />
                 </Link>{" "}
                 &nbsp;
                 <Link
                   to="https://www.youtube.com/watch?v=UHjZFuO8AYY"
                   target="_blank"
                 >
-                  <FaYoutube />
+                  {/* <FaYoutube /> */} <img src={YOUTUBE_ICON} />
                 </Link>{" "}
                 &nbsp;
               </span>
@@ -234,7 +234,7 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/careers" className="nav-link">
+                  <NavLink to="/career" className="nav-link">
                     Careers
                   </NavLink>
                 </li>
@@ -246,7 +246,7 @@ const Header = () => {
                 </li>
               </ul>
 
-              <div className="d-flex header_right">
+              <div className="d-flex align-items-center header_right">
                 <div className="dropdown">
                   <span className="header_translator">
                     <HiOutlineGlobeAlt /> English

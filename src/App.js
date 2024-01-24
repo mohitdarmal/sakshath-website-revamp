@@ -11,6 +11,7 @@ import Service from "./Pages/Service";
 import Home from "./Pages/Home";
 import { Helmet } from "react-helmet";
 import BankingSolution from "./Pages/BankingSolution";
+import Career from './Pages/Careers/index';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/banking-solution" element={<BankingSolution />} />
+          <Route path="/career" element={<Career/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
