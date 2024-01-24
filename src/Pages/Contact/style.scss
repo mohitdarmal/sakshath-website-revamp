@@ -1,0 +1,119 @@
+@import "../../Assets/saas/Main.scss";
+ 
+.contact_us{
+    .contact_us_box{
+        margin: 80px;
+        text-align: center;
+
+        .address_wrapper{
+            background-color: #f8f8f8;
+    padding: 80px 90px 10px; 
+
+    .address_wrapper_box{
+        display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; 
+
+      .address_col{
+        padding-left: 15px;
+        padding-right: 15px; 
+      
+
+      .office_box{
+        display: flex;
+        margin-bottom: 60px;
+
+         .address{
+            margin-left: 20px;
+         }
+
+        .icon{
+            margin-right: 25px;
+            font-size: 50px;
+            color: #62cfeb;
+            
+        }
+
+
+        h5{
+            margin-bottom: 3px;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 700;
+            font-family: $rajdhani_font;
+            margin: 0;
+            text-align: start;
+        }
+
+        p{
+            text-align: start;
+        }
+      }
+       }
+
+     }
+        }
+        .contact_card{
+            padding: 40px 50px 20px;
+            background: #141d38;
+            font-family: $rajdhani_font;
+            text-align: start;
+            margin-left: -20px;
+
+            .information_box h3{
+                color: white;
+                font-weight: 700;
+            }
+
+            ul{
+                padding: 0;
+
+                li{
+                    margin-bottom: 14px;
+                    
+                    font-weight: 500;
+                    list-style-type: none;
+
+                    a{
+                        text-decoration: none;
+                        font-size: 18px;
+                    }
+
+                    .contact{
+                        color: white;
+                    }
+
+
+                }
+            }
+
+            
+            p{
+                color: white;
+                font-weight: 500;
+                line-height: 1.5;
+
+
+            }
+
+
+
+            .information_box_2 h3{
+
+                color: white;
+                font-weight: 700;
+                margin-top: 80px;
+
+            }
+            .contactus_social_media{
+                margin-left: 2px ;
+                margin-top: 30px;
+                display: flex;
+                justify-content: start;
+                gap: 20px;
+            }
+            
+        }
+    }
+}

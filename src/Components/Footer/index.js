@@ -114,7 +114,7 @@ const Footer = () => {
                 <Fade direction="up" delay={200}><li className="mt-3 contact_hover">
                   <Link to="tel:+91 80 67819878">
                     <BsTelephoneInbound />
-                    &nbsp; +91 80 67819878
+                    &nbsp; +91 8067819878
                   </Link>
                 </li></Fade>
               </ul>
