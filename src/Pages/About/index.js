@@ -107,7 +107,7 @@ const About = () => {
         </div>
       </section>
       {/* vision mission starts */}
-      {/* <section className="company_vison">
+      <section className="company_vison">
         <div className="container">
           <div className="row text-center vission_mission">
             <div className="col-md-6 main-content">
@@ -149,7 +149,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       {/* Vision Mission ends */}
 
       <section>
