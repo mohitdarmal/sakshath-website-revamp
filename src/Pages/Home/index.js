@@ -98,6 +98,8 @@ export const Home = () => {
       </section>
        {/* @@@@@@@ SECTION - Banner Section end @@@@@@@ */}
 
+    
+
 
        {/* @@@@@@ SECTION - ISO certifcates start @@@@@@ */}
           <section className="iso_certificate_sec">

@@ -1,0 +1,1 @@
+// export const CARRER_IMG= require('../../Assets/images/career_img.png');

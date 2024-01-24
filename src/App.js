@@ -11,21 +11,23 @@ import Service from "./Pages/Service";
 import Home from "./Pages/Home";
 import { Helmet } from "react-helmet";
 import BankingSolution from "./Pages/BankingSolution";
-import Contact from "./Pages/Contact"
+import Career from "./Pages/Careers/index";
+import Contact from "./Pages/Contact";
 
 const App = () => {
   return (
     <>
-    <Helmet>
-    <title>Home - Sakshath</title>
-            <meta name="description" content="Something SEO" />
-    </Helmet>
+      <Helmet>
+        <title>Home - Sakshath</title>
+        <meta name="description" content="Something SEO" />
+      </Helmet>
       <Routes>
         <Route path="/" element={<RootLayout />}>
-        <Route index element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/banking-solution" element={<BankingSolution />} />
+          <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<Contact />} />
 
           <Route path="*" element={<NotFound />} />

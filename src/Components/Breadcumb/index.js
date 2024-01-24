@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { ABOUT_BANNER } from "./Constant";
+import { ABOUT_BANNER,CARRER_IMG } from "./Constant";
 
 const index = (props) => {
   return (
