@@ -1,6 +1,6 @@
 @import "../../Assets/saas/Main.scss";
 
-///customer
+/// @@@@@@@@@@@@@   experience section css starts @@@@@@@@@
 .experience_section{
      padding-top: 90px;
      padding-bottom: 90px;
@@ -71,7 +71,9 @@
     
     }}
 
-    // Ready to get our services
+    /// @@@@@@@@@@@@@   experience section css ends @@@@@@@@@
+
+    //  @@@@@@@@@   Ready to get our services  css starts  @@@@@@@@@
 
     .ready_to_get_our_professional_services{
         padding-top: 135px;
@@ -147,7 +149,9 @@
     
     }
 
-    ///IT Benefits css
+    // @@@@@@@@@   Ready to get our services css ends   @@@@@@@@@@
+
+    /// @@@@@@@@    IT Benefits css starts  @@@@@@@@@@@
     
     .it_benefits{
         padding-top: 130px;
@@ -161,18 +165,22 @@
         }
 
         .img_holder_left_top_img img{
-             border-radius: 1px 100px 100px 100px;
+             border-radius: 0 117.5px 117.5px 117.5px;
              margin-bottom: 40px;
         } 
 
         .img_holder_left_bottom_img img{
-            border-radius: 100px 1px 100px 100px;
+            border-radius: 117.5px 117.5px 117.5px 0;
+            margin-top: 24px;
         }
+
+        
 
         
         .it_benefits_box_area{
             padding-right: 15px;
             padding-left: 15px;
+            margin-bottom: 25px;
         }
 
         .right_box{
@@ -186,9 +194,14 @@
 
             .it_benefits_heading_section{
                 margin-bottom: 25px;
+
+                .heading_content{
+                    margin-top: 25px;
+                    text-decoration: underline;
+                }
             }
 
-            span{
+            .it_benefit_title{
                 background-color: $ball_blue_color;
                 color: white;
                 font-family: $rajdhani_font;
@@ -197,23 +210,128 @@
                 font-weight: 700;
                 font-size: 20px;
                 text-transform: uppercase;
+                 
 
             }
 
-            ul{
+            .technology_list{
                 display: flex;
-                flex-wrap: wrap;
-                list-style-type: none;
-                gap: 20px;
+                justify-content: space-between;
+                padding: 0
+            }
 
+            .left_side_technology, .right_side_technology{
+                flex:1;
+
+                ul{
+                    padding: 0;
+                    list-style-type: none;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    color: #616161;
+                }
                 li{
-                    display: flex;
-                    align-items: center;
-                    
                     margin-bottom: 15px;
+
+                }
+                li:before{
+                    content: "\f058";
+                    position: relative;
+                    font-family: "FontAwesome";
+                    padding-right: 15px;
+                    font-size: 22px;
+                    color: #7141b1;                
+
+
                 }
 
             }
+            .it_benefits_button_box{
+                padding-left: 0px; 
+            }
+
+            
         }
 
     }
+
+    /// @@@@@@@@    IT Benefits css ends  @@@@@@@@@@@
+
+    //  media query starts//////
+    @media screen and (max-width:480px){
+        .experience_section{
+            padding-top: 90px;
+            padding-bottom: 90px;
+            
+          .upper_textbox{
+            flex-direction: column;
+            align-items: flex-start;
+            display: flex;
+    
+            border-bottom: 1px solid rgba(20,29,56,.07);
+            padding-bottom: 15px;
+            margin-bottom: 50px;
+        
+           .upper_left_textbox {
+           margin-bottom: 60px;
+           line-height: .5;}
+
+          }
+          .counter_wrapper{
+            .counter_row{
+            display: flex;
+            flex-wrap: wrap;
+          }
+        }
+    }
+
+
+ 
+ .ready_to_get_our_professional_services {
+   background-repeat: no-repeat;
+   position:relative;
+ 
+ .heading_box .text_box{
+      h3{
+        font-size: 30px;}
+      
+ 
+ .buttons_box {
+    display: block;
+
+       
+    .meet_button{
+        margin-bottom: 25px;
+    }
+}
+
+
+}
+    }
+
+
+.heading_content{
+    margin-top: 30px;
+}
+
+
+    }
+
+    /// @@@@@@@@@@   meddia query ends@@@@@@@
+
+    
+
+   /// @@@@@@@@@ client_logo css starts @@@@@@
+.partner_logo_section{
+    padding: 80px 80px 80px 80px;
+    background-image: linear-gradient(to top,#ffffff,#b5d9ef);
+
+   .partner_logo_tab {
+
+    
+       
+    
+
+   }
+}  
+ //@@@@@@ client logo css ends @@@@@@@@ 
