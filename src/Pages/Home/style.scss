@@ -411,7 +411,8 @@ Button {
 // Blogs section
 
 .blogs {
-  background: #faf4f4;
+  background: #f7f8f9;
+  padding-bottom: 75px;
 }
 .top_blog_container {
   margin-top: 100px;
@@ -422,6 +423,8 @@ Button {
     font-weight: 650;
   }
 }
+
+.blog_box{margin-bottom: 25px;}
 
 // .bottom_blog_container{
 .bottom_blog_img img {
@@ -536,6 +539,7 @@ Button {
     }
   }
   .planning_banner .left_planning_banner_content h3{ font-size: 26px; line-height: 40px;}
+
 }
 
  
@@ -643,6 +647,10 @@ Button {
  
 .planning_banner{padding-top: 40px;}
 .planning_banner .right_planning_banner_content .lets_meet_us_button{ padding: 13px 30px;}
+
+.top_blog_container{margin-top: 40px;}
+.blogs{padding-bottom: 15px;}
+ 
 }
 
 @media screen and (max-width:1023px){
@@ -656,6 +664,7 @@ Button {
       margin-top: 0px;
     }
   }
+  .left_home_principle p{width: 100%;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -701,6 +710,13 @@ Button {
 .ipad_full_width{width: 100%;}
 .planning_banner .right_planning_banner_content{text-align: left !important;}
 .planning_banner{padding-top: 70px; padding-bottom: 70px;}
+.top_blog_container {
+  margin-top: 70px;
+}
+.blogs {
+  padding-bottom: 50px;
+}
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {

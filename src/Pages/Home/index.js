@@ -729,7 +729,7 @@ export const Home = () => {
               </Fade>
             </div>
           </div>
-          <div className="bottom_blog_container mt-5">
+          <div className="bottom_blog_container mt-md-4">
             <div className="row blog_boxes">
               <div className="col-md-4  blog_box">
                 <div className="bottom_blog_img">
