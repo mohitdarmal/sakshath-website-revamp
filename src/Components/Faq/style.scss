@@ -43,3 +43,11 @@
       .faq_section button[aria-expanded="true"]:focus, .faq_section button[aria-expanded="false"]:focus{
         box-shadow: none;
     }
+
+    @media screen and (max-width:767px){
+        .faq_section{padding: 40px 0 ;}
+        }
+
+    @media screen and (min-width:768px) and (max-width:1023px){
+    .faq_section{padding: 70px 0 ;}
+    }

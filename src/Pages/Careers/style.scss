@@ -36,32 +36,66 @@ text-decoration: none;
 // }
 
 .benfits{
-    padding-top:34px ;
+    padding-top:34px;
 }
 
 .benfits_icon_img{
-    background: #33a3d3;
+    // background: #33a3d3;
+    // background: linear-gradient(90deg,rgb(127, 127, 185) , rgb(119, 119, 146) );
+    background: linear-gradient(90deg, rgb(50 163 210), rgb(62 108 136));
     border-radius: 50%;
     position: relative;
+}
+.benfits_icon_imgs{
+    // background: #33a3d3;
+    // background: linear-gradient(90deg,rgb(127, 127, 185) , rgb(119, 119, 146) );
+    background: linear-gradient(90deg, rgb(50 163 210), rgb(62 108 136));
+    border-radius: 50%;
 }
 .benfits_icon_img::before{
     position: absolute;
     content: "";
     width: 5px;
-    height: 50px;
-    background: rgb(127, 127, 185);
-    /* justify-content: center; */
+    height: 93px;
+background: rgb(127, 127, 185);
+    // background: linear-gradient(90deg,rgb(127, 127, 185) , blue );
+  
     left: 45px;
     /* top: 0%; */
-    bottom: -50px;
-   
-
-
+    bottom: -93px;
 }
+   
 .benfits_icon_img img{
-
-
     padding: 15px;
     filter: brightness(0) invert(1);
 
+}
+.benfits_icon_imgs img{
+    padding: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.benfit_heading p{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Rajdhani";
+    line-height: 48px;
+    // color: #25678f;
+    color: black;
+    text-decoration: underline;
+}
+
+.benfit_content{
+    padding-left: 25px;
+}
+
+.benfits_section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #faf4f4;
+}
+
+.benfits_img{
+    mix-blend-mode: darken;
+    padding-left: 50px;
 }
