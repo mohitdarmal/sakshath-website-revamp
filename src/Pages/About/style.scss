@@ -1,60 +1,58 @@
-@import '../../Assets/saas/Main.scss';
+@import "../../Assets/saas/Main.scss";
 
 .who_we_r_content {
-     background: #fbf4f4;
-     padding: 10px;
+  background: #fbf4f4;
+  padding: 10px;
 }
-.who_we_are_img img{
-    width: 100%;
+.who_we_are_img img {
+  width: 100%;
 }
-.about_who_we_r_content{
-    padding-right: 80px;
+.about_who_we_r_content {
+  padding-right: 80px;
 }
-.about_who_we_r_content_right p{
-    padding-left: 0px;
+.about_who_we_r_content_right p {
+  padding-left: 0px;
 }
-.about_who_we_r_content p{
-    text-align: start;
+.about_who_we_r_content p {
+  text-align: start;
 }
 
 .who_we_are_img_bottom {
-    padding-right: 90px;
+  padding-right: 90px;
 }
 
+// vision and mission
 
-.company_vison{
-    padding-top: 100px;
-     padding-bottom: 100px;
-    // background: lightblue;
-    
-}
+// .company_vison {
+//   padding-top: 100px;
+//   padding-bottom: 100px;
+//   // background: lightblue;
+// }
 
-.box{
-
-    padding: 35px 0px;
-    box-shadow: 0px 3px 6px 0px #7c7c7c;
-    border-radius: 5px;
-    padding: 20px 10px;
-    
-}
+// .box {
+//   padding: 35px 0px;
+//   box-shadow: 0px 3px 6px 0px #7c7c7c;
+//   border-radius: 5px;
+//   padding: 20px 10px;
+// }
 
 // contact starts
-.contact_social_icon{
-    gap: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 40px;
-    margin-top: 60px;
-    font-size: 25px;
+.contact_social_icon {
+  gap: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  font-size: 25px;
 }
-.sub_title{
-    padding: 30px 25px;
+.sub_title {
+  padding: 30px 25px;
 }
 
-.submit_button{
-    display: flex;
-    justify-content: center;
-   button{
+.submit_button {
+  display: flex;
+  justify-content: center;
+  button {
     width: 20%;
     font-family: rajdhani;
     font-weight: 550;
@@ -62,22 +60,94 @@
     text-decoration: none;
     padding: 5px 0;
     border: none;
-    border-radius: 20px ;
-   }
-  
+    border-radius: 20px;
+  }
 }
 
-.submit_button  button:hover{
-    background: #24688f;
-    
-  }
-
+.submit_button button:hover {
+  background: #24688f;
+}
 
 //   contcat ends
 
-.contact_map_section{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: rgb(233, 233, 234);
+.contact_map_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgb(233, 233, 234);
+}
 
+
+
+// vison misssion
+.vison_mission_section{
+    background-image: url('../../Assets/images/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 130px 0;
+
+}
+
+
+// vision_para{
+    
+//     position: absolute;
+//     right: -60px;
+//     background: red;
+//     width: 100px;
+//     height: 100px;
+//     line-height: 100px;
+//     text-align: center;
+//     border-radius: 50%;
+// }
+
+// para{
+//     line-height: 100px;
+//     color: #fff;
+// }
+
+.vision_para{
+    position: absolute;
+    left: 764px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #25678f;
+    border-radius: 50%;
+    p{
+        line-height: 100px;
+    color: #fff;
+    font-family:rajdhani ;
+        font-weight: 600px;
+    }
+}
+
+.vision_para_content{
+    padding-right: 201px;
+    text-align: start;
+    box-shadow: 0 4px 5px 0 #5e4747;
+    padding: 10px 15px;
+}
+
+
+.mission_container{
+    padding: 100px 0;
+}
+
+.mission_para{
+position: absolute;
+    right: 653px;
+    width: 100px;
+    height: 100px;
+    background: #25678f;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+
+    p{
+        color: #fff;
+        line-height: 100px;
+        font-family:rajdhani ;
+        font-weight: 600px;
+    }
 }

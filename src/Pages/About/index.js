@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 // import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import BreadCumb from "../../Components/Breadcumb/index";
 import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
-import { ABOUT_MISSION, ABOUT_VISION, about_who_we_Are } from "./Constant";
+import { ABOUT_MISSION, ABOUT_VISION, WAVE_IMG, about_who_we_Are } from "./Constant";
 import "./style.scss";
 import Heading from "../../Components/Utils/Heading";
 import SubTitle from "../../Components/Utils/Title_head";
@@ -107,7 +107,7 @@ const About = () => {
         </div>
       </section>
       {/* vision mission starts */}
-      <section className="company_vison">
+      {/* <section className="company_vison">
         <div className="container">
           <div className="row text-center vission_mission">
             <div className="col-md-6 main-content">
@@ -149,8 +149,69 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Vision Mission ends */}
+
+
+
+
+
+    <section className="vison_mission_section">
+      <div className="container">
+        <div className="row">
+       
+        <div className="col-md-6 text-end">
+       <div className="vision">
+          <div className="vision_para">
+          <p>Vision</p>
+          </div>
+            <div className="vision_para_content">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sed architecto nisi voluptas sunt obcaecati molestias sint pariatur impedit accusamus.
+            </div>
+         
+          </div>
+          </div>
+
+          <div className="col-md-6">
+          {/* <div className="mission ">
+          <div className="mision_para">
+            <div className="mision_para_content">
+              <p>Mission</p>
+            </div>
+          </div>
+          </div> */}
+          </div>
+      
+      </div>
+      <div className="row mission_container">
+      <div className="col-md-6"></div>
+       
+       <div className="col-md-6 text-end">
+      <div className="mission">
+         <div className="mission_para">
+         <p>Mission</p>
+         </div>
+           <div className="mission_para_content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sed architecto nisi voluptas sunt obcaecati molestias sint pariatur impedit accusamus.
+           </div>
+        
+         </div>
+         </div>
+
+         {/* <div className="col-md-6"> */}
+         {/* <div className="mission ">
+         <div className="mision_para">
+           <div className="mision_para_content">
+             <p>Mission</p>
+           </div>
+         </div>
+         </div> */}
+         {/* </div> */}
+     
+     </div>
+
+      </div>
+    </section>
 
       <section>
         <div className="container">
