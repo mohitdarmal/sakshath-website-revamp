@@ -1,17 +1,23 @@
 import React from "react";
 import SubTitle from "../Utils/Title_head";
-import CountUp from "react-countup"; 
+import CountUp from "react-countup";
 import { Tabs, Tab } from "react-bootstrap";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
 import { MdOutlineBusinessCenter } from "react-icons/md";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Autoplay } from 'swiper/modules';
- 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay } from "swiper/modules";
+
 import "./style.scss";
-import { CLIENT_LOGO1, CLIENT_LOGO2, CLIENT_LOGO3, CLIENT_LOGO4, CLIENT_LOGO5 } from "./Constant";
+import {
+  CLIENT_LOGO1,
+  CLIENT_LOGO2,
+  CLIENT_LOGO3,
+  CLIENT_LOGO4,
+  CLIENT_LOGO5,
+} from "./Constant";
 
 const ClientLogo = () => {
   return (
@@ -22,7 +28,8 @@ const ClientLogo = () => {
           <div className="row text-center">
             <SubTitle SubTitle="Popular Partners" />
             <p className="popular_partner_heading">
-              WE HAVE <CountUp
+              WE HAVE{" "}
+              <CountUp
                 start={0}
                 end={2345}
                 duration={3}
@@ -31,7 +38,8 @@ const ClientLogo = () => {
                 suffix="+"
                 enableScrollSpy={true}
                 useEasing={true}
-              ></CountUp> WORLD WIDE CLIENTS
+              ></CountUp>{" "}
+              WORLD WIDE CLIENTS
             </p>
           </div>
 
@@ -48,34 +56,65 @@ const ClientLogo = () => {
                   title={
                     <div className="d-flex">
                       <p>
-                        <GiCommercialAirplane />&nbsp;&nbsp;
+                        <GiCommercialAirplane />
+                        &nbsp;&nbsp;
                       </p>
-                      <p>
-                        International
-                      </p>
+                      <p>International</p>
                     </div>
                   }
                 >
-                   <Swiper
-        slidesPerView={5}
-        spaceBetween={30}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide><img src={CLIENT_LOGO1} /> </SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO5} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-      </Swiper>
+                  <Swiper
+                    breakpoints={{
+                      320: {
+                        slidesPerView:2,
+                        spaceBetween:30
+                      },
+                      481: {
+                        slidesPerView:3,
+                        spaceBetween:30
+                      },
+                      768: {
+                        slidesPerView:3,
+                        spaceBetween:30
+                      },
+                      1024: {
+                        slidesPerView: 5,
+                        spaceBetween:30
+                      },
+                    }}
+                    autoplay={{
+                      delay: 1500,
+                      disableOnInteraction: false,
+                    }}
+                    loop={true}
+                    modules={[Autoplay]}
+                    className="mySwiper"
+                  >
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO1} />{" "}
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO3} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO4} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO5} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO3} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO4} />
+                    </SwiperSlide>
+                  </Swiper>
                 </Tab>
                 {/* </div> */}
                 <Tab
@@ -83,70 +122,133 @@ const ClientLogo = () => {
                   title={
                     <div className="d-flex">
                       <p>
-                        <FaHome />&nbsp;&nbsp;
+                        <FaHome />
+                        &nbsp;&nbsp;
                       </p>
-                     
-                      <p>
-                        Domestic
-                      </p>
+
+                      <p>Domestic</p>
                     </div>
                   }
                 >
-                   <Swiper
-        slidesPerView={5}
-        spaceBetween={30}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-         <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO5} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO1} /> </SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-       
-      </Swiper>
+                  <Swiper
+                  breakpoints={{
+                    320: {
+                      slidesPerView:2,
+                      spaceBetween:30
+                    },
+                    481: {
+                      slidesPerView:3,
+                      spaceBetween:30
+                    },
+                    768: {
+                      slidesPerView:3,
+                      spaceBetween:30
+                    },
+                    1024: {
+                      slidesPerView: 5,
+                      spaceBetween:30
+                    },
+                  }}
+                  
+                    
+                    autoplay={{
+                      delay: 1500,
+                      disableOnInteraction: false,
+                    }}
+                    loop={true}
+                    modules={[Autoplay]}
+                    className="mySwiper"
+                  >
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO4} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO5} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO3} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO4} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO1} />{" "}
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO3} />
+                    </SwiperSlide>
+                  </Swiper>
                 </Tab>
                 <Tab
                   eventKey="business"
                   title={
                     <span className="d-flex">
                       <p>
-                      <MdOutlineBusinessCenter />&nbsp;&nbsp;
+                        <MdOutlineBusinessCenter />
+                        &nbsp;&nbsp;
                       </p>
-                      <p>
-                        Business
-                      </p>
+                      <p>Business</p>
                     </span>
                   }
                 >
-                    <Swiper
-        slidesPerView={5}
-        spaceBetween={30}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-         <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO5} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO1} /> </SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-      </Swiper>
+                  <Swiper
+                   breakpoints={{
+                    320: {
+                      slidesPerView:2,
+                      spaceBetween:30
+                    },
+                    481: {
+                      slidesPerView:3,
+                      spaceBetween:30
+                    },
+                    768: {
+                      slidesPerView:3,
+                      spaceBetween:30
+                    },
+                    1024: {
+                      slidesPerView: 5,
+                      spaceBetween:30
+                    },
+                  }}
+                    autoplay={{
+                      delay: 1500,
+                      disableOnInteraction: false,
+                    }}
+                    loop={true}
+                    modules={[Autoplay]}
+                    className="mySwiper"
+                  >
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO4} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO5} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO1} />{" "}
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO3} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO3} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO4} />
+                    </SwiperSlide>
+                  </Swiper>
                 </Tab>
               </Tabs>
             </div>

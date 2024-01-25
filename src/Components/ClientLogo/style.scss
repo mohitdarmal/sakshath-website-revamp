@@ -76,3 +76,29 @@
     transition: 0.5s;
   }
 }
+
+
+@media screen and (max-width:480px){
+
+  .popular_partner_heading{font-size: 28px; line-height: 32px;}
+
+.popular_client_tab_sec .nav-tabs .nav-link{padding: 10px 5px;}
+.popular_client_tab_sec .nav-tabs .nav-link p{font-size: 14px;}
+.popular_client_tab_sec img{width: 110px;}
+}
+
+@media screen and (max-width:767px){
+  .popular_client_tab_sec {
+    margin-top: 10px;
+}
+  .popular_clients{padding: 40px 0;}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+  .popular_clients{
+    padding: 70px 0px;
+  }
+  .popular_client_tab_sec {
+    margin-top: 20px;
+}
+}
