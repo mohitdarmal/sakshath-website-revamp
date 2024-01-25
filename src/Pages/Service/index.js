@@ -142,14 +142,14 @@ const Service = () => {
 
 
                           {/* @@@@@@@@  It benefits starts @@@@@@@@ */}
-                          
+
     <section className='it_benefits'>
       <div className="container">
         <div className="row it_benefits_box">
           <div className="col-md-6 it_benefits_box_area">
             <div className="img_holder_box">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-6 left_side">
                   <div className="img_holder_left_top_img">
                     <img src={IT_BENEFITS_LEFT_TOP_IMG} alt="" />
                   </div>
