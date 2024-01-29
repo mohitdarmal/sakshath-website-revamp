@@ -5,6 +5,27 @@ body {
   font-family:  $roboto_font;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eaeaea;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $ball_blue_color;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $ball_blue_color;
+}
+
 p{font-size: $para_text; color: $para_color; line-height: 28px;}
 
 @media screen and (min-width:768px) and (max-width:1023px){

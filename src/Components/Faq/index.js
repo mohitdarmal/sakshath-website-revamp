@@ -21,7 +21,7 @@ const Faq = () => {
                 </div>
                 <Accordion defaultActiveKey="0">
                   <Accordion.Item eventKey="0">
-                        <Accordion.Header className="question_button" ><BsFillQuestionCircleFill /> FAQ's #1</Accordion.Header>
+                        <Accordion.Header className="question_button" ><BsFillQuestionCircleFill /> What are the services offered by Sakshath?</Accordion.Header>
                         <Accordion.Body>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -35,7 +35,7 @@ const Faq = () => {
                   </Accordion.Item>
 
                   <Accordion.Item eventKey="1">
-                        <Accordion.Header><BsFillQuestionCircleFill /> FAQ's #2</Accordion.Header>
+                        <Accordion.Header><BsFillQuestionCircleFill /> How do you ensure the security of the software Sakshath develops?</Accordion.Header>
                         <Accordion.Body>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -49,7 +49,7 @@ const Faq = () => {
                         </Accordion.Item>
 
                     <Accordion.Item eventKey="2">
-                        <Accordion.Header><BsFillQuestionCircleFill /> FAQ's #3</Accordion.Header>
+                        <Accordion.Header><BsFillQuestionCircleFill /> What security measures do you have in place to protect against cyber threats and data breaches?</Accordion.Header>
                         <Accordion.Body>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -63,7 +63,7 @@ const Faq = () => {
                   </Accordion.Item>
 
                   <Accordion.Item eventKey="3">
-                        <Accordion.Header><BsFillQuestionCircleFill /> FAQ's #4</Accordion.Header>
+                        <Accordion.Header><BsFillQuestionCircleFill /> Can you provide a demo or trial version of your software before committing to a full-scale project?</Accordion.Header>
                         <Accordion.Body>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -77,7 +77,7 @@ const Faq = () => {
                   </Accordion.Item>
 
                   <Accordion.Item eventKey="4">
-                        <Accordion.Header><BsFillQuestionCircleFill /> FAQ's #5</Accordion.Header>
+                        <Accordion.Header><BsFillQuestionCircleFill /> What is your policy regarding intellectual property rights for custom software developed for clients?</Accordion.Header>
                         <Accordion.Body>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore magna

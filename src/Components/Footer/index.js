@@ -1,20 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { FaRegEnvelope } from "react-icons/fa6";
-//import { CiLocationOn } from "react-icons/ci";
 import { BsTelephoneInbound } from "react-icons/bs";
-import { RiInstagramFill } from "react-icons/ri";
-import { FaYoutube } from "react-icons/fa";
-import { TfiLinkedin } from "react-icons/tfi";
 import { FOOTER_LOGO, SUBSCRIPTION_OFFER } from "./Constant";
 import "./style.scss";
 import Heading from "../Utils/Heading";
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import { Form, Button } from "react-bootstrap";
+import { Form,  Modal, Button } from "react-bootstrap";
 import { MdOutlineEmail } from "react-icons/md";
 import { INSTAGRAM_ICON, LINKEDIN_ICON, YOUTUBE_ICON } from "../Header/Constant";
 import BackToTop from "../BackToTop";
+import FloatingActionButton from "../FloatingActionButton";
 
 
 
@@ -234,6 +231,9 @@ const Footer = () => {
       </footer>
 
       <BackToTop />
+      <FloatingActionButton />
+
+      
     
     </>
   );

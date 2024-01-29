@@ -39,16 +39,16 @@ const Header = () => {
           <div className="row">
             <div className="col-md-6">
               <Link className="top_header_location">
-                <MdOutlineLocationOn /> Jakkur Main Road &nbsp;&nbsp; |
+                <MdOutlineLocationOn /> Bengaluru &nbsp;&nbsp; |
                 &nbsp;&nbsp;
               </Link>
-              <Link to="mailto:sakshath@gmail.com">
-                <BsEnvelope /> &nbsp;sakshath-technologies@gmail.com &nbsp;
+              <Link to="mailto:info@sakshath-technologies.com">
+                <BsEnvelope /> &nbsp;info@sakshath-technologies.com &nbsp;
               </Link>
             </div>
             <div className="col-md-6 text-md-end">
-              <Link to="tel: +91806781987">
-                <BsTelephoneInbound /> &nbsp;+91 80 6781987 &nbsp; | &nbsp;
+              <Link to="tel:+918067819998">
+                <BsTelephoneInbound /> &nbsp;+91 80 67819998 &nbsp; | &nbsp;
                 &nbsp;
               </Link>
 

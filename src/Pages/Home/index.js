@@ -6,14 +6,7 @@ import {
   POPULARBANK,
   POPULARWEB,
   POPULAUTOMATION,
-  IT_IMG,
-  TEAM_IMG,
-  P_IMG,
   BANNER1,
-  ICON_1,
-  ICON_2,
-  ICON_3,
-  ICON_4,
   HAPPYICON,
   BLOGIMG1,
   BLOGCPROFILE,
@@ -25,7 +18,7 @@ import {
   EXPERIENCE,
   RELIABILTY,
 } from "./Constant";
-//icons starts for blogs
+ 
 import { SlCalender } from "react-icons/sl";
 import { PiChatsCircleLight } from "react-icons/pi";
 import CountUp from "react-countup";
@@ -88,6 +81,86 @@ export const Home = () => {
               <div className="banner_caption">
                   <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
                   <h3><Fade direction="up" delay={1200}>Elevating Experiences, One Line at a Time </Fade></h3>
+                  <Fade direction="up" delay={800}>
+                  <div>
+                    <Link to="/">Get Started Now</Link>{" "}
+                    <Link to="/">Explore More</Link>
+                  </div>
+                  </Fade>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="banner_box">
+              <div className="banner_img">
+                <img className="img-fluid" src={BANNER1} />
+              </div>
+              <div className="banner_caption_container">
+              <div className="banner_caption">
+                  <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
+                  <h3><Fade direction="up" delay={1200}>Future-Proofing Your Digital Journey</Fade></h3>
+                  <Fade direction="up" delay={800}>
+                  <div>
+                    <Link to="/">Get Started Now</Link>{" "}
+                    <Link to="/">Explore More</Link>
+                  </div>
+                  </Fade>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="banner_box">
+              <div className="banner_img">
+                <img className="img-fluid" src={BANNER1} />
+              </div>
+              <div className="banner_caption_container">
+              <div className="banner_caption">
+                  <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
+                  <h3><Fade direction="up" delay={1200}>Unleashing the Power of Purposeful Code</Fade></h3>
+                  <Fade direction="up" delay={800}>
+                  <div>
+                    <Link to="/">Get Started Now</Link>{" "}
+                    <Link to="/">Explore More</Link>
+                  </div>
+                  </Fade>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="banner_box">
+              <div className="banner_img">
+                <img className="img-fluid" src={BANNER1} />
+              </div>
+              <div className="banner_caption_container">
+              <div className="banner_caption">
+                  <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
+                  <h3><Fade direction="up" delay={1200}>Elevating Businesses through Exceptional Code</Fade></h3>
+                  <Fade direction="up" delay={800}>
+                  <div>
+                    <Link to="/">Get Started Now</Link>{" "}
+                    <Link to="/">Explore More</Link>
+                  </div>
+                  </Fade>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="banner_box">
+              <div className="banner_img">
+                <img className="img-fluid" src={BANNER1} />
+              </div>
+              <div className="banner_caption_container">
+              <div className="banner_caption">
+                  <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
+                  <h3><Fade direction="up" delay={1200}>Unlocking Potential, One Code at a Time </Fade></h3>
                   <Fade direction="up" delay={800}>
                   <div>
                     <Link to="/">Get Started Now</Link>{" "}
@@ -495,8 +568,7 @@ export const Home = () => {
                       RELIABILTY
                     </h3>
                     <p>
-                      Sedut perspicias unomnis natus error sit voluptatemc
-                      accusanti remqua
+                    Our customers rely on us as we provide high–quality, reliable products that have control over all their processes, which are rigorously managed by our quality management systems.
                     </p>
                   </div>
                 </Fade>
@@ -514,8 +586,7 @@ export const Home = () => {
                       EXPERIENCE
                     </h3>
                     <p>
-                      Sedut perspicias unomnis natus error sit voluptatemc
-                      accusanti remqua
+                    Sakshath Technologies® consultants have an average of 10 years of experience with their processes and have worked on projects of all sizes and scopes thus managing new implementation upgrades and rollouts.
                     </p>
                   </div>
                 </Fade>
@@ -533,8 +604,7 @@ export const Home = () => {
                       SPECIALIZATION
                     </h3>
                     <p>
-                      Sedut perspicias unomnis natus error sit voluptatemc
-                      accusanti remqua
+                    We specialize in implementations, process improvements, project management, and staff augmentation in parallel with product lifecycle management and other solutions.
                     </p>
                   </div>
                 </Fade>
@@ -552,8 +622,7 @@ export const Home = () => {
                       PROFESSIONAL TEAM
                     </h3>
                     <p>
-                      Sedut perspicias unomnis natus error sit voluptatemc
-                      accusanti remqua
+                    In order to efficiently create and produce excellent products for our clients, Sakshath’s professional team of designers follows a simple process that makes working with us easy.
                     </p>
                   </div>
                 </Fade>
@@ -605,12 +674,12 @@ export const Home = () => {
             {/* Popuplar Princial Left Side Column Start */}
             <div className="col-md-5 mt-4 left_home_principle">
               <Fade direction="up" triggerOnce>
-                <SubTitle SubTitle="Our Popular Principle" />{" "}
+                <SubTitle SubTitle="Our Popular Services" />{" "}
               </Fade>
               <Fade direction="up" triggerOnce>
                 {" "}
                 <Heading
-                  heading="Best Professional IT Solutiuons"
+                  heading="Elevating Experiences, Empowering Success"
                   uppercase="text-uppercase"
                 />{" "}
               </Fade>
@@ -662,7 +731,7 @@ export const Home = () => {
                       </div>
 
                       <div className="right_home_principle_heading pe-md-0">
-                        <h4 className="right_home_subheading">ANALYTICS</h4>
+                        <h4 className="right_home_subheading">AUTOMATION</h4>
                         <p className=" right_para">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Explicabo magni numquam saepe aperiam.
@@ -680,7 +749,7 @@ export const Home = () => {
                       </div>
 
                       <div className="right_home_principle_heading">
-                        <h5 className="right_home_subheading">AUTOMATION</h5>
+                        <h5 className="right_home_subheading">ANALYTICS</h5>
                         <p className="justify-content-end right_para">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Explicabo magni numquam saepe aperiam.
