@@ -18,7 +18,7 @@ const App = () => {
   return (
     <>
       <Helmet>
-        <title>Home - Sakshath</title>
+        <title>Home - Sakshath Technologies</title>
         <meta name="description" content="Something SEO" />
       </Helmet>
       <Routes>

@@ -14,6 +14,7 @@ import { Fade } from "react-awesome-reveal";
 import { Form, Button } from "react-bootstrap";
 import { MdOutlineEmail } from "react-icons/md";
 import { INSTAGRAM_ICON, LINKEDIN_ICON, YOUTUBE_ICON } from "../Header/Constant";
+import BackToTop from "../BackToTop";
 
 
 
@@ -22,7 +23,6 @@ const Footer = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle your form submission logic here, e.g., send the email to a server
     console.log("Email submitted:", email);
   };
 
@@ -232,6 +232,9 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+
+      <BackToTop />
+    
     </>
   );
 };

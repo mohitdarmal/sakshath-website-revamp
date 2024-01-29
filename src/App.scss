@@ -7,6 +7,11 @@ body {
 
 p{font-size: $para_text; color: $para_color; line-height: 28px;}
 
+@media screen and (min-width:768px) and (max-width:1023px){
+.ipad_full_width{width: 100%;}
+.ipad_half_width{width: 50%;}
+}
+
 @media (min-width: 1200px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1190px !important;

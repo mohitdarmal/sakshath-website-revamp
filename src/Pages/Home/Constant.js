@@ -14,10 +14,10 @@ export const POPULAUTOMATION = require("../../Assets/images/process.png");
 export const POPULARBANK = require("../../Assets/images/bank.png");
 
 // What we do
-export const ICON_1 = require("../../Assets/images/what_we_do_icon1.png");
-export const ICON_2 = require("../../Assets/images/what_we_do_icon2.png");
-export const ICON_3 = require("../../Assets/images/what_we_do_icon3.png");
-export const ICON_4 = require("../../Assets/images/what_we_do_icon4.png");
+export const RELIABILTY = require("../../Assets/images/reliability.png");
+export const EXPERIENCE = require("../../Assets/images/experience.png");
+export const SPECIALIZATION = require("../../Assets/images/specialization.png");
+export const PROFESSIONAL_TEAM = require("../../Assets/images/professional_team.png");
 
 
 // Happy Client 
