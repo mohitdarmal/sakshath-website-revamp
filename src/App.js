@@ -12,7 +12,8 @@ import Home from "./Pages/Home";
 import { Helmet } from "react-helmet";
 import BankingSolution from "./Pages/BankingSolution";
 import Career from "./Pages/Careers/index";
-import Contactus from "./Pages/Contactus";
+// import Contactus from "./Pages/Contactus";
+import Contact from "./Components/Contact/Contact";
 
 const App = () => {
   return (
@@ -28,7 +29,7 @@ const App = () => {
           <Route path="/service" element={<Service />} />
           <Route path="/banking-solution" element={<BankingSolution />} />
           <Route path="/career" element={<Career />} />
-          <Route path="/contact-us" element={<Contactus />} />
+          <Route path="/contact-us" element={<Contact />} />
 
           <Route path="*" element={<NotFound />} />
         </Route>
