@@ -52,6 +52,7 @@ function Contact() {
         <div className="container">
           <div className="row">
             <div className="col-md-12" >
+            <div className="form_container">
               <Heading heading="Contact Us"/>
 
               <Form noValidate validated={validated} onSubmit={handleSubmit}>
@@ -73,7 +74,7 @@ function Contact() {
                         required
                       />
                       <Form.Control.Feedback type="invalid">
-                        Email Address
+                       Full Name
                       </Form.Control.Feedback>
                     </InputGroup>
                   </Form.Group>
@@ -82,7 +83,6 @@ function Contact() {
                     as={Col}
                     md="6"
                     controlId="validationCustomUsername"
-                    // className="mt-3"
                   >
                     <Form.Label>Phone Number</Form.Label>
                     <InputGroup hasValidation>
@@ -91,12 +91,12 @@ function Contact() {
                       </InputGroup.Text>
                       <Form.Control
                         type="tel"
-                        placeholder="8374938393"
+                        placeholder="Phone Number"
                         aria-describedby="inputGroupPrepend"
                         required
                       />
                       <Form.Control.Feedback type="invalid">
-                        Email Address
+                        Phone Number
                       </Form.Control.Feedback>
                     </InputGroup>
                   </Form.Group>
@@ -106,7 +106,7 @@ function Contact() {
                   
                   <Form.Group
                     as={Col}
-                    md="6"
+                    md="12"
                     controlId="validationCustomUsername"
                   >
                     <Form.Label>Email Address</Form.Label>
@@ -125,50 +125,9 @@ function Contact() {
                       </Form.Control.Feedback>
                     </InputGroup>
                   </Form.Group>
-                  <Form.Group as={Col} md="6" controlId="productSelect">
-                    <Form.Label>Product</Form.Label>
-                    {/* <Form.Control.Feedback>Looks good!</Form.Control.Feedback> */}
-                    <InputGroup>
-                      <FormControl  style={{padding:'15px 25px'}}
-                        as="select"
-                        defaultValue=""
-                        required
-                        onChange={(e) => {}}
-                      >
-                        <option value="">Select a Product</option>
-                        {products.map((product) => (
-                          <option key={product.id} value={product.id}>
-                            {product.name}
-                          </option>
-                        ))}
-                      </FormControl>
-                    </InputGroup>
-                  </Form.Group>
+                  
+               
                 </Row>
-
-                <Row className="mt-3 mb-4">
-                  <Form.Group
-                    as={Col}
-                    md="12"
-                    controlId="validationCustomUsername"
-                  >
-                    <Form.Label>Adress</Form.Label>
-                    <InputGroup hasValidation>
-                      <InputGroup.Text id="inputGroupPrepend">
-                        <FaLocationDot />
-                      </InputGroup.Text>
-                      <Form.Control
-                        type="text"
-                        placeholder="Enter Address (optional)"
-                        aria-describedby="inputGroupPrepend"
-                      
-                      />
-                      <Form.Control.Feedback type="invalid">
-                        Email Address
-                      </Form.Control.Feedback>
-                    </InputGroup>
-                  </Form.Group>
-                  </Row>
                   <Row>
 
                   <Form.Group
@@ -185,7 +144,7 @@ function Contact() {
                     <Form.Control
                       as="textarea"
                       rows={2}
-                      placeholder="Enter your description here"
+                      placeholder="Enter your description here  (optional)"
                     />
                          </InputGroup>
                   </Form.Group>
@@ -193,6 +152,7 @@ function Contact() {
 
                 <Button type="submit" className="mt-4">Submit form</Button>
               </Form>
+            </div>
             </div>
           </div>
         </div>

@@ -21,20 +21,7 @@
   padding-right: 90px;
 }
 
-// vision and mission
 
-// .company_vison {
-//   padding-top: 100px;
-//   padding-bottom: 100px;
-//   // background: lightblue;
-// }
-
-// .box {
-//   padding: 35px 0px;
-//   box-shadow: 0px 3px 6px 0px #7c7c7c;
-//   border-radius: 5px;
-//   padding: 20px 10px;
-// }
 
 // contact starts
 .contact_social_icon {
@@ -76,78 +63,79 @@
   background: rgb(233, 233, 234);
 }
 
-
-
-// vison misssion
-.vison_mission_section{
-    background-image: url('../../Assets/images/wave.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 130px 0;
-
+// vision_mission
+.vision {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  // background-image: url("../../Assets/images/mission.png");
+  background-image: url("../../Assets/images/wave.svg");
+  //  padding: 120px;
+  background-size: cover;
+  z-index: -1;
 }
 
-
-// vision_para{
-    
-//     position: absolute;
-//     right: -60px;
-//     background: red;
-//     width: 100px;
-//     height: 100px;
-//     line-height: 100px;
-//     text-align: center;
-//     border-radius: 50%;
-// }
-
-// para{
-//     line-height: 100px;
-//     color: #fff;
-// }
-
-.vision_para{
-    position: absolute;
-    left: 764px;
-    width: 100px;
-    height: 100px;
+.vision_rounded {
+  background: #25678f;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+  // color: #fff;
+  p {
+    color: white;
     line-height: 100px;
-    text-align: center;
-    background: #25678f;
-    border-radius: 50%;
-    p{
-        line-height: 100px;
+  }
+}
+
+.mision_rounded {
+  background: #25678f;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+
+  p {
     color: #fff;
-    font-family:rajdhani ;
-        font-weight: 600px;
-    }
-}
-
-.vision_para_content{
-    padding-right: 201px;
-    text-align: start;
-    box-shadow: 0 4px 5px 0 #5e4747;
-    padding: 10px 15px;
-}
-
-
-.mission_container{
-    padding: 100px 0;
-}
-
-.mission_para{
-position: absolute;
-    right: 653px;
-    width: 100px;
-    height: 100px;
-    background: #25678f;
-    text-align: center;
     line-height: 100px;
-    border-radius: 50%;
-
-    p{
-        color: #fff;
-        line-height: 100px;
-        font-family:rajdhani ;
-        font-weight: 600px;
-    }
+  }
 }
+
+.mision_para {
+  background: #fff;
+}
+
+.vision_para,
+.mision_para {
+  padding: 30px;
+  box-shadow: 0 2px 20px #0000003d;
+  border-radius: 15px;
+}
+
+// .vertical-dotted-line {
+//   border-left: 2px dotted black;  
+//   height: 10%;                   
+//   position: absolute;    
+//   left: 50%;    
+//   // top: 20px;                 
+//   transform: translateX(-50%);    
+// }
+
+
+.vision_rounded{
+  position: relative;
+}
+.vision_rounded p::after{
+  position: absolute;
+  content: "";
+  width: 2px;
+  /* background: red; */
+  height: 143px;
+  right: 0;
+  border-right: 2px dashed #9fc9da;
+  top: 101px;
+  left: 50%;
+
+}
+
