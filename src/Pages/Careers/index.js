@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BENIFTS_IMG,
   BONUS,
@@ -13,9 +13,72 @@ import Heading from "../../Components/Utils/Heading";
 import SubTitle from "../../Components/Utils/Title_head";
 import { CARRER_BENFIT_IMG } from "./Constant";
 import { BsEnvelope } from "react-icons/bs";
+import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
+import axios from "axios";
+
 const Career = () => {
+  const jobOpening=[
+    {
+      id:1,
+      title:'Senior React Developer',
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur"
+    },
+    {
+      id:2,
+      title:'Junior React Developer',
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur"
+    },
+    {
+      id:3,
+      title:'Sales',
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur"
+    },
+    {
+      id:4,
+      title:'Senior MIS Developer',
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur"
+    },
+    {
+      id:5,
+      title:'Sr. QA',
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur"
+    },
+    {
+      id:6,
+      title:'Dot Net Developer',
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur"
+    },
+    {
+      id:7,
+      title:'Java Developer',
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur"
+    }
+    
+  ]
+
+  const [jobOpeningData, setJobOpeningData] = useState([]);
+
+  useEffect(() => {
+    setJobOpeningData(jobOpening)
+  }, [])
+
+  // useEffect(() => {
+  //   axios.get("https://jsonplaceholder.typicode.com/posts")
+  //   .then(response => {
+  //     if (response.status === 200) {
+  //       setJobOpeningData(response.data)
+  //     } else {
+  //       console.log("not get data");
+  //     }
+  //   })
+  //   .catch(error => {
+  //     console.log("error")
+  //   });
+  // }, [])
+ 
   return (
     <>
+
       <Helmet>
         <title>About - Sakshath</title>
         <meta name="description" content="About SEO" />
@@ -100,12 +163,6 @@ const Career = () => {
                   </div>
                   <p>Job Sercuity</p>
                 </div>
-                
-                {/* <div className="benfit_content">
-                  <div className="benfit_heading">
-                  <p>Job Sercuity</p>
-                  </div>
-                </div> */}
               </div>
 
               <div className="benfits mt-3 d-flex">
@@ -134,10 +191,6 @@ const Career = () => {
                   <div className="benfit_heading">
                     <p>Growth</p>
                   </div>
-                  {/* <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    consequuntur placeat.
-                  </p> */}
                 </div>
               </div>
             </div>
@@ -155,11 +208,16 @@ const Career = () => {
 
       {/* core values */}
 
-      <section>
+      {/* <section>
         <div className="container">
           <div className="row">
+          <div className="our_values">
+            <Heading heading=""/>
+          </div>
             <div className="col-md-4">
               <div className="honesty">
+              <img src={SAFE} alt="" />
+
               <SubTitle SubTitle="Honesty" />
               <p>LA culture of honesty results in more than “happy” workplaces, and a deep-seated respect and expectation for honesty makes companies more successful and more profitable.</p>
               </div>
@@ -168,7 +226,52 @@ const Career = () => {
             <div className="col-md-4">cdcsd</div>
           </div>
         </div>
+      </section> */}
+
+{/* Apply Jobs */}
+      <section className="jobs">
+        <div className="container">
+          <div className="row">
+            <div className="text-center what_we_r_hiring">
+              <Heading heading="What Jobs We Are Hiring " uppercase="uppercase"/>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+
+{/* 
+{jobOpeningData.map((data) => {
+  return(
+    <div className="col-md-3">
+              <div className="hiring_box">
+              <h5>{data.title}</h5>
+             
+              <p>{data.} </p>
+              <SlideAnimationButton url="/" btnName="Apply Now" />
+
+              </div>
+            </div>
+  )
+})} */}
+{jobOpeningData.map((data)=>{
+  return(
+    <div className="col-md-3">
+              <div className="hiring_box">
+              <h5>{data.title}</h5>
+             
+              <p>{`${data.description.substring(0, 100)}`} </p>
+              <SlideAnimationButton url="/" btnName="Apply Now" />
+
+
+
+              </div>
+            </div>
+  )
+})}
+   
+          </div>
+        </div>
       </section>
+
+      {/* Apply Jobs Ends */}
     </>
   );
 };

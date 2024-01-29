@@ -78,7 +78,10 @@
 {
 text-decoration: none;
     font-size: 22px;
-    color: #24688f;
+    // color: #24688f;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #242323
 
 }
 .career_mail_link:hover{
@@ -160,9 +163,38 @@ top: 50%;
 }
 
 
-// padding-top: 15px;
-// font-size: 17px;
-// font-family: rajdahni;
+// our values
+// .honesty{
+//     box-shadow: 0px 2px 20px #00000052;
+//     padding: 30px;
+//     margin-right: 20px;
+//     border-radius: 10px;
+//     p{
+//         padding: 10px 0;
+//     }
+// }
+
+.jobs{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.hiring_box{
+    box-shadow: 0px 2px 20px #0000003b;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    h5{
+        text-decoration: underline;
+    font-family: roboto;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 15px;
+    min-height: 72px;
+    }
+    a{
+        padding:7px 12px;
+    }
+}
 
 @media screen and (max-width:480px) 
 {
