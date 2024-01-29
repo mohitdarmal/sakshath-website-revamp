@@ -317,6 +317,27 @@
 
     }
 
+@media screen and (min-width:768px) and (max-width:1023px){
+        /* For Tab Screen  */
+.it_benefits{
+
+    it_benefits_box{
+        display: flex;
+    }
+
+    // .left_side{
+    //     display: flex;
+    // }
+    
+
+
+        .img_holder_right_img img{
+          padding-left: 20px;
+        }
+    }   
+    
+}
+
     /// @@@@@@@@@@   meddia query ends@@@@@@@
 
     

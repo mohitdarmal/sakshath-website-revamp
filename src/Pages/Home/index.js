@@ -20,6 +20,10 @@ import {
   ISO_27001,
   GREAT_PLACE_WORK,
   ISO_9001,
+  PROFESSIONAL_TEAM,
+  SPECIALIZATION,
+  EXPERIENCE,
+  RELIABILTY,
 } from "./Constant";
 //icons starts for blogs
 import { SlCalender } from "react-icons/sl";
@@ -484,11 +488,11 @@ export const Home = () => {
               <div className="what_we_do_box">
                 <Fade direction="up" triggerOnce>
                   <div className="icon_box">
-                    <img src={ICON_1} alt="" />
+                    <img src={RELIABILTY} alt="" />
                   </div>
                   <div className="text">
                     <h3 className="text-underline">
-                      UNLOCK TRAPPED INFORMATION
+                      RELIABILTY
                     </h3>
                     <p>
                       Sedut perspicias unomnis natus error sit voluptatemc
@@ -503,11 +507,11 @@ export const Home = () => {
               <div className="what_we_do_box">
                 <Fade direction="up" delay={200} triggerOnce>
                   <div className="icon_box">
-                    <img src={ICON_2} alt="" />
+                    <img src={EXPERIENCE} alt="" />
                   </div>
                   <div className="text">
                     <h3 className="text-underline">
-                      UNLOCK TRAPPED INFORMATION
+                      EXPERIENCE
                     </h3>
                     <p>
                       Sedut perspicias unomnis natus error sit voluptatemc
@@ -522,11 +526,11 @@ export const Home = () => {
               <div className="what_we_do_box">
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="icon_box">
-                    <img src={ICON_3} alt="" />
+                    <img src={SPECIALIZATION} alt="" />
                   </div>
                   <div className="text">
                     <h3 className="text-underline">
-                      ACCELERATE AT ENTERPRISE SCALE
+                      SPECIALIZATION
                     </h3>
                     <p>
                       Sedut perspicias unomnis natus error sit voluptatemc
@@ -541,11 +545,11 @@ export const Home = () => {
               <div className="what_we_do_box">
                 <Fade direction="up" delay={600} triggerOnce>
                   <div className="icon_box">
-                    <img src={ICON_4} alt="" />
+                    <img src={PROFESSIONAL_TEAM} alt="" />
                   </div>
                   <div className="text">
                     <h3 className="text-underline">
-                      PRODUCT & DESIGN ENGINERING
+                      PROFESSIONAL TEAM
                     </h3>
                     <p>
                       Sedut perspicias unomnis natus error sit voluptatemc
@@ -731,7 +735,7 @@ export const Home = () => {
           </div>
           <div className="bottom_blog_container mt-md-4">
             <div className="row blog_boxes">
-              <div className="col-md-4  blog_box">
+              <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
                     {" "}
@@ -782,7 +786,7 @@ export const Home = () => {
                   </div>
                 </Fade>
               </div>
-              <div className="col-md-4  blog_box">
+              <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
                     {" "}
@@ -833,7 +837,7 @@ export const Home = () => {
                   </div>
                 </Fade>
               </div>
-              <div className="col-md-4  blog_box">
+              <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
                     {" "}

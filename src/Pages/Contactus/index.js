@@ -1,19 +1,19 @@
 import React from 'react';
 import "./style.scss"
 import { GrLocation } from "react-icons/gr";
-import SlideAnimationButton from '../../Components/Utils/SlideAnimationButton';
+//import SlideAnimationButton from '../../Components/Utils/SlideAnimationButton';
 import {Link} from "react-router-dom";
 import { BsTelephoneInbound } from "react-icons/bs";
 import { FaRegEnvelope } from "react-icons/fa6";
-import { RiInstagramFill } from "react-icons/ri";
-import { FaYoutube } from "react-icons/fa";
-import { TfiLinkedin } from "react-icons/tfi";
 
-const Contact = () => {
+import { INSTAGRAM_ICON, LINKEDIN_ICON, YOUTUBE_ICON } from "./Constant";
+import Contact from "../../Components/Contact/Contact";
+
+const Contactus = () => {
   return (
     <>
         <section  className='contact_us'>
-         <div className="conatiner contact_us_box">
+         <div className="container contact_us_box">
           <div className="row">
           
             <div className="col-md-8">
@@ -110,15 +110,15 @@ Gurugram, Haryana 122016
                   <h3>Follow us on</h3>
                   <div className="contactus_social_media">
                   <Link to="">
-                <RiInstagramFill />
+                {/* <RiInstagramFill /> */}<img src={LINKEDIN_ICON} />
               </Link>
 
               <Link to="">
-                <TfiLinkedin />
+                  <img src={INSTAGRAM_ICON} /> 
               </Link>
 
               <Link to="">
-                <FaYoutube />
+                <img src={YOUTUBE_ICON} /> 
               </Link>
                   </div>
                 </div>
@@ -129,10 +129,44 @@ Gurugram, Haryana 122016
           </div>
           
          </div>
+
+
+
+         
+
+        
             
         </section>
+
+
+        <section className='contact_us_map_form_section'>
+        <div className="container mt-4">
+          <div className="row">
+            {/* <span>Contact Us</span> */}
+            <div className="col-md-6">
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1QtXoNJa4bNr3llNKRLddH_rzCUNktWQ&ehbc=000F&noprof=1"
+                width="100%"
+                height="545"
+              ></iframe>
+              {/* <iframe
+    src="https://www.google.com/maps/d/embed?mid=1QtXoNJa4bNr3llNKRLddH_rzCUNktWQ"
+    width="100%"
+    height="480"
+></iframe> */}
+            </div>
+
+            <div className="col-md-6">
+              {/* contact */}
+              <Contact />
+              {/* contact ends */}
+            </div>
+          </div>
+        </div>
+      </section>
+        
     </>
   )
 }
 
-export default Contact;
+export default Contactus;

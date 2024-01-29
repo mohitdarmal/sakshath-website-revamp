@@ -12,13 +12,13 @@ import Home from "./Pages/Home";
 import { Helmet } from "react-helmet";
 import BankingSolution from "./Pages/BankingSolution";
 import Career from "./Pages/Careers/index";
-import Contact from "./Pages/Contact";
+import Contactus from "./Pages/Contactus";
 
 const App = () => {
   return (
     <>
       <Helmet>
-        <title>Home - Sakshath</title>
+        <title>Home - Sakshath Technologies</title>
         <meta name="description" content="Something SEO" />
       </Helmet>
       <Routes>
@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/service" element={<Service />} />
           <Route path="/banking-solution" element={<BankingSolution />} />
           <Route path="/career" element={<Career />} />
-          <Route path="/contact-us" element={<Contact />} />
+          <Route path="/contact-us" element={<Contactus />} />
 
           <Route path="*" element={<NotFound />} />
         </Route>

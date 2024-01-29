@@ -2,6 +2,7 @@
 
 .popular_clients {
   background-image: url("../../Assets/images/our_client_bg.png");
+  // background-image: url("../../Assets/images/our_client_blue_bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px 0;
@@ -67,11 +68,13 @@
 .popular_client_tab_sec {
   margin-top: 30px;
   img {
-    opacity: 0.7;
+    // filter: grayscale(100%);
+    // opacity: 0.7;
     transition: 0.5s;
     cursor: pointer;
   }
   img:hover {
+    // filter: none;
     opacity: 1;
     transition: 0.5s;
   }

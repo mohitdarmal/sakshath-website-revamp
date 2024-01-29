@@ -13,10 +13,25 @@ import { Autoplay } from "swiper/modules";
 import "./style.scss";
 import {
   CLIENT_LOGO1,
+  CLIENT_LOGO10,
+  CLIENT_LOGO11,
+  CLIENT_LOGO12,
+  CLIENT_LOGO13,
+  CLIENT_LOGO14,
+  CLIENT_LOGO15,
+  CLIENT_LOGO16,
+  CLIENT_LOGO17,
+  CLIENT_LOGO18,
+  CLIENT_LOGO19,
   CLIENT_LOGO2,
+  CLIENT_LOGO20,
   CLIENT_LOGO3,
   CLIENT_LOGO4,
   CLIENT_LOGO5,
+  CLIENT_LOGO6,
+  CLIENT_LOGO7,
+  CLIENT_LOGO8,
+  CLIENT_LOGO9,
 } from "./Constant";
 
 const ClientLogo = () => {
@@ -91,28 +106,34 @@ const ClientLogo = () => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO1} />{" "}
+                      <img src={CLIENT_LOGO11} />{" "}
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO2} />
+                      <img src={CLIENT_LOGO12} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO3} />
+                      <img src={CLIENT_LOGO13} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO4} />
+                      <img src={CLIENT_LOGO14} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO5} />
+                      <img src={CLIENT_LOGO15} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO2} />
+                      <img src={CLIENT_LOGO16} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO3} />
+                      <img src={CLIENT_LOGO17} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO4} />
+                      <img src={CLIENT_LOGO18} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO19} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO20} />
                     </SwiperSlide>
                   </Swiper>
                 </Tab>
@@ -159,6 +180,15 @@ const ClientLogo = () => {
                     modules={[Autoplay]}
                     className="mySwiper"
                   >
+                   <SwiperSlide>
+                      <img src={CLIENT_LOGO1} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO3} />
+                    </SwiperSlide>
                     <SwiperSlide>
                       <img src={CLIENT_LOGO4} />
                     </SwiperSlide>
@@ -166,22 +196,22 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO5} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO2} />
+                      <img src={CLIENT_LOGO6} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO3} />
+                      <img src={CLIENT_LOGO7} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO4} />
+                      <img src={CLIENT_LOGO8} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO1} />{" "}
+                      <img src={CLIENT_LOGO9} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO2} />
+                      <img src={CLIENT_LOGO10} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO3} />
+                      <img src={CLIENT_LOGO11} />
                     </SwiperSlide>
                   </Swiper>
                 </Tab>
@@ -225,15 +255,6 @@ const ClientLogo = () => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO4} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO5} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO2} />
-                    </SwiperSlide>
-                    <SwiperSlide>
                       <img src={CLIENT_LOGO1} />{" "}
                     </SwiperSlide>
                     <SwiperSlide>
@@ -243,11 +264,14 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO3} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO3} />
-                    </SwiperSlide>
-                    <SwiperSlide>
                       <img src={CLIENT_LOGO4} />
                     </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO5} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO6} />
+                    </SwiperSlide>  
                   </Swiper>
                 </Tab>
               </Tabs>
