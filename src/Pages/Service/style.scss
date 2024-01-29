@@ -9,6 +9,7 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        
         margin-right: -15px;
         margin-left: -15px;}
 
@@ -154,8 +155,8 @@
     /// @@@@@@@@    IT Benefits css starts  @@@@@@@@@@@
     
     .it_benefits{
-        padding-top: 130px;
-        padding-bottom: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
 
         .it_benefits_box{
             display: flex;
@@ -320,22 +321,95 @@
 @media screen and (min-width:768px) and (max-width:1023px){
         /* For Tab Screen  */
 .it_benefits{
+   // display: block;
 
-    it_benefits_box{
+    .it_benefits_box{
         display: flex;
+
+        .it_benefits_box_area{
+
+            .img_holder_left_bottom_img img{
+                margin-top: -10px; 
+            }
+
+            .img_holder_right_img img{
+                margin-top: 35px ;
+            }
+        } 
+        .img_happy_customer img{
+            margin-left: 30px;
+        }
+        
+
+        
+    
+
+    
+        
+
+
+             
+
+
+
+}
+}   
+
+.experience_section{
+    margin: 80px 10px 0px 10px;
+    .experience_section_container{
+        display: inline;
+    }
+    
+    .upper_textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .upper_left_textbox{
+            margin-bottom: 60px;
+            margin-left: -400px;
+        }
+        .upper_right_textbox{
+            margin: 25px 0px 12px 20px;
+        }
+
+    }
+    .counter_wrapper{
+        margin-bottom: 30px;
+    }
+    .counter_row{
+        margin-left: 30px;
+    }
+    
+}
+    
+}
+
+@media screen and (max-width:480px){
+    /* For Mobile Screen  */
+
+.it_benefits{
+
+    .left_side{
+        margin: 35px 35px;
+    }
+    .img_holder_left_top_img img{
+        display: none;
+
+    }
+    .img_holder_left_bottom_img img{
+        display: none;
     }
 
-    // .left_side{
-    //     display: flex;
-    // }
-    
+    .img_holder_right_img img{
+        display: none;
+    }
+    .it_benefits_text_wrapper{
+        margin-left: -25px ;}
 
 
-        .img_holder_right_img img{
-          padding-left: 20px;
-        }
-    }   
-    
+}
 }
 
     /// @@@@@@@@@@   meddia query ends@@@@@@@
