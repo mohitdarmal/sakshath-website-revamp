@@ -1,19 +1,87 @@
 
 @import '../../Assets/saas/Main.scss';
 
-.career_container{
+.join_our_team
+{
+    padding-top: 80px;
+    padding-bottom: 35px;
+}
+.our_team_container_box{
+    content: "";
+    position: relative;
+}
+
+.our_team_container{
+    box-shadow: 0px 2px 20px #00000017;
+    padding: 30px;
+    border-radius: 10px;
+    padding-bottom: 55px;
+    margin-right: 30px;
+    background: #fff;
+    position: relative;  
+ 
     p{
-        padding-top: 50px;
+        padding-top: 20px;
+        font-size: 18px;
+        font-family: rajdahni;
+  
+    }
+}
+
+.our_team_container::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #33a3d3;
+    top: 7px;
+    left: -7px;
+    z-index: -9;
+    border-radius: 15px;
+}
+
+
+.sakshath_career_box {
+    position: relative;
+    content: "";
+}
+
+
+.sakshath_career_container{
+    box-shadow: 0px 2px 20px #00000017;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 30px;
+    background: #fff;
+    position: relative; 
+    p{
+        padding-top: 20px;
         font-size: 18px;
         font-family: rajdahni;
     }
+}
+
+
+.sakshath_career_container::after{
+    position: absolute;
+    content: "";
+    z-index: -9;
+    background: #33a3d3;
+    left: -7px;
+    top: 7px;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
 }
 
 .career_mail_link
 {
 text-decoration: none;
     font-size: 22px;
-    color: #24688f;
+    // color: #24688f;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #242323
 
 }
 .career_mail_link:hover{
@@ -22,18 +90,12 @@ text-decoration: none;
     
 }
 
-// .benifts_icons img :before{
-//     position: relative;
-//     display: flex;
-//     justify-content: center;
-//     background: #25678f;
-//     border-radius: 50%;
-//     padding: 14px 12px;
-    
-// }
-// .benfits_img img{
-//     mix-blend-mode: darken;
-// }
+.sakshath_career_mail{
+    padding-bottom: 50px;
+    padding-top: -20px;
+}
+
+
 
 .benfits{
     padding-top:34px;
@@ -55,14 +117,14 @@ text-decoration: none;
 .benfits_icon_img::before{
     position: absolute;
     content: "";
-    width: 5px;
-    height: 93px;
+    width: 100px;
+    height: 3px;
 background: rgb(127, 127, 185);
     // background: linear-gradient(90deg,rgb(127, 127, 185) , blue );
   
-    left: 45px;
-    /* top: 0%; */
-    bottom: -93px;
+    left: 95px;
+top: 50%;
+    // bottom: -93px;
 }
    
 .benfits_icon_img img{
@@ -98,4 +160,49 @@ background: rgb(127, 127, 185);
 .benfits_img{
     mix-blend-mode: darken;
     padding-left: 50px;
+}
+
+
+// our values
+// .honesty{
+//     box-shadow: 0px 2px 20px #00000052;
+//     padding: 30px;
+//     margin-right: 20px;
+//     border-radius: 10px;
+//     p{
+//         padding: 10px 0;
+//     }
+// }
+
+.jobs{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.hiring_box{
+    box-shadow: 0px 2px 20px #0000003b;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    h5{
+        text-decoration: underline;
+    font-family: roboto;
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom: 15px;
+    min-height: 72px;
+    }
+    a{
+        padding:7px 12px;
+    }
+}
+
+@media screen and (max-width:480px) 
+{
+    .our_team_container p
+    {
+        padding-top: 15px;
+        font-size: 18px;
+        font-family: rajdahni;
+    }
+   
 }

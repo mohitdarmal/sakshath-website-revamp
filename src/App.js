@@ -13,6 +13,7 @@ import { Helmet } from "react-helmet";
 import BankingSolution from "./Pages/BankingSolution";
 import Career from "./Pages/Careers/index";
 import Contactus from "./Pages/Contactus";
+//import Contactus from "./Components/Contact/Contact";
 
 const App = () => {
   return (

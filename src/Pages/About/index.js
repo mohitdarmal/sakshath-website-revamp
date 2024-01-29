@@ -3,7 +3,12 @@ import { Helmet } from "react-helmet";
 // import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import BreadCumb from "../../Components/Breadcumb/index";
 import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
-import { ABOUT_MISSION, ABOUT_VISION, WAVE_IMG, about_who_we_Are } from "./Constant";
+import {
+  ABOUT_MISSION,
+  ABOUT_VISION,
+  WAVE_IMG,
+  about_who_we_Are,
+} from "./Constant";
 import "./style.scss";
 import Heading from "../../Components/Utils/Heading";
 import SubTitle from "../../Components/Utils/Title_head";
@@ -106,118 +111,58 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* vision mission starts */}
-      {/* <section className="company_vison">
+
+
+
+      {/* vision misson starts */}
+
+      <section className="vision">
         <div className="container">
-          <div className="row text-center vission_mission">
-            <div className="col-md-6 main-content">
-              <div className="box">
-                <div className="vision">
-                  <div className="vison_img">
-                    <img src={ABOUT_VISION} alt="" style={{ width: "10%" }} />
-                  </div>
-                  <Heading heading="VISION" uppercase="text-uppercase" />
-                  <div className="vision_content justify-content-start">
-                    It is the desire of Sakshath to establish itself as a
-                    powerful business operation with vibrance and growth built
-                    on Sakshath’s principles that is highly regarded by our
-                    customers, stake holders and our employees. As an
-                    organization, we want to be in a place where customers rely
-                    on the excellence of our products and services.
-                  </div>
-                </div>
+          <div className="row align-items-center">
+            <div className="col-md-5">
+              <p className="vision_para">
+                It is the desire of Sakshath to establish itself as a powerful
+                business operation with vibrance and growth built on Sakshath’s
+                principles that is highly regarded by our customers, stake
+                holders and our employees. As an organization, we want to be in
+                a place where customers rely on the excellence of our products
+                and services.
+              </p>
+            </div>
+            <div className="col-md-2 text-center d-flex justify-content-center">
+              <div className="vision_rounded">
+                <p>Vision</p>
+              </div>
+              <div className="vertical-dotted-line"></div>
+            </div>
+            <div className="col-md-5"></div>
+          </div>
+          <div className="row align-items-center">
+            <div className="col-md-5"></div>
+            <div className="col-md-2 text-center d-flex justify-content-center">
+              <div className="mision_rounded">
+                <p>Mision</p>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="mission">
-                <div className="box">
-                  <div className="mission-img">
-                    <img src={ABOUT_MISSION} alt="" style={{ width: "10%" }} />
-                  </div>
-                  <Heading heading="MISSION" uppercase="text-uppercase" />
-                  <div className="vision_content justify-content-start">
-                    To engage businesses from small to medium enterprises to
-                    transition into ERP solutions that are easy to use,
-                    scalable, enable business insight and ultimately benefit the
-                    user community. We want to be a fair, reliable and
-                    professional partner to our customers by offering useful and
-                    effective products and services that contribute to their
-                    success.
-                  </div>
-                </div>
-              </div>
+            <div className="col-md-5">
+              <p className="mision_para">
+                It is the desire of Sakshath to establish itself as a powerful
+                business operation with vibrance and growth built on Sakshath’s
+                principles that is highly regarded by our customers, stake
+                holders and our employees. As an organization, we want to be in
+                a place where customers rely on the excellence of our products
+                and services.
+              </p>
             </div>
           </div>
-        </div>
-      </section> */}
-      {/* Vision Mission ends */}
-
-
-
-
-
-    <section className="vison_mission_section">
-      <div className="container">
-        <div className="row">
-       
-        <div className="col-md-6 text-end">
-       <div className="vision">
-          <div className="vision_para">
-          <p>Vision</p>
-          </div>
-            <div className="vision_para_content">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sed architecto nisi voluptas sunt obcaecati molestias sint pariatur impedit accusamus.
-            </div>
-         
-          </div>
-          </div>
-
-          <div className="col-md-6">
-          {/* <div className="mission ">
-          <div className="mision_para">
-            <div className="mision_para_content">
-              <p>Mission</p>
-            </div>
-          </div>
-          </div> */}
-          </div>
-      
-      </div>
-      <div className="row mission_container">
-      <div className="col-md-6"></div>
-       
-       <div className="col-md-6 text-end">
-      <div className="mission">
-         <div className="mission_para">
-         <p>Mission</p>
-         </div>
-           <div className="mission_para_content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sed architecto nisi voluptas sunt obcaecati molestias sint pariatur impedit accusamus.
-           </div>
-        
-         </div>
-         </div>
-
-         {/* <div className="col-md-6"> */}
-         {/* <div className="mission ">
-         <div className="mision_para">
-           <div className="mision_para_content">
-             <p>Mission</p>
-           </div>
-         </div>
-         </div> */}
-         {/* </div> */}
-     
-     </div>
-
-      </div>
-    </section>
-
-      <section>
-        <div className="container">
-          <div className="row"></div>
         </div>
       </section>
+      {/* 
+      <section className="mission">
+        <div className="container">
+          
+        </div>
+      </section> */}
 
       {/* client logo */}
       <ClientLogo />
@@ -235,7 +180,7 @@ const About = () => {
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=1QtXoNJa4bNr3llNKRLddH_rzCUNktWQ&ehbc=000F&noprof=1"
                 width="100%"
-                height="545"
+                height="435"
               ></iframe>
               {/* <iframe
     src="https://www.google.com/maps/d/embed?mid=1QtXoNJa4bNr3llNKRLddH_rzCUNktWQ"

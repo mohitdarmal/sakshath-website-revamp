@@ -21,7 +21,7 @@ const Service = () => {
     <section className='experience_section'>
         <div className="container experience_section_box">
             <div className="row experience_section_container">
-                <div className="col-md-7 experience_section_textarea">
+                <div className="col-md-7 experience_section_textarea ipad_full_width">
                     <div className="experience_text">
                         <div className="upper_textbox">
                             <div className="upper_left_textbox mb-45">13</div>
@@ -106,9 +106,9 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-5">
-                  <div className="img_happy_customer">
-                    <img src={SERVICE_HAPPY_CUSTOMER} alt="" />
+                <div className="col-md-5 ipad_full_width">
+                  <div className="img_happy_customer ">
+                    <img src={SERVICE_HAPPY_CUSTOMER} alt=""  className='img-fluid'/>
                   </div>
                 </div>
             </div>
@@ -149,8 +149,8 @@ const Service = () => {
           <div className="col-md-6 it_benefits_box_area">
             <div className="img_holder_box">
               <div className="row">
-                <div className="col-md-6 left_side">
-                  <div className="img_holder_left_top_img">
+                <div className="col-md-6 left_side ipad_full_width">
+                  <div className="img_holder_left_top_img ">
                     <img src={IT_BENEFITS_LEFT_TOP_IMG} alt="" />
                   </div>
                   <div className="img_holder_left_bottom_img">
@@ -161,7 +161,7 @@ const Service = () => {
 
 
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 ipad_full_width">
                   <div className="img_holder_right_img">
                     <img src={IT_BENEFITS_RIGHT_IMG} alt="" />
                   </div>
@@ -174,7 +174,7 @@ const Service = () => {
               <div className="it_benefits_heading_section">
                 <span className='it_benefit_title'>IT BENEFITS</span>
                 <div className="heading_content">
-                <Heading heading="We Provide How Can Growth Your IT Business" uppercase="text-uppercase"></Heading>
+                <Heading heading="We Provide How Can Growth Your IT Business" uppercase="text-uppercase" />
                 </div>
               </div>
               <p>
