@@ -8,7 +8,7 @@
 
         .address_wrapper{
             background-color: #f8f8f8;
-            padding: 50px 30px 0px 20px;
+           padding:  50px 30px 30px 20px;
 
     .address_wrapper_box{
         display: flex;
@@ -60,8 +60,8 @@
      }
         }
         .contact_card{
-            padding: 40px 50px 20px;
-            background: #141d38;
+            padding: 40px 15px;
+            background:#32a4d5;
             font-family: $rajdhani_font;
             text-align: start;
             margin-left: -20px;
@@ -128,4 +128,16 @@
     padding-bottom: 50px;
     //background: rgb(198 223 241);
     
+}
+
+/// @@@@@@@ media quert starts @@@@@@@@@
+   
+  ///@@@@ mobile screen @@@@
+@media screen and (max-width:480px){
+     .contact_us{
+     .contact_card{
+        margin-left: 0px!important;
+        
+    }
+}
 }
