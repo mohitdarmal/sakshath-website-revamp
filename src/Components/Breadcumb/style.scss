@@ -7,3 +7,10 @@
     text-decoration: underline;
     // font-family: $rajdhani;
 }
+
+
+@media screen and (max-width:480px) {
+    .breadcumb_bg_img{
+        padding: 60px 0 !important;
+    }
+}

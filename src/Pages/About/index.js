@@ -43,8 +43,8 @@ const About = () => {
 
                 <p>
                   Our journey started way back in the year 2012. It started as a
-                  partnership firm initially under the name Saaksh8 Consulting
-                  Services with smidgen capital, later in the years this small
+                  partnership firm initially under the name <strong> Saaksh8 Consulting
+                  Services</strong> with smidgen capital, later in the years this small
                   consulting firm providing IT recruitment Services ran into the
                   idea of having an ERP offshore development. If not quite a
                   tale of rags to riches, the story of Sakshath Technologies’
@@ -54,9 +54,9 @@ const About = () => {
                   <br />
                   Sakshath Technologies’ biggest USP’s are ERP (Epicor, MS
                   Dynamics, JD Edwards and SYSPRO), QA, BI & Analytics (Power
-                  BI, Qlik and Tableau). SakshathTechnologies® is the only
+                  BI, Qlik and Tableau).<strong> SakshathTechnologies® is the only
                   company in India to provide SYSPRO Services that are designed
-                  in a way to support growth and improve profitability. We are
+                  in a way to support growth and improve profitability</strong>. We are
                   committed to helping customers understand that the software
                   used in their organization is a business decision that
                   maximizes their software investment. We are equipped with

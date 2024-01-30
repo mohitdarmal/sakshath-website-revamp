@@ -15,7 +15,7 @@
     box-shadow: 0px 2px 20px #00000017;
     padding: 30px;
     border-radius: 10px;
-    padding-bottom: 55px;
+    padding-bottom: 35px;
     margin-right: 30px;
     background: #fff;
     position: relative;  
@@ -97,82 +97,116 @@ text-decoration: none;
 
 
 
-.benfits{
-    padding-top:34px;
+ .benefits_container{
+     padding-top: 80px;
+     padding-bottom: 80px;
+     background: #f5f5f5;
+ }
+ .benefit_icon{
+   
+     justify-content: center;
+     align-items: center;
+ }
+ .benefit_img{
+     background: #32a4d5;
+     border-radius: 50%;
+     line-height: 100px;
+     width: 100px;
+     height: 100px;
+     padding: 2px 18px;
+ }
+ .benefit_img img{
+     filter: brightness(0) invert(1);
+ }
+.cols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
-.benfits_icon_img{
-    // background: #33a3d3;
-    // background: linear-gradient(90deg,rgb(127, 127, 185) , rgb(119, 119, 146) );
-    background: linear-gradient(90deg, rgb(50 163 210), rgb(62 108 136));
-    border-radius: 50%;
-    position: relative;
-}
-.benfits_icon_imgs{
-    // background: #33a3d3;
-    // background: linear-gradient(90deg,rgb(127, 127, 185) , rgb(119, 119, 146) );
-    background: linear-gradient(90deg, rgb(50 163 210), rgb(62 108 136));
-    border-radius: 50%;
-}
-.benfits_icon_img::before{
+.benefit_icon{position: relative;}
+.benefits_container .cols:not(:last-child) .benefit_img::before{
     position: absolute;
     content: "";
-    width: 100px;
-    height: 3px;
-background: rgb(127, 127, 185);
-    // background: linear-gradient(90deg,rgb(127, 127, 185) , blue );
-  
-    left: 95px;
-top: 50%;
-    // bottom: -93px;
-}
-   
-.benfits_icon_img img{
-    padding: 15px;
-    filter: brightness(0) invert(1);
-
-}
-.benfits_icon_imgs img{
-    padding: 15px;
-    filter: brightness(0) invert(1);
-}
-
-.benfit_heading p{
-    font-size: 24px;
-    font-weight: 700;
-    font-family: "Rajdhani";
-    line-height: 48px;
-    // color: #25678f;
-    color: black;
-    text-decoration: underline;
-}
-
-.benfit_content{
-    padding-left: 25px;
-}
-
-.benfits_section{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background: #faf4f4;
-}
-
-.benfits_img{
-    mix-blend-mode: darken;
-    padding-left: 50px;
+    width: 160px;
+    border-bottom: 2px dashed #25678f;
+    height: 5px;
+    margin-top: 50px;
+    left: 0;
+    margin-left: 100px;
 }
 
 
-// our values
-// .honesty{
-//     box-shadow: 0px 2px 20px #00000052;
-//     padding: 30px;
-//     margin-right: 20px;
-//     border-radius: 10px;
-//     p{
-//         padding: 10px 0;
-//     }
+
+// new benefits ends
+
+// befits starts
+// .benfits{
+//     padding-top:34px;
 // }
+
+// .benfits_icon_img{
+
+//     background: linear-gradient(90deg, rgb(50 163 210), rgb(62 108 136));
+//     border-radius: 50%;
+//     position: relative;
+// }
+// .benfits_icon_imgs{
+
+//     background: linear-gradient(90deg, rgb(50 163 210), rgb(62 108 136));
+//     border-radius: 50%;
+// }
+// .benfits_icon_img::before{
+//     position: absolute;
+//     content: "";
+//     width: 100px;
+//     height: 3px;
+// background: rgb(127, 127, 185);
+
+  
+//     left: 95px;
+// top: 50%;
+//     // bottom: -93px;
+// }
+   
+// .benfits_icon_img img{
+//     padding: 15px;
+//     filter: brightness(0) invert(1);
+
+// }
+// .benfits_icon_imgs img{
+//     padding: 15px;
+//     filter: brightness(0) invert(1);
+// }
+
+// .benfit_heading p{
+//     font-size: 24px;
+//     font-weight: 700;
+//     font-family: "Rajdhani";
+//     line-height: 48px;
+//     color: black;
+//     text-decoration: underline;
+// }
+
+// .benfit_content{
+//     padding-left: 25px;
+// }
+
+// .benfits_section{
+//     padding-top: 100px;
+//     padding-bottom: 100px;
+//     background: #faf4f4;
+// }
+
+// .benfits_img{
+//     mix-blend-mode: darken;
+//     padding-left: 50px;
+// }
+
+
+//benefits ends
+
+//apply job starts
 
 .jobs{
     padding-top: 80px;
@@ -196,13 +230,40 @@ top: 50%;
     }
 }
 
+//apply job ends
+
 @media screen and (max-width:480px) 
 {
+    .join_our_team {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .our_team_container p
     {
         padding-top: 15px;
         font-size: 18px;
         font-family: rajdahni;
     }
+    .sakshath_career_box{
+        position: relative;
+    content: "";
+    padding-top: 25px;
+    } 
+    .sakshath_career_container {
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.0901960784);
+        padding: 30px;
+        border-radius: 10px;
+        margin-left: 0 !important;
+        background: #fff;
+        position: relative;
+    }
    
+    .career_mail_link {
+        text-decoration: none;
+        font-size: 18px;
+        font-family: "Roboto";
+        font-weight: 700;
+        color: #242323;
+    }
+    
 }
