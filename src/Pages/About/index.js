@@ -34,7 +34,7 @@ const About = () => {
         <BreadCumb imgUrl={ABOUT_BANNER} title="About Us" />
         <div className="container mt-4">
           <div className="row mt-4 ">
-            <div className="col-md-6">
+            <div className="col-md-6 ipad_full_width">
               <div className="about_who_we_r_content">
                 {/* <div className="about_who_we_r_content"> */}
 
@@ -66,7 +66,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 ipad_full_width">
               <div className="who_we_are_img">
                 <img src={about_who_we_Are} alt="" className="img-fluid" />
               </div>

@@ -29,18 +29,21 @@ const Career = () => {
         title: "Senior React Developer",
         description:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        experince:'2.5 years+'
       },
       {
         id: 2,
         title: "Junior React Developer",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur.",
+        experince:'1 years+'
     },
     {
       id: 3,
       title: "Sales",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur",
+        experince:'6 years+'
     },
     {
       id: 4,
@@ -286,12 +289,12 @@ const Career = () => {
                 <div className="col-md-3" key={data.id}>
                   <div className="hiring_box">
                     <h5>{data.title}</h5>
-
+                    <p>{data.experince}</p>
                     <p>{`${data.description.substring(0, 100)}`} </p>
                     <button
                       onClick={ () => {
                         setShowModal(true);
-                        setModalPopupData({title:data.title, des: data.description})
+                        setModalPopupData({title:data.title, des: data.description, exp:data.experince})
                         }}
                       >
                       Apply Now
@@ -309,6 +312,7 @@ const Career = () => {
                       onHide={handleCloseModal}
                       title={modalPopupData.title}
                       description={modalPopupData.des}
+                      experince={modalPopupData.exp}
                     />
           </div>
         </div>
