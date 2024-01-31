@@ -1,3 +1,6 @@
+
+@import '../../../Assets/saas/Main.scss';
+
 .TimelineNavWrapper-sc-1apb8f9-0 jGdIlj timeline-controls rc-controls{
     display: none !important;
 }
@@ -19,14 +22,57 @@
     color: #000;
 }
 
-.bXpluN {
-    align-items: center;
-    display: flex;
-    width: 32%;
-}
+// .bXpluN {
+//     align-items: center;
+//     display: flex;
+//     width: 32%;
+// }
 
 .gJAGSz{
     background: #33a3d3 !important;
     color: #fff !important;
 
+}
+// .bXpluN  {
+//     width: 125px;
+// }
+
+// our_values
+
+.core_values{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.our_values{
+    padding-top: 12px;
+}
+.core_value_box{
+    box-shadow: 0 2px 20px rgb(0 0 0 / 13%);
+    padding: 20px 20px;
+    border-radius: 5px;
+    min-height: 280px;
+
+}
+
+.title{
+    padding-bottom: 20px;
+ p{
+    padding-top: 20px;
+    font-size: 22px;
+    color: #32a4d5;
+    font-family:$rajdhani_font;
+    font-weight: 600;
+    &:hover{
+        color: #000;
+        cursor: pointer;
+        text-decoration: underline;
+
+    }
+}
+}
+
+@media screen and  (max-width:480px){ 
+   .bXpluN   {
+    width: 125px !important;
+}
 }

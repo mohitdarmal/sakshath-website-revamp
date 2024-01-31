@@ -289,7 +289,7 @@ const Career = () => {
                 <div className="col-md-3" key={data.id}>
                   <div className="hiring_box">
                     <h5>{data.title}</h5>
-                    <p>{data.experince}</p>
+                    {/* <p>{data.experince}</p> */}
                     <p>{`${data.description.substring(0, 100)}`} </p>
                     <button
                       onClick={ () => {
@@ -312,7 +312,7 @@ const Career = () => {
                       onHide={handleCloseModal}
                       title={modalPopupData.title}
                       description={modalPopupData.des}
-                      experince={modalPopupData.exp}
+                       experince={modalPopupData.exp}
                     />
           </div>
         </div>
