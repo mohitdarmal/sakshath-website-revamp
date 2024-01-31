@@ -16,3 +16,9 @@
         color: $white_color;
     }
 }
+
+@media screen and (max-width:480px) {
+    .breadcumb_bg_img{
+        padding: 60px 0 !important;
+    }
+}

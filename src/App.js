@@ -9,10 +9,14 @@ import Service from "./Pages/Service";
 import Home from "./Pages/Home";
 import { Helmet } from "react-helmet";
 import BankingSolution from "./Pages/BankingSolution";
-import Career from "./Pages/Careers/index";
+import Career from "./Pages/Careers";
 import Contactus from "./Pages/Contactus";
 import { TailSpin, Watch } from "react-loader-spinner";
 import ApplicationDevelopment from "./Pages/Service/ApplicationDevelopment";
+import OurJounery from "./Pages/About/Our_Jounery";
+//import Contactus from "./Components/Contact/Contact";
+import Blog from "./Pages/Blogs";
+import BlogDetail from "./Pages/Blogs/BlogDetail";
 
 const App = () => {
 // const [loading, setLoading] = useState(true);
@@ -59,6 +63,10 @@ const App = () => {
           <Route path="/banking-solution" element={<BankingSolution />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<Contactus />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/blogs/:id" element={<BlogDetail />} />
+
+          <Route path="/company-journey" element={<OurJounery/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

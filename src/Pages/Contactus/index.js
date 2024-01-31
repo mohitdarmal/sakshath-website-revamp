@@ -16,7 +16,7 @@ const Contactus = () => {
          <div className="container contact_us_box">
           <div className="row">
           
-            <div className="col-md-8">
+            <div className="col-md-8 ipad_full_width">
               <div className="address_wrapper">
                 <div className="row address_wrapper_box">
                   <div className="col-md-6 address_col">
@@ -78,7 +78,7 @@ Gurugram, Haryana 122016
                 </div>
               </div>
             </div>
-            <div className="col-md-4 contact_card">
+            <div className="col-md-4 contact_card ipad_full_width">
               <div className="information_wrapper">
                 <div className="information_box">
                   <h3>Contact info</h3>
