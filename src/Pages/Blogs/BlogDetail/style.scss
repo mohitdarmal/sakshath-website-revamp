@@ -1,0 +1,26 @@
+@import "../../../Assets/saas/Main.scss";
+.blogDetail_page{
+
+    .blogDetail_content_page{
+        padding:  40px;
+    }
+    .blogdetail_date_box{
+        margin-top: 20px;
+
+        .blogdetail_date svg{
+            vertical-align: text-top;
+            color:#32a4d5 ;
+            
+        }
+    }
+    .blogdetail_mainHeading{
+        font-size: 30px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    }
+    .popular_tags{
+        margin-bottom: 30px;
+    margin-top: 30px;
+    }
+}

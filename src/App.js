@@ -14,6 +14,8 @@ import BankingSolution from "./Pages/BankingSolution";
 import Career from "./Pages/Careers/index";
 import Contactus from "./Pages/Contactus";
 //import Contactus from "./Components/Contact/Contact";
+import Blog from "./Pages/Blogs";
+import BlogDetail from "./Pages/Blogs/BlogDetail";
 
 const App = () => {
   return (
@@ -30,6 +32,9 @@ const App = () => {
           <Route path="/banking-solution" element={<BankingSolution />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<Contactus />} />
+          <Route path="/blogs" element={<Blog />} />
+          <Route path="/blogs/:id" element={<BlogDetail />} />
+
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
