@@ -189,16 +189,8 @@ const Header = () => {
                     aria-labelledby="accountDropdown"
                   >
                     <li>
-                      <NavLink
-                        to="/application-development"
-                        className="dropdown-item"
-                      >
+                      <NavLink to="/application-development" className="dropdown-item">
                         Application Development
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/web-developement" className="dropdown-item">
-                        web-developement
                       </NavLink>
                     </li>
                     <li>
@@ -217,8 +209,13 @@ const Header = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/automation" className="dropdown-item">
-                        Automation
+                      <NavLink to="/management-service" className="dropdown-item">
+                        Managed Services
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/integration" className="dropdown-item">
+                        Integration
                       </NavLink>
                     </li>
                   </ul>

@@ -7,11 +7,12 @@ import "./style.scss";
 import Heading from "../Utils/Heading";
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import { Form,  Modal, Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { MdOutlineEmail } from "react-icons/md";
 import { INSTAGRAM_ICON, LINKEDIN_ICON, YOUTUBE_ICON } from "../Header/Constant";
 import BackToTop from "../BackToTop";
 import FloatingActionButton from "../FloatingActionButton";
+import OnLoadPopup from "../NewsLetterPopup";
 
 
 
@@ -232,7 +233,7 @@ const Footer = () => {
 
       <BackToTop />
       <FloatingActionButton />
-
+{/* <OnLoadPopup /> */}
       
     
     </>

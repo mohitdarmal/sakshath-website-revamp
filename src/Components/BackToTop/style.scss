@@ -42,14 +42,11 @@
 
   @media screen and (max-width:767px){
     .back-to-top-button{
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
         svg{
             vertical-align: top;
-            position: relative;
-            top: -2px;
-            left: -2px;
         }
     }
   }

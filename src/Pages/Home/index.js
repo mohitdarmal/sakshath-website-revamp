@@ -717,8 +717,7 @@ export const Home = () => {
                           APPLICATION DEVELOPMENT
                         </h5>
                         <p className="justify-content-end  right_para ">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Explicabo magni numquam saepe aperiam.
+                        Elevating Experiences through Exceptional Applications. Empowering businesses through innovative apps.Next-Gen Apps for Next-Level Performance.
                         </p>
                       </div>
                     </Fade>
@@ -733,8 +732,7 @@ export const Home = () => {
                       <div className="right_home_principle_heading pe-md-0">
                         <h4 className="right_home_subheading">AUTOMATION</h4>
                         <p className=" right_para">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Explicabo magni numquam saepe aperiam.
+                        Our automation solutions lead the way. Our automation is to your advantage. Driving productivity through precision automation.
                         </p>
                       </div>
                     </Fade>
@@ -751,8 +749,7 @@ export const Home = () => {
                       <div className="right_home_principle_heading">
                         <h5 className="right_home_subheading">ANALYTICS</h5>
                         <p className="justify-content-end right_para">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Explicabo magni numquam saepe aperiam.
+                        Elevate your business with our analytics solutions. We are transforming Data into actionable intelligence.
                         </p>
                       </div>
                     </Fade>
@@ -769,8 +766,7 @@ export const Home = () => {
                           BANKING SOLUTION
                         </h4>
                         <p className=" right_para">
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Explicabo magni numquam saepe aperiam.
+                        Unleash the power of our comprehensive solutions.  Redefining Banking Solutions for a Digital World.
                         </p>
                       </div>
                     </Fade>

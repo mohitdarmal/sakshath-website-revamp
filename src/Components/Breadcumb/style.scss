@@ -1,9 +1,18 @@
 
-// @import '../../Assets/saas/Main.scss';
+@import '../../Assets/saas/Main.scss';
 
 
-.background_banner h3{
-    font-size: 52px;
-    text-decoration: underline;
-    // font-family: $rajdhani;
+.breadcumb_sec{
+    padding: 160px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   .background_banner h1{ 
+        font-size: 52px;
+        font-family: $rajdhani_font!important;
+        font-weight: bold !important;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white_color;
+    }
 }

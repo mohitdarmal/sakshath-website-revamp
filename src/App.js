@@ -1,7 +1,5 @@
-import React from "react";
-import Header from "./Components/Header/index";
-import Footer from "./Components/Footer/index";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import NotFound from "./Pages/NotFound/NotFound";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
@@ -13,12 +11,42 @@ import { Helmet } from "react-helmet";
 import BankingSolution from "./Pages/BankingSolution";
 import Career from "./Pages/Careers/index";
 import Contactus from "./Pages/Contactus";
-//import Contactus from "./Components/Contact/Contact";
+import { TailSpin, Watch } from "react-loader-spinner";
+import ApplicationDevelopment from "./Pages/Service/ApplicationDevelopment";
 
 const App = () => {
+// const [loading, setLoading] = useState(true);
+
+// useEffect(() => {
+//   window.onload = () => {
+//     setLoading(false);
+//   };
+// }, []);
+
   return (
     <>
-      <Helmet>
+    {/* {loading ?
+    <div>  
+    <TailSpin
+ 
+  height="80"
+  width="80"
+  radius="1"
+  color= "#32A4D5"
+  ariaLabel="tail-spin-loading"
+  wrapperStyle={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#0000000d' }}
+  wrapperClass=""
+  visible={true}
+  /><p style={{    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    color: '#fff',}}><img width="60" src={require("../src/Assets/images/sakhsath_fevicon.png")} /></p> </div> : 
+  <>
+  
+      </>
+  } */}
+   <Helmet>
         <title>Home - Sakshath Technologies</title>
         <meta name="description" content="Something SEO" />
       </Helmet>
@@ -27,12 +55,14 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
+          <Route path="/application-development" element={<ApplicationDevelopment />} />
           <Route path="/banking-solution" element={<BankingSolution />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<Contactus />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+      
     </>
   );
 };
