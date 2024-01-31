@@ -13,6 +13,7 @@ import { Helmet } from "react-helmet";
 import BankingSolution from "./Pages/BankingSolution";
 import Career from "./Pages/Careers/index";
 import Contactus from "./Pages/Contactus";
+import OurJounery from "./Pages/About/Our_Jounery";
 //import Contactus from "./Components/Contact/Contact";
 import Blog from "./Pages/Blogs";
 import BlogDetail from "./Pages/Blogs/BlogDetail";
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blogs/:id" element={<BlogDetail />} />
 
+          <Route path="/company-journey" element={<OurJounery/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
