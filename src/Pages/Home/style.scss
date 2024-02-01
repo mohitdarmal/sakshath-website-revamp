@@ -223,41 +223,6 @@ Button {
   }
 }
 
-.what_we_do {
-  background-color: #f7f8f9;
-  padding-top: 120px;
-  padding-bottom: 90px;
-
-  .what_we_do_box {
-    padding: 50px 35px 40px;
-    background-color: #fff;
-    border: 1px solid #f5f5f5;
-    .icon_box{
-      margin-bottom: 20px;
-    }
-    p{margin-bottom: 0px;}
-  }
-
-  .what_we_do_icon_box {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-
-  img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .text h3 {
-    font-size: 24px;
-    line-height: 32px;
-    font-family: $rajdhani_font;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-}
 
 .popular_princial {
   background-color: $light_navy_blue;
@@ -325,39 +290,6 @@ Button {
 
 
 
-// happy clients
-
-.happy_client {
-  // background-image: url("../../Assets/images/happyClient_bg_image2.jpg");
-  background-image: url("../../Assets/images/happyClient_bg_image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #33a3d2;
-  width: 100%;
-  padding: 100px;
-  text-align: center;
-  background-attachment: fixed;
-
-  .happy_client_icon {
-    display: inline-block;
-    background-color: white;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    display: none;
-  }
-  .happy_client_icon img {
-    width: 55px;
-  }
-  .happy_client_number h2 {
-    margin-top: 20px;
- font-size: 80px;
- font-family: $rajdhani_font;
- font-weight: bold;
-  }
-}
 
 
   //  planning banner css
@@ -503,7 +435,7 @@ Button {
   z-index: 99;
   margin-bottom: 20px;
   position: relative;
-  padding: 50px 0 60px;
+  padding: 100px 0 100px;
 }
   .iso_certificate_sec_bg:after{
   content: "";
@@ -571,11 +503,7 @@ Button {
   .iso_certificate_sec_bg:after{
     left: 0;
   }
-  .what_we_do .col-md-3{
-    width: 50%;
-  }
-  .what_we_do_heading{width: 100%;}
-  .what_we_do .what_we_do_box{margin-bottom: 25px;}
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -634,22 +562,7 @@ Button {
   }
   .iso_certificate_sec_bg{padding: 40px 0 40px;}
 
-  .happy_client{
-    padding: 40px 0;
-  }
 
-
-
-  .what_we_do {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .what_we_do .what_we_do_box {
-    padding: 30px 35px 20px;
-    margin-bottom: 30px;
-    background-color: #fff;
-}
 
 
  
@@ -662,16 +575,7 @@ Button {
 }
 
 @media screen and (max-width:1023px){
-  .happy_client{
-    .col-md-3{
-      width: 50%;
-    }
-    .col-md-3:first-child{margin-bottom: 25px;}
-    .happy_client_number h2{
-      font-size: 40px;
-      margin-top: 0px;
-    }
-  }
+ 
   .left_home_principle p{width: 100%;}
 }
 
@@ -703,17 +607,7 @@ Button {
   .image-box img {
     padding: 8rem 0 0rem 4rem;
 }
-.happy_client{    padding: 60px 0;}
-.what_we_do {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 
-.what_we_do .col-md-3{
-  width: 50%;
-}
-.what_we_do_heading{width: 100%;}
-.what_we_do .what_we_do_box{margin-bottom: 25px;}
 .planning_banner .right_planning_banner_content{text-align: left !important;}
 .planning_banner{padding-top: 70px; padding-bottom: 70px;}
 .top_blog_container {
@@ -736,20 +630,10 @@ Button {
   .iso_certificate_sec_bg:after{left: 0;}
   .iso_certificate_sec{margin-top: 0;}
   .who_we_are .col-md-6{display: none;}
-  .happy_client{    padding: 70px 0;}
-  .happy_client .col-md-3{width: 50%;}
-  .happy_client .col-md-3:first-child{margin-bottom: 40px;}
-  .what_we_do_heading{width: 100%;}
-.what_we_do .what_we_do_box{margin-bottom: 30px;}
-.what_we_do {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-}
 
-@media screen and (min-width:1024px){
- 
+
 }
+ 
 
 @media screen and (max-width: 1300px) {
   .banner_caption_container {
@@ -800,6 +684,8 @@ Button {
       border-bottom: 1px solid #bac6d2;
     }
   }
+
+  .right_home_principle .d-flex{min-height: 286px;}
 }
  
 

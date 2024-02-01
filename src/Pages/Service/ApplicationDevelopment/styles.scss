@@ -2,6 +2,7 @@
 
 .why_choose_app_dev_sec{
     padding: 80px 0;
+    background: #f5fcff;
 }
 
 .app_dev_icon_with_text{
@@ -12,14 +13,28 @@
 
 .app_dev_icon_with_text{
     img{
-        width: 50px;
+        width: 59px;
         margin-right: 20px;
     }
     h5{font-size: 18px;}
 }
 
+
+
 @media screen and (max-width:767px){
     .why_choose_app_dev_sec{
         padding: 40px 0;
     }
+    .why_choose_app_dev_content{
+        margin-top: 20px;
+    }
+ 
+}
+
+@media screen and (min-width:481px) and (max-width:767px){
+    .why_choose_app_dev_icon_content .col-md-6{width: 50%;}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .app_dev_heading{width: 100%; margin-left: 0px;}
 }

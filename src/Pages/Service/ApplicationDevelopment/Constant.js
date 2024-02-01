@@ -9,3 +9,6 @@ export const PEACE_OF_MIND = require("../../../Assets/images/peace_of_mind.png")
 export const DAILY_REPORT = require("../../../Assets/images/daily_reporting.png");
 export const SMOOTH_COMMUNICATION = require("../../../Assets/images/smooth_communication.png");
 export const NO_OVERHEADS = require("../../../Assets/images/no_overheads.png");
+
+// 
+export const APP_DEV_IMG = require("../../../Assets/images/app_dev_img.jpg");

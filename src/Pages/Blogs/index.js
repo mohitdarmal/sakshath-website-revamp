@@ -5,7 +5,8 @@ import SlideAnimationButton from '../../Components/Utils/SlideAnimationButton';
 import "./style.scss";
 import { MdOutlineDateRange } from "react-icons/md";
 import { IoIosPerson } from "react-icons/io";
-
+import BreadCumb from "../../Components/Breadcumb";
+import { ABOUT_BANNER, CARRER_IMG } from '../../Components/Breadcumb/Constant';
 
 const Blog = () => {
     const blogsdetails = [
@@ -57,6 +58,7 @@ const Blog = () => {
     },[])
   return (
     <>
+     <BreadCumb imgUrl={ABOUT_BANNER} title="Blogs" className="img-fluid" />
       <section className='blog_page'>
         <div className="container blog_box_container">
             <div className="row blog_row">
