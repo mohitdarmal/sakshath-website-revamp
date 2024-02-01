@@ -8,10 +8,16 @@ import { FaRegEnvelope } from "react-icons/fa6";
 
 import { INSTAGRAM_ICON, LINKEDIN_ICON, YOUTUBE_ICON } from "./Constant";
 import Contact from "../../Components/Contact/Contact";
+import BreadCumb from "../../Components/Breadcumb";
+import { ABOUT_BANNER } from '../../Components/Breadcumb/Constant';
 
 const Contactus = () => {
   return (
     <>
+    <BreadCumb
+        imgUrl={ABOUT_BANNER}
+        title="Contact Us"
+      />
         <section  className='contact_us'>
          <div className="container contact_us_box">
           <div className="row">

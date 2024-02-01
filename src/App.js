@@ -19,6 +19,7 @@ import Blog from "./Pages/Blogs";
 import BlogDetail from "./Pages/Blogs/BlogDetail";
 
 const App = () => {
+  
 // const [loading, setLoading] = useState(true);
 
 // useEffect(() => {

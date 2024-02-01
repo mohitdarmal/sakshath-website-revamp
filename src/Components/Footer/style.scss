@@ -145,7 +145,8 @@ footer h5 {
 }
 
 .ftr_top {
-  padding: 180px 0 50px 0;
+  padding-top: 180px;
+  padding-bottom: 50px;
 }
 
 .ftr_bottom p {
@@ -161,7 +162,8 @@ footer h5 {
     margin-bottom: 30px;
   }
   .ftr_top {
-    padding: 30px 0 0px 0;
+    padding-top: 30px;
+    padding-bottom: 0;
   }
   .ftr_bottom {
     border-top: 1px solid #81c1de;

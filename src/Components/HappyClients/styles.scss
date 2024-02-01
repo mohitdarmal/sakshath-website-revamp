@@ -1,0 +1,67 @@
+@import "../../Assets/saas/Main.scss";
+
+
+// happy clients
+
+.happy_client {
+    // background-image: url("../../Assets/images/happyClient_bg_image2.jpg");
+    background-image: url("../../Assets/images/happyClient_bg_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #33a3d2;
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+    background-attachment: fixed;
+  
+    .happy_client_icon {
+      display: inline-block;
+      background-color: white;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      text-align: center;
+      display: none;
+    }
+    .happy_client_icon img {
+      width: 55px;
+    }
+    .happy_client_number h2 {
+      margin-top: 20px;
+   font-size: 80px;
+   font-family: $rajdhani_font;
+   font-weight: bold;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .happy_client{    padding: 60px 0;}
+  }
+
+  @media screen and (max-width: 767px) {
+    
+  .happy_client{
+    padding: 40px 0;
+  }
+
+  }
+
+  @media screen and (max-width:1023px){
+    .happy_client{
+        .col-md-3{
+          width: 50%;
+        }
+        .col-md-3:first-child{margin-bottom: 25px;}
+        .happy_client_number h2{
+          font-size: 40px;
+          margin-top: 0px;
+        }
+      }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .happy_client{    padding: 70px 0;}
+    .happy_client .col-md-3{width: 50%;}
+    .happy_client .col-md-3:first-child{margin-bottom: 40px;}
+  }
