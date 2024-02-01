@@ -190,11 +190,6 @@ const About = () => {
                 width="100%"
                 height="435"
               ></iframe>
-              {/* <iframe
-    src="https://www.google.com/maps/d/embed?mid=1QtXoNJa4bNr3llNKRLddH_rzCUNktWQ"
-    width="100%"
-    height="480"
-></iframe> */}
             </div>
 
             <div className="col-md-6">
