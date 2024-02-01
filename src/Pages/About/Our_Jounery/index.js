@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Chrono } from "react-chrono";
 import "./style.scss";
 import Heading from "../../../Components/Utils/Heading";
-import { SAFE } from "../../../Components/Breadcumb/Constant";
+import { ABOUT_BANNER, SAFE } from "../../../Components/Breadcumb/Constant";
 import SubTitle from "../../../Components/Utils/Title_head";
 import { Fade } from "react-awesome-reveal";
+import Contact from "../../../Components/Contact/Contact";
+import BreadCumb from "../../../Components/Breadcumb";
 
 const OurJounery = () => {
   const items = [
@@ -18,7 +20,7 @@ const OurJounery = () => {
     },
     {
       title: " ACQUISITION 2013-2015",
-    cardTitle: "ACQUISITION 2013-2015",
+      cardTitle: "ACQUISITION 2013-2015",
       // cardSubtitle:
       //   "Men of the British Expeditionary Force (BEF) wade out to..",
       cardDetailedText:
@@ -48,6 +50,13 @@ const OurJounery = () => {
     {
       title: "ROAD AHEAD 2023",
       cardTitle: "ROAD AHEAD 2023",
+
+      cardDetailedText:
+        "Sakshath has an ever-evolving spirit within the organization, led by committed professionals. Sakshath continually reviews its product/service offering, always being at the cutting edge of technology-based business solutions in a dynamic market. ",
+    },
+    {
+      title: "ROAD AHEAD 2024",
+      cardTitle: "ROAD AHEAD 2024",
 
       cardDetailedText:
         "Sakshath has an ever-evolving spirit within the organization, led by committed professionals. Sakshath continually reviews its product/service offering, always being at the cutting edge of technology-based business solutions in a dynamic market. ",
@@ -101,7 +110,7 @@ const OurJounery = () => {
 
   return (
     <>
-      {" "}
+      <BreadCumb imgUrl={ABOUT_BANNER} title="Our Jounery" />{" "}
       {/* our jounery starts */}
       <section className="Inception">
         <div className="container">
@@ -125,6 +134,9 @@ const OurJounery = () => {
       <section className="core_values">
         <div className="container">
           <div className="row">
+            <div className="core_value_heading text-center  mb-4">
+              <Heading heading="CORE VALUES" />
+            </div>
             {coreValue.map((data) => {
               return (
                 <div className="col-md-4 mb-4">
@@ -145,6 +157,27 @@ const OurJounery = () => {
         </div>
       </section>
       {/* Core values end */}
+      {/* contact us */}
+      <section className="contact_map_section">
+        <div className="container mt-4">
+          <div className="row">
+            {/* <span>Contact Us</span> */}
+            <div className="col-md-6">
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1QtXoNJa4bNr3llNKRLddH_rzCUNktWQ&ehbc=000F&noprof=1"
+                width="100%"
+                height="435"
+              ></iframe>
+            </div>
+
+            <div className="col-md-6">
+              {/* contact */}
+              <Contact />
+              {/* contact ends */}
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
