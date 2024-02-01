@@ -2,6 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom';
 import { MdOutlineDateRange } from "react-icons/md";
 import "./style.scss";
+import { IoIosSearch } from "react-icons/io";
 
 const BlogDetail = () => {
 
@@ -37,7 +38,41 @@ console.log(state, "State")
                     </div>
                 </div>
 
-                <div className="col-md-3 blogDetail_search_box">
+                <div className="col-md-3 blogDetail_search_box_recentnews">
+                   <div className="search_box">
+                    <h4>Search</h4>
+                    <div className="form fg_search">
+                     <div className="search_input_box">
+                       <input type="text"  placeholder='Search' />
+                     </div>
+                     <div className="magnifying_glass_box">
+                      <IoIosSearch />
+                     </div>
+                      
+                    </div>
+                   
+
+                   </div>
+
+                   {/* <div className="recentnews_box">
+                    <div className="recent_news">
+                      <div className="row">
+                        <div className="col-md-6">
+                            <div className="recent_news_img_box">
+                                <img src={state.blogImg} alt="" />
+                            </div>
+                            <div className="recent_news_content_box">
+                                <div className="recent_news_title_box">
+                                    <h5>{state.blogTitle}</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                      </div>
+                     
+
+                    </div>
+                   </div> */}
 
 
                 </div>

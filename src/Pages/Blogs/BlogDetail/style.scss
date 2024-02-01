@@ -3,6 +3,7 @@
 
     .blogDetail_content_page{
         padding:  40px;
+        border: 1px solid #d0d0cc;
     }
     .blogdetail_date_box{
         margin-top: 20px;
@@ -23,4 +24,65 @@
         margin-bottom: 30px;
     margin-top: 30px;
     }
+    .search_box{
+        border: 1px solid #d0d0cc;
+        padding: 50px;
+
+        h4{
+            margin-top: 10px;
+            font-family:$rajdhani_font;
+            font-weight: 600;
+        }
+        input{
+            border: none;
+    background: gainsboro;
+    padding: 10px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    display:block;
+    width:150px;
+        }
+
+//         .fg_search {
+//             background: rgb(147, 123, 123);
+//             position: relative;
+//             width: 300px;
+//           }
+          
+
+
+
+//         button{
+//         background: transparent;
+//   border: none;
+//   cursor: pointer;
+//   display: inline-block;
+//   font-size: 20px;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   padding: 18px 20px;
+//   z-index: 2;
+//         }
+
+.fg_search{
+    display: flex;
+    
 }
+.magnifying_glass_box {
+    background-color:gainsboro;
+    padding: 10px;
+}
+
+  svg{
+    
+    font: black;
+
+}
+}
+
+
+
+        
+
+    }
