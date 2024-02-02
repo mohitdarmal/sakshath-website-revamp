@@ -11,6 +11,7 @@ import { Autoplay } from 'swiper/modules';
 import { CLIENT_LOGO1, CLIENT_LOGO2, CLIENT_LOGO3, CLIENT_LOGO4, CLIENT_LOGO5 } from "./Constant";
 import BreadCumb from "../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from './ApplicationDevelopment/Constant';
+import OurPrincipals from '../../Components/OurPrincipals';
 
 const Service = () => {
   return (
@@ -121,6 +122,10 @@ const Service = () => {
     </section>
 
     {/* @@@@@@@ Experience section ends @@@@@@@@@ */}
+
+{/* @@@@@@@ Our Principals start @@@@@@@@@ */}
+    <OurPrincipals />
+       {/* @@@@@@@ Our Principals ends @@@@@@@@@ */}
 
      {/* @@@@@@@@  Ready_to_get_our_professional_services starts  @@@@@@@@ */}
     <section className='ready_to_get_our_professional_services'>
