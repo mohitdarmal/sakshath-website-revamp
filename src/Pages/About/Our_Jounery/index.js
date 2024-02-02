@@ -21,8 +21,6 @@ const OurJounery = () => {
     {
       title: " ACQUISITION 2013-2015",
       cardTitle: "ACQUISITION 2013-2015",
-      // cardSubtitle:
-      //   "Men of the British Expeditionary Force (BEF) wade out to..",
       cardDetailedText:
         "Acquiring a sole proprietorship in 2015 allowed us to build our business based on our behavior, decisions and activities and how we can complement our clients and project stakeholders.",
     },
@@ -118,11 +116,14 @@ const OurJounery = () => {
             <div className="col-md-12 ">
               <Heading heading="Inception to Fruition" uppercase="uppercase" />
 
-              <div style={{ overflowY: "hidden" }}>
+              <div  style={{ overflowY: "hidden" }}>
                 <Chrono
                   items={items}
                   mode="VERTICAL_ALTERNATING"
                   className="text"
+        //           initialColor="#e5e5e5"
+        // fillColor="#32a4d5"
+        
                 />
               </div>
             </div>

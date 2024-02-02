@@ -1,0 +1,23 @@
+.achivement_images {
+  position: relative;
+  bottom: 0;
+}
+
+.achivement_description_container {
+  position: absolute;
+  bottom: 0;
+  background: #0006;
+  color: #fff;
+  // padding: 10px;
+  p {
+    // color: #fff;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  h4 {
+    font-size: 20px;
+    font-family: "Rajdhani";
+    font-weight: bold;
+  }
+}

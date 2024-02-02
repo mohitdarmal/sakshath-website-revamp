@@ -165,6 +165,11 @@ const Header = () => {
                       </NavLink>
                     </li>
                     <li>
+                      <NavLink to="/scrollup" className="dropdown-item">
+                       ScrollUpJounery
+                      </NavLink>
+                    </li>
+                    <li>
                       <NavLink to="/our-achievements" className="dropdown-item">
                         Our Achievements
                       </NavLink>

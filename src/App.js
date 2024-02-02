@@ -17,6 +17,8 @@ import OurJounery from "./Pages/About/Our_Jounery";
 //import Contactus from "./Components/Contact/Contact";
 import Blog from "./Pages/Blogs";
 import BlogDetail from "./Pages/Blogs/BlogDetail";
+import OurAchivements from "./Pages/About/Our_Achivements";
+import ScrollUpJounery from "./Pages/About/ScrollUpJounery";
 
 const App = () => {
   
@@ -66,8 +68,11 @@ const App = () => {
           <Route path="/contact-us" element={<Contactus />} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blogs/:id" element={<BlogDetail />} />
+          <Route path="/scrollup" element={<ScrollUpJounery/>}/>
 
           <Route path="/company-journey" element={<OurJounery/>}/>
+          <Route path="/our-achievements" element={<OurAchivements/>}/>
+          {/* <Route path="/blogs/:id" element={<BlogDetail />} /> */}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
