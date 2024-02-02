@@ -4,6 +4,7 @@ import { MdOutlineDateRange } from "react-icons/md";
 import "./style.scss";
 import { IoIosSearch } from "react-icons/io";
 import { useLocation } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
 const BlogDetail = () => {
@@ -129,10 +130,47 @@ console.log(state, "State")
                         </div>
                         )
                       })}
+
+                      
+
+                      </div>
                          
                       </div>
                      
 
+                    </div>
+                    <div className="best_tags_box_wrapper_box">
+                    <div className="best_tags_wrapper">
+                        <div className="best_tags_box">
+                            <h4>Best Tags</h4>
+                        </div>
+                        <div className="tags_box">
+                            <div className="tag1_box">
+                            <Link className='tags_design'>SERVICE</Link>
+                            </div>
+                            <div className="tag2_box">
+                            <Link className='tags_design'>TECHNOLOGY</Link>
+                            </div>
+                            <div className="tag3_box">
+                            <Link className='tags_design'>TEAM</Link>
+                            </div>
+                            <div className="tag4_box">
+                            <Link className='tags_design'>SOLUTIONS</Link>
+                            </div>
+                            <div className="tag5_box">
+                            <Link className='tags_design'>CONSULTANCY</Link>
+                            </div>
+                            
+                            <div className="tag6_box">
+                            <Link className='tags_design'>IT COMPANY</Link>
+                            </div>
+                            <div className="tag7_box">
+                            <Link className='tags_design'>AGENCY</Link>
+                            </div>
+                            
+
+                        </div>
+                      </div>
                     </div>
                    </div>
                 </div>
@@ -142,7 +180,7 @@ console.log(state, "State")
                 
             
             
-        </div>
+        
             
      
       </section>
