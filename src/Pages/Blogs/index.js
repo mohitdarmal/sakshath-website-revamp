@@ -64,12 +64,12 @@ const Blog = () => {
             <div className="row blog_row">
             {blogData.map((blognews)=>{
                 return(
-                    <div className="col-md-12 blog_box">
+                    <div className="col-md-4 blog_box">
                       
                        <div className='recent_blog_list'>
-                        <div className='blog_content1'>
+                       
                           <div className='blog_img'>
-                           <img src={blognews.blogImg} alt=""  />
+                           <img src={blognews.blogImg} alt="" className='img-fluid' />
                           </div>
                           
                           <div className='blog_title'>
@@ -84,14 +84,13 @@ const Blog = () => {
                          
                             <h2 className='blog_mainHeading'>
                                 
-                                {`${blognews.blogTitle}`}
+                                {`${blognews.blogTitle.substring(0, 50)}...`}...
                                 
                             </h2>
                             <p className='blog_description'>{`${blognews.blogDescription.substring(0, 160)}`}...</p>
                             <Link to={`/blogs/${blognews.blogTitle}`} className='cta_button' state={blognews}>Read More</Link>
                           </div>
-
-                        </div>
+ 
                        </div>
 
                     </div>
@@ -100,7 +99,7 @@ const Blog = () => {
                 )
 
             })}
-            <div className="col-md-6"></div>
+            
                 
             </div>
         </div>
