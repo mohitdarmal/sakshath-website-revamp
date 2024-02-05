@@ -27,7 +27,7 @@ const HappyClients = () => {
                         suffix=" +"
                         enableScrollSpy={true}
                         useEasing={true}
-                        scrollSpyOnce={true}
+                        // scrollSpyOnce={true}
                       ></CountUp>
                     </h2>
                     <h5>Happy Client</h5>
@@ -43,17 +43,16 @@ const HappyClients = () => {
                   </div>
                   <div className="happy_client_number text-white">
                     <h2>
-                      <CountUp
-                        start={0}
-                        end={400}
-                        duration={3}
-                        separator=""
-                        decimal=","
-                        suffix=" +"
-                        enableScrollSpy={true}
-                        useEasing={true}
-                        scrollSpyOnce={true}
-                      ></CountUp>
+                    <CountUp
+                start={0}
+                end={200}
+                duration={3}
+                separator=""
+                decimal=","
+                suffix="+"
+                enableScrollSpy={true}
+                useEasing={true}
+              ></CountUp>
                     </h2>
                     <h5>Professional work</h5>
                   </div>
@@ -77,7 +76,7 @@ const HappyClients = () => {
                         suffix=" +"
                         enableScrollSpy={true}
                         useEasing={true}
-                        scrollSpyOnce={true}
+                        // scrollSpyOnce={true}
                       ></CountUp>
                     </h2>
                     <h5>Active Countries</h5>
@@ -102,7 +101,7 @@ const HappyClients = () => {
                         suffix=" +"
                         enableScrollSpy={true}
                         useEasing={true}
-                        scrollSpyOnce={true}
+                        // scrollSpyOnce={true}
                       ></CountUp>
                     </h2>
                     <h5>Projects</h5>

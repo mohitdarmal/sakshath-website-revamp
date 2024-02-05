@@ -30,8 +30,11 @@ export const HAPPYICON=require("../../Assets/images/customer-satisfaction.png");
 
 // Blogs 
 
-export const BLOGIMG1=require("../../Assets/images/blog_img1.jpg");
-export const BLOGCPROFILE=require("../../Assets/images/blog_cust_profile.png");
+// export const BLOGIMG1=require("../../Assets/images/blog_img1.jpg");
+// export const BLOGCPROFILE=require("../../Assets/images/blog_cust_profile.png");
+export const ACHIVEMENT_IMG1=require('../../Assets/images/Achivement40.png');
+export const ACHIVEMENT_IMG2=require('../../Assets/images/Achivemet2_img.png');
+export const ACHIVEMENT_IMG3=require('../../Assets/images/Achivement_img3.png');
 
 // ISO Certificate
 export const ISO_27001=require("../../Assets/images/iso_27001.png");

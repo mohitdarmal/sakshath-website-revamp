@@ -16,7 +16,7 @@ const OurPrincipals = () => {
                 <div className="title">
                   <Fade direction="up" triggerOnce>
                     {" "}
-                    <SubTitle SubTitle="Our Principal " />{" "}
+                    <SubTitle SubTitle="Our Principle " />{" "}
                   </Fade>
                   <Fade direction="up" delay={100} triggerOnce>
                     {" "}
@@ -95,7 +95,7 @@ const OurPrincipals = () => {
                       PROFESSIONAL TEAM
                     </h3>
                     <p>
-                    In order to efficiently create and produce excellent products for our clients, Sakshath’s professional team of designers follows a simple process that makes working with us easy.
+                    In order to efficiently create and produce excellent products for our clients, Sakshath Technologies® professional team of designers follows a simple process that makes working with us easy.
                     </p>
                   </div>
                 </Fade>

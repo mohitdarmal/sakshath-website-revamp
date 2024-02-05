@@ -48,7 +48,7 @@ const Header = () => {
             </div>
             <div className="col-md-6 text-md-end">
               <Link to="tel:+918067819998">
-                <BsTelephoneInbound /> &nbsp;+91 80 67819998 &nbsp; | &nbsp;
+                <BsTelephoneInbound /> &nbsp;+91 80 67819878 &nbsp; | &nbsp;
                 &nbsp;
               </Link>
 

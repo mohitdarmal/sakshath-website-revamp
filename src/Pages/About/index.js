@@ -93,12 +93,12 @@ const About = () => {
                 {/* <Heading heading="Who we are" uppercase="text-uppercase" /> */}
                 <Fade direction="up" triggerOnce>
                 <p>
-                  We go by the saying <strong>“I’m Sakshath” </strong> the
+                  We go by the saying <strong>“I’m Sakshath Technologies®” </strong> the
                   thought behind the phrase is the presence of all the employees
                   ‘HERE’ and ‘NOW’. Starting as a self-funded business Sakshath
                   Technologies’ company ethos to date is BY THE PEOPLE, FOR THE
                   PEOPLE. Every employee from the beginning of the journey made
-                  what Sakshath is today, we grew gradually to a family of 100+
+                  what Sakshath Technologies® is today, we grew gradually to a family of 100+
                   employees and now have a domestic presence in 3 metropolitan
                   cities serving clients from all over the world.
                   Celebratingdecade milestones, today we take pride in
@@ -127,8 +127,8 @@ const About = () => {
             
               <p className="vision_para">
               <Fade direction="up"delay={150}  triggerOnce>
-                It is the desire of Sakshath to establish itself as a powerful
-                business operation with vibrance and growth built on Sakshath’s
+                It is the desire of Sakshath Technologies® to establish itself as a powerful
+                business operation with vibrance and growth built on Sakshath Technologies®
                 principles that is highly regarded by our customers, stake
                 holders and our employees. As an organization, we want to be in
                 a place where customers rely on the excellence of our products
@@ -153,8 +153,8 @@ const About = () => {
             <div className="col-md-5">
               <p className="mision_para">
               <Fade direction="up" delay={150} triggerOnce>
-                It is the desire of Sakshath to establish itself as a powerful
-                business operation with vibrance and growth built on Sakshath’s
+                It is the desire of Sakshath Technologies® to establish itself as a powerful
+                business operation with vibrance and growth built on Sakshath Technologies®
                 principles that is highly regarded by our customers, stake
                 holders and our employees. As an organization, we want to be in
                 a place where customers rely on the excellence of our products
@@ -180,10 +180,10 @@ const About = () => {
       {/* <Contact /> */}
       {/* contact ends */}
 
-      <section className="contact_map_section">
+      {/* <section className="contact_map_section">
         <div className="container mt-4">
           <div className="row">
-            {/* <span>Contact Us</span> */}
+          
             <div className="col-md-6">
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=1QtXoNJa4bNr3llNKRLddH_rzCUNktWQ&ehbc=000F&noprof=1"
@@ -193,13 +193,13 @@ const About = () => {
             </div>
 
             <div className="col-md-6">
-              {/* contact */}
+            
               <Contact />
-              {/* contact ends */}
+             
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
