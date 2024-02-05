@@ -110,12 +110,43 @@ const Career = () => {
         <meta name="description" content="About SEO" />
       </Helmet>
       <BreadCumb imgUrl={CARRER_IMG} title=" CAREERS" className="img-fluid" />
-      <section className="join_our_team">
+
+      <section className="join_our_team_section">
+        <div className="container">
+          <div className="row first_row_with_empty_block">
+            <div className="col-md-5 empty_block">
+             
+             <div className="join_our_team_wrapper">
+                <Heading heading ="join our team" uppercase="text-uppercase"/>
+                <p>We are a collaborative firm where everyone helps each other
+                    in mutual growth and find a way to flourish. We don’t hire
+                    only smart people but also smart people who effectively work
+                    as a team.</p>
+             </div>
+              
+            </div>
+            <div className="col-md-3 middle_img_section">
+               <img src="" alt=""  className="img-fluid"/>
+            </div>
+              
+              <div className="col-md-4 ">
+                <div className="right_img_wrapper">
+                  <img src="" alt="" />
+                </div>
+            </div>
+              
+            
+
+          </div>
+        </div>
+      </section> 
+
+      {/* <section className="join_our_team">
         <div className="container mt-4">
           <div className="row">
             <div className="col-md-6 our_team_container_box">
               <div className="our_team_container">
-                {/* <h1 className="text-center">Join Our Team</h1> */}
+                
                 <Fade direction="up" delay={150} triggerOnce>
                   <Heading heading="Join Our Team" uppercase="text-uppercase" />
                 </Fade>
@@ -156,7 +187,7 @@ const Career = () => {
                     deep-rooted learning.
                   </p>
                 </Fade>
-                {/* <br /> */}
+                
               </div>
             </div>
           </div>
@@ -180,6 +211,7 @@ const Career = () => {
         </div>
       </section>
 
+      
 
 
       {/* core values */}
@@ -205,7 +237,7 @@ const Career = () => {
       </section> */}
 
       {/*  benfits starts*/}
-      <section className="benefits_container">
+      {/* <section className="benefits_container">
         <Container>
           <Row>
             <div className="benefits_heading text-center text-decoration-underline">
@@ -269,7 +301,7 @@ const Career = () => {
         
           </Row>
         </Container>
-      </section>
+      </section> */}
       {/*  benfits end*/}
 
       {/* Apply Jobs */}
