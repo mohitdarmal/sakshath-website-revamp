@@ -27,7 +27,7 @@ const HappyClients = () => {
                         suffix=" +"
                         enableScrollSpy={true}
                         useEasing={true}
-                        scrollSpyOnce={true}
+                        // scrollSpyOnce={true}
                       ></CountUp>
                     </h2>
                     <h5>Happy Client</h5>
@@ -76,7 +76,7 @@ const HappyClients = () => {
                         suffix=" +"
                         enableScrollSpy={true}
                         useEasing={true}
-                        scrollSpyOnce={true}
+                        // scrollSpyOnce={true}
                       ></CountUp>
                     </h2>
                     <h5>Active Countries</h5>
@@ -101,7 +101,7 @@ const HappyClients = () => {
                         suffix=" +"
                         enableScrollSpy={true}
                         useEasing={true}
-                        scrollSpyOnce={true}
+                        // scrollSpyOnce={true}
                       ></CountUp>
                     </h2>
                     <h5>Projects</h5>

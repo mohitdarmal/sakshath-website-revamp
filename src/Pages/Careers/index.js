@@ -227,7 +227,7 @@ const Career = () => {
                 </Fade>
                 <Fade direction="up" delay={300} triggerOnce>
                   <p className="text-start">
-                    Sakshath is a platform for the world’s most talented people
+                  Sakshath Technologies® is a platform for the world’s most talented people
                     to congregate, grow, and make an impact. We place our
                     employees at the core of everything we do to accomplish all
                     targets. <br />
