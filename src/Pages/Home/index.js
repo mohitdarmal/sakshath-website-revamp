@@ -8,6 +8,9 @@ import {
   POPULAUTOMATION,
   BANNER1,
   HAPPYICON,
+  P_IMG,
+  TEAM_IMG,
+  IT_IMG,
   BLOGIMG1,
   BLOGCPROFILE,
   ISO_27001,
@@ -310,7 +313,7 @@ export const Home = () => {
 
 
       {/* @@@@@@ SECTION - Specilizes in Building Services start @@@@@@ */}
-      {/* <section className="overflow-hidden">
+      <section className="overflow-hidden">
         <div className="specilation_feature">
           <div className="container">
             <div className="row ">
@@ -383,7 +386,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       {/* @@@@@@ SECTION - Specilizes in Building Services END @@@@@@ */}
 
       {/* @@@@@@ SECTION - "Who we are" start @@@@@@ */}

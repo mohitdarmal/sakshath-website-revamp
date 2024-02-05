@@ -31,7 +31,7 @@ const PdfViewer = ({ pdfUrl }) => {
             {/* {Array.from(new Array(numPages), (el, index) => (
                 <Page key={`page_${index + 1}`} pageNumber={index + 1} renderAnnotationLayer={false} renderTextLayer={false} />
             ))} */}
-            {Array.from(new Array(numPages), (el, index) => (
+            {/* {Array.from(new Array(numPages), (el, index) => (
           <Page
             key={`page_${index + 1}`}
             pageNumber={index + 1}
@@ -40,13 +40,13 @@ const PdfViewer = ({ pdfUrl }) => {
             onLoadSuccess={handleLoadComplete}
             loading={isLoading}
           />
-        ))}
+        ))} */}
             {/* @@@@@ Show all PDF start */}
             <p className="text-end">
               Page {pageNumber} of {numPages}
             </p>
             <div className="d-flex">
-             {/*  <Page
+              <Page
                 pageNumber={pageNumber}
                 renderAnnotationLayer={false}
                 renderTextLayer={false}
@@ -57,7 +57,7 @@ const PdfViewer = ({ pdfUrl }) => {
                   renderAnnotationLayer={false}
                   renderTextLayer={false}
                 />
-              )} */}
+              )}
             </div>
             <div className="d-flex">
             <button onClick={() => setPageNumber((prevPage) => Math.max(prevPage - 2, 1))} disabled={pageNumber <= 1}>
