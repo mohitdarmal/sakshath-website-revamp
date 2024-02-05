@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import BreadCumb from "../../../Components/Breadcumb";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import {
   APPLICATION_DEVLOPMENT_BREADCUMB_IMG,
   APP_DEV_IMG,
@@ -7,16 +9,30 @@ import {
   DAILY_REPORT,
   DEDICATED_SUPPORT,
   EXPERIENCED_APP_DEVELOPERS,
+  MOBILE_APP_DEVELOPMENT,
   NO_OVERHEADS,
+  PDF_FILE,
   PEACE_OF_MIND,
   QUALITY_ASSURANCE,
   SMOOTH_COMMUNICATION,
 } from "./Constant";
+import {
+  CLIENT_LOGO1,
+  CLIENT_LOGO2,
+  CLIENT_LOGO3,
+  CLIENT_LOGO4,
+  CLIENT_LOGO5,
+} from "../Constant";
 import Heading from "../../../Components/Utils/Heading";
 import "./styles.scss";
 import HappyClients from "../../../Components/HappyClients";
+import pdfUrl from "../../../Assets/pdf/dummy.pdf";
+import PdfViewer from "../../../Components/PdfViewer";
+
 
 const ApplicationDevelopment = () => {
+  
+
   return (
     <>
       <BreadCumb
@@ -24,7 +40,7 @@ const ApplicationDevelopment = () => {
         title="Application Development"
       />
 
-{/* @@@@@ SECTION- App Development Start @@@@@@ */}
+      {/* @@@@@ SECTION- App Development Start @@@@@@ */}
       <section className="why_choose_app_dev_sec">
         <div className="container">
           {/* Heading start */}
@@ -163,11 +179,181 @@ const ApplicationDevelopment = () => {
           {/* App devlopment details end */}
         </div>
       </section>
-    {/* @@@@@ SECTION- App Development end @@@@@@ */}
+      {/* @@@@@ SECTION- App Development end @@@@@@ */}
 
       {/* @@@@@@ SECTION - Happy client counter starts @@@@@*/}
       <HappyClients />
       {/* @@@@@ SECTION- Happy client counter end @@@@@@ */}
+
+      {/* @@@@@@ SECTION - Our Services starts @@@@@*/}
+      <section className="our_services_sec">
+        <div className="container">
+          <div className="row text-center mb-md-4">
+            <Heading heading="Our Services" uppercase="text-uppercase" />
+          </div>
+
+          <div className="row">
+            <div className="col-md-4">
+              <div className="our_services_box">
+                <div className="our_services_box_content">
+                  <div className="our_services_box_img">
+                    <img src={MOBILE_APP_DEVELOPMENT} />
+                  </div>
+                  <h3>Mobile App Development</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="our_services_box">
+                <div className="our_services_box_content">
+                  <div className="our_services_box_img">
+                    <img src={MOBILE_APP_DEVELOPMENT} />
+                  </div>
+                  <h3>Web Application Development</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="our_services_box">
+                <div className="our_services_box_content">
+                  <div className="our_services_box_img">
+                    <img src={MOBILE_APP_DEVELOPMENT} />
+                  </div>
+                  <h3>Dedicated App Development</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="our_services_box">
+                <div className="our_services_box_content">
+                  <div className="our_services_box_img">
+                    <img src={MOBILE_APP_DEVELOPMENT} />
+                  </div>
+                  <h3>Cloud App Development</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="our_services_box">
+                <div className="our_services_box_content">
+                  <div className="our_services_box_img">
+                    <img src={MOBILE_APP_DEVELOPMENT} />
+                  </div>
+                  <h3>Re-Engineering Migration & Maintainace</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="our_services_box">
+                <div className="our_services_box_content">
+                  <div className="our_services_box_img">
+                    <img src={MOBILE_APP_DEVELOPMENT} />
+                  </div>
+                  <h3>Application Testing & QA</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer{" "}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* @@@@@ SECTION- Our Services end @@@@@@ */}
+
+      {/* @@@@@ SECTION- Our Platform start @@@@@@ */}
+      <section className="our_paltform_sec">
+        <div className="container">
+          <div className="row">
+            <Swiper
+              slidesPerView={5}
+              spaceBetween={30}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <img src={CLIENT_LOGO1} />{" "}
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO3} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO4} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO5} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO5} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO2} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO3} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO4} />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </section>
+      {/* @@@@@ SECTION- Our Platform end @@@@@@ */}
+
+      <section>
+        <div className="container">
+          {/* <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`}>
+        <Viewer fileUrl={pdfUrl} />
+      </Worker> */}
+          {/* <iframe width="100%" height="500px"  src={`${pdfText}?page=hsn#toolbar="0"`}></iframe> */}
+        </div>
+      </section>
+
+     <PdfViewer pdfUrl={pdfUrl} />
     </>
   );
 };

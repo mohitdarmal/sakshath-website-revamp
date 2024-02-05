@@ -209,7 +209,7 @@
   .cols {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     text-align: start;
     width: 50%;
     flex: none;
@@ -274,7 +274,7 @@
   .cols {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     text-align: center;
   }
   .benefit_icon p {
