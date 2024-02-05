@@ -7,6 +7,7 @@ import SubTitle from "../../../Components/Utils/Title_head";
 import { Fade } from "react-awesome-reveal";
 import Contact from "../../../Components/Contact/Contact";
 import BreadCumb from "../../../Components/Breadcumb";
+// import TimelineObserver from "react-timeline-animation";
 
 const OurJounery = () => {
   const items = [
@@ -117,14 +118,16 @@ const OurJounery = () => {
               <Heading heading="Inception to Fruition" uppercase="uppercase" />
 
               <div  style={{ overflowY: "hidden" }}>
-                <Chrono
+
+            
+                <Chrono  
                   items={items}
                   mode="VERTICAL_ALTERNATING"
                   className="text"
-        //           initialColor="#e5e5e5"
-        // fillColor="#32a4d5"
+    
         
                 />
+
               </div>
             </div>
           </div>

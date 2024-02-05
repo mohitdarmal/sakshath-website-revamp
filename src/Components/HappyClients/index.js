@@ -43,17 +43,16 @@ const HappyClients = () => {
                   </div>
                   <div className="happy_client_number text-white">
                     <h2>
-                      <CountUp
-                        start={0}
-                        end={400}
-                        duration={3}
-                        separator=""
-                        decimal=","
-                        suffix=" +"
-                        enableScrollSpy={true}
-                        useEasing={true}
-                        scrollSpyOnce={true}
-                      ></CountUp>
+                    <CountUp
+                start={0}
+                end={200}
+                duration={3}
+                separator=""
+                decimal=","
+                suffix="+"
+                enableScrollSpy={true}
+                useEasing={true}
+              ></CountUp>
                     </h2>
                     <h5>Professional work</h5>
                   </div>

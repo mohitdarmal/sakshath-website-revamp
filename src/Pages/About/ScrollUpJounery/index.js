@@ -88,6 +88,7 @@ export default function App() {
       <TimelineObserver
         initialColor="#e5e5e5"
         fillColor="#32a4d5"
+
         handleObserve={(setObserver) => (
           <Timeline
             callback={onCallback}
