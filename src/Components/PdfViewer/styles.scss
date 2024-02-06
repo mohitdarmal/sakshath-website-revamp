@@ -1,8 +1,56 @@
-.pdf-pages {
-    display: flex;
-    transition: transform 0.5s ease-out;
+@import "../../Assets/saas/Main.scss";
+.pdf_viewer_sec .react-pdf__Document{
+    background: #ececec;
+    margin-bottom: 40px;
+    padding: 14px 35px 35px;
+    border: 1px solid #dbdbdb;
+}
+.pdf_page_no{color: $light_navy_blue; font-weight: bold; text-align: end;}
+.pdf_viewer_sec canvas{width: 100% !important;}
+
+.react-pdf__Document{position: relative;}
+
+.pdf_page_no{text-align: right; font-weight: bold; font-size: 14px;}
+.pdf_prev_btn{
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    font-size: 40px;
+    color: $light_navy_blue;
+    cursor: pointer;
+}
+.pdf_next_btn{
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    font-size: 40px;
+    color: $light_navy_blue;
+    cursor: pointer;
+}
+  @media screen and (max-width:767px){
+    .pdf_prev_btn{
+        top: auto !important;
+        font-size: 24px;
+        color: $light_navy_blue;
+        cursor: pointer;
+        left: 43%;
+    }
+    .pdf_next_btn{
+        top: auto !important;
+        right: 43%;
+        font-size: 24px;
+        color: $light_navy_blue;
+        cursor: pointer;
+    }
+    .pdf_viewer_sec canvas{height: 300px !important;}
+    // .pdf_viewer_sec .react-pdf__Page{ min-width: 100% !important;}
+    .pdf_pages{
+        height: 300px !important;
+    }
   }
-  
-  .transitioning {
-    transition: none;
+
+  @media screen and (min-width:768px){
+    .pdf_pages{
+        height: 830px !important;
+    }
   }

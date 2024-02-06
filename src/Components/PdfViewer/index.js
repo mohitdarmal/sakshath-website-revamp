@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
+import { MdArrowCircleRight, MdArrowCircleLeft } from "react-icons/md";
+
 import "./styles.scss";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
@@ -8,20 +10,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 const PdfViewer = ({ pdfUrl }) => {
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
-    const [isLoading, setIsLoading] = useState(true);
   
     function onDocumentLoadSuccess({ numPages }) {
       setNumPages(numPages);
-      setIsLoading(false);
     }
-  
-    const handleLoadComplete = () => {
-      setIsLoading(false);
-    };
-  
-    useEffect(() => {
-      setIsLoading(true);
-    }, [pageNumber]);
+ 
   return (
     <section className="pdf_viewer_sec">
       <div className="container">
@@ -31,21 +24,11 @@ const PdfViewer = ({ pdfUrl }) => {
             {/* {Array.from(new Array(numPages), (el, index) => (
                 <Page key={`page_${index + 1}`} pageNumber={index + 1} renderAnnotationLayer={false} renderTextLayer={false} />
             ))} */}
-            {/* {Array.from(new Array(numPages), (el, index) => (
-          <Page
-            key={`page_${index + 1}`}
-            pageNumber={index + 1}
-            renderAnnotationLayer={false}
-            renderTextLayer={false}
-            onLoadSuccess={handleLoadComplete}
-            loading={isLoading}
-          />
-        ))} */}
             {/* @@@@@ Show all PDF start */}
-            <p className="text-end">
+            <p className="pdf_page_no">
               Page {pageNumber} of {numPages}
             </p>
-            <div className="d-flex">
+            <div className="d-flex pdf_pages" >
               <Page
                 pageNumber={pageNumber}
                 renderAnnotationLayer={false}
@@ -59,14 +42,14 @@ const PdfViewer = ({ pdfUrl }) => {
                 />
               )}
             </div>
-            <div className="d-flex">
-            <button onClick={() => setPageNumber((prevPage) => Math.max(prevPage - 2, 1))} disabled={pageNumber <= 1}>
-              Previous
-            </button>
-            <button onClick={() => setPageNumber((prevPage) => Math.min(prevPage + 2, numPages))} disabled={pageNumber + 1 >= numPages}>
-              Next
-            </button>
-          </div>
+             
+            <div className="pdf_prev_btn" onClick={() => setPageNumber((prevPage) => Math.max(prevPage - 2, 1))} disabled={pageNumber <= 1}>
+            <MdArrowCircleLeft />
+            </div>
+            <div className="pdf_next_btn" onClick={() => setPageNumber((prevPage) => Math.min(prevPage + 2, 5))} disabled={pageNumber + 1 >= numPages}>
+              <MdArrowCircleRight />
+            </div>
+           
           </Document>
         </div>
       </div>
