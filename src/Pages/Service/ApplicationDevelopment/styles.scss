@@ -4,7 +4,7 @@
 // App development css start
 .why_choose_app_dev_sec{
     padding: 80px 0;
-    background: #f5fcff;
+    background: #fdfdfd;
 }
 
 .app_dev_icon_with_text{
@@ -15,7 +15,7 @@
 
 .app_dev_icon_with_text{
     img{
-        width: 59px;
+        width: 50px;
         margin-right: 20px;
     }
     h5{font-size: 18px;}
@@ -110,6 +110,7 @@
 // Our Services end
 
 
+
 // Our Platform
 .our_paltform_sec{
     padding-bottom: 80px;
@@ -136,7 +137,61 @@
 .our_paltform_sec{
     padding-bottom: 40px;
 }
- 
+
+.brouchure_sec{
+    padding: 40px 0 !important;
+}
+
+//Contactus
+.service_page_contact_form{
+    padding-top: 40px !important;
+}
+
+.contact_heading {
+    padding: 0px 0px 20px !important;
+}
+
+.contact_us_bg{display: none;}
+.service_contact_form{box-shadow: none !important; padding: 0 !important;}
+.service_contact_form select{margin-bottom: 15px;}
+.service_page_contact_form .col-md-7{order: 2;}
+
+}
+
+//Brouchure
+.brouchure_sec{
+    background: #f7f7f7;
+    padding: 80px 0;
+    background-image: url("../../../Assets/images/brouc_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.downloadBrouchure{
+    text-align: center;
+    p{
+        display: inline-block;
+    background: #eb0a1e;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 25px;
+    font-family: 'Rajdhani';
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+    p:hover{
+        background: $ball_blue_color;
+    }
+}
+
+.contact_us_bg{
+    margin-top: -200px;
+}
+
+.service_page_contact_form{padding-top: 100px;}
+
+.contact_heading{
+    padding:40px 70px 140px 30px
 }
 
 @media screen and (min-width:481px) and (max-width:767px){
@@ -151,6 +206,14 @@
     // App development css start
     .app_dev_heading{width: 100%; margin-left: 0px;}
     // App development css end
+
+    // contact us
+    .contact_heading {
+        padding: 0px 0px 15px 15px;
+    }
+    .contact_us_bg {
+        margin-top: -100px;
+    }
 }
 
 @media screen and (min-width:768px){
