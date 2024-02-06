@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   WHO_WE_ARE_IMG,
   POPULARANALYTICS,
@@ -24,6 +24,7 @@ import {
   ACHIVEMENT_IMG1,
   ACHIVEMENT_IMG2,
   ACHIVEMENT_IMG3,
+  DOTTED_IMG1,
 } from "./Constant";
 
 import { SlCalender } from "react-icons/sl";
@@ -49,193 +50,6 @@ import OurPrincipals from "../../Components/OurPrincipals";
 export const Home = () => {
   return (
     <>
-      {/* Swipper recheck */}
-      <section>
-        <div className="container">
-          <div className="row pt-4 align-items-center">
-            <div className="col-md-5">
-              <div className="our_achivement_para mt-4">
-                <Heading heading="OUR ACHIVEMENT" />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Incidunt, ut eum distinctio nisi iusto, commodi.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-7 right_side_achivement_content">
-              <div className="swiper_container">
-                <Swiper
-                  slidesPerView={2}
-                  spaceBetween={30}
-                  navigation={true}
-                  modules={[Navigation]}
-                  autoplay={{
-                    delay: 500,
-                  }}
-                  // centeredSlides={true}
-                  // pagination={{
-                  //   clickable: true,
-                  // }}
-                  // modules={[Pagination]}
-                  className="mySwiper"
-                >
-                  <div className="bottom_blog_container">
-                    <div className="blog_boxes">
-                      <div className="col-md-2  blog_box ipad_half_width">
-                        <SwiperSlide>
-                          <div className="bottom_blog_img">
-                            <Fade direction="up" triggerOnce>
-                              {" "}
-                              <img src={ACHIVEMENT_IMG1} alt="" />
-                            </Fade>
-                          </div>
-                          <Fade direction="up" triggerOnce>
-                            <div className="blog_content">
-                              <div className="cust_profile"></div>
-
-                              <div className="socail_icon">
-                                <ul className="d-flex justify-content-between list-unstyled">
-                                  <li>
-                                    <div className="icon">
-                                      <SlCalender /> &nbsp; 18 JAN 2024
-                                    </div>
-                                  </li>
-                                  {/* <li>
-                          <div className="icon">
-                            <PiChatsCircleLight /> &nbsp; comments(05)
-                          </div>
-                        </li> */}
-                                </ul>
-                                <h5 className="blog_heading">
-                                  Redefining Tomorrow: Shravan Kumar’s Quest at
-                                  Sakshath Technologies.
-                                </h5>
-                                <p className="blog_sub_heading">
-                                  {" "}
-                                  Sed ut perspiciatis unde omnsiste natus errors
-                                  voluptatem accusantium doloremque laudatium
-                                  totae rem aperiam eaque quae abillo
-                                </p>
-                                <SlideAnimationButton btnName="READ MORE" />
-                              </div>
-                            </div>
-                          </Fade>
-                        </SwiperSlide>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bottom_blog_container">
-                    <div className="blog_boxes">
-                      <div className="col-md-2  blog_box ipad_half_width">
-                        <SwiperSlide>
-                          <div className="bottom_blog_img">
-                            <Fade direction="up" triggerOnce>
-                              {" "}
-                              <img src={ACHIVEMENT_IMG1} alt="" />
-                            </Fade>
-                          </div>
-                          <Fade direction="up" triggerOnce>
-                            <div className="blog_content">
-                              <div className="cust_profile"></div>
-
-                              <div className="socail_icon">
-                                <ul className="d-flex justify-content-between list-unstyled">
-                                  <li>
-                                    <div className="icon">
-                                      <SlCalender /> &nbsp; 18 JAN 2024
-                                    </div>
-                                  </li>
-                                  {/* <li>
-                          <div className="icon">
-                            <PiChatsCircleLight /> &nbsp; comments(05)
-                          </div>
-                        </li> */}
-                                </ul>
-                                <h5 className="blog_heading">
-                                  Redefining Tomorrow: Shravan Kumar’s Quest at
-                                  Sakshath Technologies.
-                                </h5>
-                                <p className="blog_sub_heading">
-                                  {" "}
-                                  Sed ut perspiciatis unde omnsiste natus errors
-                                  voluptatem accusantium doloremque laudatium
-                                  totae rem aperiam eaque quae abillo
-                                </p>
-                                <SlideAnimationButton btnName="READ MORE" />
-                              </div>
-                            </div>
-                          </Fade>
-                        </SwiperSlide>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bottom_blog_container">
-                    <div className="blog_boxes">
-                      <div className="col-md-2  blog_box ipad_half_width">
-                        <SwiperSlide>
-                          <div className="bottom_blog_img">
-                            <Fade direction="up" triggerOnce>
-                              {" "}
-                              <img src={ACHIVEMENT_IMG1} alt="" />
-                            </Fade>
-                          </div>
-                          <Fade direction="up" triggerOnce>
-                            <div className="blog_content">
-                              <div className="cust_profile"></div>
-
-                              <div className="socail_icon">
-                                <ul className="d-flex justify-content-between list-unstyled">
-                                  <li>
-                                    <div className="icon">
-                                      <SlCalender /> &nbsp; 18 JAN 2024
-                                    </div>
-                                  </li>
-                                  {/* <li>
-                          <div className="icon">
-                            <PiChatsCircleLight /> &nbsp; comments(05)
-                          </div>
-                        </li> */}
-                                </ul>
-                                <h5 className="blog_heading">
-                                  Redefining Tomorrow: Shravan Kumar’s Quest at
-                                  Sakshath Technologies.
-                                </h5>
-                                <p className="blog_sub_heading">
-                                  {" "}
-                                  Sed ut perspiciatis unde omnsiste natus errors
-                                  voluptatem accusantium doloremque laudatium
-                                  totae rem aperiam eaque quae abillo
-                                </p>
-                                <SlideAnimationButton btnName="READ MORE" />
-                              </div>
-                            </div>
-                          </Fade>
-                        </SwiperSlide>
-                      </div>
-                    </div>
-                  </div>
-                  <SwiperSlide>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Eaque odit nihil, obcaecati ducimus cupiditate incidunt id
-                    corrupti itaque alias labore delectus eos facilis similique
-                    est excepturi ipsa fugiat explicabo dolorum.{" "}
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    {" "}
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Qui aliquam repellendus veritatis laudantium. Repellat
-                    voluptatum suscipit consequuntur dignissimos repudiandae
-                    asperiores sunt doloribus atque quo, dolorum ipsum ullam
-                    ratione culpa natus.{" "}
-                  </SwiperSlide>
-                </Swiper>{" "}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ends */}
       {/* SECTION - Banner Section Start */}
       <section className="banner_sec">
         <Swiper
@@ -843,7 +657,7 @@ export const Home = () => {
       {/*  SECTION - Popuplar Princial End @ */}
 
       {/*  SECTION - Blogs Start  */}
-      <section className="blogs">
+      {/* <section className="blogs">
         <div className="container">
           <div className="row">
             <div className="top_blog_container text-center">
@@ -873,17 +687,7 @@ export const Home = () => {
                 <Fade direction="up" triggerOnce>
                   <div className="blog_content">
                     <div className="cust_profile">
-                      {/* <div className="blog_cutomer_profile d-flex justify-content-end ">
-                        <div className="customer_img ">
-                          <img
-                            src={BLOGCPROFILE}
-                            alt=""
-                            className="cust rounded-circle"
-                          />
-                        </div>
-                        &nbsp; &nbsp;
-                        <p>Mohit Darmal</p>
-                      </div> */}
+                     
                     </div>
 
                     <div className="socail_icon">
@@ -919,17 +723,7 @@ export const Home = () => {
                 <Fade direction="up" delay={200} triggerOnce>
                   <div className="blog_content">
                     <div className="cust_profile">
-                      {/* <div className="blog_cutomer_profile d-flex justify-content-end ">
-                        <div className="customer_img ">
-                          <img
-                            src={BLOGCPROFILE}
-                            alt=""
-                            className="cust rounded-circle"
-                          />
-                        </div>
-                        &nbsp; &nbsp;
-                        <p>Amar Singh</p>
-                      </div> */}
+                  
                     </div>
 
                     <div className="socail_icon">
@@ -939,11 +733,7 @@ export const Home = () => {
                             <SlCalender /> &nbsp; 18 JAN 2024
                           </div>
                         </li>
-                        {/* <li>
-                          <div className="icon">
-                            <PiChatsCircleLight /> &nbsp; comments(05)
-                          </div>
-                        </li> */}
+                      
                       </ul>
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
@@ -970,20 +760,7 @@ export const Home = () => {
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="blog_content">
                     <div className="cust_profile">
-                      {/* <div className="blog_cutomer_profile d-flex justify-content-end ">
-                        <div className="customer_img ">
-                          <Fade direction="up" triggerOnce>
-                            {" "}
-                            <img
-                              src={BLOGCPROFILE}
-                              alt=""
-                              className="cust rounded-circle"
-                            />{" "}
-                          </Fade>
-                        </div>
-                        &nbsp; &nbsp;
-                        <p>Senthil Palanisamy</p>
-                      </div> */}
+                     
                     </div>
                     <div className="socail_icon">
                       <ul className="d-flex justify-content-between list-unstyled">
@@ -992,11 +769,7 @@ export const Home = () => {
                             <SlCalender /> &nbsp; 18 JAN 2024
                           </div>
                         </li>
-                        {/* <li>
-                          <div className="icon">
-                            <PiChatsCircleLight /> &nbsp; comments(05)
-                          </div>
-                        </li> */}
+                        
                       </ul>
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
@@ -1017,9 +790,228 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* SECTION - Blogs END */}
+
+      {/* Swipper blog start */}
+      <section className="swipper_section">
+        <div className="container">
+          <div className="row pt-4 align-items-center">
+            <div className="col-md-5">
+              <div className="bg_dotted_img">
+                {/* <img src={DOTTED_IMG1} alt="" width="100px" height="100px" />  */}
+              </div>
+              <div className="our_achivement_para mt-4">
+                <Heading heading="OUR ACHIVEMENT" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, ut eum distinctio nisi iusto, commodi.
+                </p>
+              </div>
+              {/* <NavLink to="/our-achievements"> */}
+              {/* <SlideAnimationButton btnName="READ MORE" /> */}
+              {/* </NavLink> */}
+
+              <Link to="/our-achievements" className="cta_button">
+                Read More
+              </Link>
+            </div>
+            <div className="col-md-7 right_side_achivement_content">
+              <div className="swiper_container">
+                <Swiper
+                  slidesPerView={2}
+                  spaceBetween={10}
+                  navigation={true}
+                  modules={[Navigation]}
+                  autoplay={{
+                    delay: 500,
+                  }}
+                  // centeredSlides={true}
+                  // pagination={{
+                  //   clickable: true,
+                  // }}
+                  // modules={[Pagination]}
+                  className="mySwiper"
+                >
+                  <div className="bottom_blog_container">
+                    <div className="blog_boxes">
+                      <div className="col-md-2  blog_box ipad_half_width">
+                        <SwiperSlide>
+                          <Fade direction="up" triggerOnce>
+                            <div className="swipper_blog_container">
+                              <div className="bottom_blog_img">
+                                {" "}
+                                <img src={ACHIVEMENT_IMG1} alt="" />
+                              </div>
+
+                              <div className="blog_content">
+                                <div className="cust_profile"></div>
+
+                                <div className="socail_icon">
+                                  <ul className="d-flex justify-content-between list-unstyled">
+                                    <li>
+                                      <div className="icon">
+                                        <SlCalender /> &nbsp; 18 JAN 2024
+                                      </div>
+                                    </li>
+                                  </ul>
+                                  <h5 className="blog_heading">
+                                    Redefining Tomorrow: Shravan Kumar’s Quest
+                                    at Sakshath Technologies.
+                                  </h5>
+                                  <p className="blog_sub_heading">
+                                    {" "}
+                                    Sed ut perspiciatis unde omnsiste natus
+                                    errors voluptatem accusantium doloremque
+                                    laudatium totae rem aperiam eaque quae
+                                    abillo
+                                  </p>
+                                  <SlideAnimationButton btnName="READ MORE" />
+                                </div>
+                              </div>
+                            </div>
+                          </Fade>
+                        </SwiperSlide>
+                      </div>
+                    </div>
+                  </div>
+                  {/* 2 */}
+
+                  <div className="bottom_blog_container">
+                    <div className="blog_boxes">
+                      <div className="col-md-2  blog_box ipad_half_width">
+                        <SwiperSlide>
+                          <Fade direction="up" triggerOnce>
+                            <div className="swipper_blog_container">
+                              <div className="bottom_blog_img">
+                                {" "}
+                                <img src={ACHIVEMENT_IMG1} alt="" />
+                              </div>
+
+                              <div className="blog_content">
+                                <div className="cust_profile"></div>
+
+                                <div className="socail_icon">
+                                  <ul className="d-flex justify-content-between list-unstyled">
+                                    <li>
+                                      <div className="icon">
+                                        <SlCalender /> &nbsp; 18 JAN 2024
+                                      </div>
+                                    </li>
+                                  </ul>
+                                  <h5 className="blog_heading">
+                                    Redefining Tomorrow: Shravan Kumar’s Quest
+                                    at Sakshath Technologies.
+                                  </h5>
+                                  <p className="blog_sub_heading">
+                                    {" "}
+                                    Sed ut perspiciatis unde omnsiste natus
+                                    errors voluptatem accusantium doloremque
+                                    laudatium totae rem aperiam eaque quae
+                                    abillo
+                                  </p>
+                                  <SlideAnimationButton btnName="READ MORE" />
+                                </div>
+                              </div>
+                            </div>
+                          </Fade>
+                        </SwiperSlide>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bottom_blog_container">
+                    <div className="blog_boxes">
+                      <div className="col-md-2  blog_box ipad_half_width">
+                        <SwiperSlide>
+                          <Fade direction="up">
+                            <div className="swipper_blog_container">
+                              <div className="bottom_blog_img">
+                                {" "}
+                                <img src={ACHIVEMENT_IMG1} alt="" />
+                              </div>
+
+                              <div className="blog_content">
+                                <div className="cust_profile"></div>
+
+                                <div className="socail_icon">
+                                  <ul className="d-flex justify-content-between list-unstyled">
+                                    <li>
+                                      <div className="icon">
+                                        <SlCalender /> &nbsp; 18 JAN 2024
+                                      </div>
+                                    </li>
+                                  </ul>
+                                  <h5 className="blog_heading">
+                                    Redefining Tomorrow: Shravan Kumar’s Quest
+                                    at Sakshath Technologies.
+                                  </h5>
+                                  <p className="blog_sub_heading">
+                                    {" "}
+                                    Sed ut perspiciatis unde omnsiste natus
+                                    errors voluptatem accusantium doloremque
+                                    laudatium totae rem aperiam eaque quae
+                                    abillo
+                                  </p>
+                                  <SlideAnimationButton btnName="READ MORE" />
+                                </div>
+                              </div>
+                            </div>
+                          </Fade>
+                        </SwiperSlide>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bottom_blog_container">
+                    <div className="blog_boxes">
+                      <div className="col-md-2  blog_box ipad_half_width">
+                        <SwiperSlide>
+                          <Fade direction="up" triggerOnce>
+                            <div className="swipper_blog_container">
+                              <div className="bottom_blog_img">
+                                {" "}
+                                <img src={ACHIVEMENT_IMG1} alt="" />
+                              </div>
+
+                              <div className="blog_content">
+                                <div className="cust_profile"></div>
+
+                                <div className="socail_icon">
+                                  <ul className="d-flex justify-content-between list-unstyled">
+                                    <li>
+                                      <div className="icon">
+                                        <SlCalender /> &nbsp; 18 JAN 2024
+                                      </div>
+                                    </li>
+                                  </ul>
+                                  <h5 className="blog_heading">
+                                    Redefining Tomorrow: Shravan Kumar’s Quest
+                                    at Sakshath Technologies.
+                                  </h5>
+                                  <p className="blog_sub_heading">
+                                    {" "}
+                                    Sed ut perspiciatis unde omnsiste natus
+                                    errors voluptatem accusantium doloremque
+                                    laudatium totae rem aperiam eaque quae
+                                    abillo
+                                  </p>
+                                  <SlideAnimationButton btnName="READ MORE" />
+                                </div>
+                              </div>
+                            </div>
+                          </Fade>
+                        </SwiperSlide>
+                      </div>
+                    </div>
+                  </div>
+                </Swiper>{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* blogs ends */}
 
       {/* @SECTION -FAQ section start */}
       {/* <Faq /> */}
@@ -1028,7 +1020,7 @@ export const Home = () => {
       {/*  */}
 
       {/* principle */}
-      <section className="principle_section">
+      {/* <section className="principle_section">
         <div className="container">
           <div className="row">
             <div className="col-md-5">Our Principle</div>
@@ -1066,7 +1058,7 @@ export const Home = () => {
                 </div>
               </div>
               <div className="row ">
-              <div className="col-md-6">
+                <div className="col-md-6">
                   <div className="principle_box">
                     <div className="icon_box">
                       <img src={RELIABILTY} alt="" />
@@ -1095,6 +1087,85 @@ export const Home = () => {
                       management systems.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      <section className="principle_section">
+        <div className="container">
+          <div className="row ">
+          <div className="principle_heading text-center">
+          <SubTitle SubTitle="Our Principle"/>
+            <Heading heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE"/>
+          </div>
+            <div className="col-md-6 principle_cols">
+              <div className="principle_container d-flex">
+                <div className="principle_icon">
+                  <img src={RELIABILTY} alt="" />
+                </div>
+                <div className="principle_para">
+                  <h5>REABILITY</h5>
+                  <p>
+                    {" "}
+                    Our customers rely on us as we provide high–quality,
+                    reliable products{" "}
+                  </p>
+
+                  <Link>Read More</Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 principle_cols">
+              <div className="principle_container d-flex">
+                <div className="principle_icon">
+                  <img src={PROFESSIONAL_TEAM} alt="" />
+                </div>
+                <div className="principle_para">
+                  <h5>PROFESSIONAL TEAM</h5>
+                  <p>
+                    {" "}
+                    Our customers rely on us as we provide high–quality,
+                    reliable products{" "}
+                  </p>
+
+                  <Link>Read More</Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 principle_cols">
+              <div className="principle_container d-flex">
+                <div className="principle_icon">
+                  <img src={SPECIALIZATION} alt="" />
+                </div>
+                <div className="principle_para">
+                  <h5>SPECIALIZATION</h5>
+                  <p>
+                    {" "}
+                    Our customers rely on us as we provide high–quality,
+                    reliable products{" "}
+                  </p>
+
+                  <Link>Read More</Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 principle_cols">
+              <div className="principle_container d-flex">
+                <div className="principle_icon">
+                  <img src={EXPERIENCE} alt="" />
+                </div>
+                <div className="principle_para">
+                  <h5>EXPERIENCE</h5>
+                  <p>
+                    {" "}
+                    Our customers rely on us as we provide high–quality,
+                    reliable products{" "}
+                  </p>
+
+                  <Link>Read More</Link>
                 </div>
               </div>
             </div>

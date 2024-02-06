@@ -334,6 +334,17 @@ Button {
   }
   }
 
+  // swipper bg
+
+  .swipper_section{
+    // background-image: url("../../Assets/images/achivement_wave.svg");
+    background: linear-gradient(172deg, #ffffff00 0 68%, #e3f4fb 68% 101%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+ 
+  }
+
 .top_blog_heading {
   color: $light_navy_blue;
 }
@@ -382,11 +393,7 @@ Button {
   padding-right: 15px;
 }
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-  // bottom: var(--swiper-pagination-bottom, 8px);
-  // top: var(--swiper-pagination-top, auto);
-  // left: 250px;
-  // width: 100px;
-  // height: 70px;
+ 
   margin-top: 40px;
   position: relative;
   // display: none;
@@ -411,6 +418,72 @@ Button {
 // }
   
 // } 
+
+
+// .swiper-slide {
+//   width: 400px;
+//   margin-right: 30px;
+//   margin-left: 30px !important;
+//   box-shadow: 0px 2px 20px #00000014;
+
+// }
+
+.swiper-button-prev:after{
+  content: 'prev';
+  font-size: 16px !important;
+  margin-left: -19px !important;
+  background: #24688f !important;
+  width: 27px !important;
+  height: 27px !important;
+  text-align: center;
+  line-height: 27px !important;
+  border-radius: 50px !important;
+  color: #fff;
+
+}
+
+.swiper-button-next:after{
+  content: 'next';
+  font-size: 16px !important;
+  background: #24688f;
+  border-radius: 50% !important;
+  color: white;
+  width: 30px !important;
+  height: 29px !important;
+  line-height: 27px !important;
+  margin-left: 0px !important;
+  text-align: center !important;
+}
+.swipper_blog_container{
+  background: white;
+  display: flow-root;
+  height: auto;
+padding: 10px;
+margin: 10px;
+  box-shadow: 0px 2px 20px #00000014;
+}
+
+
+// .bg_dotted_img{
+//   position: relative;
+//   content: "";
+  
+// }
+.our_achivement_para::before{
+  background-image: url('../../Assets/images/dotted_img.png') !important;
+  position: absolute;
+  content: "";
+  z-index: -9;
+  margin-top: -50px;
+  margin-left: -35px;
+  opacity: 0.7;
+  width: 100px !important;
+  height: 100px !important;
+  background-size: cover;
+}
+
+
+
 
 .socail_icon{
   float: left;
@@ -493,28 +566,87 @@ Button {
 }
 
  // principle
-.principle_section{
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
- .principle_box{
-  box-shadow: 0 2px  20px #00000033;
-  padding: 10px;
-  border-radius: 20px;
-  border-bottom: 5px solid #32a4d5;
-  // border-bottom: 5px solid #32a4d5;
-  border-right: 4px solid #32a4d5;
 
-  p{
-    padding: 10px 12px;
-  }
-  h5{
-    font-family: $rajdhani_font;
-    padding: 10px 12px;
-    font-weight: 700;
-    font-weight: 10px 12px;
-  }
+// .principle_section{
+//   padding-top: 80px;
+//   padding-bottom: 80px;
+// }
+//  .principle_box{
+//   box-shadow: 0 2px  20px #00000033;
+//   padding: 10px;
+//   border-radius: 20px;
+//   border-bottom: 5px solid #32a4d5;
+
+//   border-right: 4px solid #32a4d5;
+
+//   p{
+//     padding: 10px 12px;
+//   }
+//   h5{
+//     font-family: $rajdhani_font;
+//     padding: 10px 12px;
+//     font-weight: 700;
+//     font-weight: 10px 12px;
+//   }
+//  }
+
+// principle_
+
+
+ .principle_section{
+   padding-top: 80px;
+   padding-bottom: 80px;
  }
+
+.principle_container{
+  box-shadow: 0 2px 20px #03030326;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+
+
+.principle_icon {
+  // background: rgba(50, 164, 213, 0.2509803922);
+  // border-radius: 50%;
+  padding: 5px;
+  height: 5px;
+  padding-right: 25px;
+  padding-top: 0px;
+
+// a{
+//   font-size: 16px;
+//   font-weight: 700;
+//     font-family: 'Roboto';
+//     color: #32a4d5;
+// }
+img{
+  background: #32a4d526;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+}
+
+.principle_para{
+  h5{
+    text-decoration: underline;
+
+  }
+   a{
+   font-size: 16px;
+   font-weight: 700;
+     font-family: 'Roboto';
+     color: #32a4d5;
+ }
+
+}
+
+.principle_cols{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .banner_caption {
