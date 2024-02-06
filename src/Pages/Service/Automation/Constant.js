@@ -1,0 +1,1 @@
+export const AUTOMATION_BG_IMG=require("../../../Assets/images/Automation_bg_img1.png");
