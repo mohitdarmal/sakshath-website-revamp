@@ -1,0 +1,17 @@
+@import "../../Assets/saas/Main.scss";
+
+.service_contact_form{
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0px 2px 20px #0000001f;
+    z-index: 999;
+    position: relative;
+    
+    button{
+        background: $ball_blue_color;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+}
