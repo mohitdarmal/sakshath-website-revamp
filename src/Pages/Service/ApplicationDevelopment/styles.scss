@@ -1,5 +1,7 @@
 @import "../../../Assets/saas/Main.scss";
 
+
+// App development css start
 .why_choose_app_dev_sec{
     padding: 80px 0;
     background: #f5fcff;
@@ -18,23 +20,139 @@
     }
     h5{font-size: 18px;}
 }
+// App development css end
 
 
+// Our Services start
+.our_services_sec{
+    padding: 80px 0;
+
+    .our_services_box{
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 25px;
+  
+    .our_services_box_content {
+        border: 1px dashed #32a4d5;
+        padding: 30px;
+        box-shadow: 0px 2px 30px #00000014;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(142deg, rgb(50, 164, 213) 5%, rgb(50, 164, 213) 51%, rgb(55 139 190) 95%);
+            // transform: rotate(320deg);
+            right: -15px;
+            bottom: -15px;
+            transition: 0.5s;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        &:hover::after{
+             transition: 0.5s;
+             width: 100%;
+             height: 100%;
+             z-index: -1;
+             right: 0;
+             bottom: 0;
+        }
+
+        &:hover  {
+            .our_services_box_img{
+            background: #fff;
+            transition: 0.5s;
+            img{
+                filter: none
+            }
+        }
+           
+            h3{color: #fff;}
+        p{
+            color: #fff;
+        }
+       }
+
+        h3{
+        font-size: 24px;
+        line-height: 28px;
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      
+    }
+
+    .our_services_box_img{
+        display: inline-block;
+        background: linear-gradient(142deg, rgb(48, 116, 155) 5%, rgb(50, 164, 213) 51%, rgb(37, 103, 143) 95%);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+        box-shadow: 0px 2px 20px #32a4d536;
+        margin-bottom: 20px;
+    
+        img{
+            width: 50px;
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+
+    }
+}
+// Our Services end
+
+
+// Our Platform
+.our_paltform_sec{
+    padding-bottom: 80px;
+}
 
 @media screen and (max-width:767px){
+    // App development css start
     .why_choose_app_dev_sec{
         padding: 40px 0;
     }
     .why_choose_app_dev_content{
         margin-top: 20px;
     }
+    // App development css end
+
+    // Our Services start
+.our_services_sec{
+    padding: 40px 0;
+    
+}
+// Our Services end
+
+// Our Platform
+.our_paltform_sec{
+    padding-bottom: 40px;
+}
  
 }
 
 @media screen and (min-width:481px) and (max-width:767px){
+    // App development css start
     .why_choose_app_dev_icon_content .col-md-6{width: 50%;}
+    // App development css end
+
+ 
 }
 
 @media screen and (min-width:768px) and (max-width:1023px){
+    // App development css start
     .app_dev_heading{width: 100%; margin-left: 0px;}
+    // App development css end
+}
+
+@media screen and (min-width:768px){
+    .our_services_box_content h3{min-height: 56px;}
 }

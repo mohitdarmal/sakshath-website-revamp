@@ -17,8 +17,12 @@ import {
   SPECIALIZATION,
   EXPERIENCE,
   RELIABILTY,
+  Achievements1,
+  ACHIVEMENT_IMG1,
+  ACHIVEMENT_IMG2,
+  ACHIVEMENT_IMG3,
 } from "./Constant";
- 
+
 import { SlCalender } from "react-icons/sl";
 import { PiChatsCircleLight } from "react-icons/pi";
 import CountUp from "react-countup";
@@ -37,16 +41,204 @@ import ClientLogo from "../../Components/ClientLogo";
 import Faq from "../../Components/Faq";
 import HappyClients from "../../Components/HappyClients";
 import OurPrincipals from "../../Components/OurPrincipals";
+// import { Pagination, Navigation } from 'swiper/modules';
 
 export const Home = () => {
   return (
     <>
-       {/* @@@@@@@ SECTION - Banner Section Start @@@@@@@ */}
+      {/* Swipper recheck */}
+      <section>
+        <div className="container">
+          <div className="row pt-4 align-items-center">
+            <div className="col-md-5">
+              <div className="our_achivement_para mt-4">
+                <Heading heading="OUR ACHIVEMENT" />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt, ut eum distinctio nisi iusto, commodi.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-7 right_side_achivement_content">
+              <div className="swiper_container">
+                <Swiper
+                  slidesPerView={2}
+                  spaceBetween={30}
+                  navigation={true}
+                  modules={[Navigation]}
+                  autoplay={{
+                    delay: 500,
+                  }}
+                  // centeredSlides={true}
+                  // pagination={{
+                  //   clickable: true,
+                  // }}
+                  // modules={[Pagination]}
+                  className="mySwiper"
+                >
+                  <div className="bottom_blog_container">
+                    <div className="blog_boxes">
+                      <div className="col-md-2  blog_box ipad_half_width">
+                        <SwiperSlide>
+                          <div className="bottom_blog_img">
+                            <Fade direction="up" triggerOnce>
+                              {" "}
+                              <img src={ACHIVEMENT_IMG1} alt="" />
+                            </Fade>
+                          </div>
+                          <Fade direction="up" triggerOnce>
+                            <div className="blog_content">
+                              <div className="cust_profile"></div>
+
+                              <div className="socail_icon">
+                                <ul className="d-flex justify-content-between list-unstyled">
+                                  <li>
+                                    <div className="icon">
+                                      <SlCalender /> &nbsp; 18 JAN 2024
+                                    </div>
+                                  </li>
+                                  {/* <li>
+                          <div className="icon">
+                            <PiChatsCircleLight /> &nbsp; comments(05)
+                          </div>
+                        </li> */}
+                                </ul>
+                                <h5 className="blog_heading">
+                                  Redefining Tomorrow: Shravan Kumar’s Quest at
+                                  Sakshath Technologies.
+                                </h5>
+                                <p className="blog_sub_heading">
+                                  {" "}
+                                  Sed ut perspiciatis unde omnsiste natus errors
+                                  voluptatem accusantium doloremque laudatium
+                                  totae rem aperiam eaque quae abillo
+                                </p>
+                                <SlideAnimationButton btnName="READ MORE" />
+                              </div>
+                            </div>
+                          </Fade>
+                        </SwiperSlide>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bottom_blog_container">
+                    <div className="blog_boxes">
+                      <div className="col-md-2  blog_box ipad_half_width">
+                        <SwiperSlide>
+                          <div className="bottom_blog_img">
+                            <Fade direction="up" triggerOnce>
+                              {" "}
+                              <img src={ACHIVEMENT_IMG1} alt="" />
+                            </Fade>
+                          </div>
+                          <Fade direction="up" triggerOnce>
+                            <div className="blog_content">
+                              <div className="cust_profile"></div>
+
+                              <div className="socail_icon">
+                                <ul className="d-flex justify-content-between list-unstyled">
+                                  <li>
+                                    <div className="icon">
+                                      <SlCalender /> &nbsp; 18 JAN 2024
+                                    </div>
+                                  </li>
+                                  {/* <li>
+                          <div className="icon">
+                            <PiChatsCircleLight /> &nbsp; comments(05)
+                          </div>
+                        </li> */}
+                                </ul>
+                                <h5 className="blog_heading">
+                                  Redefining Tomorrow: Shravan Kumar’s Quest at
+                                  Sakshath Technologies.
+                                </h5>
+                                <p className="blog_sub_heading">
+                                  {" "}
+                                  Sed ut perspiciatis unde omnsiste natus errors
+                                  voluptatem accusantium doloremque laudatium
+                                  totae rem aperiam eaque quae abillo
+                                </p>
+                                <SlideAnimationButton btnName="READ MORE" />
+                              </div>
+                            </div>
+                          </Fade>
+                        </SwiperSlide>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bottom_blog_container">
+                    <div className="blog_boxes">
+                      <div className="col-md-2  blog_box ipad_half_width">
+                        <SwiperSlide>
+                          <div className="bottom_blog_img">
+                            <Fade direction="up" triggerOnce>
+                              {" "}
+                              <img src={ACHIVEMENT_IMG1} alt="" />
+                            </Fade>
+                          </div>
+                          <Fade direction="up" triggerOnce>
+                            <div className="blog_content">
+                              <div className="cust_profile"></div>
+
+                              <div className="socail_icon">
+                                <ul className="d-flex justify-content-between list-unstyled">
+                                  <li>
+                                    <div className="icon">
+                                      <SlCalender /> &nbsp; 18 JAN 2024
+                                    </div>
+                                  </li>
+                                  {/* <li>
+                          <div className="icon">
+                            <PiChatsCircleLight /> &nbsp; comments(05)
+                          </div>
+                        </li> */}
+                                </ul>
+                                <h5 className="blog_heading">
+                                  Redefining Tomorrow: Shravan Kumar’s Quest at
+                                  Sakshath Technologies.
+                                </h5>
+                                <p className="blog_sub_heading">
+                                  {" "}
+                                  Sed ut perspiciatis unde omnsiste natus errors
+                                  voluptatem accusantium doloremque laudatium
+                                  totae rem aperiam eaque quae abillo
+                                </p>
+                                <SlideAnimationButton btnName="READ MORE" />
+                              </div>
+                            </div>
+                          </Fade>
+                        </SwiperSlide>
+                      </div>
+                    </div>
+                  </div>
+                  <SwiperSlide>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eaque odit nihil, obcaecati ducimus cupiditate incidunt id
+                    corrupti itaque alias labore delectus eos facilis similique
+                    est excepturi ipsa fugiat explicabo dolorum.{" "}
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    {" "}
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Qui aliquam repellendus veritatis laudantium. Repellat
+                    voluptatum suscipit consequuntur dignissimos repudiandae
+                    asperiores sunt doloribus atque quo, dolorum ipsum ullam
+                    ratione culpa natus.{" "}
+                  </SwiperSlide>
+                </Swiper>{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ends */}
+      {/* SECTION - Banner Section Start */}
       <section className="banner_sec">
         <Swiper
           autoplay={{
-            delay: 6000,  
-            disableOnInteraction: true,  
+            delay: 6000,
+            disableOnInteraction: true,
           }}
           navigation={false}
           keyboard={true}
@@ -61,33 +253,21 @@ export const Home = () => {
               </div>
               <div className="banner_caption_container">
                 <div className="banner_caption">
-                  <h6><Fade direction="up" delay={150}>Profesional IT Solution </Fade></h6>
-                  <h3><Fade direction="up" delay={300}>Transforming Ideas into Intelligent Solutions </Fade></h3>
+                  <h6>
+                    <Fade direction="up" delay={150}>
+                      Profesional IT Solution{" "}
+                    </Fade>
+                  </h6>
+                  <h3>
+                    <Fade direction="up" delay={300}>
+                      Transforming Ideas into Intelligent Solutions{" "}
+                    </Fade>
+                  </h3>
                   <Fade direction="up" delay={500}>
-                  <div>
-                    <Link to="/">Get Started Now</Link>{" "}
-                    <Link to="/">Explore More</Link>
-                  </div>
-                  </Fade>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-         
-          <SwiperSlide>
-            <div className="banner_box">
-              <div className="banner_img">
-                <img className="img-fluid" src={BANNER1} />
-              </div>
-              <div className="banner_caption_container">
-              <div className="banner_caption">
-                  <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
-                  <h3><Fade direction="up" delay={1200}>Elevating Experiences, One Line at a Time </Fade></h3>
-                  <Fade direction="up" delay={800}>
-                  <div>
-                    <Link to="/">Get Started Now</Link>{" "}
-                    <Link to="/">Explore More</Link>
-                  </div>
+                    <div>
+                      <Link to="/">Get Started Now</Link>{" "}
+                      <Link to="/">Explore More</Link>
+                    </div>
                   </Fade>
                 </div>
               </div>
@@ -100,14 +280,22 @@ export const Home = () => {
                 <img className="img-fluid" src={BANNER1} />
               </div>
               <div className="banner_caption_container">
-              <div className="banner_caption">
-                  <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
-                  <h3><Fade direction="up" delay={1200}>Future-Proofing Your Digital Journey</Fade></h3>
+                <div className="banner_caption">
+                  <h6>
+                    <Fade direction="up" delay={1000}>
+                      Profesional IT Solution{" "}
+                    </Fade>
+                  </h6>
+                  <h3>
+                    <Fade direction="up" delay={1200}>
+                      Elevating Experiences, One Line at a Time{" "}
+                    </Fade>
+                  </h3>
                   <Fade direction="up" delay={800}>
-                  <div>
-                    <Link to="/">Get Started Now</Link>{" "}
-                    <Link to="/">Explore More</Link>
-                  </div>
+                    <div>
+                      <Link to="/">Get Started Now</Link>{" "}
+                      <Link to="/">Explore More</Link>
+                    </div>
                   </Fade>
                 </div>
               </div>
@@ -120,14 +308,22 @@ export const Home = () => {
                 <img className="img-fluid" src={BANNER1} />
               </div>
               <div className="banner_caption_container">
-              <div className="banner_caption">
-                  <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
-                  <h3><Fade direction="up" delay={1200}>Unleashing the Power of Purposeful Code</Fade></h3>
+                <div className="banner_caption">
+                  <h6>
+                    <Fade direction="up" delay={1000}>
+                      Profesional IT Solution{" "}
+                    </Fade>
+                  </h6>
+                  <h3>
+                    <Fade direction="up" delay={1200}>
+                      Future-Proofing Your Digital Journey
+                    </Fade>
+                  </h3>
                   <Fade direction="up" delay={800}>
-                  <div>
-                    <Link to="/">Get Started Now</Link>{" "}
-                    <Link to="/">Explore More</Link>
-                  </div>
+                    <div>
+                      <Link to="/">Get Started Now</Link>{" "}
+                      <Link to="/">Explore More</Link>
+                    </div>
                   </Fade>
                 </div>
               </div>
@@ -140,14 +336,22 @@ export const Home = () => {
                 <img className="img-fluid" src={BANNER1} />
               </div>
               <div className="banner_caption_container">
-              <div className="banner_caption">
-                  <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
-                  <h3><Fade direction="up" delay={1200}>Elevating Businesses through Exceptional Code</Fade></h3>
+                <div className="banner_caption">
+                  <h6>
+                    <Fade direction="up" delay={1000}>
+                      Profesional IT Solution{" "}
+                    </Fade>
+                  </h6>
+                  <h3>
+                    <Fade direction="up" delay={1200}>
+                      Unleashing the Power of Purposeful Code
+                    </Fade>
+                  </h3>
                   <Fade direction="up" delay={800}>
-                  <div>
-                    <Link to="/">Get Started Now</Link>{" "}
-                    <Link to="/">Explore More</Link>
-                  </div>
+                    <div>
+                      <Link to="/">Get Started Now</Link>{" "}
+                      <Link to="/">Explore More</Link>
+                    </div>
                   </Fade>
                 </div>
               </div>
@@ -160,14 +364,50 @@ export const Home = () => {
                 <img className="img-fluid" src={BANNER1} />
               </div>
               <div className="banner_caption_container">
-              <div className="banner_caption">
-                  <h6><Fade direction="up" delay={1000}>Profesional IT Solution </Fade></h6>
-                  <h3><Fade direction="up" delay={1200}>Unlocking Potential, One Code at a Time </Fade></h3>
+                <div className="banner_caption">
+                  <h6>
+                    <Fade direction="up" delay={1000}>
+                      Profesional IT Solution{" "}
+                    </Fade>
+                  </h6>
+                  <h3>
+                    <Fade direction="up" delay={1200}>
+                      Elevating Businesses through Exceptional Code
+                    </Fade>
+                  </h3>
                   <Fade direction="up" delay={800}>
-                  <div>
-                    <Link to="/">Get Started Now</Link>{" "}
-                    <Link to="/">Explore More</Link>
-                  </div>
+                    <div>
+                      <Link to="/">Get Started Now</Link>{" "}
+                      <Link to="/">Explore More</Link>
+                    </div>
+                  </Fade>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className="banner_box">
+              <div className="banner_img">
+                <img className="img-fluid" src={BANNER1} />
+              </div>
+              <div className="banner_caption_container">
+                <div className="banner_caption">
+                  <h6>
+                    <Fade direction="up" delay={1000}>
+                      Profesional IT Solution{" "}
+                    </Fade>
+                  </h6>
+                  <h3>
+                    <Fade direction="up" delay={1200}>
+                      Unlocking Potential, One Code at a Time{" "}
+                    </Fade>
+                  </h3>
+                  <Fade direction="up" delay={800}>
+                    <div>
+                      <Link to="/">Get Started Now</Link>{" "}
+                      <Link to="/">Explore More</Link>
+                    </div>
                   </Fade>
                 </div>
               </div>
@@ -175,53 +415,49 @@ export const Home = () => {
           </SwiperSlide>
         </Swiper>
       </section>
-       {/* @@@@@@@ SECTION - Banner Section end @@@@@@@ */}
+      {/* @@@@@@@ SECTION - Banner Section end @@@@@@@ */}
 
-    
-
-
-       {/* @@@@@@ SECTION - ISO certifcates start @@@@@@ */}
-          <section className="iso_certificate_sec">
-            <div className="iso_certificate_sec_bg">
-            <div className="container">
-              <div className="row text-center">
-                <div className="col-md-6 offset-md-3">
-              <Fade direction="up" triggerOnce>
-                <Heading
-                  heading="iso certificates"
-                  uppercase="text-uppercase"
-                />
-              </Fade>
-              <Fade direction="up" delay={100} triggerOnce >
-                <p className="mb-4 pb-md-4">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.  Lorem Ipsum is simply typesetting.  
-                </p>
-              </Fade>
+      {/* @@@@@@ SECTION - ISO certifcates start @@@@@@ */}
+      <section className="iso_certificate_sec">
+        <div className="iso_certificate_sec_bg">
+          <div className="container">
+            <div className="row text-center">
+              <div className="col-md-6 offset-md-3">
+                <Fade direction="up" triggerOnce>
+                  <Heading
+                    heading="iso certificates"
+                    uppercase="text-uppercase"
+                  />
+                </Fade>
+                <Fade direction="up" delay={100} triggerOnce>
+                  <p className="mb-4 pb-md-4">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum is simply typesetting.
+                  </p>
+                </Fade>
               </div>
-              </div>
+            </div>
 
-              <div className="row iso_certificate_logo">
+            <div className="row iso_certificate_logo">
               <Swiper
-              breakpoints={{
-                320: {
-                  slidesPerView:3,
-                  spaceBetween:30
-                },
-                481: {
-                  slidesPerView:3,
-                  spaceBetween:30
-                },
-                768: {
-                  slidesPerView:4,
-                  spaceBetween:30
-                },
-                1024: {
-                  slidesPerView:4,
-                  spaceBetween:30
-                },
-              }}
-              
+                breakpoints={{
+                  320: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                  481: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                  768: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                  },
+                  1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                  },
+                }}
                 autoplay={{
                   delay: 1500,
                   disableOnInteraction: false,
@@ -230,18 +466,29 @@ export const Home = () => {
                 modules={[Autoplay]}
                 className="mySwiper"
               >
-                <SwiperSlide> <img src={ISO_27001} /> </SwiperSlide>
-                <SwiperSlide> <img src={GREAT_PLACE_WORK} /></SwiperSlide>
-                <SwiperSlide> <img src={ISO_9001} /></SwiperSlide>
-                <SwiperSlide> <img src={GREAT_PLACE_WORK} /></SwiperSlide>
-            </Swiper>
-              </div>
-
+                <SwiperSlide>
+                  {" "}
+                  <img src={ISO_27001} />{" "}
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <img src={GREAT_PLACE_WORK} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <img src={ISO_9001} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  {" "}
+                  <img src={GREAT_PLACE_WORK} />
+                </SwiperSlide>
+              </Swiper>
             </div>
-            </div>
-          </section>
+          </div>
+        </div>
+      </section>
 
-       {/* @@@@@@ SECTION - ISO certifcates start @@@@@@ */}
+      {/* @@@@@@ SECTION - ISO certifcates start @@@@@@ */}
 
       {/* <section className="iso_certificate_sec">
         <div className="container">
@@ -307,7 +554,6 @@ export const Home = () => {
           </div>
         </div>
       </section> */}
-
 
       {/* @@@@@@ SECTION - Specilizes in Building Services start @@@@@@ */}
       {/* <section className="overflow-hidden">
@@ -411,12 +657,20 @@ export const Home = () => {
                   />
                 </div>
                 <p>
-                Our journey started way back in the year 2012. It started as a partnership firm initially under the name Saaksh8 Consulting Services with smidgen capital, later in the years this small consulting firm providing IT recruitment Services ran into the idea of having an ERP offshore development. If not quite a tale of rags to riches, the story of Sakshath Technologies’ rise to stardom certainly came closer.
-
+                  Our journey started way back in the year 2012. It started as a
+                  partnership firm initially under the name Saaksh8 Consulting
+                  Services with smidgen capital, later in the years this small
+                  consulting firm providing IT recruitment Services ran into the
+                  idea of having an ERP offshore development. If not quite a
+                  tale of rags to riches, the story of Sakshath Technologies’
+                  rise to stardom certainly came closer.
                 </p>
                 <Fade direction="up">
                   {" "}
-                  <SlideAnimationButton url="/about" btnName="LEARN MORE ABOUT US" />{" "}
+                  <SlideAnimationButton
+                    url="/about"
+                    btnName="LEARN MORE ABOUT US"
+                  />{" "}
                 </Fade>
               </div>
             </div>
@@ -461,9 +715,9 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      {/* @@@@@@ SECTION - planning banner ends @@@@@@ */}
+      {/*SECTION - planning banner ends*/}
 
-      {/* @@@@@@@ SECTION - Client Logo Start @@@@@@ */}
+      {/* SECTION - Client Logo Start*/}
       <ClientLogo />
       {/* @@@@@ SECTION - Client Logo End @@@@@*/}
 
@@ -500,9 +754,9 @@ export const Home = () => {
                 </div>
               </Fade>
             </div>
-            {/* @@@@@ SECTION - Popuplar Princial Left Side Column End @@@@@@ */}
+            {/*  SECTION - Popuplar Princial Left Side Column End @ */}
 
-            {/* @@@@@ SECTION - Popuplar Princial Right Side Column Start @@@@@ */}
+            {/*  SECTION - Popuplar Princial Right Side Column Start  */}
             <div className="col-md-7 right_home_principle">
               <div className="row">
                 <div className="col-md-6 right_home_principle_left_content_box">
@@ -517,7 +771,9 @@ export const Home = () => {
                           APPLICATION DEVELOPMENT
                         </h5>
                         <p className="justify-content-end  right_para ">
-                        Elevating Experiences through Exceptional Applications. Empowering businesses through innovative apps.Next-Gen Apps for Next-Level Performance.
+                          Elevating Experiences through Exceptional
+                          Applications. Empowering businesses through innovative
+                          apps.Next-Gen Apps for Next-Level Performance.
                         </p>
                       </div>
                     </Fade>
@@ -532,7 +788,9 @@ export const Home = () => {
                       <div className="right_home_principle_heading pe-md-0">
                         <h4 className="right_home_subheading">AUTOMATION</h4>
                         <p className=" right_para">
-                        Our automation solutions lead the way. Our automation is to your advantage. Driving productivity through precision automation.
+                          Our automation solutions lead the way. Our automation
+                          is to your advantage. Driving productivity through
+                          precision automation.
                         </p>
                       </div>
                     </Fade>
@@ -549,7 +807,8 @@ export const Home = () => {
                       <div className="right_home_principle_heading">
                         <h5 className="right_home_subheading">ANALYTICS</h5>
                         <p className="justify-content-end right_para">
-                        Elevate your business with our analytics solutions. We are transforming Data into actionable intelligence.
+                          Elevate your business with our analytics solutions. We
+                          are transforming Data into actionable intelligence.
                         </p>
                       </div>
                     </Fade>
@@ -566,7 +825,8 @@ export const Home = () => {
                           BANKING SOLUTION
                         </h4>
                         <p className=" right_para">
-                        Unleash the power of our comprehensive solutions.  Redefining Banking Solutions for a Digital World.
+                          Unleash the power of our comprehensive solutions.
+                          Redefining Banking Solutions for a Digital World.
                         </p>
                       </div>
                     </Fade>
@@ -577,16 +837,16 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      {/* @@@@@ SECTION - Popuplar Princial End @@@@@@ */}
+      {/*  SECTION - Popuplar Princial End @ */}
 
-      {/* @@@@@ SECTION - Blogs Start @@@@@ */}
+      {/*  SECTION - Blogs Start  */}
       <section className="blogs">
         <div className="container">
           <div className="row">
             <div className="top_blog_container text-center">
               <Fade direction="up" triggerOnce>
                 {" "}
-                <SubTitle SubTitle="Latest News and Blogs" />
+                <SubTitle SubTitle="Our Achivements" />
               </Fade>
               <Fade direction="up" delay={100} triggerOnce>
                 {" "}
@@ -604,23 +864,23 @@ export const Home = () => {
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
                     {" "}
-                    <img src={BLOGIMG1} alt="" />
+                    <img src={ACHIVEMENT_IMG1} alt="" />
                   </Fade>
                 </div>
                 <Fade direction="up" triggerOnce>
                   <div className="blog_content">
                     <div className="cust_profile">
-                      <div className="blog_cutomer_profile d-flex justify-content-end ">
+                      {/* <div className="blog_cutomer_profile d-flex justify-content-end ">
                         <div className="customer_img ">
                           <img
                             src={BLOGCPROFILE}
                             alt=""
                             className="cust rounded-circle"
                           />
-                        </div>{" "}
+                        </div>
                         &nbsp; &nbsp;
                         <p>Mohit Darmal</p>
-                      </div>
+                      </div> */}
                     </div>
 
                     <div className="socail_icon">
@@ -630,15 +890,10 @@ export const Home = () => {
                             <SlCalender /> &nbsp; 18 JAN 2024
                           </div>
                         </li>
-                        <li>
-                          <div className="icon">
-                            <PiChatsCircleLight /> &nbsp; comments(05)
-                          </div>
-                        </li>
                       </ul>
                       <h5 className="blog_heading">
-                        Build Launch Powerful Responsives Websites With Editor
-                        Perfect
+                        Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath
+                        Technologies.
                       </h5>
                       <p className="blog_sub_heading">
                         {" "}
@@ -655,13 +910,13 @@ export const Home = () => {
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
                     {" "}
-                    <img src={BLOGIMG1} alt="" />
+                    <img src={ACHIVEMENT_IMG2} alt="" />
                   </Fade>
                 </div>
                 <Fade direction="up" delay={200} triggerOnce>
                   <div className="blog_content">
                     <div className="cust_profile">
-                      <div className="blog_cutomer_profile d-flex justify-content-end ">
+                      {/* <div className="blog_cutomer_profile d-flex justify-content-end ">
                         <div className="customer_img ">
                           <img
                             src={BLOGCPROFILE}
@@ -671,7 +926,7 @@ export const Home = () => {
                         </div>
                         &nbsp; &nbsp;
                         <p>Amar Singh</p>
-                      </div>
+                      </div> */}
                     </div>
 
                     <div className="socail_icon">
@@ -681,11 +936,11 @@ export const Home = () => {
                             <SlCalender /> &nbsp; 18 JAN 2024
                           </div>
                         </li>
-                        <li>
+                        {/* <li>
                           <div className="icon">
                             <PiChatsCircleLight /> &nbsp; comments(05)
                           </div>
-                        </li>
+                        </li> */}
                       </ul>
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
@@ -706,13 +961,13 @@ export const Home = () => {
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
                     {" "}
-                    <img src={BLOGIMG1} alt="" />{" "}
+                    <img src={ACHIVEMENT_IMG3} alt="" />{" "}
                   </Fade>
                 </div>
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="blog_content">
                     <div className="cust_profile">
-                      <div className="blog_cutomer_profile d-flex justify-content-end ">
+                      {/* <div className="blog_cutomer_profile d-flex justify-content-end ">
                         <div className="customer_img ">
                           <Fade direction="up" triggerOnce>
                             {" "}
@@ -722,10 +977,10 @@ export const Home = () => {
                               className="cust rounded-circle"
                             />{" "}
                           </Fade>
-                        </div>{" "}
+                        </div>
                         &nbsp; &nbsp;
                         <p>Senthil Palanisamy</p>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="socail_icon">
                       <ul className="d-flex justify-content-between list-unstyled">
@@ -734,11 +989,11 @@ export const Home = () => {
                             <SlCalender /> &nbsp; 18 JAN 2024
                           </div>
                         </li>
-                        <li>
+                        {/* <li>
                           <div className="icon">
                             <PiChatsCircleLight /> &nbsp; comments(05)
                           </div>
-                        </li>
+                        </li> */}
                       </ul>
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
@@ -760,11 +1015,89 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      {/* @@@@@ SECTION - Blogs END @@@@@ */}
 
-      {/* @@@@@@ SECTION -FAQ section start @@@@@ */}
-        <Faq />
-      {/* @@@@@@ SECTION -FAQ section end @@@@@ */}
+      {/* SECTION - Blogs END */}
+
+      {/* @SECTION -FAQ section start */}
+      {/* <Faq /> */}
+      {/*  SECTION -FAQ section end  */}
+
+      {/*  */}
+
+      {/* principle */}
+      <section className="principle_section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-5">Our Principle</div>
+            <div className="col-md-7 ">
+              <div className="row ">
+                <div className="col-md-6 mb-4">
+                  <div className="principle_box">
+                    <div className="icon_box">
+                      <img src={RELIABILTY} alt="" />
+                    </div>
+
+                    <h5>RELIABILTY</h5>
+                    <p>
+                      Our customers rely on us as we provide high–quality,
+                      reliable products that have control over all their
+                      processes, which are rigorously managed by our quality
+                      management systems.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="principle_box">
+                    <div className="icon_box">
+                      <img src={RELIABILTY} alt="" />
+                    </div>
+
+                    <h5>RELIABILTY</h5>
+                    <p>
+                      Our customers rely on us as we provide high–quality,
+                      reliable products that have control over all their
+                      processes, which are rigorously managed by our quality
+                      management systems.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="row ">
+              <div className="col-md-6">
+                  <div className="principle_box">
+                    <div className="icon_box">
+                      <img src={RELIABILTY} alt="" />
+                    </div>
+
+                    <h5>RELIABILTY</h5>
+                    <p>
+                      Our customers rely on us as we provide high–quality,
+                      reliable products that have control over all their
+                      processes, which are rigorously managed by our quality
+                      management systems.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="principle_box">
+                    <div className="icon_box">
+                      <img src={RELIABILTY} alt="" />
+                    </div>
+
+                    <h5>RELIABILTY</h5>
+                    <p>
+                      Our customers rely on us as we provide high–quality,
+                      reliable products that have control over all their
+                      processes, which are rigorously managed by our quality
+                      management systems.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

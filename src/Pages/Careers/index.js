@@ -11,71 +11,169 @@ import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
 import Heading from "../../Components/Utils/Heading";
 import SubTitle from "../../Components/Utils/Title_head";
-import { CARRER_BENFIT_IMG } from "./Constant";
+import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH} from "./Constant";
 import { BsEnvelope } from "react-icons/bs";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import axios from "axios";
-import JobOpeningPopup from "../../Components/JobOpeningPopup";
+import JobOpeningPopup from "../../../src/Components/JobOpeningPopup";
 import { Fade } from "react-awesome-reveal";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Career = () => {
 
+const Career = () => {
   const [modalPopupData, setModalPopupData] = useState({});
 
   const jobOpening = [
-      {
-        id: 1,
-        title: "Senior React Developer",
-        description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        experince:'2.5 years+'
-      },
-      {
-        id: 2,
-        title: "Junior React Developer",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur.",
-        experince:'1 years+'
+    {
+      id: 1,
+      title: "Senior React Developer",
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+        {
+          id:3,
+          content:"Minimum 2-3 year of experience of working with –I. Tools: Python, Spark, Azure Data factory, AWS Redshift. Postgres SQL, MS SQL Oracle, Power BI API Integration,Power BI Shell Scripting. Azure analytics Services.II. Enterprise of working on data warehouse/ Data marts projects."
+        },
+        {
+          id:4,
+          content:"Experience working in Agile development environment with tools such as Jira and Bitbucket"
+        },
+        {
+          id:4,
+          content:"Good to having Knowledge of other BI Tools & Platforms: Qlik, Tableau, Looker, Talend, Alteryx, snowflake."
+        },
+
+      ],
+      experince: "4-8 years+",
+      location:'Bangalore',
+      position:'5'
+    },
+    {
+      id: 2,
+      title: "Junior React Developer",
+
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+      ],
+      experince: "2.5 years+",
+      location:'Gurugram',
+      position:'3'
     },
     {
       id: 3,
       title: "Sales",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur",
-        experince:'6 years+'
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+      ],
+      experince: "6 years+",
+      location:'Bangalore',
+      position:'5'
     },
     {
       id: 4,
       title: "Senior MIS Developer",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur",
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+      ],
+      experince: "2.5 years+",
+      location:'Bangalore'
     },
     {
       id: 5,
       title: "Sr. QA",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur",
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+      ],
+      experince: "3.5 - 4 years+",
+      location:'Mumbai',
+      position:'6'
     },
     {
       id: 6,
       title: "Dot Net Developer",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur",
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+      ],
+      experince: "2.5 years+",
+      location:'Mumbai',
+      position:'2'
     },
     {
       id: 7,
       title: "Java Developer",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab animi nostrum vero,sint consequatur",
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+      ],
+      experince: "2.5-4 years+",
+      location:'Hybird',
+      position:'5'
     },
   ];
 
   const [jobOpeningData, setJobOpeningData] = useState([]);
   const [showModal, setShowModal] = useState(false);
-  // const handleShowModal = (jobOpening) => {
-  //   setShowModal(true);
-  // };
 
   const handleCloseModal = () => {
     setShowModal(false);
@@ -86,22 +184,8 @@ const Career = () => {
   }, []);
 
   const showPopeupModal = () => {
-    console.log("working")
-  }
-
-  // useEffect(() => {
-  //   axios.get("https://jsonplaceholder.typicode.com/posts")
-  //   .then(response => {
-  //     if (response.status === 200) {
-  //       setJobOpeningData(response.data)
-  //     } else {
-  //       console.log("not get data");
-  //     }
-  //   })
-  //   .catch(error => {
-  //     console.log("error")
-  //   });
-  // }, [])
+    console.log("working");
+  };
 
   return (
     <>
@@ -118,21 +202,20 @@ const Career = () => {
              
              <div className="join_our_team_wrapper">
                 <Heading heading ="join our team" uppercase="text-uppercase"/>
-                <p>We are a collaborative firm where everyone helps each other
-                    in mutual growth and find a way to flourish. We don’t hire
-                    only smart people but also smart people who effectively work
-                    as a team.</p>
+                <p>We are a collaborative firm where everyone helps each other in mutual growth and find a way to flourish. We don’t hire only smart people but also smart people who effectively work as a team.</p>
+                <p>We are a solid team of people who wish to grow and ensure success individually and jointly. This pragmatic and flexible approach to every team member helps in making the organization a success in every endeavor it ventures into.</p>
              </div>
               
             </div>
-            <div className="col-md-3 middle_img_section">
-               <img src="" alt=""  className="img-fluid"/>
-            </div>
+         
               
-              <div className="col-md-4 ">
-                <div className="right_img_wrapper">
-                  <img src="" alt="" />
+              <div className="col-md-7 join_our_team_img_wrapper">
+                <div className="join_our_team_middle_img_wrapper">
+                  <img src={JOIN_OUR_TEAM_IMG} alt=""  className="img-fluid"/>
                 </div>
+                {/* <div className="join_our_team_right_img_wrapper">
+                  <img src={JOIN_OUR_TEAM_IMG2} alt="" className="img-fluid" />
+                </div> */}
             </div>
               
             
@@ -140,6 +223,41 @@ const Career = () => {
           </div>
         </div>
       </section> 
+    
+       {/* @@@@@@@@@@@@@@ career at sakshath @@@@@@@@@@@@@@@@@@ */}
+
+      <section className="careers_at_sakshath">
+        
+        <img src={CAREERS_AT_SAKSHATH} className="w-100" />
+
+          
+      </section>
+
+
+      <section classname="careers_at_sakshath_inside_box">
+      <div className="container career_at_sakshath_container">
+        <div className="careers_at_sakshath_content">
+
+           {/* <Heading heading="careers at sakshath" uppercase="text-uppercase" />
+           <p>Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.</p>
+           <p>We aim to deliver the best experience through absolute novelty and connectivity.</p>
+           <p>We’re dedicated to having an environment where everyone can thrive by emphasizing intense diversity, employment, engagement, ethics, transparency, and deep-rooted learning.</p> */}
+           <div className="row">
+           {/* <div className="col-md-2"></div> */}
+           <div className="col-md-8 careers_at_sakshath_main_box offset-md-2">
+           <Heading heading="careers at sakshath" uppercase="text-uppercase" />
+           <p>Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.</p>
+           <p>We aim to deliver the best experience through absolute novelty and connectivity.</p>
+           <p>We’re dedicated to having an environment where everyone can thrive by emphasizing intense diversity, employment, engagement, ethics, transparency, and deep-rooted learning.</p>
+           </div>
+           {/* <div className="col-md-2"></div> */}
+           </div>
+
+          
+        </div>
+      </div>
+        
+      </section>
 
       {/* <section className="join_our_team">
         <div className="container mt-4">
@@ -175,7 +293,7 @@ const Career = () => {
                 </Fade>
                 <Fade direction="up" delay={300} triggerOnce>
                   <p className="text-start">
-                    Sakshath is a platform for the world’s most talented people
+                  Sakshath Technologies® is a platform for the world’s most talented people
                     to congregate, grow, and make an impact. We place our
                     employees at the core of everything we do to accomplish all
                     targets. <br />
@@ -211,31 +329,6 @@ const Career = () => {
         </div>
       </section>
 
-      
-
-
-      {/* core values */}
-
-      {/* <section>
-        <div className="container">
-          <div className="row">
-          <div className="our_values">
-            <Heading heading=""/>
-          </div>
-            <div className="col-md-4">
-              <div className="honesty">
-              <img src={SAFE} alt="" />
-
-              <SubTitle SubTitle="Honesty" />
-              <p>LA culture of honesty results in more than “happy” workplaces, and a deep-seated respect and expectation for honesty makes companies more successful and more profitable.</p>
-              </div>
-            </div>
-            <div className="col-md-4">cdsc</div>
-            <div className="col-md-4">cdcsd</div>
-          </div>
-        </div>
-      </section> */}
-
       {/*  benfits starts*/}
       {/* <section className="benefits_container">
         <Container>
@@ -252,59 +345,59 @@ const Career = () => {
               <div className="benefit_icon">
                 <div className="benefit_img">
                   {" "}
-                  <img src={SAFE} alt="" />
+                  <img src={SAFE} alt="" className="img-fluid" />
                 </div>
 
-                <p>Job Sercuity</p>
+                <p>Expressive</p>
               </div>
             </Col>
             <Col className="cols">
               <div className="benefit_icon">
                 <div className="benefit_img">
                   {" "}
-                  <img src={SAFE} alt="" />
+                  <img src={SAFE} alt="" className="img-fluid" />
                 </div>
 
-                <p>Job Sercuity</p>
+                <p>Motivated</p>
               </div>
             </Col>
             <Col className="cols">
               <div className="benefit_icon">
                 <div className="benefit_img">
                   {" "}
-                  <img src={SAFE} alt="" />
+                  <img src={SAFE} alt="" className="img-fluid" />
                 </div>
 
-                <p>Job Sercuity</p>
+                <p>Articulate & Talented</p>
               </div>
             </Col>
             <Col className="cols">
               <div className="benefit_icon">
                 <div className="benefit_img">
                   {" "}
-                  <img src={SAFE} alt="" />
+                  <img src={SAFE} alt="" className="img-fluid" />
                 </div>
 
-                <p>Job Sercuity</p>
+                <p>New Challenges</p>
               </div>
             </Col>
             <Col className="cols">
               <div className="benefit_icon">
                 <div className="benefit_img">
                   {" "}
-                  <img src={SAFE} alt="" />
+                  <img src={SAFE} alt="" className="img-fluid" />
                 </div>
 
                 <p>Job Sercuity</p>
               </div>
             </Col>
-        
           </Row>
         </Container>
       </section> */}
       {/*  benfits end*/}
 
       {/* Apply Jobs */}
+      
       <section className="jobs">
         <div className="container">
           <div className="row">
@@ -322,30 +415,38 @@ const Career = () => {
                   <div className="hiring_box">
                     <h5>{data.title}</h5>
                     {/* <p>{data.experince}</p> */}
-                    <p>{`${data.description.substring(0, 100)}`} </p>
+                    {/* <p>{`${data.description.substring(0, 100)}`} </p> */}
+                    {data.description[0].content}
+
                     <button
-                      onClick={ () => {
+                      onClick={() => {
                         setShowModal(true);
-                        setModalPopupData({title:data.title, des: data.description, exp:data.experince})
-                        }}
-                      >
+                        setModalPopupData({
+                          title: data.title,
+                          des: data.description,
+                          exp: data.experince,
+                          pos:data.position,
+                          loc:data.location
+                        });
+                      }}
+                    >
                       Apply Now
                     </button>
                     {/* <SlideAnimationButton url="/" btnName="Apply Now" /> */}
-
-                   
                   </div>
                 </div>
               );
             })}
 
             <JobOpeningPopup
-                      show={showModal}
-                      onHide={handleCloseModal}
-                      title={modalPopupData.title}
-                      description={modalPopupData.des}
-                       experince={modalPopupData.exp}
-                    />
+              show={showModal}
+              onHide={handleCloseModal}
+              title={modalPopupData.title}
+              description={modalPopupData.des}
+              experince={modalPopupData.exp}
+              location={modalPopupData.loc}
+              position={modalPopupData.pos}
+            />
           </div>
         </div>
       </section>

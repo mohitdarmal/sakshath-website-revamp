@@ -5,8 +5,9 @@ import Heading from "../../../Components/Utils/Heading";
 import { ABOUT_BANNER, SAFE } from "../../../Components/Breadcumb/Constant";
 import SubTitle from "../../../Components/Utils/Title_head";
 import { Fade } from "react-awesome-reveal";
-import Contact from "../../../Components/Contact/Contact";
+// import Contact from "../../../Components/Contact/Contact";
 import BreadCumb from "../../../Components/Breadcumb";
+ import TimelineObserver from "react-timeline-animation";
 
 const OurJounery = () => {
   const items = [
@@ -21,8 +22,6 @@ const OurJounery = () => {
     {
       title: " ACQUISITION 2013-2015",
       cardTitle: "ACQUISITION 2013-2015",
-      // cardSubtitle:
-      //   "Men of the British Expeditionary Force (BEF) wade out to..",
       cardDetailedText:
         "Acquiring a sole proprietorship in 2015 allowed us to build our business based on our behavior, decisions and activities and how we can complement our clients and project stakeholders.",
     },
@@ -41,25 +40,19 @@ const OurJounery = () => {
         "From planning to completion for a self-financed business to registering a trademark, wasn’t the walk in the park. We have shaped our organization through a combination of research, executive search, cultural and leadership assessment and a talented advisory board.",
     },
     {
-      title: "EXPANSION 2020-2022",
+      title: "EXPANSION 2020-2023",
       cardTitle: "EXPANSION 2020-2022",
 
       cardDetailedText:
         "We understood our client's expectations and worked tirelessly on what they wanted each time. Targeting several industries within and outside India such as Healthcare, Software, Banking, NGO, Hospitality, Retail, Finance, Food and Beverages etc.",
     },
-    {
-      title: "ROAD AHEAD 2023",
-      cardTitle: "ROAD AHEAD 2023",
-
-      cardDetailedText:
-        "Sakshath has an ever-evolving spirit within the organization, led by committed professionals. Sakshath continually reviews its product/service offering, always being at the cutting edge of technology-based business solutions in a dynamic market. ",
-    },
+   
     {
       title: "ROAD AHEAD 2024",
       cardTitle: "ROAD AHEAD 2024",
 
       cardDetailedText:
-        "Sakshath has an ever-evolving spirit within the organization, led by committed professionals. Sakshath continually reviews its product/service offering, always being at the cutting edge of technology-based business solutions in a dynamic market. ",
+        "Sakshath Technologies® has an ever-evolving spirit within the organization, led by committed professionals. Sakshath Technologies® continually reviews its product/service offering, always being at the cutting edge of technology-based business solutions in a dynamic market. ",
     },
   ];
   // corevalues starts
@@ -118,12 +111,16 @@ const OurJounery = () => {
             <div className="col-md-12 ">
               <Heading heading="Inception to Fruition" uppercase="uppercase" />
 
-              <div style={{ overflowY: "hidden" }}>
-                <Chrono
+              <div  style={{ overflowY: "hidden" }}>
+
+            
+                <Chrono  
                   items={items}
                   mode="VERTICAL_ALTERNATING"
                   className="text"
+        
                 />
+
               </div>
             </div>
           </div>
@@ -158,10 +155,9 @@ const OurJounery = () => {
       </section>
       {/* Core values end */}
       {/* contact us */}
-      <section className="contact_map_section">
+      {/* <section className="contact_map_section">
         <div className="container mt-4">
           <div className="row">
-            {/* <span>Contact Us</span> */}
             <div className="col-md-6">
               <iframe
                 src="https://www.google.com/maps/d/embed?mid=1QtXoNJa4bNr3llNKRLddH_rzCUNktWQ&ehbc=000F&noprof=1"
@@ -171,13 +167,13 @@ const OurJounery = () => {
             </div>
 
             <div className="col-md-6">
-              {/* contact */}
+              // contact us start
               <Contact />
-              {/* contact ends */}
+              // contact ends
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };

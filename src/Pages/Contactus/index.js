@@ -74,7 +74,7 @@ Vikhroli West Mumbai, Maharashtra 400079
                       </div>
                       <div className="address">
                         <h5>Gurugram</h5>
-                        <p>WeWork- Sakshath Technologies
+                        <p>WeWork- Sakshath Technologies®
 Vi-John Tower 393, Phase 3, Udyog Vihar,
 Gurugram, Haryana 122016
                            </p>

@@ -1,4 +1,4 @@
-
+@import "../../Assets/saas/Main.scss";
 @import '../../Assets/saas/Main.scss';
 
 // .join_our_team
@@ -97,16 +97,52 @@
 
 
 .join_our_team_section{
+    margin-top: 100px;
+    margin-bottom: 100px;
     .first_row_with_empty_block{
-        background: #f5f5f5;
+       
+        align-items: center;
     }
     .join_our_team_wrapper{
         background: white;
-    margin: 30px -40px 80px 20px;
-    padding: 20px 70px 40px 30px; 
+    box-shadow: 0px 2px 36px 31px rgb(0 0 0 / 2%);
+    margin-right: -90px;
+    padding: 40px;
+    position: relative;
+    border-left: 5px solid #32a4d5;
+     
+    
     }
+    // .join_our_team_img_wrapper{
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
 }
 
+
+
+
+
+////@@@@@@@@@@@@@@@@ careers at sakshath inside box section css  @@@@@@@@@@@@@@@@@@@@
+.careers_at_sakshath_inside_box{
+    margin-top: -130px;
+}
+
+.careers_at_sakshath_main_box{
+  
+  position: relative;
+  box-shadow: 0px 2px 20px #0000001a;
+
+
+}
+
+.careers_at_sakshath_main_box{
+    background-color: #fff;
+    padding: 40px;
+}
+
+
+//// @@@@@@@@@@@@@@@@@ careers at sakshath inside box section css @@@@@@@@@@@@@
 
  .benefits_container{
      padding-top: 80px;
@@ -235,46 +271,151 @@
     font-size: 24px;
     padding-bottom: 15px;
     min-height: 72px;
-    }
-    a{
-        padding:7px 12px;
-    }
+  }
+  a {
+    padding: 7px 12px;
+  }
 }
 
-//apply job ends
+// apply job ends
 
-@media screen and (max-width:480px) 
-{
-    .join_our_team {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .our_team_container p
-    {
-        padding-top: 15px;
-        font-size: 18px;
-        font-family: rajdahni;
-    }
-    .sakshath_career_box{
-        position: relative;
+// media query starts
+@media screen and (max-width: 480px) {
+
+  .sakshath_career_box {
+    position: relative;
     content: "";
     padding-top: 25px;
-    } 
-    .sakshath_career_container {
-        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.0901960784);
-        padding: 30px;
-        border-radius: 10px;
-        margin-left: 0 !important;
-        background: #fff;
-        position: relative;
-    }
-   
-    .career_mail_link {
-        text-decoration: none;
-        font-size: 18px;
-        font-family: "Roboto";
-        font-weight: 700;
-        color: #242323;
-    }
-    
+  }
+  .sakshath_career_container {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.0901960784);
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 0 !important;
+    background: #fff;
+    position: relative;
+  }
+
+  .career_mail_link {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #242323;
+  }
+
+  //starts
+
+  .join_our_team {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .our_team_container {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.0901960784);
+    padding: 30px;
+    border-radius: 10px;
+    padding-bottom: 35px;
+    /* margin-right: 30px; */
+    background: #fff;
+    position: relative;
+    margin-right: 0px;
+  }
+  .benefit_img {
+    background: #32a4d5;
+    border-radius: 50%;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: auto;
+  }
+  .benefit_img img {
+    filter: brightness(0) invert(1);
+    padding: 10px;
+  }
+  .cols {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    width: 50%;
+    flex: none;
+  }
+  .benefits_container .cols:not(:last-child) .benefit_img::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 5px;
+    margin-top: 50px;
+    left: 0;
+    margin-left: 100px;
+  }
+  .benefit_icon p {
+    font-size: 14px !important;
+    line-height: 18px;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .benefits_container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #f5f5f5;
+  }
+  .benefits_container .cols:not(:last-child) .benefit_img::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+
+    height: 5px;
+    margin-top: 50px;
+    left: 0;
+    margin-left: 0px;
+  }
+  .sakshath_career_box {
+    position: relative;
+    content: "";
+    padding-top: 30px !important;
+    margin-left: -10px !important;
+  }
+
+  .sakshath_career_box .sakshath_career_container {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.0901960784);
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 0px !important;
+    background: #fff;
+    position: relative;
+  }
+
+  .benefit_img {
+    background: #32a4d5;
+    border-radius: 50%;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .cols {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .benefit_icon p {
+    font-size: 14px !important;
+    line-height: 18px;
+    padding-top: 10px;
+    font-weight: bold;
+  }
+  .jobs {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  .join_our_team {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
 }
