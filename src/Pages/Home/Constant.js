@@ -16,12 +16,6 @@ export const POPULARANALYTICS = require("../../Assets/images/analytic.png");
 export const POPULAUTOMATION = require("../../Assets/images/process.png");
 export const POPULARBANK = require("../../Assets/images/bank.png");
 
-// What we do
-export const RELIABILTY = require("../../Assets/images/reliability.png");
-export const EXPERIENCE = require("../../Assets/images/experience.png");
-export const SPECIALIZATION = require("../../Assets/images/specialization.png");
-export const PROFESSIONAL_TEAM = require("../../Assets/images/professional_team.png");
-
 
 // Happy Client 
 

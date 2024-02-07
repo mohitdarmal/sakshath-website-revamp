@@ -19,7 +19,7 @@ import Blog from "./Pages/Blogs";
 import BlogDetail from "./Pages/Blogs/BlogDetail";
 import OurAchivements from "./Pages/About/Our_Achivements";
 import ScrollUpJounery from "./Pages/About/ScrollUpJounery";
-import Integration from "./Pages/Integration";
+import Integration from "./Pages/Service/Integration";
 import Automation from "./Pages/Service/Automation";
 
 const App = () => {

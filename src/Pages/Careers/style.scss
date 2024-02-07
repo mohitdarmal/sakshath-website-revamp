@@ -125,7 +125,26 @@
         background-size: cover;
         top: 0;
         left: 0;
+
+        
    
+    }
+    ul{
+        list-style-type: none;
+
+        li{
+            margin-bottom: 15px;
+        }
+        li:before{
+            content: "\f058";
+        position: absolute;
+        font-family: "FontAwesome";
+        font-size: 22px;
+        color: #7141b1;
+        margin-left: -28px;
+        margin-top: -3px;
+
+        }
     }
     }
     // .join_our_team_img_wrapper{
@@ -138,7 +157,7 @@
 
 
 
-////@@@@@@@@@@@@@@@@ careers at sakshath inside box section css  @@@@@@@@@@@@@@@@@@@@
+////@@@@@@@@@@@@@@@@ careers at sakshath inside box section css starts @@@@@@@@@@@@@@@@@@@@
 .career_at_sakshath_container{
     margin-top: -180px;
 }
@@ -148,8 +167,27 @@
   position: relative;
   box-shadow: 0px 2px 20px #0000001a;
 
+ ul{
+    list-style-type: none;
 
+    li{
+        margin-bottom: 15px;
+        padding-left: -32px;
+    }
+    
+        li:before{
+            content: "\f058";
+            position: absolute;
+            font-family: "FontAwesome";
+            font-size: 22px;
+            color: #7141b1;
+            margin-left: -28px;
+            margin-top: -3px ;
+        }
+    }
 }
+ 
+
 
 .careers_at_sakshath_main_box{
     background-color: #fff;
@@ -157,46 +195,51 @@
 }
 
 
-//// @@@@@@@@@@@@@@@@@ careers at sakshath inside box section css @@@@@@@@@@@@@
+//// @@@@@@@@@@@@@@@@@ careers at sakshath inside box section css ends @@@@@@@@@@@@@
+/// 
+/// 
+/// 
+/// 
 
- .benefits_container{
-     padding-top: 80px;
-     padding-bottom: 80px;
-     background: #f5f5f5;
- }
- .benefit_icon{
+//  .benefits_container{
+//      padding-top: 80px;
+//      padding-bottom: 80px;
+//      background: #f5f5f5;
+//  }
+//  .benefit_icon{
    
-     justify-content: center;
-     align-items: center;
- }
- .benefit_img{
-     background: #32a4d5;
-     border-radius: 50%;
-     line-height: 100px;
-     width: 100px;
-     height: 100px;
-     padding: 2px 18px;
- }
- .benefit_img img{
-     filter: brightness(0) invert(1);
- }
-.cols{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.benefit_icon{position: relative;}
-.benefits_container .cols:not(:last-child) .benefit_img::before{
-    position: absolute;
-    content: "";
-    width: 160px;
-    border-bottom: 2px dashed #25678f;
-    height: 5px;
-    margin-top: 50px;
-    left: 0;
-    margin-left: 100px;
-}
+//      justify-content: center;
+//      align-items: center;
+//  }
+//  .benefit_img{
+//      background: #32a4d5;
+//      border-radius: 50%;
+//      line-height: 100px;
+//      width: 100px;
+//      height: 100px;
+//      padding: 2px 18px;
+//  }
+//  .benefit_img img{
+//      filter: brightness(0) invert(1);
+//  }
+// .cols{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+// }
+// .benefit_icon{position: relative;}
+// .benefits_container .cols:not(:last-child) .benefit_img::before{
+//     position: absolute;
+//     content: "";
+//     width: 160px;
+//     border-bottom: 2px dashed #25678f;
+//     height: 5px;
+//     margin-top: 50px;
+//     left: 0;
+//     margin-left: 100px;
+// }
+
 
 
 
@@ -270,27 +313,125 @@
 
 //apply job starts
 
-.jobs{
-    padding-top: 80px;
-    padding-bottom: 80px;
+// .jobs{
+//     padding-top: 80px;
+//     padding-bottom: 80px;
+// }
+// .hiring_box{
+//     box-shadow: 0px 2px 20px #0000003b;
+//     padding: 30px;
+//     border-radius: 5px;
+//     margin-bottom: 30px;
+//     h5{
+//         text-decoration: underline;
+//     font-family: roboto;
+//     font-weight: 600;
+//     font-size: 24px;
+//     padding-bottom: 15px;
+//     min-height: 72px;
+//   }
+//   a {
+//     padding: 7px 12px;
+//   }
+// }
+
+.careers_job_container{
+    margin-bottom: 90px;
 }
-.hiring_box{
-    box-shadow: 0px 2px 20px #0000003b;
-    padding: 30px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    h5{
-        text-decoration: underline;
-    font-family: roboto;
-    font-weight: 600;
-    font-size: 24px;
-    padding-bottom: 15px;
-    min-height: 72px;
-  }
-  a {
-    padding: 7px 12px;
+.careers_job_container > div::before{
+    content: "";
+    position: absolute;
+    width: 84%;
+    height: 125%;
+    top: 0;
+    background-color: #ecf9ff;
+    z-index: -1;
+    margin-left: 60px;
+    margin-top: -26px;
+    border-radius: 20px;
+}
+.careers_jobs_box{
+    display: flex;
+    border: 1px solid #dbdbdb;
+    border-radius: 13px;
+    padding: 25px; 
+    background-color: $white_color;
+}
+ 
+.description_box_withicon{
+  display: flex;
+  gap: 20px;
+  font-family: $rajdhani_font;
+  font-weight: 600;
+  svg{
+    margin-top: -4px;
+    margin-right: 5px;
   }
 }
+.description_box_job_status{
+display: flex;
+    
+    
+    margin-top: 20px;
+    
+} 
+.description_box_job_status div{
+    margin-right: 20px;
+    span{  display: inline-block;     border-radius: 30px;
+        font-size: 15px;
+        font-family: $rajdhani_font;
+        font-weight: 600;
+        padding: 5px 20px;}
+}
+.remote_job_status_style{
+    background:rgba(249,171,0,.15);;
+    color: #f9ab00;
+  
+}
+
+.careers_jobs_info_box_img_holder_box img{
+    width: 65px;
+}
+.careers_jobs_info_box_job_description_box{
+    padding-left: 20px;
+}
+
+.full_job_status_style{
+    background:rgba(25,103,210,.15);
+    
+    color: #1967d2;
+}
+.parttime_job_status_style{
+    background:rgba(52,168,83,.15);
+   
+    color: #34a853;
+}
+
+.careers_apply_job_section{
+    padding: 80px 0 40px;
+}
+// @@@@@@@@@@@@@  apply now button css starts @@@@@@@@@@@@@@@@@@@@
+
+.apply_now_button a{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.apply_now_button{
+    text-align: right;
+    margin-top: 12px;
+    button{
+        background-color: $ball_blue_color;
+        padding: 7px 25px;
+        color: #fff;
+        border: none;
+        border-radius: 39px;
+        &:hover{
+            background-color: $light_navy_blue;
+        }
+    }
+}
+
 
 // apply job ends
 
@@ -433,4 +574,15 @@
     padding-top: 40px;
     padding-bottom: 35px;
   }
+}
+
+
+@media screen and (min-width:768px){
+    .careers_job_container:nth-child(odd) > div{
+        margin-right: 40px;
+    } 
+
+    .careers_job_container:nth-child(even) > div{
+        margin-left: 40px;
+    } 
 }
