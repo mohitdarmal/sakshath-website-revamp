@@ -1,14 +1,15 @@
 import React from "react";
-import { EXPERIENCE, PROFESSIONAL_TEAM, RELIABILTY, SPECIALIZATION } from "../../Pages/Home/Constant";
+import { EXPERIENCE, EXPERIENCE1, PROFESSIONAL_TEAM, PROFESSIONAL_TEAM1, RELIABILTY, SPECIALIZATION, SPECIALIZATION1, RELIABILTY1 } from "./Constant";
 import {Fade} from "react-awesome-reveal";
 import SubTitle from "../Utils/Title_head";
 import Heading from "../Utils/Heading";
 import "./styles.scss";
+import { Link } from "react-router-dom";
 
 const OurPrincipals = () => {
     return (
         <>
-        <section className="our_principals">
+        {/* <section className="our_principals">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-6 our_principals_heading">
@@ -86,7 +87,7 @@ const OurPrincipals = () => {
 
             <div className="col-md-3 d-flex ">
               <div className="our_principals_box">
-                <Fade direction="up" delay={600} triggerOnce>
+                <Fade direction="up"  triggerOnce>
                   <div className="icon_box">
                     <img src={PROFESSIONAL_TEAM} alt="" />
                   </div>
@@ -103,7 +104,114 @@ const OurPrincipals = () => {
             </div>
           </div>
         </div>
-      </section>  
+      </section>   */}
+
+
+
+<section className="principle_section">
+        <div className="container">
+
+        <div className="row justify-content-center">
+            <div className="col-md-6 our_principals_heading">
+              <div className="text-center">
+                <div className="title">
+                  <Fade direction="up" triggerOnce>
+                    <SubTitle SubTitle="Our Principle " />{" "}
+                  </Fade>
+                  <Fade direction="up" triggerOnce>
+                    <Heading
+                      heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE"
+                      uppercase="text-uppercase"
+                    />
+                  </Fade>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row ">
+        
+            <div className="col-md-6 principle_cols">
+            <Fade direction="up"  triggerOnce>
+              <div className="principle_container d-flex">
+                <div className="principle_icon">
+                  <img src={RELIABILTY1} alt="" />
+                </div>
+                <div className="principle_para">
+                  <h5>REABILITY</h5>
+                  <p>
+                    {" "}
+                    Our customers rely on us as we provide high–quality,
+                    reliable products{" "}
+                  </p>
+
+                  <Link>Read More</Link>
+                </div>
+              </div>
+              </Fade>
+            </div>
+            <div className="col-md-6 principle_cols">
+            <Fade direction="up"  triggerOnce>
+              <div className="principle_container d-flex">
+                <div className="principle_icon">
+                  <img src={PROFESSIONAL_TEAM1} alt="" />
+                </div>
+                <div className="principle_para">
+                  <h5>PROFESSIONAL TEAM</h5>
+                  <p>
+                    {" "}
+                    Our customers rely on us as we provide high–quality,
+                    reliable products{" "}
+                  </p>
+
+                  <Link>Read More</Link>
+                </div>
+              </div>
+              </Fade>
+            </div>
+            <div className="col-md-6 principle_cols">
+            <Fade direction="up"  triggerOnce>
+              <div className="principle_container d-flex">
+                <div className="principle_icon">
+                  <img src={SPECIALIZATION1} alt="" />
+                </div>
+                <div className="principle_para">
+                  <h5>SPECIALIZATION</h5>
+                  <p>
+                    {" "}
+                    Our customers rely on us as we provide high–quality,
+                    reliable products{" "}
+                  </p>
+
+                  <Link>Read More</Link>
+                </div>
+              </div>
+              </Fade>
+            </div>
+            <div className="col-md-6 principle_cols">
+            <Fade direction="up"  triggerOnce>
+              <div className="principle_container d-flex">
+                <div className="principle_icon">
+                  <img src={EXPERIENCE1} alt="" />
+                </div>
+                <div className="principle_para">
+                  <h5>EXPERIENCE</h5>
+                  <p>
+                    {" "}
+                    Our customers rely on us as we provide high–quality,
+                    reliable products{" "}
+                  </p>
+
+                  <Link>Read More</Link>
+                </div>
+              </div>
+              </Fade>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
         </>
     )
 } 
