@@ -1,12 +1,12 @@
 import React from "react";
-import "./Style.scss";
+// import "./style.scss";
 
 const CtaButton = (props) => {
     return (
         <>
             <div class="buttons">
   <button class="blob-btn">
-    {props.buttonName}
+   {props.iconName ? props.iconName : ''} {props.buttonName}
     <span class="blob-btn__inner">
       <span class="blob-btn__blobs">
         <span class="blob-btn__blob"></span>

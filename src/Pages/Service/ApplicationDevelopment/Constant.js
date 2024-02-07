@@ -14,4 +14,5 @@ export const APP_DEV_IMG = require("../../../Assets/images/app_dev_img.jpg");
 // Our Services Icon
 export const MOBILE_APP_DEVELOPMENT = require("../../../Assets/images/mobile_development.png");
 export const PDF_FILE = require("../../../Assets/pdf/dummy.pdf");
+export const CONTACT_US  = require("../../../Assets/images/contact_bg.jpg");
  

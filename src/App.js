@@ -20,6 +20,8 @@ import BlogDetail from "./Pages/Blogs/BlogDetail";
 import OurAchivements from "./Pages/About/Our_Achivements";
 import ScrollUpJounery from "./Pages/About/ScrollUpJounery";
 import Integration from "./Pages/Integration";
+import Automation from "./Pages/Service/Automation";
+
 const App = () => {
   
 // const [loading, setLoading] = useState(true);
@@ -63,6 +65,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/application-development" element={<ApplicationDevelopment />} />
+          <Route path="/automation" element={<Automation />} />
           <Route path="/banking-solution" element={<BankingSolution />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<Contactus />} />
