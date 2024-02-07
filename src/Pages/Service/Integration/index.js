@@ -1,15 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
 import "./style.scss";
 import { INTEGRATION_SECTION_ONE_IMG, INTEGRATION_SECTION_THREE_IMG, SECTION_THREE_ICON_ONE, SECTION_THREE_ICON_TWO, SECTION_THREE_ICON_THREE } from "./Constant";
-import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
+import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import ServiceStickMenu from "../../Components/ServiceStickMenu";
-import { CLIENT_LOGO1, CLIENT_LOGO2, CLIENT_LOGO3, CLIENT_LOGO4, CLIENT_LOGO5 } from "../../Components/ClientLogo/Constant";
+import ServiceStickMenu from "../../../Components/ServiceStickMenu";
+import { CLIENT_LOGO1, CLIENT_LOGO2, CLIENT_LOGO3, CLIENT_LOGO4, CLIENT_LOGO5 } from "../../../Components/ClientLogo/Constant";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
-import {SOFTWARE_LOGO_1,SOFTWARE_LOGO_2,SOFTWARE_LOGO_3,SOFTWARE_LOGO_4,SOFTWARE_LOGO_5,SOFTWARE_LOGO_6,SOFTWARE_LOGO_7,SOFTWARE_LOGO_8,SOFTWARE_LOGO_9,SOFTWARE_LOGO_10,SOFTWARE_LOGO_11} from "./Constant";
+import Faq from "../../../Components/Faq";
+import BrouchurePopup from "../../../Components/BoruchurePopup";
+import pdfUrl from "../../../Assets/pdf/dummy.pdf";
+import { FaFilePdf } from "react-icons/fa";
+//import {SECTION_VECTOR} from "../../Assets/images/check icon psd.png";
+import {SOFTWARE_LOGO_1,SOFTWARE_LOGO_2,SOFTWARE_LOGO_3,SOFTWARE_LOGO_4,SOFTWARE_LOGO_5,SOFTWARE_LOGO_6,SOFTWARE_LOGO_7,SOFTWARE_LOGO_8,SOFTWARE_LOGO_9,SOFTWARE_LOGO_10,SOFTWARE_LOGO_11,SECTION_VECTOR} from "./Constant";
+import PdfViewer from "../../../Components/PdfViewer";
+import Heading from "../../../Components/Utils/Heading";
 export const Integration = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleCloseModal = () => {
+      setShowModal(false);
+    };
+
     return (
         <>
             {/* <!-- section one start --> */}
@@ -67,10 +80,6 @@ export const Integration = () => {
 
                             <p className="data-visualization-para"></p>
                             <img src={INTEGRATION_SECTION_THREE_IMG} class="img-fluid" />
-
-
-
-
                         </div>
                         <div className="col-md-6">
                             <h3 className="heading-1">Next-level data visualization.</h3>
@@ -157,13 +166,13 @@ export const Integration = () => {
     {/* section five start */}
     <section className="body_sec_three">
         <div className="container">
-            <div className="row">
-                <div className="body_sec_three_parent">
+            <div className="row align-items-center">
+                {/* <div className="body_sec_three_parent"> */}
                 <div className="col-md-6">
                     <h3 className="integration_coe">Integration Consulting </h3>
                     {/* <p>End the days of emailing spreadsheets around and reviewing stale data in meetings.</p> */}
                     <ul className="intergration_list">
-                        <li>CERTIFIED RESOURCES</li>
+                    <li>CERTIFIED RESOURCES</li>
                         <li>RESUABLE ASSETS</li>
                         <li>INDUSTRY STANDARD BEST PRACTISES</li>
                         <li>QUALITY ASSURANCE </li>   
@@ -173,7 +182,7 @@ export const Integration = () => {
                 <img className="img-fluid" src={INTEGRATION_SECTION_ONE_IMG} />
 
                 </div>
-                </div>
+                {/* </div> */}
             </div>
         </div>
 
@@ -214,17 +223,18 @@ export const Integration = () => {
     {/* section six start */}
     <section className="body_sec_three">
         <div className="container">
-            <div className="row">
+            <div className="row align-items-center">
                 <div className="body_sec_three_parent">
                 <div className="col-md-6">
-                <img className="img-fluid" src={INTEGRATION_SECTION_ONE_IMG} />
-                   
+                <img className="img-fluid" src={INTEGRATION_SECTION_ONE_IMG}/>
                 </div>
                 <div className="col-md-6">
                 <div className="integration_right_sec">
                 <h3 className="integration_coe">Integration Coe</h3>
                     <p>End the days of emailing spreadsheets around and reviewing stale data in meetings.</p>
-                    <ul className="intergration_list">
+                    <div className="intergration_list">
+                        
+                    <ul >
                     <li>Service Based Integration</li>
                         <li>API Gateway/Manager</li>
                         <li>Social Integration</li>
@@ -234,6 +244,8 @@ export const Integration = () => {
                         <li>Enterprise Service Bus Integration</li>
                         <li>Pluggable Adapters</li>
                     </ul>
+                    
+                    </div>
                 </div>
                 </div>
                 </div>
@@ -278,29 +290,68 @@ export const Integration = () => {
      {/* managed service start */}
      <section className="body_sec_three">
         <div className="container">
-            <div className="row">
-                <div className="body_sec_three_parent">
-                <div className="col-md-6">
+            <div className="row align-items-center">
+                {/* <div className="body_sec_three_parent"> */}
+                <div className="col-md-6 managed_sec">
                     <h3 className="integration_coe">Managed services</h3>
                     {/* <p>End the days of emailing spreadsheets around and reviewing stale data in meetings.</p> */}
                     <ul className="intergration_list">
-                        <li>1. Request Validation – validation of the request (whitelisted/blacklisted)</li>
-                        <li>2. Authentication and Authorization (credential verification)</li>
-                        <li>3. Service Discovery Locate the appropriate backend service</li>
-                        <li>4. Protocol Translation – translation of protocol (e.g  gRPC request to REST or other)</li> 
-                        <li>5. Dynamic Routing (routing to the appropriate service request or LB)</li>  
+                        <li>Request Validation – validation of the request (whitelisted/blacklisted)</li>
+                        <li>Authentication and Authorization (credential verification)</li>
+                        <li>Service Discovery Locate the appropriate backend service</li>
+                        <li>Protocol Translation – translation of protocol (e.g  gRPC request to REST or other)</li> 
+                        <li>Dynamic Routing (routing to the appropriate service request or LB)</li>  
                     </ul>
                 </div>
                 <div className="col-md-6">
                 <img className="img-fluid" src={INTEGRATION_SECTION_ONE_IMG} />
 
                 </div>
-                </div>
+                {/* </div> */}
             </div>
         </div>
 
     </section>
      {/*  managed service end*/}
+
+    {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}
+    <section className="brouchure_sec">
+        <div className="container">
+          <div className="text-center mb-3 pb-md-3" >
+        <Heading
+                heading="Brouchure"
+                uppercase="text-uppercase"
+              />
+              </div>
+          <PdfViewer pdfUrl={pdfUrl} />
+          <div className="downloadBrouchure">
+            <p
+              onClick={() => {
+                setShowModal(true);
+              }}
+            >
+
+              <FaFilePdf /> Download Brouchure{" "}
+            </p>
+          </div>
+        </div>
+        <BrouchurePopup show={showModal} onHide={handleCloseModal} />
+      </section>
+     {/* @@@@@ SECTION- Brouchure end @@@@@@ */}
+
+     {/* Faq start */}
+     <section>
+      <div className="container">
+        <div className="row"> 
+        <div className="col-md-1"> </div>
+        <div className="col-md-10">
+              <Faq />
+        </div>
+        <div className="col-md-1"> </div>
+        </div>
+      </div>
+     </section>
+     {/* Faq end */}
 
 
 
