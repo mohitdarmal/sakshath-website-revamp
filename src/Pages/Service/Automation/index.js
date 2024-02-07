@@ -5,10 +5,10 @@ import Heading from "../../../Components/Utils/Heading";
 import { HiMiniArrowRightCircle } from "react-icons/hi2";
 import WhySakshath from "../../../Components/WhySakshath";
 import {
-  pillar1,
-  pillar2,
-  pillar3,
-  pillar4,
+ pillar_automation,
+ pillar_bank,
+ pillar_microservice,
+ pillar_modern
 } from "../../../Components/WhySakshath/Constant";
 
 const Automation = () => {
@@ -77,7 +77,7 @@ const Automation = () => {
                 <div className="col-md-6">
                   <div className="pillars_box">
                     <div className="pillars_box_img">
-                      <img src={pillar1} alt="" />
+                      <img src={pillar_modern} alt="" />
                     </div>
                     <div className="pillar_title">
                       <p>Modern Design & Architecture</p>
@@ -87,10 +87,10 @@ const Automation = () => {
                 <div className="col-md-6 mt-4">
                   <div className="pillars_box">
                     <div className="pillars_box_img">
-                      <img src={pillar1} alt="" />
+                      <img src={pillar_microservice} alt="" />
                     </div>
                     <div className="pillar_title">
-                      <p>Modern Design & Architecture</p>
+                      <p>Microservices</p>
                     </div>
                   </div>
                 </div>
@@ -98,20 +98,20 @@ const Automation = () => {
                 <div className="col-md-6">
                   <div className="pillars_box">
                     <div className="pillars_box_img">
-                      <img src={pillar1} alt="" />
+                      <img src={pillar_bank} alt="" />
                     </div>
                     <div className="pillar_title">
-                      <p>Modern Design & Architecture</p>
+                      <p>Containers Backing Services</p>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6 mt-4">
                   <div className="pillars_box">
                     <div className="pillars_box_img">
-                      <img src={pillar1} alt="" />
+                      <img src={pillar_automation} alt="" />
                     </div>
                     <div className="pillar_title">
-                      <p>Modern Design & Architecture</p>
+                      <p>Automation</p>
                     </div>
                   </div>
                 </div>
