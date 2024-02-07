@@ -552,7 +552,6 @@ export const Home = () => {
                   </div>
                 </Fade>
               </div>
-
               <div className="col-md-4 d-flex ">
                 <Fade direction="up" delay={200} triggerOnce>
                   <div className="d-flex ">

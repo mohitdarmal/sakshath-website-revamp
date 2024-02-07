@@ -18,6 +18,11 @@ import axios from "axios";
 import JobOpeningPopup from "../../../src/Components/JobOpeningPopup";
 import { Fade } from "react-awesome-reveal";
 import { Container, Row, Col } from "react-bootstrap";
+import { IoBagOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
+import { IoTimeOutline } from "react-icons/io5";
+import { REACT_LOGO } from "./Constant";
+
 
 
 const Career = () => {
@@ -27,6 +32,7 @@ const Career = () => {
     {
       id: 1,
       title: "Senior React Developer",
+      //job_img:{REACT_LOGO},
       description: [
         {
           id: 1,
@@ -202,8 +208,18 @@ const Career = () => {
              
              <div className="join_our_team_wrapper">
                 <Heading heading ="join our team" uppercase="text-uppercase"/>
-                <p>We are a collaborative firm where everyone helps each other in mutual growth and find a way to flourish. We don’t hire only smart people but also smart people who effectively work as a team.</p>
-                <p>We are a solid team of people who wish to grow and ensure success individually and jointly. This pragmatic and flexible approach to every team member helps in making the organization a success in every endeavor it ventures into.</p>
+
+                <ul>
+                  <li>
+                  We are a collaborative firm where everyone helps each other in mutual growth and find a way to flourish. We don’t hire only smart people but also smart people who effectively work as a team.
+                  </li>
+                  <li>
+                  We are a solid team of people who wish to grow and ensure success individually and jointly. This pragmatic and flexible approach to every team member helps in making the organization a success in every endeavor it ventures into.
+                  </li>
+                  <li>We are a collaborative firm where everyone helps each other in mutual growth and find a way to flourish. We don’t hire only smart people but also smart people who effectively work as a team.</li>
+                </ul>
+                
+                
              </div>
               
             </div>
@@ -246,9 +262,21 @@ const Career = () => {
            {/* <div className="col-md-2"></div> */}
            <div className="col-md-8 careers_at_sakshath_main_box offset-md-2">
            <Heading heading="careers at sakshath" uppercase="text-uppercase" />
-           <p>Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.</p>
-           <p>We aim to deliver the best experience through absolute novelty and connectivity.</p>
-           <p>We’re dedicated to having an environment where everyone can thrive by emphasizing intense diversity, employment, engagement, ethics, transparency, and deep-rooted learning.</p>
+           <ul>
+            <li className="careers_at_sakshath_checkmark">
+            Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.
+          
+           
+            </li>
+            <li>
+            
+            We aim to deliver the best experience through absolute novelty and connectivity.
+
+            </li>
+            <li>
+             We’re dedicated to having an environment where everyone can thrive by emphasizing intense diversity, employment, engagement, ethics, transparency, and deep-rooted learning.
+            </li>
+           </ul>
            </div>
            {/* <div className="col-md-2"></div> */}
            </div>
@@ -398,7 +426,7 @@ const Career = () => {
 
       {/* Apply Jobs */}
       
-      <section className="jobs">
+      {/* <section className="jobs">
         <div className="container">
           <div className="row">
             <div className="text-center what_we_r_hiring">
@@ -414,8 +442,7 @@ const Career = () => {
                 <div className="col-md-3" key={data.id}>
                   <div className="hiring_box">
                     <h5>{data.title}</h5>
-                    {/* <p>{data.experince}</p> */}
-                    {/* <p>{`${data.description.substring(0, 100)}`} </p> */}
+                    
                     {data.description[0].content}
 
                     <button
@@ -432,7 +459,7 @@ const Career = () => {
                     >
                       Apply Now
                     </button>
-                    {/* <SlideAnimationButton url="/" btnName="Apply Now" /> */}
+                    
                   </div>
                 </div>
               );
@@ -451,7 +478,109 @@ const Career = () => {
         </div>
       </section>
 
-      {/* Apply Jobs Ends */}
+      Apply Jobs Ends */}
+
+
+
+
+
+
+
+      <section className="careers_apply_job_section">
+        <div className="container">
+        <div className="text-center mb-4 pb-md-5">
+           <Heading heading= "Most Popular Jobs" uppercase="text-uppercase" />
+           <p>Beneath each of these categories, you can find its most popular</p>
+           </div>
+          <div className="row">
+          {jobOpeningData.map((data) => {
+              return (
+            <div className="col-md-6 position-relative careers_job_container" key={data.id}>
+            <div className="">
+              <div className="careers_jobs_box">
+                
+                   
+                    <div className="careers_jobs_info_box_img_holder_box">
+                      <img src={REACT_LOGO} alt=""  />
+                    </div>
+                    <div className="careers_jobs_info_box_job_description_box">
+                      <h5>{data.title}</h5>
+                      <div className="description_box_withicon">
+                         <div className="segment_box">
+                         <span><IoBagOutline />Positions ({data.position})</span>
+                         </div>
+                        
+
+                        
+                        <div className="time_box">
+                        <span><IoTimeOutline /> {data.experince}</span>
+                        </div>
+
+                        <div className="location_box">
+                        <span><IoLocationOutline /> 
+                        {data.location}</span>
+                        </div>
+                        
+
+                      </div>
+                      <div className="description_box_job_status">
+                        <div className="remote_box">
+                        <span className="remote_job_status_style">Remote</span>
+                        </div>
+                        <div className="full_time_box">
+                        <span className="full_job_status_style">Full Time</span>
+                        </div>
+                        <div className="part_time_box">
+                        <span className="parttime_job_status_style">Part-Time</span>
+                        </div>
+                        
+                      </div>
+                      
+                      
+                        
+                    </div>
+ 
+                
+              </div>
+
+              <div className="apply_now_button">
+
+                <button
+                      onClick={() => {
+                        setShowModal(true);
+                        setModalPopupData({
+                          title: data.title,
+                          des: data.description,
+                          exp: data.experince,
+                          pos:data.position,
+                          loc:data.location
+                        });
+                      }}
+                    >
+                      Apply Now
+                    </button>
+                    
+
+              </div>
+              </div>
+              
+            </div>
+            );
+            })}
+            
+
+            <JobOpeningPopup
+              show={showModal}
+              onHide={handleCloseModal}
+              title={modalPopupData.title}
+              description={modalPopupData.des}
+              experince={modalPopupData.exp}
+              location={modalPopupData.loc}
+              position={modalPopupData.pos}
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 };

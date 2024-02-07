@@ -164,14 +164,15 @@ const Header = () => {
                         Company Jounery
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/scrollup" className="dropdown-item">
-                       ScrollUpJounery
-                      </NavLink>
-                    </li>
+                    
                     <li>
                       <NavLink to="/our-achievements" className="dropdown-item">
                         Our Achievements
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/contact-us" className="dropdown-item">
+                       Contact
                       </NavLink>
                     </li>
                   </ul>
@@ -187,7 +188,7 @@ const Header = () => {
                     // data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Digital Service
+                    Services
                   </NavLink>
                   <ul
                     className="dropdown-menu border-0 shadow bsb-zoomIn"
@@ -241,11 +242,11 @@ const Header = () => {
                   </NavLink>
                 </li>
 
-                <li>
+                {/* <li>
                   <NavLink to="/contact-us" className="nav-link">
                     Contact Us
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
 
               <div className="d-flex align-items-center header_right">
