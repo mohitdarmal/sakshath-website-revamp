@@ -105,13 +105,28 @@
     }
     .join_our_team_wrapper{
         background: white;
-    box-shadow: 0px 2px 36px 31px rgb(0 0 0 / 2%);
-    margin-right: -90px;
-    padding: 40px;
-    position: relative;
-    border-left: 5px solid #32a4d5;
+        box-shadow: 0px 2px 25px rgb(0 0 0 / 6%);
+        margin-right: -90px;
+        padding: 40px;
+        position: relative;
+        border: 1px solid #f1f1f1;
      
-    
+    &::before{
+     
+        background-image: url("../../Assets/images/dotted_img.png") !important;
+        position: absolute;
+        content: "";
+        z-index: -9;
+        margin-top: -50px;
+        margin-left: -35px;
+        opacity: 0.5;
+        width: 100px !important;
+        height: 100px !important;
+        background-size: cover;
+        top: 0;
+        left: 0;
+   
+    }
     }
     // .join_our_team_img_wrapper{
     //     display: flex;
