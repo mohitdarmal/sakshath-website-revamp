@@ -1,0 +1,43 @@
+@import "../../Assets/saas/Main.scss";
+
+
+// why_Sakshath starts 
+
+.why_sakshath_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.why_sakshath_img_bg img {
+  width: 350px;
+  height: 550px;
+  border-radius: 260px;
+}
+
+.why_sakshath_heading_left {
+  h6 {
+    // padding-left: 36px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
+.why_sakshath_heading_right {
+  h6 {
+    padding-left: 36px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  p {
+    padding-left: 36px;
+  }
+}
+
+.boxes {
+  padding-bottom: 20px;
+}
+
+
+.why_sakshath_img_bg{
+    padding-left: 15px
+}
+// why_Sakshath ends 
