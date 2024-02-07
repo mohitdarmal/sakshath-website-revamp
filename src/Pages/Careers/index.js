@@ -11,13 +11,14 @@ import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
 import Heading from "../../Components/Utils/Heading";
 import SubTitle from "../../Components/Utils/Title_head";
-import { CARRER_BENFIT_IMG } from "./Constant";
+import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH} from "./Constant";
 import { BsEnvelope } from "react-icons/bs";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import axios from "axios";
 import JobOpeningPopup from "../../../src/Components/JobOpeningPopup";
 import { Fade } from "react-awesome-reveal";
 import { Container, Row, Col } from "react-bootstrap";
+
 
 const Career = () => {
   const [modalPopupData, setModalPopupData] = useState({});
@@ -193,12 +194,77 @@ const Career = () => {
         <meta name="description" content="About SEO" />
       </Helmet>
       <BreadCumb imgUrl={CARRER_IMG} title=" CAREERS" className="img-fluid" />
-      <section className="join_our_team">
+
+      <section className="join_our_team_section">
+        <div className="container">
+          <div className="row first_row_with_empty_block">
+            <div className="col-md-5 empty_block">
+             
+             <div className="join_our_team_wrapper">
+                <Heading heading ="join our team" uppercase="text-uppercase"/>
+                <p>We are a collaborative firm where everyone helps each other in mutual growth and find a way to flourish. We don’t hire only smart people but also smart people who effectively work as a team.</p>
+                <p>We are a solid team of people who wish to grow and ensure success individually and jointly. This pragmatic and flexible approach to every team member helps in making the organization a success in every endeavor it ventures into.</p>
+             </div>
+              
+            </div>
+         
+              
+              <div className="col-md-7 join_our_team_img_wrapper">
+                <div className="join_our_team_middle_img_wrapper">
+                  <img src={JOIN_OUR_TEAM_IMG} alt=""  className="img-fluid"/>
+                </div>
+                {/* <div className="join_our_team_right_img_wrapper">
+                  <img src={JOIN_OUR_TEAM_IMG2} alt="" className="img-fluid" />
+                </div> */}
+            </div>
+              
+            
+
+          </div>
+        </div>
+      </section> 
+    
+       {/* @@@@@@@@@@@@@@ career at sakshath @@@@@@@@@@@@@@@@@@ */}
+
+      <section className="careers_at_sakshath">
+        
+        <img src={CAREERS_AT_SAKSHATH} className="w-100" />
+
+          
+      </section>
+
+
+      <section classname="careers_at_sakshath_inside_box">
+      <div className="container career_at_sakshath_container">
+        <div className="careers_at_sakshath_content">
+
+           {/* <Heading heading="careers at sakshath" uppercase="text-uppercase" />
+           <p>Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.</p>
+           <p>We aim to deliver the best experience through absolute novelty and connectivity.</p>
+           <p>We’re dedicated to having an environment where everyone can thrive by emphasizing intense diversity, employment, engagement, ethics, transparency, and deep-rooted learning.</p> */}
+           <div className="row">
+           {/* <div className="col-md-2"></div> */}
+           <div className="col-md-8 careers_at_sakshath_main_box offset-md-2">
+           <Heading heading="careers at sakshath" uppercase="text-uppercase" />
+           <p>Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.</p>
+           <p>We aim to deliver the best experience through absolute novelty and connectivity.</p>
+           <p>We’re dedicated to having an environment where everyone can thrive by emphasizing intense diversity, employment, engagement, ethics, transparency, and deep-rooted learning.</p>
+           </div>
+           {/* <div className="col-md-2"></div> */}
+           </div>
+
+          
+        </div>
+      </div>
+        
+      </section>
+
+      {/* <section className="join_our_team">
         <div className="container mt-4">
           <div className="row">
             <div className="col-md-6 our_team_container_box">
               <div className="our_team_container">
-                {/* <h1 className="text-center">Join Our Team</h1> */}
+                
                 <Fade direction="up" delay={150} triggerOnce>
                   <Heading heading="Join Our Team" uppercase="text-uppercase" />
                 </Fade>
@@ -239,7 +305,7 @@ const Career = () => {
                     deep-rooted learning.
                   </p>
                 </Fade>
-                {/* <br /> */}
+                
               </div>
             </div>
           </div>
@@ -264,7 +330,7 @@ const Career = () => {
       </section>
 
       {/*  benfits starts*/}
-      <section className="benefits_container">
+      {/* <section className="benefits_container">
         <Container>
           <Row>
             <div className="benefits_heading text-center text-decoration-underline">
@@ -327,10 +393,11 @@ const Career = () => {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
       {/*  benfits end*/}
 
       {/* Apply Jobs */}
+      
       <section className="jobs">
         <div className="container">
           <div className="row">

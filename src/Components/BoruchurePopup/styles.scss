@@ -1,0 +1,75 @@
+@import "../../Assets/saas/Main.scss";
+
+.brouchure_popup{
+    .brouchure_icon{
+        background: $light_navy_blue;
+        color: #fff;
+        width: 80px;
+        height: 80px;
+        line-height: 70px;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -22px);
+        border: 5px solid #fff;
+    }
+
+    .modal-header{
+        border: none;
+    }
+
+    .modal-body{
+        padding: 40px; 
+        background-image: url("../../Assets/images/download_pdf.jpg");
+ 
+    }
+
+    h4{
+        font-family: $rajdhani_font;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    form{
+        text-align: center;
+        .input-group-text{
+            background: transparent;
+            border-right: none;
+            padding-right: 0px;
+            padding-left: 20px;
+            border: 1px solid #cacaca;
+        }
+
+        input{
+            height: 55px;
+            border: 1px solid #cacaca;
+            border-left: none;
+
+            &:focus{
+                border-color: #cacaca;
+            }
+        }
+
+        button{
+            padding: 12px 35px;
+            background: $ball_blue_color;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            &:hover{
+                background: $light_navy_blue !important;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+ 

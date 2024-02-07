@@ -7,7 +7,7 @@ import SubTitle from "../../../Components/Utils/Title_head";
 import { Fade } from "react-awesome-reveal";
 // import Contact from "../../../Components/Contact/Contact";
 import BreadCumb from "../../../Components/Breadcumb";
-// import TimelineObserver from "react-timeline-animation";
+ import TimelineObserver from "react-timeline-animation";
 
 const OurJounery = () => {
   const items = [

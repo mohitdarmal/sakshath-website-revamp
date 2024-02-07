@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import BreadCumb from "../../../Components/Breadcumb";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import {
   APPLICATION_DEVLOPMENT_BREADCUMB_IMG,
   APP_DEV_IMG,
+  CONTACT_US,
   COST_EFFECTIVE_SERVICES,
   DAILY_REPORT,
   DEDICATED_SUPPORT,
@@ -28,10 +29,17 @@ import "./styles.scss";
 import HappyClients from "../../../Components/HappyClients";
 import pdfUrl from "../../../Assets/pdf/dummy.pdf";
 import PdfViewer from "../../../Components/PdfViewer";
-
+import { FaFilePdf } from "react-icons/fa";
+import BrouchurePopup from "../../../Components/BoruchurePopup";
+import Faq from "../../../Components/Faq";
+import ServiceContactForm from "../../../Components/ServiceContactForm";
 
 const ApplicationDevelopment = () => {
-  
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <>
@@ -45,7 +53,7 @@ const ApplicationDevelopment = () => {
         <div className="container">
           {/* Heading start */}
           <div className="row">
-            <div className="col-md-6 offset-md-3 text-center app_dev_heading">
+            <div className="col-md-8 offset-md-2 text-center app_dev_heading">
               <Heading
                 heading="Why choose Sakshath Technologies® for app development?"
                 uppercase="text-uppercase"
@@ -193,7 +201,7 @@ const ApplicationDevelopment = () => {
           </div>
 
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 ipad_half_width">
               <div className="our_services_box">
                 <div className="our_services_box_content">
                   <div className="our_services_box_img">
@@ -210,7 +218,7 @@ const ApplicationDevelopment = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-md-4 ipad_half_width">
               <div className="our_services_box">
                 <div className="our_services_box_content">
                   <div className="our_services_box_img">
@@ -227,7 +235,7 @@ const ApplicationDevelopment = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-md-4 ipad_half_width">
               <div className="our_services_box">
                 <div className="our_services_box_content">
                   <div className="our_services_box_img">
@@ -244,7 +252,7 @@ const ApplicationDevelopment = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-md-4 ipad_half_width">
               <div className="our_services_box">
                 <div className="our_services_box_content">
                   <div className="our_services_box_img">
@@ -261,7 +269,7 @@ const ApplicationDevelopment = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-md-4 ipad_half_width">
               <div className="our_services_box">
                 <div className="our_services_box_content">
                   <div className="our_services_box_img">
@@ -278,7 +286,7 @@ const ApplicationDevelopment = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-md-4 ipad_half_width">
               <div className="our_services_box">
                 <div className="our_services_box_content">
                   <div className="our_services_box_img">
@@ -306,6 +314,24 @@ const ApplicationDevelopment = () => {
             <Swiper
               slidesPerView={5}
               spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
               autoplay={{
                 delay: 1500,
                 disableOnInteraction: false,
@@ -344,16 +370,68 @@ const ApplicationDevelopment = () => {
       </section>
       {/* @@@@@ SECTION- Our Platform end @@@@@@ */}
 
-      <section>
+      {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}
+      <section className="brouchure_sec">
         <div className="container">
-          {/* <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`}>
-        <Viewer fileUrl={pdfUrl} />
-      </Worker> */}
-          {/* <iframe width="100%" height="500px"  src={`${pdfText}?page=hsn#toolbar="0"`}></iframe> */}
-        </div>
-      </section>
+          <div className="text-center mb-3 pb-md-3" >
+        <Heading
+                heading="Brouchure"
+                uppercase="text-uppercase"
+              />
+              </div>
+          <PdfViewer pdfUrl={pdfUrl} />
+          <div className="downloadBrouchure">
+            <p
+              onClick={() => {
+                setShowModal(true);
+              }}
+            >
 
-     <PdfViewer pdfUrl={pdfUrl} />
+              <FaFilePdf /> Download Brouchure{" "}
+            </p>
+          </div>
+        </div>
+        <BrouchurePopup show={showModal} onHide={handleCloseModal} />
+      </section>
+     {/* @@@@@ SECTION- Brouchure end @@@@@@ */}
+
+
+     <section className="service_page_contact_form">
+      <div className="container">
+        <div className="row align-items-center"> 
+        <div className="col-md-7"> 
+          <ServiceContactForm />
+         </div>
+        <div className="col-md-5">
+          <div className="contact_heading">
+        <Heading
+                heading="Contact Us"
+                uppercase="text-uppercase"
+              />
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+              </div>
+        </div>
+        </div>
+      </div>
+     </section>
+
+     <section className="contact_us_bg">
+       <img src={CONTACT_US} className="w-100" />
+     </section>
+
+
+     <section>
+      <div className="container">
+        <div className="row"> 
+        <div className="col-md-1"> </div>
+        <div className="col-md-10">
+              <Faq />
+        </div>
+        <div className="col-md-1"> </div>
+        </div>
+      </div>
+     </section>
+
     </>
   );
 };
