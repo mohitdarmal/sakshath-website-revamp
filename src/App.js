@@ -19,6 +19,7 @@ import Blog from "./Pages/Blogs";
 import BlogDetail from "./Pages/Blogs/BlogDetail";
 import OurAchivements from "./Pages/About/Our_Achivements";
 import ScrollUpJounery from "./Pages/About/ScrollUpJounery";
+import Integration from "./Pages/Integration";
 import Automation from "./Pages/Service/Automation";
 
 const App = () => {
@@ -74,7 +75,8 @@ const App = () => {
 
           <Route path="/company-journey" element={<OurJounery/>}/>
           <Route path="/our-achievements" element={<OurAchivements/>}/>
-         
+          <Route path="/integration" element={<Integration/>}/>
+          {/* <Route path="/blogs/:id" element={<BlogDetail />} /> */}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
