@@ -44,7 +44,7 @@ import { Fade } from "react-awesome-reveal";
 import ClientLogo from "../../Components/ClientLogo";
 import Faq from "../../Components/Faq";
 import HappyClients from "../../Components/HappyClients";
-import OurPrincipals from "../../Components/OurPrincipals";
+// import OurPrincipals from "../../Components/OurPrincipals";
 // import { Pagination, Navigation } from 'swiper/modules';
 
 export const Home = () => {
@@ -373,7 +373,7 @@ export const Home = () => {
       </section> */}
 
       {/* @@@@@@ SECTION - Specilizes in Building Services start @@@@@@ */}
-      <section className="overflow-hidden">
+      {/* <section className="overflow-hidden">
         <div className="specilation_feature">
           <div className="container">
             <div className="row ">
@@ -407,7 +407,6 @@ export const Home = () => {
                   </div>
                 </Fade>
               </div>
-
               <div className="col-md-4 d-flex ">
                 <Fade direction="up" delay={200} triggerOnce>
                   <div className="d-flex ">
@@ -446,7 +445,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* @@@@@@ SECTION - Specilizes in Building Services END @@@@@@ */}
 
       {/* @@@@@@ SECTION - "Who we are" start @@@@@@ */}
@@ -501,7 +500,7 @@ export const Home = () => {
       {/* @@@@@ SECTION- Happy client counter end @@@@@@ */}
 
       {/* @@@@@@@ SECTION - Our Principals @@@@@@@@@ */}
-      <OurPrincipals />
+      {/* <OurPrincipals /> */}
       {/* @@@@@@@ SECTION - Our Principals @@@@@@@@@ */}
 
       {/* @@@@@@@ SECTION - planning banner starts @@@@@@ */}
