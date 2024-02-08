@@ -1,7 +1,65 @@
+@import "../../Assets/saas/Main.scss";
 .box{
     box-shadow: 0 2px 20px rgb(0 0 0 / 16%);
     padding: 14px 12px;
     border-radius: 5px;
-    min-height: 100px;
+    //min-height: 100px;
     min-width: 100px;
+}
+.modal-title{
+    
+    margin-left:250px;
+    font-family: $rajdhani_font;
+    font-weight: 700;
+    font-size: 28px;
+}
+.job_description_checkmark::before{
+    content: "\f058";
+            position: absolute;
+            font-family: "FontAwesome";
+            font-size: 22px;
+            color: #7141b1;
+            margin-left: -33px;
+            margin-top: -3px ;
+
+}
+.job_description_heading{
+    font-family: $rajdhani_font;
+    font-weight: 600;
+    
+}
+.box{
+    h6{font-family: $rajdhani_font;
+    font-weight: 700;
+    margin-bottom: 1px;}
+
+    svg{
+        
+        // margin-right: 5px;
+        // margin-top: -2px;
+        margin-bottom: 8px;
+        font-size: 26px;
+    }
+    p{
+        margin-bottom: 0px;
+        
+    }
+}
+
+
+
+.careers_contact_form{
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0px 2px 20px #0000001f;
+    z-index: 999;
+    position: relative;
+    
+    button{
+        background: $ball_blue_color;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
 }

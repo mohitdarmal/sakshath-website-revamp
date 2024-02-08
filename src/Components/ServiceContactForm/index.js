@@ -29,7 +29,7 @@ const ServiceContactForm = () => {
   };
 
   return (
-    <Container className='service_contact_form'>
+    <Container className='applynow_contact_form'>
       <Form onSubmit={handleSubmit}>
         <Row>
           <Col md={6}>
