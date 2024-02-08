@@ -262,20 +262,20 @@ export const Home = () => {
 <div className="row">
   <div className="accreditation_tab">
 <Tabs
-                defaultActiveKey="internation"
+                defaultActiveKey="certification"
                 id="clients_logo"
                 className="mb-3 client_tabs"
               >
-                {/* <div className="international"> */}
+                {/* <div className="certificational"> */}
                 <Tab
-                  eventKey="internation"
+                  eventKey="certification"
                   title={
                     <div className="d-flex">
                       <p>
                        
                         &nbsp;&nbsp;
                       </p>
-                      <p>International</p>
+                      <p>Certification</p>
                     </div>
                   }
                 >
@@ -283,7 +283,7 @@ export const Home = () => {
                 </Tab>
                 {/* </div> */}
                 <Tab
-                  eventKey="domestic"
+                  eventKey="accreditation"
                   title={
                     <div className="d-flex">
                       <p>
@@ -291,26 +291,13 @@ export const Home = () => {
                         &nbsp;&nbsp;
                       </p>
 
-                      <p>Domestic</p>
+                      <p>Accreditation</p>
                     </div>
                   }
                 >
                  
                 </Tab>
-                <Tab
-                  eventKey="business"
-                  title={
-                    <span className="d-flex">
-                      <p>
-                        
-                        &nbsp;&nbsp;
-                      </p>
-                      <p>Business</p>
-                    </span>
-                  }
-                >
-                   
-                </Tab>
+                 
               </Tabs>
               </div>
 </div>
@@ -721,7 +708,7 @@ export const Home = () => {
             <div className="col-md-7 right_home_principle">
               <div className="row">
                 <div className="col-md-6 right_home_principle_left_content_box">
-                  <div className="d-flex">
+                  <div className="d-flex horizontal-shake">
                     <Fade direction="up" triggerOnce>
                       <div className="right_home_principle_img">
                         <img src={POPULARWEB} alt="" /> &nbsp;
@@ -740,7 +727,7 @@ export const Home = () => {
                     </Fade>
                   </div>
 
-                  <div className="d-flex">
+                  <div className="d-flex horizontal-shake">
                     <Fade direction="up" triggerOnce>
                       <div className="right_home_principle_img">
                         <img src={POPULARANALYTICS} alt="" /> &nbsp;
@@ -759,7 +746,7 @@ export const Home = () => {
                 </div>
 
                 <div className="col-md-6 right_home_principle_right_content_box">
-                  <div className="d-flex">
+                  <div className="d-flex horizontal-shake">
                     <Fade direction="up" delay={100} triggerOnce>
                       <div className="right_home_principle_img">
                         <img src={POPULAUTOMATION} alt="" /> &nbsp;
@@ -775,7 +762,7 @@ export const Home = () => {
                     </Fade>
                   </div>
 
-                  <div className="d-flex">
+                  <div className="d-flex horizontal-shake">
                     <Fade direction="up" delay={100} triggerOnce>
                       <div className="right_home_principle_img">
                         <img src={POPULARBANK} alt="" /> &nbsp;
