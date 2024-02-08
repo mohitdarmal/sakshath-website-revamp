@@ -11,16 +11,16 @@ const ServiceStickMenu=()=>
     return(
         <>
 
-<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary  service_sticky_menu"  sticky="top" >
+<Navbar collapseOnSelect expand="lg" className="service_sticky_menu"  sticky="top" >
 <Container fluid className="service_sticky_menu_container">
   <Navbar.Brand href="#home">Integration </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ms-auto">
-      <NavLink href="#features">Integration Coe</NavLink>
+      <NavLink href="#features">Integration COE</NavLink>
       <NavLink href="#pricing">Integration Consulting </NavLink>
       <NavLink href="#features">Migration Services</NavLink>
-      <NavLink href="#pricing">Managed services </NavLink>
+      <NavLink href="#pricing">Managed Services </NavLink>
        
     </Nav>
  

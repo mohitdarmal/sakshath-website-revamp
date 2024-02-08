@@ -2,7 +2,7 @@
 
 
 .sec_heading{
-    color: #111111;
+    color:$ball_blue_color;
     font-family: $rajdhani_font;
     font-weight: 700;
 }
@@ -10,8 +10,30 @@
     color: rgb(17, 17, 17);
     font-family: inherit;
     font-size: 17px;
-    padding-top: 18px;
+    padding-top: 10px;
 }
+.integration_img_left{
+    padding-left: 100px;
+    // width: 600px;
+}
+.integration_img_right{
+    padding-top: 50px;
+}
+.integration_coe_left{
+    padding-top:50px;
+    padding-right:80px;
+}
+.integration_img_left{
+    //  width: 650px;
+    
+}
+.overview_sec{
+    padding-right: 80px;
+}
+.sec_right_img{
+    padding-top: 30px;
+}
+
 .sec_button{
     height:40px;
     width: 165px;
@@ -81,7 +103,7 @@
 .integration_coe{
     font-family: inherit;
     font-weight: 300;
-    color: #111111;
+    color:$ball_blue_color;
     font-size: 45px;
 
 }
@@ -105,7 +127,7 @@
 // .integration_coe h3 {
 //     animation-name: animationSpin;
 //     animation-duration: 4s;
-//     animation-iteration-count: infinite; 
+//     animation-iteration-count:initial; 
 //     animation-delay: 0s;
 // }
 
@@ -129,7 +151,6 @@
 }
 .intergration_list li{
     font-family: inherit;
-    font-weight: 590;
     padding-top: 5px;
     
 }
@@ -215,3 +236,35 @@
 .intergration_list {
     line-height: 35px;
 }
+
+
+// responsive start
+@media screen and (max-width:480px){
+
+    /* For Mobile Screen  */
+
+}
+
+ 
+
+@media screen and (min-width:481px) and (max-width:767px){
+
+    /* For Mobile Landscape Screen  */
+
+}
+
+ 
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    /* For Tab Screen  */
+
+}
+
+@media screen and (min-width:1024px){
+
+    /* For Desktop Screen  */
+
+}
+
+// responsive end
