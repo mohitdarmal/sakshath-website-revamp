@@ -1,4 +1,5 @@
-export const why_sakshath_img=require('../../Assets/images/why_sakshath_img.jpg')
+// export const why_sakshath_img=require('../../Assets/images/why_sakshath_img.jpg')
+export const why_sakshath_img=require('../../Assets/images/why2_img.png')
 export const img3=require('../../Assets/images/integration-4.webp')
 export const img2=require('../../Assets/images/ap-2.png')
 export const integration3=require('../../Assets/images/integration-3.webp');

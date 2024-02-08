@@ -1,6 +1,18 @@
 @import "../../Assets/saas/Main.scss";
 
 
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px) }
+  50% { transform: translateX(-5px) }
+  75% { transform: translateX(5px) }
+  100% { transform: translateX(0) }
+}
+
+.horizontal-shake:hover img{
+  animation: horizontal-shaking 0.5s 2 forwards;
+}
+
 .our_principals {
     background-color: #f7f8f9;
     padding-top: 100px;
@@ -37,16 +49,35 @@
     }
   }
 
-//   .principle_container::after{
-//     content: "";
-//     width: 30px;
-//     height: 30px;
-//     background-image: url("../../Assets/images/arrow_shape.svg");
-//     position: absolute;
-//     top: 0; 
-//     margin-top: -46px;
-//     margin-left: 67px;
-// }
+  .principle_container::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    border-top: 4px solid #32a4d5;
+    border-left: 4px solid #32a4d5;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.principle_container::before{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #32a4d5;
+  border-right: 4px solid #32a4d5;
+  opacity: 0;
+}
+
+.principle_container:hover::after, .principle_container:hover::before{
+  opacity: 1;
+  transition: 0.5s;
+} 
 
   @media screen and (max-width: 767px) {
     

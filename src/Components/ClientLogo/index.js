@@ -216,14 +216,14 @@ const ClientLogo = () => {
                   </Swiper>
                 </Tab>
                 <Tab
-                  eventKey="business"
+                  eventKey="partners"
                   title={
                     <span className="d-flex">
                       <p>
                         <MdOutlineBusinessCenter />
                         &nbsp;&nbsp;
                       </p>
-                      <p>Business</p>
+                      <p>Partners</p>
                     </span>
                   }
                 >

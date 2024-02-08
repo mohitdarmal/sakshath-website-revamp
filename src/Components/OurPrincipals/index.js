@@ -133,7 +133,7 @@ const OurPrincipals = () => {
         
             <div className="col-md-6 principle_cols">
             <Fade direction="up"  triggerOnce>
-              <div className="principle_container d-flex">
+              <div className="principle_container d-flex horizontal-shake">
                 <div className="principle_icon">
                   <img src={RELIABILTY1} alt="" />
                 </div>
@@ -152,7 +152,7 @@ const OurPrincipals = () => {
             </div>
             <div className="col-md-6 principle_cols">
             <Fade direction="up"  triggerOnce>
-              <div className="principle_container d-flex">
+              <div className="principle_container d-flex horizontal-shake">
                 <div className="principle_icon">
                   <img src={PROFESSIONAL_TEAM1} alt="" />
                 </div>
@@ -171,7 +171,7 @@ const OurPrincipals = () => {
             </div>
             <div className="col-md-6 principle_cols">
             <Fade direction="up"  triggerOnce>
-              <div className="principle_container d-flex">
+              <div className="principle_container d-flex horizontal-shake">
                 <div className="principle_icon">
                   <img src={SPECIALIZATION1} alt="" />
                 </div>
@@ -190,7 +190,7 @@ const OurPrincipals = () => {
             </div>
             <div className="col-md-6 principle_cols">
             <Fade direction="up"  triggerOnce>
-              <div className="principle_container d-flex">
+              <div className="principle_container d-flex horizontal-shake">
                 <div className="principle_icon">
                   <img src={EXPERIENCE1} alt="" />
                 </div>
