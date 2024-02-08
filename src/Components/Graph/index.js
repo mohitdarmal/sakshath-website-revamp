@@ -99,16 +99,19 @@ class PieChart extends React.Component {
         ], // Adjusted labels accordingly
         theme: {
           monochrome: {
-            enabled: true, // Disabled monochrome theme for colors
+            enabled: false, // Disabled monochrome theme for colors
           },
         },
         colors: [
-          "#ff4500ab", // Red
-          "#808080c9", // grey
-          "#df960fc9",  //ornage
-         
+          "#24688f", // dark Blue
           "#32a4d5", // Blue
-          "#13aa13ad", // Green
+          "#808080c9", // grey
+        //   "#df960fc9",  //ornage
+        "#24688f", // dark Blue
+         
+         
+        //   "#13aa13ad", // Green
+        "#32a4d5", // Blue
         ], // Added colors
         // plotOptions: {
         //   pie: {

@@ -45,8 +45,8 @@ import ClientLogo from "../../Components/ClientLogo";
 import Faq from "../../Components/Faq";
 import HappyClients from "../../Components/HappyClients";
 import OurPrincipals from "../../Components/OurPrincipals";
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 // import { Pagination, Navigation } from 'swiper/modules';
 
 export const Home = () => {
@@ -236,12 +236,8 @@ export const Home = () => {
       </section>
       {/* @@@@@@@ SECTION - Banner Section end @@@@@@@ */}
 
-
-
-
-
-{/*  @@@@@@ SECTION - ISO CERTIFICATES START @@@@@@ */}
-<section className="overflow-hidden">
+      {/*  @@@@@@ SECTION - ISO CERTIFICATES START @@@@@@ */}
+      <section className="overflow-hidden">
         <div className="accreditation_sec specilation_feature">
           <div className="container">
             <div className="row ">
@@ -258,50 +254,37 @@ export const Home = () => {
               </div>
             </div>
 
-
-<div className="row">
-  <div className="accreditation_tab">
-<Tabs
-                defaultActiveKey="certification"
-                id="clients_logo"
-                className="mb-3 client_tabs"
-              >
-                {/* <div className="certificational"> */}
-                <Tab
-                  eventKey="certification"
-                  title={
-                    <div className="d-flex">
-                      <p>
-                       
-                        &nbsp;&nbsp;
-                      </p>
-                      <p>Certification</p>
-                    </div>
-                  }
+            <div className="row">
+              <div className="accreditation_tab">
+                <Tabs
+                  defaultActiveKey="certification"
+                  id="clients_logo"
+                  className="mb-3 client_tabs"
                 >
-                  
-                </Tab>
-                {/* </div> */}
-                <Tab
-                  eventKey="accreditation"
-                  title={
-                    <div className="d-flex">
-                      <p>
-                        
-                        &nbsp;&nbsp;
-                      </p>
+                  {/* <div className="certificational"> */}
+                  <Tab
+                    eventKey="certification"
+                    title={
+                      <div className="d-flex">
+                        <p>&nbsp;&nbsp;</p>
+                        <p>Certification</p>
+                      </div>
+                    }
+                  ></Tab>
+                  {/* </div> */}
+                  <Tab
+                    eventKey="accreditation"
+                    title={
+                      <div className="d-flex">
+                        <p>&nbsp;&nbsp;</p>
 
-                      <p>Accreditation</p>
-                    </div>
-                  }
-                >
-                 
-                </Tab>
-                 
-              </Tabs>
+                        <p>Accreditation</p>
+                      </div>
+                    }
+                  ></Tab>
+                </Tabs>
               </div>
-</div>
-
+            </div>
 
             <div className="row mt-4 pt-2">
               <div className="col-md-4">
@@ -331,7 +314,7 @@ export const Home = () => {
                     <div className="content">
                       <h3 className="">Experience Team</h3>
                       <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Odit vitae exercitationem aliquid dolore reiciendis!
                         Nihil at eos.
                       </p>
@@ -349,7 +332,7 @@ export const Home = () => {
                     <div className="content">
                       <h3>Best IT Solutions</h3>
                       <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Odit vitae exercitationem aliquid dolore reiciendis!
                         Nihil at eos.
                       </p>
@@ -361,10 +344,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-{/* @@@@@ SECTION - ISO CERTIFICATES END */}
-
-
-
+      {/* @@@@@ SECTION - ISO CERTIFICATES END */}
 
       {/* @@@@@@ SECTION - ISO certifcates start @@@@@@ */}
       {/* <section className="iso_certificate_sec">
@@ -596,7 +576,6 @@ export const Home = () => {
               <div className="text_wrapper">
                 <div className="title_area">
                   <Fade direction="up">
-                    
                     <SubTitle SubTitle="Who we are" />
                   </Fade>
                   <Heading
@@ -614,7 +593,6 @@ export const Home = () => {
                   rise to stardom certainly came closer.
                 </p>
                 <Fade direction="up">
-                  
                   <SlideAnimationButton
                     url="/about"
                     btnName="LEARN MORE ABOUT US"
@@ -642,7 +620,6 @@ export const Home = () => {
             <div className="col-md-9 ipad_full_width">
               <div className="left_planning_banner_content">
                 <Fade direction="up" triggerOnce>
-                  
                   <h3>
                     Full Truckload Planning Reimagined Experts in Security
                     Dynamic Load Planning & Dispatching
@@ -653,10 +630,7 @@ export const Home = () => {
             <div className="col-md-3 button_box ipad_full_width">
               <div className="right_planning_banner_content text-md-end">
                 <Fade direction="up" delay={300} triggerOnce>
-                  
-                  <Link className="lets_meet_us_button">
-                    Let's meet us
-                  </Link>
+                  <Link className="lets_meet_us_button">Let's meet us</Link>
                 </Fade>
               </div>
             </div>
@@ -679,14 +653,12 @@ export const Home = () => {
                 <SubTitle SubTitle="Our Popular Services" />
               </Fade>
               <Fade direction="up" triggerOnce>
-                
                 <Heading
                   heading="Elevating Experiences, Empowering Success"
                   uppercase="text-uppercase"
                 />
               </Fade>
               <Fade direction="up" triggerOnce>
-                
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Quaerat nihil aliquid, architecto assumenda alias vitae
@@ -695,9 +667,7 @@ export const Home = () => {
                 </p>
               </Fade>
               <Fade direction="up" triggerOnce>
-                
                 <div className="our_principal_btn">
-                  
                   <SlideAnimationButton btnName="Read More" />
                 </div>
               </Fade>
@@ -793,11 +763,9 @@ export const Home = () => {
           <div className="row">
             <div className="top_blog_container text-center">
               <Fade direction="up" triggerOnce>
-                
                 <SubTitle SubTitle="Our Achivements" />
               </Fade>
               <Fade direction="up" delay={100} triggerOnce>
-                
                 <Heading
                   heading="Get every single update article & tips"
                   uppercase="text-uppercase"
@@ -811,15 +779,12 @@ export const Home = () => {
               <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
-                    
                     <img src={ACHIVEMENT_IMG1} alt="" />
                   </Fade>
                 </div>
                 <Fade direction="up" triggerOnce>
                   <div className="blog_content">
-                    <div className="cust_profile">
-                     
-                    </div>
+                    <div className="cust_profile"></div>
 
                     <div className="socail_icon">
                       <ul className="d-flex justify-content-between list-unstyled">
@@ -834,7 +799,6 @@ export const Home = () => {
                         Technologies.
                       </h5>
                       <p className="blog_sub_heading">
-                        
                         Sed ut perspiciatis unde omnsiste natus errors
                         voluptatem accusantium doloremque laudatium totae rem
                         aperiam eaque quae abillo
@@ -847,15 +811,12 @@ export const Home = () => {
               <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
-                    
                     <img src={ACHIVEMENT_IMG2} alt="" />
                   </Fade>
                 </div>
                 <Fade direction="up" delay={200} triggerOnce>
                   <div className="blog_content">
-                    <div className="cust_profile">
-                  
-                    </div>
+                    <div className="cust_profile"></div>
 
                     <div className="socail_icon">
                       <ul className="d-flex justify-content-between list-unstyled">
@@ -864,14 +825,12 @@ export const Home = () => {
                             <SlCalender /> &nbsp; 18 JAN 2024
                           </div>
                         </li>
-                      
                       </ul>
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
                         Perfect
                       </h5>
                       <p className="blog_sub_heading">
-                        
                         Sed ut perspiciatis unde omnsiste natus errors
                         voluptatem accusantium doloremque laudatium totae rem
                         aperiam eaque quae abillo
@@ -884,15 +843,12 @@ export const Home = () => {
               <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
-                    
                     <img src={ACHIVEMENT_IMG3} alt="" />
                   </Fade>
                 </div>
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="blog_content">
-                    <div className="cust_profile">
-                     
-                    </div>
+                    <div className="cust_profile"></div>
                     <div className="socail_icon">
                       <ul className="d-flex justify-content-between list-unstyled">
                         <li>
@@ -900,14 +856,12 @@ export const Home = () => {
                             <SlCalender /> &nbsp; 18 JAN 2024
                           </div>
                         </li>
-                        
                       </ul>
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
                         Perfect
                       </h5>
                       <p className="blog_sub_heading">
-                        
                         Sed ut perspiciatis unde omnsiste natus errors
                         voluptatem accusantium doloremque laudatium totae rem
                         aperiam eaque quae abillo
@@ -1217,8 +1171,6 @@ export const Home = () => {
           </div>
         </div>
       </section> */}
-
-      
     </>
   );
 };
