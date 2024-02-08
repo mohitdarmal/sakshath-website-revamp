@@ -53,8 +53,37 @@
     }
   }
 }
- 
 
+.banner_text_slider_content {
+  h6{
+    display: inline-block;
+    // background: #32a4d5;
+    color: $ball_blue_color;
+    // padding: 10px 20px;
+    margin-bottom: 15px;
+  }
+  h3{
+  font-size: 50px;
+  color: #000;
+  line-height: 52px;
+  font-family: 'Rajdhani';
+  font-weight: bold;
+}
+a:first-child{
+  background: #32a4d5;
+  color: #fff;
+  display: inline-block;
+  padding: 15px 20px;
+  font-family: 'Rajdhani';
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+}
+ 
+.banner_image_slider{
+    svg{display: none!important;}
+}
 
 // .video-background {
 //   position: fixed;
