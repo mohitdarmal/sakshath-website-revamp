@@ -37,7 +37,7 @@
   background-size: cover;
 }
 
-.pillar_heading{
+.pillar_heading {
   p {
     color: #fff;
     padding-top: 15px;
@@ -61,9 +61,9 @@
 .pillars_box_img {
   display: flex;
   justify-content: center;
- img {
-    width: 60px ;
-    height: 60px ;
+  img {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -75,3 +75,98 @@
   color: #616161 !important;
   text-align: center;
 }
+
+.pillar_box {
+  position: relative;
+}
+
+.pillar_box::after {
+  content: "";
+  position: absolute; /* Position the pseudo-element absolutely within the .pillar_box */
+  bottom: 0; /* Position the pseudo-element at the bottom */
+  left: 0; /* Position the pseudo-element at the left */
+  right: 0; /* Stretch the pseudo-element to the right edge */
+  height: 5px; /* Set the desired border height */
+  background-color: rgb(110, 110, 176); /* Set the color of the border */
+  transition: width 0.3s ease-in-out; /* Smoothly animate the width change on hover */
+  width: 0; /* Initially hide the border */
+}
+
+.pillar_box:hover::after {
+  width: 100%;
+}
+
+// mobile deveopment
+
+.mobile_section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+
+.andriod_app {
+  background: #f2f2f2;
+  padding: 40px 20px;
+  text-align: center;
+}
+.mobile_application_img img {
+  width: 75px;
+}
+
+.mobile_application_heading {
+  padding-top: 20px;
+
+  h5 {
+    font-family: $rajdhani_font;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+}
+
+.ios_app {
+  background: #ededed;
+  text-align: center;
+  padding: 40px 20px;
+}
+.cross_platform{
+     background: #e7e7e7;
+     padding: 40px 20px;
+     text-align: center;
+ }
+
+ // application
+.application_section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+ .application_main_heading{
+    position: relative;
+    content: "";
+ }
+
+ .application_integration ul{
+    line-height: 35px;
+ }
+
+ .application_integration li::before{
+    position: absolute;
+    content: "";
+    background-image: url('../../../Assets/images/application_integration_list_rightarrow.png');
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    margin-left: -30px;
+    margin-top: 10px;
+
+ }
+
+
+ // RPA
+ .rpa_main_heading h1{
+    font-size: 40px;
+    font-family: $rajdhani_font;
+    font-weight: 700;
+    
+ }

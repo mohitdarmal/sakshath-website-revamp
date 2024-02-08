@@ -7,7 +7,7 @@ export const IT_IMG = require("../../Assets/images/it.png");
 export const SERVICE_IMG = require("../../Assets/images/service.png");
 export const P_IMG = require("../../Assets/images/data.png");
 export const BANNER1 = require("../../Assets/images/banner1.jpg");
-
+export const MILESTONE_TEXT = require("../../Assets/images/milestone_tagline.svg").default;
 
 // Popular Services
 
@@ -15,6 +15,7 @@ export const POPULARWEB = require("../../Assets/images/programming.png");
 export const POPULARANALYTICS = require("../../Assets/images/analytic.png");
 export const POPULAUTOMATION = require("../../Assets/images/process.png");
 export const POPULARBANK = require("../../Assets/images/bank.png");
+
 
 
 // Happy Client 

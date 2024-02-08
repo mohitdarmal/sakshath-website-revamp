@@ -32,8 +32,7 @@ const WhySakshath = () => {
                   <h6>Responsive Data Warehouse Workflow</h6>
                   <p>
                     We offer practical knowledge fast designing, assembling,
-                    deploying, and managing purpose-built cloud data warehouse
-                    without manual coding.
+                    deploying, and managing purpose-built cloud data warehouse.
                   </p>
                 </div>
                 <div className="why_sakshath_img">
@@ -45,8 +44,7 @@ const WhySakshath = () => {
                   <h6>Data Streaming in Real Time</h6>
                   <p>
                     With the help of our platform, live streams of business data
-                    can be turned into advanced analytics and microservices,
-                    providing a quick, cost-effective, and global solution.
+                    can be turned into advanced analytics and microservices.
                   </p>
                 </div>
                 <div className="why_sakshath_img">
@@ -84,8 +82,7 @@ const WhySakshath = () => {
                   <h6>Creating a Controlled Data Lake</h6>
                   <p>
                     We streamline complicated acquisition and transformation
-                    procedures through automation to deliver continually
-                    updated.
+                    procedures through automation.
                   </p>
                 </div>
               </div>
@@ -96,9 +93,9 @@ const WhySakshath = () => {
                 <div className="why_sakshath_heading_right">
                   <h6>Major assistance</h6>
                   <p>
-                    Our all-encompassing software enables you to stack, acquire,
-                    migrate, disseminate, consolidate, and synchronize data
-                    across cloud, on-premises
+                    Our software enables you to stack, acquire,
+                    synchronize data,
+                    migrate, disseminate, consolidate.
                   </p>
                 </div>
               </div>

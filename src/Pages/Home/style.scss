@@ -1,5 +1,82 @@
 @import "../../Assets/saas/Main.scss";
 
+.tagline_sec {
+  position: relative;
+  video{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  }
+
+  .video_background::before{
+    content: "";
+    position: absolute;
+    background-color: #000000b1;
+    width: 100%;
+    height: 98%;
+  }
+
+  .tagline_txt{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  img{
+    width: 350px;
+  }
+
+  .tagline_heading{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+    // background-image: linear-gradient(89deg, rgb(37 103 143 / 0%) 0%, rgb(50 164 213) 51%, rgb(37 103 143 / 0%) 93%);
+    border-top: 1px dashed #fff;
+    font-weight: bold;
+    padding-top: 5px;
+    margin-top: 5px;
+    &::after{
+          content: "";
+    position: absolute;
+    background-image: url("../../Assets/images/arrow_shape2.svg");
+    background-size: contain;
+    width: 100px;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: -50px;
+    margin-left: 0px;
+    animation: horizontal-shaking 0.9s infinite;
+    }
+  }
+}
+ 
+
+
+// .video-background {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+//   z-index: -1;  
+// }
+
+// .video-background video {
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
 // banner css start
 .banner_sec .swiper-button-prev:after,
 .banner_sec .swiper-button-next:after {
