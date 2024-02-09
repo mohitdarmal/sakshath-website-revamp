@@ -10,7 +10,8 @@ const ServiceStickMenu=()=>
 {
     return(
         <>
-
+        <div className="sticky_menu">
+<div className="container">
 <Navbar collapseOnSelect expand="lg" className="service_sticky_menu"  sticky="top" >
 <Container fluid className="service_sticky_menu_container">
   <Navbar.Brand href="#home">Integration </Navbar.Brand>
@@ -27,6 +28,8 @@ const ServiceStickMenu=()=>
   </Navbar.Collapse>
 </Container>
 </Navbar>
+</div>
+</div>
 </>
     )
 };
