@@ -51,7 +51,6 @@
 }
 
 .pillars_box {
-  // box-shadow: 0 2px 20px black;
   background: #fff;
   padding: 30px 12px;
   border-radius: 10px;
@@ -98,12 +97,10 @@
 
 // mobile deveopment
 
-.mobile_section{
-    padding-top: 80px;
-    padding-bottom: 80px;
+.mobile_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-
-
 
 .andriod_app {
   background: #f2f2f2;
@@ -130,43 +127,183 @@
   text-align: center;
   padding: 40px 20px;
 }
-.cross_platform{
-     background: #e7e7e7;
-     padding: 40px 20px;
-     text-align: center;
- }
-
- // application
-.application_section{
-    padding-top: 80px;
-    padding-bottom: 80px;
+.cross_platform {
+  background: #e7e7e7;
+  padding: 40px 20px;
+  text-align: center;
 }
- .application_main_heading{
-    position: relative;
-    content: "";
- }
 
- .application_integration ul{
-    line-height: 35px;
- }
+// application
+.application_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.application_main_heading {
+  position: relative;
+  content: "";
+}
 
- .application_integration li::before{
-    position: absolute;
-    content: "";
-    background-image: url('../../../Assets/images/application_integration_list_rightarrow.png');
-    background-size: contain;
-    width: 15px;
-    height: 15px;
-    margin-left: -30px;
-    margin-top: 10px;
+.application_integration ul {
+  line-height: 35px;
+}
 
- }
+.application_integration li::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../../Assets/images/application_integration_list_rightarrow.png");
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  margin-left: -30px;
+  margin-top: 10px;
+}
 
+// rpa
 
- // RPA
- .rpa_main_heading h1{
-    font-size: 40px;
-    font-family: $rajdhani_font;
+.rpa_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.rpa_main_heading h1 {
+  font-family: $rajdhani_font;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+//RPA oFFERNING  STARTS
+
+.rpa_offering_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #24688f;
+}
+
+.rpa_offering_main_heading h3 {
+  color: #fff;
+}
+
+.left_boxes_rpa {
+  border-bottom: 1px solid #9295964d;
+  box-shadow: 0 2px 2px #0f0e0e5c;
+  border-radius: 2px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #fff;
+}
+.rpa_box_left {
+  border-bottom: 1px solid #9295964d;
+  padding: 20px;
+
+  .rpa_imgs {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .rpa_heading h4 {
+    font-family: "Rajdhani";
     font-weight: 700;
-    
- }
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.rpa_box_left_down {
+  padding: 20px;
+  .rpa_imgs {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 50px;
+    }
+  }
+  .rpa_heading h4 {
+    font-family: "Rajdhani";
+    font-weight: 700;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.right_boxes_rpa {
+  box-shadow: 0 2px 2px #0f0e0e5c;
+  border-radius: 2px;
+  padding-left: 0;
+  padding-right: 0;
+  background: #fff;
+
+  .rpa_box_right {
+    border-bottom: 1px solid #9295964d;
+    padding: 20px;
+    // min-height: 280px;
+  }
+  .rpa_box_right_down {
+    padding: 20px;
+    min-height: 280px;
+  }
+  .rpa_imgs {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 50px;
+    }
+  }
+  .rpa_heading h4 {
+    font-family: "Rajdhani";
+    font-weight: 700;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+// rpa tools
+
+.rpa_tools_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .rpa_tools_logos {
+    box-shadow: 0 2px 2px #0000003d;
+    padding: 30px;
+  }
+}
+
+// .snipper{
+//   width: 70px;
+//   height: 70px;
+//    background: rgb(104, 101, 168);
+//   border: 5px solid white;
+//   border-top-color:  lightblue;
+//  border-radius: 10px 0;
+//   animation: spin 2s linear infinite;
+// }
+
+// @keyframes spin{
+//   0%{
+//     transform: rotate(0deg);
+//   }
+//   100%{
+//     transform: rotate(360deg);
+//   }
+// }
+
+
+// Devops
+
+.devops_section{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.devops_list_box{
+  box-shadow: 0 2px 6px #0000005c;
+  padding: 30px;
+  border-radius: 5px;
+}

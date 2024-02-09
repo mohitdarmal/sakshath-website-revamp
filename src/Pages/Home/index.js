@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, { useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import {
   WHO_WE_ARE_IMG,
@@ -26,10 +26,17 @@ import {
   ACHIVEMENT_IMG3,
   DOTTED_IMG1,
   MILESTONE_TEXT,
+  SLIDES1,
+  SLIDES2_IMG,
+  SLIDES2,
+  SLIDES3,
+  TALEND,
+  AWS,
 } from "./Constant";
 
 import { SlCalender } from "react-icons/sl";
-import { PiChatsCircleLight } from "react-icons/pi";
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+
 import CountUp from "react-countup";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Heading from "../../Components/Utils/Heading";
@@ -46,129 +53,184 @@ import ClientLogo from "../../Components/ClientLogo";
 import Faq from "../../Components/Faq";
 import HappyClients from "../../Components/HappyClients";
 import OurPrincipals from "../../Components/OurPrincipals";
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
-import BannerVideo from "../../Assets/images/banner_vid.mp4"
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
+import BannerVideo from "../../Assets/images/banner_vid.mp4";
 // import { Pagination, Navigation } from 'swiper/modules';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const Home = () => {
   const textSlider = useRef();
   const imageSlider = useRef();
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const handleTextSlideChange = index => {
+  const handleTextSlideChange = (index) => {
     setCurrentSlide(index);
     imageSlider.current.slickGoTo(index);
   };
 
-  const handleImageSlideChange = index => {
+  const handleImageSlideChange = (index) => {
     setCurrentSlide(index);
     textSlider.current.slickGoTo(index);
   };
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
-    afterChange: index => setCurrentSlide(index)
+    afterChange: (index) => setCurrentSlide(index),
+    prevArrow: <MdArrowBackIos />,
+    nextArrow: <MdArrowForwardIos />,
   };
 
   return (
     <>
-
-<section className="tagline_sec">
-<div className="video_background">
-            <video autoPlay loop muted playsInline >
-                <source src={BannerVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            {/* You can add other content on top of the video if needed */}
+      {/* @@@@@@ Banner Video start @@@@@@ */}
+      <section className="tagline_sec">
+        <div className="video_background">
+          <video autoPlay loop muted playsInline>
+            <source src={BannerVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         <div className="container tagline_txt">
           <div className="row">
             <div className="col-md-12 text-center">
-            <Fade direction="up" delay={300} >
-            <div> <img src={MILESTONE_TEXT} /> </div>
-            <div className="position-relative">
-              <h1 className="tagline_heading"> Making IT Looks Easy </h1>
-              </div>
-             </Fade>
+              <Fade direction="up" delay={300}>
+               
+                <div className="position-relative">
+                  <h1 className="tagline_heading"> Making IT Looks Easy </h1>
+                </div>
+                <div>
+                  {" "}
+                  <img src={MILESTONE_TEXT} />{" "}
+                </div>
+              </Fade>
             </div>
           </div>
         </div>
-</section>
+      </section>
+      {/* @@@@@@ Banner Video end @@@@@@ */}
 
+      {/* @@@@@@ Banner Slider start @@@@@@ */}
+      <section className="banner_slides_sec">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div className="banner_text_slider">
+                <Slider
+                  ref={textSlider}
+                  {...settings}
+                  beforeChange={(oldIndex, newIndex) =>
+                    handleTextSlideChange(newIndex)
+                  }
+                >
+                  <div className="banner_text_slider_content">
+                    <h6>Profesional IT Solution</h6>
+                    <h3>Transforming Ideas into Intelligent Solutions</h3>
+                    
+                      <div className="banner_text_slider_links">
+                        <Link to="/">Get Started Now</Link>
+                        <Link to="/">Explore More</Link>
+                      </div>
+                   
+                  </div>
 
-<section>
-<div className="container">
-  <div className="row text-and-image-slider">
-    <div className="col-md-6">
-    <div className="text-slider">
-        <Slider ref={textSlider} {...settings} beforeChange={(oldIndex, newIndex) => handleTextSlideChange(newIndex)}>
-          <div>
-          <div className="">
-                <div className="banner_caption">
-                  <h6>
-                    <Fade direction="up" delay={150}>
-                      Profesional IT Solution
-                    </Fade>
-                  </h6>
-                  <h3>
-                    <Fade direction="up" delay={300}>
-                      Transforming Ideas into Intelligent Solutions
-                    </Fade>
-                  </h3>
-                  <Fade direction="up" delay={500}>
-                    <div>
+                  <div className="banner_text_slider_content">
+                    <h6>Profesional IT Solution</h6>
+                    <h3>Elevating Experiences, One Line at a Time</h3>
+
+                    <div className="banner_text_slider_links">
                       <Link to="/">Get Started Now</Link>
                       <Link to="/">Explore More</Link>
                     </div>
-                  </Fade>
-                </div>
+                  </div>
+
+                  <div className="banner_text_slider_content">
+                    <h6>Profesional IT Solution</h6>
+                    <h3>Future-Proofing Your Digital Journey</h3>
+
+                    <div className="banner_text_slider_links">
+                      <Link to="/">Get Started Now</Link>
+                      <Link to="/">Explore More</Link>
+                    </div>
+                  </div>
+
+                  <div className="banner_text_slider_content">
+                    <h6>Profesional IT Solution</h6>
+                    <h3>Unleashing the Power of Purposeful Code</h3>
+
+                    <div className="banner_text_slider_links">
+                      <Link to="/">Get Started Now</Link>
+                      <Link to="/">Explore More</Link>
+                    </div>
+                  </div>
+
+                  <div className="banner_text_slider_content">
+                    <h6>Profesional IT Solution</h6>
+                    <h3>Elevating Businesses through Exceptional Code</h3>
+
+                    <div className="banner_text_slider_links">
+                      <Link to="/">Get Started Now</Link>
+                      <Link to="/">Explore More</Link>
+                    </div>
+                  </div>
+
+                  <div className="banner_text_slider_content">
+                    <h6>Profesional IT Solution</h6>
+                    <h3>Unlocking Potential, One Code at a Time</h3>
+
+                    <div className="banner_text_slider_links">
+                      <Link to="/">Get Started Now</Link>
+                      <Link to="/">Explore More</Link>
+                    </div>
+                  </div>
+                </Slider>
               </div>
-          </div>
-          <div>
-            <h3>Text Slide 2</h3>
-          </div>
-          <div>
-            <h3>Text Slide 3</h3>
-          </div>
-        </Slider>
-      </div>
-    </div>
+            </div>
 
-<div className="col-md-6">
-<div className="image-slider">
-        <Slider ref={imageSlider} {...settings} beforeChange={(oldIndex, newIndex) => handleImageSlideChange(newIndex)}>
-          <div>
-            <img src="image1.jpg" alt="Image 1" />
+            <div className="col-md-6">
+              <div className="banner_image_slider">
+                <Slider
+                  ref={imageSlider}
+                  {...settings}
+                  beforeChange={(oldIndex, newIndex) =>
+                    handleImageSlideChange(newIndex)
+                  }
+                >
+                  <div className="banner_image_slider_box">
+                    <img src={SLIDES1} />
+                  </div>
+                  <div className="banner_image_slider_box">
+                    <img src={SLIDES2} />
+                  </div>
+                  <div className="banner_image_slider_box">
+                    <img src={SLIDES3} />
+                  </div>
+                  <div className="banner_image_slider_box">
+                    <img src={SLIDES1} />
+                  </div>
+                  <div className="banner_image_slider_box">
+                    <img src={SLIDES2} />
+                  </div>
+                  <div className="banner_image_slider_box">
+                    <img src={SLIDES3} />
+                  </div>
+                </Slider>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="image2.jpg" alt="Image 2" />
-          </div>
-          <div>
-            <img src="image3.jpg" alt="Image 3" />
-          </div>
-        </Slider>
-      </div>
-</div>
+        </div>
+      </section>
 
-  </div>
-</div>
-
-<div className="">
-
-  
-    </div>
-</section>
+      {/* @@@@@@ Banner Video end @@@@@@ */}
 
       {/* SECTION - Banner Section Start */}
       {/* <section className="banner_sec">
@@ -354,19 +416,13 @@ export const Home = () => {
       </section> */}
       {/* @@@@@@@ SECTION - Banner Section end @@@@@@@ */}
 
-
-
-
-
-{/*  @@@@@@ SECTION - ISO CERTIFICATES START @@@@@@ */}
-<section className="overflow-hidden mt-5 pt-5">
+      {/*  @@@@@@ SECTION - ISO CERTIFICATES START @@@@@@ */}
+      <section className="overflow-hidden">
         <div className="accreditation_sec specilation_feature">
           <div className="container">
             <div className="row ">
               <div className="text-center">
-                {/* <Fade direction="up" triggerOnce>
-                  <SubTitle SubTitle="Great Journey for it solutions" />
-                </Fade> */}
+
                 <Fade direction="up" delay={20} triggerOnce>
                   <Heading
                     heading="Certification & Accreditation"
@@ -376,113 +432,195 @@ export const Home = () => {
               </div>
             </div>
 
-
-<div className="row">
-  <div className="accreditation_tab_container">
-<Tabs
-                defaultActiveKey="certification"
-                id="clients_logo"
-                className="mb-3 accreditation_tab"
-              >
-                {/* <div className="certificational"> */}
-                <Tab
-                  eventKey="certification"
-                  title={
-                    <div className="d-flex">
-                      <p>
-                       
-                        &nbsp;&nbsp;
-                      </p>
-                      <p>Certification</p>
-                    </div>
-                  }
-                >
-                  
-                </Tab>
-                {/* </div> */}
-                <Tab
-                  eventKey="accreditation"
-                  title={
-                    <div className="d-flex">
-                      <p>
-                        
-                        &nbsp;&nbsp;
-                      </p>
-
-                      <p>Accreditation</p>
-                    </div>
-                  }
-                >
-                 
-                </Tab>
-                 
-              </Tabs>
-              </div>
-</div>
-
+             
 
             <div className="row mt-4 pt-2">
               <div className="col-md-4">
                 <Fade direction="up" delay={10} triggerOnce>
-                  <div className="d-flex ">
+                <Link>
+                  <div className="d-flex horizontal-shake">
                     <div className="icon">
-                      <img src={P_IMG} alt="" />
+                      <img src={GREAT_PLACE_WORK} alt="" />
                     </div>
                     <div className="content">
-                      <h3 className="text">Professional Service</h3>
+                      <h3 className="text">Great Place to Work</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                  </Link>
+                </Fade>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={200} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={TALEND} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3 className="">Talend Gold Partner</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Odit vitae exercitationem aliquid dolore reiciendis!
-                        Nihil at eos.
+                        Odit vitae.
                       </p>
+                      <p className="learn_more">See Certificate</p>
                     </div>
                   </div>
                 </Fade>
+                </Link>
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Fade direction="up" delay={200} triggerOnce>
-                  <div className="d-flex ">
-                    <div className="icon">
-                      <img src={TEAM_IMG} alt="" />
-                    </div>
-                    <div className="content">
-                      <h3 className="">Experience Team</h3>
-                      <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Odit vitae exercitationem aliquid dolore reiciendis!
-                        Nihil at eos.
-                      </p>
-                    </div>
-                  </div>
-                </Fade>
-              </div>
-
-              <div className="col-md-4 d-flex ">
+              <Link>
                 <Fade direction="up" delay={400} triggerOnce>
-                  <div className="d-flex ">
+                  <div className="d-flex horizontal-shake">
                     <div className="icon">
-                      <img src={IT_IMG} alt="" />
+                      <img src={AWS} alt="" />
                     </div>
                     <div className="content">
-                      <h3>Best IT Solutions</h3>
+                      <h3>Amzone AWS Partner</h3>
                       <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Odit vitae exercitationem aliquid dolore reiciendis!
-                        Nihil at eos.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
                       </p>
+                      <p className="learn_more">See Certificate</p>
                     </div>
                   </div>
                 </Fade>
+                </Link>
               </div>
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={ISO_27001} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>ISO 27001</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={ISO_9001} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>ISO 9001</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={AWS} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>Outlook Business</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={AWS} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>GSCI</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={AWS} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>Times of India</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={AWS} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>Wcrcfist</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
             </div>
           </div>
         </div>
       </section>
-{/* @@@@@ SECTION - ISO CERTIFICATES END */}
-
-
-
+      {/* @@@@@ SECTION - ISO CERTIFICATES END */}
 
       {/* @@@@@@ SECTION - ISO certifcates start @@@@@@ */}
       {/* <section className="iso_certificate_sec">
@@ -714,7 +852,6 @@ export const Home = () => {
               <div className="text_wrapper">
                 <div className="title_area">
                   <Fade direction="up">
-                    
                     <SubTitle SubTitle="Who we are" />
                   </Fade>
                   <Heading
@@ -732,7 +869,6 @@ export const Home = () => {
                   rise to stardom certainly came closer.
                 </p>
                 <Fade direction="up">
-                  
                   <SlideAnimationButton
                     url="/about"
                     btnName="LEARN MORE ABOUT US"
@@ -760,7 +896,6 @@ export const Home = () => {
             <div className="col-md-9 ipad_full_width">
               <div className="left_planning_banner_content">
                 <Fade direction="up" triggerOnce>
-                  
                   <h3>
                     Full Truckload Planning Reimagined Experts in Security
                     Dynamic Load Planning & Dispatching
@@ -771,10 +906,7 @@ export const Home = () => {
             <div className="col-md-3 button_box ipad_full_width">
               <div className="right_planning_banner_content text-md-end">
                 <Fade direction="up" delay={300} triggerOnce>
-                  
-                  <Link className="lets_meet_us_button">
-                    Let's meet us
-                  </Link>
+                  <Link className="lets_meet_us_button">Let's meet us</Link>
                 </Fade>
               </div>
             </div>
@@ -797,14 +929,12 @@ export const Home = () => {
                 <SubTitle SubTitle="Our Popular Services" />
               </Fade>
               <Fade direction="up" triggerOnce>
-                
                 <Heading
                   heading="Elevating Experiences, Empowering Success"
                   uppercase="text-uppercase"
                 />
               </Fade>
               <Fade direction="up" triggerOnce>
-                
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Quaerat nihil aliquid, architecto assumenda alias vitae
@@ -813,9 +943,7 @@ export const Home = () => {
                 </p>
               </Fade>
               <Fade direction="up" triggerOnce>
-                
                 <div className="our_principal_btn">
-                  
                   <SlideAnimationButton btnName="Read More" />
                 </div>
               </Fade>
@@ -911,11 +1039,9 @@ export const Home = () => {
           <div className="row">
             <div className="top_blog_container text-center">
               <Fade direction="up" triggerOnce>
-                
                 <SubTitle SubTitle="Our Achivements" />
               </Fade>
               <Fade direction="up" delay={100} triggerOnce>
-                
                 <Heading
                   heading="Get every single update article & tips"
                   uppercase="text-uppercase"
@@ -929,15 +1055,12 @@ export const Home = () => {
               <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
-                    
                     <img src={ACHIVEMENT_IMG1} alt="" />
                   </Fade>
                 </div>
                 <Fade direction="up" triggerOnce>
                   <div className="blog_content">
-                    <div className="cust_profile">
-                     
-                    </div>
+                    <div className="cust_profile"></div>
 
                     <div className="socail_icon">
                       <ul className="d-flex justify-content-between list-unstyled">
@@ -952,7 +1075,6 @@ export const Home = () => {
                         Technologies.
                       </h5>
                       <p className="blog_sub_heading">
-                        
                         Sed ut perspiciatis unde omnsiste natus errors
                         voluptatem accusantium doloremque laudatium totae rem
                         aperiam eaque quae abillo
@@ -965,15 +1087,12 @@ export const Home = () => {
               <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
-                    
                     <img src={ACHIVEMENT_IMG2} alt="" />
                   </Fade>
                 </div>
                 <Fade direction="up" delay={200} triggerOnce>
                   <div className="blog_content">
-                    <div className="cust_profile">
-                  
-                    </div>
+                    <div className="cust_profile"></div>
 
                     <div className="socail_icon">
                       <ul className="d-flex justify-content-between list-unstyled">
@@ -982,14 +1101,12 @@ export const Home = () => {
                             <SlCalender /> &nbsp; 18 JAN 2024
                           </div>
                         </li>
-                      
                       </ul>
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
                         Perfect
                       </h5>
                       <p className="blog_sub_heading">
-                        
                         Sed ut perspiciatis unde omnsiste natus errors
                         voluptatem accusantium doloremque laudatium totae rem
                         aperiam eaque quae abillo
@@ -1002,15 +1119,12 @@ export const Home = () => {
               <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
-                    
                     <img src={ACHIVEMENT_IMG3} alt="" />
                   </Fade>
                 </div>
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="blog_content">
-                    <div className="cust_profile">
-                     
-                    </div>
+                    <div className="cust_profile"></div>
                     <div className="socail_icon">
                       <ul className="d-flex justify-content-between list-unstyled">
                         <li>
@@ -1018,14 +1132,12 @@ export const Home = () => {
                             <SlCalender /> &nbsp; 18 JAN 2024
                           </div>
                         </li>
-                        
                       </ul>
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
                         Perfect
                       </h5>
                       <p className="blog_sub_heading">
-                        
                         Sed ut perspiciatis unde omnsiste natus errors
                         voluptatem accusantium doloremque laudatium totae rem
                         aperiam eaque quae abillo
@@ -1335,8 +1447,6 @@ export const Home = () => {
           </div>
         </div>
       </section> */}
-
-      
     </>
   );
 };
