@@ -49,20 +49,20 @@
     text-transform: capitalize;
     display: inline-block;
     // background-image: linear-gradient(89deg, rgb(37 103 143 / 0%) 0%, rgb(50 164 213) 51%, rgb(37 103 143 / 0%) 93%);
-    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
     font-weight: bold;
-    padding-top: 5px;
-    margin-top: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
     &::after{
-          content: "";
+    content: "";
     position: absolute;
     background-image: url("../../Assets/images/arrow_shape2.svg");
     background-size: contain;
     width: 100px;
     height: 100%;
     background-repeat: no-repeat;
-    top: -50px;
-    margin-left: 0px;
+    top: 34px;
+    margin-left: 17px;
     animation: horizontal-shaking 0.9s infinite;
     }
   }
@@ -208,6 +208,12 @@ a:last-child{
       background-repeat: no-repeat;
       right: 5px;
     } */
+  }
+  p:first-child{margin-bottom: 5px;}
+  .learn_more{
+    color: $ball_blue_color;
+    font-weight: 700;
+    font-family: $rajdhani_font;
   }
   a{
     text-decoration: none;

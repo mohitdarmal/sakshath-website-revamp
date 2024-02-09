@@ -104,12 +104,13 @@ export const Home = () => {
           <div className="row">
             <div className="col-md-12 text-center">
               <Fade direction="up" delay={300}>
+               
+                <div className="position-relative">
+                  <h1 className="tagline_heading"> Making IT Looks Easy </h1>
+                </div>
                 <div>
                   {" "}
                   <img src={MILESTONE_TEXT} />{" "}
-                </div>
-                <div className="position-relative">
-                  <h1 className="tagline_heading"> Making IT Looks Easy </h1>
                 </div>
               </Fade>
             </div>
@@ -421,9 +422,7 @@ export const Home = () => {
           <div className="container">
             <div className="row ">
               <div className="text-center">
-                {/* <Fade direction="up" triggerOnce>
-                  <SubTitle SubTitle="Great Journey for it solutions" />
-                </Fade> */}
+
                 <Fade direction="up" delay={20} triggerOnce>
                   <Heading
                     heading="Certification & Accreditation"
@@ -449,6 +448,7 @@ export const Home = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit
                         Odit vitae.
                       </p>
+                      <p className="learn_more">See Certificate</p>
                     </div>
                   </div>
                   </Link>
@@ -468,6 +468,7 @@ export const Home = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Odit vitae.
                       </p>
+                      <p className="learn_more">See Certificate</p>
                     </div>
                   </div>
                 </Fade>
@@ -487,6 +488,7 @@ export const Home = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit
                         Odit vitae.
                       </p>
+                      <p className="learn_more">See Certificate</p>
                     </div>
                   </div>
                 </Fade>
@@ -506,6 +508,7 @@ export const Home = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit
                         Odit vitae.
                       </p>
+                      <p className="learn_more">See Certificate</p>
                     </div>
                   </div>
                 </Fade>
@@ -526,6 +529,7 @@ export const Home = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit
                         Odit vitae.
                       </p>
+                      <p className="learn_more">See Certificate</p>
                     </div>
                   </div>
                 </Fade>
@@ -540,11 +544,72 @@ export const Home = () => {
                       <img src={AWS} alt="" />
                     </div>
                     <div className="content">
-                      <h3>Amzone AWS Partner</h3>
+                      <h3>Outlook Business</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit
                         Odit vitae.
                       </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={AWS} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>GSCI</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={AWS} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>Times of India</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={AWS} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>Wcrcfist</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
                     </div>
                   </div>
                 </Fade>
