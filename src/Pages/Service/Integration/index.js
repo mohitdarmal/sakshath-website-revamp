@@ -55,6 +55,35 @@ export const Integration = () => {
             </section>
             {/* <!-- section one end --> */}
 
+             {/* section four start */}
+           
+    <section className='partner_logo_section'>
+      <div className="container partner_logo_tab">
+      <Swiper
+        slidesPerView={5}
+        spaceBetween={30}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        modules={[Autoplay]}
+        className="mySwiper"
+      >
+        <SwiperSlide><img src={CLIENT_LOGO1} /> </SwiperSlide>
+        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
+        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
+        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
+        <SwiperSlide><img src={CLIENT_LOGO5} /></SwiperSlide>
+        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
+        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
+        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
+      </Swiper>
+      </div>
+    </section>
+
+
+
 
             {/* <!-- section two start --> */}
             <section className="why_need_integration_sec">
@@ -134,34 +163,7 @@ export const Integration = () => {
             {/* <!-- section three end --> */}
 
 
-            {/* section four start */}
            
-    <section className='partner_logo_section'>
-      <div className="container partner_logo_tab">
-      <Swiper
-        slidesPerView={5}
-        spaceBetween={30}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide><img src={CLIENT_LOGO1} /> </SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO5} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-      </Swiper>
-      </div>
-    </section>
-
-
     {/* section navbar start */}
    <ServiceStickMenu />
     {/* section navbar end */}
