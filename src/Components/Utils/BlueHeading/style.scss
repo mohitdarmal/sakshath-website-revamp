@@ -1,0 +1,24 @@
+@import "../../../Assets/saas/Main.scss";
+.heading_title{
+    color: $ball_blue_color;
+        font-size: $heading_title;
+        font-weight: 700;
+        font-family: $rajdhani_font;
+        line-height: 48px;
+}
+
+
+
+@media screen and (max-width:480px){
+    .heading_title{
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:767px){
+    .heading_title{
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
