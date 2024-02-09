@@ -1,7 +1,15 @@
 
+// Banner Slides
+export const SLIDES1 = require("../../Assets/images/slide1.jpg");
+export const SLIDES2 = require("../../Assets/images/slides2.jpg");
+export const SLIDES3 = require("../../Assets/images/slides3.jpg");
 
-
+// Accreditation
 export const WHO_WE_ARE_IMG = require("../../Assets/images/who_we_are.jpg");
+export const TALEND = require("../../Assets/images/talend.png");
+export const AWS = require("../../Assets/images/aws.png");
+
+
 export const TEAM_IMG = require("../../Assets/images/teammember.png");
 export const IT_IMG = require("../../Assets/images/it.png");
 export const SERVICE_IMG = require("../../Assets/images/service.png");
