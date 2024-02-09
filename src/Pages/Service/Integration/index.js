@@ -165,7 +165,9 @@ export const Integration = () => {
 
            
     {/* section navbar start */}
+    
    <ServiceStickMenu />
+   
     {/* section navbar end */}
 
 
@@ -283,6 +285,9 @@ export const Integration = () => {
     {/* section software logo start */}
     <section className='software_logo_section'>
       <div className="container software_logo_tab">
+        <div className="Migration_Services ">
+          <h5 className="migration_heading">Migration Services </h5>
+        </div>
       <Swiper
         slidesPerView={5}
         spaceBetween={30}
