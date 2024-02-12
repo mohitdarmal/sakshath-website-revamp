@@ -29,3 +29,6 @@ export const FLOW_CENTRIC_RPA=require('../../../Assets/images/FLOW_CENTRIC_RPA.p
 export const UI_PATH_RP=require('../../../Assets/images/UI_PATH_RPA.jpg');
 export const POWER_AUTOMATE_RPA=require('../../../Assets/images/POWER_AUTOMATE_RPA.png');
 export const AUTOMATE_RPA=require('../../../Assets/images/AUTOMATE_RPA.png');
+
+// devops
+export const DEVOPS=require('../../../Assets/images/Devops.png')

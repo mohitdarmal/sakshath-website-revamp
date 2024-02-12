@@ -22,7 +22,7 @@
 .automation_right_content_list ul {
   line-height: 40px;
 
-  li {
+  .automation_right_content_list li {
     list-style: none;
   }
 }
@@ -164,10 +164,17 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.rpa_main_heading h1 {
+.rpa_main_heading h3 {
   font-family: $rajdhani_font;
   font-weight: 700;
-  padding-bottom: 15px;
+  font-size: 85px;
+  padding-bottom: 12px;
+  color: $ball_blue_color;
+
+  .rpa_main_heading h4{
+    color: #24688f !important;
+  }
+ 
 }
 
 //RPA oFFERNING  STARTS
@@ -298,6 +305,10 @@
 
 // Devops
 
+
+.devops_boxes{
+  padding-bottom: 20px;
+}
 .devops_section{
   padding-top: 80px;
   padding-bottom: 80px;
@@ -306,4 +317,34 @@
   box-shadow: 0 2px 6px #0000005c;
   padding: 30px;
   border-radius: 5px;
+  min-height: 250px;
 }
+
+
+// .devops_testing-img img{
+//   width: 500px;
+//   height: 350px;
+  
+// }
+
+
+.devops_container{
+  background-image: url("../../../Assets/images/Devops.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+    padding-top: 80px;
+   padding-bottom: 80px;
+}
+.devops_testing_right_content h3{
+  color: #fff;
+  text-align: center;
+
+
+}
+ .devops_testing_right_content p{
+   color: #fff;
+ font-size: 20px;
+     line-height: 30px;
+     text-align: center;
+
+ }

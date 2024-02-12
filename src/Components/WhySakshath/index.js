@@ -11,7 +11,7 @@ const WhySakshath = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="why_sakshath_heading text-center">
-              <Heading heading="Why Sakshath" />
+              <Heading heading="Why Sakshath?" />
             </div>
             <div className="col-md-4 ">
               <div className="boxes d-flex ">
