@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
-import Heading from "../../Components/Utils/Heading";
+import BlueHeading from "../../Components/Utils/BlueHeading";
 import SubTitle from "../../Components/Utils/Title_head";
 import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH} from "./Constant";
 import { BsEnvelope } from "react-icons/bs";
@@ -207,7 +207,7 @@ const Career = () => {
             <div className="col-md-5 empty_block">
              
              <div className="join_our_team_wrapper">
-                <Heading heading ="join our team" uppercase="text-uppercase"/>
+                <BlueHeading bheading ="join our team" uppercase="text-uppercase"/>
 
                 <ul>
                   <li>
@@ -261,7 +261,7 @@ const Career = () => {
            <div className="row">
            {/* <div className="col-md-2"></div> */}
            <div className="col-md-8 careers_at_sakshath_main_box offset-md-2">
-           <Heading heading="careers at sakshath" uppercase="text-uppercase" />
+           <BlueHeading bheading="careers at sakshath" uppercase="text-uppercase" />
            <ul>
             <li className="careers_at_sakshath_checkmark">
             Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.
@@ -489,7 +489,7 @@ const Career = () => {
       <section className="careers_apply_job_section">
         <div className="container">
         <div className="text-center mb-4 pb-md-5">
-           <Heading heading= "Most Popular Jobs" uppercase="text-uppercase" />
+           <BlueHeading bheading= "Most Popular Jobs" uppercase="text-uppercase" />
            <p>Beneath each of these categories, you can find its most popular</p>
            </div>
           <div className="row">
