@@ -12,6 +12,10 @@
     font-size: 17px;
     padding-top: 10px;
 }
+.migration_heading{
+    font-weight: 600;
+    padding-bottom: 20px;
+}
 // .integration_img_left{
 //     padding-left: 100px;
 //     // width: 600px;
@@ -147,21 +151,13 @@
     font-weight: 200;
    
 }
-// .integration_coe h3 {
-//     animation-name: animationSpin;
-//     animation-duration: 4s;
-//     animation-iteration-count:initial; 
-//     animation-delay: 0s;
-// }
+.Migration_Services{
+    color: $ball_blue_color;
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
 
-// @keyframes animationSpin {
-//     from {
-//         margin-left: 10px; 
-//     }
-//     to {
-//         margin-left: 50px;
-//     }
-// }
 
 .why_need_integration_sec{
     padding-top: 58px;
