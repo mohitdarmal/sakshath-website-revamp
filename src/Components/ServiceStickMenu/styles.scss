@@ -1,24 +1,31 @@
 @import "../../Assets/saas/Main.scss";
 
-.service_sticky_menu_container {
+.sticky_menu {
     // padding: 30px;
-    background-color: $light_navy_blue;
+    background-color: $ball_blue_color;
 
     .service_sticky_menu_container {
         height: 60px;
+    }
+    .integration_heading{
+        font-size: 34px;
     }
 
     .bg-body-tertiary {
         background: none;
     }
+    .integration_heading{
+        font-size: 34px;
+    }
 
     a {
         color: #fff !important;
-        font-weight: 700;
+        font-weight: 600;
         display: flex;
+        font-size: 16px;
         justify-content: space-evenly;
         text-decoration: none;
-        margin-left: 100px;
+        
 
     }
 

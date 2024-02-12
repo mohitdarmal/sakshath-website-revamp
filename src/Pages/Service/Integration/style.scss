@@ -12,26 +12,43 @@
     font-size: 17px;
     padding-top: 10px;
 }
-.integration_img_left{
-    padding-left: 100px;
-    // width: 600px;
+.migration_heading{
+    font-weight: 600;
+    padding-bottom: 20px;
 }
-.integration_img_right{
-    padding-top: 50px;
-}
+// .integration_img_left{
+//     padding-left: 100px;
+//     // width: 600px;
+// }
+
+
 .integration_coe_left{
-    padding-top:50px;
-    padding-right:80px;
-}
-.integration_img_left{
-    //  width: 650px;
+    padding-right: 80px;
     
+}
+.overview_sec_left{
+    padding-right: 80px;
 }
 .overview_sec{
     padding-right: 80px;
 }
-.sec_right_img{
-    padding-top: 30px;
+.integration_img_right{
+    width:100%;
+}
+.integration_consulting_img{
+    width:100%;
+}
+.integration_img{
+    width:100%;
+}
+.integration_coe_img{
+    width:100%;
+}
+.integration_img_left{
+    width: 100%;
+}
+.integration_img{
+    width:100%;
 }
 
 .sec_button{
@@ -107,6 +124,16 @@
     font-size: 45px;
 
 }
+.managed_servives_heading{
+    font-family: inherit;
+    font-weight: 300;
+    color:$ball_blue_color;
+    font-size: 45px;
+
+}
+.managed_services_left{
+    padding-left: 80px;
+}
 // .intergration_list ::before{
 //     position:absolute;
 //     content: url('../../Assets/images/check\ icon\ psd.png');
@@ -124,29 +151,28 @@
     font-weight: 200;
    
 }
-// .integration_coe h3 {
-//     animation-name: animationSpin;
-//     animation-duration: 4s;
-//     animation-iteration-count:initial; 
-//     animation-delay: 0s;
-// }
-
-// @keyframes animationSpin {
-//     from {
-//         margin-left: 10px; 
-//     }
-//     to {
-//         margin-left: 50px;
-//     }
-// }
+.Migration_Services{
+    color: $ball_blue_color;
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
 
 
+.why_need_integration_sec{
+    padding-top: 58px;
+}
+.why_need_integration_right{
+    padding-left:80px;
+}
+.body_sec_three_consulting{
+    padding-top: 58px;
 
-.body_sec_three_parent{
-    padding-top: 130px;
+}
+.integration_consulting_left{
     display: flex;
 }
-.managed_sec{
+.managed_services_left{
     padding-right: 40px;
 }
 .intergration_list li{
@@ -157,8 +183,9 @@
 .intergration_list_two{
     padding-right: 10px;
 }
-.integration_right_sec{
-    padding-left: 60px;
+.integration_consulting_right{
+    padding-left: 80px;
+    
 }
 
 .integration_planning_banner{

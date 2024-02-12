@@ -2,14 +2,26 @@ import React from "react";
 import "./style.scss";
 import {
   ANDRIOD_APP,
+  AUTOMATE_RPA,
   AUTOMATION_BG_IMG,
   CHECK_ICON,
+  //   CLIENT_LOGO1,
+  //   CLIENT_LOGO2,
+  //   CLIENT_LOGO3,
+  //   CLIENT_LOGO4,
+  //   CLIENT_LOGO5,
   CROSS_PLATFORM_APP,
+  DEVOPS,
+  FLOW_CENTRIC_RPA,
   IOS_APPLE,
+  POWER_AUTOMATE_RPA,
+  //   POWER_AUTOMATE_RPA4,
+  PRISMS_RPA,
   RPA_ADVISORY,
   RPA_BOT,
   RPA_DELIVERY,
   RPA_PILOT,
+  UI_PATH_RP,
 } from "./Constant";
 import Heading from "../../../Components/Utils/Heading";
 import { HiMiniArrowRightCircle } from "react-icons/hi2";
@@ -22,6 +34,8 @@ import {
 } from "../../../Components/WhySakshath/Constant";
 import Graph from "../../../Components/Graph";
 import { bottom } from "@popperjs/core";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 const Automation = () => {
   return (
@@ -150,7 +164,7 @@ const Automation = () => {
                 <img src={ANDRIOD_APP} alt="" />
               </div>
               <div className="mobile_application_heading">
-                <h5>Android App Development</h5>
+                <h5>Android Development</h5>
               </div>
               {/* </div> */}
             </div>
@@ -160,7 +174,7 @@ const Automation = () => {
                 <img src={IOS_APPLE} alt="" />
               </div>
               <div className="mobile_application_heading">
-                <h5>iOS App Development</h5>
+                <h5>iOS Development</h5>
                 {/* </div> */}
               </div>
             </div>
@@ -169,7 +183,7 @@ const Automation = () => {
                 <img src={CROSS_PLATFORM_APP} alt="" />
               </div>
               <div className="mobile_application_heading">
-                <h5>Cross Platform App Development</h5>
+                <h5>Cross Platform Development</h5>
               </div>
               {/* </div> */}
             </div>
@@ -241,13 +255,13 @@ const Automation = () => {
       {/* why_Sakshath ends*/}
 
       {/* RPA */}
-      <section>
+      <section className="rpa_section">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-4">
               <div className="rpa_main_heading">
-                {/* <Heading heading="RPA (Robotic Process Automation)"/> */}
-                <h1>RPA (Robotic Process Automation)</h1>
+                <Heading heading="RPA" uppercase="text-uppercase"/>
+                <h4> Robotic Process Automation</h4>
 
                 <p>
                   Sakshath RPA as a service is designed to help organizations to
@@ -373,7 +387,7 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="rpa_offering_main_heading text-center mb-4">
-              <Heading heading="rpa offerings" uppercase="uppercase" />
+              <Heading heading="RPA OFFERINGS" uppercase="text-uppercase" />
             </div>
             <div className="col-md-2"></div>
             <div className="col-md-8">
@@ -391,24 +405,23 @@ const Automation = () => {
                         Process & Platform Assessment <br />
                         Business Case Preparation – Functional & Technical.{" "}
                         <br />
-                        Standard Operation Procedure (SOP’s). <br />
-                        Process Validation & Triage.
+                        Standard Operation Procedure (SOP’s).
                       </p>
                     </div>
                   </div>
-                  <div className=" rpa_box_left">
+                  <div className=" rpa_box_left_down">
                     <div className="rpa_imgs">
                       <img src={RPA_PILOT} alt="" />
                     </div>
                     <div className="rpa_heading">
-                      <h4> RPA PILOCT & POC 
-</h4>
+                      <h4> RPA PILOCT & POC</h4>
 
                       <p>
-                      Identification & Shortlisting of the use case <br />
-Proof of concept creation & Prototyping. <br />
-RPA Pilot & Enterprise Automation Roadmap (Creation & Blueprint).
-<br />
+                        Identification & Shortlisting of the use case <br />
+                        Proof of concept creation & Prototyping. <br />
+                        RPA Pilot & Enterprise Automation Roadmap (Creation &
+                        Blueprint).
+                        <br />
                       </p>
                     </div>
                   </div>
@@ -424,15 +437,14 @@ RPA Pilot & Enterprise Automation Roadmap (Creation & Blueprint).
                       <h4>RPA DELIVERY</h4>
 
                       <p>
-                      Automation Scripting. <br />
-Attended, Unattended, Hybrid Bots. <br />
-Robot Training. <br />
-Robot Testing. <br />
-Robot Deployment.
+                        Automation Scripting. <br />
+                        Attended, Unattended, Hybrid Bots. <br />
+                        Robot Training. <br />
+                        Robot Testing.
                       </p>
                     </div>
                   </div>
-                  <div className=" rpa_box_right">
+                  <div className=" rpa_box_right_down">
                     <div className="rpa_imgs">
                       <img src={RPA_BOT} alt="" />
                     </div>
@@ -440,8 +452,8 @@ Robot Deployment.
                       <h4>RPA BOT SUPPORT</h4>
 
                       <p>
-                      Level 1 Support <br />
-L2 2 Support
+                        Level 1 Support <br />
+                        L2 2 Support
                       </p>
                     </div>
                   </div>
@@ -453,9 +465,181 @@ L2 2 Support
         </div>
       </section>
 
+      {/* RPA TOOLS STARTS */}
+
+      <section className="rpa_tools_section">
+        <div className="rpa_tools_main_heading text-center">
+          <Heading heading="Rpa Tools" uppercase="text-uppercase" />
+        </div>
+        <div className="container rpa_tools_logos">
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={20}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            modules={[Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={PRISMS_RPA} />{" "}
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={UI_PATH_RP} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={POWER_AUTOMATE_RPA} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={AUTOMATE_RPA} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={FLOW_CENTRIC_RPA} />
+            </SwiperSlide>
+
+            {/* <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide> */}
+            {/* <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
+            <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
+            <SwiperSlide><img src={CLIENT_LOGO5} /></SwiperSlide>
+            <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
+            <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
+            <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide> */}
+          </Swiper>
+        </div>
+      </section>
+
+      {/* RPA TOOLS ENDS */}
+
       {/* why skashath starts */}
       <WhySakshath />
       {/*  why skashath ends */}
+
+      {/* <section>
+        <div className="container">
+          <div className="snipper"></div>
+        </div>
+      </section> */}
+
+
+<section className="devops_section">
+    <div className="container devops_container">
+        <div className="row ">
+            {/* <div className="col-md-12">
+                <div className="devops_testing-img">
+                <img
+                  src={DEVOPS}
+                  alt=""
+                 
+                />
+                </div>
+            </div> */}
+            <div className="col-md-8 offset-md-2">
+            <div className="devops_testing_right_content">
+            {/* <h2>
+                DevOps/Testing
+                </h2> */}
+                <Heading heading="Devops Testing" uppercase="text-uppercase"/>
+                <p>
+                In transforming Testing to the world of Agile and DevOps, Sakshath has been at the forefront of providing best-in-class, tailored “QA Testing Services”.
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <section className="devops_section">
+        <div className="container">
+          <div className="row">
+          <div className="devops_heading_main text-center">
+          <Heading heading="Devops Service " uppercase="text-uppercase"/>
+          </div>
+   
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul className="devops_ul">
+                  <li>Functional Testing</li>
+                  <li>Unit Testing</li>
+
+                  <li>Integration</li>
+                  <li>UAT Testing</li>
+                  <li>Regression Testing</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Test Automation</li>
+                  <li>Installation & Scripting</li>
+
+                  <li>Integration</li>
+                  <li>Code/Codeless testing</li>
+                  <li>Scalable framework</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
+
+             <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+
+      {/* Why Sakshath starts*/}
+                    <WhySakshath/>
+      {/* why sakshath ends */}
     </>
   );
 };

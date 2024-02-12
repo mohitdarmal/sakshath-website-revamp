@@ -11,7 +11,7 @@ const WhySakshath = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="why_sakshath_heading text-center">
-              <Heading heading="Why Sakshath" />
+              <Heading heading="Why Sakshath?" />
             </div>
             <div className="col-md-4 ">
               <div className="boxes d-flex ">
@@ -36,7 +36,7 @@ const WhySakshath = () => {
                   </p>
                 </div>
                 <div className="why_sakshath_img">
-                  <img src={img2} alt="" />
+                  <img src={img3} alt="" />
                 </div>
               </div>
               <div className="boxes d-flex ">
@@ -64,7 +64,7 @@ const WhySakshath = () => {
             <div className="col-md-4">
               <div className="boxes d-flex ">
                 <div className="why_sakshath_img">
-                  <img src={img2} alt="" />
+                  <img src={img3} alt="" />
                 </div>
                 <div className="why_sakshath_heading_right">
                   <h6>Business Data Catalog</h6>
