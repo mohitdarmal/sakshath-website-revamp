@@ -32,6 +32,9 @@ import {
   SLIDES3,
   TALEND,
   AWS,
+  TIMES_OF_INDIA,
+  CLIQ_LOGO,
+  WCRCINT,
 } from "./Constant";
 
 import { SlCalender } from "react-icons/sl";
@@ -82,7 +85,7 @@ export const Home = () => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     afterChange: (index) => setCurrentSlide(index),
     prevArrow: <MdArrowBackIos />,
@@ -105,12 +108,13 @@ export const Home = () => {
             <div className="col-md-12 text-center">
               <Fade direction="up" delay={300}>
                
-                <div className="position-relative">
-                  <h1 className="tagline_heading"> Making IT Looks Easy </h1>
-                </div>
+                
                 <div>
                   {" "}
                   <img src={MILESTONE_TEXT} />{" "}
+                </div>
+                <div className="position-relative">
+                  <h1 className="tagline_heading"> Making IT Look Easy </h1>
                 </div>
               </Fade>
             </div>
@@ -515,7 +519,8 @@ export const Home = () => {
                 </Link>
               </div>
 
-
+             
+              
               <div className="col-md-4 d-flex ">
               <Link>
                 <Fade direction="up" delay={400} triggerOnce>
@@ -525,6 +530,26 @@ export const Home = () => {
                     </div>
                     <div className="content">
                       <h3>ISO 9001</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={CLIQ_LOGO} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>CLIQ</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit
                         Odit vitae.
@@ -561,27 +586,7 @@ export const Home = () => {
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="d-flex horizontal-shake">
                     <div className="icon">
-                      <img src={AWS} alt="" />
-                    </div>
-                    <div className="content">
-                      <h3>GSCI</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
-                </Link>
-              </div>
-
-              <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={400} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={AWS} alt="" />
+                      <img src={TIMES_OF_INDIA} alt="" />
                     </div>
                     <div className="content">
                       <h3>Times of India</h3>
@@ -601,10 +606,10 @@ export const Home = () => {
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="d-flex horizontal-shake">
                     <div className="icon">
-                      <img src={AWS} alt="" />
+                      <img src={WCRCINT} alt="" />
                     </div>
                     <div className="content">
-                      <h3>Wcrcfist</h3>
+                      <h3>WCRCINT</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit
                         Odit vitae.

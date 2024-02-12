@@ -132,11 +132,11 @@ const Header = () => {
             <div className="offcanvas-body header_menu">
               <ul className="navbar-nav justify-content-center flex-grow-1">
                 {/* home */}
-                <li>
+                {/* <li>
                   <NavLink to="/" className="nav-link">
                     Home
                   </NavLink>
-                </li>
+                </li> */}
 
                 {/* about */}
                 <li className="nav-item dropdown">
@@ -229,6 +229,11 @@ const Header = () => {
                 <li>
                   <NavLink to="/banking-solution" className="nav-link">
                     Banking Solution
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/staffing" className="nav-link">
+                    Staffing
                   </NavLink>
                 </li>
                 <li>
