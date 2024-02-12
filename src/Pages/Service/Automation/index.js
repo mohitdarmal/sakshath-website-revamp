@@ -11,6 +11,7 @@ import {
   //   CLIENT_LOGO4,
   //   CLIENT_LOGO5,
   CROSS_PLATFORM_APP,
+  DEVOPS,
   FLOW_CENTRIC_RPA,
   IOS_APPLE,
   POWER_AUTOMATE_RPA,
@@ -163,7 +164,7 @@ const Automation = () => {
                 <img src={ANDRIOD_APP} alt="" />
               </div>
               <div className="mobile_application_heading">
-                <h5>Android App Development</h5>
+                <h5>Android Development</h5>
               </div>
               {/* </div> */}
             </div>
@@ -173,7 +174,7 @@ const Automation = () => {
                 <img src={IOS_APPLE} alt="" />
               </div>
               <div className="mobile_application_heading">
-                <h5>iOS App Development</h5>
+                <h5>iOS Development</h5>
                 {/* </div> */}
               </div>
             </div>
@@ -182,7 +183,7 @@ const Automation = () => {
                 <img src={CROSS_PLATFORM_APP} alt="" />
               </div>
               <div className="mobile_application_heading">
-                <h5>Cross Platform App Development</h5>
+                <h5>Cross Platform Development</h5>
               </div>
               {/* </div> */}
             </div>
@@ -259,8 +260,8 @@ const Automation = () => {
           <div className="row align-items-center">
             <div className="col-md-4">
               <div className="rpa_main_heading">
-                {/* <Heading heading="RPA (Robotic Process Automation)"/> */}
-                <h1>RPA (Robotic Process Automation)</h1>
+                <Heading heading="RPA" uppercase="text-uppercase"/>
+                <h4> Robotic Process Automation</h4>
 
                 <p>
                   Sakshath RPA as a service is designed to help organizations to
@@ -441,21 +442,6 @@ const Automation = () => {
                         Robot Training. <br />
                         Robot Testing.
                       </p>
-
-                      {/* <ul>
-                        <li>
-                        Automation Scripting.
-                        </li>
-                        <li>
-                        Attended, Unattended, Hybrid Bots.
-                        </li>
-                        <li>
-                        Robot Training. 
-                        </li>
-                        <li>
-                        Robot Testing.
-                        </li>
-                      </ul> */}
                     </div>
                   </div>
                   <div className=" rpa_box_right_down">
@@ -482,13 +468,13 @@ const Automation = () => {
       {/* RPA TOOLS STARTS */}
 
       <section className="rpa_tools_section">
-        <div className="rpa_main_heading text-center">
+        <div className="rpa_tools_main_heading text-center">
           <Heading heading="Rpa Tools" uppercase="text-uppercase" />
         </div>
         <div className="container rpa_tools_logos">
           <Swiper
             slidesPerView={4}
-            spaceBetween={30}
+            spaceBetween={20}
             autoplay={{
               delay: 1500,
               disableOnInteraction: false,
@@ -536,12 +522,43 @@ const Automation = () => {
         </div>
       </section> */}
 
+
+<section className="devops_section">
+    <div className="container devops_container">
+        <div className="row ">
+            {/* <div className="col-md-12">
+                <div className="devops_testing-img">
+                <img
+                  src={DEVOPS}
+                  alt=""
+                 
+                />
+                </div>
+            </div> */}
+            <div className="col-md-8 offset-md-2">
+            <div className="devops_testing_right_content">
+            {/* <h2>
+                DevOps/Testing
+                </h2> */}
+                <Heading heading="Devops Testing" uppercase="text-uppercase"/>
+                <p>
+                In transforming Testing to the world of Agile and DevOps, Sakshath has been at the forefront of providing best-in-class, tailored “QA Testing Services”.
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
       <section className="devops_section">
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
+          <div className="devops_heading_main text-center">
+          <Heading heading="Devops Service " uppercase="text-uppercase"/>
+          </div>
+   
+            <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
-                <ul className="">
+                <ul className="devops_ul">
                   <li>Functional Testing</li>
                   <li>Unit Testing</li>
 
@@ -551,13 +568,10 @@ const Automation = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
                 <ul>
-                  <li>Test Automation
-
-
-</li>
+                  <li>Test Automation</li>
                   <li>Installation & Scripting</li>
 
                   <li>Integration</li>
@@ -566,26 +580,66 @@ const Automation = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
                 <ul>
-                  <li>Microservice & API testing
-</li>
+                  <li>Microservice & API testing</li>
                   <li>UI & Functional testing</li>
 
-                  <li>
-Security, Run Time & Error Detection/Penetration</li>
-                 
+                  <li>Security, Run Time & Error Detection/Penetration</li>
                 </ul>
               </div>
             </div>
-            <div className="col-md-3"></div>
-            <div className="col-md-3"></div>
-            <div className="col-md-3"></div>
-            <div className="col-md-3"></div>
+
+             <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
+
+
+      {/* Why Sakshath starts*/}
+                    <WhySakshath/>
+      {/* why sakshath ends */}
     </>
   );
 };
