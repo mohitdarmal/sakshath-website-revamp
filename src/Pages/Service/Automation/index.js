@@ -36,14 +36,22 @@ import Graph from "../../../Components/Graph";
 import { bottom } from "@popperjs/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import BreadCumb from "../../../Components/Breadcumb"
+import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
 
 const Automation = () => {
   return (
     <>
+
+<BreadCumb
+        imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
+        title="Automation"
+      />
+
       {/* automation starts */}
       <section className="automation">
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-md-6">
               <div className="cloud_bg_img">
                 <img
@@ -63,13 +71,25 @@ const Automation = () => {
                   accusamus dolorum.
                 </p>
               </div>
-              <div className="automation_right_content_list">
+
+<div className="row">
+<div className="col-md-6">
+<div className="automation_right_content_list">
                 <ul>
-                  <li> Open API business strategy for monetization of APIs</li>
+                 
 
                   <li> Hybrid Integration</li>
                   <li> Services- Based Integration</li>
                   <li> API Gateway/Manager</li>
+                  <li> Open API business strategy for monetization of APIs</li>
+                </ul>
+              </div>
+</div>
+
+<div className="col-md-6">
+<div className="automation_right_content_list">
+                <ul>
+                
                   <li>Social Integration</li>
                   <li> Marketplace Integration</li>
 
@@ -78,6 +98,11 @@ const Automation = () => {
                   <li> Pluggable Adaptors</li>
                 </ul>
               </div>
+</div>
+
+</div>
+
+           
             </div>
           </div>
         </div>
@@ -89,7 +114,10 @@ const Automation = () => {
             <div className="col-md-5 ">
               <div className="pillar_heading">
                 {/* <Heading heading="4  Pillars of sakshath" /> */}
-                <h1>4 PILLARS OF SAKSHATH</h1>
+                <Heading
+                heading="4 PILLARS OF SAKSHATH"
+                uppercase="text-uppercase"
+              /> 
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
                   consequatur? Distinctio delectus.
@@ -108,7 +136,7 @@ const Automation = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 mt-3">
+                <div className="col-md-6">
                   <div className="pillars_box">
                     <div className="pillars_box_img">
                       <img src={pillar_microservice} alt="" />
@@ -129,7 +157,7 @@ const Automation = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 mt-3">
+                <div className="col-md-6">
                   <div className="pillars_box">
                     <div className="pillars_box_img">
                       <img src={pillar_automation} alt="" />
