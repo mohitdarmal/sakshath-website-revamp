@@ -215,7 +215,7 @@ const Header = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/management-service" className="dropdown-item">
+                      <NavLink to="/managed-services" className="dropdown-item">
                         Managed Services
                       </NavLink>
                     </li>

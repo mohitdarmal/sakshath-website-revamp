@@ -22,20 +22,21 @@ import ScrollUpJounery from "./Pages/About/ScrollUpJounery";
 import Integration from "./Pages/Service/Integration";
 import Automation from "./Pages/Service/Automation";
 import Erp from "./Pages/Service/Erp";
+import ManagedServices from "./Pages/Service/ManagedServices";
+import Analytics from "./Pages/Service/Analytics";
 
 const App = () => {
-  
-// const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-// useEffect(() => {
-//   window.onload = () => {
-//     setLoading(false);
-//   };
-// }, []);
+  // useEffect(() => {
+  //   window.onload = () => {
+  //     setLoading(false);
+  //   };
+  // }, []);
 
   return (
     <>
-    {/* {loading ?
+      {/* {loading ?
     <div>  
     <TailSpin
  
@@ -56,7 +57,7 @@ const App = () => {
   
       </>
   } */}
-   <Helmet>
+      <Helmet>
         <title>Home - Sakshath Technologies</title>
         <meta name="description" content="Something SEO" />
       </Helmet>
@@ -65,7 +66,10 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
-          <Route path="/application-development" element={<ApplicationDevelopment />} />
+          <Route
+            path="/application-development"
+            element={<ApplicationDevelopment />}
+          />
           <Route path="/automation" element={<Automation />} />
           <Route path="/erp" element={<Erp />} />
           <Route path="/banking-solution" element={<BankingSolution />} />
@@ -73,16 +77,17 @@ const App = () => {
           <Route path="/contact-us" element={<Contactus />} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blogs/:id" element={<BlogDetail />} />
-          <Route path="/scrollup" element={<ScrollUpJounery/>}/>
+          <Route path="/scrollup" element={<ScrollUpJounery />} />
 
-          <Route path="/company-journey" element={<OurJounery/>}/>
-          <Route path="/our-achievements" element={<OurAchivements/>}/>
-          <Route path="/integration" element={<Integration/>}/>
+          <Route path="/company-journey" element={<OurJounery />} />
+          <Route path="/our-achievements" element={<OurAchivements />} />
+          <Route path="/integration" element={<Integration />} />
+          <Route path="/managed-services" element={<ManagedServices />} />
+          <Route path="/analytics" element={<Analytics />} />
           {/* <Route path="/blogs/:id" element={<BlogDetail />} /> */}
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-      
     </>
   );
 };

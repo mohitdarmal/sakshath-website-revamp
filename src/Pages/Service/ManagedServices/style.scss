@@ -1,0 +1,72 @@
+@import "../../../Assets/saas/Main.scss";
+
+.overview_managed_services_section{
+    
+    .managed_services_img{
+        width: 100%;
+    }
+}
+
+
+
+///@@@@@@@@@@@@@@@@@@@ managed flowchart css starts @@@@@@@@@@@@@@@@@@@@@@@@
+
+.managed_service_flowchart_sec{
+    margin-bottom: 80px;
+    margin-top: 80px;
+    
+
+    // .managed_service_box{
+        
+    // }
+    
+    .bg1{
+        background-color: #2381A9;
+    }
+    .bg2{
+        background-color:#268EBA;
+    }
+    .bg3{
+        background-color: #2A9BCB;
+    }
+    .bg4{
+        background-color: #34A5D5;
+    }
+    .bg5{
+        background-color: #45ACD9;
+    }
+    .bg6{
+        background-color: #56B4DC;
+    }
+
+    .managed_service_content{
+        text-align: center;
+        padding-top: 40px;
+    padding-bottom: 40px ;
+    }
+
+    p{
+        background-color: #ffff;
+        border-radius: 50%;
+        text-align: center;
+        
+    display: inline-block;
+    line-height: 50px;
+    width: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #2381A9;
+    font-family: $rajdhani_font;
+    }
+    h5{
+        font-family: $rajdhani_font;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+        
+         
+
+
+    }
+}
+///@@@@@@@@@@@@@@@@@@@ managed flowchart css ends @@@@@@@@@@@@@@@@@@@@@@@@
