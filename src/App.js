@@ -21,6 +21,7 @@ import OurAchivements from "./Pages/About/Our_Achivements";
 import ScrollUpJounery from "./Pages/About/ScrollUpJounery";
 import Integration from "./Pages/Service/Integration";
 import Automation from "./Pages/Service/Automation";
+import Erp from "./Pages/Service/Erp";
 
 const App = () => {
   
@@ -66,6 +67,7 @@ const App = () => {
           <Route path="/service" element={<Service />} />
           <Route path="/application-development" element={<ApplicationDevelopment />} />
           <Route path="/automation" element={<Automation />} />
+          <Route path="/erp" element={<Erp />} />
           <Route path="/banking-solution" element={<BankingSolution />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contact-us" element={<Contactus />} />

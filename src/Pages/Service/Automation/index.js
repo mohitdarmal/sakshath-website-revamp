@@ -64,8 +64,26 @@ const Automation = () => {
                 </p>
               </div>
               <div className="automation_right_content_list">
-                <ul>
-                  <li> Open API business strategy for monetization of APIs</li>
+                <ul className="row">
+                  <div className="col-md-6">
+                    <li> Hybrid Integration.</li>
+                    <li> Services- Based Integration.</li>
+                    <li> API Gateway/Manager.</li>
+                    <li>Social Integration.</li>
+                    <li>
+                      {" "}
+                      Open API business strategy for monetization of APIs.
+                    </li>
+                  </div>
+                  <div className="col-md-6">
+                    <li> Marketplace Integration.</li>
+
+                    <li> In-Built Connectors.</li>
+                    <li> Enterprise Service Bus (ESB).</li>
+                    <li> Pluggable Adaptors.</li>
+                  </div>
+
+                  {/* <li> Open API business strategy for monetization of APIs</li>
 
                   <li> Hybrid Integration</li>
                   <li> Services- Based Integration</li>
@@ -75,7 +93,7 @@ const Automation = () => {
 
                   <li> In-Built Connectors</li>
                   <li> Enterprise Service Bus (ESB)</li>
-                  <li> Pluggable Adaptors</li>
+                  <li> Pluggable Adaptors</li> */}
                 </ul>
               </div>
             </div>
@@ -235,10 +253,10 @@ const Automation = () => {
                   </p>
                 </ul>
 
-                <li>In-Built Connectors</li>
+                <li>In-Built Connectors, Enterprise Service Bus (ESB), Pluggable Adaptors. </li>
 
-                <li>Enterprise Service Bus (ESB)</li>
-                <li>Pluggable Adaptors</li>
+                {/* <li>Enterprise Service Bus (ESB)</li>
+                <li>Pluggable Adaptors</li> */}
               </ul>
             </div>
           </div>
@@ -260,7 +278,7 @@ const Automation = () => {
           <div className="row align-items-center">
             <div className="col-md-4">
               <div className="rpa_main_heading">
-                <Heading heading="RPA" uppercase="text-uppercase"/>
+                <Heading heading="RPA" uppercase="text-uppercase" />
                 <h4> Robotic Process Automation</h4>
 
                 <p>
@@ -522,10 +540,9 @@ const Automation = () => {
         </div>
       </section> */}
 
-
-<section className="devops_section">
-    <div className="container devops_container">
-        <div className="row ">
+      <section className="devops_section">
+        <div className="container devops_container">
+          <div className="row ">
             {/* <div className="col-md-12">
                 <div className="devops_testing-img">
                 <img
@@ -536,26 +553,28 @@ const Automation = () => {
                 </div>
             </div> */}
             <div className="col-md-8 offset-md-2">
-            <div className="devops_testing_right_content">
-            {/* <h2>
+              <div className="devops_testing_right_content">
+                {/* <h2>
                 DevOps/Testing
                 </h2> */}
-                <Heading heading="Devops Testing" uppercase="text-uppercase"/>
+                <Heading heading="Devops Testing" uppercase="text-uppercase" />
                 <p>
-                In transforming Testing to the world of Agile and DevOps, Sakshath has been at the forefront of providing best-in-class, tailored “QA Testing Services”.
+                  In transforming Testing to the world of Agile and DevOps,
+                  Sakshath has been at the forefront of providing best-in-class,
+                  tailored “QA Testing Services”.
                 </p>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
       <section className="devops_section">
         <div className="container">
           <div className="row">
-          <div className="devops_heading_main text-center">
-          <Heading heading="Devops Service " uppercase="text-uppercase"/>
-          </div>
-   
+            <div className="devops_heading_main text-center">
+              <Heading heading="Devops Service " uppercase="text-uppercase" />
+            </div>
+
             <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
                 <ul className="devops_ul">
@@ -591,16 +610,6 @@ const Automation = () => {
               </div>
             </div>
 
-             <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <ul>
-                  <li>Microservice & API testing</li>
-                  <li>UI & Functional testing</li>
-
-                  <li>Security, Run Time & Error Detection/Penetration</li>
-                </ul>
-              </div>
-            </div>
             <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
                 <ul>
@@ -631,14 +640,22 @@ const Automation = () => {
                 </ul>
               </div>
             </div>
-            
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-
       {/* Why Sakshath starts*/}
-                    <WhySakshath/>
+      <WhySakshath />
       {/* why sakshath ends */}
     </>
   );

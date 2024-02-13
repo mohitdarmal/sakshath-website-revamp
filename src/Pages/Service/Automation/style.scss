@@ -10,7 +10,7 @@
   padding-bottom: 80px;
 }
 
-.automation_right_content_list ::before {
+.automation_right_content_list ul ::before {
   position: absolute;
   content: "";
   background-image: url("../../../Assets/images/check-mark\ \(2\).png");
@@ -102,6 +102,10 @@
   padding-bottom: 80px;
 }
 
+// .mobile_main_heading h3{
+//   color: $ball_blue_color;
+// }
+
 .andriod_app {
   background: #f2f2f2;
   padding: 40px 20px;
@@ -141,6 +145,9 @@
 .application_main_heading {
   position: relative;
   content: "";
+//  h3{
+//   color: $ball_blue_color;
+//  }
 }
 
 .application_integration ul {
@@ -150,10 +157,11 @@
 .application_integration li::before {
   position: absolute;
   content: "";
-  background-image: url("../../../Assets/images/application_integration_list_rightarrow.png");
+  // background-image: url("../../../Assets/images/application_integration_list_rightarrow.png");
+  background-image: url('../../../Assets/images/right-arrow.png');
   background-size: contain;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   margin-left: -30px;
   margin-top: 10px;
 }

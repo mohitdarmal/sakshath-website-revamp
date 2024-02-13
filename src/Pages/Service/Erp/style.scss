@@ -1,0 +1,79 @@
+@import '../../../Assets/saas/Main.scss';
+
+.epicor_section{
+    padding-top: 80px;
+    // padding-bottom: 80px;
+}
+
+.epicor_overview_img {
+    img{
+        width: 750px;
+    }
+}
+// .erpicor_subtitle
+
+
+//     h4{
+//     font-size: 17px !important;
+//     color: black;
+//      position: relative;
+//      content: "";
+// }
+
+
+// .epicor_content{
+//     position: relative;
+//     content: "";
+//     padding: 10px;
+// }
+.epicor_list ul{
+    padding-top:20px;
+    padding-left: 0px;
+    position: relative;
+    content: "";
+
+    li{
+        padding-bottom: 10px;
+    }
+}
+
+.epicor_list li::before{
+position: absolute;
+content: "";
+background-image: url('../../../Assets/images/application_integration_list_rightarrow.png');
+width: 20px;
+height: 20px;
+background-size: contain;
+margin-left: -30px;
+}
+
+
+
+// syspro
+
+.syspro_img img{
+    width: 775px;
+    margin-left: -180px;
+}
+.syspro_content {
+    margin-left: 20px;
+}
+
+
+.industry_top{
+    background: #32a4d5;
+    /* display: inline; */
+    width: 82px;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    padding: 10px 10px;
+    height: 82px;
+    line-height: 82px;
+}
+
+.industry_center{
+    clip-path: polygon(75% 0%, 100% 51%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
+    background: $ball_blue_color;
+    height: 20px;
+}

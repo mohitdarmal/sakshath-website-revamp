@@ -7,7 +7,7 @@ import SubTitle from "../../../Components/Utils/Title_head";
 import { Fade } from "react-awesome-reveal";
 // import Contact from "../../../Components/Contact/Contact";
 import BreadCumb from "../../../Components/Breadcumb";
- import TimelineObserver from "react-timeline-animation";
+import TimelineObserver from "react-timeline-animation";
 
 const OurJounery = () => {
   const items = [
@@ -41,12 +41,12 @@ const OurJounery = () => {
     },
     {
       title: "EXPANSION 2020-2023",
-      cardTitle: "EXPANSION 2020-2022",
+      cardTitle: "EXPANSION 2020-2023",
 
       cardDetailedText:
         "We understood our client's expectations and worked tirelessly on what they wanted each time. Targeting several industries within and outside India such as Healthcare, Software, Banking, NGO, Hospitality, Retail, Finance, Food and Beverages etc.",
     },
-   
+
     {
       title: "ROAD AHEAD 2024",
       cardTitle: "ROAD AHEAD 2024",
@@ -111,16 +111,12 @@ const OurJounery = () => {
             <div className="col-md-12 ">
               <Heading heading="Inception to Fruition" uppercase="uppercase" />
 
-              <div  style={{ overflowY: "hidden" }}>
-
-            
-                <Chrono  
+              <div style={{ overflowY: "hidden" }}>
+                <Chrono
                   items={items}
                   mode="VERTICAL_ALTERNATING"
                   className="text"
-        
                 />
-
               </div>
             </div>
           </div>
