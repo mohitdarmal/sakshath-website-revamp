@@ -6,7 +6,7 @@ const index = (props) => {
   return (
     <>
       <section
-      className="breadcumb_sec"
+      className="breadcumb_sec "
         style={{
           backgroundImage: `url(${props.imgUrl})`,
         }}
