@@ -21,6 +21,8 @@ import OurAchivements from "./Pages/About/Our_Achivements";
 import ScrollUpJounery from "./Pages/About/ScrollUpJounery";
 import Integration from "./Pages/Service/Integration";
 import Automation from "./Pages/Service/Automation";
+import ManagedServices from "./Pages/Service/ManagedServices";
+import Analytics from "./Pages/Service/Analytics";
 
 const App = () => {
   
@@ -76,6 +78,8 @@ const App = () => {
           <Route path="/company-journey" element={<OurJounery/>}/>
           <Route path="/our-achievements" element={<OurAchivements/>}/>
           <Route path="/integration" element={<Integration/>}/>
+          <Route path="/managed-services" element={<ManagedServices/>}/>
+          <Route path="/analytics" element={<Analytics/>}/>
           {/* <Route path="/blogs/:id" element={<BlogDetail />} /> */}
           <Route path="*" element={<NotFound />} />
         </Route>
