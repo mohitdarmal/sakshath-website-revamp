@@ -1,11 +1,23 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./style.scss";
-import { INTEGRATION_SECTION_ONE_IMG, INTEGRATION_SECTION_THREE_IMG, SECTION_THREE_ICON_ONE, SECTION_THREE_ICON_TWO, SECTION_THREE_ICON_THREE } from "./Constant";
+import {
+  INTEGRATION_SECTION_ONE_IMG,
+  INTEGRATION_SECTION_THREE_IMG,
+  SECTION_THREE_ICON_ONE,
+  SECTION_THREE_ICON_TWO,
+  SECTION_THREE_ICON_THREE,
+} from "./Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import ServiceStickMenu from "../../../Components/ServiceStickMenu";
-import { CLIENT_LOGO1, CLIENT_LOGO2, CLIENT_LOGO3, CLIENT_LOGO4, CLIENT_LOGO5 } from "../../../Components/ClientLogo/Constant";
+import {
+  CLIENT_LOGO1,
+  CLIENT_LOGO2,
+  CLIENT_LOGO3,
+  CLIENT_LOGO4,
+  CLIENT_LOGO5,
+} from "../../../Components/ClientLogo/Constant";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
@@ -13,105 +25,143 @@ import BrouchurePopup from "../../../Components/BoruchurePopup";
 import pdfUrl from "../../../Assets/pdf/dummy.pdf";
 import { FaFilePdf } from "react-icons/fa";
 //import {SECTION_VECTOR} from "../../Assets/images/check icon psd.png";
-import {SOFTWARE_LOGO_1,SOFTWARE_LOGO_2,SOFTWARE_LOGO_3,SOFTWARE_LOGO_4,SOFTWARE_LOGO_5,SOFTWARE_LOGO_6,SOFTWARE_LOGO_7,SOFTWARE_LOGO_8,SOFTWARE_LOGO_9,SOFTWARE_LOGO_10,SOFTWARE_LOGO_11,SECTION_VECTOR} from "./Constant";
+import {
+  SOFTWARE_LOGO_1,
+  SOFTWARE_LOGO_2,
+  SOFTWARE_LOGO_3,
+  SOFTWARE_LOGO_4,
+  SOFTWARE_LOGO_5,
+  SOFTWARE_LOGO_6,
+  SOFTWARE_LOGO_7,
+  SOFTWARE_LOGO_8,
+  SOFTWARE_LOGO_9,
+  SOFTWARE_LOGO_10,
+  SOFTWARE_LOGO_11,
+  SECTION_VECTOR,
+} from "./Constant";
 import PdfViewer from "../../../Components/PdfViewer";
 import Heading from "../../../Components/Utils/Heading";
-import  BreadCumb  from "../../../Components/Breadcumb";
+import BreadCumb from "../../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
 export const Integration = () => {
-    const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-    const handleCloseModal = () => {
-      setShowModal(false);
-    };
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
-    return (
-        <>
-
+  return (
+    <>
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
+        className="img-fluid"
         title="Integration"
       />
-            {/* <!-- section one start --> */}
-            <section className="overview_sec">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-md-6">
-                          <div className="overview_sec_left">
-                            <h1 className="sec_heading">Overview</h1>
-                            <p className="sec_para">Data integration is the practice of consolidating data from disparate sources into a single dataset to provide users with consistent access to and delivery of data across all business processes.</p>
-                            <SlideAnimationButton btnName="TALK TO SALES" />
+      {/* <!-- section one start --> */}
+      <section className="overview_sec">
+        <div className="container">
+          <div className="row align-items-center">
+            
+            <div className="col-md-6">
+              <div className="overview_sec_left">
+              <Heading
+                heading="Overview"
+                uppercase="text-uppercase"
+              />
+                <p className="sec_para">
+                  Data integration is the practice of consolidating data from
+                  disparate sources into a single dataset to provide users with
+                  consistent access to and delivery of data across all business
+                  processes.
+                </p>
+                <SlideAnimationButton btnName="TALK TO SALES" />
+              </div>
+            </div>
 
-                        </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="overview_sec_right_img">
-                                <img className="img-fluid integration_img_left" src={INTEGRATION_SECTION_ONE_IMG} />
-                            </div>
+            <div className="col-md-6">
+              <div className="overview_sec_right_img">
+                <img
+                  className="img-fluid integration_img_left"
+                  src={INTEGRATION_SECTION_ONE_IMG}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <!-- section one end --> */}
 
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* <!-- section one end --> */}
+      {/* section four start */}
 
-             {/* section four start */}
-           
-    <section className='partner_logo_section'>
-      <div className="container partner_logo_tab">
-      <Swiper
-        slidesPerView={5}
-        spaceBetween={30}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide><img src={CLIENT_LOGO1} /> </SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO5} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-      </Swiper>
-      </div>
-    </section>
+      <section className="partner_logo_section">
+        <div className="container partner_logo_tab">
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={10}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            // modules={[Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={CLIENT_LOGO1}  />{" "}
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO2}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO3}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO4}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO5}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO2}  />
+            </SwiperSlide>
+            
+          </Swiper>
+        </div>
+      </section>
 
-
-
-
-            {/* <!-- section two start --> */}
-            <section className="why_need_integration_sec">
-                <div className="container">
-                    <div className="row align-items-center">
-
-                        <div class="col-md-6  why_need_integration_left">
-                            <div>
-                                <img className="img-fluid integration_img_right" src={INTEGRATION_SECTION_ONE_IMG} />
-                            </div>
-
-                        </div>
-                        <div className="col-md-6 why_need_integration_right">
-                            <h1 className="sec_heading">Why do you need integration?</h1>
-                            <p className="sec_para">Inhouse application integration: application to application – inhouse (running on cloud or on-premises)
-                            Business application integration to software as a service provider using SOAP or REST
-                            Business 2 Business application integration: connecting to third-party or partner 
-                            Integration of application to IoT Devices </p>
-                            {/* <SlideAnimationButton btnName="TALK TO SALES" /> */}
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* <!-- section two end -->
+      {/* <!-- section two start --> */}
+      <section className="why_need_integration_sec">
+        <div className="container">
+          <div className="row align-items-center">
+            <div class="col-md-6  why_need_integration_left">
+              <div>
+                <img
+                  className="img-fluid integration_img_right"
+                  src={INTEGRATION_SECTION_ONE_IMG}
+                />
+              </div>
+            </div>
+            <div className="col-md-6 why_need_integration_right">
+              <Heading
+                heading="Why do you need integration?"
+                uppercase="text-uppercase"
+              />
+              <p className="sec_para">
+                Inhouse application integration: application to application –
+                inhouse (running on cloud or on-premises) Business application
+                integration to software as a service provider using SOAP or REST
+                Business 2 Business application integration: connecting to
+                third-party or partner Integration of application to IoT Devices{" "}
+              </p>
+              {/* <SlideAnimationButton btnName="TALK TO SALES" /> */}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <!-- section two end -->
 
             <!-- section three start--> */}
-            {/* <section className="body_sec_two">
+      {/* <section className="body_sec_two">
                 <div className="container">
                     <div className="row">
                         <div class="col-md-6">
@@ -160,49 +210,50 @@ export const Integration = () => {
                 </div>
             </section> */}
 
-            {/* <!-- section three end --> */}
+      {/* <!-- section three end --> */}
 
+      {/* section navbar start */}
 
-           
-    {/* section navbar start */}
-    
-   <ServiceStickMenu />
-   
-    {/* section navbar end */}
+      <ServiceStickMenu />
 
+      {/* section navbar end */}
 
-
-
-    {/* section five start */}
-    <section className="integartion_coe_sec">
+      {/* section five start */}
+      <section className="integartion_coe_sec">
         <div className="container">
-            <div className="row align-items-center">
-                {/* <div className="body_sec_three_parent"> */}
-                <div className="col-md-6 integration_coe_left">
-                <h3 className="integration_coe">Integration COE</h3>
-                    
-                    <p>End the days of emailing spreadsheets around and reviewing stale data in meetings.</p>
-                    <ul className="intergration_list">
-                    <li>CERTIFIED RESOURCES</li>
-                        <li>RESUABLE ASSETS</li>
-                        <li>INDUSTRY STANDARD BEST PRACTISES</li>
-                        <li>QUALITY ASSURANCE </li>   
-                    </ul>
-                </div>
-                <div className="col-md-6 integration_coe_right">
-                <img className="img-fluid integration_img" src={INTEGRATION_SECTION_ONE_IMG} />
+          <div className="row align-items-center">
+            {/* <div className="body_sec_three_parent"> */}
+            <div className="col-md-6 integration_coe_left">
+              <Heading
+                heading="Integration COE"
+                uppercase="text-uppercase"
+              />
 
-                </div>
-                {/* </div> */}
+              <p>
+                End the days of emailing spreadsheets around and reviewing stale
+                data in meetings.
+              </p>
+              <ul className="intergration_list">
+                <li>CERTIFIED RESOURCES</li>
+                <li>RESUABLE ASSETS</li>
+                <li>INDUSTRY STANDARD BEST PRACTISES</li>
+                <li>QUALITY ASSURANCE </li>
+              </ul>
             </div>
+            <div className="col-md-6 integration_coe_right">
+              <img
+                className="img-fluid integration_img"
+                src={INTEGRATION_SECTION_ONE_IMG}
+              />
+            </div>
+            {/* </div> */}
+          </div>
         </div>
+      </section>
+      {/* section five end */}
 
-    </section>
-    {/* section five end */}
-
-    
-    {/* integration planning banner start */}
-    <section className="integration_planning_banner">
+      {/* integration planning banner start */}
+      <section className="integration_planning_banner">
         <div className="container">
           <div className="row integration_planning_banner_content_box align-items-center">
             <div className="col-md-9 ipad_full_width">
@@ -231,129 +282,172 @@ export const Integration = () => {
       </section>
       {/*  integartion planning banner end*/}
 
-    {/* section six start */}
-    <section className="integration_consulting_sec">
+      {/* section six start */}
+      <section className="integration_consulting_sec">
         <div className="container">
-            <div className="row align-items-center">
-                <div className="col-md-6">
-                <div className="integration_consulting_left">
-                <img className="img-fluid integration_consulting_img" src={INTEGRATION_SECTION_ONE_IMG} />
-                </div>
-                </div>
-                <div className="col-md-6">
-                <div className="integration_consulting_right">
-                <h3 className="integration_coe">Integration Consulting </h3>
-                    <p>End the days of emailing spreadsheets around and reviewing stale data in meetings.</p>
-
-                    <div className="row align-items-center">
-                      <div className="col-md-6">
-                      <div className="intergration_list">
-                        
-                        <ul >
-                        <li>Service Based Integration</li>
-                            <li>API Gateway/Manager</li>
-                            <li>Market Place Integration</li>
-                            <li>Inbuild connectors/ custom built connectors or adapters</li>
-                                                  </ul>
-                        
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                      <div className="intergration_list">
-                        
-                        <ul >
-                        
-                            
-                            <li>Social Integration</li>
-                            <li>Pluggable Adapters</li>
-                            <li>Enterprise Service Bus Integration</li>
-                           
-                        </ul>
-                        
-                        </div>
-                      </div>
-                    </div>
-                    
-                </div>
-                </div>
-              
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div className="integration_consulting_left">
+                <img
+                  className="img-fluid integration_consulting_img"
+                  src={INTEGRATION_SECTION_ONE_IMG}
+                />
+              </div>
             </div>
-        </div>
-
-    </section>
-
-    {/* section software logo start */}
-    <section className='software_logo_section'>
-      <div className="container software_logo_tab">
-        <div className="Migration_Services ">
-          <h5 className="migration_heading">Migration Services </h5>
-        </div>
-      <Swiper
-        slidesPerView={5}
-        spaceBetween={30}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide><img src={SOFTWARE_LOGO_1} /> </SwiperSlide>
-        <SwiperSlide><img src={SOFTWARE_LOGO_2} /></SwiperSlide>
-        <SwiperSlide><img src={SOFTWARE_LOGO_3} /></SwiperSlide>
-        <SwiperSlide><img src={SOFTWARE_LOGO_4} /></SwiperSlide> 
-        <SwiperSlide><img src={SOFTWARE_LOGO_5} /></SwiperSlide>
-        <SwiperSlide><img src={SOFTWARE_LOGO_6} /></SwiperSlide>
-        <SwiperSlide><img src={SOFTWARE_LOGO_7} /></SwiperSlide>
-        <SwiperSlide><img src={SOFTWARE_LOGO_8} /></SwiperSlide>
-        <SwiperSlide><img src={SOFTWARE_LOGO_9} /></SwiperSlide>
-        <SwiperSlide><img src={SOFTWARE_LOGO_10} /></SwiperSlide>
-        <SwiperSlide><img src={SOFTWARE_LOGO_11} /></SwiperSlide>
-      </Swiper>
-      </div>
-    </section>
-
-
-
-     {/* section software logo end */}
-
-     {/* managed service start */}
-     <section className="managed_services_sec">
-        <div className="container">
-            <div className="row align-items-center">
-                {/* <div className="body_sec_three_parent"> */}
-                <div className="col-md-6 managed_services_left">
-                    <h3 className="managed_servives_heading">Managed services</h3>
-                    <p>End the days of emailing spreadsheets around and reviewing stale data in meetings.</p>
-                    <ul className="intergration_list">
-                        <li>Request Validation – validation of the request (whitelisted/blacklisted)</li>
-                        <li>Authentication and Authorization (credential verification)</li>
-                        <li>Service Discovery Locate the appropriate backend service</li>
-                        <li>Protocol Translation – translation of protocol (e.g  gRPC request to REST or other)</li> 
-                        <li>Dynamic Routing (routing to the appropriate service request or LB)</li>  
-                    </ul>
-                </div>
-                <div className="col-md-6 managed_services_right">
-                <img className="img-fluid integration_img" src={INTEGRATION_SECTION_ONE_IMG} />
-
-                </div>
-                {/* </div> */}
-            </div>
-        </div>
-
-    </section>
-     {/*  managed service end*/}
-
-    {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}
-    <section className="brouchure_sec">
-        <div className="container">
-          <div className="text-center mb-3 pb-md-3" >
-        <Heading
-                heading="Brouchure"
+            <div className="col-md-6">
+              <div className="integration_consulting_right">
+                <Heading
+                heading="Integration Consulting "
                 uppercase="text-uppercase"
               />
+                
+                <p>
+                  End the days of emailing spreadsheets around and reviewing
+                  stale data in meetings.
+                </p>
+
+                <div className="row ">
+                  <div className="col-md-6">
+                    <div className="intergration_list">
+                      <ul>
+                        <li>Service Based Integration</li>
+                        <li>API Gateway/Manager</li>
+                        <li>Market Place Integration</li>
+                        <li>
+                          Inbuild connectors/ custom built connectors or
+                          adapters
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="intergration_list">
+                      <ul>
+                        <li>Social Integration</li>
+                        <li>Pluggable Adapters</li>
+                        <li>Enterprise Service Bus Integration</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section software logo start */}
+      <section className="software_logo_section">
+        <div className="container software_logo_tab">
+          <div className="Migration_Services ">
+            <Heading
+                heading="Migration Services "
+                uppercase="text-uppercase"
+              />
+          </div>
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={30}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            // modules={[Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_1} />{" "}
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_3} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_4} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_5} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_6} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_7} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_8} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_9} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_10} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={SOFTWARE_LOGO_11} />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+
+      {/* section software logo end */}
+
+      {/* managed service start */}
+      <section className="managed_services_sec">
+        <div className="container">
+          <div className="row align-items-center">
+            {/* <div className="body_sec_three_parent"> */}
+            <div className="col-md-6 managed_services_left">
+              <Heading
+                heading="Managed services"
+                uppercase="text-uppercase"
+              />
+              <p>
+                End the days of emailing spreadsheets around and reviewing stale
+                data in meetings.
+              </p>
+              <ul className="intergration_list">
+                <li>
+                  Request Validation – validation of the request
+                  (whitelisted/blacklisted)
+                </li>
+                <li>
+                  Authentication and Authorization (credential verification)
+                </li>
+                <li>
+                  Service Discovery Locate the appropriate backend service
+                </li>
+                <li>
+                  Protocol Translation – translation of protocol (e.g gRPC
+                  request to REST or other)
+                </li>
+                <li>
+                  Dynamic Routing (routing to the appropriate service request or
+                  LB)
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-6 managed_services_right">
+              <img
+                className="img-fluid integration_img"
+                src={INTEGRATION_SECTION_ONE_IMG}
+              />
+            </div>
+            {/* </div> */}
+          </div>
+        </div>
+      </section>
+      {/*  managed service end*/}
+
+      {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}
+      <section className="brouchure_sec">
+        <div className="container">
+          <div className="text-center mb-3 pb-md-3">
+            <Heading heading="Brouchure" uppercase="text-uppercase" />
+          </div>
           <PdfViewer pdfUrl={pdfUrl} />
           <div className="downloadBrouchure">
             <p
@@ -361,35 +455,29 @@ export const Integration = () => {
                 setShowModal(true);
               }}
             >
-
               <FaFilePdf /> Download Brouchure{" "}
             </p>
           </div>
         </div>
         <BrouchurePopup show={showModal} onHide={handleCloseModal} />
       </section>
-     {/* @@@@@ SECTION- Brouchure end @@@@@@ */}
+      {/* @@@@@ SECTION- Brouchure end @@@@@@ */}
 
-     {/* Faq start */}
-     <section>
-      <div className="container">
-        <div className="row"> 
-        <div className="col-md-1"> </div>
-        <div className="col-md-10">
+      {/* Faq start */}
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-1"> </div>
+            <div className="col-md-10">
               <Faq />
+            </div>
+            <div className="col-md-1"> </div>
+          </div>
         </div>
-        <div className="col-md-1"> </div>
-        </div>
-      </div>
-     </section>
-     {/* Faq end */}
-
-
-
-
-        </>
-
-    )
-}
+      </section>
+      {/* Faq end */}
+    </>
+  );
+};
 
 export default Integration;

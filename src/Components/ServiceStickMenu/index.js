@@ -12,7 +12,8 @@ const ServiceStickMenu=()=>
         <>
 <div className="sticky_menu">
 <div className="container">
-<Navbar collapseOnSelect expand="lg" className="service_sticky_menu"  sticky="top" >
+{/* <Navbar collapseOnSelect expand="lg" className="service_sticky_menu"  sticky="top" > */}
+<Navbar collapseOnSelect expand="lg" className="service_sticky_menu  sticky-top " >
 <Container fluid className="service_sticky_menu_container">
   <Navbar.Brand href="#home" className="integration_heading">Integration </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
