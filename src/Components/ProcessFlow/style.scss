@@ -1,0 +1,110 @@
+@import "../../Assets/saas/Main.scss";
+
+.inception_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.box {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
+    padding: 35px 90px;
+    border-radius: 7px;
+    background:#32a4d5;
+    color: white;
+    margin-top: -32%;
+}
+.circle {
+  padding: 45px;
+  border-radius: 50%;
+  background-color: #32a4d5;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+.how-it-works {
+    position: relative;
+    content: "";
+}
+// .how-it-works.row .col-2::after {
+//     content: "";
+//     position: absolute;
+//     z-index: 1;
+//     height: 150px;
+//     background: #32a4d5;
+//     top: 0;
+//     width: 2px;
+//     margin-left: -2px;
+// }
+.how-it-works.row .col-2 {
+  align-self: stretch;
+  overflow: hidden;
+    position: relative;
+}
+// .how-it-works.row .col-2::after {
+//   content: "";
+//   position: absolute;
+//   z-index: 1;
+// }
+.how-it-works.row .col-2.bottom::after {
+//   height: 50%;
+//   left: 50%;
+  top: 50%;
+}
+//   .how-it-works.row .col-2.full::after {
+//      height: 100%;
+//      left: calc(50% - 3px);
+//   }
+.how-it-works.row .col-2.top::after {
+//   height: 50%;
+//   left: 50%;
+  top: 0;
+}
+
+.timeliness div {
+  padding: 0;
+  height: 39px;
+}
+.timeliness hr {
+  border-top: 3px solid #32a4d5;
+  margin: 0;
+  top: 17px;
+  position: relative;
+  opacity: 1.23;
+}
+.timeliness .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeliness .corner {
+  border: 3px solid #32a4d5;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeliness .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeliness .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeliness .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeliness .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+.how-it-works.row h4 {
+  font-family: "Rajdhani";
+  font-weight: 700;
+  padding-bottom: 0px;
+}
+
+.timeliness .left-bottom::before{
+    position: relative;
+    content: "";
+
+}
