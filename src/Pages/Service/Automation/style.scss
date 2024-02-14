@@ -172,16 +172,31 @@
   line-height: 35px;
 }
 
-.application_integration li::before {
-  position: absolute;
-  content: "";
-  // background-image: url("../../../Assets/images/application_integration_list_rightarrow.png");
-  background-image: url('../../../Assets/images/right-arrow.png');
-  background-size: contain;
-  width: 20px;
-  height: 20px;
-  margin-left: -30px;
-  margin-top: 10px;
+// .application_integration li::before {
+//   position: absolute;
+//   content: "";
+//   background-image: url('../../../Assets/images/right-arrow.png');
+//   background-size: contain;
+//   width: 20px;
+//   height: 20px;
+//   margin-left: -30px;
+//   margin-top: 10px;
+// }
+
+.application_integration li::before{
+  content: "\f111";
+    position: absolute;
+    margin-left: -25px;
+    font-family: "FontAwesome";
+    width: 15px;
+    height: 15px;
+    background: rgba(50, 164, 213, 0.2);
+    font-size: 9px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    color: #32a4d5;
+    margin-top: 10px;
 }
 
 // rpa
@@ -304,7 +319,7 @@
   padding-bottom: 80px;
 
   .rpa_tools_logos {
-    box-shadow: 0 2px 2px #0000003d;
+    // box-shadow: 0 2px 2px #0000003d;
     padding: 30px;
   }
 }

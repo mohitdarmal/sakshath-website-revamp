@@ -1,80 +1,168 @@
-@import '../../../Assets/saas/Main.scss';
+@import "../../../Assets/saas/Main.scss";
 
-.epicor_section{
-    padding-top: 80px;
-    overflow: hidden;
-    // padding-bottom: 80px;
-}
-
-.epicor_overview_img {
-    img{
-        width: 750px;
-    }
-}
-// .erpicor_subtitle
-
-
-//     h4{
-//     font-size: 17px !important;
-//     color: black;
-//      position: relative;
-//      content: "";
+// .epicor_section {
+//   padding-top: 80px;
+//   overflow: hidden;
 // }
 
-
-// .epicor_content{
-//     position: relative;
-//     content: "";
-//     padding: 10px;
+// .epicor_overview_img {
+//   img {
+//     width: 750px;
+//   }
 // }
-.epicor_list ul{
-    padding-top:20px;
-    padding-left: 0px;
-    position: relative;
-    content: "";
 
-    li{
-        padding-bottom: 10px;
-    }
+// .epicor_list ul {
+//   padding-top: 20px;
+//   padding-left: 0px;
+//   position: relative;
+//   content: "";
+
+//   li {
+//     padding-bottom: 10px;
+//   }
+// }
+
+// .epicor_list li::before {
+//   position: absolute;
+//   content: "";
+//   background-image: url("../../../Assets/images/application_integration_list_rightarrow.png");
+//   width: 20px;
+//   height: 20px;
+//   background-size: contain;
+//   margin-left: -30px;
+// }
+
+// // syspro
+
+// .syspro_img img {
+//   width: 775px;
+//   margin-left: -180px;
+// }
+// .syspro_content {
+//   margin-left: 20px;
+// }
+
+// .industry_top {
+//   background: #32a4d5;
+//   width: 82px;
+//   align-items: center;
+//   display: flex;
+//   border-radius: 50%;
+//   padding: 10px 10px;
+//   height: 82px;
+//   line-height: 82px;
+// }
+
+// .industry_center {
+//   clip-path: polygon(75% 0%, 100% 51%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
+//   background: $ball_blue_color;
+//   height: 20px;
+// }
+
+// epicor
+.epicor_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.epicor_list li::before{
-position: absolute;
-content: "";
-background-image: url('../../../Assets/images/application_integration_list_rightarrow.png');
-width: 20px;
-height: 20px;
-background-size: contain;
-margin-left: -30px;
+.epicor_container_box {
+  box-shadow: 0 2px 20px #00000012;
+  padding: 30px;
+  max-width: 280px;
+  border-radius: 10px;
+  margin-right: 15px;
 }
 
+.epicor_bottom_content {
+  margin-top: 20px;
+}
+.epicor_img img {
+  width: 600px;
+  mix-blend-mode: darken;
+}
+
+.epicor_col_m5 {
+  position: relative;
+}
+.epicor_exprience_box {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  background: #32a4d5;
+  animation: move 3s ease-in-out infinite;
+  padding-left: 20px;
+  padding-right: 20px;
+  right: 0;
+  margin-bottom: 45px;
+  margin-right: -100px;
+
+  img {
+    width: 50px;
+    color: white;
+    filter: brightness(0) invert(1);
+    align-items: center;
+    display: flex;
+    padding: 20px 5px;
+    margin-right: 17px;
+  }
+}
+.epicor_exprience_box h6 {
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Rajdhani";
+  font-weight: bold;
+  color: white;
+  border-left: 1px solid #fff;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 
 // syspro
+.syspro_section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url('../../../Assets/images/pillar_bg_img.png');
+    background-size: contain;
+    padding: 150px;
 
-.syspro_img img{
-    width: 775px;
-    margin-left: -180px;
-}
-.syspro_content {
-    margin-left: 20px;
-}
-
-
-.industry_top{
-    background: #32a4d5;
-    /* display: inline; */
-    width: 82px;
-    align-items: center;
-    display: flex;
-    border-radius: 50%;
-    padding: 10px 10px;
-    height: 82px;
-    line-height: 82px;
 }
 
-.industry_center{
-    clip-path: polygon(75% 0%, 100% 51%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
-    background: $ball_blue_color;
-    height: 20px;
+
+.syspro_center_content{
+    p{
+        color: #fff;
+        font-size: 22px;
+        padding-top: 20px;
+    }
 }
+
+.syspro_bottom_content{
+    p{
+        color: #fff;
+        font-size: 22px;
+        // padding-top: 20px; 
+    }
+}
+.syspro_main_heading h3 {
+    color: #fff;
+    font-size: 70px;
+
+ }
+
+ .syspro_main_heading p {
+
+    color: #fff;
+ }
