@@ -147,7 +147,7 @@ const About = () => {
             <div className="col-md-5 "></div>
             <div className="col-md-2 text-center d-flex justify-content-center">
               <div className="mision_rounded">
-                <p>Mision</p>
+                <p>Mission</p>
               </div>
             </div>
             <div className="col-md-5">

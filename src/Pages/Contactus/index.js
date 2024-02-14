@@ -10,8 +10,18 @@ import { INSTAGRAM_ICON, LINKEDIN_ICON, YOUTUBE_ICON } from "./Constant";
 import Contact from "../../Components/Contact/Contact";
 import BreadCumb from "../../Components/Breadcumb";
 import { ABOUT_BANNER } from '../../Components/Breadcumb/Constant';
+ 
+import MapComponent from '../../Components/GoogleMap/index';
 
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const Contactus = () => {
+  const defaultProps = {
+    center: {
+      lat: 59.95,
+      lng: 30.33
+    },
+    zoom: 11
+  };
   return (
     <>
     <BreadCumb
@@ -19,6 +29,11 @@ const Contactus = () => {
         title="Contact Us"
       />
         <section  className='contact_us'>
+
+     
+    
+    
+
          <div className="container contact_us_box">
           <div className="row">
           

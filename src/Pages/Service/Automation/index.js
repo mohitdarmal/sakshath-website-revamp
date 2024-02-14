@@ -578,6 +578,56 @@ const Automation = () => {
           </div>
         </div>
       </section>
+
+
+      <section className="devops_section">
+        <div className="container">
+          <div className="row">
+            <div className="devops_heading_main text-center">
+              <Heading heading="Testing Sercices" uppercase="text-uppercase" />
+            </div>
+
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul className="devops_ul">
+                  <li>Functional Testing</li>
+                  <li>Unit Testing</li>
+
+                  <li>Integration</li>
+                  <li>UAT Testing</li>
+                  <li>Regression Testing</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Test Automation</li>
+                  <li>Installation & Scripting</li>
+
+                  <li>Integration</li>
+                  <li>Code/Codeless testing</li>
+                  <li>Scalable framework</li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-md-3 devops_boxes">
+              <div className="devops_list_box">
+                <ul>
+                  <li>Microservice & API testing</li>
+                  <li>UI & Functional testing</li>
+
+                  <li>Security, Run Time & Error Detection/Penetration</li>
+                </ul>
+              </div>
+            </div>
+
+          
+          </div>
+        </div>
+      </section>
+
+
       <section className="devops_section">
         <div className="container">
           <div className="row">
