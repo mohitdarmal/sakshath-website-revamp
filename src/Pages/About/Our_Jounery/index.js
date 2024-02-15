@@ -9,6 +9,8 @@ import { Fade } from "react-awesome-reveal";
 import BreadCumb from "../../../Components/Breadcumb";
 import TimelineObserver from "react-timeline-animation";
 
+import Inception from "../../../Components/Inception";
+
 const OurJounery = () => {
   const items = [
     {
@@ -105,7 +107,7 @@ const OurJounery = () => {
     <>
       <BreadCumb imgUrl={ABOUT_BANNER} title="Our Jounery" />{" "}
       {/* our jounery starts */}
-      <section className="Inception">
+      {/* <section className="Inception">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-md-12 ">
@@ -121,8 +123,14 @@ const OurJounery = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+      <Inception/>
       {/* our jounery ends */}
+
+
+
       {/* Core values starts */}
       <section className="core_values">
         <div className="container">
@@ -149,6 +157,8 @@ const OurJounery = () => {
           </div>
         </div>
       </section>
+
+
       {/* Core values end */}
       {/* contact us */}
       {/* <section className="contact_map_section">

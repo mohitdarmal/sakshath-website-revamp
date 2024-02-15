@@ -97,7 +97,7 @@ const Footer = () => {
                     {" "}
                     <Link to="mailto:sakshath-technologies@gmail.com">
                       <FaRegEnvelope />
-                      &nbsp; sakshath-technologies@gmail.com
+                      &nbsp;  info@sakshath-technologies.com
                     </Link>
                   </Fade>
                 </li>
@@ -105,7 +105,7 @@ const Footer = () => {
                 <Fade direction="up" delay={150}>
                   <li className="mt-3 ftr_addr ">
                     <p>
-                      8, KV Jairam Rd, MCHS Layout, Jakkur,Bengaluru – 560 064
+                    Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV, Hebbal ORR, Bengaluru – 560045.
                     </p>
                   </li>{" "}
                 </Fade>
@@ -124,22 +124,22 @@ const Footer = () => {
               <ul className="">
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
-                    <Link to="/">Web & IT Consulting</Link>
+                    <Link to="/">Application Development</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/">Cyber Security Solutions</Link>
+                    <Link to="/">Automation</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Software Development</Link>
+                    <Link to="/about">Managed Services</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Product Enginering</Link>
+                    <Link to="/about">ERP</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Project Management</Link>
+                    <Link to="/about">Integration</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Security Solutions</Link>
+                    <Link to="/about">Analytics</Link>
                   </li>
                 </Fade>
               </ul>

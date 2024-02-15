@@ -9,6 +9,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import "./style.scss";
 import { useState } from "react";
 import { Container, Row, Col, Form, FloatingLabel, Button, Modal } from 'react-bootstrap';
+import Heading from "../Utils/Heading";
 
 
 
@@ -22,8 +23,8 @@ const JobOpeningPopup = (props) => {
   const [jobformData, setJobformData] = useState({
     name: '',
     email: '',
-    phoneNumber: '',
-    services: '',
+    // phoneNumber: '',
+    cv: '',
     //comments: ''
   });
 
@@ -119,12 +120,14 @@ const JobOpeningPopup = (props) => {
             </Button>
           </Form>  */}
 
-          <div className="apply_now text-center mt-4 mb-4">
-          <h4>Apply Now</h4>
-          </div>
           
-
-           <Container className='careers_contact_form'>
+          
+          <div className="form_box">
+          <Container className='careers_contact_form'>
+           <div className="apply_now text-center mt-4 mb-4">
+           <h4>APPLY NOW</h4> 
+          {/* <Heading heading="Apply Now" uppercase="text-uppercase"/> */}
+          </div>
       <Form onSubmit={handleSubmit}>
         <Row>
           <Col md={6}>
@@ -151,7 +154,7 @@ const JobOpeningPopup = (props) => {
           </Col>
         </Row>
         <Row>
-          <Col md={6}>
+          {/* <Col md={6}>
             <FloatingLabel controlId="phoneNumber" label="Phone Number" className="mb-3">
               <Form.Control
                 type="tel"
@@ -161,10 +164,10 @@ const JobOpeningPopup = (props) => {
                 placeholder="Phone Number"
               />
             </FloatingLabel>
-          </Col>
+          </Col> */}
           <Col md={6}>
-            <FloatingLabel controlId="services" label="Services">
-              <Form.Select
+            <FloatingLabel controlId="cv" label="Upload CV">
+              {/* <Form.Select
                 aria-label="Floating label select example"
                 name="services"
                 value={jobformData.services}
@@ -174,7 +177,14 @@ const JobOpeningPopup = (props) => {
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
-              </Form.Select>
+              </Form.Select> */}
+              <Form.Control 
+              type="file"
+              name="cv"
+                value={jobformData.cv}
+                onChange={handleChange}
+                placeholder="upload cv"
+               />
             </FloatingLabel>
           </Col>
         </Row>
@@ -192,9 +202,11 @@ const JobOpeningPopup = (props) => {
             </FloatingLabel>
           </Col>
         </Row> */}
-        <Button type="submit">Submit form</Button>
+        <Button type="submit">Submit</Button>
       </Form>
     </Container> 
+          </div>
+           
            {/* <Form onSubmit={props.handleSubmit}>
           <div className="row">
 

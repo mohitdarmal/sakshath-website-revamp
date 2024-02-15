@@ -14,13 +14,25 @@
     font-size: 28px;
 }
 .job_description_checkmark::before{
-    content: "\f058";
-            position: absolute;
-            font-family: "FontAwesome";
-            font-size: 22px;
-            color: #7141b1;
-            margin-left: -33px;
-            margin-top: -3px ;
+    
+            content: "\f111";
+        position: absolute;
+        font-family: "FontAwesome";
+        //font-size: 22px;
+        width: 15px;
+    height: 15px;
+    background: #32a4d533;
+    font-size: 9px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    color: #32a4d5;
+    margin-left: -32px;
+        margin-top: 5px;
+            // font-size: 22px;
+            // color: #7141b1;
+            // margin-left: -33px;
+            // margin-top: -3px ;
 
 }
 .job_description_heading{
@@ -47,8 +59,13 @@
 }
 
 
-
+.form_box{margin: -14px;}
 .careers_contact_form{
+
+    h4{
+        font-family: $rajdhani_font;
+        font-weight: 700;
+    }
     background: #fff;
     padding: 40px;
     box-shadow: 0px 2px 20px #0000001f;

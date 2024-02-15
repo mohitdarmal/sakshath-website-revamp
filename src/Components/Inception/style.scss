@@ -5,24 +5,35 @@
   padding-bottom: 80px;
 }
 .box {
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
-    padding: 35px 90px;
-    border-radius: 7px;
-    background:#32a4d5;
-    color: white;
-    margin-top: -32%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
+  padding: 35px 17px;
+  border-radius: 7px;
+  background: #32a4d5;
+  color: white;
+  margin-top: -32%;
 }
+// .circle {
+//   padding: 45px;
+//   border-radius: 50%;
+//   background-color:#32a4d5;
+//   color: #fff;
+//   max-height: 50px;
+//   z-index: 2;
+// }
+
 .circle {
-  padding: 45px;
+  width: 100px;
   border-radius: 50%;
   background-color: #32a4d5;
   color: #fff;
-  max-height: 50px;
+  /* max-height: 50px; */
   z-index: 2;
+  height: 100px;
+  line-height: 100px;
 }
 .how-it-works {
-    position: relative;
-    content: "";
+  position: relative;
+  content: "";
 }
 // .how-it-works.row .col-2::after {
 //     content: "";
@@ -37,7 +48,7 @@
 .how-it-works.row .col-2 {
   align-self: stretch;
   overflow: hidden;
-    position: relative;
+  position: relative;
 }
 // .how-it-works.row .col-2::after {
 //   content: "";
@@ -45,8 +56,8 @@
 //   z-index: 1;
 // }
 .how-it-works.row .col-2.bottom::after {
-//   height: 50%;
-//   left: 50%;
+  //   height: 50%;
+  //   left: 50%;
   top: 50%;
 }
 //   .how-it-works.row .col-2.full::after {
@@ -54,17 +65,17 @@
 //      left: calc(50% - 3px);
 //   }
 .how-it-works.row .col-2.top::after {
-//   height: 50%;
-//   left: 50%;
+  //   height: 50%;
+  //   left: 50%;
   top: 0;
 }
 
 .timeliness div {
   padding: 0;
-  height: 39px;
+  height: 40px;
 }
 .timeliness hr {
-  border-top: 3px solid #32a4d5;
+  border-top: 3px dashed #32a4d5;
   margin: 0;
   top: 17px;
   position: relative;
@@ -75,7 +86,7 @@
   overflow: hidden;
 }
 .timeliness .corner {
-  border: 3px solid #32a4d5;
+  border: 3px dashed #32a4d5;
   width: 100%;
   position: relative;
   border-radius: 15px;
@@ -101,10 +112,10 @@
   font-family: "Rajdhani";
   font-weight: 700;
   padding-bottom: 0px;
+  color: #1472aa;
 }
 
-.timeliness .left-bottom::before{
-    position: relative;
-    content: "";
-
+.timeliness .left-bottom::before {
+  position: relative;
+  content: "";
 }

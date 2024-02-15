@@ -1,11 +1,16 @@
 import React from "react";
 import "./style.scss";
+import Heading from "../Utils/Heading";
 
-const ProcessFlow = () => {
+const Inception = () => {
   return (
     <>
       <section class="inception_section">
         <div class="container">
+
+        <div className="inception_main_heading">
+          <Heading heading="Inception to Fruition" uppercase="text-uppercase"/>
+        </div>
           {/* 2012 */}
 
           <div class="row align-items-center how-it-works d-flex">
@@ -13,7 +18,7 @@ const ProcessFlow = () => {
               <div class="circle font-weight-bold">2012</div>
             </div>
             <div class="col-6">
-            <h4>INCEPTION 2012</h4>
+            <h4>INCEPTION </h4>
               <p>
                 As a partnering start-up in 2012, we idealized how we should
                 work and outlined our commitment to the mission, values and
@@ -37,7 +42,7 @@ const ProcessFlow = () => {
 
           <div class="row align-items-center justify-content-end how-it-works d-flex">
             <div class="col-6 text-right">
-              <h4>ACQUISITION 2013-2015</h4>
+              <h4>ACQUISITION </h4>
               <p>
               Acquiring a sole proprietorship in 2015 allowed us to build our business based on our behavior, decisions and activities and how we can complement our clients and project stakeholders.
               </p>
@@ -64,7 +69,7 @@ const ProcessFlow = () => {
               <div class="circle font-weight-bold">2015-2018</div>
             </div>
             <div class="col-6">
-            <h4>GROWTH 2015-2018</h4>
+            <h4>GROWTH </h4>
               <p>
               Acquiring a sole proprietorship in 2015 allowed us to build our business based on our behavior, decisions and activities and how we can complement our clients and project stakeholders.
               </p>
@@ -88,7 +93,7 @@ const ProcessFlow = () => {
 
           <div class="row align-items-center justify-content-end how-it-works d-flex">
             <div class="col-6 text-right">
-              <h4>FRUITION 2018-2020</h4>
+              <h4>FRUITION </h4>
               <p>
               From planning to completion for a self-financed business to registering a trademark, wasn’t the walk in the park. We have shaped our organization through a combination of research, executive search, cultural and leadership assessment and a talented advisory board.
               </p>
@@ -116,7 +121,7 @@ const ProcessFlow = () => {
               <div class="circle font-weight-bold">2020-2023</div>
             </div>
             <div class="col-6">
-            <h4>EXPANSION 2020-2023</h4>
+            <h4>EXPANSION </h4>
               <p>
               We understood our client's expectations and worked tirelessly on what they wanted each time. Targeting several industries within and outside India such as Healthcare, Software, Banking, NGO, Hospitality, Retail, Finance, Food and Beverages etc.
               </p>
@@ -137,13 +142,13 @@ const ProcessFlow = () => {
 
           <div class="row align-items-center justify-content-end how-it-works d-flex">
             <div class="col-6 text-right">
-              <h4>ROAD AHEAD 2024</h4>
+              <h4>ROAD AHEAD</h4>
               <p>
               Sakshath Technologies® has an ever-evolving spirit within the organization, led by committed professionals. Sakshath Technologies® continually reviews its product/service offering, always being at the cutting edge of technology-based business solutions in a dynamic market. 
               </p>
             </div>
             <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-              <div class="box font-weight-bold">2024</div>
+              <div class="circle font-weight-bold">2024</div>
             </div>
           </div>
         </div>
@@ -152,4 +157,4 @@ const ProcessFlow = () => {
   );
 };
 
-export default ProcessFlow;
+export default Inception;
