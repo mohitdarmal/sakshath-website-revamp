@@ -124,7 +124,8 @@
 // }
 
 .andriod_app {
-  background: #f2f2f2;
+  // background: #f2f2f2;
+  background:linear-gradient(to top, #99D2EA, #45ACD9);
   padding: 40px 20px;
   text-align: center;
 }
@@ -144,12 +145,14 @@
 }
 
 .ios_app {
-  background: #ededed;
+  // background: #ededed;
+  background:linear-gradient(to top, #45ACD9, #99D2EA);
   text-align: center;
   padding: 40px 20px;
 }
 .cross_platform {
-  background: #e7e7e7;
+  // background: #e7e7e7;
+  background:linear-gradient(to top, #99D2EA, #45ACD9);
   padding: 40px 20px;
   text-align: center;
 }
@@ -225,7 +228,9 @@
   position: relative;
   content: "";
 }
-
+.rpa_list li{
+  padding-bottom: 10px;
+}
 .rpa_list li::before {
   content: "\f111";
   position: absolute;
@@ -304,7 +309,7 @@
 
   .rpa_box_right {
     border-bottom: 1px solid #9295964d;
-    padding: 20px;
+    padding: 15px;
     // min-height: 280px;
   }
   .rpa_box_right_down {
@@ -369,34 +374,58 @@
   padding-bottom: 80px;
 }
 .devops_list_box {
-  box-shadow: 0 2px 6px #0000005c;
-  padding: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3607843137);
+  padding: 26px 0;
   border-radius: 5px;
-  min-height: 250px;
+  min-height: 335px;
 }
 
-// .devops_testing-img img{
-//   width: 500px;
-//   height: 350px;
 
+// .devops_container {
+//   background-image: url("../../../Assets/images/Devops.png");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   padding-top: 80px;
+//   padding-bottom: 80px;
+// }
+// .devops_testing_right_content h3 {
+//   color: #fff;
+//   text-align: center;
+// }
+// .devops_testing_right_content p {
+//   color: #fff;
+//   font-size: 20px;
+//   line-height: 30px;
+//   text-align: center;
 // }
 
-.devops_container {
-  background-image: url("../../../Assets/images/Devops.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 80px;
-  padding-bottom: 80px;
+
+.devops_testing_right_content h3{
+  margin-left: 50px;
 }
-.devops_testing_right_content h3 {
-  color: #fff;
-  text-align: center;
+
+//devops services
+.devops_list_box{
+  position: relative;
+  content: "";
 }
-.devops_testing_right_content p {
-  color: #fff;
-  font-size: 20px;
-  line-height: 30px;
+.devops_ul li{
+  padding-bottom: 8px;
+}
+.devops_ul li::before{
+  content: "\f111";
+  position: absolute;
+  font-family: "FontAwesome";
+  width: 15px;
+  height: 15px;
+  background: rgba(50, 164, 213, 0.2);
+  font-size: 9px;
+  border-radius: 50%;
   text-align: center;
+  line-height: 15px;
+  color: #32a4d5;
+  margin-left: -22px;
+  margin-top: 5px;
 }
 
 //  pillars
@@ -518,3 +547,5 @@ h4{
 .application_integration{
   padding-bottom: 10px;
 }
+
+
