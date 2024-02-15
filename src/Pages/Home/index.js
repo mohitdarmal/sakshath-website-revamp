@@ -136,6 +136,7 @@ export const Home = () => {
                     handleTextSlideChange(newIndex)
                   }
                 >
+
                   <div className="banner_text_slider_content">
                     <h6>Profesional IT Solution</h6>
                     <h3>Transforming Ideas into Intelligent Solutions</h3>
@@ -439,67 +440,10 @@ export const Home = () => {
              
 
             <div className="row mt-4 pt-2">
-              <div className="col-md-4">
-                <Fade direction="up" delay={10} triggerOnce>
-                <Link>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={GREAT_PLACE_WORK} alt="" />
-                    </div>
-                    <div className="content">
-                      <h3 className="text">Great Place to Work</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                  </Link>
-                </Fade>
-              </div>
 
-              <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={200} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={TALEND} alt="" />
-                    </div>
-                    <div className="content">
-                      <h3 className="">Talend Gold Partner</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
-                </Link>
-              </div>
 
-              <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={400} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={AWS} alt="" />
-                    </div>
-                    <div className="content">
-                      <h3>Amzone AWS Partner</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
-                </Link>
-              </div>
 
-              <div className="col-md-4 d-flex ">
+            <div className="col-md-4 d-flex ">
               <Link>
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="d-flex horizontal-shake">
@@ -541,6 +485,28 @@ export const Home = () => {
                 </Link>
               </div>
 
+             
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={200} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={TALEND} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3 className="">Talend Gold Partner</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
               <div className="col-md-4 d-flex ">
               <Link>
                 <Fade direction="up" delay={400} triggerOnce>
@@ -549,7 +515,7 @@ export const Home = () => {
                       <img src={CLIQ_LOGO} alt="" />
                     </div>
                     <div className="content">
-                      <h3>CLIQ</h3>
+                      <h3>QLIK</h3>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit
                         Odit vitae.
@@ -560,6 +526,50 @@ export const Home = () => {
                 </Fade>
                 </Link>
               </div>
+
+              
+
+              <div className="col-md-4 d-flex ">
+              <Link>
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={AWS} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>Amzone AWS Partner</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+                </Link>
+              </div>
+
+             
+              <div className="col-md-4">
+                <Fade direction="up" delay={10} triggerOnce>
+                <Link>
+                  <div className="d-flex horizontal-shake">
+                    <div className="icon">
+                      <img src={GREAT_PLACE_WORK} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3 className="text">Great Place to Work</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        Odit vitae.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                  </Link>
+                </Fade>
+              </div>
+             
 
               <div className="col-md-4 d-flex ">
               <Link>
@@ -902,8 +912,7 @@ export const Home = () => {
               <div className="left_planning_banner_content">
                 <Fade direction="up" triggerOnce>
                   <h3>
-                    Full Truckload Planning Reimagined Experts in Security
-                    Dynamic Load Planning & Dispatching
+                    Let’s connect. We’d love to hear about your project and discuss our procedure. Our executives will be at your service ASAP.
                   </h3>
                 </Fade>
               </div>
@@ -935,16 +944,13 @@ export const Home = () => {
               </Fade>
               <Fade direction="up" triggerOnce>
                 <Heading
-                  heading="Elevating Experiences, Empowering Success"
+                  heading="Multiple Process in Single Platform"
                   uppercase="text-uppercase"
                 />
               </Fade>
               <Fade direction="up" triggerOnce>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Quaerat nihil aliquid, architecto assumenda alias vitae
-                  dignissimos ab ea id tempora quibusdam maiores odit, soluta
-                  doloremque accusamus distinctio aperiam sed quia!
+                  Digitise your business by managing multiple process in a single platform.
                 </p>
               </Fade>
               <Fade direction="up" triggerOnce>
@@ -1068,13 +1074,13 @@ export const Home = () => {
                     <div className="cust_profile"></div>
 
                     <div className="socail_icon">
-                      <ul className="d-flex justify-content-between list-unstyled">
+                      {/* <ul className="d-flex justify-content-between list-unstyled">
                         <li>
                           <div className="icon">
                             <SlCalender /> &nbsp; 18 JAN 2024
                           </div>
                         </li>
-                      </ul>
+                      </ul> */}
                       <h5 className="blog_heading">
                         Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath
                         Technologies.
@@ -1100,13 +1106,7 @@ export const Home = () => {
                     <div className="cust_profile"></div>
 
                     <div className="socail_icon">
-                      <ul className="d-flex justify-content-between list-unstyled">
-                        <li>
-                          <div className="icon">
-                            <SlCalender /> &nbsp; 18 JAN 2024
-                          </div>
-                        </li>
-                      </ul>
+                      
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
                         Perfect
@@ -1131,13 +1131,7 @@ export const Home = () => {
                   <div className="blog_content">
                     <div className="cust_profile"></div>
                     <div className="socail_icon">
-                      <ul className="d-flex justify-content-between list-unstyled">
-                        <li>
-                          <div className="icon">
-                            <SlCalender /> &nbsp; 18 JAN 2024
-                          </div>
-                        </li>
-                      </ul>
+                       
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
                         Perfect

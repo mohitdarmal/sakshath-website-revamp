@@ -17,6 +17,7 @@ const Blog = () => {
             tags:["Technology", "Service", "IT", "Development"],
             blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
             blogAuthor:"wqertyu",
+            blogAuthor_img:require("../../Assets/images/javalogo.png"),
             blogDate:"8 Feb 2024"
 
 
@@ -38,6 +39,7 @@ const Blog = () => {
             tags:["Technology", "Service"],
             blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
             blogAuthor:"wqertyu",
+            blogAuthor_img:require("../../Assets/images/javalogo.png"),
             blogDate:"8 Feb 2024"
 
         },
@@ -72,7 +74,20 @@ const Blog = () => {
                            <img src={blognews.blogImg} alt="" className='img-fluid' />
                           </div>
                           
-                          <div className='blog_title'>
+                          <div className='blog_content'>
+                              {/* <div className="blog_author_thumbnailbox">
+                                
+                                <div className="authorpic_box">
+                                    <img src={blognews.blogAuthor_img} alt="" className='img-fluid'/>
+                                </div>
+                                <div className="blogauthorname_box">
+                                <p>{blognews.blogAuthor}</p>
+                                </div>
+                                
+
+
+                                
+                              </div> */}
                               <div className="blog_date_author-box">
                                <div className="blog_date_box">
                                <p className='blog_date'><MdOutlineDateRange />&nbsp;{blognews.blogDate}</p>

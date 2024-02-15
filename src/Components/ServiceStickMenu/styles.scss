@@ -1,45 +1,151 @@
 @import "../../Assets/saas/Main.scss";
 
-.sticky_menu {
-    // padding: 30px;
-    background-color: $ball_blue_color;
+.top_header {
+  background: $light_navy_blue;
+  padding: 8px 0;
 
-    .service_sticky_menu_container {
-        height: 60px;
-    }
-    .integration_heading{
-        font-size: 34px;
-    }
+  .service_stickmenu_list {
+    background-color: $light_navy_blue;
+    
+    // text-decoration: none;
+    // transition: 0.3s;
+  }
+  .header_menu .nav-link.active {
+    color: #ffffff !important;
+}
+.navbar>.container-fluid{
+  background-color: #00a7d6;
+}
+  a:hover {
+    color: $white_color;
+    transition: 0.3s;
+  }
+  .header_social_icons {
+    color: $white_color;
+    font-weight: 700;
+  
+  }
+  .navbar-brand{
+    color:white;
+  }
+  .header_social_icons a {
+    font-size: $para_text;
+    color: $white_color;
+  }
+  .header_social_icons a:hover {
+    color: $white_color;
+  }
 
-    .bg-body-tertiary {
-        background: none;
-    }
-    .integration_heading{
-        font-size: 34px;
-    }
+  .top_header_location svg {
+    font-size: $font18;
+    vertical-align: text-top;
+  }
 
-    a {
-        color: #fff !important;
-        font-weight: 600;
-        display: flex;
-        font-size: 16px;
-        justify-content: space-evenly;
-        text-decoration: none;
-        
+  svg{
+    fill: #43b5e6;
+  }
+}
 
-    }
+.header_social_icons img{
+  width: 22px;
+}
+.integration_heading {
+  color: white;
+  font-size: 38px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+#service_stickmenu_list li a {color: #fff !important;}
+.dropdown-item.active, .dropdown-item:active{background-color: $light_navy_blue !important;}
+.bsb-navbar{background-color: $white_color;}
+.navbar-toggler:focus {box-shadow: none !important;}
+.header_menu li a.nav-link {
+  font-family: $rajdhani_font;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+// .header_menu .nav-link.active{
+//     color: $ball_blue_color !important;
+// } 
 
+.nav-item.dropdown ul.dropdown-menu {
+  border-radius: 2px;
+  padding: 0;
+  li {
+    border-bottom: 1px solid #dbdbdb;
+  }
+  li a {
+    font-family: $rajdhani_font;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.2s;
+  }
+  li a:hover, li a:active{
+    background-color: $light_navy_blue;
+    color: $white_color;
+    transition: 0.2s;
+  }
+}
 
-    // .ms-auto .navbar-nav{
-    //     gap:20px
-    // }
-    .navbar-nav {
-        gap: 20px !important;
-    }
-
-    .navbar-brand {
-        font-size: 42px;
-        font-family: 'Rajdhani';
+.header_right{
+    .header_translator{
         font-weight: 700;
+        font-family: $rajdhani_font;
+        svg{
+            font-size: $font18;
+        }
     }
+}
+.stick_menu_bar{
+  background-color: #00a7d6;
+}
+.sticky_menu.sticky-top {
+  background-color: #00a7d6;
+  padding-left: 73px;
+ 
+  top: 72px !important;
+}
+#service_stickmenu_list li a {
+  color: #fff !important;
+  padding: 20px 15px;
+}
+.header_translator{line-height: 57px; padding-right: 20px;}
+.bsb-navbar{transition: background-color 0.5s ease}
+.bsb-navbar.sticky-top{  animation: slideDown 0.5s ease;}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width:768px){
+  .header_menu {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width:767px){
+    .top_header{display: none;}
+}
+ 
+@media screen and (min-width:768px) and (max-width:1160px){
+    .top_header_location{display: none;}
+    .top_header a{font-size: $font14;}
+    .navbar-brand img{width: 130px;}
+
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .header_menu .header_right{display: none !important;}
+    body .navbar-expand-md .navbar-nav .nav-link{padding-left: 7px !important; padding-right: 7px;}
+
+}
+
+@media screen and (min-width:1024px) {
+    // .header_menu .header_right{display: block !important;}
+    .header_menu li a.nav-link {font-size: 16px;}
 }

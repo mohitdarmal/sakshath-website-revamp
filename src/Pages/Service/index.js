@@ -184,7 +184,7 @@ const Service = () => {
               <div className="it_benefits_heading_section">
                 <span className='it_benefit_title'>IT BENEFITS</span>
                 <div className="heading_content">
-                <Heading heading="We Provide How Can Growth Your IT Business" uppercase="text-uppercase" />
+                <Heading heading="Digitise your business by managing multiple process in a single platform." uppercase="text-uppercase" />
                 </div>
               </div>
               <p>
@@ -194,21 +194,21 @@ const Service = () => {
               <div className="left_side_technology">
               <ul className=''>
                 <li>
-                Software Solutions
+                Application Development
 
 
                 </li>
                 <li>
-                  Product Engineering
+                  Automation
                 </li>
-                <li>Mobile Strategy</li>
+                <li>Analytics</li>
                 </ul>
                 </div>
                 <div className="right_side_technology">
                 <ul className=''>
-                <li>IT Consultancy</li>
-                <li>Business Growth</li>
-                <li>Database Security</li>
+                <li>Managed Services</li>
+                <li>Integration</li>
+                <li>ERP</li>
                 </ul>
                 </div>
                 </div>
