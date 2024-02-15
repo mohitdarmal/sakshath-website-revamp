@@ -138,7 +138,7 @@ const About = () => {
             </div>
             <div className="col-md-2 text-center d-flex justify-content-center">
               <div className="vision_rounded">
-                <p>Vision</p>
+                <p>Our Vision</p>
               </div>
             </div>
             <div className="col-md-5"></div>
@@ -147,18 +147,13 @@ const About = () => {
             <div className="col-md-5 "></div>
             <div className="col-md-2 text-center d-flex justify-content-center">
               <div className="mision_rounded">
-                <p>Mision</p>
+                <p>Our Mission</p>
               </div>
             </div>
             <div className="col-md-5">
               <p className="mision_para">
               <Fade direction="up" delay={150} triggerOnce>
-                It is the desire of Sakshath Technologies® to establish itself as a powerful
-                business operation with vibrance and growth built on Sakshath Technologies®
-                principles that is highly regarded by our customers, stake
-                holders and our employees. As an organization, we want to be in
-                a place where customers rely on the excellence of our products
-                and services.
+              To engage businesses from small to medium enterprises to transition into ERP solutions that are easy to use, scalable, enable business insight and ultimately benefit the user community. We want to be a fair, reliable and professional partner to our customers by offering useful and effective products and services that contribute to their success
                 </Fade>
               </p>
             </div>

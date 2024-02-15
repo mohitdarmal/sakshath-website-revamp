@@ -22,7 +22,7 @@
 }
 
 .who_we_are_img_bottom {
-  padding-right: 90px;
+  // padding-right: 90px;
 }
 
 // contact starts
@@ -101,6 +101,8 @@
   p {
     color: #fff;
     line-height: 100px;
+    font-family: rajdhani;
+    font-weight: bold;
   }
 }
 
@@ -117,7 +119,17 @@
 
 .vision_rounded {
   position: relative;
+  background: #25678f;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-family: 'Rajdhani';
 }
+
+
 .vision_rounded p::after {
   position: absolute;
   content: "";
@@ -150,8 +162,8 @@
     padding-right: 0px;
   }
   .who_we_are_img_bottom {
-    padding-right: 0px;
-    padding-bottom: 20px;
+    padding-right: 0px !important;
+    // padding-bottom: 20px;
   }
 
   .vision_container .col-md-5 {
@@ -206,9 +218,9 @@
     font-size: 13px !important;
   }
 
-  .who_we_are_img_bottom {
-    padding-bottom: 0px !important ;
-  }
+  // .who_we_are_img_bottom {
+  //   padding-bottom: 0px !important ;
+  // }
   .about_who_we_r_content_right p {
     padding-top: 20px;
   }

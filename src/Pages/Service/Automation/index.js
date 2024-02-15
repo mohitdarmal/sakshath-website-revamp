@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import {
   ANDRIOD_APP,
+  API_IMG,
   AUTOMATE_RPA,
   AUTOMATION_BG_IMG,
   CHECK_ICON,
@@ -36,14 +37,13 @@ import Graph from "../../../Components/Graph";
 import { bottom } from "@popperjs/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import BreadCumb from "../../../Components/Breadcumb"
+import BreadCumb from "../../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
 
 const Automation = () => {
   return (
     <>
-
-<BreadCumb
+      <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Automation"
       />
@@ -72,52 +72,116 @@ const Automation = () => {
                 </p>
               </div>
 
-<div className="row">
-<div className="col-md-6">
-<div className="automation_right_content_list">
-                <ul>
-                 
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="automation_right_content_list">
+                    <ul>
+                      <li> Hybrid Integration</li>
+                      <li> Services- Based Integration</li>
+                      <li> API Gateway/Manager</li>
+                      <li>
+                        {" "}
+                        Open API business strategy for monetization of APIs
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-                  <li> Hybrid Integration</li>
-                  <li> Services- Based Integration</li>
-                  <li> API Gateway/Manager</li>
-                  <li> Open API business strategy for monetization of APIs</li>
-                </ul>
+                <div className="col-md-6">
+                  <div className="automation_right_content_list">
+                    <ul>
+                      <li> Social Integration</li>
+                      <li> Marketplace Integration</li>
+                      <li> In-Built Connectors</li>
+                      <li> Enterprise Service Bus (ESB)</li>
+                      <li> Pluggable Adaptors</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-</div>
-
-<div className="col-md-6">
-<div className="automation_right_content_list">
-                <ul>
-                
-                  <li>Social Integration</li>
-                  <li> Marketplace Integration</li>
-
-                  <li> In-Built Connectors</li>
-                  <li> Enterprise Service Bus (ESB)</li>
-                  <li> Pluggable Adaptors</li>  
-                </ul>
-              </div>
-</div>
-
-</div>
-
-           
             </div>
           </div>
         </div>
       </section>
 
-      <section className="pillar_section">
+      {/* pillars */}
+      <section className="pillars_section">
+        <div className="container">
+          <div className="row">
+            <div className="pillars_heading text-center ">
+              <Heading
+                heading="pillars of Sakshath"
+                uppercase="text-uppercase"
+              />
+            </div>
+            {/* <div className="pillars_boxes "> */}
+
+            <div className="col-md-3 pillar_number_storke pillar_number_storke">
+              <div className="number">
+                <h1> 01</h1>
+              </div>
+              <div className="pillars_box">
+                <div className="pillar_icon">
+                  <img src={pillar_automation} alt="" />
+                </div>
+                <div className="pillar_title">
+                  <h5>Automation</h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 pillar_number_storke">
+              <div className="number">
+                <h1> 02</h1>
+              </div>
+              <div className="pillars_box">
+                <div className="pillar_icon">
+                  <img src={pillar_modern} alt="" />
+                </div>
+                <div className="pillar_title">
+                  <h5>Modern Design & Architecture</h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 pillar_number_storke">
+              <div className="number">
+                <h1> 03</h1>
+              </div>
+              <div className="pillars_box">
+                <div className="pillar_icon">
+                  <img src={pillar_microservice} alt="" />
+                </div>
+                <div className="pillar_title">
+                  <h5>MicroservicesE</h5>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3 pillar_number_storke">
+              <div className="number">
+                <h1> 04</h1>
+              </div>
+              <div className="pillars_box">
+                <div className="pillar_icon">
+                  <img src={pillar_bank} alt="" />
+                </div>
+                <div className="pillar_title">
+                  <h5>Containers Backing Services</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* </div> */}
+      </section>
+
+      {/* <section className="pillar_section">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-5 ">
               <div className="pillar_heading">
-                {/* <Heading heading="4  Pillars of sakshath" /> */}
                 <Heading
-                heading="4 PILLARS OF SAKSHATH"
-                uppercase="text-uppercase"
-              /> 
+                  heading="4 PILLARS OF SAKSHATH"
+                  uppercase="text-uppercase"
+                />
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
                   consequatur? Distinctio delectus.
@@ -171,7 +235,7 @@ const Automation = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/*automation ends */}
 
@@ -187,7 +251,6 @@ const Automation = () => {
             </div>
 
             <div className="col-md-4 andriod_app">
-              {/* <div className="mobile_application"> */}
               <div className="mobile_application_img">
                 <img src={ANDRIOD_APP} alt="" />
               </div>
@@ -197,7 +260,6 @@ const Automation = () => {
               {/* </div> */}
             </div>
             <div className="col-md-4 ios_app">
-              {/* <div className="mobile_application"> */}
               <div className="mobile_application_img">
                 <img src={IOS_APPLE} alt="" />
               </div>
@@ -224,50 +286,106 @@ const Automation = () => {
       <section className="application_section">
         <div className="container">
           <div className="row">
-            <div className="application_main_heading ">
-              <Heading
-                heading="Application Integration"
-                uppercase="uppercase"
-              />
-            </div>
-
-            <div className="application_integration">
-              <ul>
-                <li>Open API business strategy for monetization of API’s</li>
-                <li>Hybrid Integration</li>
-                <li>Services- Based Integration</li>
-                <ul>
-                  <p>
+          <div className="application_main_heading text-center">
+                <Heading
+                  heading="Application Integration"
+                  uppercase="uppercase"
+                />
+              </div>
+            <div className="col-md-6">
+              {/* <div className="api_img">
+                <img src={API_IMG} alt="" />
+              </div> */}
+              <div className="application_integration">
+                <div className="api_box">
+                  <h4>Services- Based Integration.</h4>
+                  <span>
                     Restful and Restless (SOAP) service integration provides
                     digital integration capabilities. It has small-scale to
                     large-scale application data delivery and integration
                     capabilities.
-                  </p>
-                </ul>
-                <li>API Gateway/Manager</li>
-                <li>Social Integration</li>
-                <ul>
-                  <p>
-                    Integration with social collaboration platforms such as,
-                    Facebook, Twitter, Instagram, and many more. It consumes
-                    their API and integrates the data in the DXP’s application.
-                  </p>
-                </ul>
-                <li>Marketplace Integration</li>
-                <ul>
-                  <p>
-                    Marketplace integration helps business users to integrate
-                    with multiple channels: to buy or sell their services and
-                    products of different channels while consuming a single
-                    service.
-                  </p>
-                </ul>
-
-                <li>In-Built Connectors, Enterprise Service Bus (ESB), Pluggable Adaptors. </li>
-
-                {/* <li>Enterprise Service Bus (ESB)</li>
-                <li>Pluggable Adaptors</li> */}
-              </ul>
+                  </span>
+                </div>
+                </div>
+                <div className="application_integration">
+                <div className="api_box">
+                  <h4>Social Integration.</h4>
+                  <span>
+                  Integration with social collaboration platforms such as,
+                      Facebook, Twitter, Instagram, and many more. It consumes
+                      their API and integrates the data in the DXP’s
+                      application.
+                  </span>
+                </div>
+                </div>
+            </div>
+            <div className="col-md-6">
+           
+              
+                <div className="application_integration">
+                <div className="api_box">
+                  <h4>Marketplace Integration.</h4>
+                  <span>
+                  Marketplace integration helps business users to integrate
+                      with multiple channels: to buy or sell their services and
+                      products of different channels while consuming a single
+                      service.
+                  </span>
+                </div>
+                </div>
+                <div className="application_integration">
+                <div className="api_box">
+                  <h4> Open API business strategy for monetization of API’s.</h4>
+                  <span>
+                  Open API business strategy for monetization of API’s. API
+                    Gateway/Manager. Hybrid Integration. In-Built Connectors,
+                    Enterprise Service Bus (ESB). Pluggable Adaptors.
+                  </span>
+                </div>
+              </div>
+                {/* <ul>
+                  <li>
+                    {" "}
+                    <strong>Services- Based Integration.</strong>
+                  </li>
+                  <ul>
+                    <p>
+                      Restful and Restless (SOAP) service integration provides
+                      digital integration capabilities. It has small-scale to
+                      large-scale application data delivery and integration
+                      capabilities.
+                    </p>
+                  </ul>
+                  <li>
+                    <strong>Social Integration</strong>
+                  </li>
+                  <ul>
+                    <p>
+                      Integration with social collaboration platforms such as,
+                      Facebook, Twitter, Instagram, and many more. It consumes
+                      their API and integrates the data in the DXP’s
+                      application.
+                    </p>
+                  </ul>
+                  <li>
+                    {" "}
+                    <strong>Marketplace Integration</strong>{" "}
+                  </li>
+                  <ul>
+                    <p>
+                      Marketplace integration helps business users to integrate
+                      with multiple channels: to buy or sell their services and
+                      products of different channels while consuming a single
+                      service.
+                    </p>
+                  </ul>
+                  <li>
+                    Open API business strategy for monetization of API’s. API
+                    Gateway/Manager. Hybrid Integration. In-Built Connectors,
+                    Enterprise Service Bus (ESB). Pluggable Adaptors.
+                  </li>
+                </ul> */}
+          
             </div>
           </div>
         </div>
@@ -419,7 +537,7 @@ const Automation = () => {
             </div>
             <div className="col-md-2"></div>
             <div className="col-md-8">
-              <div className="row">
+              <div className="row ">
                 {/* left side rpa  */}
                 <div className="col-md-6 left_boxes_rpa">
                   <div className=" rpa_box_left">
@@ -464,12 +582,21 @@ const Automation = () => {
                     <div className="rpa_heading">
                       <h4>RPA DELIVERY</h4>
 
-                      <p>
+                      {/* <p>
                         Automation Scripting. <br />
                         Attended, Unattended, Hybrid Bots. <br />
                         Robot Training. <br />
                         Robot Testing.
-                      </p>
+                      </p> */}
+
+                      <div className="rpa_list">
+                        <ul>
+                          <li>Automation Scripting.</li>
+                          <li> Attended, Unattended, Hybrid Bots.</li>
+                          <li>Robot Training.</li>
+                          <li> Robot Testing.</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                   <div className=" rpa_box_right_down">

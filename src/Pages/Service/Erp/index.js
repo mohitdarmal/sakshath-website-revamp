@@ -9,7 +9,7 @@ import Heading from "../../../Components/Utils/Heading";
 import { ABOUT_BANNER } from "../../../Components/Breadcumb/Constant";
 import BreadCumb from "../../../Components/Breadcumb";
 import { EXPERIENCE } from "../../../Components/OurPrincipals/Constant";
-import ProcessFlow from "../../../Components/ProcessFlow";
+import ProcessFlow from "../../../Components/Inception";
 
 const Erp = () => {
   return (
