@@ -126,11 +126,12 @@
 //     font-weight: 700;
 
 // }
-.managed_services_left {
-  padding-right: 80px;
-}
+
 .managed_services_sec {
   padding-bottom: 80px;
+}
+.managed_services_left{
+  padding-right: 80px;
 }
 // .intergration_list ::before{
 //     position:absolute;
@@ -162,9 +163,7 @@
 .integration_consulting_left {
   display: flex;
 }
-.managed_services_left {
-  padding-right: 40px;
-}
+
 
 // .intergration_list li{
 //     font-family: inherit;
@@ -332,6 +331,7 @@ ul {
     font-weight: 700;
     padding-left: 11px;
   }
+  
   .managed_services_sec {
     padding-bottom: 40px;
     // padding-top:40px;

@@ -40,18 +40,13 @@ const ServiceStickMenu=(props)=>
 
 
 {/* Main Header starts */}
-<section>
-<div className="sticky_menu sticky-top ">
+<section className="sticky_menu sticky-top">
+<div className="">
 <nav
-        className={`navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret`}
+        className={`navbar navbar-expand-md bsb-navbar bsb-navbar-hover bsb-navbar-caret stick_menu_bar`}
       >
-        <div className="container-fluid">
-          <Link to="/" className="navbar-brand">
-          <Heading
-                heading="Integration "
-                uppercase="text-uppercase"
-              />
-          </Link>
+        <div className="container-fluid" id="service_stickmenu_list">
+          <h5 className="integration_heading"> Integration</h5>
           <button
             className="navbar-toggler border-0"
             type="button"
@@ -91,30 +86,30 @@ const ServiceStickMenu=(props)=>
               ></button>
             </div>
             <div className="offcanvas-body header_menu">
-              <ul className="navbar-nav justify-content-center flex-grow-1">
+              <ul className="navbar-nav justify-content-center flex-grow-1 service_stickmenu_list">
            
               
                 
                 <li>
-                  <NavLink to="#" className="nav-link">
+                  <NavLink to="#" className="nav-link ">
                   Integration COE
                   </NavLink>
                 </li>
                 
                 <li>
-                  <NavLink to="#" className="nav-link">
+                  <NavLink to="#" className="nav-link ">
                   Integration Consulting
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="#" className="nav-link">
+                  <NavLink to="#" className="nav-link ">
                   Migration Services
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="#" className="nav-link">
+                  <NavLink to="#" className="nav-link ">
                   Managed Services
                   </NavLink>
                 </li>
