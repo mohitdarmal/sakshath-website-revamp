@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
-import BlueHeading from "../../Components/Utils/BlueHeading";
+//import BlueHeading from "../../Components/Utils/BlueHeading";
 import SubTitle from "../../Components/Utils/Title_head";
 import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH} from "./Constant";
 import { BsEnvelope } from "react-icons/bs";
@@ -22,6 +22,9 @@ import { IoBagOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoTimeOutline } from "react-icons/io5";
 import { REACT_LOGO } from "./Constant";
+import { HiMiniArrowLongRight } from "react-icons/hi2";
+import Heading from "../../Components/Utils/Heading";
+
 
 
 
@@ -32,7 +35,7 @@ const Career = () => {
     {
       id: 1,
       title: "Senior React Developer",
-      //job_img:{REACT_LOGO},
+      job_img:require("../../Assets/images/physics.png"),
       description: [
         {
           id: 1,
@@ -65,7 +68,7 @@ const Career = () => {
     {
       id: 2,
       title: "Junior React Developer",
-
+      job_img:require("../../Assets/images/physics.png"),
       description: [
         {
           id: 1,
@@ -85,6 +88,7 @@ const Career = () => {
     {
       id: 3,
       title: "Sales",
+      job_img:require("../../Assets/images/analytic.png"),
       description: [
         {
           id: 1,
@@ -122,6 +126,7 @@ const Career = () => {
     {
       id: 5,
       title: "Sr. QA",
+      job_img:require("../../Assets/images/QAlogo.png"),
       description: [
         {
           id: 1,
@@ -141,6 +146,7 @@ const Career = () => {
     {
       id: 6,
       title: "Dot Net Developer",
+      job_img:require("../../Assets/images/Microsoft_.NET_logo.png"),
       description: [
         {
           id: 1,
@@ -160,6 +166,8 @@ const Career = () => {
     {
       id: 7,
       title: "Java Developer",
+      
+      job_img:require("../../Assets/images/javalogo.png"),
       description: [
         {
           id: 1,
@@ -207,7 +215,8 @@ const Career = () => {
             <div className="col-md-5 empty_block">
              
              <div className="join_our_team_wrapper">
-                <BlueHeading bheading ="join our team" uppercase="text-uppercase"/>
+                
+                <Heading heading ="join our team" uppercase="text-uppercase"/>
 
                 <ul>
                   <li>
@@ -216,7 +225,7 @@ const Career = () => {
                   <li>
                   We are a solid team of people who wish to grow and ensure success individually and jointly. This pragmatic and flexible approach to every team member helps in making the organization a success in every endeavor it ventures into.
                   </li>
-                  <li>We are a collaborative firm where everyone helps each other in mutual growth and find a way to flourish. We don’t hire only smart people but also smart people who effectively work as a team.</li>
+                  {/* <li>We are a collaborative firm where everyone helps each other in mutual growth and find a way to flourish. We don’t hire only smart people but also smart people who effectively work as a team.</li> */}
                 </ul>
                 
                 
@@ -261,7 +270,9 @@ const Career = () => {
            <div className="row">
            {/* <div className="col-md-2"></div> */}
            <div className="col-md-8 careers_at_sakshath_main_box offset-md-2">
-           <BlueHeading bheading="careers at sakshath" uppercase="text-uppercase" />
+           
+           <Heading heading="careers at sakshath" uppercase="text-uppercase" />
+           
            <ul>
             <li className="careers_at_sakshath_checkmark">
             Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.
@@ -489,7 +500,7 @@ const Career = () => {
       <section className="careers_apply_job_section">
         <div className="container">
         <div className="text-center mb-4 pb-md-5">
-           <BlueHeading bheading= "Most Popular Jobs" uppercase="text-uppercase" />
+           <Heading heading= "Most Popular Jobs" uppercase="text-uppercase" />
            <p>Beneath each of these categories, you can find its most popular</p>
            </div>
           <div className="row">
@@ -501,7 +512,7 @@ const Career = () => {
                 
                    
                     <div className="careers_jobs_info_box_img_holder_box">
-                      <img src={REACT_LOGO} alt=""  />
+                      <img src={data.job_img} alt=""  />
                     </div>
                     <div className="careers_jobs_info_box_job_description_box">
                       <h5>{data.title}</h5>
@@ -523,7 +534,7 @@ const Career = () => {
                         
 
                       </div>
-                      <div className="description_box_job_status">
+                      {/* <div className="description_box_job_status">
                         <div className="remote_box">
                         <span className="remote_job_status_style">Remote</span>
                         </div>
@@ -534,16 +545,9 @@ const Career = () => {
                         <span className="parttime_job_status_style">Part-Time</span>
                         </div>
                         
-                      </div>
+                      </div> */}
                       
-                      
-                        
-                    </div>
- 
-                
-              </div>
-
-              <div className="apply_now_button">
+                      <div className="apply_now_button">
 
                 <button
                       onClick={() => {
@@ -557,19 +561,26 @@ const Career = () => {
                         });
                       }}
                     >
-                      Apply Now
+                      Apply Now  <HiMiniArrowLongRight />
                     </button>
                     
 
               </div>
+                        
+                    </div>
+ 
+                
+              </div>
+
+              
               </div>
               
             </div>
             );
             })}
             
-
-            <JobOpeningPopup
+           
+           <JobOpeningPopup
               show={showModal}
               onHide={handleCloseModal}
               title={modalPopupData.title}
@@ -578,6 +589,8 @@ const Career = () => {
               location={modalPopupData.loc}
               position={modalPopupData.pos}
             />
+           
+            
           </div>
         </div>
       </section>

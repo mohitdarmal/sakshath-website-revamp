@@ -136,13 +136,21 @@
             margin-bottom: 15px;
         }
         li:before{
-            content: "\f058";
+            content: "\f111";
         position: absolute;
         font-family: "FontAwesome";
-        font-size: 22px;
-        color: $ball_blue_color;
+        //font-size: 22px;
+        width: 15px;
+    height: 15px;
+    background: #32a4d533;
+    font-size: 9px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    color: #32a4d5;
+       // color: $ball_blue_color;
         margin-left: -32px;
-        margin-top: -3px;
+        margin-top: 5px;
 
         }
     }
@@ -176,13 +184,28 @@
     }
     
         li:before{
-            content: "\f058";
-            position: absolute;
-            font-family: "FontAwesome";
-            font-size: 22px;
-            color:$ball_blue_color;
-            margin-left: -32px;
-            margin-top: -3px ;
+            content: "\f111";
+        position: absolute;
+        font-family: "FontAwesome";
+        //font-size: 22px;
+        width: 15px;
+    height: 15px;
+    background: #32a4d533;
+    font-size: 9px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    color: #32a4d5;
+       // color: $ball_blue_color;
+        margin-left: -32px;
+        margin-top: 5px;
+            // content: "\f058";
+            // position: absolute;
+            // font-family: "FontAwesome";
+            // font-size: 22px;
+            // color:$ball_blue_color;
+            // margin-left: -32px;
+            // margin-top: -3px ;
         }
     }
 }
@@ -336,20 +359,20 @@
 // }
 
 .careers_job_container{
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 }
-.careers_job_container > div::before{
-    content: "";
-    position: absolute;
-    width: 84%;
-    height: 125%;
-    top: 0;
-    background-color: #ecf9ff;
-    z-index: -1;
-    margin-left: 60px;
-    margin-top: -26px;
-    border-radius: 20px;
-}
+// .careers_job_container > div::before{
+//     content: "";
+//     position: absolute;
+//     width: 84%;
+//     height: 125%;
+//     top: 0;
+//     background-color: #ecf9ff;
+//     z-index: -1;
+//     margin-left: 60px;
+//     margin-top: -26px;
+//     border-radius: 20px;
+// }
 .careers_jobs_box{
     display: flex;
     border: 1px solid #dbdbdb;
@@ -368,44 +391,44 @@
     margin-right: 5px;
   }
 }
-.description_box_job_status{
-display: flex;
+// .description_box_job_status{
+// display: flex;
     
     
-    margin-top: 20px;
+//     margin-top: 20px;
     
-} 
-.description_box_job_status div{
-    margin-right: 20px;
-    span{  display: inline-block;     border-radius: 30px;
-        font-size: 15px;
-        font-family: $rajdhani_font;
-        font-weight: 600;
-        padding: 5px 20px;}
-}
-.remote_job_status_style{
-    background:rgba(249,171,0,.15);;
-    color: #f9ab00;
+// } 
+// .description_box_job_status div{
+//     margin-right: 20px;
+//     span{  display: inline-block;     border-radius: 30px;
+//         font-size: 15px;
+//         font-family: $rajdhani_font;
+//         font-weight: 600;
+//         padding: 5px 20px;}
+// }
+// .remote_job_status_style{
+//     background:rgba(249,171,0,.15);;
+//     color: #f9ab00;
   
-}
+// }
 
 .careers_jobs_info_box_img_holder_box img{
-    width: 65px;
+    width: 55px;
 }
 .careers_jobs_info_box_job_description_box{
     padding-left: 20px;
 }
 
-.full_job_status_style{
-    background:rgba(25,103,210,.15);
+// .full_job_status_style{
+//     background:rgba(25,103,210,.15);
     
-    color: #1967d2;
-}
-.parttime_job_status_style{
-    background:rgba(52,168,83,.15);
+//     color: #1967d2;
+// }
+// .parttime_job_status_style{
+//     background:rgba(52,168,83,.15);
    
-    color: #34a853;
-}
+//     color: #34a853;
+// }
 
 .careers_apply_job_section{
     padding: 80px 0 40px;
@@ -418,14 +441,18 @@ display: flex;
 }
 
 .apply_now_button{
-    text-align: right;
-    margin-top: 12px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: -4px;
     button{
         background-color: $ball_blue_color;
-        padding: 7px 25px;
+        padding: 7px 20px;
         color: #fff;
         border: none;
         border-radius: 39px;
+        font-size: 14px;
+    font-family: rajdhani,sans-serif;
+    font-weight: 600;
         &:hover{
             background-color: $light_navy_blue;
         }
@@ -579,10 +606,10 @@ display: flex;
 
 @media screen and (min-width:768px){
     .careers_job_container:nth-child(odd) > div{
-        margin-right: 40px;
+        //margin-right: 40px;
     } 
 
     .careers_job_container:nth-child(even) > div{
-        margin-left: 40px;
+       // margin-left: 40px;
     } 
 }

@@ -42,6 +42,7 @@ const ManagedServices = () => {
 
             {/* @@@@@@@@@@@@  flowchart for process of managed services  starts @@@@@@@@@@@@@@@ */}
             <section className='managed_service_flowchart_sec'>
+            {/* //<h2>Process</h2> */}
             <div className='container-fluid'>
                <div className='row'>
                 <div className='col-md-2 managed_service_box bg1'>
@@ -97,6 +98,52 @@ const ManagedServices = () => {
 
 
             {/* @@@@@@@@@@@@  flowchart for process of managed services  ends @@@@@@@@@@@@@@@ */}
+
+
+            {/* @@@@@@@@@@@@@@@  managed service main content starts @@@@@@@@@@@@@@@@@@ */}
+
+            <section className="content_managed_services_section">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-md-6">
+                        <div className="content_sec_left_managed_services_img">
+                                <img className="img-fluid managed_services_img" src={INTEGRATION_SECTION_ONE_IMG} />
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                        <div className="content_sec_right_managed_services">
+
+                        {/* <Heading heading="careers at sakshath" uppercase="text-uppercase" /> */}
+                            {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
+                            <BlueHeading bheading="overview" uppercase="text-uppercase"/>
+                            {/* <p className="content_sec_managed_services_para"> */}
+                            <ul>
+                              <li className='managed_services_main_content'>
+                              The audit encompasses a thorough examination of licenses, system capacity, and infrastructure to identify any inefficiencies or vulnerabilities. Recommendations will focus on rationalizing resources, optimizing operations, and decommissioning redundant elements to eliminate single points of failure.
+                              </li>
+                              <li>Building and consolidating key systems such as Knowledge Management Systems (KMS), Wikis, and Service Level Agreements (SLAs), along with providing troubleshooting guidelines, will enhance organizational efficiency. Automation initiatives targeting deployment and self-service processes will streamline operations and reduce manual intervention.</li>
+                              <li>Training and awareness programs will ensure staff proficiency and understanding of best practices. Continual optimization efforts will address system risks, both infrastructure and application-related, along with resource and engagement risks, particularly regarding dependencies on third-party services that could impact SLAs. </li>
+                              
+                            </ul>
+                            
+
+
+
+
+
+
+                            {/* <SlideAnimationButton btnName="TALK TO SALES" /> */}
+
+                        </div>
+                           
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            {/* @@@@@@@@@@@@@@@  managed service main content ends @@@@@@@@@@@@@@@@@@ */}
       
     </>
   )

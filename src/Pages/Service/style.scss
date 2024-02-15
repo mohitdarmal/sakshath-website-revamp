@@ -223,6 +223,7 @@
 
             .left_side_technology, .right_side_technology{
                 flex:1;
+                margin-left: 20px;
 
                 ul{
                     padding: 0;
@@ -236,12 +237,26 @@
 
                 }
                 li:before{
-                    content: "\f058";
-                    position: relative;
-                    font-family: "FontAwesome";
-                    padding-right: 15px;
-                    font-size: 22px;
-                    color: #7141b1;                
+                    // content: "\f058";
+                    // position: relative;
+                    // font-family: "FontAwesome";
+                    // padding-right: 15px;
+                    // font-size: 22px;
+                    // color: #7141b1;      
+                    content: "\f111";
+        position: absolute;
+        font-family: "FontAwesome";
+        //font-size: 22px;
+        width: 15px;
+    height: 15px;
+    background: #32a4d533;
+    font-size: 9px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    color: #32a4d5;
+    margin-left: -22px;
+        margin-top: 5px;          
 
 
                 }
