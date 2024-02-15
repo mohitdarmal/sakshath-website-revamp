@@ -45,32 +45,5 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx1kUWOwlFA40rJ1e2LBiGerWwPXHlQJg&callback=initMap"></script>
-
-    
-    <script>
-      
-function initMap() {
-    // Specify center and zoom level
-    var myLatLng = {lat: 40.7128, lng: -74.0060};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 12,
-      center: myLatLng,
-      disableDefaultUI: true
-    });
-
-    // Create custom marker
-    var marker = new google.maps.Marker({
-      position: myLatLng,
-      map: map,
-      icon: {
-        url: 'data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Ccircle cx="12" cy="12" r="10" fill="red" /%3E%3Ccircle cx="12" cy="12" r="7" fill="%23fff" /%3E%3C/svg%3E',
-        scaledSize: new google.maps.Size(40, 40)
-      },
-      animation: google.maps.Animation.DROP,
-      title: 'Custom Marker'
-    });
-  }
-    </script>
   </body>
 </html>
