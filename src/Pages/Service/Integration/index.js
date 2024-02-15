@@ -62,7 +62,7 @@ export const Integration = () => {
         <div className="container">
           <div className="row align-items-center">
             
-            <div className="col-md-6">
+            <div className="col-md-6 ipad_full_width">
               <div className="overview_sec_left">
               <Heading
                 heading="Overview"
@@ -78,7 +78,7 @@ export const Integration = () => {
               </div>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-6 ipad_full_width">
               <div className="overview_sec_right_img">
                 <img
                   className="img-fluid integration_img_left"
@@ -103,9 +103,9 @@ export const Integration = () => {
               disableOnInteraction: false,
             }}
             loop={true}
-            // modules={[Autoplay]}
-            className="mySwiper"
-          >
+            modules={[Autoplay]}
+            className="mySwiper" 
+            >
             <SwiperSlide>
               <img src={CLIENT_LOGO1}  />{" "}
             </SwiperSlide>
@@ -214,12 +214,12 @@ export const Integration = () => {
 
       {/* section navbar start */}
 
-      <ServiceStickMenu />
+      <ServiceStickMenu intergrationCore="integrationId" />
 
       {/* section navbar end */}
 
       {/* section five start */}
-      <section className="integartion_coe_sec">
+      <section className="integartion_coe_sec" id="integrationId">
         <div className="container">
           <div className="row align-items-center">
             {/* <div className="body_sec_three_parent"> */}
@@ -341,7 +341,7 @@ export const Integration = () => {
         <div className="container software_logo_tab">
           <div className="Migration_Services ">
             <Heading
-                heading="Migration Services "
+                heading="Migration Technologies"
                 uppercase="text-uppercase"
               />
           </div>
@@ -353,9 +353,8 @@ export const Integration = () => {
               disableOnInteraction: false,
             }}
             loop={true}
-            // modules={[Autoplay]}
-            className="mySwiper"
-          >
+            modules={[Autoplay]}
+            className="mySwiper">
             <SwiperSlide>
               <img src={SOFTWARE_LOGO_1} />{" "}
             </SwiperSlide>
@@ -401,10 +400,11 @@ export const Integration = () => {
           <div className="row align-items-center">
             {/* <div className="body_sec_three_parent"> */}
             <div className="col-md-6 managed_services_left">
-              <Heading
-                heading="Managed services"
-                uppercase="text-uppercase"
-              />
+                  <Heading
+                    heading="Managed services"
+                    uppercase="text-uppercase"
+                   
+                  />
               <p>
                 End the days of emailing spreadsheets around and reviewing stale
                 data in meetings.
@@ -476,6 +476,7 @@ export const Integration = () => {
         </div>
       </section>
       {/* Faq end */}
+      
     </>
   );
 };
