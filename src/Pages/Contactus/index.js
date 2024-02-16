@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { Tab, Tabs, Col, Nav, Row } from "react-bootstrap";
+import { Tab, Tabs, Col, Nav, Row, Form, FloatingLabel, Button } from "react-bootstrap";
 import "./style.scss";
 import { GrLocation } from "react-icons/gr";
 //import SlideAnimationButton from '../../Components/Utils/SlideAnimationButton';
 import { Link } from "react-router-dom";
 import { BsTelephoneInbound } from "react-icons/bs";
 import { FaRegEnvelope } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 import {
   HEADQUATERS_ICON,
@@ -22,12 +24,44 @@ import Heading from "../../Components/Utils/Heading";
 
 const Contactus = () => {
   const [key, setKey] = useState("home");
+// Initialize form state
+const [formData, setFormData] = useState({
+  name: '',
+  email: '',
+  phoneNumber: '',
+  services: '',
+  comments: ''
+});
+
+// Handle form field changes
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData(prevState => ({
+    ...prevState,
+    [name]: value
+  }));
+};
+
+// Handle form submission
+const handleSubmit = (e) => {
+  e.preventDefault();
+  // Here you can submit the formData to your backend or perform any other action
+  console.log(formData, "Formadata"); // For demonstration, logging the formData to the console
+};
+
   return (
     <>
       <BreadCumb imgUrl={ABOUT_BANNER} title="Contact Us" />
 
       <section className="contact_us_sec">
         <div className="container">
+          <div className="row text-center">
+            <div className="col-md-8 offset-md-2">
+          <Heading heading="GET IN TOUCH WITH US" uppercase="text-uppercase" />
+          <p className="text-center mb-5">We are a firm who always support our customers through chat, person and also through mails on all our customers feedback, reveiws and our product enquiries. Kindly fill in the form and wait for the message to be displayed sent before you leave the form.
+</p>
+</div>
+          </div>
           <div className="row">
             <div className="col-md-1"> </div>
             <div className="col-md-5 position-relative">
@@ -167,12 +201,69 @@ const Contactus = () => {
                 </Tab>
                 {/* Asia End */}
 
+{/* US Start */}
                 <Tab eventKey="us" title="US">
-                  US
+                <Tab.Container
+                    id="left-tabs-example"
+                    defaultActiveKey="newjersey"
+                  >
+                    <Row className="align-items-center map_sec">
+                      <Col sm={2}>
+                        <Nav variant="pills" className="flex-column">
+                          <Nav.Item>
+                            <Nav.Link eventKey="newjersey">New Jersey</Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="mumbai">Mumbai</Nav.Link>
+                          </Nav.Item>
+                          
+                        </Nav>
+                      </Col>
+                      <Col sm={10}>
+                        <Tab.Content>
+                          <Tab.Pane eventKey="newjersey">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="mumbai">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                           
+                        </Tab.Content>
+                      </Col>
+                    </Row>
+                  </Tab.Container>
                 </Tab>
+                {/* US End */}
+
+                {/* ANZ Start */}
                 <Tab eventKey="anz" title="ANZ">
-                  ANZ
+                <Tab.Container
+                    id="left-tabs-example"
+                    defaultActiveKey="newzland"
+                  >
+                    <Row className="align-items-center map_sec">
+                      <Col sm={2}>
+                        <Nav variant="pills" className="flex-column">
+                          <Nav.Item>
+                            <Nav.Link eventKey="newzland">New Zealand</Nav.Link>
+                          </Nav.Item>
+                        </Nav>
+                      </Col>
+                      <Col sm={10}>
+                        <Tab.Content>
+                          <Tab.Pane eventKey="newzland">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="mumbai">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                           
+                        </Tab.Content>
+                      </Col>
+                    </Row>
+                  </Tab.Container>
                 </Tab>
+                {/* ANZ End */}
                 <Tab eventKey="aftrica" title="Africa">
                   Africa
                 </Tab>
@@ -187,6 +278,95 @@ const Contactus = () => {
           </div>
         </div>
       </section>
+
+
+
+<section className="contact_page_form">
+  <div className="container">
+    <div className="row">
+    
+
+      <div className="col-md-8 offset-md-2">
+        <div className="text-center mb-4">
+      <Heading heading="Work with us" uppercase="text-uppercase" />
+      </div>
+      <Form onSubmit={handleSubmit}>
+        <Row>
+          <Col md={6}>
+            <FloatingLabel controlId="firstName" label="First Name" className="mb-3">
+              <Form.Control
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="First Name"
+              />
+            </FloatingLabel>
+          </Col>
+          <Col md={6}>
+            <FloatingLabel controlId="email" label="Work Email" className="mb-3">
+              <Form.Control
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email ID"
+              />
+            </FloatingLabel>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6}>
+            <FloatingLabel controlId="phoneNumber" label="Contact Number" className="mb-3">
+              <Form.Control
+                type="tel"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                placeholder="Phone Number"
+              />
+            </FloatingLabel>
+          </Col>
+          <Col md={6}>
+            <FloatingLabel controlId="services" label="Select Reason">
+              <Form.Select
+                aria-label="Floating label select example"
+                name="services"
+                value={formData.services}
+                onChange={handleChange}
+              >
+                <option>Select Option</option>
+                <option value="businessInquiry">Business Inquiry</option>
+                <option value="careerEnquiry">Career Enquiry</option>
+                <option value="alliancePartnership">Alliance & Partnership</option>
+              </Form.Select>
+            </FloatingLabel>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12}>
+            <FloatingLabel controlId="comments" label="Comments">
+              <Form.Control
+                as="textarea"
+                name="comments"
+                value={formData.comments}
+                onChange={handleChange}
+                placeholder="Leave a comment here"
+                style={{ height: '150px' }}
+              />
+            </FloatingLabel>
+          </Col>
+        </Row>
+        <div className="text-center mt-4">
+        <Button type="submit">SUBMIT</Button>
+        </div>
+      </Form>
+    
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* <section  className='contact_us'>
 

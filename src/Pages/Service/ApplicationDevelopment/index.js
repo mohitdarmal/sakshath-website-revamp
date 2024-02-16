@@ -55,7 +55,7 @@ const ApplicationDevelopment = () => {
           <div className="row">
             <div className="col-md-8 offset-md-2 text-center app_dev_heading">
               <Heading
-                heading="Why choose Sakshath Technologies® for app development?"
+                heading="Why choose Sakshath Technologies for app development?"
                 uppercase="text-uppercase"
               />
             </div>
