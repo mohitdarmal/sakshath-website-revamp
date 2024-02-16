@@ -1,11 +1,19 @@
 @import "../../Assets/saas/Main.scss";
-.box{
-    box-shadow: 0 2px 20px rgb(0 0 0 / 16%);
-    padding: 14px 12px;
-    border-radius: 5px;
-    //min-height: 100px;
-    min-width: 100px;
-}
+// .box{
+//     box-shadow: 0 2px 20px rgb(0 0 0 / 16%);
+//     padding: 14px 12px;
+//     border-radius: 5px;
+//     //min-height: 100px;
+//     min-width: 100px;
+    .modal-body .box {
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
+        padding: 35px 17px;
+        border-radius: 7px;
+        background: #32a4d5;
+        color: white;
+        margin-top: 10px;
+    }
+
 .modal-title{
     
     margin-left:250px;
