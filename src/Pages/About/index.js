@@ -32,42 +32,43 @@ const About = () => {
       </Helmet>
 
       <BreadCumb imgUrl={ABOUT_BANNER} title="About Us" />
-      <section className=" about_who" >
+      <section className=" about_who">
         <div className="container mt-4">
           <div className="row mt-4 about_who_we_r ">
             <div className="col-md-6 ipad_full_width">
               <div className="about_who_we_r_content">
-              <Fade direction="up" delay={50} triggerOnce>
-                <Heading heading="Who we are" uppercase="text-uppercase" /></Fade>
+                <Fade direction="up" delay={50} triggerOnce>
+                  <Heading heading="Who we are" uppercase="text-uppercase" />
+                </Fade>
                 <Fade direction="up" triggerOnce>
-                <p>
-                  Our journey started way back in the year 2012. It started as a
-                  partnership firm initially under the name{" "}
-                  <strong> Saaksh8 Consulting Services</strong> with smidgen
-                  capital, later in the years this small consulting firm
-                  providing IT recruitment Services ran into the idea of having
-                  an ERP offshore development. If not quite a tale of rags to
-                  riches, the story of Sakshath Technologies’ rise to stardom
-                  certainly came closer. The birth of SAKSHATH TECHNOLOGIES® in
-                  2015, wouldn’t be possible without the utmost faith and trust
-                  of family and friends. <br />
-                  <br />
-                  Sakshath Technologies’ biggest USP’s are ERP (Epicor, MS
-                  Dynamics, JD Edwards and SYSPRO), QA, BI & Analytics (Power
-                  BI, Qlik and Tableau).
-                  <strong>
-                    {" "}
-                    SakshathTechnologies® is the only company in India to
-                    provide SYSPRO Services that are designed in a way to
-                    support growth and improve profitability
-                  </strong>
-                  . We are committed to helping customers understand that the
-                  software used in their organization is a business decision
-                  that maximizes their software investment. We are equipped with
-                  software-skilled consultants to identify and enhance the
-                  client’s business processes to increase efficiency and
-                  maximize profits.
-                </p>
+                  <p>
+                    Our journey started way back in the year 2012. It started as
+                    a partnership firm initially under the name{" "}
+                    <strong> Saaksh8 Consulting Services</strong> with smidgen
+                    capital, later in the years this small consulting firm
+                    providing IT recruitment Services ran into the idea of
+                    having an ERP offshore development. If not quite a tale of
+                    rags to riches, the story of Sakshath Technologies’ rise to
+                    stardom certainly came closer. The birth of SAKSHATH
+                    TECHNOLOGIES® in 2015, wouldn’t be possible without the
+                    utmost faith and trust of family and friends. <br />
+                    <br />
+                    Sakshath Technologies’ biggest USP’s are ERP (Epicor, MS
+                    Dynamics, JD Edwards and SYSPRO), QA, BI & Analytics (Power
+                    BI, Qlik and Tableau).
+                    <strong>
+                      {" "}
+                      Sakshath Technologies is the only company in India to
+                      provide SYSPRO Services that are designed in a way to
+                      support growth and improve profitability
+                    </strong>
+                    . We are committed to helping customers understand that the
+                    software used in their organization is a business decision
+                    that maximizes their software investment. We are equipped
+                    with software-skilled consultants to identify and enhance
+                    the client’s business processes to increase efficiency and
+                    maximize profits.
+                  </p>
                 </Fade>
               </div>
             </div>
@@ -92,25 +93,27 @@ const About = () => {
               <div className="about_who_we_r_content_right">
                 {/* <Heading heading="Who we are" uppercase="text-uppercase" /> */}
                 <Fade direction="up" triggerOnce>
-                <p>
-                  We go by the saying <strong>“I’m Sakshath Technologies®” </strong> the
-                  thought behind the phrase is the presence of all the employees
-                  ‘HERE’ and ‘NOW’. Starting as a self-funded business Sakshath
-                  Technologies’ company ethos to date is BY THE PEOPLE, FOR THE
-                  PEOPLE. Every employee from the beginning of the journey made
-                  what Sakshath Technologies® is today, we grew gradually to a family of 100+
-                  employees and now have a domestic presence in 3 metropolitan
-                  cities serving clients from all over the world.
-                  Celebratingdecade milestones, today we take pride in
-                  onboarding the team of Country’s Best and strongly believe in
-                  Growing Together. <br /> <br />
-                  To engage businesses from small to medium enterprises to
-                  transition into ERP solutions that are easy to use, scalable,
-                  enable business insight and ultimately benefit the user
-                  community. We want to be a fair, reliable and professional
-                  partner to our customers by offering useful and effective
-                  products and services that contribute to their success.
-                </p>
+                  <p>
+                    We go by the saying <strong>“I’m Sakshath” </strong> the
+                    thought behind the phrase is the presence of all the
+                    employees ‘HERE’ and ‘NOW’. Starting as a self-funded
+                    business Sakshath Technologies’ company ethos to date is BY
+                    THE PEOPLE, FOR THE PEOPLE. Every employee from the
+                    beginning of the journey made what Sakshath Technologies is
+                    today, we grew gradually to a family of 100+ employees and
+                    now have a domestic presence in 3 metropolitan cities
+                    serving clients from all over the world. Celebratingdecade
+                    milestones, today we take pride in onboarding the team of
+                    Country’s Best and strongly believe in Growing Together.{" "}
+                    <br /> <br />
+                    To engage businesses from small to medium enterprises to
+                    transition into ERP solutions that are easy to use,
+                    scalable, enable business insight and ultimately benefit the
+                    user community. We want to be a fair, reliable and
+                    professional partner to our customers by offering useful and
+                    effective products and services that contribute to their
+                    success.
+                  </p>
                 </Fade>
               </div>
             </div>
@@ -124,21 +127,20 @@ const About = () => {
         <div className="container">
           <div className="row align-items-center vision_container">
             <div className="col-md-5">
-            
               <p className="vision_para">
-              <Fade direction="up"delay={150}  triggerOnce>
-                It is the desire of Sakshath Technologies® to establish itself as a powerful
-                business operation with vibrance and growth built on Sakshath Technologies®
-                principles that is highly regarded by our customers, stake
-                holders and our employees. As an organization, we want to be in
-                a place where customers rely on the excellence of our products
-                and services.
+                <Fade direction="up" delay={150} triggerOnce>
+                  It is the desire of Sakshath Technologies to establish itself
+                  as a powerful business operation with vibrance and growth
+                  built on Sakshath Technologies® principles that is highly
+                  regarded by our customers, stake holders and our employees. As
+                  an organization, we want to be in a place where customers rely
+                  on the excellence of our products and services.
                 </Fade>
               </p>
             </div>
             <div className="col-md-2 text-center d-flex justify-content-center">
               <div className="vision_rounded">
-                <p>Our Vision</p>
+                <p>OUR VISION</p>
               </div>
             </div>
             <div className="col-md-5"></div>
@@ -147,13 +149,18 @@ const About = () => {
             <div className="col-md-5 "></div>
             <div className="col-md-2 text-center d-flex justify-content-center">
               <div className="mision_rounded">
-                <p>Our Mission</p>
+                <p>OUR MISSION</p>
               </div>
             </div>
             <div className="col-md-5">
               <p className="mision_para">
-              <Fade direction="up" delay={150} triggerOnce>
-              To engage businesses from small to medium enterprises to transition into ERP solutions that are easy to use, scalable, enable business insight and ultimately benefit the user community. We want to be a fair, reliable and professional partner to our customers by offering useful and effective products and services that contribute to their success
+                <Fade direction="up" delay={150} triggerOnce>
+                  To engage businesses from small to medium enterprises to
+                  transition into ERP solutions that are easy to use, scalable,
+                  enable business insight and ultimately benefit the user
+                  community. We want to be a fair, reliable and professional
+                  partner to our customers by offering useful and effective
+                  products and services that contribute to their success
                 </Fade>
               </p>
             </div>

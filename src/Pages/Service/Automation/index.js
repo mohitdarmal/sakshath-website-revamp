@@ -21,6 +21,7 @@ import {
   RPA_ADVISORY,
   RPA_BOT,
   RPA_DELIVERY,
+  RPA_GRAPH,
   RPA_PILOT,
   UI_PATH_RP,
 } from "./Constant";
@@ -39,6 +40,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import BreadCumb from "../../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
+import ServiceStickMenu from "../../../Components/ServiceStickMenu";
+import {
+  CLIENT_LOGO1,
+  CLIENT_LOGO2,
+  CLIENT_LOGO3,
+  CLIENT_LOGO4,
+  CLIENT_LOGO5,
+  CLIENT_LOGO6,
+} from "../../../Components/ClientLogo/Constant";
+import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
+import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 
 const Automation = () => {
   return (
@@ -48,6 +60,110 @@ const Automation = () => {
         title="Automation"
       />
 
+      {/* <!-- section one start --> */}
+      <section className="overview_sec">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6 ipad_full_width">
+              <div className="overview_sec_left">
+                <Heading
+                  heading="Overview"
+                  // uppercase="text-uppercase"
+                />
+                <p className="sec_para">
+                  Data integration is the practice of consolidating data from
+                  disparate sources into a single dataset to provide users with
+                  consistent access to and delivery of data across all business
+                  processes.
+                </p>
+                <SlideAnimationButton btnName="TALK TO SALES" />
+              </div>
+            </div>
+
+            <div className="col-md-6 ipad_full_width">
+              <div className="overview_sec_right_img">
+                <img
+                  className="img-fluid integration_img_left"
+                  src={INTEGRATION_SECTION_ONE_IMG}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <!-- section one end --> */}
+
+      <section className="partner_logo_section">
+        <div className="container partner_logo_tab">
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={10}
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            modules={[Autoplay]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={CLIENT_LOGO1} />{" "}
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO3} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO4} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO5} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO6} />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+
+      {/* <!-- section two start --> */}
+      {/* <section className="why_need_integration_sec">
+        <div className="container">
+          <div className="row align-items-center">
+            <div class="col-md-6  why_need_integration_left">
+              <div>
+                <img
+                  className="img-fluid integration_img_right"
+                  src={INTEGRATION_SECTION_ONE_IMG}
+                />
+              </div>
+            </div>
+            <div className="col-md-6 why_need_integration_right">
+              <Heading
+                heading="Why do you need integration?"
+                uppercase="text-uppercase"
+              />
+              <p className="sec_para">
+                Inhouse application integration: application to application –
+                inhouse (running on cloud or on-premises) Business application
+                integration to software as a service provider using SOAP or REST
+                Business 2 Business application integration: connecting to
+                third-party or partner Integration of application to IoT Devices{" "}
+              </p>
+       
+            </div>
+          </div>
+        </div>
+      </section> */}
+      {/* <!-- section two end --> */}
+      <ServiceStickMenu
+        pageName="Automation"
+        title1="Cloud Automation DEVELOPMENT"
+        title2="RPA"
+        title3="Devops /Testing"
+      />
       {/* automation starts */}
       <section className="automation">
         <div className="container">
@@ -69,9 +185,9 @@ const Automation = () => {
                   uppercase="text-uppercase"
                 />
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                  veniam velit quibusdam aliquid vel est expedita voluptatum
-                  accusamus dolorum.
+                  Organizations can leverage cloud-native technologies to
+                  develop and run scalable applications in modern, dynamic
+                  environments like public, private, and hybrid clouds.
                 </p>
               </div>
 
@@ -112,16 +228,11 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="pillars_heading text-center ">
-              <Heading
-                heading="pillars of Sakshath"
-                uppercase="text-uppercase"
-              />
+              <Heading heading="Pillars Of  Cloud Native Application" />
             </div>
-            {/* <div className="pillars_boxes "> */}
-
             <div className="col-md-3 pillar_number_storke pillar_number_storke">
               <div className="number">
-                <h1> 01</h1>
+                {/* <h1> 01</h1> */}
               </div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -134,7 +245,7 @@ const Automation = () => {
             </div>
             <div className="col-md-3 pillar_number_storke">
               <div className="number">
-                <h1> 02</h1>
+                {/* <h1> 02</h1> */}
               </div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -147,20 +258,20 @@ const Automation = () => {
             </div>
             <div className="col-md-3 pillar_number_storke">
               <div className="number">
-                <h1> 03</h1>
+                {/* <h1> 03</h1> */}
               </div>
               <div className="pillars_box">
                 <div className="pillar_icon">
                   <img src={pillar_microservice} alt="" />
                 </div>
                 <div className="pillar_title">
-                  <h5>MicroservicesE</h5>
+                  <h5>Microservices</h5>
                 </div>
               </div>
             </div>
             <div className="col-md-3 pillar_number_storke">
               <div className="number">
-                <h1> 04</h1>
+                {/* <h1> 04</h1> */}
               </div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -243,13 +354,12 @@ const Automation = () => {
       {/*automation ends */}
 
       {/* mobile Application starts */}
-      <section className="mobile_section">
+      {/* <section className="mobile_section">
         <div className="container">
           <div className="row">
             <div className="mobile_main_heading text-center pb-4">
               <Heading
                 heading="Mobile Application Development"
-                uppercase="text-uppercase"
               />
             </div>
 
@@ -260,7 +370,7 @@ const Automation = () => {
               <div className="mobile_application_heading">
                 <h5>Android Development</h5>
               </div>
-              {/* </div> */}
+           
             </div>
             <div className="col-md-4 ios_app">
               <div className="mobile_application_img">
@@ -268,7 +378,7 @@ const Automation = () => {
               </div>
               <div className="mobile_application_heading">
                 <h5>iOS Development</h5>
-                {/* </div> */}
+                
               </div>
             </div>
             <div className="col-md-4 cross_platform">
@@ -278,12 +388,64 @@ const Automation = () => {
               <div className="mobile_application_heading">
                 <h5>Cross Platform Development</h5>
               </div>
-              {/* </div> */}
+            </div>
+          </div>
+        </div>
+      </section> */}
+      {/* mobile Application starts */}
+
+      {/* mobile application ends */}
+      <section className="mobile_section">
+        <div className="container">
+          <div className="row text-center">
+            <div className="col-md-4">
+              <div className="mobile_app_main_heading">
+                <Heading heading="Mobile Application Development" />
+              </div>
+            </div>
+            <div className="col-md-8 ">
+              <div className="row ">
+                <div className="col-md-4 text-center">
+                  <div className="application_box">
+                    <div className="mobile_icon">
+                      <img src={ANDRIOD_APP} alt="" />
+                    </div>
+                    <div className="mobile_title text-center">
+                      <h4>
+                        Andriod <br /> Development
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4 text-center">
+                  <div className="application_box">
+                    <div className="mobile_icon">
+                      <img src={IOS_APPLE} alt="" />
+                    </div>
+                    <div className="mobile_title text-center">
+                      <h4>
+                        iOS <br /> Development
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4 text-center">
+                  <div className="application_box">
+                    <div className="mobile_icon">
+                      <img src={CROSS_PLATFORM_APP} alt="" />
+                    </div>
+                    <div className="mobile_title text-center">
+                      <h4>
+                        CrossPlatform <br /> Development
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      {/* mobile Application starts */}
 
       {/* application starts */}
       <section className="application_section">
@@ -301,7 +463,7 @@ const Automation = () => {
               </div> */}
               <div className="application_integration">
                 <div className="api_box">
-                  <h4>Services- Based Integration.</h4>
+                  <h4>Services- Based Integration</h4>
                   <span>
                     Restful and Restless (SOAP) service integration provides
                     digital integration capabilities. It has small-scale to
@@ -312,7 +474,7 @@ const Automation = () => {
               </div>
               <div className="application_integration">
                 <div className="api_box">
-                  <h4>Social Integration.</h4>
+                  <h4>Social Integration</h4>
                   <span>
                     Integration with social collaboration platforms such as,
                     Facebook, Twitter, Instagram, and many more. It consumes
@@ -324,7 +486,7 @@ const Automation = () => {
             <div className="col-md-6">
               <div className="application_integration">
                 <div className="api_box">
-                  <h4>Marketplace Integration.</h4>
+                  <h4>Marketplace Integration</h4>
                   <span>
                     Marketplace integration helps business users to integrate
                     with multiple channels: to buy or sell their services and
@@ -335,10 +497,7 @@ const Automation = () => {
               </div>
               <div className="application_integration">
                 <div className="api_box">
-                  <h4>
-                    {" "}
-                    Open API business strategy for monetization of API’s.
-                  </h4>
+                  <h4> Open API business strategy for monetization of API’s</h4>
                   <span>
                     Open API business strategy for monetization of API’s. API
                     Gateway/Manager. Hybrid Integration. In-Built Connectors,
@@ -425,7 +584,11 @@ const Automation = () => {
                 </div>
                 <div className="col-md-6">
                   {/* Graph starts */}
-                  <Graph />
+                  {/* <Graph /> */}
+
+                  <div className="rpa_graph">
+                    <img src={RPA_GRAPH} alt="" />
+                  </div>
                   {/* Graphs ends */}
                 </div>
                 <div className="col-md-3">
@@ -627,6 +790,11 @@ const Automation = () => {
       <section className="rpa_tools_section">
         <div className="rpa_tools_main_heading text-center">
           <Heading heading="Rpa Tools" uppercase="text-uppercase" />
+          <p>
+            In order to achieve value-based RPA solutions for our customers, our
+            consultants have worked with a variety of technologies and RPA
+            vendors.
+          </p>
         </div>
         <div className="container rpa_tools_logos">
           <Swiper
@@ -677,7 +845,7 @@ const Automation = () => {
         <div className="container devops_container">
           <div className="row align-items-center ">
             <div className="col-md-6">
-              <div className="devops_img" >
+              <div className="devops_img">
                 <img src={DEVOPS} alt="" width="580px" />
               </div>
             </div>
@@ -701,102 +869,105 @@ const Automation = () => {
             <div className="devops_heading_main text-center">
               <Heading heading="DevOps & Testing " uppercase="text-uppercase" />
             </div>
+            <div className="row box1 ">
+              <div className="col-md-3 devops_boxes">
+                <div className="devops_list_box">
+                  <div className="devops_ul">
+                    <ul>
+                      <li>Functional Testing</li>
+                      <li>Unit Testing</li>
+                      <li>Integration</li>
+                      <li>UAT Testing</li>
+                      <li>Regression Testing</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3 devops_boxes">
+                <div className="devops_list_box">
+                  <div className="devops_ul">
+                    <ul>
+                      <li>Test Automation</li>
+                      <li>Installation & Scripting</li>
 
-            <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <div className="devops_ul">
-                  <ul>
-                    <li>Functional Testing</li>
-                    <li>Unit Testing</li>
-                    <li>Integration</li>
-                    <li>UAT Testing</li>
-                    <li>Regression Testing</li>
-                  </ul>
+                      <li>Integration</li>
+                      <li>Code/Codeless testing</li>
+                      <li>Scalable framework</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3 devops_boxes">
+                <div className="devops_list_box">
+                  <div className="devops_ul">
+                    <ul>
+                      <li>Performance Testing</li>
+                      <li>Load Test</li>
+                      <li>Volume Test</li>
+                      <li>Stress Test</li>
+                      <li>Soak Test.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-3 devops_boxes">
+                <div className="devops_list_box">
+                  <div className="devops_ul">
+                    <ul>
+                      <li>Payment Testing</li>
+                      <li>Transaction Completion & Validation.</li>
+
+                      <li>Mobile Wallet Testing.</li>
+                      <li>E-commerce & M-commerce.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <div className="devops_ul">
-                  <ul>
-                    <li>Test Automation</li>
-                    <li>Installation & Scripting</li>
 
-                    <li>Integration</li>
-                    <li>Code/Codeless testing</li>
-                    <li>Scalable framework</li>
-                  </ul>
+            <div className="row box2 ">
+              <div className="col-md-3 devops_boxes">
+                <div className="devops_list_box">
+                  <div className="devops_ul">
+                    <ul>
+                      <li>User Experience Testing</li>
+                      <li>User Interface Testing</li>
+
+                      <li>User Experience</li>
+                      <li>User Behavior</li>
+                      <li>Cross Browser</li>
+                      <li>Browser Testing</li>
+                      <li>Dynamic Page Testing</li>
+                      <li> BrowserLayout</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <div className="devops_ul">
-                  <ul>
-                    <li>Microservice & API testing</li>
-                    <li>UI & Functional testing</li>
 
-                    <li>Security, Run Time & Error Detection/Penetration</li>
-                  </ul>
+              <div className="col-md-3 devops_boxes">
+                <div className="devops_list_box">
+                  <div className="devops_ul">
+                    <ul>
+                      <li>Security Testing & Injection.</li>
+                      <li>Broken authentication & session mgmt.</li>
+                      <li>Insufficient transport layer protection.</li>
+                      <li>Security Misconfiguration.</li>
+                      <li>Cross-Site Scripting (XSS).</li>
+                      <li>Insecure Direct Object References.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div className="col-md-3 devops_boxes">
+                <div className="devops_list_box">
+                  <div className="devops_ul">
+                    <ul>
+                      <li>Microservice & API testing</li>
+                      <li>UI & Functional testing</li>
 
-            <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <div className="devops_ul">
-                  <ul>
-                    <li>User Experience Testing</li>
-                    <li>User Interface Testing</li>
-
-                    <li>User Experience,User Behavior</li>
-                    <li>Cross Browser</li>
-                    <li>
-                      Browser Testing, BrowserLayout, Dynamic Page Testing
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <div className="devops_ul">
-                  <ul>
-                    <li>Performance Testing</li>
-                    <li>Load Test</li>
-
-                    <li>Volume Test</li>
-                    <li>Stress Test</li>
-                    <li>Soak Test.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <div className="devops_ul">
-                  <ul>
-                    <li>Security Testing & Injection.</li>
-                    <li>Broken authentication & session mgmt.</li>
-
-                    <li>Insufficient transport layer protection.</li>
-                    <li>Security Misconfiguration.</li>
-                    <li>Cross-Site Scripting (XSS).</li>
-                    <li>Insecure Direct Object References.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <div className="devops_ul">
-                  <ul>
-                    <li>Payment Testing</li>
-                    <li>Transaction Completion & Validation.</li>
-
-                    <li>Mobile Wallet Testing.</li>
-                    <li>E-commerce & M-commerce.</li>
-                  </ul>
+                      <li>Security, Run Time & Error Detection/Penetration</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
