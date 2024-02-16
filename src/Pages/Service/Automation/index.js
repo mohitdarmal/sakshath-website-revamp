@@ -64,7 +64,10 @@ const Automation = () => {
             </div>
             <div className="col-md-6">
               <div className="cloud_native_content">
-                <Heading heading=" Cloud Native Development" />
+                <Heading
+                  heading=" Cloud Native Development"
+                  uppercase="text-uppercase"
+                />
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
                   veniam velit quibusdam aliquid vel est expedita voluptatum
@@ -246,7 +249,7 @@ const Automation = () => {
             <div className="mobile_main_heading text-center pb-4">
               <Heading
                 heading="Mobile Application Development"
-                uppercase="upppercase"
+                uppercase="text-uppercase"
               />
             </div>
 
@@ -286,12 +289,12 @@ const Automation = () => {
       <section className="application_section">
         <div className="container">
           <div className="row">
-          <div className="application_main_heading text-center">
-                <Heading
-                  heading="Application Integration"
-                  uppercase="uppercase"
-                />
-              </div>
+            <div className="application_main_heading text-center">
+              <Heading
+                heading="Application Integration"
+                uppercase="text-uppercase"
+              />
+            </div>
             <div className="col-md-6">
               {/* <div className="api_img">
                 <img src={API_IMG} alt="" />
@@ -306,44 +309,44 @@ const Automation = () => {
                     capabilities.
                   </span>
                 </div>
-                </div>
-                <div className="application_integration">
+              </div>
+              <div className="application_integration">
                 <div className="api_box">
                   <h4>Social Integration.</h4>
                   <span>
-                  Integration with social collaboration platforms such as,
-                      Facebook, Twitter, Instagram, and many more. It consumes
-                      their API and integrates the data in the DXP’s
-                      application.
+                    Integration with social collaboration platforms such as,
+                    Facebook, Twitter, Instagram, and many more. It consumes
+                    their API and integrates the data in the DXP’s application.
                   </span>
                 </div>
-                </div>
+              </div>
             </div>
             <div className="col-md-6">
-           
-              
-                <div className="application_integration">
+              <div className="application_integration">
                 <div className="api_box">
                   <h4>Marketplace Integration.</h4>
                   <span>
-                  Marketplace integration helps business users to integrate
-                      with multiple channels: to buy or sell their services and
-                      products of different channels while consuming a single
-                      service.
+                    Marketplace integration helps business users to integrate
+                    with multiple channels: to buy or sell their services and
+                    products of different channels while consuming a single
+                    service.
                   </span>
                 </div>
-                </div>
-                <div className="application_integration">
+              </div>
+              <div className="application_integration">
                 <div className="api_box">
-                  <h4> Open API business strategy for monetization of API’s.</h4>
+                  <h4>
+                    {" "}
+                    Open API business strategy for monetization of API’s.
+                  </h4>
                   <span>
-                  Open API business strategy for monetization of API’s. API
+                    Open API business strategy for monetization of API’s. API
                     Gateway/Manager. Hybrid Integration. In-Built Connectors,
                     Enterprise Service Bus (ESB). Pluggable Adaptors.
                   </span>
                 </div>
               </div>
-                {/* <ul>
+              {/* <ul>
                   <li>
                     {" "}
                     <strong>Services- Based Integration.</strong>
@@ -385,7 +388,6 @@ const Automation = () => {
                     Enterprise Service Bus (ESB). Pluggable Adaptors.
                   </li>
                 </ul> */}
-          
             </div>
           </div>
         </div>
@@ -546,13 +548,15 @@ const Automation = () => {
                     </div>
                     <div className="rpa_heading">
                       <h4>RPA ADVISORY</h4>
-
-                      <p>
-                        Process & Platform Assessment <br />
-                        Business Case Preparation – Functional & Technical.{" "}
-                        <br />
-                        Standard Operation Procedure (SOP’s).
-                      </p>
+                      <div className="rpa_list">
+                        <ul>
+                          <li>Process & Platform Assessment.</li>
+                          <li>
+                            Business Case Preparation – Functional & Technical.
+                          </li>
+                          <li>Standard Operation Procedure (SOP’s).</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                   <div className=" rpa_box_left_down">
@@ -561,14 +565,18 @@ const Automation = () => {
                     </div>
                     <div className="rpa_heading">
                       <h4> RPA PILOCT & POC</h4>
-
-                      <p>
-                        Identification & Shortlisting of the use case <br />
-                        Proof of concept creation & Prototyping. <br />
-                        RPA Pilot & Enterprise Automation Roadmap (Creation &
-                        Blueprint).
-                        <br />
-                      </p>
+                      <div className="rpa_list">
+                        <ul>
+                          <li>
+                            Identification & Shortlisting of the use case.
+                          </li>
+                          <li>Proof of concept creation & Prototyping.</li>
+                          <li>
+                            RPA Pilot & Enterprise Automation Roadmap (Creation
+                            & Blueprint).
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -581,13 +589,6 @@ const Automation = () => {
                     </div>
                     <div className="rpa_heading">
                       <h4>RPA DELIVERY</h4>
-
-                      {/* <p>
-                        Automation Scripting. <br />
-                        Attended, Unattended, Hybrid Bots. <br />
-                        Robot Training. <br />
-                        Robot Testing.
-                      </p> */}
 
                       <div className="rpa_list">
                         <ul>
@@ -605,11 +606,12 @@ const Automation = () => {
                     </div>
                     <div className="rpa_heading">
                       <h4>RPA BOT SUPPORT</h4>
-
-                      <p>
-                        Level 1 Support <br />
-                        L2 2 Support
-                      </p>
+                      <div className="rpa_list">
+                        <ul>
+                          <li>Level 1 Support.</li>
+                          <li>L2 2 Support.</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -671,30 +673,17 @@ const Automation = () => {
       <WhySakshath />
       {/*  why skashath ends */}
 
-      {/* <section>
-        <div className="container">
-          <div className="snipper"></div>
-        </div>
-      </section> */}
-
       <section className="devops_section">
         <div className="container devops_container">
-          <div className="row ">
-            {/* <div className="col-md-12">
-                <div className="devops_testing-img">
-                <img
-                  src={DEVOPS}
-                  alt=""
-                 
-                />
-                </div>
-            </div> */}
-            <div className="col-md-8 offset-md-2">
+          <div className="row align-items-center ">
+            <div className="col-md-6">
+              <div className="devops_img" >
+                <img src={DEVOPS} alt="" width="580px" />
+              </div>
+            </div>
+            <div className="col-md-6">
               <div className="devops_testing_right_content">
-                {/* <h2>
-                DevOps/Testing
-                </h2> */}
-                <Heading heading="Devops Testing" uppercase="text-uppercase" />
+                <Heading heading="DevOps/Testing" uppercase="text-uppercase" />
                 <p>
                   In transforming Testing to the world of Agile and DevOps,
                   Sakshath has been at the forefront of providing best-in-class,
@@ -706,135 +695,109 @@ const Automation = () => {
         </div>
       </section>
 
-
       <section className="devops_section">
         <div className="container">
           <div className="row">
             <div className="devops_heading_main text-center">
-              <Heading heading="Testing Sercices" uppercase="text-uppercase" />
+              <Heading heading="DevOps & Testing " uppercase="text-uppercase" />
             </div>
 
             <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
-                <ul className="devops_ul">
-                  <li>Functional Testing</li>
-                  <li>Unit Testing</li>
-
-                  <li>Integration</li>
-                  <li>UAT Testing</li>
-                  <li>Regression Testing</li>
-                </ul>
+                <div className="devops_ul">
+                  <ul>
+                    <li>Functional Testing</li>
+                    <li>Unit Testing</li>
+                    <li>Integration</li>
+                    <li>UAT Testing</li>
+                    <li>Regression Testing</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
-                <ul>
-                  <li>Test Automation</li>
-                  <li>Installation & Scripting</li>
+                <div className="devops_ul">
+                  <ul>
+                    <li>Test Automation</li>
+                    <li>Installation & Scripting</li>
 
-                  <li>Integration</li>
-                  <li>Code/Codeless testing</li>
-                  <li>Scalable framework</li>
-                </ul>
+                    <li>Integration</li>
+                    <li>Code/Codeless testing</li>
+                    <li>Scalable framework</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
-                <ul>
-                  <li>Microservice & API testing</li>
-                  <li>UI & Functional testing</li>
+                <div className="devops_ul">
+                  <ul>
+                    <li>Microservice & API testing</li>
+                    <li>UI & Functional testing</li>
 
-                  <li>Security, Run Time & Error Detection/Penetration</li>
-                </ul>
-              </div>
-            </div>
-
-          
-          </div>
-        </div>
-      </section>
-
-
-      <section className="devops_section">
-        <div className="container">
-          <div className="row">
-            <div className="devops_heading_main text-center">
-              <Heading heading="Devops Service " uppercase="text-uppercase" />
-            </div>
-
-            <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <ul className="devops_ul">
-                  <li>Functional Testing</li>
-                  <li>Unit Testing</li>
-
-                  <li>Integration</li>
-                  <li>UAT Testing</li>
-                  <li>Regression Testing</li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <ul>
-                  <li>Test Automation</li>
-                  <li>Installation & Scripting</li>
-
-                  <li>Integration</li>
-                  <li>Code/Codeless testing</li>
-                  <li>Scalable framework</li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-md-3 devops_boxes">
-              <div className="devops_list_box">
-                <ul>
-                  <li>Microservice & API testing</li>
-                  <li>UI & Functional testing</li>
-
-                  <li>Security, Run Time & Error Detection/Penetration</li>
-                </ul>
+                    <li>Security, Run Time & Error Detection/Penetration</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
             <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
-                <ul>
-                  <li>Microservice & API testing</li>
-                  <li>UI & Functional testing</li>
+                <div className="devops_ul">
+                  <ul>
+                    <li>User Experience Testing</li>
+                    <li>User Interface Testing</li>
 
-                  <li>Security, Run Time & Error Detection/Penetration</li>
-                </ul>
+                    <li>User Experience,User Behavior</li>
+                    <li>Cross Browser</li>
+                    <li>
+                      Browser Testing, BrowserLayout, Dynamic Page Testing
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
-                <ul>
-                  <li>Microservice & API testing</li>
-                  <li>UI & Functional testing</li>
+                <div className="devops_ul">
+                  <ul>
+                    <li>Performance Testing</li>
+                    <li>Load Test</li>
 
-                  <li>Security, Run Time & Error Detection/Penetration</li>
-                </ul>
+                    <li>Volume Test</li>
+                    <li>Stress Test</li>
+                    <li>Soak Test.</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
-                <ul>
-                  <li>Microservice & API testing</li>
-                  <li>UI & Functional testing</li>
+                <div className="devops_ul">
+                  <ul>
+                    <li>Security Testing & Injection.</li>
+                    <li>Broken authentication & session mgmt.</li>
 
-                  <li>Security, Run Time & Error Detection/Penetration</li>
-                </ul>
+                    <li>Insufficient transport layer protection.</li>
+                    <li>Security Misconfiguration.</li>
+                    <li>Cross-Site Scripting (XSS).</li>
+                    <li>Insecure Direct Object References.</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-md-3 devops_boxes">
               <div className="devops_list_box">
-                <ul>
-                  <li>Microservice & API testing</li>
-                  <li>UI & Functional testing</li>
+                <div className="devops_ul">
+                  <ul>
+                    <li>Payment Testing</li>
+                    <li>Transaction Completion & Validation.</li>
 
-                  <li>Security, Run Time & Error Detection/Penetration</li>
-                </ul>
+                    <li>Mobile Wallet Testing.</li>
+                    <li>E-commerce & M-commerce.</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

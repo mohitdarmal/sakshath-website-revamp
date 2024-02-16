@@ -31,4 +31,4 @@ export const POWER_AUTOMATE_RPA=require('../../../Assets/images/POWER_AUTOMATE_R
 export const AUTOMATE_RPA=require('../../../Assets/images/AUTOMATE_RPA.png');
 
 // devops
-export const DEVOPS=require('../../../Assets/images/Devops.png')
+export const DEVOPS=require('../../../Assets/images/html-css-collage-concept-with-person (1).jpg')

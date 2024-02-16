@@ -9,7 +9,7 @@ import Heading from "../../../Components/Utils/Heading";
 import { ABOUT_BANNER } from "../../../Components/Breadcumb/Constant";
 import BreadCumb from "../../../Components/Breadcumb";
 import { EXPERIENCE } from "../../../Components/OurPrincipals/Constant";
-import ProcessFlow from "../../../Components/Inception";
+
 
 const Erp = () => {
   return (
@@ -199,12 +199,6 @@ const Erp = () => {
                 <div className="col-md-2"></div>
               </div>
 
-              {/* SYSPRO’s powerful and versatile feature set integrated with
-                  the latest innovative technologies provides a gateway to
-                  digitizing your business, streamlining your supply chain, and
-                  providing greater control and visibility, while simplifying
-                  and personalizing the experience */}
-
               <div className="row">
                 <div className="col-md-2"></div>
                 <div className="col-md-8">
@@ -229,16 +223,35 @@ const Erp = () => {
       {/* Syspro  overview ends*/}
 
       {/* Industries starts */}
-      {/* <section className="industry_section">
+      <section className="industry_section">
         <div className="container">
             <div className="row">
 
+            <div className="col-md-3">
+<div className="industry_main_heading">
+  <Heading heading="Industry" uppercase="text-uppercase"/>
+</div>
+            </div>
+            <div className="col-md-9">
+            <div className="top_industry">
+
+            </div>
+
+            <div className="center_top_industry">
+
+            </div>
+            <div className="center_bottom_industry">
+
+            </div>
+            <div className="bottom_industry">
+
+            </div>
+            </div>
             </div>
         </div>
-      </section> */}
+      </section>
       {/* Industries ends */}
 
-      <ProcessFlow/>
     </>
   );
 };
