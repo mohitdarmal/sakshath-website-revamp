@@ -8,7 +8,7 @@ const Inception = () => {
       <section class="inception_section">
         <div class="container">
 
-        <div className="inception_main_heading">
+        <div className="inception_main_heading text-center">
           <Heading heading="Inception to Fruition" uppercase="text-uppercase"/>
         </div>
           {/* 2012 */}

@@ -166,3 +166,10 @@
 
     color: #fff;
  }
+.top_industry{
+  display: flex;
+  justify-content: space-around;
+}
+.industry_box{
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}

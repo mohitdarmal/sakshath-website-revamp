@@ -369,11 +369,11 @@ const Career = () => {
       </section>
 
       {/*  benfits starts*/}
-      {/* <section className="benefits_container">
+       <section className="benefits_container">
         <Container>
           <Row>
             <div className="benefits_heading text-center text-decoration-underline">
-              <Heading heading="Benfits You Recived" uppercase="uppercase" />{" "}
+              <Heading heading="Benefits You Recieve" uppercase="uppercase" />{" "}
             </div>
             <p className="benefit_para text-center mt-3">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
@@ -432,7 +432,7 @@ const Career = () => {
             </Col>
           </Row>
         </Container>
-      </section> */}
+      </section> 
       {/*  benfits end*/}
 
       {/* Apply Jobs */}
