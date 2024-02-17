@@ -167,9 +167,40 @@ const Contactus = () => {
                 </Tab>
                 {/* Asia End */}
 
+{/* US Start */}
                 <Tab eventKey="us" title="US">
-                  US
+                <Tab.Container
+                    id="left-tabs-example"
+                    defaultActiveKey="bangalore"
+                  >
+                    <Row className="align-items-center map_sec">
+                      <Col sm={2}>
+                        <Nav variant="pills" className="flex-column">
+                          <Nav.Item>
+                            <Nav.Link eventKey="bangalore">New Jersy</Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="mumbai">Mumbai</Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="gurgram">Gurugram</Nav.Link>
+                          </Nav.Item>
+                        </Nav>
+                      </Col>
+                      <Col sm={10}>
+                        <Tab.Content>
+                          <Tab.Pane eventKey="bangalore">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="mumbai">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                        </Tab.Content>
+                      </Col>
+                    </Row>
+                  </Tab.Container>
                 </Tab>
+                {/* US End */}
                 <Tab eventKey="anz" title="ANZ">
                   ANZ
                 </Tab>
