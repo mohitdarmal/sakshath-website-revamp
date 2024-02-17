@@ -117,6 +117,7 @@
 .mobile_section {
   padding-top: 80px;
   padding-bottom: 80px;
+  overflow: hidden;
 }
 
 // .mobile_main_heading h3{
@@ -600,7 +601,7 @@
 }
 
 
-.col-md-4:hover img{
+.col-md-4 .application_box:hover img{
   // transition: shake .3s linear ease-in-out;
   cursor: pointer;
   animation: shake .3s linear;
