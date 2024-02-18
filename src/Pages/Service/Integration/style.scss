@@ -12,6 +12,12 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.paragraph {
+  color: white;
+  padding-top: 18px;
+  font-size: 16px !important;
+  height: 47px;
+}
 // .migration_heading{
 //     color:$ball_blue_color;
 //     font-family: $rajdhani_font;
@@ -77,7 +83,7 @@
   color: #555555;
   font-family: inherit;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 40px;
 }
 .section_para h4 {
@@ -184,7 +190,7 @@
   text-align: center;
   line-height: 15px;
   color: #32a4d5;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .intergration_list li {
   // font-family: inherit;
@@ -275,6 +281,9 @@ ul {
 .intergration_list {
   line-height: 35px;
 }
+ul {
+  padding-left: 23px;
+}
 .integartion_coe_sec {
   padding-top: 80px;
 }
@@ -283,6 +292,10 @@ ul {
   padding-top: 25px;
   padding-bottom: 25px;
 //   border-bottom: 1px dashed #c9c9c9;
+}
+.active-scroll-spy {
+  background-color:#041d26;
+  border-radius: 15px;
 }
 
 // responsive start
@@ -448,10 +461,60 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* For Tab Screen  */
+  .paragraph {
+    color: white;
+    padding-top: 18px;
+    font-size: 9px;
+    height: 47px;
+}
+.why_need_integration_right {
+  padding-left: 36px;
+}
+
+.integartion_coe_sec {
+  padding-left: 36px;
+  padding-top: 40px;
+}
+.integration_consulting_right {
+  padding-left: 36px;
+}
+.managed_services_sec {
+  padding-bottom: 40px;
+  padding-left: 36px;
+}
+.integration_consulting_sec {
+  padding-top: 40px;
+}
+.integration_planning_banner {
+  margin-top:40px;
+}
+.partner_logo_section {
+  padding: 20px 0px 20px 0px;
+}
+.partner_logo_tab {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.why_need_integration_sec {
+  padding-bottom: 40px;
+}
 }
 
 @media screen and (min-width: 1024px) {
   /* For Desktop Screen  */
+  .paragraph {
+    color: white;
+    padding-top: 18px;
+    font-size: 11px;
+    height: 47px;
 }
-
+#service_stickmenu_list li a {
+  color: #fff !important;
+  padding: 10px 31px;
+}
+.heading_title {
+  color: black;
+  font-size: 35px;
+}
+}
 // responsive end

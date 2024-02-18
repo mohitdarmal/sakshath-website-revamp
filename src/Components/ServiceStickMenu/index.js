@@ -91,26 +91,30 @@ const ServiceStickMenu=(props)=>
               
                 
                 <li>
-                  <NavLink to="#" className="nav-link ">
-                  Integration COE
+                  <NavLink to="" className="nav-link ">
+                  <p data-to-scrollspy-id="first" className="paragraph"> Integration COE</p>
+                 
                   </NavLink>
                 </li>
                 
                 <li>
-                  <NavLink to="#" className="nav-link ">
-                  Integration Consulting
+                <NavLink to="" className="nav-link ">
+                  <p data-to-scrollspy-id="second" className="paragraph"> Integration Consulting</p>
+                 
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="#" className="nav-link ">
-                  Migration Services
+                  <NavLink to="" className="nav-link ">
+                 
+                  <p data-to-scrollspy-id="third" className="paragraph">  Migration Technologies</p>
                   </NavLink>
                 </li>
 
                 <li>
-                  <NavLink to="#" className="nav-link ">
-                  Managed Services
+                  <NavLink to="" className="nav-link ">
+                  <p data-to-scrollspy-id="four" className="paragraph">  Managed Services</p>
+                 
                   </NavLink>
                 </li>
                 
