@@ -64,6 +64,7 @@ const OurJounery = () => {
       name: "Honsety",
       description:
         "A culture of honesty results in more than “happy” workplaces, and a deep-seated respect and expectation for honesty makes companies more successful and more profitable.",
+        image:require('../../../Assets/images/Honesty.svg').default,
     },
     {
       id: 2,
@@ -147,7 +148,7 @@ const OurJounery = () => {
                         <p>{data.name}</p>{" "}
                       </Fade>
 
-                      <img src={SAFE} alt="" />
+                      <img src={data.image} alt="" />
                     </div>
                     <p>{data.description}</p>
                   </div>

@@ -37,7 +37,7 @@
   text-align: center;
   line-height: 15px;
   color: #32a4d5;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 // .automation_right_content_list
@@ -117,45 +117,45 @@
 .mobile_section {
   padding-top: 80px;
   padding-bottom: 80px;
+  overflow: hidden;
 }
 
 // .mobile_main_heading h3{
 //   color: $ball_blue_color;
 // }
 
-.andriod_app {
-  // background: #f2f2f2;
-  background:linear-gradient(to top, #99D2EA, #45ACD9);
-  padding: 40px 20px;
-  text-align: center;
-}
-.mobile_application_img img {
-  width: 75px;
-}
+// .andriod_app {
+//   background: linear-gradient(to top, #99d2ea, #45acd9);
+//   padding: 40px 20px;
+//   text-align: center;
+// }
+// .mobile_application_img img {
+//   width: 75px;
+// }
 
-.mobile_application_heading {
-  padding-top: 20px;
+// .mobile_application_heading {
+//   padding-top: 20px;
 
-  h5 {
-    font-family: $rajdhani_font;
-    font-weight: 700;
-    font-size: 24px;
-    // text-transform: uppercase;
-  }
-}
+//   h5 {
+//     font-family: $rajdhani_font;
+//     font-weight: 700;
+//     font-size: 24px;
+//     // text-transform: uppercase;
+//   }
+// }
 
-.ios_app {
-  // background: #ededed;
-  background:linear-gradient(to top, #45ACD9, #99D2EA);
-  text-align: center;
-  padding: 40px 20px;
-}
-.cross_platform {
-  // background: #e7e7e7;
-  background:linear-gradient(to top, #99D2EA, #45ACD9);
-  padding: 40px 20px;
-  text-align: center;
-}
+// .ios_app {
+//   // background: #ededed;
+//   background: linear-gradient(to top, #45acd9, #99d2ea);
+//   text-align: center;
+//   padding: 40px 20px;
+// }
+// .cross_platform {
+//   
+//   background: linear-gradient(to top, #99d2ea, #45acd9);
+//   padding: 40px 20px;
+//   text-align: center;
+// }
 
 // application
 .application_section {
@@ -207,17 +207,25 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
+.mobile_app_main_heading{
+  margin-top: 60px;
+  margin-right: 50px;
+}
 .rpa_main_heading h3 {
   font-family: $rajdhani_font;
   font-weight: 700;
   font-size: 85px;
   padding-bottom: 12px;
   color: $ball_blue_color;
+  margin-top: 60px;
+    margin-right: 50px;
 
   .rpa_main_heading h4 {
     color: #24688f !important;
   }
 }
+
 
 //RPA oFFERNING  STARTS
 
@@ -228,7 +236,7 @@
   position: relative;
   content: "";
 }
-.rpa_list li{
+.rpa_list li {
   padding-bottom: 10px;
 }
 .rpa_list li::before {
@@ -244,7 +252,7 @@
   text-align: center;
   line-height: 15px;
   color: #32a4d5;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .rpa_offering_main_heading h3 {
@@ -345,25 +353,6 @@
   }
 }
 
-// .snipper{
-//   width: 70px;
-//   height: 70px;
-//    background: rgb(104, 101, 168);
-//   border: 5px solid white;
-//   border-top-color:  lightblue;
-//  border-radius: 10px 0;
-//   animation: spin 2s linear infinite;
-// }
-
-// @keyframes spin{
-//   0%{
-//     transform: rotate(0deg);
-//   }
-//   100%{
-//     transform: rotate(360deg);
-//   }
-// }
-
 // Devops
 
 .devops_boxes {
@@ -377,42 +366,18 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3607843137);
   padding: 26px 0;
   border-radius: 5px;
-  min-height: 335px;
-}
-
-
-// .devops_container {
-//   background-image: url("../../../Assets/images/Devops.png");
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   padding-top: 80px;
-//   padding-bottom: 80px;
-// }
-// .devops_testing_right_content h3 {
-//   color: #fff;
-//   text-align: center;
-// }
-// .devops_testing_right_content p {
-//   color: #fff;
-//   font-size: 20px;
-//   line-height: 30px;
-//   text-align: center;
-// }
-
-
-.devops_testing_right_content h3{
-  margin-left: 50px;
+  // min-height: 335px;
 }
 
 //devops services
-.devops_list_box{
+.devops_list_box {
   position: relative;
   content: "";
 }
-.devops_ul li{
+.devops_ul li {
   padding-bottom: 8px;
 }
-.devops_ul li::before{
+.devops_ul li::before {
   content: "\f111";
   position: absolute;
   font-family: "FontAwesome";
@@ -432,19 +397,20 @@
 
 .pillars_section {
   background: aliceblue;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .pillars_heading h3 {
   padding-bottom: 20px;
 }
 .pillars_box {
-  box-shadow: 0 2px 12px #1a1d1e2e;
-  padding: 30px;
+  box-shadow: 0 2px 20px rgb(0 0 0 / 4%);
+  padding: 30px 20px;
   border-radius: 6px;
   background: #fff;
-  min-height: 196px;
+  border: 1px solid #00a7d6;
+
 }
 
 .pillars_box:hover img {
@@ -471,11 +437,9 @@
 .number h1 {
   position: absolute;
   content: "";
-  /* -webkit-text-stroke-width: 3px; */
-  /* -webkit-text-stroke-color: #32a4d5; */
   left: 0%;
-  top: -37px;
-  font-size: 80px;
+  top: -35px;
+  font-size: 60px;
   color: #32a4d5;
   font-family: "Rajdhani", sans-serif;
   font-weight: bold;
@@ -484,18 +448,6 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #32a4d5;
 }
-// .number h1{
-//   position: absolute;
-//   content: "";
-//   -webkit-text-stroke-width: 1px;
-//   -webkit-text-stroke-color:#32a4d5 ;
-//   left: 0%;
-//   top: -20px;
-//   font-size: 60px;
-//   color: #fff;
-//   font-family: $rajdhani_font;
-//   font-weight: bold;
-// }
 
 .pillar_icon {
   display: flex;
@@ -505,18 +457,29 @@
     width: 60px;
     cursor: pointer;
     margin-right: 12px;
-    border-radius: 50%;
+    // border-radius: 50%;
     transition: 0.5s;
-    padding: 10px;
+    // padding: 10px;
     cursor: pointer;
-    background: #fff;
+    // background: #fff;
   }
 }
+
 .pillars_box:hover {
-  // margin-top: -20%;
-  // top: 0;
   background-color: #32a4d5;
   color: #fff;
+
+  img {
+    width: 60px;
+    cursor: pointer;
+    margin-right: 12px;
+    // border-radius: 50%;
+    transition: 0.5s;
+    // padding: 10px;
+    cursor: pointer;
+    // background: #fff;
+    filter: brightness(0) invert(1);
+  }
 }
 
 .pillar_title h5 {
@@ -525,6 +488,10 @@
   padding-top: 20px;
   font-family: "Rajdhani";
   font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  min-height: 72px;
 }
 
 .api_img img {
@@ -532,20 +499,122 @@
 }
 
 //api
-.api_box{
+.api_box {
   border: 1px solid rgba(31, 36, 44, 0.1);
-padding: 30px;
-    // font-size: 24px;
-h4{
-  font-size: 22px;
-  font-family: $rajdhani_font;
-  font-weight: bold;
-  text-decoration: underline;
-}
+  padding: 30px;
+  // font-size: 24px;
+  h4 {
+    font-size: 22px;
+    font-family: $rajdhani_font;
+    font-weight: bold;
+    // text-decoration: underline;
+  }
 }
 
-.application_integration{
+.application_integration {
   padding-bottom: 10px;
 }
 
+.rpa_graph img {
+  width: 650px;
+  cursor: pointer;
+}
+.rpa_graph img:hover {
+  transform: scale(1.25, 1.24);
+}
 
+.box1 .col-md-3 .devops_list_box {
+  min-height: 200px;
+}
+.box2 .col-md-3 .devops_list_box {
+  min-height: 330px;
+}
+
+.integration_planning_banner {
+  background-image: url(../../../Assets/images/planning_banner.png);
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background-attachment: fixed;
+  margin-top: 80px;
+  // margin-bottom: 40px;
+
+  .integration_left_planning_banner_content {
+    margin-bottom: 30px;
+  }
+  .integration_left_planning_banner_content h3 {
+    font-size: 35px;
+    color: #fff;
+    text-decoration: underline;
+    line-height: 50px;
+    font-family: $rajdhani_font;
+    font-weight: 700;
+  }
+
+  .integration_right_planning_banner_content {
+    margin-bottom: 0px;
+
+    .integration_lets_meet_us_button {
+      padding: 18px 35px;
+      background: #33a3d2;
+      color: white;
+      border-radius: 5px;
+      font-family: $rajdhani_font;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-weight: 700;
+      display: inline-block;
+    }
+    .integration_lets_meet_us_button:hover {
+      background-color: $white_color;
+      color: $light_navy_blue;
+      text-decoration: none;
+    }
+  }
+}
+
+
+//mobile dev
+
+.mobile_section{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: -webkit-linear-gradient( 360deg, #ffffff 36%, #00a7d6 33%);
+}
+.mobile_section .col-md-8 .col-md-4:not(:last-child){
+  border-right: 1px solid #71bcdcf5;
+}
+.mobile_icon{
+  display: flex;
+  justify-content: center;
+
+}
+.mobile_title{
+  h4{
+    font-family: 'Rajdhani';
+    margin-top: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+
+.col-md-4 .application_box:hover img{
+  // transition: shake .3s linear ease-in-out;
+  cursor: pointer;
+  animation: shake .3s linear;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-30%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
