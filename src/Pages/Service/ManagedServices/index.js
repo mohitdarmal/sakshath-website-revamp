@@ -4,7 +4,7 @@ import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/
 import "./style.scss";
 import SlideAnimationButton from '../../../Components/Utils/SlideAnimationButton';
 import { INTEGRATION_SECTION_ONE_IMG } from '../Integration/Constant';
-import BlueHeading from '../../../Components/Utils/BlueHeading';
+import Heading from '../../../Components/Utils/Heading';
 
 const ManagedServices = () => {
   return (
@@ -23,7 +23,7 @@ const ManagedServices = () => {
                         <div className="col-md-6">
                           <div className="overview_sec_left_managed_services">
                             {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
-                            <BlueHeading bheading="overview" uppercase="text-uppercase"/>
+                            <Heading heading="overview" uppercase="text-uppercase"/>
                             <p className="overview_sec_managed_services_para">Data integration is the practice of consolidating data from disparate sources into a single dataset to provide users with consistent access to and delivery of data across all business processes.</p>
                             <SlideAnimationButton btnName="TALK TO SALES" />
 
@@ -113,9 +113,9 @@ const ManagedServices = () => {
                         <div className="col-md-6">
                         <div className="content_sec_right_managed_services">
 
-                        {/* <Heading heading="careers at sakshath" uppercase="text-uppercase" /> */}
+                         <Heading heading="overview" uppercase="text-uppercase" />
                             {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
-                            <BlueHeading bheading="overview" uppercase="text-uppercase"/>
+                            {/* <BlueHeading bheading="overview" uppercase="text-uppercase"/> */}
                             {/* <p className="content_sec_managed_services_para"> */}
                             <ul>
                               <li className='managed_services_main_content'>

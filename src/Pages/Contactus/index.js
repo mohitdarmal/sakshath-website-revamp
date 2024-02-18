@@ -1,140 +1,374 @@
-import { useState } from 'react';
-import {Tab, Tabs, Col, Nav, Row} from 'react-bootstrap';
-import "./style.scss"
+import { useState } from "react";
+import { Tab, Tabs, Col, Nav, Row, Form, FloatingLabel, Button } from "react-bootstrap";
+import "./style.scss";
 import { GrLocation } from "react-icons/gr";
 //import SlideAnimationButton from '../../Components/Utils/SlideAnimationButton';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BsTelephoneInbound } from "react-icons/bs";
 import { FaRegEnvelope } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 
-import { INSTAGRAM_ICON, LINKEDIN_ICON, YOUTUBE_ICON, HEADQUATERS_ICON, REGISTERED_ICON } from "./Constant";
+
+import {
+  HEADQUATERS_ICON,
+  REGISTERED_ICON,
+  YOUTUBE_ICON,
+  INSTAGRAM_ICON,
+  LINKEDIN_ICON
+} from "./Constant";
 import Contact from "../../Components/Contact/Contact";
 import BreadCumb from "../../Components/Breadcumb";
-import { ABOUT_BANNER } from '../../Components/Breadcumb/Constant';
+import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import { FaPaperPlane } from "react-icons/fa";
-import Heading from '../../Components/Utils/Heading';
- 
+import Heading from "../../Components/Utils/Heading";
+
 const Contactus = () => {
-  const [key, setKey] = useState('home');
+  const [key, setKey] = useState("home");
+// Initialize form state
+const [formData, setFormData] = useState({
+  name: '',
+  email: '',
+  phoneNumber: '',
+  services: '',
+  comments: ''
+});
+
+// Handle form field changes
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData(prevState => ({
+    ...prevState,
+    [name]: value
+  }));
+};
+
+// Handle form submission
+const handleSubmit = (e) => {
+  e.preventDefault();
+  // Here you can submit the formData to your backend or perform any other action
+  console.log(formData, "Formadata"); // For demonstration, logging the formData to the console
+};
+
   return (
     <>
-    <BreadCumb
-        imgUrl={ABOUT_BANNER}
-        title="Contact Us"
-      />
+      <BreadCumb imgUrl={ABOUT_BANNER} title="Contact Us" />
 
-<section className='contact_us_sec'>
-    <div className='container'>
-      <div className='row'>
-      <div className='col-md-1'> </div>
-        <div className='col-md-5 position-relative'>
-           <div className='head_location'>
-              <img src={HEADQUATERS_ICON} />
-              <h2>HeadQuater Office</h2>
-              <ul>
-                <li className='address'>Address: 8, KV Jairam Rd, MCHS Layout, Jakkuru Layout, Jakkur, Bengaluru, Karnataka 560064</li>
-                <li className='email'><Link to="mailto:info@sakshath-technologies.com">info@sakshath-technologies.com</Link></li>
-                <li className='phn'><Link to="tel:+918067819878">+91 8067819878</Link></li>
-              </ul>
-              <Link className='get_direction' to="" target="_blank"><FaPaperPlane /> Get Direction</Link>
-           </div>
-        </div>
+      <section className="contact_us_sec">
+        <div className="container">
+          <div className="row text-center">
+            <div className="col-md-8 offset-md-2">
+          <Heading heading="GET IN TOUCH WITH US" uppercase="text-uppercase" />
+          <p className="text-center mb-5">We are a firm who always support our customers through chat, person and also through mails on all our customers feedback, reveiws and our product enquiries. Kindly fill in the form and wait for the message to be displayed sent before you leave the form.
+</p>
+</div>
+          </div>
+          <div className="row">
+            <div className="col-md-1"> </div>
+            <div className="col-md-5 position-relative">
+              <div className="head_location">
+                <img src={HEADQUATERS_ICON} />
+                <h2>HeadQuater Office</h2>
+                <ul>
+                  <li className="address">
+                    Address: 8, KV Jairam Rd, MCHS Layout, Jakkuru Layout,
+                    Jakkur, Bengaluru, Karnataka 560064
+                  </li>
+                  <li className="email">
+                    <Link to="mailto:info@sakshath-technologies.com">
+                      info@sakshath-technologies.com
+                    </Link>
+                  </li>
+                  <li className="phn">
+                    <Link to="tel:+918067819878">+91 8067819878</Link>
+                  </li>
+                </ul>
+                <Link
+                  className="get_direction"
+                  to="https://maps.app.goo.gl/UqW4zSNRHr8YN18D7"
+                  target="_blank"
+                >
+                  <FaPaperPlane /> Get Direction
+                </Link>
+              </div>
+            </div>
 
-        <div className='col-md-5 position-relative'>
-        <div className='head_location'>
-              <img src={REGISTERED_ICON} />
-              <h2>Registered Office</h2>
-              <ul>
-                <li className='address'>Address: 8, KV Jairam Rd, MCHS Layout, Jakkuru Layout, Jakkur, Bengaluru, Karnataka 560064</li>
-                <li className='email'><Link to="mailto:info@sakshath-technologies.com">info@sakshath-technologies.com</Link></li>
-                <li className='phn'><Link to="tel:+918067819878">+91 8067819878</Link></li>
-              </ul>
-              <Link className='get_direction' to="" target="_blank"><FaPaperPlane /> Get Direction</Link>
-           </div>
-        </div>
-        <div className='col-md-1'> </div>
+            <div className="col-md-5 position-relative">
+              <div className="head_location">
+                <img src={REGISTERED_ICON} />
+                <h2>Registered Office</h2>
+                <ul>
+                  <li className="address">
+                    Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV,
+                    Hebbal ORR, Bengaluru – 560045.
+                  </li>
+                  <li className="email">
+                    <Link to="mailto:info@sakshath-technologies.com">
+                      info@sakshath-technologies.com
+                    </Link>
+                  </li>
+                  <li className="phn">
+                    <Link to="tel:+918067819878">+91 8067819878</Link>
+                  </li>
+                </ul>
+                <Link
+                  className="get_direction"
+                  to="https://maps.app.goo.gl/MP3dg1KJYNCWxZJv5"
+                  target="_blank"
+                >
+                  <FaPaperPlane /> Get Direction
+                </Link>
+              </div>
+            </div>
+            <div className="col-md-1"> </div>
+          </div>
+
+          <div className="contact_page_social_icon">
+        <Link to="https://www.instagram.com/sakshath_technologies/" target="_blank">
+          <img src={INSTAGRAM_ICON} />
+        </Link>
+        <Link to="https://www.linkedin.com/company/sakshath-technologies/" target="_blank">
+          <img src={LINKEDIN_ICON} />
+        </Link>
+        <Link to="https://www.youtube.com/watch?v=UHjZFuO8AYY" target="_blank">
+          <img src={YOUTUBE_ICON} />
+        </Link>
       </div>
 
-<div className='row justify-content-center contact_social_icon'>
-<img src={INSTAGRAM_ICON} /> <img src={LINKEDIN_ICON} />
-</div>
-
-    </div>
-</section>
 
 
+        </div>
+      </section>
 
-{/* <section> 
+ 
+      {/* <section> 
   <div className='container'>
     <div className='row'>
 
     </div>
   </div>
 </section> */}
-<section className='our_location_sec'>
+      <section className="our_location_sec">
+        <div className="container">
+          <div className="row">
+            <div className="text-center">
+              <Heading heading="Our Location" uppercase="text-uppercase" />
+            </div>
+          </div>
+
+          <div className="row our_location_tab">
+            <div className="col-md-12">
+              <Tabs
+                id="controlled-tab-example"
+                activeKey={key}
+                onSelect={(k) => setKey(k)}
+                className="mb-3"
+              >
+                {/* Asia Start */}
+                <Tab eventKey="home" title="Asia">
+                  <Tab.Container
+                    id="left-tabs-example"
+                    defaultActiveKey="bangalore"
+                  >
+                    <Row className="align-items-center map_sec">
+                      <Col sm={2}>
+                        <Nav variant="pills" className="flex-column">
+                          <Nav.Item>
+                            <Nav.Link eventKey="bangalore">Bangalore</Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="mumbai">Mumbai</Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="gurgram">Gurugram</Nav.Link>
+                          </Nav.Item>
+                        </Nav>
+                      </Col>
+                      <Col sm={10}>
+                        <Tab.Content>
+                          <Tab.Pane eventKey="bangalore">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="mumbai">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="gurgram">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                        </Tab.Content>
+                      </Col>
+                    </Row>
+                  </Tab.Container>
+                </Tab>
+                {/* Asia End */}
+
+{/* US Start */}
+                <Tab eventKey="us" title="US">
+                <Tab.Container
+                    id="left-tabs-example"
+                    defaultActiveKey="newjersey"
+                  >
+                    <Row className="align-items-center map_sec">
+                      <Col sm={2}>
+                        <Nav variant="pills" className="flex-column">
+                          <Nav.Item>
+                            <Nav.Link eventKey="newjersey">New Jersey</Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="mumbai">Mumbai</Nav.Link>
+                          </Nav.Item>
+                          
+                        </Nav>
+                      </Col>
+                      <Col sm={10}>
+                        <Tab.Content>
+                          <Tab.Pane eventKey="newjersey">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="mumbai">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                           
+                        </Tab.Content>
+                      </Col>
+                    </Row>
+                  </Tab.Container>
+                </Tab>
+                {/* US End */}
+
+                {/* ANZ Start */}
+                <Tab eventKey="anz" title="ANZ">
+                <Tab.Container
+                    id="left-tabs-example"
+                    defaultActiveKey="newzland"
+                  >
+                    <Row className="align-items-center map_sec">
+                      <Col sm={2}>
+                        <Nav variant="pills" className="flex-column">
+                          <Nav.Item>
+                            <Nav.Link eventKey="newzland">New Zealand</Nav.Link>
+                          </Nav.Item>
+                        </Nav>
+                      </Col>
+                      <Col sm={10}>
+                        <Tab.Content>
+                          <Tab.Pane eventKey="newzland">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                          <Tab.Pane eventKey="mumbai">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </Tab.Pane>
+                           
+                        </Tab.Content>
+                      </Col>
+                    </Row>
+                  </Tab.Container>
+                </Tab>
+                {/* ANZ End */}
+                <Tab eventKey="aftrica" title="Africa">
+                  Africa
+                </Tab>
+                <Tab eventKey="middleeast" title="Middle East">
+                  Middle East
+                </Tab>
+                <Tab eventKey="euorpe" title="Europe">
+                  Europe
+                </Tab>
+              </Tabs>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+<section className="contact_page_form">
   <div className="container">
+    <div className="row">
+    
 
-<div className='row'>
-  <div className='text-center'>
-  <Heading heading="Our Location" uppercase="text-uppercase" />
-  </div>
-</div>
-
-    <div className="row our_location_tab">
-      <div className='col-md-12'>
-      <Tabs
-        id="controlled-tab-example"
-        activeKey={key}
-        onSelect={(k) => setKey(k)}
-        className="mb-3"
-      >
-      {/* Asia Start */}
-      <Tab eventKey="home" title="Asia">
-          <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-          <Row>
-            <Col sm={3}>
-              <Nav variant="pills" className="flex-column">
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                </Nav.Item>
-              </Nav>
-            </Col>
-            <Col sm={9}>
-              <Tab.Content>
-                <Tab.Pane eventKey="first">First tab content</Tab.Pane>
-                <Tab.Pane eventKey="second">Second tab content</Tab.Pane>
-              </Tab.Content>
-            </Col>
-          </Row>
-        </Tab.Container>
-      </Tab>
-      {/* Asia End */}
-      
-      <Tab eventKey="us" title="US">
-        US
-      </Tab>
-      <Tab eventKey="anz" title="ANZ">
-        ANZ
-      </Tab>
-      <Tab eventKey="aftrica" title="Africa">
-        Africa
-      </Tab>
-      <Tab eventKey="middleeast" title="Middle East">
-        Middle East
-      </Tab>
-      <Tab eventKey="euorpe" title="Europe">
-        Europe
-      </Tab>
-    </Tabs>
+      <div className="col-md-8 offset-md-2">
+        <div className="text-center mb-4">
+      <Heading heading="Work with us" uppercase="text-uppercase" />
+      </div>
+      <Form onSubmit={handleSubmit}>
+        <Row>
+          <Col md={6}>
+            <FloatingLabel controlId="firstName" label="First Name" className="mb-3">
+              <Form.Control
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="First Name"
+              />
+            </FloatingLabel>
+          </Col>
+          <Col md={6}>
+            <FloatingLabel controlId="email" label="Work Email" className="mb-3">
+              <Form.Control
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email ID"
+              />
+            </FloatingLabel>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={6}>
+            <FloatingLabel controlId="phoneNumber" label="Contact Number" className="mb-3">
+              <Form.Control
+                type="tel"
+                name="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+                placeholder="Phone Number"
+              />
+            </FloatingLabel>
+          </Col>
+          <Col md={6}>
+            <FloatingLabel controlId="services" label="Select Reason">
+              <Form.Select
+                aria-label="Floating label select example"
+                name="services"
+                value={formData.services}
+                onChange={handleChange}
+              >
+                <option>Select Option</option>
+                <option value="businessInquiry">Business Inquiry</option>
+                <option value="careerEnquiry">Career Enquiry</option>
+                <option value="alliancePartnership">Alliance & Partnership</option>
+              </Form.Select>
+            </FloatingLabel>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12}>
+            <FloatingLabel controlId="comments" label="Comments">
+              <Form.Control
+                as="textarea"
+                name="comments"
+                value={formData.comments}
+                onChange={handleChange}
+                placeholder="Leave a comment here"
+                style={{ height: '150px' }}
+              />
+            </FloatingLabel>
+          </Col>
+        </Row>
+        <div className="text-center mt-4">
+        <Button type="submit">SUBMIT</Button>
+        </div>
+      </Form>
+    
       </div>
     </div>
   </div>
 </section>
 
-        {/* <section  className='contact_us'>
+
+      {/* <section  className='contact_us'>
 
          <div className="container contact_us_box">
           <div className="row">
@@ -283,9 +517,8 @@ Gurugram, Haryana 122016
           </div>
         </div>
       </section> */}
-        
     </>
-  )
-}
+  );
+};
 
 export default Contactus;

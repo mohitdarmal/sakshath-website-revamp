@@ -159,9 +159,9 @@ export const Integration = () => {
           </div>
         </div>
       </section>
-      {/* <!-- section two end -->
+       {/* <!-- section two end --> */}
 
-            <!-- section three start--> */}
+            {/* <!-- section three start-->  */}
       {/* <section className="body_sec_two">
                 <div className="container">
                     <div className="row">

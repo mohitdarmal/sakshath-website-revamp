@@ -6,9 +6,9 @@ export const CHECK_ICON=require('../../../Assets/images/check-mark (2).png');
 
 // mobile_development
 
-export const ANDRIOD_APP=require('../../../Assets/images/android_220221 (2).png');
-export const IOS_APPLE=require('../../../Assets/images/mac-os-logo_2235.png');
-export const CROSS_PLATFORM_APP=require('../../../Assets/images/web-development_5917240.png');
+export const ANDRIOD_APP=require('../../../Assets/images/Android_development.png');
+export const IOS_APPLE=require('../../../Assets/images/Ios_Development.png');
+export const CROSS_PLATFORM_APP=require('../../../Assets/images/Cross_platform_development.png');
 
 
 
@@ -31,4 +31,9 @@ export const POWER_AUTOMATE_RPA=require('../../../Assets/images/POWER_AUTOMATE_R
 export const AUTOMATE_RPA=require('../../../Assets/images/AUTOMATE_RPA.png');
 
 // devops
-export const DEVOPS=require('../../../Assets/images/Devops.png')
+export const DEVOPS=require('../../../Assets/images/html-css-collage-concept-with-person (1).jpg')
+
+
+// rpa graph
+
+export const RPA_GRAPH=require('../../../Assets/images/rpa_graph1.jpg')
