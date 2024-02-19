@@ -16,7 +16,7 @@
 
     li {
       list-style: none;
-      line-height: 25px;
+      line-height: 20px;
       padding-bottom: 20px;
     }
   }
@@ -151,7 +151,7 @@
 //   padding: 40px 20px;
 // }
 // .cross_platform {
-//   
+//
 //   background: linear-gradient(to top, #99d2ea, #45acd9);
 //   padding: 40px 20px;
 //   text-align: center;
@@ -171,7 +171,7 @@
 }
 
 .application_integration ul {
-  line-height: 35px;
+  line-height: 25px;
 }
 
 // .application_integration li::before {
@@ -208,24 +208,23 @@
   padding-bottom: 80px;
 }
 
-.mobile_app_main_heading{
+.mobile_app_main_heading {
   margin-top: 60px;
   margin-right: 50px;
 }
 .rpa_main_heading h3 {
   font-family: $rajdhani_font;
   font-weight: 700;
-  font-size: 85px;
+
   padding-bottom: 12px;
-  color: $ball_blue_color;
+  // color: $ball_blue_color;
   margin-top: 60px;
-    margin-right: 50px;
+  margin-right: 50px;
 
   .rpa_main_heading h4 {
     color: #24688f !important;
   }
 }
-
 
 //RPA oFFERNING  STARTS
 
@@ -235,6 +234,9 @@
   background-color: #24688f;
   position: relative;
   content: "";
+}
+.rpa_list {
+  margin-left: -5px;
 }
 .rpa_list li {
   padding-bottom: 10px;
@@ -273,7 +275,6 @@
 
   .rpa_imgs {
     display: flex;
-    justify-content: center;
 
     img {
       width: 50px;
@@ -283,9 +284,9 @@
   .rpa_heading h4 {
     font-family: "Rajdhani";
     font-weight: 700;
-    // text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 20px;
+
+    margin-left: 3px;
   }
 }
 
@@ -293,7 +294,7 @@
   padding: 20px;
   .rpa_imgs {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
 
     img {
       width: 50px;
@@ -303,8 +304,9 @@
     font-family: "Rajdhani";
     font-weight: 700;
     // text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 20px;
+    // padding-bottom: 12px;
+    margin-left: 3px;
   }
 }
 
@@ -326,7 +328,7 @@
   }
   .rpa_imgs {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
 
     img {
       width: 50px;
@@ -335,9 +337,9 @@
   .rpa_heading h4 {
     font-family: "Rajdhani";
     font-weight: 700;
-    // text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 20px;
+
+    margin-left: 3px;
   }
 }
 
@@ -410,7 +412,6 @@
   border-radius: 6px;
   background: #fff;
   border: 1px solid #00a7d6;
-
 }
 
 .pillars_box:hover img {
@@ -446,7 +447,7 @@
   color: #32a4d5;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #32a4d5;
+  // -webkit-text-stroke-color: #32a4d5;
 }
 
 .pillar_icon {
@@ -473,11 +474,9 @@
     width: 60px;
     cursor: pointer;
     margin-right: 12px;
-    // border-radius: 50%;
     transition: 0.5s;
-    // padding: 10px;
     cursor: pointer;
-    // background: #fff;
+  
     filter: brightness(0) invert(1);
   }
 }
@@ -499,32 +498,39 @@
 }
 
 //api
-.api_box {
-  border: 1px solid rgba(31, 36, 44, 0.1);
+
+
+.api_container{
+  display: flex;
   padding: 30px;
-  // font-size: 24px;
-  h4 {
-    font-size: 22px;
-    font-family: $rajdhani_font;
-    font-weight: bold;
-    // text-decoration: underline;
-  }
+  border: 1px solid rgba(31, 36, 44, 0.1);
+  margin-bottom:25px;
 }
 
-.application_integration {
-  padding-bottom: 10px;
+.api_boxes h4 {
+  font-size: 22px;
+  font-family: $rajdhani_font;
+  font-weight: bold;
 }
+.api_icon img{
+margin-right: 20px;
+width: 45px;
+}
+
+
 
 .rpa_graph img {
   width: 650px;
   cursor: pointer;
+  mix-blend-mode: darken;
+  margin-top: 60px;
 }
 .rpa_graph img:hover {
-  transform: scale(1.25, 1.24);
+  transform: scale(1.05, 1.04);
 }
 
 .box1 .col-md-3 .devops_list_box {
-  min-height: 200px;
+  min-height: 240px;
 }
 .box2 .col-md-3 .devops_list_box {
   min-height: 330px;
@@ -543,10 +549,10 @@
     margin-bottom: 30px;
   }
   .integration_left_planning_banner_content h3 {
-    font-size: 35px;
+    // font-size: 35px;
     color: #fff;
     text-decoration: underline;
-    line-height: 50px;
+    // line-height: 50px;
     font-family: $rajdhani_font;
     font-weight: 700;
   }
@@ -573,38 +579,35 @@
   }
 }
 
-
 //mobile dev
 
-.mobile_section{
+.mobile_section {
   margin-top: 60px;
   margin-bottom: 60px;
   padding-top: 20px;
-    padding-bottom: 20px;
-    background-image: -webkit-linear-gradient( 360deg, #ffffff 36%, #00a7d6 33%);
+  padding-bottom: 20px;
+  // background-image: -webkit-linear-gradient(360deg, #ffffff 36%, #00a7d6 33%);
 }
-.mobile_section .col-md-8 .col-md-4:not(:last-child){
-  border-right: 1px solid #71bcdcf5;
-}
-.mobile_icon{
+// .mobile_section .col-md-8 .col-md-4:not(:last-child) {
+//   // border-right: 1px solid #71bcdcf5;
+// }
+.mobile_icon {
   display: flex;
   justify-content: center;
-
 }
-.mobile_title{
-  h4{
-    font-family: 'Rajdhani';
+.mobile_title {
+  h4 {
+    font-family: "Rajdhani";
     margin-top: 20px;
     font-weight: 700;
-    color: #fff;
+    // color: #fff;
   }
 }
 
-
-.col-md-4 .application_box:hover img{
+.col-md-4 .application_box:hover img {
   // transition: shake .3s linear ease-in-out;
   cursor: pointer;
-  animation: shake .3s linear;
+  animation: shake 0.3s linear;
 }
 
 @keyframes shake {
@@ -617,4 +620,50 @@
   100% {
     transform: translateX(-30%);
   }
+}
+
+
+// .rpa_graph:hover img{
+//   animation: rotate 4s linear;
+// }
+
+// @keyframes rotate{
+
+//   from{
+//     transform: rotate(0deg);
+//   }
+//   100%{
+//     transform: rotate(360deg);
+//   }
+// }
+
+@media screen and (min-width:1024px) and (max-width:1200px){
+ .rpa_graph img {
+   width: 500px;
+   cursor: pointer;
+   mix-blend-mode: darken;
+   margin-top: 60px;
+ }
+}
+
+
+// .rpa_offering_section .col-md-6 .rpa_imgs:hover img{
+//  animation: Zoom .2s linear;
+// }
+
+//  @keyframes Zoom {
+//    0% {
+//     //  transform: translateY(180deg);
+//      transform: scale(-1.4,1.25);
+//    }
+//    50% {
+//     //  transform: scaleX(1.05, 1.02); 
+//    }
+//    100% {
+//     // transform: translateY(280deg);
+//    }
+//  }
+.industry_section{
+  padding-top: 80px;
+  padding-bottom: 80px;
 }

@@ -97,7 +97,7 @@ const menu = [{
                   consistent access to and delivery of data across all business
                   processes.
                 </p>
-                <SlideAnimationButton btnName="TALK TO SALES" to="/contact-us" />
+                <SlideAnimationButton btnName="TALK TO SALES" url="/contact-us"/>
               </div>
             </div>
 

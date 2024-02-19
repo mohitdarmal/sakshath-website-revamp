@@ -66,6 +66,13 @@
 }
 
 // vision_mission
+
+
+.title{
+  img{
+    width:50px;
+  }
+}
 .vision {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -268,3 +275,17 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* For Tab Screen  */
 }
+
+
+
+// .about_who_we_r_content_wrapper  {
+//   position: sticky;
+//   top: 100px;
+//   height: fit-content; 
+//   background-color: #fff; 
+//   padding: 20px; 
+// }
+// .about_who_we_r_content {
+//   overflow-y: auto;
+//   max-height: 600px; 
+// }

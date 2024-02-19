@@ -51,13 +51,13 @@
 }
 .integration_heading {
   color: white;
-  font-size: 30px;
+  font-size: 32px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 800;
   margin-bottom: 0px;
   padding-left: 4px;
 }
-#service_stickmenu_list li a {color: #fff !important;}
+
 .dropdown-item.active, .dropdown-item:active{background-color: $light_navy_blue !important;}
 .bsb-navbar{background-color: $white_color;}
 .navbar-toggler:focus {box-shadow: none !important;}
@@ -66,9 +66,9 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-// .header_menu .nav-link.active{
-//     color: $ball_blue_color !important;
-// } 
+.header_menu .nav-link.active{
+    color: white !important;
+} 
 
 .nav-item.dropdown ul.dropdown-menu {
   border-radius: 2px;
@@ -80,7 +80,7 @@
     font-family: $rajdhani_font;
     text-transform: uppercase;
     font-weight: 600;
-    padding: 10px 15px;
+    // padding: 10px 15px;
     transition: 0.2s;
   }
   li a:hover, li a:active{
@@ -109,16 +109,15 @@
  
   top: 71px !important;
 }
-.paragraph{
-  color:white;
-  padding-top: 18px;
+.paragraph {
+  color: white;
+  padding-top: 13px;
   font-size: 18px;
-  height: 47px;
+  height: 34px;
 }
-#service_stickmenu_list li a {
-  color: #fff !important;
-  padding: 10px 50px;
-}
+// #service_stickmenu_list li a {
+//   color: #fff !important;
+// }
 .header_translator{line-height: 57px; padding-right: 20px;}
 .bsb-navbar{transition: background-color 0.5s ease}
 .bsb-navbar.sticky-top{  animation: slideDown 0.5s ease;}
@@ -149,11 +148,24 @@
 }
 @media screen and (min-width:768px) and (max-width:1023px){
     .header_menu .header_right{display: none !important;}
-    body .navbar-expand-md .navbar-nav .nav-link{padding-left: 7px !important; padding-right: 7px;}
+    
+    body .navbar-expand-md .navbar-nav .nav-link{
+      padding-left:13px;
+      padding-right: 13px;
+    }
+    .header_menu li a.nav-link {
+      font-size: 11px;
+    }
+    // .stick_menu_bar{
+    //   top:-7px;
+    // }
+   
+   
 
 }
 
 @media screen and (min-width:1024px) {
     // .header_menu .header_right{display: block !important;}
-    .header_menu li a.nav-link {font-size: 16px;}
+    // .header_menu li a.nav-link {font-size: 16px;}
 }
+

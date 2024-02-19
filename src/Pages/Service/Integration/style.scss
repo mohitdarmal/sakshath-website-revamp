@@ -221,17 +221,17 @@
   padding-top: 70px;
   padding-bottom: 40px;
   background-attachment: fixed;
-  margin-top: 80px;
+  margin-top: 40px;
   // margin-bottom: 40px;
 
   .integration_left_planning_banner_content {
     margin-bottom: 30px;
   }
   .integration_left_planning_banner_content h3 {
-    font-size: 35px;
+    // font-size: 35px;
     color: #fff;
-    text-decoration: underline;
-    line-height: 50px;
+    // text-decoration: underline;
+    // line-height: 50px;
     font-family: $rajdhani_font;
     font-weight: 700;
   }
@@ -466,7 +466,7 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* For Tab Screen  */
   .paragraph {
-    color: white;
+    
     padding-top: 18px;
     font-size: 9px;
     height: 47px;
@@ -507,16 +507,16 @@ ul {
 @media screen and (min-width: 1024px) {
   /* For Desktop Screen  */
   .paragraph {
-    color: white;
+    
     padding-top: 18px;
     font-size: 11px;
     height: 47px;
 }
-#service_stickmenu_list li a {
-  color: #fff !important;
-}
+// #service_stickmenu_list li a {
+//   color: #fff !important;
+// }
 .heading_title {
-  color: black;
+  // color: black;
   font-size: 35px;
 }
 }
