@@ -36,7 +36,6 @@
   padding-right: 80px;
 }
 .overview_sec {
- 
   padding-top: 80px;
 }
 .integration_img_right {
@@ -121,8 +120,16 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.service_stickmenu_list a{padding: 20px 30px !important;}
-.active-scroll-spy{  background-color: #24688f !important; border-radius: 0px !important;}
+.service_stickmenu_list a {
+  padding: 20px 30px !important;
+
+
+
+}
+.active-scroll-spy {
+  background-color: #24688f !important;
+  border-radius: 0px !important;
+}
 // .integration_coe{
 //     color:$ball_blue_color;
 //     font-family: $rajdhani_font;
@@ -140,7 +147,7 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.managed_services_left{
+.managed_services_left {
   padding-right: 80px;
 }
 // .intergration_list ::before{
@@ -173,7 +180,6 @@
 .integration_consulting_left {
   display: flex;
 }
-
 
 // .intergration_list li{
 //     font-family: inherit;
@@ -228,10 +234,9 @@
     margin-bottom: 30px;
   }
   .integration_left_planning_banner_content h3 {
-    // font-size: 35px;
+    
     color: #fff;
-    // text-decoration: underline;
-    // line-height: 50px;
+    text-decoration: underline;
     font-family: $rajdhani_font;
     font-weight: 700;
   }
@@ -262,10 +267,10 @@ ul {
   list-style: none;
 }
 
-.software_logo_section {
-  // padding-top: 80px;
-  // background-image: linear-gradient(to top,#ffffff,#b5d9ef);
-}
+// .software_logo_section {
+//   padding-top: 80px;
+//   background-image: linear-gradient(to top,#ffffff,#b5d9ef);
+// }
 
 .integration_right_sec {
   position: relative;
@@ -282,9 +287,7 @@ ul {
 //     line-height: 30px;
 //     margin-left: -35px;
 // }
-.intergration_list {
-  line-height: 35px;
-}
+
 ul {
   padding-left: 23px;
 }
@@ -292,13 +295,13 @@ ul {
   padding-top: 80px;
 }
 .mySwiper {
-//   border-top: 1px dashed #c9c9c9;
+  //   border-top: 1px dashed #c9c9c9;
   padding-top: 25px;
   padding-bottom: 25px;
-//   border-bottom: 1px dashed #c9c9c9;
+  //   border-bottom: 1px dashed #c9c9c9;
 }
 .active-scroll-spy {
-  background-color:#041d26;
+  background-color: #041d26;
   border-radius: 15px;
 }
 
@@ -343,12 +346,11 @@ ul {
     padding-top: 40px;
   }
   .managed_servives_heading {
-    font-size: 34px;
     font-family: "Rajdhani";
     font-weight: 700;
     padding-left: 11px;
   }
-  
+
   .managed_services_sec {
     padding-bottom: 40px;
     // padding-top:40px;
@@ -360,15 +362,14 @@ ul {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .integration_coe {
-    font-size: 32px;
-  }
+ 
   .integration_consulting_sec {
     padding-top: 40px;
   }
 
   .managed_services_left p {
-    font-size: 14px;
+    
+
     padding-left: 11px;
   }
 
@@ -376,12 +377,7 @@ ul {
     line-height: 31px;
     line-height: 28px;
   }
-  .integration_consulting_right p {
-    font-size: 14px;
-  }
-  .integration_coe_left p {
-    font-size: 13px;
-  }
+ 
 
   .migration_heading {
     font-size: 24px;
@@ -395,12 +391,14 @@ ul {
     font-family: "Rajdhani", sans-serif;
     font-weight: 700;
   }
-  .integration_planning_banner .integration_right_planning_banner_content .integration_lets_meet_us_button {
+  .integration_planning_banner
+    .integration_right_planning_banner_content
+    .integration_lets_meet_us_button {
     padding: 10px 18px;
   }
-  .integration_planning_banner{
+  .integration_planning_banner {
     padding-top: 46px;
-    padding-bottom: 6px
+    padding-bottom: 6px;
   }
 }
 
@@ -408,116 +406,100 @@ ul {
   /* For Mobile Landscape Screen  */
   .overview_sec {
     padding-right: 0px !important;
-    padding-top:40px;
-    
+    padding-top: 40px;
   }
   .partner_logo_section {
     padding: 40px 0px;
   }
   .partner_logo_tab {
     padding-top: 0px;
-    padding-bottom: 0px
-}
+    padding-bottom: 0px;
+  }
 
-.why_need_integration_right {
+  .why_need_integration_right {
     padding-left: 0px;
   }
   .integartion_coe_sec {
     padding-top: 40px;
     padding-bottom: 40px;
-}
-.why_need_integration_sec {
+  }
+  .why_need_integration_sec {
     padding-bottom: 40px;
-}
-.integration_planning_banner{
+  }
+  .integration_planning_banner {
     margin-top: 0px;
-    padding-top:20px;
+    padding-top: 20px;
     padding-bottom: 20px;
-}
-.integration_consulting_sec{
+  }
+  .integration_consulting_sec {
     padding-top: 40px;
-}
-.integration_consulting_right{
-    padding-left:0px;
-}
-.software_logo_section {
+  }
+  .integration_consulting_right {
+    padding-left: 0px;
+  }
+  .software_logo_section {
     padding: 40px 0px;
-}
-.managed_services_left {
+  }
+  .managed_services_left {
     padding-top: 40px;
     padding-left: 0px;
-}
-.managed_services_sec{
+  }
+  .managed_services_sec {
     padding-bottom: 40px;
-}
-.integration_planning_banner {
-    margin-top: 0px; 
+  }
+  .integration_planning_banner {
+    margin-top: 0px;
     padding-top: 0px;
-}
-.integration_planning_banner .integration_left_planning_banner_content {
+  }
+  .integration_planning_banner .integration_left_planning_banner_content {
     margin-bottom: 0px;
-}
+  }
 
-.integration_planning_banner .integration_left_planning_banner_content h3 {
-    font-size: 24px;
-}
-
+  
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* For Tab Screen  */
   .paragraph {
-    
     padding-top: 18px;
     font-size: 9px;
     height: 47px;
-}
-.why_need_integration_right {
-  padding-left: 36px;
+  }
+  .why_need_integration_right {
+    padding-left: 36px;
+  }
+
+  .integartion_coe_sec {
+    padding-left: 36px;
+    padding-top: 40px;
+  }
+  .integration_consulting_right {
+    padding-left: 36px;
+  }
+  .managed_services_sec {
+    padding-bottom: 40px;
+    padding-left: 36px;
+  }
+  .integration_consulting_sec {
+    padding-top: 40px;
+  }
+  .integration_planning_banner {
+    margin-top: 40px;
+  }
+  .partner_logo_section {
+    padding: 20px 0px 20px 0px;
+  }
+  .partner_logo_tab {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .why_need_integration_sec {
+    padding-bottom: 40px;
+  }
 }
 
-.integartion_coe_sec {
-  padding-left: 36px;
-  padding-top: 40px;
-}
-.integration_consulting_right {
-  padding-left: 36px;
-}
-.managed_services_sec {
-  padding-bottom: 40px;
-  padding-left: 36px;
-}
-.integration_consulting_sec {
-  padding-top: 40px;
-}
-.integration_planning_banner {
-  margin-top:40px;
-}
-.partner_logo_section {
-  padding: 20px 0px 20px 0px;
-}
-.partner_logo_tab {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.why_need_integration_sec {
-  padding-bottom: 40px;
-}
-}
 
-@media screen and (min-width: 1024px) {
-  /* For Desktop Screen  */
-  .paragraph {
-    
-    padding-top: 18px;
-    font-size: 11px;
-    height: 47px;
-}
-// #service_stickmenu_list li a {
-//   color: #fff !important;
-// }
-.heading_title {
-  // color: black;
-  font-size: 35px;
-}
-}
 // responsive end
+.overview_sec_left h3{
+  font-family: $rajdhani_font;
+  font-weight: bold;
+}
