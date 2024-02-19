@@ -84,6 +84,11 @@ const BlogDetail = () => {
                   <p className="blogdetail_description">
                     {state.blogDescription}
                   </p>
+                  <img src={state.blogImg} alt="" className="img-fluid blogdetail_img2"/>
+                  <p className="blogdetail_description">
+                    {state.blogDescription}
+                  </p>
+
 
                   <div className="popular_tags_sharenews_box">
                     <div className="popular_tags">

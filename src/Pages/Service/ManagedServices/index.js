@@ -23,9 +23,9 @@ const ManagedServices = () => {
                         <div className="col-md-6">
                           <div className="overview_sec_left_managed_services">
                             {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
-                            <Heading heading="overview" uppercase="text-uppercase"/>
-                            <p className="overview_sec_managed_services_para">Data integration is the practice of consolidating data from disparate sources into a single dataset to provide users with consistent access to and delivery of data across all business processes.</p>
-                            <SlideAnimationButton btnName="TALK TO SALES" />
+                            <Heading heading="Unlock Effective Knowledge Management with Our Services" uppercase="text-uppercase"/>
+                            <p className="overview_sec_managed_services_para">At Sakshath, we understand the challenges businesses face in today's fast-paced environment. The constant demand for efficiency and the ever-present risks can be overwhelming. Discover seamless managed services offering effective knowledge management, continuous support, flexible pricing, and risk mitigation for your business needs.</p>
+                            <SlideAnimationButton btnName="GET STARTED" />
 
                         </div>
                         </div>
