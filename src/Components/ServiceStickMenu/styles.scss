@@ -51,7 +51,7 @@
 }
 .integration_heading {
   color: white;
-  font-size: 38px;
+  font-size: 30px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 800;
   margin-bottom: 0px;
@@ -105,8 +105,9 @@
 .sticky_menu.sticky-top {
   background-color: #00a7d6;
   // padding-left: 73px;
+  z-index: 9;
  
-  top: 72px !important;
+  top: 71px !important;
 }
 .paragraph {
   color: white;

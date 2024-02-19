@@ -114,12 +114,15 @@
   background-color: lightblue;
 }
 .partner_logo_section {
-  padding: 80px 0px 80px 0px;
+  padding: 5px 0px 5px 0px;
   // background-image: linear-gradient(to top,#ffffff,#b5d9ef);
 }
 .integration_consulting_sec {
   padding-top: 80px;
+  padding-bottom: 80px;
 }
+.service_stickmenu_list a{padding: 20px 30px !important;}
+.active-scroll-spy{  background-color: #24688f !important; border-radius: 0px !important;}
 // .integration_coe{
 //     color:$ball_blue_color;
 //     font-family: $rajdhani_font;
@@ -134,6 +137,7 @@
 // }
 
 .managed_services_sec {
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 .managed_services_left{
@@ -259,7 +263,7 @@ ul {
 }
 
 .software_logo_section {
-  padding: 80px 0px 80px 0px;
+  // padding-top: 80px;
   // background-image: linear-gradient(to top,#ffffff,#b5d9ef);
 }
 
@@ -510,7 +514,6 @@ ul {
 }
 #service_stickmenu_list li a {
   color: #fff !important;
-  padding: 10px 31px;
 }
 .heading_title {
   color: black;
