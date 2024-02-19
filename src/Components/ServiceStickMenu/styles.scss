@@ -10,9 +10,7 @@
     // text-decoration: none;
     // transition: 0.3s;
   }
-  .header_menu .nav-link.active {
-    color: #ffffff !important;
-}
+
 .navbar>.container-fluid{
   background-color: #00a7d6;
 }
@@ -66,9 +64,7 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.header_menu .nav-link.active{
-    color: white !important;
-} 
+ 
 
 .nav-item.dropdown ul.dropdown-menu {
   border-radius: 2px;
