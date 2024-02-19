@@ -226,8 +226,6 @@ const handleSubmit = (e) => {
                   </Tab.Container>
                 </Tab>
                 {/* US End */}
-
-                {/* ANZ Start */}
                 <Tab eventKey="anz" title="ANZ">
                 <Tab.Container
                     id="left-tabs-example"

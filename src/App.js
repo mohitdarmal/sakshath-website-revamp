@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import NotFound from "./Pages/NotFound/NotFound";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
@@ -24,8 +24,11 @@ import Automation from "./Pages/Service/Automation";
 import Erp from "./Pages/Service/Erp";
 import ManagedServices from "./Pages/Service/ManagedServices";
 import Analytics from "./Pages/Service/Analytics";
+import ScrollToTop from "./Components/scrollToTop"
 
 const App = () => {
+  
+
   // const [loading, setLoading] = useState(true);
 
   // useEffect(() => {
@@ -36,6 +39,7 @@ const App = () => {
 
   return (
     <>
+     <ScrollToTop />
       {/* {loading ?
     <div>  
     <TailSpin
