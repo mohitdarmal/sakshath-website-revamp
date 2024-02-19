@@ -11,7 +11,7 @@ import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
 //import BlueHeading from "../../Components/Utils/BlueHeading";
 import SubTitle from "../../Components/Utils/Title_head";
-import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH} from "./Constant";
+import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES} from "./Constant";
 import { BsEnvelope } from "react-icons/bs";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import axios from "axios";
@@ -372,8 +372,8 @@ const Career = () => {
        <section className="benefits_container">
         <Container>
           <Row>
-            <div className="benefits_heading text-center text-decoration-underline">
-              <Heading heading="Benefits You Recieve" uppercase="uppercase" />{" "}
+            <div className="benefits_heading text-center">
+              <Heading heading="Benefits of Working At Sakshath" uppercase="uppercase" />{" "}
             </div>
             <p className="benefit_para text-center mt-3">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
@@ -384,7 +384,7 @@ const Career = () => {
               <div className="benefit_icon">
                 <div className="benefit_img">
                   {" "}
-                  <img src={SAFE} alt="" className="img-fluid" />
+                  <img src={EXPRESSIVE} alt="" className="img-fluid" />
                 </div>
 
                 <p>Expressive</p>
@@ -394,7 +394,7 @@ const Career = () => {
               <div className="benefit_icon">
                 <div className="benefit_img">
                   {" "}
-                  <img src={SAFE} alt="" className="img-fluid" />
+                  <img src={MOTIVATED} alt="" className="img-fluid" />
                 </div>
 
                 <p>Motivated</p>
@@ -404,7 +404,7 @@ const Career = () => {
               <div className="benefit_icon">
                 <div className="benefit_img">
                   {" "}
-                  <img src={SAFE} alt="" className="img-fluid" />
+                  <img src={ARTICULATE} alt="" className="img-fluid" />
                 </div>
 
                 <p>Articulate & Talented</p>
@@ -414,22 +414,13 @@ const Career = () => {
               <div className="benefit_icon">
                 <div className="benefit_img">
                   {" "}
-                  <img src={SAFE} alt="" className="img-fluid" />
+                  <img src={NEW_CHALLENGES} alt="" className="img-fluid" />
                 </div>
 
                 <p>New Challenges</p>
               </div>
             </Col>
-            <Col className="cols">
-              <div className="benefit_icon">
-                <div className="benefit_img">
-                  {" "}
-                  <img src={SAFE} alt="" className="img-fluid" />
-                </div>
-
-                <p>Job Sercuity</p>
-              </div>
-            </Col>
+            
           </Row>
         </Container>
       </section> 

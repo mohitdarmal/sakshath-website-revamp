@@ -110,50 +110,7 @@ const ServiceStickMenu = (props) => {
                 </div>
               </div>
             </div>
-<<<<<<< HEAD
-            <div className="offcanvas-body header_menu">
-              <ul className="navbar-nav justify-content-center flex-grow-1 service_stickmenu_list">
-           
-              
-                
-                <li>
-                  <NavLink to="" className="nav-link ">
-                  <p data-to-scrollspy-id="first" className="paragraph"> Integration COE</p>
-                 
-                  </NavLink>
-                </li>
-                
-                <li>
-                <NavLink to="" className="nav-link ">
-                  <p data-to-scrollspy-id="second" className="paragraph"> Integration Consulting</p>
-                 
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink to="" className="nav-link ">
-                 
-                  <p data-to-scrollspy-id="third" className="paragraph">  Migration Technologies</p>
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink to="" className="nav-link ">
-                  <p data-to-scrollspy-id="four" className="paragraph">  Managed Services</p>
-                 
-                  </NavLink>
-                </li>
-                
-
-
-              </ul>
-
-               
-            </div>
-          </div>
-=======
           </nav>
->>>>>>> a8c507e1cf7519928564fa65271df17c557a8f72
         </div>
       </section>
     </>
