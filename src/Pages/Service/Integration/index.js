@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ScrollSpy from "react-ui-scrollspy";
+import { Element, scroller } from 'react-scroll';
 import "./style.scss";
 import {
   INTEGRATION_SECTION_ONE_IMG,
@@ -25,6 +26,7 @@ import Faq from "../../../Components/Faq";
 import BrouchurePopup from "../../../Components/BoruchurePopup";
 import pdfUrl from "../../../Assets/pdf/dummy.pdf";
 import { FaFilePdf } from "react-icons/fa";
+
 //import {SECTION_VECTOR} from "../../Assets/images/check icon psd.png";
 import {
   SOFTWARE_LOGO_1,
@@ -51,6 +53,26 @@ export const Integration = () => {
     setShowModal(false);
   };
 
+const menu = [{
+  id:"integrationCoe",
+  title:"Integration COE"
+},
+{
+  id:"integrationConsult",
+  title:"Integration Consulting"
+},
+{
+  id:"migrationTecnology",
+  title:"Migration Technology"
+},
+{
+  id:"managedService",
+  title:"Managed Services"
+}
+]
+
+
+
   return (
     <>
       <BreadCumb
@@ -75,7 +97,7 @@ export const Integration = () => {
                   consistent access to and delivery of data across all business
                   processes.
                 </p>
-                <SlideAnimationButton btnName="TALK TO SALES" to="/contact-us" />
+                <SlideAnimationButton btnName="TALK TO SALES" url="/contact-us"/>
               </div>
             </div>
 
@@ -131,10 +153,10 @@ export const Integration = () => {
       </section>
 
       {/* <!-- section two start --> */}
-      <section className="why_need_integration_sec">
+      {/* <section className="why_need_integration_sec">
         <div className="container">
           <div className="row align-items-center">
-            <div class="col-md-6  why_need_integration_left ipad_full_width">
+            <div className="col-md-6  why_need_integration_left ipad_full_width">
               <div>
                 <img
                   className="img-fluid integration_img_right"
@@ -154,21 +176,20 @@ export const Integration = () => {
                 Business 2 Business application integration: connecting to
                 third-party or partner Integration of application to IoT Devices{" "}
               </p>
-              {/* <SlideAnimationButton btnName="TALK TO SALES" /> */}
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
        {/* <!-- section two end --> */}
 
             {/* <!-- section three start-->  */}
       {/* <section className="body_sec_two">
                 <div className="container">
                     <div className="row">
-                        <div class="col-md-6">
+                        <div className="col-md-6">
 
                             <p className="data-visualization-para"></p>
-                            <img src={INTEGRATION_SECTION_THREE_IMG} class="img-fluid" />
+                            <img src={INTEGRATION_SECTION_THREE_IMG} className="img-fluid" />
                         </div>
                         <div className="col-md-6">
                             <h3 className="heading-1">Next-level data visualization.</h3>
@@ -177,7 +198,7 @@ export const Integration = () => {
                            
                             <div className="section_parent">
                                 <div className="section_img">
-                                    <img src={SECTION_THREE_ICON_ONE} class="img-fluid" />
+                                    <img src={SECTION_THREE_ICON_ONE} className="img-fluid" />
                                 </div>
                                 <div className="section_para">
                                     <h4>Create personalized and customizable</h4>
@@ -188,7 +209,7 @@ export const Integration = () => {
                             
                             <div className="section_parent">
                                 <div className="section_img">
-                                    <img src={SECTION_THREE_ICON_TWO} class="img-fluid" />
+                                    <img src={SECTION_THREE_ICON_TWO} className="img-fluid" />
                                 </div>
                                 <div className="section_para">
                                     <h4>Build dashboards</h4>
@@ -199,7 +220,7 @@ export const Integration = () => {
                     
                             <div className="section_parent">
                                 <div className="section_img">
-                                    <img src={SECTION_THREE_ICON_THREE} class="img-fluid" />
+                                    <img src={SECTION_THREE_ICON_THREE} className="img-fluid" />
                                 </div>
                                 <div className="section_para">
                                     <h4>Make your visualizations available</h4>
@@ -215,14 +236,18 @@ export const Integration = () => {
 
       {/* section navbar start */}
 
-      <ServiceStickMenu integration_consult="integration_consult" />
+      <ServiceStickMenu 
+        pageName="Integration"
+        menuName={menu}
+      />
 
       {/* section navbar end */}
 
       {/* section five start */}
       <ScrollSpy>
-      <div id="first">
-      <section className="integartion_coe_sec" id="">
+      <div id="integrationCoe">
+      <Element name="integrationCoe">
+      <section className="integartion_coe_sec" >
         <div className="container">
           <div className="row align-items-center">
             {/* <div className="body_sec_three_parent"> */}
@@ -253,8 +278,9 @@ export const Integration = () => {
           </div>
         </div>
       </section>
+      </Element>
       </div>
-      </ScrollSpy>
+      
       {/* section five end */}
 
       {/* integration planning banner start */}
@@ -288,11 +314,10 @@ export const Integration = () => {
       {/*  integartion planning banner end*/}
 
       {/* section six start */}
-      <ScrollSpy>
-      <div id="second">
-        
-
-      <section className="integration_consulting_sec" id="integration_consult">
+    
+      <div id="integrationConsult">
+      <Element name="integrationConsult">
+      <section className="integration_consulting_sec">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 ipad_full_width">
@@ -344,12 +369,13 @@ export const Integration = () => {
           </div>
         </div>
       </section>
+      </Element>
       </div>
-      </ScrollSpy>
+     
 
       {/* section software logo start */}
-      <ScrollSpy>
-      <div id="third">
+      <div id="migrationTecnology">
+      <Element name="migrationTecnology">
       <section className="software_logo_section">
         <div className="container software_logo_tab">
           <div className="Migration_Services ">
@@ -405,14 +431,14 @@ export const Integration = () => {
           </Swiper>
         </div>
       </section>
+      </Element>
       </div>
-      </ScrollSpy>
 
       {/* section software logo end */}
 
       {/* managed service start */}
-      <ScrollSpy>
-      <div id="four">
+      <div id="managedService"> 
+      <Element name="managedService">
       <section className="managed_services_sec">
         <div className="container">
           <div className="row align-items-center">
@@ -458,8 +484,9 @@ export const Integration = () => {
           </div>
         </div>
       </section>
+      </Element>
       </div>
-      </ScrollSpy>
+     
       {/*  managed service end*/}
 
       {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}
@@ -496,7 +523,7 @@ export const Integration = () => {
         </div>
       </section>
       {/* Faq end */}
-      
+      </ScrollSpy>
     </>
   );
 };
