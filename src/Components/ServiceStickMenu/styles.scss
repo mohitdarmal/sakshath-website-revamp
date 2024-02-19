@@ -51,10 +51,11 @@
 }
 .integration_heading {
   color: white;
-  font-size: 38px;
+  font-size: 30px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 800;
   margin-bottom: 0px;
+  padding-left: 4px;
 }
 #service_stickmenu_list li a {color: #fff !important;}
 .dropdown-item.active, .dropdown-item:active{background-color: $light_navy_blue !important;}
@@ -103,13 +104,20 @@
 }
 .sticky_menu.sticky-top {
   background-color: #00a7d6;
-  padding-left: 73px;
+  // padding-left: 73px;
+  z-index: 9;
  
-  top: 72px !important;
+  top: 71px !important;
+}
+.paragraph{
+  color:white;
+  padding-top: 18px;
+  font-size: 18px;
+  height: 47px;
 }
 #service_stickmenu_list li a {
   color: #fff !important;
-  padding: 20px 15px;
+  padding: 10px 50px;
 }
 .header_translator{line-height: 57px; padding-right: 20px;}
 .bsb-navbar{transition: background-color 0.5s ease}
