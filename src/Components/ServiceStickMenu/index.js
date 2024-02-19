@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Element, scroller } from 'react-scroll';
+import { Element, scroller } from "react-scroll";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -12,16 +12,15 @@ import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Heading from "../Utils/Heading";
 
 const ServiceStickMenu = (props) => {
-console.log(props, "menuProps")
+  console.log(props, "menuProps");
 
   const scrollToSection = (sectionId) => {
     scroller.scrollTo(sectionId, {
       duration: 100,
       delay: 0,
-      smooth: 'easeInOutQuart',
+      smooth: "easeInOutQuart",
     });
   };
- 
 
   return (
     <>
@@ -72,19 +71,24 @@ console.log(props, "menuProps")
                   ></button>
                 </div>
                 <div className="offcanvas-body header_menu">
-                  <ul className="navbar-nav justify-content-center flex-grow-1 service_stickmenu_list">
-                  {props.menuName.map((menuItem, idx) => {
-                    return (
-                      <div  key={idx}>
-                      <li>
-                      <NavLink to="#" className="nav-link" data-to-scrollspy-id={menuItem.id} onClick={() => scrollToSection(menuItem.id)} >
-                        {menuItem.title}
-                      </NavLink>
-                    </li>
-                      </div>
-                    )
-                  })}
-                   {/*  <li>
+                  <ul className="navbar-nav justify-content-end flex-grow-1 service_stickmenu_list">
+                    {props.menuName.map((menuItem, idx) => {
+                      return (
+                        <div key={idx}>
+                          <li>
+                            <NavLink
+                              to="#"
+                              className="nav-link"
+                              data-to-scrollspy-id={menuItem.id}
+                              onClick={() => scrollToSection(menuItem.id)}
+                            >
+                              {menuItem.title}
+                            </NavLink>
+                          </li>
+                        </div>
+                      );
+                    })}
+                    {/*  <li>
                       <NavLink to="#" className="nav-link " onClick={() => scrollToSection('automation')}>
                         {props.title1}
                       </NavLink>

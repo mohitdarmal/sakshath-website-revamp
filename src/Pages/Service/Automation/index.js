@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import { Element, scroller } from 'react-scroll';
+import { Element, scroller } from "react-scroll";
 import {
   ANDRIOD_APP,
   API_IMG,
@@ -54,20 +54,20 @@ import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 
 const Automation = () => {
-
-  const menu = [{
-  id:"cloudAutomate",
-  title:"Cloud Automation DEVELOPMENT"
-},
-{
-  id:"rpa",
-  title:"RPA"
-},
-{
-  id:"devops",
-  title:"Devops/Testing"
-},
-]
+  const menu = [
+    {
+      id: "cloudAutomate",
+      title: "Cloud Automation DEVELOPMENT",
+    },
+    {
+      id: "rpa",
+      title: "RPA",
+    },
+    {
+      id: "devops",
+      title: "Devops/Testing",
+    },
+  ];
   return (
     <>
       <BreadCumb
@@ -183,65 +183,65 @@ const Automation = () => {
       {/* automation starts */}
 
       <div id="cloudAutomate">
-      <Element name="Cloud Automate Development">
-      <section className="automation">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <div className="cloud_bg_img">
-                <img
-                  src={AUTOMATION_BG_IMG}
-                  alt=""
-                  width="580px"
-                  height="550px"
-                />
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="cloud_native_content">
-                <Heading
-                  heading=" Cloud Native Development"
-                  uppercase="text-uppercase"
-                />
-                <p>
-                  Organizations can leverage cloud-native technologies to
-                  develop and run scalable applications in modern, dynamic
-                  environments like public, private, and hybrid clouds.
-                </p>
-              </div>
-
-              <div className="row">
+        <Element name="Cloud Automate Development">
+          <section className="automation">
+            <div className="container">
+              <div className="row align-items-center">
                 <div className="col-md-6">
-                  <div className="automation_right_content_list">
-                    <ul>
-                      <li> Hybrid Integration</li>
-                      <li> Services- Based Integration</li>
-                      <li> API Gateway/Manager</li>
-                      <li>
-                        {" "}
-                        Open API business strategy for monetization of APIs
-                      </li>
-                    </ul>
+                  <div className="cloud_bg_img">
+                    <img
+                      src={AUTOMATION_BG_IMG}
+                      alt=""
+                      width="580px"
+                      height="550px"
+                    />
                   </div>
                 </div>
-
                 <div className="col-md-6">
-                  <div className="automation_right_content_list">
-                    <ul>
-                      <li> Social Integration</li>
-                      <li> Marketplace Integration</li>
-                      <li> In-Built Connectors</li>
-                      <li> Enterprise Service Bus (ESB)</li>
-                      <li> Pluggable Adaptors</li>
-                    </ul>
+                  <div className="cloud_native_content">
+                    <Heading
+                      heading=" Cloud Native Development"
+                      uppercase="text-uppercase"
+                    />
+                    <p>
+                      Organizations can leverage cloud-native technologies to
+                      develop and run scalable applications in modern, dynamic
+                      environments like public, private, and hybrid clouds.
+                    </p>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="automation_right_content_list">
+                        <ul>
+                          <li> Hybrid Integration</li>
+                          <li> Services- Based Integration</li>
+                          <li> API Gateway/Manager</li>
+                          <li>
+                            {" "}
+                            Open API business strategy for monetization of APIs
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="col-md-6">
+                      <div className="automation_right_content_list">
+                        <ul>
+                          <li> Social Integration</li>
+                          <li> Marketplace Integration</li>
+                          <li> In-Built Connectors</li>
+                          <li> Enterprise Service Bus (ESB)</li>
+                          <li> Pluggable Adaptors</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      </Element>
+          </section>
+        </Element>
       </div>
 
       {/* pillars */}
@@ -550,52 +550,54 @@ const Automation = () => {
 
       {/* RPA */}
       <div id="rpa">
-      <Element name="RPA">
-      <section className="rpa_section">
-        <div className="container">
-          <div className="row ">
-            <div className="col-md-6">
-              <div className="rpa_main_heading">
-                <Heading heading="RPA" uppercase="text-uppercase" />
-                <h4> Robotic Process Automation</h4>
+        <Element name="RPA">
+          <section className="rpa_section">
+            <div className="container">
+              <div className="row ">
+                <div className="col-md-6">
+                  <div className="rpa_main_heading">
+                    <Heading heading="RPA" uppercase="text-uppercase" />
+                    <h4> Robotic Process Automation</h4>
 
-                <div className="rpa_list">
-                  <ul>
-                    <li>
-                      Sakshath RPA as a service is designed to help
-                      organizations to integrate RPA with latest technologies
-                      like AI/ ML, Voice recognition, Language processing.
-                    </li>
-                    <li>
-                      Build scalable apps and enable a faster reaction to
-                      shifting business needs by combining the correct
-                      cloud-centric methodologies and practices with Sakshath.
-                    </li>
-                    <li>
-                      Our RPA can integrate with any software Suite, including
-                      Finance & Accounting Sales & Distribution, Materials
-                      Management, and Human Capital Management it is also
-                      helping our customers to optimize back-end operations like
-                      – On Boarding Process – (Vendor, Partner, Employee),
-                      Procurement Process, Billing/Invoicing Process Automation
-                      etc.
-                    </li>
-                  </ul>
+                    <div className="rpa_list">
+                      <ul>
+                        <li>
+                          Sakshath RPA as a service is designed to help
+                          organizations to integrate RPA with latest
+                          technologies like AI/ ML, Voice recognition, Language
+                          processing.
+                        </li>
+                        <li>
+                          Build scalable apps and enable a faster reaction to
+                          shifting business needs by combining the correct
+                          cloud-centric methodologies and practices with
+                          Sakshath.
+                        </li>
+                        <li>
+                          Our RPA can integrate with any software Suite,
+                          including Finance & Accounting Sales & Distribution,
+                          Materials Management, and Human Capital Management it
+                          is also helping our customers to optimize back-end
+                          operations like – On Boarding Process – (Vendor,
+                          Partner, Employee), Procurement Process,
+                          Billing/Invoicing Process Automation etc.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="rpa_graph">
+                    <img src={RPA_GRAPH} alt="" />
+                  </div>
+                  <div className="rpa_text text-center mt-5">
+                    {/* <h4>Robotic Process Automation Business Management</h4> */}
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="rpa_graph">
-                <img src={RPA_GRAPH} alt="" />
-              </div>
-              <div className="rpa_text text-center mt-5">
-                {/* <h4>Robotic Process Automation Business Management</h4> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      </Element>
+          </section>
+        </Element>
       </div>
 
       {/* <section>
@@ -807,19 +809,19 @@ const Automation = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src={PRISMS_RPA}  width="250px"/>{" "}
+              <img src={PRISMS_RPA} width="250px" />{" "}
             </SwiperSlide>
             <SwiperSlide>
-              <img src={UI_PATH_RP}  width="250px"/>
+              <img src={UI_PATH_RP} width="250px" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={POWER_AUTOMATE_RPA}  width="250px" />
+              <img src={POWER_AUTOMATE_RPA} width="250px" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={AUTOMATE_RPA}  width="250px"/>
+              <img src={AUTOMATE_RPA} width="250px" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={FLOW_CENTRIC_RPA}  width="250px" />
+              <img src={FLOW_CENTRIC_RPA} width="250px" />
             </SwiperSlide>
 
             {/* <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide> */}
@@ -840,30 +842,32 @@ const Automation = () => {
       {/*  why skashath ends */}
 
       <div id="devops">
-      <Element name="Devops/Testing">
-
-      <section className="devops_section">
-        <div className="container devops_container">
-          <div className="row align-items-center ">
-            <div className="col-md-6">
-              <div className="devops_img">
-                <img src={DEVOPS} alt="" width="580px" />
+        <Element name="Devops/Testing">
+          <section className="devops_section">
+            <div className="container devops_container">
+              <div className="row align-items-center ">
+                <div className="col-md-6">
+                  <div className="devops_img">
+                    <img src={DEVOPS} alt="" width="580px" />
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="devops_testing_right_content">
+                    <Heading
+                      heading="DevOps/Testing"
+                      uppercase="text-uppercase"
+                    />
+                    <p>
+                      In transforming Testing to the world of Agile and DevOps,
+                      Sakshath has been at the forefront of providing
+                      best-in-class, tailored “QA Testing Services”.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="devops_testing_right_content">
-                <Heading heading="DevOps/Testing" uppercase="text-uppercase" />
-                <p>
-                  In transforming Testing to the world of Agile and DevOps,
-                  Sakshath has been at the forefront of providing best-in-class,
-                  tailored “QA Testing Services”.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      </Element>
+          </section>
+        </Element>
       </div>
 
       <section className="devops_section">
