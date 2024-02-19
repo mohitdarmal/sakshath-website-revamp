@@ -6,4 +6,4 @@ export const REACT_LOGO = require("../../Assets/images/physics.png");
 export const EXPRESSIVE = require("../../Assets/images/expressive.png");
 export const MOTIVATED = require("../../Assets/images/motivated.png");
 export const ARTICULATE = require("../../Assets/images/articulate.png");
-export const NEW_CHALLENGES = require("../../Assets/images/new_challenge.png");
+export const NEW_CHALLENGES = require("../../Assets/images/new_challenges.png");

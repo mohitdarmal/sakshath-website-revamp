@@ -9,8 +9,8 @@
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
         padding: 35px 17px;
         border-radius: 7px;
-        background: #32a4d5;
-        color: white;
+        background: #eef3f5;
+    color: #9b9999;
         margin-top: 10px;
     }
 
@@ -51,7 +51,8 @@
 .box{
     h6{font-family: $rajdhani_font;
     font-weight: 700;
-    margin-bottom: 1px;}
+    margin-bottom: 1px;
+    color: #181818;}
 
     svg{
         
@@ -67,7 +68,7 @@
 }
 
 
-.form_box{margin: -14px;}
+.careers_form_box{margin: -14px;}
 .careers_contact_form{
 
     h4{
@@ -75,7 +76,7 @@
         font-weight: 700;
     }
     background: #fff;
-    padding: 40px;
+    padding: 20px;
     box-shadow: 0px 2px 20px #0000001f;
     z-index: 999;
     position: relative;
