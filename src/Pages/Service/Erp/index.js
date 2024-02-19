@@ -225,27 +225,65 @@ const Erp = () => {
       <section className="industry_section">
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
+          <div className="col-md-12">
+          <div className="industry_main_heading text-center">
+                <Heading heading="Industry" uppercase="text-uppercase" />
+              </div>
+          </div>
+            {/* <div className="col-md-3">
               <div className="industry_main_heading">
                 <Heading heading="Industry" uppercase="text-uppercase" />
               </div>
-            </div>
-            <div className="col-md-9">
+            </div> */}
+            <div className="col-md-12">
               <div className="top_industry d-flex">
-                <div className="industry_box">
+                <div className="industry_box1">
                   <h5>supply chain</h5>
                 </div>
-                <div className="industry_box">
+                <div className="industry_box1">
                   <h5>manufacturing</h5>
                 </div>
-                <div className="industry_box">
+                <div className="industry_box1">
                   <h5>Retailers</h5>
                 </div>
               </div>
 
-              <div className="center_top_industry"></div>
-              <div className="center_bottom_industry"></div>
-              <div className="bottom_industry"></div>
+              <div className="center_top_industry">
+                <div className="industry_box_2">
+                  <h5>Feedback Analysis</h5>
+                </div>
+                <div className="industry_box_2">
+                  <h5>Assement</h5>
+                </div>
+                <div className="industry_box_2">
+                  <h5>Feedback Analysis</h5>
+                </div>
+              </div>
+              <div className="center_bottom_industry ">
+              <div className="industry_box_3">
+                  <h5>Feedback Analysis</h5>
+                </div>
+                <div className="industry_box_3">
+                  <h5>Feedback Analysis</h5>
+                </div>
+                <div className="industry_box_3">
+                  <h5>Feedback Analysis</h5>
+                </div>
+                <div className="industry_box_3">
+                  <h5>Feedback Analysis</h5>
+                </div>
+              </div>
+              <div className="bottom_industry">
+              <div className="industry_box_4">
+                  <h5>Feedback Analysis</h5>
+                </div>
+                <div className="industry_box_4">
+                  <h5>Feedback Analysis</h5>
+                </div>
+                <div className="industry_box_4">
+                  <h5>Feedback Analysis</h5>
+                </div>
+              </div>
             </div>
           </div>
         </div>
