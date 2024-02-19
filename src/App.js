@@ -25,6 +25,7 @@ import Erp from "./Pages/Service/Erp";
 import ManagedServices from "./Pages/Service/ManagedServices";
 import Analytics from "./Pages/Service/Analytics";
 import ScrollToTop from "./Components/scrollToTop"
+import OurTeam from "./Pages/OurTeam";
 
 const App = () => {
   
@@ -84,6 +85,7 @@ const App = () => {
          
 
           <Route path="/company-journey" element={<OurJounery />} />
+          <Route path="/our-team" element={<OurTeam />} />
           <Route path="/our-achievements" element={<OurAchivements />} />
           <Route path="/integration" element={<Integration />} />
           <Route path="/managed-services" element={<ManagedServices />} />
