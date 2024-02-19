@@ -82,16 +82,13 @@ const Automation = () => {
             <div className="col-md-6 ipad_full_width">
               <div className="overview_sec_left">
                 <Heading
-                  heading="Overview"
+                  heading="Streamline Your Operations with Automation"
                   // uppercase="text-uppercase"
                 />
                 <p className="sec_para">
-                  Data integration is the practice of consolidating data from
-                  disparate sources into a single dataset to provide users with
-                  consistent access to and delivery of data across all business
-                  processes.
+                Experience seamless automation with cloud-native solutions. Simplify workflows, reduce costs, and boost productivity. Business organizations are increasingly automating operational costs and inefficiencies. They are right on their way. Using automation, internal and external processes are becoming more efficient and productive.
                 </p>
-                <SlideAnimationButton btnName="TALK TO SALES" />
+                <SlideAnimationButton btnName="Get Started Now" />
               </div>
             </div>
 
@@ -516,7 +513,7 @@ const Automation = () => {
                   <img src={RPA_DELIVERY} alt="" />
                 </div>
                 <div className="api_boxes">
-                  <h4> Open API business strategy for monetization of API’s</h4>
+                  <h4> Open API business strategy for monetization</h4>
                   <span>
                     Open API business strategy for monetization of API’s. API
                     Gateway/Manager. Hybrid Integration. In-Built Connectors,
@@ -556,8 +553,8 @@ const Automation = () => {
               <div className="row ">
                 <div className="col-md-6">
                   <div className="rpa_main_heading">
-                    <Heading heading="RPA" uppercase="text-uppercase" />
-                    <h4> Robotic Process Automation</h4>
+                    <Heading heading="RPA (Robotic Process Automation)" uppercase="text-uppercase" />
+                    <h4> </h4>
 
                     <div className="rpa_list">
                       <ul>

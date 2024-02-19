@@ -215,9 +215,9 @@
 .rpa_main_heading h3 {
   font-family: $rajdhani_font;
   font-weight: 700;
-  font-size: 85px;
+
   padding-bottom: 12px;
-  color: $ball_blue_color;
+  // color: $ball_blue_color;
   margin-top: 60px;
   margin-right: 50px;
 
@@ -549,10 +549,10 @@ width: 45px;
     margin-bottom: 30px;
   }
   .integration_left_planning_banner_content h3 {
-    font-size: 35px;
+    // font-size: 35px;
     color: #fff;
     text-decoration: underline;
-    line-height: 50px;
+    // line-height: 50px;
     font-family: $rajdhani_font;
     font-weight: 700;
   }
@@ -623,19 +623,19 @@ width: 45px;
 }
 
 
-.rpa_graph:hover img{
-  animation: rotate 4s linear;
-}
+// .rpa_graph:hover img{
+//   animation: rotate 4s linear;
+// }
 
-@keyframes rotate{
+// @keyframes rotate{
 
-  from{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-}
+//   from{
+//     transform: rotate(0deg);
+//   }
+//   100%{
+//     transform: rotate(360deg);
+//   }
+// }
 
 @media screen and (min-width:1024px) and (max-width:1200px){
  .rpa_graph img {
@@ -647,23 +647,22 @@ width: 45px;
 }
 
 
-.rpa_offering_section .col-md-6 .rpa_imgs:hover img{
- animation: Zoom .2s linear;
-  // transform: scale(-1.24,1.25);
-}
+// .rpa_offering_section .col-md-6 .rpa_imgs:hover img{
+//  animation: Zoom .2s linear;
+// }
 
- @keyframes Zoom {
-   0% {
-    //  transform: translateY(180deg);
-     transform: scale(-1.4,1.25);
-   }
-   50% {
-    //  transform: scaleX(1.05, 1.02); 
-   }
-   100% {
-    // transform: translateY(280deg);
-   }
- }
+//  @keyframes Zoom {
+//    0% {
+//     //  transform: translateY(180deg);
+//      transform: scale(-1.4,1.25);
+//    }
+//    50% {
+//     //  transform: scaleX(1.05, 1.02); 
+//    }
+//    100% {
+//     // transform: translateY(280deg);
+//    }
+//  }
 .industry_section{
   padding-top: 80px;
   padding-bottom: 80px;

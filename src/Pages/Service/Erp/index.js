@@ -269,9 +269,7 @@ const Erp = () => {
                 <div className="industry_box_3">
                   <h5>Feedback Analysis</h5>
                 </div>
-                <div className="industry_box_3">
-                  <h5>Feedback Analysis</h5>
-                </div>
+                
               </div>
               <div className="bottom_industry">
               <div className="industry_box_4">
@@ -281,6 +279,9 @@ const Erp = () => {
                   <h5>Feedback Analysis</h5>
                 </div>
                 <div className="industry_box_4">
+                  <h5>Feedback Analysis</h5>
+                </div>
+                <div className="industry_box_3">
                   <h5>Feedback Analysis</h5>
                 </div>
               </div>
