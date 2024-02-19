@@ -68,6 +68,10 @@ const About = () => {
                     with software-skilled consultants to identify and enhance
                     the client’s business processes to increase efficiency and
                     maximize profits.
+
+                    <br />
+                    <br />
+                    We go by the saying “I’m Sakshath” the thought behind the phrase is the presence of all the employees ‘HERE’ and ‘NOW’. Starting as a self-funded business Sakshath company ethos to date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from the beginning of the journey made what Sakshath Technologies is today, we grew gradually to a family of 100+ employees and now have a domestic presence in 3 metropolitan cities serving clients from all over the world. Celebratingdecade milestones, today we take pride in onboarding the team of Country’s Best and strongly believe in Growing Together.
                   </p>
                 </Fade>
               </div>
@@ -97,7 +101,7 @@ const About = () => {
                     We go by the saying <strong>“I’m Sakshath” </strong> the
                     thought behind the phrase is the presence of all the
                     employees ‘HERE’ and ‘NOW’. Starting as a self-funded
-                    business Sakshath Technologies’ company ethos to date is BY
+                    business Sakshath company ethos to date is BY
                     THE PEOPLE, FOR THE PEOPLE. Every employee from the
                     beginning of the journey made what Sakshath Technologies is
                     today, we grew gradually to a family of 100+ employees and
