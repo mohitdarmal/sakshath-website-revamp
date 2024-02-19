@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss";
+import { Element, scroller } from 'react-scroll';
 import {
   ANDRIOD_APP,
   API_IMG,
@@ -53,6 +54,20 @@ import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 
 const Automation = () => {
+
+  const menu = [{
+  id:"cloudAutomate",
+  title:"Cloud Automation DEVELOPMENT"
+},
+{
+  id:"rpa",
+  title:"RPA"
+},
+{
+  id:"devops",
+  title:"Devops/Testing"
+},
+]
   return (
     <>
       <BreadCumb
@@ -160,11 +175,15 @@ const Automation = () => {
       {/* <!-- section two end --> */}
       <ServiceStickMenu
         pageName="Automation"
-        title1="Cloud Automation DEVELOPMENT"
-        title2="RPA"
-        title3="Devops /Testing"
+        // title1="Cloud Automation DEVELOPMENT"
+        // title2="RPA"
+        // title3="Devops /Testing"
+        menuName={menu}
       />
       {/* automation starts */}
+
+      <div id="cloudAutomate">
+      <Element name="Cloud Automate Development">
       <section className="automation">
         <div className="container">
           <div className="row align-items-center">
@@ -222,6 +241,8 @@ const Automation = () => {
           </div>
         </div>
       </section>
+      </Element>
+      </div>
 
       {/* pillars */}
       <section className="pillars_section">
@@ -528,6 +549,8 @@ const Automation = () => {
       {/* why_Sakshath ends*/}
 
       {/* RPA */}
+      <div id="rpa">
+      <Element name="RPA">
       <section className="rpa_section">
         <div className="container">
           <div className="row ">
@@ -572,6 +595,8 @@ const Automation = () => {
           </div>
         </div>
       </section>
+      </Element>
+      </div>
 
       {/* <section>
         <div className="container">
@@ -814,6 +839,9 @@ const Automation = () => {
       <WhySakshath />
       {/*  why skashath ends */}
 
+      <div id="devops">
+      <Element name="Devops/Testing">
+
       <section className="devops_section">
         <div className="container devops_container">
           <div className="row align-items-center ">
@@ -835,6 +863,8 @@ const Automation = () => {
           </div>
         </div>
       </section>
+      </Element>
+      </div>
 
       <section className="devops_section">
         <div className="container">
