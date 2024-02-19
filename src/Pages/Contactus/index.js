@@ -186,13 +186,13 @@ const handleSubmit = (e) => {
                       <Col sm={10}>
                         <Tab.Content>
                           <Tab.Pane eventKey="bangalore">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"   loading="lazy" ></iframe>
                           </Tab.Pane>
                           <Tab.Pane eventKey="mumbai">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.711118292886!2d72.92414307466623!3d19.12032505058061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c793b8d124c1%3A0xcc53f3fae0553e58!2sWeWork!5e0!3m2!1sen!2sin!4v1708267894341!5m2!1sen!2sin"  width="100%" height="450"   loading="lazy"></iframe>
                           </Tab.Pane>
                           <Tab.Pane eventKey="gurgram">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.1336757392246!2d77.08386887924894!3d28.505625627285976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d199e15c24a77%3A0xea26e07a91d25663!2sWeWork!5e0!3m2!1sen!2sin!4v1708267816859!5m2!1sen!2sin" width="100%" height="450"   loading="lazy"></iframe>
                           </Tab.Pane>
                         </Tab.Content>
                       </Col>
@@ -205,37 +205,27 @@ const handleSubmit = (e) => {
                 <Tab eventKey="us" title="US">
                 <Tab.Container
                     id="left-tabs-example"
-                    defaultActiveKey="newjersey"
+                    defaultActiveKey="us"
                   >
                     <Row className="align-items-center map_sec">
                       <Col sm={2}>
                         <Nav variant="pills" className="flex-column">
                           <Nav.Item>
-                            <Nav.Link eventKey="newjersey">New Jersey</Nav.Link>
+                            <Nav.Link eventKey="us">US</Nav.Link>
                           </Nav.Item>
-                          <Nav.Item>
-                            <Nav.Link eventKey="mumbai">Mumbai</Nav.Link>
-                          </Nav.Item>
-                          
                         </Nav>
                       </Col>
                       <Col sm={10}>
                         <Tab.Content>
-                          <Tab.Pane eventKey="newjersey">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                          </Tab.Pane>
-                          <Tab.Pane eventKey="mumbai">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                          </Tab.Pane>
-                           
+                          <Tab.Pane eventKey="us">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.33984257064!2d-74.39321052451666!3d40.423473155229644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cf71aeeca893%3A0xe98bd56ad4bef885!2s1%20Auer%20Ct%2C%20East%20Brunswick%2C%20NJ%2008816%2C%20USA!5e0!3m2!1sen!2sin!4v1708267627433!5m2!1sen!2sin"  width="100%" height="450"   loading="lazy"></iframe>
+                          </Tab.Pane>    
                         </Tab.Content>
                       </Col>
                     </Row>
                   </Tab.Container>
                 </Tab>
                 {/* US End */}
-
-                {/* ANZ Start */}
                 <Tab eventKey="anz" title="ANZ">
                 <Tab.Container
                     id="left-tabs-example"
@@ -252,27 +242,14 @@ const handleSubmit = (e) => {
                       <Col sm={10}>
                         <Tab.Content>
                           <Tab.Pane eventKey="newzland">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                          </Tab.Pane>
-                          <Tab.Pane eventKey="mumbai">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.847152799348!2d77.6212673!3d13.045399399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae176fbb02b8e9%3A0xefe5b09d3734be86!2sThe%20Executive%20Centre%20-%20Mfar%20Greenheart%2C%20Manyata%20Tech%20Park%20%7C%20Coworking%20Space%2C%20Serviced%20%26%20Virtual%20Offices%20and%20Workspace!5e0!3m2!1sen!2sin!4v1708024520218!5m2!1sen!2sin" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                          </Tab.Pane>
-                           
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.6913416436955!2d174.868978175601!3d-36.969427886256376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4c339b9096bb%3A0x2a16e1def76c6fd7!2s43%20Kimpton%20Road%2C%20Papatoetoe%2C%20Auckland%202025%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1708267432762!5m2!1sen!2sin" width="100%" height="450"   loading="lazy"></iframe>
+                          </Tab.Pane> 
                         </Tab.Content>
                       </Col>
                     </Row>
                   </Tab.Container>
                 </Tab>
                 {/* ANZ End */}
-                <Tab eventKey="aftrica" title="Africa">
-                  Africa
-                </Tab>
-                <Tab eventKey="middleeast" title="Middle East">
-                  Middle East
-                </Tab>
-                <Tab eventKey="euorpe" title="Europe">
-                  Europe
-                </Tab>
               </Tabs>
             </div>
           </div>
