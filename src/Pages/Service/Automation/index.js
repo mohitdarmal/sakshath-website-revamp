@@ -4,6 +4,7 @@ import { Element, scroller } from "react-scroll";
 import {
   ANDRIOD_APP,
   API_IMG,
+  AUTOMATE_RIGHT_IMG1,
   AUTOMATE_RPA,
   AUTOMATION_BG_IMG,
   CHECK_ICON,
@@ -86,9 +87,17 @@ const Automation = () => {
                   // uppercase="text-uppercase"
                 />
                 <p className="sec_para">
-                Experience seamless automation with cloud-native solutions. Simplify workflows, reduce costs, and boost productivity. Business organizations are increasingly automating operational costs and inefficiencies. They are right on their way. Using automation, internal and external processes are becoming more efficient and productive.
+                  Experience seamless automation with cloud-native solutions.
+                  Simplify workflows, reduce costs, and boost productivity.
+                  Business organizations are increasingly automating operational
+                  costs and inefficiencies. They are right on their way. Using
+                  automation, internal and external processes are becoming more
+                  efficient and productive.
                 </p>
-                <SlideAnimationButton btnName="Get Started Now" />
+                <SlideAnimationButton
+                  btnName="Get Started Now"
+                  url="/contact-us"
+                />
               </div>
             </div>
 
@@ -96,7 +105,7 @@ const Automation = () => {
               <div className="overview_sec_right_img">
                 <img
                   className="img-fluid integration_img_left"
-                  src={INTEGRATION_SECTION_ONE_IMG}
+                  src={AUTOMATE_RIGHT_IMG1}
                 />
               </div>
             </div>
@@ -196,10 +205,7 @@ const Automation = () => {
                 </div>
                 <div className="col-md-6">
                   <div className="cloud_native_content">
-                    <Heading
-                      heading=" Cloud Native Development"
-                      uppercase="text-uppercase"
-                    />
+                    <Heading heading=" Cloud Native Development" />
                     <p>
                       Organizations can leverage cloud-native technologies to
                       develop and run scalable applications in modern, dynamic
@@ -553,8 +559,8 @@ const Automation = () => {
               <div className="row ">
                 <div className="col-md-6">
                   <div className="rpa_main_heading">
-                    <Heading heading="RPA (Robotic Process Automation)" uppercase="text-uppercase" />
-                    <h4> </h4>
+                    <Heading heading="RPA" uppercase="text-uppercase" />
+                    <h4>(Robotic Process Automation) </h4>
 
                     <div className="rpa_list">
                       <ul>
@@ -867,6 +873,54 @@ const Automation = () => {
         </Element>
       </div>
 
+
+      {/* DEvops layer  start*/}
+
+
+
+      <section className="devops_layer_section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="devop_layer">
+                <div className="testing_layer_main_heading text-center">
+                  <Heading heading="Testing Layer" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hr_tag">
+            <hr />
+          </div>
+          <div className="row">
+            <div className="col-md-4">
+              <div className="box1">
+                <div className="layer"></div>
+              </div>
+              <div className="layer_title">
+                <h4>Presentation Layer</h4>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="box2">
+                <div className="layer"></div>
+              </div>
+              <div className="layer_title">
+                <h4>Business Logic Layer</h4>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="box3">
+                <div className="layers"></div>
+              </div>
+              <div className="layer_title">
+                <h4>DataBase Layer</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="devops_section">
         <div className="container">
           <div className="row">
@@ -978,6 +1032,49 @@ const Automation = () => {
           </div>
         </div>
       </section>
+
+      {/* <section className="devops_layer_section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="devop_layer">
+                <div className="testing_layer_main_heading text-center">
+                  <Heading heading="Testing Layer" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hr_tag">
+            <hr />
+          </div>
+          <div className="row">
+            <div className="col-md-4">
+              <div className="box1">
+                <div className="layer"></div>
+              </div>
+              <div className="layer_title">
+                <h4>Presentation Layer</h4>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="box2">
+                <div className="layer"></div>
+              </div>
+              <div className="layer_title">
+                <h4>Presentation Layer</h4>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="box3">
+                <div className="layers"></div>
+              </div>
+              <div className="layer_title">
+                <h4>Presentation Layer</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
 
       {/* Why Sakshath starts*/}
       <WhySakshath />
