@@ -51,7 +51,7 @@
 }
 .integration_heading {
   color: white;
-  font-size: 30px;
+  font-size: 32px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 800;
   margin-bottom: 0px;
@@ -66,9 +66,9 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-// .header_menu .nav-link.active{
-//     color: $ball_blue_color !important;
-// } 
+.header_menu .nav-link.active{
+    color: white !important;
+} 
 
 .nav-item.dropdown ul.dropdown-menu {
   border-radius: 2px;
@@ -148,7 +148,19 @@
 }
 @media screen and (min-width:768px) and (max-width:1023px){
     .header_menu .header_right{display: none !important;}
-    body .navbar-expand-md .navbar-nav .nav-link{padding-left: 7px !important; padding-right: 7px;}
+    
+    body .navbar-expand-md .navbar-nav .nav-link{
+      padding-left:13px;
+      padding-right: 13px;
+    }
+    .header_menu li a.nav-link {
+      font-size: 11px;
+    }
+    // .stick_menu_bar{
+    //   top:-7px;
+    // }
+   
+   
 
 }
 
@@ -157,6 +169,3 @@
     // .header_menu li a.nav-link {font-size: 16px;}
 }
 
-#service_stickmenu_list li a{
-
-}
