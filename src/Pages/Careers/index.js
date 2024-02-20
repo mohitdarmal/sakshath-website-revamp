@@ -375,10 +375,7 @@ const Career = () => {
             <div className="benefits_heading text-center">
               <Heading heading="Benefits of Working At Sakshath" uppercase="uppercase" />{" "}
             </div>
-            <p className="benefit_para text-center mt-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-              incidunt laborum distinctio aspernatur.
-            </p>
+            
 
             <Col className="cols">
               <div className="benefit_icon">
@@ -490,7 +487,7 @@ const Career = () => {
 
       <section className="careers_apply_job_section">
         <div className="container">
-        <div className="text-center mb-4 pb-md-5">
+        <div className="text-center mb-4 pb-md-1">
            <Heading heading= "Most Popular Jobs" uppercase="text-uppercase" />
            <p>Beneath each of these categories, you can find its most popular</p>
            </div>

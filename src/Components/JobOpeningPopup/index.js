@@ -122,9 +122,9 @@ const JobOpeningPopup = (props) => {
 
           
           
-          <div className="form_box">
+          <div className="careers_form_box">
           <Container className='careers_contact_form'>
-           <div className="apply_now text-center mt-4 mb-4">
+           <div className="apply_now text-center mt-2 mb-4">
            <h4>APPLY NOW</h4> 
           {/* <Heading heading="Apply Now" uppercase="text-uppercase"/> */}
           </div>
@@ -165,7 +165,7 @@ const JobOpeningPopup = (props) => {
               />
             </FloatingLabel>
           </Col> */}
-          <Col md={6}>
+          <Col md={12}>
             <FloatingLabel controlId="cv" label="Upload CV">
               {/* <Form.Select
                 aria-label="Floating label select example"
