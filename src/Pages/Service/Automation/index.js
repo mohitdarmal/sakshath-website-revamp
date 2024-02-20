@@ -58,7 +58,7 @@ const Automation = () => {
   const menu = [
     {
       id: "cloudAutomate",
-      title: "Cloud Automation DEVELOPMENT",
+      title: "Cloud Automation Development",
     },
     {
       id: "rpa",
@@ -87,7 +87,7 @@ const Automation = () => {
                   // uppercase="text-uppercase"
                 />
                 <p className="sec_para">
-                  Experience seamless automation with cloud-native solutions.
+                  Experience seamless automation with cloud-native solutions.Using
                   Simplify workflows, reduce costs, and boost productivity.
                   Business organizations are increasingly automating operational
                   costs and inefficiencies. They are right on their way. Using
@@ -198,8 +198,8 @@ const Automation = () => {
                     <img
                       src={AUTOMATION_BG_IMG}
                       alt=""
-                      width="580px"
-                      height="550px"
+                      width="550px"
+                      height="460px"
                     />
                   </div>
                 </div>
@@ -235,7 +235,7 @@ const Automation = () => {
                           <li> Marketplace Integration</li>
                           <li> In-Built Connectors</li>
                           <li> Enterprise Service Bus (ESB)</li>
-                          <li> Pluggable Adaptors</li>
+                          {/* <li> Pluggable Adaptors</li> */}
                         </ul>
                       </div>
                     </div>
@@ -552,8 +552,8 @@ const Automation = () => {
       {/* why_Sakshath ends*/}
 
       {/* RPA */}
-      <div id="rpa">
-        <Element name="RPA">
+      {/* <div id="rpa"> */}
+   
           <section className="rpa_section">
             <div className="container">
               <div className="row ">
@@ -600,8 +600,8 @@ const Automation = () => {
               </div>
             </div>
           </section>
-        </Element>
-      </div>
+        {/* </Element> */}
+      {/* </div> */}
 
       {/* <section>
         <div className="container">
@@ -701,7 +701,7 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="rpa_offering_main_heading text-center mb-4">
-              <Heading heading="RPA OFFERINGS" uppercase="text-uppercase" />
+              <Heading heading="RPA Offering"  />
             </div>
             <div className="col-md-2"></div>
             <div className="col-md-8">
@@ -713,7 +713,7 @@ const Automation = () => {
                       <img src={RPA_ADVISORY} alt="" />
                     </div>
                     <div className="rpa_heading">
-                      <h4> Rpa Advisory</h4>
+                      <h4> RPA Advisory</h4>
                       <div className="rpa_list">
                         <ul>
                           <li>Process & Platform Assessment.</li>
@@ -730,7 +730,7 @@ const Automation = () => {
                       <img src={RPA_PILOT} alt="" />
                     </div>
                     <div className="rpa_heading">
-                      <h4> Rpa Piloct & POC</h4>
+                      <h4> RPA Piloct & POC</h4>
                       <div className="rpa_list">
                         <ul>
                           <li>
@@ -754,7 +754,7 @@ const Automation = () => {
                       <img src={RPA_DELIVERY} alt="" />
                     </div>
                     <div className="rpa_heading">
-                      <h4>Rpa Delivery</h4>
+                      <h4>RPA Delivery</h4>
 
                       <div className="rpa_list">
                         <ul>
@@ -771,7 +771,7 @@ const Automation = () => {
                       <img src={RPA_BOT} alt="" />
                     </div>
                     <div className="rpa_heading">
-                      <h4> Rpa Bot Support </h4>
+                      <h4> RPA Bot Support </h4>
                       <div className="rpa_list">
                         <ul>
                           <li>Level 1 Support.</li>
@@ -792,7 +792,7 @@ const Automation = () => {
 
       <section className="rpa_tools_section">
         <div className="rpa_tools_main_heading text-center">
-          <Heading heading="Rpa Tools" />
+          <Heading heading="RPA Tools" />
           <p>
             In order to achieve value-based RPA solutions for our customers, our
             consultants have worked with a variety of technologies and RPA

@@ -2,11 +2,12 @@ import React from "react";
 import { img2, img3, integration3, why_sakshath_img } from "./Constant";
 import "./style.scss";
 import Heading from "../Utils/Heading";
+import { Element, scroller } from "react-scroll";
 
 const WhySakshath = () => {
   return (
     <>
-    {/* why_Sakshath starts */}
+      {/* why_Sakshath starts */}
       <section className="why_sakshath_section">
         <div className="container">
           <div className="row align-items-center">
@@ -93,16 +94,23 @@ const WhySakshath = () => {
                 <div className="why_sakshath_heading_right">
                   <h6>Major assistance</h6>
                   <p>
-                    Our software enables you to stack, acquire,
-                    synchronize data,
-                    migrate, disseminate, consolidate.
+                    Our software enables you to stack, acquire, synchronize
+                    data, migrate, disseminate, consolidate.
                   </p>
                 </div>
               </div>
             </div>
+            <div id="cloudAutomate">
+              <Element name="Cloud Automate Development">
+              </Element>
+            </div>
+            <div id="rpa">
+              <Element name="RPA"></Element>
+            </div>
           </div>
         </div>
       </section>
+
       {/* why_Sakshath starts */}
     </>
   );

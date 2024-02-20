@@ -8,8 +8,17 @@
   background: #fbf4f4;
   padding: 10px;
 }
-.who_we_are_img img {
-  width: 100%;
+.who_we_are_img {
+  position: sticky; 
+  top: 0; width: 750px;
+   height: 100vh; 
+
+
+  img{
+    position: sticky;
+     height: 100vh; 
+     width: 1000px;
+  }
 }
 .about_who_we_r_content {
   padding-right: 80px;
