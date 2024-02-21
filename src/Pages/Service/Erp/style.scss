@@ -60,130 +60,182 @@
 // }
 
 // epicor
+// .epicor_section {
+//   padding-top: 80px;
+//   padding-bottom: 80px;
+// }
+
+// .epicor_container_box {
+//   box-shadow: 0 2px 20px #00000012;
+//   padding: 30px;
+//   max-width: 280px;
+//   border-radius: 10px;
+//   margin-right: 15px;
+// }
+
+// .epicor_bottom_content {
+//   margin-top: 20px;
+// }
+// .epicor_img img {
+//   width: 600px;
+//   mix-blend-mode: darken;
+// }
+
+// .epicor_col_m5 {
+//   position: relative;
+// }
+// .epicor_exprience_box {
+//   display: flex;
+//   position: absolute;
+//   bottom: 0px;
+//   background: #32a4d5;
+//   animation: move 3s ease-in-out infinite;
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   right: 0;
+//   margin-bottom: 45px;
+
+//   img {
+//     width: 50px;
+//     color: white;
+//     filter: brightness(0) invert(1);
+//     align-items: center;
+//     display: flex;
+//     padding: 20px 5px;
+//     margin-right: 17px;
+//   }
+// }
+// .epicor_exprience_box h6 {
+//   font-size: 30px;
+//   padding: 10px;
+//   text-align: center;
+//   margin-top: 15px;
+//   font-family: "Rajdhani";
+//   font-weight: bold;
+//   color: white;
+//   border-left: 1px solid #fff;
+// }
+
+// @keyframes move {
+//   0% {
+//     transform: translateX(0);
+//   }
+//   50% {
+//     transform: translateX(-40px);
+//   }
+//   100% {
+//     transform: translateX(0);
+//   }
+// }
+
+// // syspro
+// .syspro_section {
+//   padding-top: 80px;
+//   padding-bottom: 80px;
+//   background-image: url("../../../Assets/images/pillar_bg_img.png");
+//   background-size: contain;
+//   padding: 120px;
+// }
+
+// .syspro_center_content {
+//   p {
+//     color: #fff;
+//     font-size: 22px;
+//     padding-top: 20px;
+//   }
+// }
+
+// .syspro_bottom_content {
+//   p {
+//     color: #fff;
+//     font-size: 22px;
+//   }
+// }
+// .syspro_main_heading h3 {
+//   color: #fff;
+//   font-size: 70px;
+// }
+
+// .syspro_main_heading p {
+//   color: #fff;
+// }
+
+// epicor 
+
+li{
+  list-style: none;
+}
+
 .epicor_section {
+  padding-top: 80px;
+  // overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.overview_left_content{
+  margin-left: 45px;
+}
+
+.epicor_down_section{
+  padding-top: 40px;
+}
+
+.epicor_content_left {
+  li{
+    list-style: none;
+    padding-bottom: 10px;
+  }
+}
+.epicor_content_right
+{
+  li{
+    list-style: none;
+    padding-bottom: 10px;
+  }
+}
+
+//syspro
+
+.syspro_section{
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
-.epicor_container_box {
-  box-shadow: 0 2px 20px #00000012;
-  padding: 30px;
-  max-width: 280px;
-  border-radius: 10px;
-  margin-right: 15px;
-}
-
-.epicor_bottom_content {
-  margin-top: 20px;
-}
-.epicor_img img {
-  width: 600px;
-  mix-blend-mode: darken;
-}
-
-.epicor_col_m5 {
-  position: relative;
-}
-.epicor_exprience_box {
-  display: flex;
-  position: absolute;
-  bottom: 0px;
-  background: #32a4d5;
-  animation: move 3s ease-in-out infinite;
-  padding-left: 20px;
-  padding-right: 20px;
-  right: 0;
-  margin-bottom: 45px;
-  // margin-right: -100px;
-
-  img {
-    width: 50px;
-    color: white;
-    filter: brightness(0) invert(1);
-    align-items: center;
-    display: flex;
-    padding: 20px 5px;
-    margin-right: 17px;
-  }
-}
-.epicor_exprience_box h6 {
-  font-size: 30px;
-  padding: 10px;
-  text-align: center;
-  margin-top: 15px;
-  font-family: "Rajdhani";
-  font-weight: bold;
-  color: white;
-  border-left: 1px solid #fff;
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-40px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.syspro_content li{
+  padding-bottom: 10px;
 }
 
 
-// syspro
-.syspro_section{
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-image: url('../../../Assets/images/pillar_bg_img.png');
-    background-size: contain;
-    padding: 120px;
 
+// spa
+.sap_section{
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
-
-
-.syspro_center_content{
-    p{
-        color: #fff;
-        font-size: 22px;
-        padding-top: 20px;
-    }
+.sap_content_box{
+  margin-left: 30px;
 }
-
-.syspro_bottom_content{
-    p{
-        color: #fff;
-        font-size: 22px;
-        // padding-top: 20px; 
-    }
+.sap_box{
+  box-shadow: 0 2px 20px #1312122e;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
-.syspro_main_heading h3 {
-    color: #fff;
-    font-size: 70px;
-
- }
-
- .syspro_main_heading p {
-
-    color: #fff;
- }
-.industry_main_heading h3{
+// Industrys
+.industry_main_heading h3 {
   margin-top: 100px;
 }
 
-.top_industry
-{
+.top_industry {
   display: flex;
   margin-bottom: 20px;
 
-//   justify-content: space-around;
 
-
-.industry_box1{
-  background: linear-gradient(45deg, #99d2eac9, transparent);
+  .industry_box1 {
+    background: linear-gradient(45deg, #99d2eac9, transparent);
     // padding: 10px;
     text-transform: capitalize;
     width: 280px;
-    h5{
+    h5 {
       font-size: 18px;
       font-family: rajdhani;
       font-weight: bold;
@@ -191,68 +243,63 @@
       margin-top: 20px;
       margin-left: 26px;
     }
- }
-
+  }
 }
 
-.center_top_industry{
+.center_top_industry {
   display: flex;
   margin-left: 50px;
   margin-bottom: 20px;
 }
 
-.industry_box_2{
+.industry_box_2 {
   // padding: 10px;
-background: linear-gradient(45deg,rgb(18 131 195 / 73%), transparent);
-width: 290px;
-color: #141212;
-h5{
-  font-size: 18px;
-  font-family: rajdhani;
-  font-weight: bold;
-  line-height: 40px;
-  margin-top: 20px;
-  margin-left: 26px;
+  background: linear-gradient(45deg, rgb(18 131 195 / 73%), transparent);
+  width: 290px;
+  color: #141212;
+  h5 {
+    font-size: 18px;
+    font-family: rajdhani;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-left: 26px;
+  }
 }
 
-} 
-
-.center_bottom_industry{
+.center_bottom_industry {
   display: flex;
   margin-left: 100px;
   margin-bottom: 20px;
 }
-.industry_box_3{
+.industry_box_3 {
   // padding: 10px;
-background: linear-gradient(45deg, #2381a96b, transparent);
-width: 290px;
-color: #141212;
-h5{
-  font-size: 18px;
-  font-family: rajdhani;
-  font-weight: bold;
-  line-height: 40px;
-  margin-top: 20px;
-  margin-left: 26px;
+  background: linear-gradient(45deg, #2381a96b, transparent);
+  width: 290px;
+  color: #141212;
+  h5 {
+    font-size: 18px;
+    font-family: rajdhani;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-left: 26px;
+  }
 }
 
-} 
-
-.bottom_industry{
+.bottom_industry {
   display: flex;
 }
-.industry_box_4{
-  // padding: 10px;
-background: linear-gradient(45deg, #67BBE0, transparent);
-width: 290px;
-color: #141212;
-h5{
-  font-size: 18px;
-  font-family: rajdhani;
-  font-weight: bold;
-  line-height: 40px;
-  margin-top: 20px;
-  margin-left: 26px;
+.industry_box_4 {
+  background: linear-gradient(45deg, #67bbe0, transparent);
+  width: 290px;
+  color: #141212;
+  h5 {
+    font-size: 18px;
+    font-family: rajdhani;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-left: 26px;
+  }
 }
-
-} 
