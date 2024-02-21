@@ -8,7 +8,7 @@ import Heading from '../../Components/Utils/Heading';
 import SlideAnimationButton from '../../Components/Utils/SlideAnimationButton';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import { CLIENT_LOGO1, CLIENT_LOGO2, CLIENT_LOGO3, CLIENT_LOGO4, CLIENT_LOGO5 } from "./Constant";
+import { TRAEGER, GE_HEALTHCARE, UNIVISION, NBC_UNIVESAL, RWI,DHL } from "./Constant";
 import BreadCumb from "../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from './ApplicationDevelopment/Constant';
 import OurPrincipals from '../../Components/OurPrincipals';
@@ -230,7 +230,7 @@ const Service = () => {
     <section className='partner_logo_section'>
       <div className="container partner_logo_tab">
       <Swiper
-        slidesPerView={5}
+        slidesPerView={6}
         spaceBetween={30}
         autoplay={{
           delay: 1500,
@@ -240,14 +240,12 @@ const Service = () => {
         modules={[Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={CLIENT_LOGO1} /> </SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO5} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-        <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
+        <SwiperSlide><img src={TRAEGER} /> </SwiperSlide>
+        <SwiperSlide><img src={GE_HEALTHCARE} /></SwiperSlide>
+        <SwiperSlide><img src={UNIVISION} /></SwiperSlide>
+        <SwiperSlide><img src={NBC_UNIVESAL} /></SwiperSlide>
+        <SwiperSlide><img src={RWI} /></SwiperSlide>
+        <SwiperSlide><img src={DHL} /></SwiperSlide>
       </Swiper>
       </div>
     </section>
