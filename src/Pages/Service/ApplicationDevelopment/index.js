@@ -17,13 +17,7 @@ import {
   QUALITY_ASSURANCE,
   SMOOTH_COMMUNICATION,
 } from "./Constant";
-import {
-  CLIENT_LOGO1,
-  CLIENT_LOGO2,
-  CLIENT_LOGO3,
-  CLIENT_LOGO4,
-  CLIENT_LOGO5,
-} from "../Constant";
+import { TRAEGER, GE_HEALTHCARE, UNIVISION, NBC_UNIVESAL, RWI,DHL } from "../Constant";
 import Heading from "../../../Components/Utils/Heading";
 import "./styles.scss";
 import HappyClients from "../../../Components/HappyClients";
@@ -341,29 +335,29 @@ const ApplicationDevelopment = () => {
               className="mySwiper"
             >
               <SwiperSlide>
-                <img src={CLIENT_LOGO1} />{" "}
+                <img src={TRAEGER} />{" "}
               </SwiperSlide>
               <SwiperSlide>
+                <img src={GE_HEALTHCARE} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={UNIVISION} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={NBC_UNIVESAL} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={RWI} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={DHL} />
+              </SwiperSlide>
+              {/* <SwiperSlide>
                 <img src={CLIENT_LOGO3} />
               </SwiperSlide>
               <SwiperSlide>
                 <img src={CLIENT_LOGO4} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO5} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO5} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO2} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO3} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO4} />
-              </SwiperSlide>
+              </SwiperSlide> */}
             </Swiper>
           </div>
         </div>

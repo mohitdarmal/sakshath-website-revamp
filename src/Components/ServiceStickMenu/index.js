@@ -72,12 +72,12 @@ console.log(props, "menuProps")
                   ></button>
                 </div>
                 <div className="offcanvas-body header_menu">
-                  <ul className="navbar-nav justify-content-center flex-grow-1 service_stickmenu_list">
+                  <ul className="navbar-nav justify-content-end flex-grow-1 service_stickmenu_list">
                   {props.menuName.map((menuItem, idx) => {
                     return (
                       <div  key={idx}>
                       <li>
-                      <NavLink to="#" className="nav-link" data-to-scrollspy-id={menuItem.id} onClick={() => scrollToSection(menuItem.id)} >
+                      <NavLink to="#" className="nav-links" data-to-scrollspy-id={menuItem.id} onClick={() => scrollToSection(menuItem.id)} >
                         {menuItem.title}
                       </NavLink>
                     </li>
