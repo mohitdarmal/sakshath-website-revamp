@@ -159,7 +159,7 @@ const menu = [{
               <div>
                 <img
                   className="img-fluid integration_img_right"
-                  src={INTEGRATION_SECTION_ONE_IMG}
+                  src={INTEGRATION_SECTION_THREE_IMG}
                 />
               </div>
             </div>
@@ -269,7 +269,7 @@ const menu = [{
             <div className="col-md-6 integration_coe_right ipad_full_width">
               <img
                 className="img-fluid integration_img"
-                src={INTEGRATION_SECTION_ONE_IMG}
+                src={SECTION_THREE_ICON_ONE}
               />
             </div>
             {/* </div> */}
@@ -322,7 +322,7 @@ const menu = [{
               <div className="integration_consulting_left">
                 <img
                   className="img-fluid integration_consulting_img"
-                  src={INTEGRATION_SECTION_ONE_IMG}
+                  src={SECTION_THREE_ICON_TWO}
                 />
               </div>
             </div>
@@ -476,7 +476,7 @@ const menu = [{
             <div className="col-md-6 managed_services_right ipad_full_width">
               <img
                 className="img-fluid integration_img"
-                src={INTEGRATION_SECTION_ONE_IMG}
+                src={SECTION_THREE_ICON_THREE}
               />
             </div>
             {/* </div> */}
