@@ -1,0 +1,2 @@
+export const MANAGED_SERVICE_SECTION_RIGHT_IMG=require('../../../Assets/images/managed_servive_rightimg.svg').default;
+export const MANAGED_SERVICE_SECTION_LEFT_IMG=require('../../../Assets/images/managed_service_leftimg.svg').default;
