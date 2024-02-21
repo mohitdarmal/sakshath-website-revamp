@@ -54,8 +54,6 @@ import {
 import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 
-
-
 const Automation = () => {
   const menu = [
     {
@@ -89,12 +87,12 @@ const Automation = () => {
                   // uppercase="text-uppercase"
                 />
                 <p className="sec_para">
-                  Experience seamless automation with cloud-native solutions.Using
-                  Simplify workflows, reduce costs, and boost productivity.
-                  Business organizations are increasingly automating operational
-                  costs and inefficiencies. They are right on their way. Using
-                  automation, internal and external processes are becoming more
-                  efficient and productive.
+                  Experience seamless automation with cloud-native
+                  solutions.Using Simplify workflows, reduce costs, and boost
+                  productivity. Business organizations are increasingly
+                  automating operational costs and inefficiencies. They are
+                  right on their way. Using automation, internal and external
+                  processes are becoming more efficient and productive.
                 </p>
                 <SlideAnimationButton
                   btnName="Get Started Now"
@@ -487,8 +485,8 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
-              </div>
-              <div className="col-md-6 api_boxes">
+            </div>
+            <div className="col-md-6 api_boxes">
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -518,8 +516,8 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
-              </div>
-              <div className="col-md-6 api_boxes">
+            </div>
+            <div className="col-md-6 api_boxes">
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -559,54 +557,52 @@ const Automation = () => {
 
       {/* RPA */}
       {/* <div id="rpa"> */}
-   
-          <section className="rpa_section">
-            <div className="container">
-              <div className="row ">
-                <div className="col-md-6">
-                  <div className="rpa_main_heading">
-                    <Heading heading="RPA" uppercase="text-uppercase" />
-                    <h4>(Robotic Process Automation) </h4>
 
-                    <div className="rpa_list">
-                      <ul>
-                        <li>
-                          Sakshath RPA as a service is designed to help
-                          organizations to integrate RPA with latest
-                          technologies like AI/ ML, Voice recognition, Language
-                          processing.
-                        </li>
-                        <li>
-                          Build scalable apps and enable a faster reaction to
-                          shifting business needs by combining the correct
-                          cloud-centric methodologies and practices with
-                          Sakshath.
-                        </li>
-                        <li>
-                          Our RPA can integrate with any software Suite,
-                          including Finance & Accounting Sales & Distribution,
-                          Materials Management, and Human Capital Management it
-                          is also helping our customers to optimize back-end
-                          operations like – On Boarding Process – (Vendor,
-                          Partner, Employee), Procurement Process,
-                          Billing/Invoicing Process Automation etc.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="rpa_graph">
-                    <img src={RPA_GRAPH} alt="" />
-                  </div>
-                  <div className="rpa_text text-center mt-5">
-                    {/* <h4>Robotic Process Automation Business Management</h4> */}
-                  </div>
+      <section className="rpa_section">
+        <div className="container">
+          <div className="row ">
+            <div className="col-md-6">
+              <div className="rpa_main_heading">
+                <Heading heading="RPA" uppercase="text-uppercase" />
+                <h4>(Robotic Process Automation) </h4>
+
+                <div className="rpa_lists">
+                  <ul>
+                    <li>
+                      Sakshath RPA as a service is designed to help
+                      organizations to integrate RPA with latest technologies
+                      like AI/ ML, Voice recognition, Language processing.
+                    </li>
+                    <li>
+                      Build scalable apps and enable a faster reaction to
+                      shifting business needs by combining the correct
+                      cloud-centric methodologies and practices with Sakshath.
+                    </li>
+                    <li>
+                      Our RPA can integrate with any software Suite, including
+                      Finance & Accounting Sales & Distribution, Materials
+                      Management, and Human Capital Management it is also
+                      helping our customers to optimize back-end operations like
+                      – On Boarding Process – (Vendor, Partner, Employee),
+                      Procurement Process, Billing/Invoicing Process Automation
+                      etc.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </section>
-        {/* </Element> */}
+            <div className="col-md-6">
+              <div className="rpa_graph">
+                <img src={RPA_GRAPH} alt="" />
+              </div>
+              <div className="rpa_text text-center mt-5">
+                {/* <h4>Robotic Process Automation Business Management</h4> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* </Element> */}
       {/* </div> */}
 
       {/* <section>
@@ -707,7 +703,7 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="rpa_offering_main_heading text-center mb-4">
-              <Heading heading="RPA Offering"  />
+              <Heading heading="RPA Offering" />
             </div>
             <div className="col-md-2"></div>
             <div className="col-md-8">
@@ -835,20 +831,23 @@ const Automation = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src={PRISMS_RPA} width="150px" />{" "}
+              <img src={PRISMS_RPA} />{" "}
             </SwiperSlide>
             <SwiperSlide>
-              <img src={UI_PATH_RP} width="150px" />
+              <img src={UI_PATH_RP} />
             </SwiperSlide>
             <SwiperSlide>
+              <img src={POWER_AUTOMATE_RPA} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={AUTOMATE_RPA} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={FLOW_CENTRIC_RPA} />
+            </SwiperSlide>
+            {/* <SwiperSlide>
               <img src={POWER_AUTOMATE_RPA} width="150px" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={AUTOMATE_RPA} width="150px" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={FLOW_CENTRIC_RPA} width="150px" />
-            </SwiperSlide>
+            </SwiperSlide> */}
 
             {/* <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide> */}
             {/* <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
@@ -896,10 +895,7 @@ const Automation = () => {
         </Element>
       </div>
 
-
       {/* DEvops layer  start*/}
-
-
 
       <section className="devops_layer_section">
         <div className="container">
