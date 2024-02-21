@@ -803,7 +803,24 @@ const Automation = () => {
         </div>
         <div className="container rpa_tools_logos">
           <Swiper
-            slidesPerView={4}
+            breakpoints={{
+              320: {
+                slidesPerView:2,
+                spaceBetween:30
+              },
+              481: {
+                slidesPerView:3,
+                spaceBetween:30
+              },
+              768: {
+                slidesPerView:3,
+                spaceBetween:30
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween:30
+              },
+            }}
             spaceBetween={20}
             autoplay={{
               delay: 1500,

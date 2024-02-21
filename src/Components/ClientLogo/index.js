@@ -25,6 +25,24 @@ import {
   CLIENT_LOGO19,
   CLIENT_LOGO2,
   CLIENT_LOGO20,
+  CLIENT_LOGO21,
+  CLIENT_LOGO22,
+  CLIENT_LOGO23,
+  CLIENT_LOGO24,
+  CLIENT_LOGO25,
+  CLIENT_LOGO26,
+  CLIENT_LOGO27,
+  CLIENT_LOGO28,
+  CLIENT_LOGO29,
+  CLIENT_LOGO30,
+  CLIENT_LOGO31,
+  CLIENT_LOGO32,
+  CLIENT_LOGO33,
+  CLIENT_LOGO34,
+  CLIENT_LOGO35,
+  CLIENT_LOGO36,
+  CLIENT_LOGO37,
+  CLIENT_LOGO38,
   CLIENT_LOGO3,
   CLIENT_LOGO4,
   CLIENT_LOGO5,
@@ -212,6 +230,18 @@ const ClientLogo = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <img src={CLIENT_LOGO11} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO12} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO13} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO14} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO15} />
                     </SwiperSlide>
                   </Swiper>
                 </Tab>
