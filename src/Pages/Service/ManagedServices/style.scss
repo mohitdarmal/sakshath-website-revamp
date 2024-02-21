@@ -3,10 +3,15 @@
 ///@@@@@@@@@@@@@@@@@@@@  overview-managed services starts @@@@@@@@@@@@@@
 
 .overview_managed_services_section{
+    margin-top: 80px;
     
     .overview_sec_left_managed_services{
         padding-right: 80px;  
     }
+    .overview_sec_right_managed_services_img{
+        padding-left: 40px;
+    }
+    
     
     .managed_services_img{
         width: 100%;
@@ -91,6 +96,9 @@
 
 .content_managed_services_section{
     margin-bottom: 80px;
+    .content_sec_left_managed_services_img{
+    padding-right: 40px;
+    }      
     .content_sec_right_managed_services{
         padding-left: 40px;
 

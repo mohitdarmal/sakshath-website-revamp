@@ -153,7 +153,7 @@ const menu = [{
       </section>
 
       {/* <!-- section two start --> */}
-      {/* <section className="why_need_integration_sec">
+      <section className="why_need_integration_sec">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6  why_need_integration_left ipad_full_width">
@@ -179,7 +179,7 @@ const menu = [{
             </div>
           </div>
         </div>
-      </section> */}
+      </section> 
        {/* <!-- section two end --> */}
 
             {/* <!-- section three start-->  */}
