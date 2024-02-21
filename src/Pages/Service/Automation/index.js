@@ -54,6 +54,8 @@ import {
 import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 
+
+
 const Automation = () => {
   const menu = [
     {
@@ -470,13 +472,13 @@ const Automation = () => {
             <div className="application_main_heading text-center">
               <Heading heading="Application Integration" />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 api_boxes">
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
                 </div>
                 <div className="api_boxes">
-                  <h4>Services- Based Integration</h4>
+                  <h4>Service Based Integration</h4>
                   <span>
                     Restful and Restless (SOAP) service integration provides
                     digital integration capabilities. It has small-scale to
@@ -485,6 +487,8 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
+              </div>
+              <div className="col-md-6 api_boxes">
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -499,7 +503,7 @@ const Automation = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 api_boxes">
               <div className="api_container ">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -514,6 +518,8 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
+              </div>
+              <div className="col-md-6 api_boxes">
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
