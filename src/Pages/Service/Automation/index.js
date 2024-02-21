@@ -812,19 +812,19 @@ const Automation = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src={PRISMS_RPA} width="250px" />{" "}
+              <img src={PRISMS_RPA} width="150px" />{" "}
             </SwiperSlide>
             <SwiperSlide>
-              <img src={UI_PATH_RP} width="250px" />
+              <img src={UI_PATH_RP} width="150px" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={POWER_AUTOMATE_RPA} width="250px" />
+              <img src={POWER_AUTOMATE_RPA} width="150px" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={AUTOMATE_RPA} width="250px" />
+              <img src={AUTOMATE_RPA} width="150px" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={FLOW_CENTRIC_RPA} width="250px" />
+              <img src={FLOW_CENTRIC_RPA} width="150px" />
             </SwiperSlide>
 
             {/* <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide> */}
