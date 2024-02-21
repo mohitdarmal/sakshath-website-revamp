@@ -163,7 +163,7 @@
 //mobile
 @media screen and (max-width: 480px) {
   .vision {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 40px;
     background-image: url(http://localhost:3001/static/media/wave.960ed3b….svg);
     background-size: cover;
@@ -197,6 +197,18 @@
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2392156863);
     border-radius: 15px;
     padding-top: 20px;
+  }
+
+  .who_we_are_img {
+    position: sticky;
+    top: 0;
+    width: 350px;
+    height: 50vh;
+
+    img{
+      position: sticky;
+    height: 50vh !important;
+    }
   }
 }
 
