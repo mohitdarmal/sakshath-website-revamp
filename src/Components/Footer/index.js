@@ -190,7 +190,7 @@ const Footer = () => {
                     <Link to="/about">Cookies Policy</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Privacy Policy</Link>
+                    <Link to="/privacy">Privacy Policy</Link>
                   </li>
                 </Fade>
               </ul>

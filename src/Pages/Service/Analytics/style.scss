@@ -178,7 +178,7 @@
 }
 .Migration_Services {
   color: $ball_blue_color;
-  text-align: center;
+  // text-align: center;
   padding-bottom: 15px;
 }
 
@@ -385,20 +385,16 @@ ul {
   .integration_planning_banner {
     margin-top: 40px;
   }
-  .software_logo_section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+  // .software_logo_section {
+    
+  //   padding-bottom: 40px;
+  // }
  
   .integration_consulting_sec {
     padding-top: 40px;
   }
 
-  .managed_services_left p {
-    
-
-    padding-left: 11px;
-  }
+ 
 
   .intergration_list {
     line-height: 31px;
@@ -473,6 +469,7 @@ ul {
   }
   .managed_services_sec {
     padding-bottom: 40px;
+    padding-top: 40px;
   }
   .integration_planning_banner {
     margin-top: 0px;

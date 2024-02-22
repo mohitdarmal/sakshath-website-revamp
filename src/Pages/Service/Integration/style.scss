@@ -121,6 +121,14 @@
   img{width: 170px;}
   // background-image: linear-gradient(to top,#ffffff,#b5d9ef);
 }
+.trusted_by{
+  text-align: center;
+  padding-top: 5px;
+}
+h6.trusted_by {
+  margin-top: 2%;
+  margin-bottom: -41.1px;
+}
 .integration_consulting_sec {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -167,9 +175,10 @@
   color: #111111;
   font-weight: 200;
 }
-.Migration_Services {
-  color: $ball_blue_color;
+.Migration_technologies {
+  color: 111111;
   text-align: center;
+  // text-align: center;
   padding-bottom: 15px;
 }
 
@@ -274,10 +283,7 @@ ul {
 .integration_heading h3{
   font-size: 32px;
 }
-// .software_logo_section {
-//   padding-top: 80px;
-//   background-image: linear-gradient(to top,#ffffff,#b5d9ef);
-// }
+
 
 .integration_right_sec {
   position: relative;
@@ -366,8 +372,11 @@ ul {
     margin-top: 40px;
   }
   .software_logo_section {
-    // padding-top: 40px;
+    
     padding-bottom: 40px;
+  }
+  .software_logo_section img{
+    width:71px;
   }
  
   .integration_consulting_sec {
@@ -375,11 +384,7 @@ ul {
     padding-bottom: 40px;
   }
 
-  .managed_services_left p {
-    
-
-    padding-left: 11px;
-  }
+ 
   .managed_services_sec{
     padding-top:0px;
   }
@@ -412,6 +417,9 @@ ul {
     padding-top: 46px;
     padding-bottom: 6px;
   }
+  .partner_logo_section img {
+    width: 71px;
+}
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -516,3 +524,4 @@ ul {
   font-weight: bold;
   font-size: 42px;
 }
+
