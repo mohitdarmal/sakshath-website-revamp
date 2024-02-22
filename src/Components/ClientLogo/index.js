@@ -124,25 +124,7 @@ const ClientLogo = () => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO11} />{" "}
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO12} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO13} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO14} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO15} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO16} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO17} />
+                      <img src={CLIENT_LOGO17} />{" "}
                     </SwiperSlide>
                     <SwiperSlide>
                       <img src={CLIENT_LOGO18} />
@@ -152,6 +134,60 @@ const ClientLogo = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <img src={CLIENT_LOGO20} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO21} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO22} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO23} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO24} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO25} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO26} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO27} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO28} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO29} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO30} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO31} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO32} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO33} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO34} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO35} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO36} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO37} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO38} />
                     </SwiperSlide>
                   </Swiper>
                 </Tab>
@@ -242,6 +278,9 @@ const ClientLogo = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <img src={CLIENT_LOGO15} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO16} />
                     </SwiperSlide>
                   </Swiper>
                 </Tab>

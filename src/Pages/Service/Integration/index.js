@@ -116,7 +116,9 @@ const menu = [{
       {/* section four start */}
 
       <section className="partner_logo_section">
+      <h6 className="trusted_by">Trusted By</h6>
         <div className="container partner_logo_tab">
+          
           <Swiper
             slidesPerView={5}
             spaceBetween={10}
@@ -125,7 +127,7 @@ const menu = [{
               disableOnInteraction: false,
             }}
             loop={true}
-            // modules={[Autoplay]}
+            modules={[Autoplay]}
             className="mySwiper" 
             >
             <SwiperSlide>
@@ -377,14 +379,14 @@ const menu = [{
       <Element name="migrationTecnology">
       <section className="software_logo_section">
         <div className="container software_logo_tab">
-          <div className="Migration_Services ">
+          <div className="Migration_technologies ">
             <Heading
                 heading="Migration Technologies"
                 uppercase="text-uppercase"
               />
           </div>
-          <p className="text-center">Our solutions turn obstacles into opportunities, unlocking new possibilities for innovation, efficiency, and growth.Transform with Our Migration Assistance</p>
-          <Swiper
+          <p className="">Our solutions turn obstacles into opportunities, unlocking new possibilities for innovation, efficiency, and growth.Transform with Our Migration Assistance</p>
+          {/* <Swiper
             slidesPerView={5}
             spaceBetween={30}
             autoplay={{
@@ -393,7 +395,36 @@ const menu = [{
             }}
             loop={true}
             modules={[Autoplay]}
-            className="mySwiper">
+            className="mySwiper"> */}
+             <Swiper
+              slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
             <SwiperSlide>
               <img src={SOFTWARE_LOGO_1} />{" "}
             </SwiperSlide>
