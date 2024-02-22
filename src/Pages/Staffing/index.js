@@ -190,8 +190,32 @@ const Staffing = () => {
 
               </div>
             </div>
-            <div className="col-md-4"></div>
-            <div className="col-md-4"></div>
+            <div className="col-md-4">
+              <div className="staffing_job_box">
+              <h4>
+              Contract
+
+              </h4>
+              <p>
+              Placements on a contract basis are ideal for companies that manage multiple projects and require employees to fill multiple or various roles and positions. If you need assistance finishing an ongoing project or taking one from start to finish, we have expert consultants who are ready to get started immediately and deliver the results that you need.
+              </p>
+
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="staffing_job_box">
+              <h4>
+              Contract
+
+              </h4>
+              <p>
+              Placements on a contract basis are ideal for companies that manage multiple projects and require employees to fill multiple or various roles and positions. If you need assistance finishing an ongoing project or taking one from start to finish, we have expert consultants who are ready to get started immediately and deliver the results that you need.
+              </p>
+
+              </div>
+            </div>
+            {/* <div className="col-md-4"></div> */}
+            {/* <div className="col-md-4"></div> */}
           </div>
         </div>
       </section>
