@@ -69,9 +69,9 @@ const About = () => {
                     the client’s business processes to increase efficiency and
                     maximize profits.
 
-                    {/* <br />
+                     <br />
                     <br />
-                    We go by the saying “I’m Sakshath” the thought behind the phrase is the presence of all the employees ‘HERE’ and ‘NOW’. Starting as a self-funded business Sakshath company ethos to date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from the beginning of the journey made what Sakshath Technologies is today, we grew gradually to a family of 100+ employees and now have a domestic presence in 3 metropolitan cities serving clients from all over the world. Celebratingdecade milestones, today we take pride in onboarding the team of Country’s Best and strongly believe in Growing Together. */}
+                    We go by the saying  <strong>“I’m Sakshath”</strong> the thought behind the phrase is the presence of all the employees<strong> ‘HERE’ and ‘NOW’</strong>. Starting as a self-funded business Sakshath company ethos to date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from the beginning of the journey made what Sakshath Technologies is today, we grew gradually to a family of 150+ employees and now have a domestic presence in 3 metropolitan cities serving clients from all over the world. Celebrating decade milestones, today we take pride in onboarding the team of Country’s Best and strongly believe in Growing Together. 
                   </p>
                 </Fade>
               </div>
@@ -85,7 +85,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="mt-4">
+      {/* <section className="mt-4">
         <div className="container mt-4">
           <div className="row mt-4 ">
             <div className="col-md-6 ipad_full_width">
@@ -95,7 +95,6 @@ const About = () => {
             </div>
             <div className="col-md-6 ipad_full_width">
               <div className="about_who_we_r_content_right">
-                {/* <Heading heading="Who we are" uppercase="text-uppercase" /> */}
                 <Fade direction="up" triggerOnce>
                   <p>
                     We go by the saying <strong>“I’m Sakshath” </strong> the
@@ -109,21 +108,13 @@ const About = () => {
                     serving clients from all over the world. Celebratingdecade
                     milestones, today we take pride in onboarding the team of
                     Country’s Best and strongly believe in Growing Together.{" "}
-                    <br /> <br />
-                    To engage businesses from small to medium enterprises to
-                    transition into ERP solutions that are easy to use,
-                    scalable, enable business insight and ultimately benefit the
-                    user community. We want to be a fair, reliable and
-                    professional partner to our customers by offering useful and
-                    effective products and services that contribute to their
-                    success.
                   </p>
                 </Fade>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* vision misson starts */}
 

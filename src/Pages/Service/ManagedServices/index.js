@@ -3,7 +3,7 @@ import  BreadCumb  from "../../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
 import "./style.scss";
 import SlideAnimationButton from '../../../Components/Utils/SlideAnimationButton';
-import { INTEGRATION_SECTION_ONE_IMG } from '../Integration/Constant';
+import { MANAGED_SERVICE_SECTION_RIGHT_IMG,MANAGED_SERVICE_SECTION_LEFT_IMG } from './Constant';
 import Heading from '../../../Components/Utils/Heading';
 
 const ManagedServices = () => {
@@ -31,7 +31,7 @@ const ManagedServices = () => {
                         </div>
                         <div className="col-md-6">
                             <div className="overview_sec_right_managed_services_img">
-                                <img className="img-fluid managed_services_img" src={INTEGRATION_SECTION_ONE_IMG} />
+                                <img className="img-fluid managed_services_img" src={MANAGED_SERVICE_SECTION_RIGHT_IMG} />
                             </div>
 
                         </div>
@@ -107,7 +107,7 @@ const ManagedServices = () => {
                     <div className="row align-items-center">
                         <div className="col-md-6">
                         <div className="content_sec_left_managed_services_img">
-                                <img className="img-fluid managed_services_img" src={INTEGRATION_SECTION_ONE_IMG} />
+                                <img className="img-fluid managed_services_img" src={MANAGED_SERVICE_SECTION_LEFT_IMG} />
                             </div>
                         </div>
                         <div className="col-md-6">

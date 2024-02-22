@@ -5,12 +5,25 @@
   position: relative;
   content: "";
 }
+
+.cloud_bg_img img {
+  margin-top: 20px;
+}
 .automation {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
+.overview_sec_right_img{
+  transition: .5s;
+}
+.overview_sec_right_img:hover img {
+  transform: scale(1.04, 1.07);
+  transition: .5s;
+}
 .automation_right_content_list {
+  margin-top: 20px;
+
   ul {
     line-height: 40px;
 
@@ -165,15 +178,19 @@
 .application_main_heading {
   position: relative;
   content: "";
-  //  h3{
-  //   color: $ball_blue_color;
-  //  }
+}
+.application_main_heading h3 {
+  padding-bottom: 25px;
 }
 
 .application_integration ul {
   line-height: 25px;
 }
 
+
+.integration_heading h3{
+  
+}
 // .application_integration li::before {
 //   position: absolute;
 //   content: "";
@@ -208,20 +225,46 @@
   // padding-bottom: 80px;
 }
 
+.rpa_lists{
+  margin-top: 25px;
+}
+.rpa_lists li{
+  padding-bottom: 15px;
+  // margin-top: 20px;
+}
+
+.rpa_lists li::before {
+  content: "\f111";
+  position: absolute;
+  margin-left: -25px;
+  font-family: "FontAwesome";
+  width: 15px;
+  height: 15px;
+  background: rgba(50, 164, 213, 0.2);
+  font-size: 9px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  color: #32a4d5;
+  margin-top: 5px;
+
+}
+
 .mobile_app_main_heading {
   margin-top: 60px;
   margin-right: 50px;
+  text-align: justify;
 }
 .rpa_main_heading h3 {
   font-family: $rajdhani_font;
   font-weight: 700;
   margin-top: 60px;
   margin-right: 50px;
+}
 
-  h4 {
-    // color: #24688f !important;
-    margin-bottom: 22px;
-  }
+.rpa_main_heading h4 {
+  margin-top: -2%;
+  margin-left: -1px;
 }
 
 //RPA oFFERNING  STARTS
@@ -234,7 +277,8 @@
   content: "";
 }
 .rpa_list {
-  margin-left: -5px;
+  margin-left: -42px;
+  margin-top: 23px;
 }
 .rpa_list li {
   padding-bottom: 10px;
@@ -266,32 +310,34 @@
   padding-right: 0px;
   padding-left: 0px;
   background-color: #fff;
+  max-height: 450px;
 }
 .rpa_box_left {
   border-bottom: 1px solid #9295964d;
-  padding: 20px;
+  display: flex;
+  padding: 14px;
 
   .rpa_imgs {
-    display: flex;
+    // display: flex;
 
     img {
       width: 50px;
+      margin-left: 8px;
     }
   }
 
   .rpa_heading h4 {
     font-family: "Rajdhani";
     font-weight: 700;
-    padding-top: 20px;
-
-    margin-left: 3px;
+    padding-top: 11px;
+    margin-left: 20px;
   }
 }
 
 .rpa_box_left_down {
   padding: 20px;
   .rpa_imgs {
-    display: flex;
+    // display: flex;
     // justify-content: center;
 
     img {
@@ -302,42 +348,47 @@
     font-family: "Rajdhani";
     font-weight: 700;
     // text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
     // padding-bottom: 12px;
-    margin-left: 3px;
+    margin-left: 13px;
   }
 }
-
+.rpa_box_left_down {
+  display: flex;
+}
 .right_boxes_rpa {
   box-shadow: 0 2px 2px #0f0e0e5c;
   border-radius: 2px;
   padding-left: 0;
   padding-right: 0;
   background: #fff;
+  max-height: 450px;
 
   .rpa_box_right {
     border-bottom: 1px solid #9295964d;
-    padding: 15px;
+    padding: 7px;
+    display: flex;
     // min-height: 280px;
   }
   .rpa_box_right_down {
     padding: 20px;
     min-height: 280px;
+    display: flex;
   }
   .rpa_imgs {
-    display: flex;
+    // display: flex;
     // justify-content: center;
 
     img {
       width: 50px;
+      padding-top: 5px;
     }
   }
   .rpa_heading h4 {
     font-family: "Rajdhani";
     font-weight: 700;
-    padding-top: 20px;
-
-    margin-left: 3px;
+    padding-top: 15px;
+    margin-left: 20px;
   }
 }
 
@@ -350,13 +401,17 @@
   .rpa_tools_logos {
     // box-shadow: 0 2px 2px #0000003d;
     padding: 30px;
+
+    img {
+      width: 170px;
+    }
   }
 }
 
 // Devops
 
 .devops_boxes {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .devops_section {
   padding-top: 80px;
@@ -373,6 +428,9 @@
 .devops_list_box {
   position: relative;
   content: "";
+}
+.devops_heading_main h3 {
+  padding-bottom: 20px;
 }
 .devops_ul ul {
   margin-left: 24px;
@@ -665,8 +723,8 @@
 }
 
 .devops_layer_section {
-  // padding-top: 80px;
-  // padding-bottom: 80px;
+  //  padding-top: 80px;
+  padding-bottom: 80px;
 }
 .devop_layer {
   position: relative;
@@ -703,11 +761,11 @@
 .layer::before {
   position: absolute;
   content: "";
-  height: 91px;
+  height: 106px;
   background: #32a4d5;
-  width: 4px;
-  line-height: 4px;
-  margin-top: -61px;
+  width: 2px;
+  line-height: 2px;
+  margin-top: -60px;
   left: 50%;
 }
 
@@ -718,11 +776,10 @@
 .layers::before {
   position: absolute;
   content: "";
-  height: 90px;
+  height: 109px;
   background: #32a4d5;
-  width: 4px;
-  line-height: 4px;
-  margin-top: -61px;
+  width: 2.5px;
+  margin-top: -63px;
   left: 50%;
 }
 
@@ -766,13 +823,42 @@
 }
 
 .layer_title {
+  position: relative;
+  content: "";
+  text-align: center;
   h4 {
-    margin-top: 38px;
-    margin-left: 88px;
-    font-family: $rajdhani_font;
+    margin-top: 58px;
+    font-family: "Rajdhani", sans-serif;
     font-weight: bold;
+    background: #32a4d5;
+    padding: 15px 25px;
+    color: #fff;
+    width: 70%;
+    margin-left: 60px;
+    border-radius: 4px;
   }
 }
+.layer_title h4::before {
+  position: absolute;
+  content: "\f0d7";
+  font-family: "FontAwesome";
+  color: #00a7d6;
+  margin-top: -74px;
+  margin-left: 95px;
+  width: 100px;
+  line-height: 100px;
+  align-items: center;
+  display: flex;
+}
+
+//  .layers h4::before{
+//   position: absolute;
+//   content: "\f0d7";
+//   font-family: 'FontAwesome';
+//   color: #00a7d6;
+//   margin-top: -100px;
+//   margin-left: -50px;
+// }
 
 .layers::after {
   position: absolute;
@@ -782,6 +868,40 @@
   width: 200px;
   height: 100px;
   margin-top: -70px;
-  margin-left: 190.5px;
+  margin-left: 189px;
   top: -78%;
+}
+
+.api_boxes {
+  position: relative;
+  content: "";
+}
+
+.api_container::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 12px;
+  border-top: 4px solid #32a4d5;
+  border-left: 4px solid #32a4d5;
+  opacity: 0;
+}
+
+.api_container::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 24px;
+  right: 10px;
+  border-bottom: 4px solid #32a4d5;
+  border-right: 4px solid #32a4d5;
+  opacity: 0;
+}
+.api_container:hover::before,
+.api_container:hover::after {
+  opacity: 2;
+  transition: 0.9s;
 }

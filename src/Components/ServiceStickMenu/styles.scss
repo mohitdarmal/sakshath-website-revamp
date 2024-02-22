@@ -4,11 +4,15 @@
   background: $light_navy_blue;
   padding: 8px 0;
 
-  .service_stickmenu_list {
-    background-color: $light_navy_blue;
-    
-    // text-decoration: none;
-    // transition: 0.3s;
+  .service_stickmenu_list  {
+ background-color: $light_navy_blue;
+    color: #fff;
+
+  }
+
+  .service_stickmenu_list li a{
+    color: #fff;
+    // padding: 13px !important;
   }
 
 .navbar>.container-fluid{
@@ -43,26 +47,33 @@
     fill: #43b5e6;
   }
 }
-
+.service_stickmenu_list a {
+  padding: 15px;
+}
 .header_social_icons img{
   width: 22px;
 }
+
 .integration_heading {
   color: white;
   font-size: 32px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 800;
   margin-bottom: 0px;
-  padding-left: 4px;
+  padding: 6px;
+
 }
 
 .dropdown-item.active, .dropdown-item:active{background-color: $light_navy_blue !important;}
 .bsb-navbar{background-color: $white_color;}
 .navbar-toggler:focus {box-shadow: none !important;}
-.header_menu li a.nav-link {
+.header_menu li a.nav-links {
   font-family: $rajdhani_font;
   font-weight: bold;
-  text-transform: uppercase;
+  color:#fff;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 18px;
 }
  
 
@@ -76,12 +87,12 @@
     font-family: $rajdhani_font;
     text-transform: uppercase;
     font-weight: 600;
-    // padding: 10px 15px;
     transition: 0.2s;
   }
   li a:hover, li a:active{
-    background-color: $light_navy_blue;
-    color: $white_color;
+    // background-color: $light_navy_blue;
+    // color: $white_color;
+    color: #fff;
     transition: 0.2s;
   }
 }
@@ -111,9 +122,7 @@
   font-size: 18px;
   height: 34px;
 }
-// #service_stickmenu_list li a {
-//   color: #fff !important;
-// }
+
 .header_translator{line-height: 57px; padding-right: 20px;}
 .bsb-navbar{transition: background-color 0.5s ease}
 .bsb-navbar.sticky-top{  animation: slideDown 0.5s ease;}
@@ -145,11 +154,11 @@
 @media screen and (min-width:768px) and (max-width:1023px){
     .header_menu .header_right{display: none !important;}
     
-    body .navbar-expand-md .navbar-nav .nav-link{
+    body .navbar-expand-md .navbar-nav .nav-links{
       padding-left:13px;
       padding-right: 13px;
     }
-    .header_menu li a.nav-link {
+    .header_menu li a.nav-links {
       font-size: 11px;
     }
     // .stick_menu_bar{

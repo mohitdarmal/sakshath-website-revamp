@@ -92,12 +92,11 @@ const menu = [{
                 uppercase="text-uppercase"
               />
                 <p className="sec_para">
-                  Data integration is the practice of consolidating data from
-                  disparate sources into a single dataset to provide users with
-                  consistent access to and delivery of data across all business
-                  processes.
+                Data integration is the practice of consolidating data from disparate sources into a single dataset to provide users with consistent access to and delivery of data across all business processes.
+                 Unlock seamless integration solutions with our expert consulting and managed services. 
+                 Say goodbye to integration headaches and hello to optimized workflows.
                 </p>
-                <SlideAnimationButton btnName="TALK TO SALES" url="/contact-us"/>
+                <SlideAnimationButton btnName="Get started now!" url="/contact-us"/>
               </div>
             </div>
 
@@ -126,7 +125,7 @@ const menu = [{
               disableOnInteraction: false,
             }}
             loop={true}
-            modules={[Autoplay]}
+            // modules={[Autoplay]}
             className="mySwiper" 
             >
             <SwiperSlide>
@@ -153,14 +152,14 @@ const menu = [{
       </section>
 
       {/* <!-- section two start --> */}
-      {/* <section className="why_need_integration_sec">
+      { <section className="why_need_integration_sec">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6  why_need_integration_left ipad_full_width">
               <div>
                 <img
                   className="img-fluid integration_img_right"
-                  src={INTEGRATION_SECTION_ONE_IMG}
+                  src={INTEGRATION_SECTION_THREE_IMG}
                 />
               </div>
             </div>
@@ -179,7 +178,7 @@ const menu = [{
             </div>
           </div>
         </div>
-      </section> */}
+      </section> }
        {/* <!-- section two end --> */}
 
             {/* <!-- section three start-->  */}
@@ -258,8 +257,7 @@ const menu = [{
               />
 
               <p>
-                End the days of emailing spreadsheets around and reviewing stale
-                data in meetings.
+              Embrace the full potential of Integration Centers of Excellence (COE) to revolutionize your workplace through innovation and collaboration.
               </p>
               <ul className="intergration_list">
                 <li>CERTIFIED RESOURCES</li>
@@ -271,7 +269,7 @@ const menu = [{
             <div className="col-md-6 integration_coe_right ipad_full_width">
               <img
                 className="img-fluid integration_img"
-                src={INTEGRATION_SECTION_ONE_IMG}
+                src={SECTION_THREE_ICON_ONE}
               />
             </div>
             {/* </div> */}
@@ -324,7 +322,7 @@ const menu = [{
               <div className="integration_consulting_left">
                 <img
                   className="img-fluid integration_consulting_img"
-                  src={INTEGRATION_SECTION_ONE_IMG}
+                  src={SECTION_THREE_ICON_TWO}
                 />
               </div>
             </div>
@@ -336,8 +334,9 @@ const menu = [{
               />
                 
                 <p>
-                  End the days of emailing spreadsheets around and reviewing
-                  stale data in meetings.
+                Our seasoned consultants bring years of experience to the table,
+                 offering personalized guidance to ensure your integration journey is smooth and successful.
+                  Streamlining Operations Through Integration Consulting
                 </p>
 
                 <div className="row ">
@@ -384,7 +383,7 @@ const menu = [{
                 uppercase="text-uppercase"
               />
           </div>
-          <p className="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam culpa provident asperiores </p>
+          <p className="text-center">Our solutions turn obstacles into opportunities, unlocking new possibilities for innovation, efficiency, and growth.Transform with Our Migration Assistance</p>
           <Swiper
             slidesPerView={5}
             spaceBetween={30}
@@ -450,8 +449,8 @@ const menu = [{
                    
                   />
               <p>
-                End the days of emailing spreadsheets around and reviewing stale
-                data in meetings.
+              Our managed integration services allow you to offload the complexities of integration, freeing up your time and resources for strategic initiatives.
+
               </p>
               <ul className="intergration_list">
                 <li>
@@ -477,7 +476,7 @@ const menu = [{
             <div className="col-md-6 managed_services_right ipad_full_width">
               <img
                 className="img-fluid integration_img"
-                src={INTEGRATION_SECTION_ONE_IMG}
+                src={SECTION_THREE_ICON_THREE}
               />
             </div>
             {/* </div> */}
