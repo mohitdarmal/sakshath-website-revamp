@@ -96,6 +96,7 @@ const App = () => {
           {/* <Route path="/blogs/:id" element={<BlogDetail />} /> */}
 
           <Route path='/staffing' element={<Staffing/>}/>
+
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
