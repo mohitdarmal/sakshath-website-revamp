@@ -9,11 +9,12 @@ import BreadCumb from "../../Components/Breadcumb";
 import { ABOUT_BANNER, CARRER_IMG } from '../../Components/Breadcumb/Constant';
 
 const Blog = () => {
+    
     const blogsdetails = [
         {
             id:1,
             blogTitle:"Composable ERP solutions: providing distributors with future-proofing, flexibility, and agility",
-            blogDescription:"Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium doloremque laudantium totae rem aperiam, eaque ipsa quae abillo inventore veritatis etquasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+            blogDescription:"Composable ERP solutions represent a cutting-edge approach to enterprise resource planning, emphasizing modularity and flexibility in system architecture. Significance of Future-Proofing, Flexibility, and Agility in Distribution. The dynamics of the distribution industry necessitate adaptive strategies. Composable ERP solutions play a pivotal role in ensuring distributors are equipped with future-proofing capabilities, flexibility, and the agility required to navigate the ever-evolving market.",
             tags:["Technology", "Service", "IT", "Development"],
             blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
             blogAuthor:"wqertyu",
@@ -25,7 +26,7 @@ const Blog = () => {
         {
             id:2,
             blogTitle:"ERP Solutions Help Manufacturers Get New Products to Market Faster - and Better",
-            blogDescription:"Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium doloremque laudantium totae rem aperiam, eaque ipsa quae abillo inventore veritatis etquasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+            blogDescription:"In the intricate world of manufacturing, Enterprise Resource Planning (ERP) is a comprehensive software solution designed to integrate and manage core business processes. This includes everything from production and procurement to finance and human resources. The contemporary manufacturing landscape demands a delicate balance between speed and quality in bringing new products to market. This article explores how ERP solutions play a pivotal role in achieving this equilibrium, providing manufacturers with the tools to streamline processes and enhance outcomes.",
             tags:["Technology", "Service"],
             blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
             blogAuthor:"wqertyu",
@@ -35,7 +36,7 @@ const Blog = () => {
         {
             id:3,
             blogTitle:"Three Great Benefits of SYSPRO Espresso - Mobile ERP for Manufacturers",
-            blogDescription:"Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium doloremque laudantium totae rem aperiam, eaque ipsa quae abillo inventore veritatis etquasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+            blogDescription:"SYSPRO Espresso stands as a revolutionary mobile Enterprise Resource Planning (ERP) solution designed specifically for manufacturers. Offering a dynamic interface and advanced functionalities, it redefines how manufacturers engage with their production processes on the go.",
             tags:["Technology", "Service"],
             blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
             blogAuthor:"wqertyu",
@@ -58,6 +59,11 @@ const Blog = () => {
     useEffect(()=>{
         setBlogData(blogsdetails)
     },[])
+
+// const [page, setPage] = useState(1);
+// CONST [limit, setLimit] = useState(3);
+
+
   return (
     <>
      <BreadCumb imgUrl={ABOUT_BANNER} title="Blogs" className="img-fluid" />
@@ -75,19 +81,7 @@ const Blog = () => {
                           </div>
                           
                           <div className='blog_content'>
-                              {/* <div className="blog_author_thumbnailbox">
-                                
-                                <div className="authorpic_box">
-                                    <img src={blognews.blogAuthor_img} alt="" className='img-fluid'/>
-                                </div>
-                                <div className="blogauthorname_box">
-                                <p>{blognews.blogAuthor}</p>
-                                </div>
-                                
-
-
-                                
-                              </div> */}
+                           
                               <div className="blog_date_author-box">
                                <div className="blog_date_box">
                                <p className='blog_date'><MdOutlineDateRange />&nbsp;{blognews.blogDate}</p>
@@ -99,10 +93,10 @@ const Blog = () => {
                          
                             <h2 className='blog_mainHeading'>
                                 
-                                {`${blognews.blogTitle.substring(0, 50)}...`}...
+                                {`${blognews.blogTitle.substring(0, 40)}...`}
                                 
                             </h2>
-                            <p className='blog_description'>{`${blognews.blogDescription.substring(0, 160)}`}...</p>
+                            <p className='blog_description'>{`${blognews.blogDescription.substring(0, 150)}`}...</p>
                             <Link to={`/blogs/${blognews.blogTitle}`} className='cta_button' state={blognews}>Read More</Link>
                           </div>
  

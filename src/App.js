@@ -28,9 +28,10 @@ import ScrollToTop from "./Components/scrollToTop"
 import OurTeam from "./Pages/OurTeam";
 import Staffing from "./Pages/Staffing";
 
+
 const App = () => {
   
-
+ 
   // const [loading, setLoading] = useState(true);
 
   // useEffect(() => {
@@ -41,6 +42,7 @@ const App = () => {
 
   return (
     <>
+    
      <ScrollToTop />
       {/* {loading ?
     <div>  
@@ -67,7 +69,7 @@ const App = () => {
         <title>Home - Sakshath Technologies</title>
         <meta name="description" content="Something SEO" />
       </Helmet>
-      <Routes>
+       <Routes>
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -97,6 +99,7 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+       
     </>
   );
 };

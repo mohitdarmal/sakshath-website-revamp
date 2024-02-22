@@ -41,7 +41,7 @@ const OurTeam = () => {
         setActiveManmeetProfile(false);
         setActiveGauriProfile(false);
     }
-    else if(e.target.textContent === "Shravan Kumar (CEO/Founder)"){
+    else if(e.target.textContent === "Shravan Kumar (CEO-Founder)"){
         setProfileData({content:"Shravan Kumar is an accomplished professional with 16+ years of Technical Recruitment and Resource Management experience, specializing in SYSPRO/EPICOR/SAP in the U.S., Canada, and India. He possesses strong technical/business acumen and an understanding of technical requirements. His strength includes multi-location recruitment, pre-screening and behavioral interviewing, client/hiring manager relationships, and offer negotiation and closing."})
         setActiveShravanProfile(true);
         setActiveKrishnaProfile(false);
@@ -52,7 +52,7 @@ const OurTeam = () => {
         setActiveManmeetProfile(false);
         setActiveGauriProfile(false);
     }
-    else if(e.target.textContent === "Nitesh Khandelwal (VP/Sales)"){
+    else if(e.target.textContent === "Nitesh Khandelwal (VP-Sales)"){
         setProfileData({content:"Nitesh Khandelwal comes with strong interpersonal skills and a passion for creating, developing, and maintaining customer relationships to increase sales thru repeat business. With 15+ years of experience in strategic planning, consulting, marketing, sales, project management, improving sales operations efficiency, team development, and social media, he can identify strengths and weaknesses and implement business sales strategy, standards, operational adjustments, and systems to improve productivity and the bottom line."})
         setActiveNiteshProfile(true);
         setActiveShravanProfile(false);
@@ -63,7 +63,7 @@ const OurTeam = () => {
         setActiveManmeetProfile(false);
         setActiveGauriProfile(false);
     }
-    else if(e.target.textContent === "Nidhi Singh (HR/BP)"){
+    else if(e.target.textContent === "Nidhi Singh (HR-BP)"){
         setProfileData({content:"Nidhi Singh is a working professional with broad HR and operation expertise. She dedicatedly built a robust corporate culture that encourages ongoing business growth and fosters customer loyalty, enabling employees to reach their greatest potential and give their best at work. Nidhi’s experience and knowledge have significantly augmented Sakshath’s success tales. “My guru mantra – you keep your people happy; they will take care of everything else” Happy team = Productive team"})
         setActiveNidhiProfile(true);
         setActiveKrishnaProfile(false);
@@ -85,7 +85,7 @@ const OurTeam = () => {
         setActiveManmeetProfile(false);
         setActiveGauriProfile(false);
     }
-    else if(e.target.textContent === "Manish Gajwani (VP)"){
+    else if(e.target.textContent === "Manish Gajwani (AVP)"){
         setProfileData({content:"Manish Gajwani"})
         setActiveManishProfile(true);
         setActivePraveenProfile(false);
@@ -96,7 +96,7 @@ const OurTeam = () => {
         setActiveManmeetProfile(false);
         setActiveGauriProfile(false);
     }
-    else if(e.target.textContent === "Manmeet Singh (VP/Analytics)"){
+    else if(e.target.textContent === "Manmeet Singh (VP-Analytics)"){
         setProfileData({content:"Manmeet Singh is a certified Azure specialist and the vice president (VP – Analytics) at Sakshath Technologies®. With 18+ years of IT experience, he supports our core and non-core programmers/project solutions with end-to-end delivery solutions. Manmeet has experience developing and implementing IT Analytics and best practice guides and managing the delivery of analytical solutions. He upholds end-to-end standard compliance while delivering within deadlines and at the needed quality. Qualification – Master’s in business administration (MBA – IT Systems) from IMT-Ghaziabad."})
         setActiveManmeetProfile(true);
         setActiveManishProfile(false);
@@ -194,7 +194,7 @@ const OurTeam = () => {
                 <div className={`our_team_sec_box ${activeShravanProfile ? "active" : ""}`} onClick={handleChangeDetail}>
                   <div className="details">
                     <h5 >
-                      Shravan Kumar (CEO/Founder)
+                      Shravan Kumar (CEO-Founder)
                     </h5>
                     <img src={SHRAVAN_PIC} />
                   </div>
@@ -210,14 +210,14 @@ const OurTeam = () => {
                 <div className={`our_team_sec_box ${activeNiteshProfile ? "active" : ""}`} onClick={handleChangeDetail}>
                   <div className="details">
                     <h5 >
-                      Nitesh Khandelwal (VP/Sales)
+                      Nitesh Khandelwal (VP-Sales)
                     </h5>
                     <img src={NITESH_PIC} />
                   </div>
                 </div>
                 <div className={`our_team_sec_box ${activeNidhiProfile ? "active" : ""}`} onClick={handleChangeDetail}>
                   <div className="details">
-                    <h5 >Nidhi Singh (HR/BP)</h5>
+                    <h5 >Nidhi Singh (HR-BP)</h5>
                     <img src={NIDHI_PIC} />
                   </div>
                 </div>
@@ -231,14 +231,14 @@ const OurTeam = () => {
                 </div>
                 <div className={`our_team_sec_box ${activeManishProfile ? "active" : ""}`} onClick={handleChangeDetail}>
                   <div className="details">
-                    <h5 >Manish Gajwani (VP)</h5>
+                    <h5 >Manish Gajwani (AVP)</h5>
                     <img src={MANISH_PIC} />
                   </div>
                 </div>
                 <div className={`our_team_sec_box ${activeManmeetProfile ? "active" : ""}`} onClick={handleChangeDetail}>
                   <div className="details">
                     <h5 >
-                      Manmeet Singh (VP/Analytics)
+                      Manmeet Singh (VP-Analytics)
                     </h5>
                     <img src={MANMEET_PIC} />
                   </div>
@@ -264,8 +264,6 @@ const OurTeam = () => {
                   {profileData.content}
                 </p>
               </div>
-
-
               
             </div>
 
