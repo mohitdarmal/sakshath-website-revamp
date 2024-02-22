@@ -1,0 +1,97 @@
+@import "../../Assets/saas/Main.scss";
+
+//staffing_main_section
+.staffing_main_section {
+  padding-top: 80px;
+}
+
+.staffing_content {
+  margin-top: 20px;
+}
+.staffing_content li {
+  padding-bottom: 20px;
+}
+
+// staffing Industry
+.staffing_industry_offer_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.staffing_industry_offer_box {
+  box-shadow: 0 2px 20px #73737321;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #32a4d5;
+  transition: 0.5s;
+  display: flex;
+align-items: center;
+
+
+img{
+    width: 50px;
+}
+  h5 {
+    font-family: rajdhani;
+    font-size: 28px;
+    color: #24688f;
+    font-weight: bold;
+    margin-left: 13px;
+  }
+}
+
+.staffing_industry_offer_box:hover {
+  background-color: #32a4d5;
+  transform: scale(1.04, 1.1);
+  transition: 0.5s;
+
+  h5 {
+    color: #fff;
+  }
+}
+
+
+// why sakshath
+
+.staffing_why_sakshath{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.staffing_why_sak_list{
+  padding: 40px;
+  background: #f2f2f2;
+  position: relative;
+  content: "";
+
+
+}
+
+.staffing_why_sak_list li{
+  padding-bottom: 10px;
+}
+.staffing_why_sak_list li::before{
+  content: "\f111";
+  position: absolute;
+  margin-left: -25px;
+  font-family: "FontAwesome";
+  width: 15px;
+  height: 15px;
+  background: rgba(50, 164, 213, 0.2);
+  font-size: 9px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  color: #32a4d5;
+  margin-top: 5px;
+}
+
+.staffing_service{
+  padding: 40px;
+    box-shadow: 0 2px 20px #00000021;
+    border-radius: 5px;
+}
+
+.staffing_job_box{
+  box-shadow: 0 2px 20px #00000029;
+  padding: 10px;
+  background: #f2f2f2;
+}

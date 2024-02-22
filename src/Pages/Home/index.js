@@ -107,8 +107,6 @@ export const Home = () => {
           <div className="row">
             <div className="col-md-12 text-center">
               <Fade direction="up" delay={300}>
-               
-                
                 <div>
                   {" "}
                   <img src={MILESTONE_TEXT} />{" "}
@@ -136,16 +134,14 @@ export const Home = () => {
                     handleTextSlideChange(newIndex)
                   }
                 >
-
                   <div className="banner_text_slider_content">
                     <h6>Profesional IT Solution</h6>
                     <h3>Transforming Ideas into Intelligent Solutions</h3>
-                    
-                      <div className="banner_text_slider_links">
-                        <Link to="/">Get Started Now</Link>
-                        <Link to="/">Explore More</Link>
-                      </div>
-                   
+
+                    <div className="banner_text_slider_links">
+                      <Link to="/">Get Started Now</Link>
+                      <Link to="/">Explore More</Link>
+                    </div>
                   </div>
 
                   <div className="banner_text_slider_content">
@@ -427,7 +423,6 @@ export const Home = () => {
           <div className="container">
             <div className="row ">
               <div className="text-center">
-
                 <Fade direction="up" delay={20} triggerOnce>
                   <Heading
                     heading="Certification & Accreditation"
@@ -437,200 +432,186 @@ export const Home = () => {
               </div>
             </div>
 
-             
-
             <div className="row mt-4 pt-2">
-
-
-
-            <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={400} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={ISO_27001} alt="" />
-                    </div>
-                    <div className="content">
-                      <h3>ISO 27001</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
-                </Link>
-              </div>
-
-             
-              
               <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={400} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={ISO_9001} alt="" />
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={ISO_27001} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>ISO 27001</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit Odit vitae.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
                     </div>
-                    <div className="content">
-                      <h3>ISO 9001</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
-                </Link>
-              </div>
-
-             
-
-              <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={200} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={TALEND} alt="" />
-                    </div>
-                    <div className="content">
-                      <h3 className="">Talend Gold Partner</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
+                  </Fade>
                 </Link>
               </div>
 
               <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={400} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={CLIQ_LOGO} alt="" />
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={ISO_9001} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>ISO 9001</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit Odit vitae.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
                     </div>
-                    <div className="content">
-                      <h3>QLIK</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
+                  </Fade>
                 </Link>
               </div>
-
-              
 
               <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={400} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={AWS} alt="" />
+                <Link>
+                  <Fade direction="up" delay={200} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={TALEND} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3 className="">Talend Gold Partner</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Odit vitae.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
                     </div>
-                    <div className="content">
-                      <h3>Amzone AWS Partner</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
+                  </Fade>
                 </Link>
               </div>
 
-             
+              <div className="col-md-4 d-flex ">
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={CLIQ_LOGO} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>QLIK</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit Odit vitae.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
+                    </div>
+                  </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={AWS} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>Amzone AWS Partner</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit Odit vitae.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
+                    </div>
+                  </Fade>
+                </Link>
+              </div>
+
               <div className="col-md-4">
                 <Fade direction="up" delay={10} triggerOnce>
-                <Link>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={GREAT_PLACE_WORK} alt="" />
+                  <Link>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={GREAT_PLACE_WORK} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3 className="text">Great Place to Work</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit Odit vitae.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
                     </div>
-                    <div className="content">
-                      <h3 className="text">Great Place to Work</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
                   </Link>
                 </Fade>
               </div>
-             
 
               <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={400} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={AWS} alt="" />
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={AWS} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>Outlook Business</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit Odit vitae.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
                     </div>
-                    <div className="content">
-                      <h3>Outlook Business</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
+                  </Fade>
                 </Link>
               </div>
 
               <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={400} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={TIMES_OF_INDIA} alt="" />
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={TIMES_OF_INDIA} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>Times of India</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit Odit vitae.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
                     </div>
-                    <div className="content">
-                      <h3>Times of India</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
+                  </Fade>
                 </Link>
               </div>
 
               <div className="col-md-4 d-flex ">
-              <Link>
-                <Fade direction="up" delay={400} triggerOnce>
-                  <div className="d-flex horizontal-shake">
-                    <div className="icon">
-                      <img src={WCRCINT} alt="" />
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={WCRCINT} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>WCRCINT</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit Odit vitae.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
                     </div>
-                    <div className="content">
-                      <h3>WCRCINT</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        Odit vitae.
-                      </p>
-                      <p className="learn_more">See Certificate</p>
-                    </div>
-                  </div>
-                </Fade>
+                  </Fade>
                 </Link>
               </div>
-
             </div>
           </div>
         </div>
@@ -912,7 +893,9 @@ export const Home = () => {
               <div className="left_planning_banner_content">
                 <Fade direction="up" triggerOnce>
                   <h3>
-                    Let’s connect. We’d love to hear about your project and discuss our procedure. Our executives will be at your service ASAP.
+                    Let’s connect. We’d love to hear about your project and
+                    discuss our procedure. Our executives will be at your
+                    service ASAP.
                   </h3>
                 </Fade>
               </div>
@@ -950,7 +933,8 @@ export const Home = () => {
               </Fade>
               <Fade direction="up" triggerOnce>
                 <p>
-                  Digitise your business by managing multiple process in a single platform.
+                  Digitise your business by managing multiple process in a
+                  single platform.
                 </p>
               </Fade>
               <Fade direction="up" triggerOnce>
@@ -1083,7 +1067,7 @@ export const Home = () => {
                       </ul> */}
                       <h5 className="blog_heading">
                         Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath
-                        Technologies.
+                        Technologies
                       </h5>
                       <p className="blog_sub_heading">
                         Sed ut perspiciatis unde omnsiste natus errors
@@ -1106,7 +1090,6 @@ export const Home = () => {
                     <div className="cust_profile"></div>
 
                     <div className="socail_icon">
-                      
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
                         Perfect
@@ -1131,7 +1114,6 @@ export const Home = () => {
                   <div className="blog_content">
                     <div className="cust_profile"></div>
                     <div className="socail_icon">
-                       
                       <h5 className="blog_heading">
                         Build Launch Powerful Responsives Websites With Editor
                         Perfect
