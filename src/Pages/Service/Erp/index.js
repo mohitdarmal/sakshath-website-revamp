@@ -4,11 +4,15 @@ import {
   ABOUT_WHO_WE_ARE,
   EPICOR_OVERVIEW,
   SUPPLY_CHAIN_IMG,
+  Who_we_r,
 } from "./Constant";
 import Heading from "../../../Components/Utils/Heading";
 import { ABOUT_BANNER } from "../../../Components/Breadcumb/Constant";
 import BreadCumb from "../../../Components/Breadcumb";
 import { EXPERIENCE } from "../../../Components/OurPrincipals/Constant";
+import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
+import CallToAction from "../../../Components/CallToAction";
+
 
 const Erp = () => {
   return (
@@ -260,7 +264,7 @@ const Erp = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="epicor_left_img">
-                <img src={ABOUT_WHO_WE_ARE} alt="" width="600px" />
+                <img src={Who_we_r} alt="" width="550px" />
               </div>
             </div>
             <div className="col-md-6">
@@ -287,12 +291,38 @@ const Erp = () => {
                     management optimizations and streamlining processes.
                   </li>
                 </div>
+              
+
               </div>
             </div>
           </div>
         </div>
       </section>
       {/* epicor ends */}
+      {/* call to action starts */}
+
+<CallToAction  ctaContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit doloribus labore exercitationem perspiciatis."/>
+
+      {/* <section className="call_to_action_section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-9">
+              <div className="call_to_action_erp">
+                <h3>
+                  Contact Us Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. consectetur adipisicing elit.
+                </h3>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="call_to_action_button_sysypro">
+                <SlideAnimationButton btnName="Contact us" url="/contact-us" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      {/* call to action ends */}
       {/* syspo starts */}
       <section className="syspro_section">
         <div className="container">
@@ -324,6 +354,107 @@ const Erp = () => {
         </div>
       </section>
       {/* syspro ends */}
+      {/* syspro 8 ways  starts*/}
+      <section className="syspro_8_ways_section">
+        <div className="container">
+          <div className="row">
+            <div className="main_heading_syspro_8_ways text-center">
+              <Heading heading="8 ways SYSPRO adds value to the entire supply chain" />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-3">
+              <div className="box_top">
+                <h4>01</h4>
+                <div className="syspro_value">
+                  <img src={EXPERIENCE} alt="" />
+                </div>
+                <div className="syspro_value_content">
+                  <h3>Industry Built</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="box_top">
+                <h4>02</h4>
+                <div className="syspro_value">
+                  <img src={EXPERIENCE} alt="" />
+                </div>
+                <div className="syspro_value_content">
+                  <h3>Choice & Flexibility</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="box_top">
+                <h4>03</h4>
+                <div className="syspro_value">
+                  <img src={EXPERIENCE} alt="" />
+                </div>
+                <div className="syspro_value_content">
+                  <h3>Actionable Insights</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="box_top">
+                <h4>04</h4>
+                <div className="syspro_value">
+                  <img src={EXPERIENCE} alt="" />
+                </div>
+                <div className="syspro_value_content">
+                  <h3> Scalable</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="box_top">
+                <h4>05</h4>
+                <div className="syspro_value">
+                  <img src={EXPERIENCE} alt="" />
+                </div>
+                <div className="syspro_value_content">
+                  <h3>Engaging User Experience</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="box_top">
+                <h4>06</h4>
+                <div className="syspro_value">
+                  <img src={EXPERIENCE} alt="" />
+                </div>
+                <div className="syspro_value_content">
+                  <h3>Safeguard Your ERP Investment</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="box_top">
+                <h4>07</h4>
+                <div className="syspro_value">
+                  <img src={EXPERIENCE} alt="" />
+                </div>
+                <div className="syspro_value_content">
+                  <h3>Personalize Your Workspace</h3>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="box_top">
+                <h4>08</h4>
+                <div className="syspro_value">
+                  <img src={EXPERIENCE} alt="" />
+                </div>
+                <div className="syspro_value_content">
+                  <h3>Enable Digital Business </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* syspro 8 ways end */}
       {/* EPICOR  overview  ends*/}
       <section className="industry_section">
         <div className="container">
@@ -417,7 +548,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="migration_img">
-                <img src={ABOUT_WHO_WE_ARE} alt="" width="600px" />
+                <img src={Who_we_r} alt="" width="550px" />
               </div>
             </div>
           </div>
@@ -429,51 +560,81 @@ const Erp = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-          
-
-
               <div className="sap_img">
-
-              
                 <img src={ABOUT_WHO_WE_ARE} alt="" width="600px" />
               </div>
             </div>
             <div className="col-md-6">
-            <div className="sap_content_box">
-              <div className="sap_heading">
-                <Heading heading="SAP" uppercase="text-uppercase" />
-              </div>
+              <div className="sap_content_box">
+                <div className="sap_heading">
+                  <Heading heading="SAP" uppercase="text-uppercase" />
+                </div>
 
-              <div className="sap_content">
-                <div className="sap_box">
-                  <h4>WIDE-RANGING EXPERIENCE</h4>
-                  <p>
-                    SAP stands out because of its wide-ranging experience as a
-                    provider of ERP services. The company has provided tech
-                    solutions for everyone from government financial
-                    institutions to small businesses.
+                <div className="sap_content">
+                  <div className="sap_box">
+                    <h4>WIDE-RANGING EXPERIENCE</h4>
+                    <p>
+                      SAP stands out because of its wide-ranging experience as a
+                      provider of ERP services. The company has provided tech
+                      solutions for everyone from government financial
+                      institutions to small businesses.
                     </p>
+                  </div>
+                  <div className="sap_box">
+                    <h4>EASY UPGRADES AND MAINTENANCE</h4>
+                    <p>
+                      For companies looking to cut IT costs by investing in more
+                      streamlined solutions, SAP is here to help. SAP’s business
+                      management tools make it easier for companies to oversee
+                      their operations.
+                    </p>
+                  </div>
+
+                  <div className="sap_box">
+                    <h4>AFFORDABILITY AND SCALABILITY</h4>
+                    <p>
+                      SAP makes sure that companies invest in scalable tech
+                      systems, ensuring they don’t spend one dollar more than is
+                      absolutely necessary. Businesses need to get the most out
+                      of their IT budgets.
+                    </p>
+                  </div>
                 </div>
-                <div className="sap_box">
-                  <h4>EASY UPGRADES AND MAINTENANCE</h4>
-                  <p>
-                    For companies looking to cut IT costs by investing in more
-                    streamlined solutions, SAP is here to help. SAP’s business
-                    management tools make it easier for companies to oversee
-                    their operations.
-                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="dynamic_box">
+                <div className="dynamic_heading">
+                  <Heading heading="MS Dynamics"/>
                 </div>
 
-                <div className="sap_box">
-                  <h4>AFFORDABILITY AND SCALABILITY</h4>
-                  <p>
-                    SAP makes sure that companies invest in scalable tech
-                    systems, ensuring they don’t spend one dollar more than is
-                    absolutely necessary. Businesses need to get the most out of
-                    their IT budgets.
-                  </p>
+                <div className="dynamic_content">
+                  <h4>FUELING BUSINESS WITH BETTER DATA</h4>
+           <p>Master data management (MDM) is the core process used to manage, centralize, organize, categorize, localize, synchronize and enrich master data according to the business rules of the sales, marketing and operational strategies of your company. The importance of MDM lies more crucial because it directly governs the business priorities with the ever-growing government regulations . Customer data, Supplier data, product life cycle management and data governance are all significant contributors of initiatives driven by the businesses</p>
+
+           <div className="dynamics_list">
+            <ul>
+              <li>
+              Senior management supports the entire program to help driven the initiatives from the top down approach.
+
+              </li>
+              <li>Business users to champion and assist with smooth implementation.</li>
+            </ul>
+           </div>
                 </div>
-                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+
+              <div className="dynamic_img">
+                <img src={Who_we_r} alt=""  width="550px"/>
               </div>
             </div>
           </div>

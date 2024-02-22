@@ -54,7 +54,7 @@ const OurJounery = () => {
       cardTitle: "ROAD AHEAD 2024",
 
       cardDetailedText:
-        "Sakshath Technologies® has an ever-evolving spirit within the organization, led by committed professionals. Sakshath Technologies® continually reviews its product/service offering, always being at the cutting edge of technology-based business solutions in a dynamic market. ",
+        "Sakshath Technologies has an ever-evolving spirit within the organization, led by committed professionals. Sakshath Technologies continually reviews its product/service offering, always being at the cutting edge of technology-based business solutions in a dynamic market. ",
     },
   ];
   // corevalues starts

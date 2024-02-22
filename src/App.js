@@ -26,6 +26,7 @@ import ManagedServices from "./Pages/Service/ManagedServices";
 import Analytics from "./Pages/Service/Analytics";
 import ScrollToTop from "./Components/scrollToTop"
 import OurTeam from "./Pages/OurTeam";
+import Staffing from "./Pages/Staffing";
 
 const App = () => {
   
@@ -91,6 +92,8 @@ const App = () => {
           <Route path="/managed-services" element={<ManagedServices />} />
           <Route path="/analytics" element={<Analytics />} />
           {/* <Route path="/blogs/:id" element={<BlogDetail />} /> */}
+
+          <Route path='/staffing' element={<Staffing/>}/>
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

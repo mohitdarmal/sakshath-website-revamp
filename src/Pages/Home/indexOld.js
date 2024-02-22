@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, { useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import {
   WHO_WE_ARE_IMG,
@@ -46,25 +46,25 @@ import ClientLogo from "../../Components/ClientLogo";
 import Faq from "../../Components/Faq";
 import HappyClients from "../../Components/HappyClients";
 import OurPrincipals from "../../Components/OurPrincipals";
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
-import BannerVideo from "../../Assets/images/banner_vid.mp4"
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
+import BannerVideo from "../../Assets/images/banner_vid.mp4";
 // import { Pagination, Navigation } from 'swiper/modules';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const Home = () => {
   const textSlider = useRef();
   const imageSlider = useRef();
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const handleTextSlideChange = index => {
+  const handleTextSlideChange = (index) => {
     setCurrentSlide(index);
     imageSlider.current.slickGoTo(index);
   };
 
-  const handleImageSlideChange = index => {
+  const handleImageSlideChange = (index) => {
     setCurrentSlide(index);
     textSlider.current.slickGoTo(index);
   };
@@ -77,98 +77,107 @@ export const Home = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    afterChange: index => setCurrentSlide(index)
+    afterChange: (index) => setCurrentSlide(index),
   };
 
   return (
     <>
-
-<section className="tagline_sec">
-<div className="video_background">
-            <video autoPlay loop muted playsInline >
-                <source src={BannerVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            {/* You can add other content on top of the video if needed */}
+      <section className="tagline_sec">
+        <div className="video_background">
+          <video autoPlay loop muted playsInline>
+            <source src={BannerVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {/* You can add other content on top of the video if needed */}
         </div>
 
         <div className="container tagline_txt">
           <div className="row">
             <div className="col-md-12 text-center">
-            <Fade direction="up" delay={300} >
-            <div> <img src={MILESTONE_TEXT} /> </div>
-            <div className="position-relative">
-              <h1 className="tagline_heading"> Making IT Looks Easy </h1>
-              </div>
-             </Fade>
+              <Fade direction="up" delay={300}>
+                <div>
+                  {" "}
+                  <img src={MILESTONE_TEXT} />{" "}
+                </div>
+                <div className="position-relative">
+                  <h1 className="tagline_heading"> Making IT Looks Easy </h1>
+                </div>
+              </Fade>
             </div>
           </div>
         </div>
-</section>
+      </section>
 
-
-<section>
-<div className="container">
-  <div className="row text-and-image-slider">
-    <div className="col-md-6">
-    <div className="text-slider">
-        <Slider ref={textSlider} {...settings} beforeChange={(oldIndex, newIndex) => handleTextSlideChange(newIndex)}>
-          <div>
-          <div className="">
-                <div className="banner_caption">
-                  <h6>
-                    <Fade direction="up" delay={150}>
-                      Profesional IT Solution
-                    </Fade>
-                  </h6>
-                  <h3>
-                    <Fade direction="up" delay={300}>
-                      Transforming Ideas into Intelligent Solutions
-                    </Fade>
-                  </h3>
-                  <Fade direction="up" delay={500}>
-                    <div>
-                      <Link to="/">Get Started Now</Link>
-                      <Link to="/">Explore More</Link>
+      <section>
+        <div className="container">
+          <div className="row text-and-image-slider">
+            <div className="col-md-6">
+              <div className="text-slider">
+                <Slider
+                  ref={textSlider}
+                  {...settings}
+                  beforeChange={(oldIndex, newIndex) =>
+                    handleTextSlideChange(newIndex)
+                  }
+                >
+                  <div>
+                    <div className="">
+                      <div className="banner_caption">
+                        <h6>
+                          <Fade direction="up" delay={150}>
+                            Profesional IT Solution
+                          </Fade>
+                        </h6>
+                        <h3>
+                          <Fade direction="up" delay={300}>
+                            Transforming Ideas into Intelligent Solutions
+                          </Fade>
+                        </h3>
+                        <Fade direction="up" delay={500}>
+                          <div>
+                            <Link to="/">Get Started Now</Link>
+                            <Link to="/">Explore More</Link>
+                          </div>
+                        </Fade>
+                      </div>
                     </div>
-                  </Fade>
-                </div>
+                  </div>
+                  <div>
+                    <h3>Text Slide 2</h3>
+                  </div>
+                  <div>
+                    <h3>Text Slide 3</h3>
+                  </div>
+                </Slider>
               </div>
-          </div>
-          <div>
-            <h3>Text Slide 2</h3>
-          </div>
-          <div>
-            <h3>Text Slide 3</h3>
-          </div>
-        </Slider>
-      </div>
-    </div>
+            </div>
 
-<div className="col-md-6">
-<div className="image-slider">
-        <Slider ref={imageSlider} {...settings} beforeChange={(oldIndex, newIndex) => handleImageSlideChange(newIndex)}>
-          <div>
-            <img src="image1.jpg" alt="Image 1" />
+            <div className="col-md-6">
+              <div className="image-slider">
+                <Slider
+                  ref={imageSlider}
+                  {...settings}
+                  beforeChange={(oldIndex, newIndex) =>
+                    handleImageSlideChange(newIndex)
+                  }
+                >
+                  <div>
+                    <img src="image1.jpg" alt="Image 1" />
+                  </div>
+                  <div>
+                    <img src="image2.jpg" alt="Image 2" />
+                  </div>
+                  <div>
+                    <img src="image3.jpg" alt="Image 3" />
+                  </div>
+                </Slider>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="image2.jpg" alt="Image 2" />
-          </div>
-          <div>
-            <img src="image3.jpg" alt="Image 3" />
-          </div>
-        </Slider>
-      </div>
-</div>
+        </div>
 
-  </div>
-</div>
-
-<div className="">
-
-  
-    </div>
-</section>
+        <div className=""></div>
+      </section>
 
       {/* SECTION - Banner Section Start */}
       {/* <section className="banner_sec">
@@ -354,12 +363,8 @@ export const Home = () => {
       </section> */}
       {/* @@@@@@@ SECTION - Banner Section end @@@@@@@ */}
 
-
-
-
-
-{/*  @@@@@@ SECTION - ISO CERTIFICATES START @@@@@@ */}
-<section className="overflow-hidden mt-5 pt-5">
+      {/*  @@@@@@ SECTION - ISO CERTIFICATES START @@@@@@ */}
+      <section className="overflow-hidden mt-5 pt-5">
         <div className="accreditation_sec specilation_feature">
           <div className="container">
             <div className="row ">
@@ -376,26 +381,12 @@ export const Home = () => {
               </div>
             </div>
 
-
-<div className="row">
-  <div className="accreditation_tab_container">
-<Tabs
-                defaultActiveKey="certification"
-                id="clients_logo"
-                className="mb-3 accreditation_tab"
-              >
-                {/* <div className="certificational"> */}
-                <Tab
-                  eventKey="certification"
-                  title={
-                    <div className="d-flex">
-                      <p>
-                       
-                        &nbsp;&nbsp;
-                      </p>
-                      <p>Certification</p>
-                    </div>
-                  }
+            <div className="row">
+              <div className="accreditation_tab_container">
+                <Tabs
+                  defaultActiveKey="certification"
+                  id="clients_logo"
+                  className="mb-3 accreditation_tab"
                 >
                   {/* <div className="certificational"> */}
                   <Tab
@@ -406,18 +397,28 @@ export const Home = () => {
                         <p>Certification</p>
                       </div>
                     }
-                  ></Tab>
-                  {/* </div> */}
-                  <Tab
-                    eventKey="accreditation"
-                    title={
-                      <div className="d-flex">
-                        <p>&nbsp;&nbsp;</p>
+                  >
+                    {/* <div className="certificational"> */}
+                    <Tab
+                      eventKey="certification"
+                      title={
+                        <div className="d-flex">
+                          <p>&nbsp;&nbsp;</p>
+                          <p>Certification</p>
+                        </div>
+                      }
+                    ></Tab>
+                    {/* </div> */}
+                    <Tab
+                      eventKey="accreditation"
+                      title={
+                        <div className="d-flex">
+                          <p>&nbsp;&nbsp;</p>
 
-                        <p>Accreditation</p>
-                      </div>
-                    }
-                 />
+                          <p>Accreditation</p>
+                        </div>
+                      }
+                    />
                   </Tab>
                 </Tabs>
               </div>
