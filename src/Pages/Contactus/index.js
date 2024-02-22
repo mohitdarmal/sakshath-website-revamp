@@ -70,7 +70,7 @@ const handleSubmit = (e) => {
                 <h2>HeadQuater Office</h2>
                 <ul>
                   <li className="address">
-                    Address: 8, KV Jairam Rd, MCHS Layout, Jakkuru Layout,
+                    8, KV Jairam Rd, MCHS Layout, Jakkuru Layout,
                     Jakkur, Bengaluru, Karnataka 560064
                   </li>
                   <li className="email">
@@ -151,7 +151,7 @@ const handleSubmit = (e) => {
         <div className="container">
           <div className="row">
             <div className="text-center">
-              <Heading heading="Our Location" uppercase="text-uppercase" />
+              <Heading heading="Our Offices" uppercase="text-uppercase" />
             </div>
           </div>
 
