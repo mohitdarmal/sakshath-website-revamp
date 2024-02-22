@@ -205,7 +205,7 @@ const Footer = () => {
                 <Fade direction="up">
                   {" "}
                   <p>
-                    Copyrights © 2023 Sakshath Technologies®. All rights
+                    Copyrights © 2023 Sakshath Technologies. All rights
                     reserved.
                   </p>
                 </Fade>

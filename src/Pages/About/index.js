@@ -50,7 +50,7 @@ const About = () => {
                     having an ERP offshore development. If not quite a tale of
                     rags to riches, the story of Sakshath Technologies’ rise to
                     stardom certainly came closer. The birth of SAKSHATH
-                    TECHNOLOGIES® in 2015, wouldn’t be possible without the
+                    TECHNOLOGIES in 2015, wouldn’t be possible without the
                     utmost faith and trust of family and friends. <br />
                     <br />
                     Sakshath Technologies’ biggest USP’s are ERP (Epicor, MS
@@ -126,7 +126,7 @@ const About = () => {
                 <Fade direction="up" delay={150} triggerOnce>
                   It is the desire of Sakshath Technologies to establish itself
                   as a powerful business operation with vibrance and growth
-                  built on Sakshath Technologies® principles that is highly
+                  built on Sakshath Technologies principles that is highly
                   regarded by our customers, stake holders and our employees. As
                   an organization, we want to be in a place where customers rely
                   on the excellence of our products and services.
