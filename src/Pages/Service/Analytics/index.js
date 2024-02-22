@@ -5,10 +5,11 @@ import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
 import Heading from "../../../Components/Utils/Heading";
 import {
-  INTEGRATION_SECTION_ONE_IMG,
-  SECTION_THREE_ICON_ONE,
-  SECTION_THREE_ICON_TWO,
-  SECTION_THREE_ICON_THREE,
+    ANALYTICS_OVERVIEW_IMG,
+    ANALYTICS_AI_IMG,
+    ANALYTICS_BI,
+    ANALYTICS_DATA_INTEGRATION,
+    ANALYTICS_BIG_DATA,
   SOFTWARE_LOGO_1,
   SOFTWARE_LOGO_2,
   SOFTWARE_LOGO_3,
@@ -21,6 +22,13 @@ import {
   SOFTWARE_LOGO_10,
   SOFTWARE_LOGO_11,
   SECTION_VECTOR,
+  analytics_logo_01,
+  analytics_logo_02,
+  analytics_logo_03,
+  analytics_logo_04,
+  analytics_logo_05
+
+
 } from "./Constant";
 import Faq from "../../../Components/Faq";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -68,7 +76,7 @@ export const Analytics = () => {
               <div className="overview_sec_left_analytics">
                 {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
                 <Heading heading="Overview" uppercase="text-uppercase" />
-                <p className="overview_sec_managed_services_para">
+                <p className="overview_sec_analytics_para">
                   Unlock growth potential with Advanced Data Analytics Services.
                   Sakshath specializes in leveraging AI + data science to
                   provide you with actionable insights that drive growth. Our
@@ -85,7 +93,7 @@ export const Analytics = () => {
               <div className="overview_sec_right_analytics_img">
                 <img
                   className="img-fluid analytics_img"
-                  src={INTEGRATION_SECTION_ONE_IMG}
+                  src={ANALYTICS_OVERVIEW_IMG}
                 />
               </div>
             </div>
@@ -166,11 +174,110 @@ export const Analytics = () => {
                   <div className="col-md-6 ai_data_science_right ipad_full_width">
                     <img
                       className="img-fluid ai_img"
-                      src={INTEGRATION_SECTION_ONE_IMG}
+                      src={ANALYTICS_AI_IMG}
                     />
                   </div>
+
+
                   {/* </div> */}
                 </div>
+                {/* <section className="ai_datascience_content_box_sec">
+                    <div className="container">
+                      
+
+                    </div>
+                </section> */}
+                <div className="ai_datascience_content_box">
+                    <div className="ai_datascience_content">
+                        <div className="row">
+                            <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box small_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_01} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Systems Engineering</h5>
+                                <ul className="ai_datascience_content_para_list">
+                                    <li>Product feasibility studies</li>
+                                    <li>Reliable,effective and cost-effective solutions</li>
+                                    <li>Highly reliable System design with reusability in mind</li>
+                                </ul>
+                    
+                             </div>
+                              
+                             
+
+                                
+                            </div>
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                               <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_02} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+
+                             <h5>Machine Learning</h5>
+                                <ul className="ai_datascience_content_para_list">
+                                    <li>Big Data Sciences with Machine learning for ease of humans and the world economy</li>
+                                    
+                                </ul>
+                                
+                    
+                             </div>
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                               <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_03} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Product Ruggedization</h5>
+                                <ul className="ai_datascience_content_para_list">
+                                    <li>Reduces risks and harm in certain hazardous outages by identifying potential breakdowns/incidents in advance</li>
+                                    <li>Provision of product ruggedization for all-weather environment</li>
+                                    <li>Ease of use for commercial setups</li>
+                                </ul>
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_04} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                             <h5>Product Delivery</h5>
+                                <ul className="ai_datascience_content_para_list">
+                                    <li>Effectual Product Delivery</li>
+                                    <li>Utilizing reusable solutions to increase products reliability and delivery</li>
+                                    <li>Usage of IP Cores of our and partners, for effective cost, time and reliability</li>
+                                </ul>
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+              </div>
               </div>
             </section>
           </Element>
@@ -185,7 +292,7 @@ export const Analytics = () => {
                     <div className="bi_dashboard_left">
                       <img
                         className="img-fluid bi_dashboard_img"
-                        src={INTEGRATION_SECTION_ONE_IMG}
+                        src={ANALYTICS_BI}
                       />
                     </div>
                   </div>
@@ -240,6 +347,108 @@ export const Analytics = () => {
                         </div> */}
                       </div>
                     </div>
+
+
+                    <div className="ai_datascience_content_box">
+                    <div className="ai_datascience_content">
+                        <div className="row">
+                            <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_01} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Intelligent Live Dashboards</h5>
+                                
+                                <p>Intelligent dashboards presenting information with incredible clarity help you grasp fresh ideas immediately. Data can be quickly sliced and diced with dynamic control mechanisms, refined executive-ready insights can be shared, and teams can be equipped with top-notch Customizable tools.</p>
+                    
+                             </div>
+                              
+                             
+
+                                
+                            </div>
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                               <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_02} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Customized Reporting Solutions</h5>
+                                <p>Choose from a host of business reporting services with individuals proficient in all industry’s best BI technologies featured in the Gartner Magic Quadrant TM, including Microsoft, SAP, IBM Watson, Oracle, Tableau, Micro strategy, Qlikview, and so more.</p>
+                    
+                             </div>
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                               <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_03} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Big Data Visualization</h5>
+                                <p>Through great visualization, we can understand a growing stream of data with precision. Whether the data is structured or unstructured, powered by businesses or the Internet-Of-things, the value lies in clarity and comprehension.</p>
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_04} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Solutions for Data Integration</h5>
+                                <p>Make the data AI-ready, regardless of how diversified and dynamic it is. Even though it originates from various unrelated sources, data harmonization enables intricate and inaccurate data to be compatible and comparative.</p>
+                                
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            
+                        </div>
+
+                        
+
+                        <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_05} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Experience with BI Platforms</h5>
+                                <p>At Sakshath, our teams have the expertise and background of using almost every BI solution, tool, and available platform. Hence, we can swiftly build and deliver client reports on their selected BI platform. Feeling challenged without a specific tool? Let us assist in selecting and implementing the best platform for you. </p>
+                                
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+              </div>
                   </div>
                 
               
@@ -358,11 +567,112 @@ export const Analytics = () => {
                   <div className="col-md-6 ai_data_science_right ipad_full_width">
                     <img
                       className="img-fluid ai_img"
-                      src={INTEGRATION_SECTION_ONE_IMG}
+                      src={ANALYTICS_DATA_INTEGRATION}
                     />
                   </div>
                   {/* </div> */}
                 </div>
+
+                <div className="ai_datascience_content_box">
+                    <div className="ai_datascience_content">
+                        <div className="row">
+                            <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_01} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Data Synchronization</h5>
+                                
+                                <p>Data synchronization results in data suitability and consistency, even though it originates from varied sources. Ascertain that your data is prepared for supervised learning, unsupervised learning, and technical analysis.</p>
+                    
+                             </div>
+                              
+                             
+
+                                
+                            </div>
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                               <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_02} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Extract, Transform and Load (ETL)</h5>
+                                <p>Our bespoke ETL/ELT services combine system and technology expertise to create high-quality data assets. Identify the most appropriate data extraction methods for your work model, data formats, and structure matching your business objectives.</p>
+                    
+                             </div>
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                               <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_03} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Master Data Management</h5>
+                                <p>Our master data management solution refers to the standards, policies, governance, and tools addressed to build and maintain critical data. We provide a centralized location for data within an organization.</p>
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_04} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Data Quality and Accuracy</h5>
+                                <p>Data must be thorough, uniform, meaningful, and precise before it can be applied to drive actions. With better data quality and accuracy, you can experience more precise AI models, more reliable analytics, and more dependable judgments.</p>
+                                
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            
+                        </div>
+
+                        
+
+                        <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_05} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Common Data Model (CDM)</h5>
+                                <p>Generate a one-stop source of information for your business by grouping the data into a consistent structure. Data from many databases are translated into a standardized format and then methodically evaluated. </p>
+                                
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+              </div>
               </div>
             </section>
           </Element>
@@ -378,7 +688,7 @@ export const Analytics = () => {
                   <div className="col-md-6 bi_dashboard_left ipad_full_width">
                     <img
                       className="img-fluid bi_dashboard_img"
-                      src={INTEGRATION_SECTION_ONE_IMG}
+                      src={ANALYTICS_BIG_DATA}
                     />
                   </div>
                   <div className="col-md-6 bi_dashboard_right ipad_full_width">
@@ -418,6 +728,109 @@ export const Analytics = () => {
                   </div>
                   {/* </div> */}
                 </div>
+
+                <div className="ai_datascience_content_box">
+                    <div className="ai_datascience_content">
+                        <div className="row">
+                            <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_01} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Data Integration</h5>
+                                
+                                <p>Analytics and AI are augmented when a variety of data sources are combined. A big data delivery system is provided to clients with large-scale datasets to supply data that is continuously AI and analytics ready in real-time.</p>
+                    
+                             </div>
+                              
+                             
+
+                                
+                            </div>
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                               <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_02} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Big Data Warehouse</h5>
+                                <p>A Big Data ecosystem includes two major components: data warehouses and data lakes. A data warehouse with innovative architecture can grow to accommodate your demands today and in the near future.</p>
+                    
+                             </div>
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                               <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_03} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Big Data Analytics</h5>
+                                <p>Now quickly extract insights from changing data Using big data analytics. Use cutting-edge methodologies like Hidden Markov Models, Naive Bayes, Self-learning model, Supervised and Unsupervised Learning, Gradient Boosted Models, and others with our expert assistance.</p>
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+                            </div>
+
+                            <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_04} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>BI with Data Visualization</h5>
+                                <p>The explosion of data presents a unique challenge: how else to make perfect sense of it all? Data visualization converts un-interpreted data into understandable meaning. Business Intelligence (BI) further transforms it into business terms.</p>
+                                
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            
+                        </div>
+
+                        
+
+                        <div className="col-md-6 ai_datascience_content_col">
+                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_img">
+                                <img src={analytics_logo_05} alt=""  />
+                             </div>
+                             <div className="ai_datascience_content_para">
+                                <h5>Common Data Model (CDM)</h5>
+                                <p>Generate a one-stop source of information for your business by grouping the data into a consistent structure. Data from many databases are translated into a standardized format and then methodically evaluated. </p>
+                                
+                    
+                             
+                              </div>
+                             
+
+                                
+                            </div>
+
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+              </div>
+
+
               </div>
             </section>
           </Element>
