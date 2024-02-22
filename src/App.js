@@ -26,7 +26,7 @@ import ManagedServices from "./Pages/Service/ManagedServices";
 import Analytics from "./Pages/Service/Analytics";
 import ScrollToTop from "./Components/scrollToTop"
 import OurTeam from "./Pages/OurTeam";
-import { PrivacyPolicy } from "./Pages/PrivacyPolicy";
+import  PrivacyPolicy  from "./Pages/PrivacyPolicy";
 import Staffing from "./Pages/Staffing";
 
 
