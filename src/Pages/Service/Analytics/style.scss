@@ -56,13 +56,13 @@ margin-bottom: 80px;
 //background: #f5fcff;
 }
 .ai_datascience_content_box{
-    margin-top: 80px;
+    margin-top: 105px;
     margin-bottom: 80px;
 }
-.small_box{
-    min-height: 217px !important;
-    padding: 25px !important;
-}
+// .ai_box1_height{
+//     min-height: 217px !important;
+    
+// }
 
 .ai_datascience_content_col_box{
      
@@ -71,26 +71,28 @@ margin-bottom: 80px;
     padding: 25px;
     border: 1px dashed;
     margin-bottom: 20px;
-    min-height: 202px;
+    /* min-height: 232px; */
     border-radius: 10px;
+    /* align-items: center;*/
+
     
     
     .ai_datascience_content_img{
         img{
-            width: 100px;
-            padding: 10px;  
+            width: 80px;
+            /* padding: 10px; */ 
         }
     }
 }
 
-.ai_datascience_content_para_list{
+.ai_datascience_content_para_list li{
     list-style-type: disc;
 }
 .ai_datascience_content_para{
+    
     padding-left: 15px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
     padding-right: 10px;
     
     h5{
@@ -102,8 +104,122 @@ margin-bottom: 80px;
     }
 }
 
+.ai_box2_height{
+    min-height: 177px ;
+}
+.ai_box4_height{
+    min-height: 247px;
+}
 
 
+
+.bi_dashboard_box1_height{
+    padding-bottom: 2px;
+}
+.bi_box3{
+    padding-bottom: 3px;
+}
+.bi_box5{
+    padding-bottom: 10px;
+}
+
+
+
+.data_integration_box1{
+    padding-bottom: 10px; //same css for box2 and 1 for padding bottom
+}
+.data_integration_box4{
+    padding-bottom: 1px;
+}
+.data_integration_box5{
+    padding-bottom: 8px;
+}
+
+
+
+
+.bigdata_box1{
+    padding-bottom: 6px;
+}
+.bigdata_box2{
+    padding-bottom: 30px;
+}
+.bigdata_box3,.bigdata_box4{
+    padding-bottom: 9px ;
+}
+.bigdata_box5{
+    padding-bottom: 7px;
+}
+
+
+
+
+.ai_datascience_container::before{
+    content: "";
+    position: absolute;
+    background-image: url("../../../Assets/images/contact_bg_arrow.png");
+    height: 90px;
+    background-size: contain;
+    margin-left: 60px;
+    width: 83px;
+    margin-top: 413px;
+    background-repeat: no-repeat;
+}
+
+.bi_dashboard_container::before{
+    content: "";
+    position: absolute;
+    background-image: url("../../../Assets/images/contact_us_arrow_mirror_image.png");
+    height: 90px;
+    background-size: contain;
+    margin-left: 695px;
+    width: 83px;
+    margin-top: 500px;
+    background-repeat: no-repeat;
+}
+
+.data_integration_container::before{
+    content: "";
+    position: absolute;
+    background-image: url("../../../Assets/images/contact_bg_arrow.png");
+    height: 90px;
+    background-size: contain;
+    margin-left: 60px;
+    width: 83px;
+    margin-top: 410px;
+    background-repeat: no-repeat;
+
+}
+
+.bigdata_container::before{
+    content: "";
+    position: absolute;
+    background-image: url("../../../Assets/images/contact_us_arrow_mirror_image.png");
+    height: 122px;
+    background-size: contain;
+    margin-left: 643px;
+    width: 123px;
+    margin-top: 455px;
+    background-repeat: no-repeat;
+
+}
+
+
+.bi_feature_box{
+    background-color: #fff;
+    border-radius: 20px;
+    
+}
+.bi_feature_box::before{
+    content: "";
+    background: #f67d4a;
+    height: 45px;
+    width: 100%;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.3) inset;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 
@@ -235,6 +351,11 @@ margin-bottom: 80px;
 // }
 .ai_datascience_list {
   list-style-type: none;
+  
+
+  li{
+    color: #000 !important;
+  }
 }
 .AIdatascience p {
   color: #111111;
@@ -255,8 +376,9 @@ margin-bottom: 80px;
 .body_sec_three_consulting {
   padding-top: 58px;
 }
-.bi_dashboard_left {
-  display: flex;
+.bi_dashboard_right {
+  //display: flex;
+  padding-left: 80px;
 }
 
 // .intergration_list li{
@@ -291,8 +413,8 @@ margin-bottom: 80px;
 // .intergration_list_two {
 //   padding-right: 10px;
 // }
-.bi_dashboard_right {
-  padding-left: 80px;
+.bi_dashboard_left {
+  padding-right: 80px;
 
   h4{
     font-family: $rajdhani_font;

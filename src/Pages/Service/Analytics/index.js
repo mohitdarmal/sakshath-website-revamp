@@ -47,19 +47,19 @@ export const Analytics = () => {
   const menu = [
     {
       id: "AI+datascience",
-      title: "AI + data science",
+      title: "AI + Data Science",
     },
     {
       id: "Bi+dashboard",
-      title: "Bi + dashboard",
+      title: "BI + Dashboard",
     },
     {
       id: "Dataintegration",
-      title: "Data integration",
+      title: "Data Integration",
     },
     {
       id: "Bigdata",
-      title: "Big data",
+      title: "Big Data",
     },
   ];
   return (
@@ -75,14 +75,14 @@ export const Analytics = () => {
             <div className="col-md-6">
               <div className="overview_sec_left_analytics">
                 {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
-                <Heading heading="Overview" uppercase="text-uppercase" />
+                <Heading heading="Unlock growth potential with Advanced Data Analytics Services." uppercase="text-uppercase" />
                 <p className="overview_sec_analytics_para">
-                  Unlock growth potential with Advanced Data Analytics Services.
-                  Sakshath specializes in leveraging AI + data science to
+                  
+                  Sakshath Technologies specializes in leveraging AI + data science to
                   provide you with actionable insights that drive growth. Our
                   data integration solutions ensure that your data flows
                   seamlessly across your organization, breaking down silos and
-                  unlocking hidden opportunities. With our BI + Dashboard tools,
+                  unlocking hidden opportunities, with our BI + Dashboard tools,
                   you can visualize your success and make informed decisions
                   faster than ever before.
                 </p>
@@ -143,7 +143,7 @@ export const Analytics = () => {
         <div id="AI+datascience">
           <Element name="AI+datascience">
             <section className="AI_datascience_sec">
-              <div className="container">
+              <div className="container ai_datascience_container">
                 <div className="row align-items-center">
                   {/* <div className="body_sec_three_parent"> */}
                   <div className="col-md-6 ai_data_science_left ipad_full_width">
@@ -164,12 +164,12 @@ export const Analytics = () => {
                       technology that is creating a complete ecosystem and a
                       paradigm shift in virtually every sector of the technology
                       industry, including academia and research.</p>
-                    <ul className="ai_datascience_list">
-                      <li>System engineering</li>
-                      <li>Product delivery</li>
-                      <li>Product ruggedization</li>
-                      <li>Machine learning</li>
-                    </ul>
+                    {/* <ul className="ai_datascience_list">
+                      <li>System Engineering</li>
+                      <li>Product Delivery</li>
+                      <li>Product Ruggedization</li>
+                      <li>Machine Learning</li>
+                    </ul> */}
                   </div>
                   <div className="col-md-6 ai_data_science_right ipad_full_width">
                     <img
@@ -191,7 +191,7 @@ export const Analytics = () => {
                     <div className="ai_datascience_content">
                         <div className="row">
                             <div className="col-md-6 ai_datascience_content_col">
-                              <div className="ai_datascience_content_col_box small_box">
+                              <div className="ai_datascience_content_col_box ai_box1_height">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_01} alt=""  />
                              </div>
@@ -200,7 +200,7 @@ export const Analytics = () => {
                                 <ul className="ai_datascience_content_para_list">
                                     <li>Product feasibility studies</li>
                                     <li>Reliable,effective and cost-effective solutions</li>
-                                    <li>Highly reliable System design with reusability in mind</li>
+                                    <li>Highly reliable system design with reusability in mind</li>
                                 </ul>
                     
                              </div>
@@ -212,7 +212,7 @@ export const Analytics = () => {
                             </div>
 
                             <div className="col-md-6 ai_datascience_content_col">
-                               <div className="ai_datascience_content_col_box">
+                               <div className="ai_datascience_content_col_box ai_box2_height">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_02} alt=""  />
                              </div>
@@ -254,7 +254,7 @@ export const Analytics = () => {
                             </div>
 
                             <div className="col-md-6 ai_datascience_content_col">
-                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_col_box ai_box4_height">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_04} alt=""  />
                              </div>
@@ -286,24 +286,17 @@ export const Analytics = () => {
         <div id="Bi+dashboard">
           <Element name="Bi+dashboard">
             <section className="bi_dashboard_sec">
-              <div className="container">
+              <div className="container bi_dashboard_container">
                 <div className="row align-items-center">
                   <div className="col-md-6 ipad_full_width">
+                    
                     <div className="bi_dashboard_left">
-                      <img
-                        className="img-fluid bi_dashboard_img"
-                        src={ANALYTICS_BI}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6 ipad_full_width">
-                    <div className="bi_dashboard_right">
                       <Heading
                         heading="Bi + dashboard"
                         uppercase="text-uppercase"
                       />
                       <h4>Your Gateway to Business Intelligence</h4>
-                      <h4>*Visualize Success, Drive Results*</h4>
+                      {/* <h4>*Visualize Success, Drive Results*</h4> */}
 
                       <p>
                         Effortlessly monitor key metrics and trends with
@@ -312,14 +305,14 @@ export const Analytics = () => {
                       </p>
 
                       <p>
-                        Engaging Sakshath BI (business intelligence) and
+                        Engaging Sakshath Technologies BI (Business Intelligence) and
                         AI-enabled dynamic dashboards enables clients direct
                         access to the latest insights and better decisions.
                       </p>
 
                       
                           {/* <div className="intergration_list"> */}
-                            <ul className="ai_datascience_list">
+                            {/* <ul className="ai_datascience_list">
                               <li>Intelligent Live dashboard 
   
 
@@ -333,9 +326,18 @@ export const Analytics = () => {
 
                               </li>
                               <li>Experience with bi platforms</li>
-                            </ul>
+                            </ul> */}
                           {/* </div> */}
                         </div>
+                  </div>
+                  <div className="col-md-6 ipad_full_width">
+                  <div className="bi_dashboard_right">
+                      <img
+                        className="img-fluid bi_dashboard_img"
+                        src={ANALYTICS_BI}
+                      />
+                    </div>
+                    
                         {/* <div className="col-md-6 ipad_full_width">
                           <div className="intergration_list">
                             <ul>
@@ -353,7 +355,7 @@ export const Analytics = () => {
                     <div className="ai_datascience_content">
                         <div className="row">
                             <div className="col-md-6 ai_datascience_content_col">
-                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_col_box bi_dashboard_box1_height">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_01} alt=""  />
                              </div>
@@ -387,7 +389,7 @@ export const Analytics = () => {
                             </div>
 
                             <div className="col-md-6 ai_datascience_content_col">
-                               <div className="ai_datascience_content_col_box">
+                               <div className="ai_datascience_content_col_box bi_box3">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_03} alt=""  />
                              </div>
@@ -426,7 +428,7 @@ export const Analytics = () => {
                         
 
                         <div className="col-md-6 ai_datascience_content_col">
-                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_col_box bi_box5">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_05} alt=""  />
                              </div>
@@ -530,7 +532,7 @@ export const Analytics = () => {
         <div id="Dataintegration">
           <Element name="Dataintegration">
             <section className="data_integration_sec">
-              <div className="container">
+              <div className="container data_integration_container">
                 <div className="row align-items-center">
                   {/* <div className="body_sec_three_parent"> */}
                   <div className="col-md-6 ai_data_science_left ipad_full_width">
@@ -542,7 +544,7 @@ export const Analytics = () => {
                     Start optimizing your data AI-ready. You may use dynamic data sources to feed machine learning models by automating the data cleansing and synchronization processes.
 
                     </p>
-                    <ul className="ai_datascience_list">
+                    {/* <ul className="ai_datascience_list">
                       <li>
                       Data synchronization
 
@@ -562,7 +564,7 @@ export const Analytics = () => {
                       <li>
                        Common data model
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                   <div className="col-md-6 ai_data_science_right ipad_full_width">
                     <img
@@ -577,7 +579,7 @@ export const Analytics = () => {
                     <div className="ai_datascience_content">
                         <div className="row">
                             <div className="col-md-6 ai_datascience_content_col">
-                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_col_box data_integration_box1">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_01} alt=""  />
                              </div>
@@ -595,7 +597,7 @@ export const Analytics = () => {
                             </div>
 
                             <div className="col-md-6 ai_datascience_content_col">
-                               <div className="ai_datascience_content_col_box">
+                               <div className="ai_datascience_content_col_box data_integration_box1"> 
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_02} alt=""  />
                              </div>
@@ -628,7 +630,7 @@ export const Analytics = () => {
                             </div>
 
                             <div className="col-md-6 ai_datascience_content_col">
-                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_col_box data_integration_box4">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_04} alt=""  />
                              </div>
@@ -650,7 +652,7 @@ export const Analytics = () => {
                         
 
                         <div className="col-md-6 ai_datascience_content_col">
-                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_col_box data_integration_box4">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_05} alt=""  />
                              </div>
@@ -681,17 +683,10 @@ export const Analytics = () => {
         <div id="Bigdata">
           <Element name="Bigdata">
             <section className="bigdata_sec">
-              <div className="container">
+              <div className="container bigdata_container">
                 <div className="row align-items-center">
                   {/* <div className="body_sec_three_parent"> */}
-                  
                   <div className="col-md-6 bi_dashboard_left ipad_full_width">
-                    <img
-                      className="img-fluid bi_dashboard_img"
-                      src={ANALYTICS_BIG_DATA}
-                    />
-                  </div>
-                  <div className="col-md-6 bi_dashboard_right ipad_full_width">
                     <Heading
                       heading="Big Data"
                       uppercase="text-uppercase"
@@ -700,7 +695,7 @@ export const Analytics = () => {
                     Take full advantage of your data. Employ science, the most up-to-date technologies, and approaches, and get one of your most valuable resources, data, to its fullest potential.
 
                     </p>
-                    <ul className="ai_datascience_list">
+                    {/* <ul className="ai_datascience_list">
                       <li>
                       Data integration
  
@@ -712,7 +707,7 @@ export const Analytics = () => {
 
                       </li>
                       <li>
-                      3. Big Data analytics
+                       Big Data analytics
  
  
                       </li>
@@ -724,16 +719,24 @@ export const Analytics = () => {
                       <li>
                        Software service
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
+                  
+                  <div className="col-md-6 bi_dashboard_right ipad_full_width">
+                    <img
+                      className="img-fluid bi_dashboard_img"
+                      src={ANALYTICS_BIG_DATA}
+                    />
+                  </div>
+                  
                   {/* </div> */}
                 </div>
 
                 <div className="ai_datascience_content_box">
                     <div className="ai_datascience_content">
                         <div className="row">
-                            <div className="col-md-6 ai_datascience_content_col">
-                              <div className="ai_datascience_content_col_box">
+                            <div className="col-md-6 ai_datascience_content_col ">
+                              <div className="ai_datascience_content_col_box bigdata_box1">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_01} alt=""  />
                              </div>
@@ -751,7 +754,7 @@ export const Analytics = () => {
                             </div>
 
                             <div className="col-md-6 ai_datascience_content_col">
-                               <div className="ai_datascience_content_col_box">
+                               <div className="ai_datascience_content_col_box bigdata_box2">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_02} alt=""  />
                              </div>
@@ -767,7 +770,7 @@ export const Analytics = () => {
                             </div>
 
                             <div className="col-md-6 ai_datascience_content_col">
-                               <div className="ai_datascience_content_col_box">
+                               <div className="ai_datascience_content_col_box bigdata_box3">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_03} alt=""  />
                              </div>
@@ -784,7 +787,7 @@ export const Analytics = () => {
                             </div>
 
                             <div className="col-md-6 ai_datascience_content_col">
-                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_col_box bigdata_box4">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_04} alt=""  />
                              </div>
@@ -806,7 +809,7 @@ export const Analytics = () => {
                         
 
                         <div className="col-md-6 ai_datascience_content_col">
-                              <div className="ai_datascience_content_col_box">
+                              <div className="ai_datascience_content_col_box bigdata_box5">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_05} alt=""  />
                              </div>
@@ -827,6 +830,87 @@ export const Analytics = () => {
 
 
                     </div>
+                </div>
+              </div>
+
+
+
+              <h2>dfghjklasdfghj</h2>
+              <div className="bi_feature_sec">
+                <div className="bi_feature_content">
+                    
+                        <div className="row align-items-center">
+                            <div className="col-md-4">
+                                <div className="bi_feature_box">
+                                    <div className="bi_feature_icon">
+                                        <img src="" alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Solutions at a Low Cost</h3>
+                                    <p className="bi_feature_description">When it concerns cost and quality, Sakshath power BI Services is an excellent method to maintain high standards while focusing onservices targeted to your individual needs.</p>
+                                </div>
+                            </div>
+
+
+                            <div className="col-md-4">
+                                <div className="bi_feature_box">
+                                    <div className="bi_feature_icon">
+                                        <img src="" alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Professionals with Certification</h3>
+                                    <p className="bi_feature_description">At Sakshath, our famous and capable teams of seasoned Microsoft Power BI service professionals assist businesses in the process of integrating and optimizing to a more efficient one.</p>
+                                </div>
+                            </div>
+
+
+                            <div className="col-md-4">
+                                <div className="bi_feature_box">
+                                    <div className="bi_feature_icon">
+                                        <img src="" alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Flexible Engagement Models</h3>
+                                    <p className="bi_feature_description">Outsource the entire or part of the project, get dedicated resources on premises, whatever suits your needs, you have our back.</p>
+                                </div>
+                            </div>
+
+                            <div className="col-md-4">
+                                <div className="bi_feature_box">
+                                    <div className="bi_feature_icon">
+                                        <img src="" alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Best Practices Integrated</h3>
+                                    <p className="bi_feature_description">Optimization of your company’s potential is our top goal. We adhere to the best industry practices by customizing the power BI solutions and incorporating it with your organization’s workflow and operations.</p>
+                                </div>
+                            </div>
+
+
+                            <div className="col-md-4">
+                                <div className="bi_feature_box">
+                                    <div className="bi_feature_icon">
+                                        <img src="" alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Training and Post-Implementation Support</h3>
+                                    <p className="bi_feature_description">At Sakshath, our power BI consultants, also industry specialists, offer training and post-implementation support. We want to make sure that you get the most from your.</p>
+                                </div>
+                            </div>
+
+
+                            <div className="col-md-4">
+                                <div className="bi_feature_box">
+                                    <div className="bi_feature_icon">
+                                        <img src="" alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Portfolio Diversification</h3>
+                                    <p className="bi_feature_description">Sakshath assists organization by offering Multi-Layered Solutions with diversified portfolios in a variety of verticals such as manufacturing, automotive, banking, hotel, and travel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
                 </div>
               </div>
 
