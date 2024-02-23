@@ -12,6 +12,7 @@ import { Autoplay } from "swiper/modules";
 
 import "./style.scss";
 import {
+  CLIENT_LOGO45,
   CLIENT_LOGO1,
   CLIENT_LOGO10,
   CLIENT_LOGO11,
@@ -43,6 +44,12 @@ import {
   CLIENT_LOGO36,
   CLIENT_LOGO37,
   CLIENT_LOGO38,
+  CLIENT_LOGO39,
+  CLIENT_LOGO40,
+  CLIENT_LOGO41,
+  CLIENT_LOGO42,
+  CLIENT_LOGO43,
+  CLIENT_LOGO44,
   CLIENT_LOGO3,
   CLIENT_LOGO4,
   CLIENT_LOGO5,
@@ -123,6 +130,9 @@ const ClientLogo = () => {
                     modules={[Autoplay]}
                     className="mySwiper"
                   >
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO16} />
+                    </SwiperSlide>
                     <SwiperSlide>
                       <img src={CLIENT_LOGO17} />{" "}
                     </SwiperSlide>
@@ -234,6 +244,9 @@ const ClientLogo = () => {
                     modules={[Autoplay]}
                     className="mySwiper"
                   >
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO45} />
+                    </SwiperSlide>
                    <SwiperSlide>
                       <img src={CLIENT_LOGO1} />
                     </SwiperSlide>
@@ -279,9 +292,6 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO15} />
                     </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO16} />
-                    </SwiperSlide>
                   </Swiper>
                 </Tab>
                 <Tab
@@ -324,22 +334,22 @@ const ClientLogo = () => {
                     className="mySwiper"
                   >
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO1} />{" "}
+                      <img src={CLIENT_LOGO39} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO2} />
+                      <img src={CLIENT_LOGO40} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO3} />
+                      <img src={CLIENT_LOGO41} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO4} />
+                      <img src={CLIENT_LOGO42} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO5} />
+                      <img src={CLIENT_LOGO43} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO6} />
+                      <img src={CLIENT_LOGO44} />
                     </SwiperSlide>  
                   </Swiper>
                 </Tab>

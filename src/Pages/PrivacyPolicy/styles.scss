@@ -32,41 +32,47 @@ padding-bottom: 40px;
 
 }
 .consent_para{
+    padding-left: 32px;
     border-bottom: 1px dashed #dbdbdb;
     margin-bottom: 20px;
     padding-bottom: 20px;
 
 }
 .Contractual_necessity_para{
+    padding-left: 32px;
     border-bottom: 1px dashed #dbdbdb;
     margin-bottom: 20px;
     padding-bottom: 20px;
 
 }
 .analytics_para{
-
+    padding-left: 32px;
     border-bottom: 1px dashed #dbdbdb;
     margin-bottom: 40px;
     padding-bottom: 40px;
 
 }
 .providing_service_para{
+    padding-left: 32px;
     border-bottom: 1px dashed #dbdbdb;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
 .communiaction_para{
+    padding-left: 32px;
     border-bottom: 1px dashed #dbdbdb;
     margin-bottom: 20px;
     padding-bottom: 20px;
 
 }
 .Third_Party_Service_Providers_para{
+    padding-left: 32px;
     border-bottom: 1px dashed #dbdbdb;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
 .Legal_Compliance_para{
+    padding-left: 32px;
     border-bottom: 1px dashed #dbdbdb;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -102,12 +108,11 @@ padding-bottom: 40px;
     padding-bottom: 40px;
 
 }
-// .contact_information_para{
-//     border-bottom: 1px dashed #dbdbdb;
-//     margin-bottom: 40px;
-//     padding-bottom: 20px;
+.contact_information_para{
+    
+    padding-bottom: 90px;
 
-// }
+}
 
 
 .Personal_Information{
@@ -116,6 +121,7 @@ padding-bottom: 40px;
     font-weight: 700;
 }
 .Usage_Information{
+
 
     font-size: $heading_title32;
     font-family: $rajdhani_font;
@@ -150,35 +156,35 @@ padding-bottom: 40px;
 
 }
 .security_heading{
-    margin-top: 60px;
+    // margin-top: 60px;
     font-size: $heading_title32;
     font-family: $rajdhani_font;
     font-weight: 700;
 
 }
 .your_rights_heading{
-    margin-top: 60px;
+    // margin-top: 60px;
     font-size: $heading_title32;
     font-family: $rajdhani_font;
     font-weight: 700;
 
 }
 .complaints_heading{
-    margin-top: 60px;
+    // margin-top: 60px;
     font-size: $heading_title32;
     font-family: $rajdhani_font;
     font-weight: 700;
 
 }
 .update_to_this_policy_heading{
-    margin-top: 60px;
+    // margin-top: 60px;
     font-size: $heading_title32;
     font-family: $rajdhani_font;
     font-weight: 700;
 
 }
 .contact_information_heading{
-    margin-top: 60px;
+    // margin-top: 60px;
     font-size: $heading_title32;
     font-family: $rajdhani_font;
     font-weight: 700;
@@ -186,6 +192,7 @@ padding-bottom: 40px;
 }
 
 .consent_heading{
+padding-left: 32px;
         
 font-size: 23px;
 font-weight: 700;
@@ -194,6 +201,7 @@ font-family: "Rajdhani", sans-serif;
 
 }
 .Contractual_necessity_heading{
+    padding-left: 32px;
     font-size: 23px;
 font-weight: 700;
 margin-bottom: 7px;
@@ -201,13 +209,18 @@ font-family: "Rajdhani", sans-serif;
 
 }
 .Legal_Obligations_heading{
+    padding-left: 32px;
     font-size: 23px;
 font-weight: 700;
 margin-bottom: 7px;
 font-family: "Rajdhani", sans-serif;
 
 }
+.Legal_Obligations_para{
+    padding-left: 32px;
+}
 .providing_services_heading{
+    padding-left: 32px;
     font-size: 23px;
 font-weight: 700;
 margin-bottom: 7px;
@@ -215,6 +228,7 @@ font-family: "Rajdhani", sans-serif;
 
 }
 .communication_heading{
+    padding-left: 32px;
     font-size: 23px;
 font-weight: 700;
 margin-bottom: 7px;
@@ -222,6 +236,7 @@ font-family: "Rajdhani", sans-serif;
 
 }
 .analytics_heading{
+    padding-left: 32px;
     font-size: 23px;
 font-weight: 700;
 margin-bottom: 7px;
@@ -229,6 +244,7 @@ font-family: "Rajdhani", sans-serif;
 
 }
 .Third_Party_Service_Providers_heading{
+    padding-left: 32px;
     font-size: 23px;
 font-weight: 700;
 margin-bottom: 7px;
@@ -236,6 +252,7 @@ font-family: "Rajdhani", sans-serif;
 
 }
 .Legal_Compliance_heading{
+    padding-left: 32px;
     font-size: 23px;
 font-weight: 700;
 margin-bottom: 7px;
@@ -243,3 +260,20 @@ font-family: "Rajdhani", sans-serif;
 
 
 }
+
+h4::before {
+    position: absolute;
+    content: "\f111";
+    margin-left: -30px;
+    font-family: "FontAwesome";
+    width: 15px;
+    height: 15px;
+    background: #32a4d533;
+    
+    font-size: 9px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    color: #32a4d5;
+    margin-top: 11px;
+  }

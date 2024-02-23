@@ -19,6 +19,7 @@ import {
   CLIENT_LOGO3,
   CLIENT_LOGO4,
   CLIENT_LOGO5,
+  CLIENT_LOGO6,
 } from "../../../Components/ClientLogo/Constant";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
@@ -146,7 +147,7 @@ const menu = [{
               <img src={CLIENT_LOGO5}  />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={CLIENT_LOGO3}  />
+              <img src={CLIENT_LOGO6}  />
             </SwiperSlide>
             
           </Swiper>
