@@ -1,6 +1,7 @@
 export const CLIENTS_BG = require("../../Assets/images/happyClient_bg_image.jpg");
 
 // Domestic Logo
+
 export const CLIENT_LOGO1 = require("../../Assets/images/Clix.png");  
 export const CLIENT_LOGO2 = require("../../Assets/images/Smfc_india_credit.jpg"); 
 export const CLIENT_LOGO3 = require("../../Assets/images/One_Assist.png"); 
@@ -9,21 +10,15 @@ export const CLIENT_LOGO5 = require("../../Assets/images/Daikin.png");
 export const CLIENT_LOGO6 = require("../../Assets/images/Piramal.png");   
 export const CLIENT_LOGO7 = require("../../Assets/images/Abinbev.jpg");  
 export const CLIENT_LOGO8 = require("../../Assets/images/Akshya_pathra.png");  
-export const CLIENT_LOGO9 = require("../../Assets/images/Clariant.png");  
+export const CLIENT_LOGO9 = require("../../Assets/images/Clariant.jpg");  
 export const CLIENT_LOGO10 = require("../../Assets/images/Ace_green_recycling.jpg");
 export const CLIENT_LOGO11 = require("../../Assets/images/Co_operative_Bank.png");
 export const CLIENT_LOGO12 =require("../../Assets/images/Mastek.png");
 export const CLIENT_LOGO13=require("../../Assets/images/Aditya_Birla.jpg");
 export const CLIENT_LOGO14=require("../../Assets/images/Jupiter_hospital.png");
 export const CLIENT_LOGO15=require("../../Assets/images/Chaitanya_Microfinance.jpg");
-// export const CLIENT_LOGO13
-// export const CLIENT_LOGO14
-// export const CLIENT_LOGO15
-// export const CLIENT_LOGO16
-// export const CLIENT_LOGO17
-// export const CLIENT_LOGO18
-// export const CLIENT_LOGO19
-// export const CLIENT_LOGO20
+export const CLIENT_LOGO45=require("../../Assets/images/Fullerton_india.png");
+
 
 
 
@@ -54,7 +49,15 @@ export const CLIENT_LOGO38 = require("../../Assets/images/ABSA.png");
 
 
 
+//patners
+export const CLIENT_LOGO39 = require("../../Assets/images/kotak.jpg");
+export const CLIENT_LOGO40 = require("../../Assets/images/talend.png");
+export const CLIENT_LOGO41 = require("../../Assets/images/HDFC_Bank.png");
+export const CLIENT_LOGO42 = require("../../Assets/images/DNUS.jpg");
+export const CLIENT_LOGO43 = require("../../Assets/images/crawdord.png");
+export const CLIENT_LOGO44 = require("../../Assets/images/aws_partner.jpg");
 
-
+//
+export const CLIENT_LOGO46=require("../../Assets/images/Inox_air.jpg");
 
 // export const CLIENT_LOGO21=require("../../Assets/images/Azenia.jpg");
