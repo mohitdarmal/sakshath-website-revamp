@@ -1,0 +1,198 @@
+@import "../../Assets/saas/Main.scss";
+
+//staffing_main_section
+.staffing_main_section {
+  padding-top: 80px;
+}
+
+.staffing_content {
+  margin-top: 20px;
+  padding-right: 20px;
+}
+.staffing_content li {
+  padding-bottom: 20px;
+}
+
+// staffing Industry
+.staffing_industry_offer_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.staffing_industry_offer_box {
+  box-shadow: 0 2px 20px #73737321;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #32a4d5;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 50px;
+  }
+  h5 {
+    font-family: rajdhani;
+    font-size: 28px;
+    color: #24688f;
+    font-weight: bold;
+    margin-left: 13px;
+  }
+}
+
+.staffing_industry_offer_box:hover {
+  background-color: #32a4d5;
+  transform: scale(1.04, 1.1);
+  transition: 0.5s;
+
+  h5 {
+    color: #fff;
+  }
+}
+
+// why sakshath
+
+.staffing_why_sakshath {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.staffing_why_sak_list {
+  padding: 40px;
+  background: #f2f2f2;
+  position: relative;
+  content: "";
+}
+
+.staffing_why_sak_list li {
+  padding-bottom: 10px;
+}
+.staffing_why_sak_list li::before {
+  content: "\f111";
+  position: absolute;
+  margin-left: -25px;
+  font-family: "FontAwesome";
+  width: 15px;
+  height: 15px;
+  background: rgba(50, 164, 213, 0.2);
+  font-size: 9px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  color: #32a4d5;
+  margin-top: 5px;
+}
+
+.our_staf_service_section {
+  background: #32a4d5;
+}
+.staffing_service {
+  padding: 80px 0 200px;
+  border-radius: 5px;
+  h3 {
+    color: #fff;
+  }
+  p {
+    color: #fff;
+  }
+}
+
+// stafffing job
+
+.staffing_job_section {
+  padding-bottom: 80px;
+  margin-top: -150px;
+}
+.staffing_job_box {
+  box-shadow: 0 2px 20px rgb(0 0 0 / 7%);
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  min-height: 425px;
+  border: 1px solid;
+  h4 {
+    font-family: $rajdhani_font;
+    font-weight: 700;
+    color: #32a4d5;
+    font-size: 28px;
+  }
+}
+
+// benifts
+.staffing_benifit_section {
+  padding-bottom: 80px;
+}
+.benifit_heading {
+  h3 {
+    padding-bottom: 30px;
+  }
+}
+.benifits_col_box_1 {
+  background: #32a4d5;
+  padding: 30px;
+  transition: 0.5s;
+
+  h6 {
+    color: #fff;
+    text-align: center;
+  }
+  img {
+    width: 150px;
+    filter: brightness(0) invert(1);
+  }
+}
+
+.benifits_col_box_2 {
+  background: #24688f;
+  // margin-top: -45px;
+  padding: 30px;
+  transition: 0.5s;
+
+  h6 {
+    color: #fff;
+    text-align: center;
+  }
+  img {
+    width: 120px;
+    filter: brightness(0) invert(1);
+    margin-top: 35px;
+  }
+}
+
+.benifits_col_box_1:hover,
+.benifits_col_box_2:hover {
+  transform: scale(1.12, 1.24);
+  transition: 0.5s;
+}
+
+// discovery starts
+.discovery_section{
+  padding-bottom: 80px;
+}
+.box_dis{
+  position: relative;
+  content: "";
+  padding: 30px;
+  color: #fff;
+  margin-left: 20px;
+  min-height: 257px;
+  background: #23688e;
+  border-radius: 10px;
+}
+
+.dicovery_box p{
+  color: #fff;
+}
+
+.dicovery_box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 12px;
+  width: 48px;
+  height: 30px;
+  background: #ffffff;
+  top: -21px;
+  right: -21px;
+  transform: rotate(48deg);
+  // border-bottom: 3px solid #32a4d5;
+
+}

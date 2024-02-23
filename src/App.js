@@ -26,6 +26,8 @@ import ManagedServices from "./Pages/Service/ManagedServices";
 import Analytics from "./Pages/Service/Analytics";
 import ScrollToTop from "./Components/scrollToTop"
 import OurTeam from "./Pages/OurTeam";
+import  PrivacyPolicy  from "./Pages/PrivacyPolicy";
+import Staffing from "./Pages/Staffing";
 
 
 const App = () => {
@@ -93,6 +95,10 @@ const App = () => {
           <Route path="/managed-services" element={<ManagedServices />} />
           <Route path="/analytics" element={<Analytics />} />
           {/* <Route path="/blogs/:id" element={<BlogDetail />} /> */}
+
+          <Route path="/privacy" element={<PrivacyPolicy/>}/>
+          <Route path='/staffing' element={<Staffing/>}/>
+
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

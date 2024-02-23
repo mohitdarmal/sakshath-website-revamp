@@ -50,7 +50,7 @@ const About = () => {
                     having an ERP offshore development. If not quite a tale of
                     rags to riches, the story of Sakshath Technologies’ rise to
                     stardom certainly came closer. The birth of SAKSHATH
-                    TECHNOLOGIES® in 2015, wouldn’t be possible without the
+                    TECHNOLOGIES in 2015, wouldn’t be possible without the
                     utmost faith and trust of family and friends. <br />
                     <br />
                     Sakshath Technologies’ biggest USP’s are ERP (Epicor, MS
@@ -71,7 +71,7 @@ const About = () => {
 
                      <br />
                     <br />
-                    We go by the saying  <strong>“I’m Sakshath”</strong> the thought behind the phrase is the presence of all the employees<strong> ‘HERE’ and ‘NOW’</strong>. Starting as a self-funded business Sakshath company ethos to date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from the beginning of the journey made what Sakshath Technologies is today, we grew gradually to a family of 150+ employees and now have a domestic presence in 3 metropolitan cities serving clients from all over the world. Celebrating decade milestones, today we take pride in onboarding the team of Country’s Best and strongly believe in Growing Together. 
+                    We go by the saying  <strong>“I’m Sakshath”</strong> the thought behind the phrase is the presence of all the employees<strong> ‘HERE’ and ‘NOW’</strong>. Starting as a self-funded business Sakshath Technologies' company ethos to date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from the beginning of the journey made what Sakshath Technologies is today, we grew gradually to a family of 150+ employees and now have a domestic presence in 3 metropolitan cities serving clients from all over the world. Celebrating decade milestones, today we take pride in onboarding the team of Country’s Best and strongly believe in Growing Together. 
                   </p>
                 </Fade>
               </div>
@@ -126,7 +126,7 @@ const About = () => {
                 <Fade direction="up" delay={150} triggerOnce>
                   It is the desire of Sakshath Technologies to establish itself
                   as a powerful business operation with vibrance and growth
-                  built on Sakshath Technologies® principles that is highly
+                  built on Sakshath Technologies principles that is highly
                   regarded by our customers, stake holders and our employees. As
                   an organization, we want to be in a place where customers rely
                   on the excellence of our products and services.

@@ -190,7 +190,7 @@ const Footer = () => {
                     <Link to="/about">Cookies Policy</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Privacy Policy</Link>
+                    <Link to="/privacy">Privacy Policy</Link>
                   </li>
                 </Fade>
               </ul>
@@ -205,7 +205,7 @@ const Footer = () => {
                 <Fade direction="up">
                   {" "}
                   <p>
-                    Copyrights © 2023 Sakshath Technologies®. All rights
+                    Copyrights © 2023 Sakshath Technologies. All rights
                     reserved.
                   </p>
                 </Fade>
