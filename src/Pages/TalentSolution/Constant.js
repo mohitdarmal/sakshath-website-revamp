@@ -1,0 +1,16 @@
+export const TALENT_SOLUTION = require("../../Assets/images/talent_solutions.jpg");
+export const ANNOUNCEMENT_ICON = require("../../Assets/images/announcement.jpg");
+export const SELECTION_HIRING_ICON = require("../../Assets/images/selection_hiring_bg.png");
+export const SELECTION_HIRING_TWO_DOTS = require("../../Assets/images/two_dot_bg.png");
+export const SMART_IT_OUTSOURCING = require("../../Assets/images/smart_it_outsourcing_bg.png");
+export const INDVIDUAL_TEAM = require("../../Assets/images/individual_team_bg.png");
+export const ANGULAR_LOGO = require("../../Assets/images/angular_logo.png");
+export const REACT_LOGO = require("../../Assets/images/react_logo.png");
+export const NODEJS_LOGO = require("../../Assets/images/nodejs_logo.png");
+export const DEDICATED_DEVELOPER_LOGO = require("../../Assets/images/dedicated_devloper_logo.png");
+export const RUBY_RAILS_LOGO = require("../../Assets/images/ruby_rails_logo.png");
+export const DOTNET_LOGO = require("../../Assets/images/dotnet_logo.png");
+export const PYTHON_LOGO = require("../../Assets/images/python_logo.png");
+export const DEVELOPMENT_TEAMS_LOGO = require("../../Assets/images/development_teams_logo.png");
+export const MOBILE_APP_LOGO = require("../../Assets/images/mobile_app_logo.png");
+export const REACT_NATIVE_LOGO = require("../../Assets/images/react_native_logo.png");
