@@ -30,6 +30,7 @@ import {
 
 
 } from "./Constant";
+import { RPA_DELIVERY } from "../Automation/Constant";
 import Faq from "../../../Components/Faq";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -451,6 +452,91 @@ export const Analytics = () => {
                     </div>
                 </div>
               </div>
+
+
+              <div className="bi_feature_sec">
+               <div className="bi_key_feature_heading_box">
+                  <Heading heading="BI Key Features" uppercase="text-uppercase" />
+                </div>
+              
+                <div className="bi_feature_content">
+                    
+                        <div className="row align-items-center">
+                            <div className="col-md-4">
+                                <div className="bi_feature_box bi_feature_box1">
+                                    <div className="bi_feature_icon">
+                                        <img src={ RPA_DELIVERY } alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Solutions at a Low Cost</h3>
+                                    <p className="bi_feature_description">When it concerns cost and quality, Sakshath power BI Services is an excellent method to maintain high standards while focusing onservices targeted to your individual needs.</p>
+                                </div>
+                            </div>
+
+
+                            <div className="col-md-4">
+                                <div className="bi_feature_box bi_feature_box2 bi_feature_box2_bgcolor">
+                                    <div className="bi_feature_icon">
+                                        <img src={ RPA_DELIVERY } alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Professionals with Certification</h3>
+                                    <p className="bi_feature_description">At Sakshath, our famous and capable teams of seasoned Microsoft Power BI service professionals assist businesses in the process of integrating and optimizing to a more efficient one.</p>
+                                </div>
+                            </div>
+
+
+                            <div className="col-md-4">
+                                <div className="bi_feature_box bi_feature_box3 bi_feature_box3_bgcolor">
+                                    <div className="bi_feature_icon">
+                                        <img src={ RPA_DELIVERY } alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Flexible Engagement Models</h3>
+                                    <p className="bi_feature_description">Outsource the entire or part of the project, get dedicated resources on premises, whatever suits your needs, you have our back.</p>
+                                </div>
+                            </div>
+
+                            <div className="col-md-4">
+                                <div className="bi_feature_box bi_feature_box4 bi_feature_box4_bgcolor">
+                                    <div className="bi_feature_icon">
+                                        <img src={ RPA_DELIVERY } alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Best Practices Integrated</h3>
+                                    <p className="bi_feature_description">Optimization of your company’s potential is our top goal. We adhere to the best industry practices by customizing the power BI solutions and incorporating it with your organization’s workflow and operations.</p>
+                                </div>
+                            </div>
+
+
+                            <div className="col-md-4">
+                                <div className="bi_feature_box bi_feature_box5 bi_feature_box5_bgcolor">
+                                    <div className="bi_feature_icon">
+                                        <img src={ RPA_DELIVERY } alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Training and Post-Implementation Support</h3>
+                                    <p className="bi_feature_description">At Sakshath, our power BI consultants, also industry specialists, offer training and post-implementation support. We want to make sure that you get the most from your.</p>
+                                </div>
+                            </div>
+
+
+                            <div className="col-md-4">
+                                <div className="bi_feature_box bi_feature_box6 bi_feature_box6_bgcolor">
+                                    <div className="bi_feature_icon">
+                                        <img src={ RPA_DELIVERY } alt="" />
+
+                                    </div>
+                                    <h3 className="bi_feature_title">Portfolio Diversification</h3>
+                                    <p className="bi_feature_description">Sakshath assists organization by offering Multi-Layered Solutions with diversified portfolios in a variety of verticals such as manufacturing, automotive, banking, hotel, and travel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+              </div>
+
+
                   </div>
                 
               
@@ -835,84 +921,8 @@ export const Analytics = () => {
 
 
 
-              <h2>dfghjklasdfghj</h2>
-              <div className="bi_feature_sec">
-                <div className="bi_feature_content">
-                    
-                        <div className="row align-items-center">
-                            <div className="col-md-4">
-                                <div className="bi_feature_box">
-                                    <div className="bi_feature_icon">
-                                        <img src="" alt="" />
-
-                                    </div>
-                                    <h3 className="bi_feature_title">Solutions at a Low Cost</h3>
-                                    <p className="bi_feature_description">When it concerns cost and quality, Sakshath power BI Services is an excellent method to maintain high standards while focusing onservices targeted to your individual needs.</p>
-                                </div>
-                            </div>
-
-
-                            <div className="col-md-4">
-                                <div className="bi_feature_box">
-                                    <div className="bi_feature_icon">
-                                        <img src="" alt="" />
-
-                                    </div>
-                                    <h3 className="bi_feature_title">Professionals with Certification</h3>
-                                    <p className="bi_feature_description">At Sakshath, our famous and capable teams of seasoned Microsoft Power BI service professionals assist businesses in the process of integrating and optimizing to a more efficient one.</p>
-                                </div>
-                            </div>
-
-
-                            <div className="col-md-4">
-                                <div className="bi_feature_box">
-                                    <div className="bi_feature_icon">
-                                        <img src="" alt="" />
-
-                                    </div>
-                                    <h3 className="bi_feature_title">Flexible Engagement Models</h3>
-                                    <p className="bi_feature_description">Outsource the entire or part of the project, get dedicated resources on premises, whatever suits your needs, you have our back.</p>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4">
-                                <div className="bi_feature_box">
-                                    <div className="bi_feature_icon">
-                                        <img src="" alt="" />
-
-                                    </div>
-                                    <h3 className="bi_feature_title">Best Practices Integrated</h3>
-                                    <p className="bi_feature_description">Optimization of your company’s potential is our top goal. We adhere to the best industry practices by customizing the power BI solutions and incorporating it with your organization’s workflow and operations.</p>
-                                </div>
-                            </div>
-
-
-                            <div className="col-md-4">
-                                <div className="bi_feature_box">
-                                    <div className="bi_feature_icon">
-                                        <img src="" alt="" />
-
-                                    </div>
-                                    <h3 className="bi_feature_title">Training and Post-Implementation Support</h3>
-                                    <p className="bi_feature_description">At Sakshath, our power BI consultants, also industry specialists, offer training and post-implementation support. We want to make sure that you get the most from your.</p>
-                                </div>
-                            </div>
-
-
-                            <div className="col-md-4">
-                                <div className="bi_feature_box">
-                                    <div className="bi_feature_icon">
-                                        <img src="" alt="" />
-
-                                    </div>
-                                    <h3 className="bi_feature_title">Portfolio Diversification</h3>
-                                    <p className="bi_feature_description">Sakshath assists organization by offering Multi-Layered Solutions with diversified portfolios in a variety of verticals such as manufacturing, automotive, banking, hotel, and travel.</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div>
-              </div>
+              
+              
 
 
               </div>

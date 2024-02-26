@@ -17,7 +17,7 @@ import OurJounery from "./Pages/About/Our_Jounery";
 //import Contactus from "./Components/Contact/Contact";
 import Blog from "./Pages/Blogs";
 import BlogDetail from "./Pages/Blogs/BlogDetail";
-import OurAchivements from "./Pages/About/Our_Achivements";
+import OurAchivements from "./Pages/About/OurAchivements";
 // import ScrollUpJounery from "./Pages/About/ScrollUpJounery";
 import Integration from "./Pages/Service/Integration";
 import Automation from "./Pages/Service/Automation";
@@ -28,6 +28,7 @@ import ScrollToTop from "./Components/scrollToTop"
 import OurTeam from "./Pages/OurTeam";
 import  PrivacyPolicy  from "./Pages/PrivacyPolicy";
 import Staffing from "./Pages/Staffing";
+import TalentSolution from "./Pages/TalentSolution";
 
 
 const App = () => {
@@ -98,6 +99,7 @@ const App = () => {
 
           <Route path="/privacy" element={<PrivacyPolicy/>}/>
           <Route path='/staffing' element={<Staffing/>}/>
+          <Route path="/talent-solution" element={<TalentSolution/>} />
 
           <Route path="*" element={<NotFound />} />
         </Route>

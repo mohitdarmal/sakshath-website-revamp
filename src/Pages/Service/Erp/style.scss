@@ -309,14 +309,13 @@ li {
     font-weight: 700;
   }
 }
-// Industrys
+// Industrys start
 .top_industry {
   display: flex;
   margin-bottom: 20px;
 
   .industry_box1 {
     background: linear-gradient(45deg, #99d2eac9, transparent);
-    // padding: 10px;
     text-transform: capitalize;
     width: 280px;
     h5 {
@@ -386,6 +385,9 @@ li {
     margin-left: 26px;
   }
 }
+
+
+// industry ends
 
 //dynamics
 .dynamic_content{

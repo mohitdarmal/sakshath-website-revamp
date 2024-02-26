@@ -25,42 +25,42 @@ const Staffing = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
-            <Fade direction="up" delay={300} triggerOnce>
-              <div className="staffing_main_headig">
-                <Heading heading="Helping Organizations Match Great Talent to Great Opportunity" />
-              </div>
+              <Fade direction="up" delay={300} triggerOnce>
+                <div className="staffing_main_headig">
+                  <Heading heading="Helping Organizations Match Great Talent to Great Opportunity" />
+                </div>
               </Fade>
               <Fade direction="up" delay={300} triggerOnce>
-              <div className="staffing_content">
-                {/* <ul> */}
-                <li>
-                  Sakshath Technologies understands the critical importance of
-                  connecting exceptional talent with ideal opportunities for
-                  organizational success. Whether you're a small business or a
-                  large corporation with an established HR department, sourcing
-                  the right individuals can be challenging.
-                </li>
+                <div className="staffing_content">
+                  {/* <ul> */}
+                  <li>
+                    Sakshath Technologies understands the critical importance of
+                    connecting exceptional talent with ideal opportunities for
+                    organizational success. Whether you're a small business or a
+                    large corporation with an established HR department,
+                    sourcing the right individuals can be challenging.
+                  </li>
 
-                <li>
-                  Sakshath Technologies offers enhanced access to talent and a
-                  refined approach to aligning the right individual with the
-                  job, resulting in expedited and improved business outcomes.
-                </li>
-                <li>
-                  We take a proactive approach with our clients to address the
-                  constantly increasing demand for the workforce while focusing
-                  on improving productivity, reducing costs, ensuring statutory
-                  compliance, and facilitating swift mobilization and
-                  demobilization of resources.
-                  <br />
-                  <br />
-
-
-
-                  <SlideAnimationButton btnName="Get Started Now" url="/contact-us" />
-                </li>
-                {/* </ul> */}
-              </div>
+                  <li>
+                    Sakshath Technologies offers enhanced access to talent and a
+                    refined approach to aligning the right individual with the
+                    job, resulting in expedited and improved business outcomes.
+                  </li>
+                  <li>
+                    We take a proactive approach with our clients to address the
+                    constantly increasing demand for the workforce while
+                    focusing on improving productivity, reducing costs, ensuring
+                    statutory compliance, and facilitating swift mobilization
+                    and demobilization of resources.
+                    <br />
+                    <br />
+                    <SlideAnimationButton
+                      btnName="Get Started Now"
+                      url="/contact-us"
+                    />
+                  </li>
+                  {/* </ul> */}
+                </div>
               </Fade>
             </div>
             <div className="col-md-6">
@@ -74,9 +74,6 @@ const Staffing = () => {
 
       {/* staffing mian ends */}
 
-
-     
-
       {/* staffing benfits start*/}
       <section className="staffing_industry_offer_section">
         <div className="container">
@@ -85,58 +82,53 @@ const Staffing = () => {
               <Heading heading="Industries In Which We Offer" />
             </div>
           </div>
-
           <div className="row">
-        
             <div className="col-md-3">
-            <Fade direction="up"  triggerOnce>
-              <div className="staffing_industry_offer_box ">
-                <img src={RPA_BOT} alt="" />
-                <h5>Fintech</h5>
-              </div>
+              <Fade direction="up" triggerOnce>
+                <div className="staffing_industry_offer_box ">
+                  <img src={RPA_BOT} alt="" />
+                  <h5>Fintech</h5>
+                </div>
               </Fade>
             </div>
             <div className="col-md-3">
-            <Fade direction="up"  triggerOnce>
-              <div className="staffing_industry_offer_box ">
-                <img src={RPA_BOT} alt="" />
-                <h5>IT & ITES</h5>
-              </div>
+              <Fade direction="up" triggerOnce>
+                <div className="staffing_industry_offer_box ">
+                  <img src={RPA_BOT} alt="" />
+                  <h5>IT & ITES</h5>
+                </div>
               </Fade>
             </div>
             <div className="col-md-3">
-            <Fade direction="up"  triggerOnce>
-              <div className="staffing_industry_offer_box ">
-                <img src={RPA_BOT} alt="" />
-                <h5>Telecom</h5>
-              </div>
+              <Fade direction="up" triggerOnce>
+                <div className="staffing_industry_offer_box ">
+                  <img src={RPA_BOT} alt="" />
+                  <h5>Telecom</h5>
+                </div>
               </Fade>
             </div>
             <div className="col-md-3">
-            <Fade direction="up"  triggerOnce>
-              <div className="staffing_industry_offer_box ">
-                <img src={RPA_BOT} alt="" />
-                <h5>Automotive</h5>
-              </div>
+              <Fade direction="up" triggerOnce>
+                <div className="staffing_industry_offer_box ">
+                  <img src={RPA_BOT} alt="" />
+                  <h5>Automotive</h5>
+                </div>
               </Fade>
             </div>
-          
           </div>
-        
         </div>
       </section>
       {/* staffing benfits end */}
 
- {/* content2 */}
- <Fade direction="up"  triggerOnce>
-      <CallToAction
-        ctaContent={
-          "We focus on providing a quality staffing service for our clients and a smooth career transition for our candidates. "
-        }
-      />
+      {/* content2 */}
+      <Fade direction="up" triggerOnce>
+        <CallToAction
+          ctaContent={
+            "We focus on providing a quality staffing service for our clients and a smooth career transition for our candidates. "
+          }
+        />
       </Fade>
       {/* content2 */}
-      
 
       <section className="staffing_why_sakshath">
         <div className="container">
@@ -202,12 +194,12 @@ const Staffing = () => {
           </div>
         </div>
       </section>
-
+{/* staffing JOb starts */}
       <section className="staffing_job_section">
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <div className="staffing_job_box">
+              <div className="staffing_job_box1">
                 <h4>Contract</h4>
                 <p>
                   Placements on a contract basis are ideal for companies that
@@ -236,7 +228,7 @@ const Staffing = () => {
               </div>
             </div>
             <div className="col-md-4">
-              <div className="staffing_job_box">
+              <div className="staffing_job_box1">
                 <h4>Full Time</h4>
                 <p>
                   Full-time employment is the perfect option for companies that
@@ -247,11 +239,10 @@ const Staffing = () => {
                 </p>
               </div>
             </div>
-            {/* <div className="col-md-4"></div> */}
-            {/* <div className="col-md-4"></div> */}
           </div>
         </div>
       </section>
+      {/* staffing job ends */}
 
       {/* Staffing Benifits starts */}
       <section className="staffing_benifit_section">
@@ -263,8 +254,8 @@ const Staffing = () => {
           </div>
           <div className="row">
             {/* <div className="col-md-12"> */}
-            <div className="col-md-2"></div>
-            <div className="col-md-8 d-flex">
+            {/* <div className="col-md-1"></div> */}
+            <div className="col-md-12 d-flex">
               <div className="col-md-3 benifits_col_box_1">
                 <div className="staffing_benifit">
                   <h6>Effective and Unconventional Recruitment Strategies</h6>
@@ -290,7 +281,7 @@ const Staffing = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-2"></div>
+            {/* <div className="col-md-1"></div> */}
             {/* </div> */}
           </div>
         </div>
@@ -330,7 +321,7 @@ const Staffing = () => {
               </div>
             </div>
             <div className="col-md-4">
-              <div className="box_dis">
+              <div className="box_dis ">
                 <div className="dicovery_box">
                   <h4>Execute</h4>
 
