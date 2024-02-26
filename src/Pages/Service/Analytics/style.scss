@@ -205,20 +205,113 @@ margin-bottom: 80px;
 }
 
 
+.bi_key_feature_heading_box{
+    text-align: center;
+}
+
+
 .bi_feature_box{
-    background-color: #fff;
+    background: #fff;
+     
     border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 35px;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.3) inset;
     
 }
-.bi_feature_box::before{
-    content: "";
-    background: #f67d4a;
-    height: 45px;
-    width: 100%;
-    box-shadow: 0 -3px 8px rgba(0,0,0,0.3) inset;
-    position: absolute;
-    top: 0;
-    left: 0;
+// .bi_feature_box::before{
+//     content: "";
+//     background:#4ABFF6;
+//     border-top-right-radius: 20px;
+//     height: 40px;
+//     //width: 24.3%;
+//     width: 372px;
+//     box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.3) inset;
+//     position: absolute;
+//     /* top: 332px; */
+//     /* left: 42px; */
+//     margin-left: -186px;
+//     /* margin-right: 48px; */
+//     border-top-left-radius: 20px;
+//     margin-top: -25px;
+// }
+// .bi_feature_box::after{
+//     content: "";
+//     background: #4ABFF6;
+//     border-bottom-right-radius: 20px;
+//     height: 40px;
+//    // width: 24.3%;
+//     width: 372px;
+//     box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.3) inset;
+//     position: absolute;
+//     /* top: 332px; */
+//     /* left: 42px; */
+//     margin-left: -186px;
+//     /* margin-right: 48px; */
+//     border-bottom-left-radius: 20px;
+//    // margin-top: -25px;
+// }
+
+// .bi_feature_box2_bgcolor::before,.bi_feature_box2_bgcolor::after{
+//     background: #63C9F8;
+// }
+// .bi_feature_box3_bgcolor::before,.bi_feature_box3_bgcolor::after{
+//     background: #77CFF9;
+// }
+// .bi_feature_box4_bgcolor::before,.bi_feature_box4_bgcolor::after{
+//     background: #89D6FA;
+// }
+// .bi_feature_box5_bgcolor::before,.bi_feature_box5_bgcolor::after{
+//     background: #9DDDFB;
+// }
+// .bi_feature_box6_bgcolor::before,.bi_feature_box6_bgcolor::after{
+//     background: #B1E4FC;
+// }
+.bi_feature_icon img{
+    width: 70px;
+    margin-bottom: 6px;
+}
+
+
+.bi_feature_box1{
+    padding: 57px;
+}
+.bi_feature_box3{
+    padding: 67px;
+
+    
+}
+.bi_feature_box2{
+    padding: 56px;
+}
+// .bi_feature_box3::before{
+//     margin-top: -37px;
+    
+
+    
+// }
+// .bi_feature_box3::after{
+//     margin-top: 12px;
+    
+
+    
+// }
+.bi_feature_box4{
+    padding: 57px;
+}
+
+.bi_feature_box5{
+    padding: 52px;
+}
+
+.bi_feature_box6{
+    padding: 68px;
+}
+
+.bi_feature_title{
+    font-family: $rajdhani_font;
+    font-weight: 700;
 }
 
 
