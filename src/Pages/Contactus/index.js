@@ -95,7 +95,7 @@ const handleSubmit = (e) => {
             <div className="col-md-5 position-relative">
               <div className="head_location">
                 <img src={REGISTERED_ICON} />
-                <h2>Registered Office</h2>
+                <h2>Corporate Office</h2>
                 <ul>
                   <li className="address">
                     Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV,
