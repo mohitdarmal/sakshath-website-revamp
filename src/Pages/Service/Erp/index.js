@@ -458,19 +458,12 @@ const Erp = () => {
       {/* EPICOR  overview  ends*/}
       <section className="industry_section">
         <div className="container">
-          <div className="row">
-            <div className="col-md-12">
+        <div className="row">
               <div className="industry_main_heading text-center">
                 <Heading heading="Industry" uppercase="text-uppercase" />
               </div>
             </div>
-
-            {/* <div className="col-md-3">
-              <div className="industry_main_heading">
-                <Heading heading="Industry" uppercase="text-uppercase" />
-              </div>
-            </div> */}
-
+          <div className="row">
             <div className="col-md-12">
               <div className="top_industry d-flex">
                 <div className="industry_box1">
