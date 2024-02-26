@@ -178,7 +178,7 @@ const Footer = () => {
                     <Link to="">Premium Support</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Need a Career ?</Link>
+                    <Link to="/talent-solution">Talent Solution</Link>
                   </li>
                   <li className="mt-3">
                     <Link to="/about">Help & FAQ</Link>
