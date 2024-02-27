@@ -53,6 +53,7 @@ import {
 } from "../../../Components/ClientLogo/Constant";
 import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
+import WhySaksahthNew from "../../../Components/WhySakshathNew";
 
 const Automation = () => {
   const menu = [
@@ -69,6 +70,52 @@ const Automation = () => {
       title: "Devops/Testing",
     },
   ];
+
+  const whyDEVOPS = [
+    {
+      id: 1,
+      title: "REMARKABLE EXPERTISE",
+      description:
+        " Being a market leader, we provide cloud-native business applications and have helped companies make the necessary operational changes to benefit from the distributed architecture of the cloud.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 2,
+      title: "ABSOLUTE RESILIENCES",
+      description:
+        "Gain access to these cloud-native applications’ size, resiliency, elasticity, and agility by collaborating with Sakshath.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 3,
+      title: "RESULTS-DRIVEN DESIGN",
+      description:
+        " Excellent apps are successful because they provide a solution.Our design team is here to assist you in testing your concepts and crafting the best version of your product.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 4,
+      title: "ACCURATE IT SUPPORT",
+      description:
+        " The domain-driven design methodology breaks down apps into business solutions for simple utilization and cost optimization.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 5,
+      title: "SUPERIORITY & SAFETY",
+      description:
+        " We introduce new cloud services and features to revamp your company without sacrificing security or quality.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 6,
+      title: "ADDING NEW CAPABILITIES",
+      description:
+        " By embracing our cloud-native development solution, your company’s capabilities will improve in trying to meet, win, and retain consumer demands. Be swift and constant.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+  ];
+
   return (
     <>
       <BreadCumb
@@ -303,112 +350,7 @@ const Automation = () => {
         {/* </div> */}
       </section>
 
-      {/* <section className="pillar_section">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-5 ">
-              <div className="pillar_heading">
-                <Heading
-                  heading="4 PILLARS OF SAKSHATH"
-                  uppercase="text-uppercase"
-                />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
-                  consequatur? Distinctio delectus.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-7">
-              <div className="row">
-                <div className="col-md-6">
-                  <div className="pillars_box">
-                    <div className="pillars_box_img">
-                      <img src={pillar_modern} alt="" />
-                    </div>
-                    <div className="pillar_title">
-                      <p>Modern Design & Architecture</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="pillars_box">
-                    <div className="pillars_box_img">
-                      <img src={pillar_microservice} alt="" />
-                    </div>
-                    <div className="pillar_title">
-                      <p>Microservices</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6">
-                  <div className="pillars_box">
-                    <div className="pillars_box_img">
-                      <img src={pillar_bank} alt="" />
-                    </div>
-                    <div className="pillar_title">
-                      <p>Containers Backing Services</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="pillars_box">
-                    <div className="pillars_box_img">
-                      <img src={pillar_automation} alt="" />
-                    </div>
-                    <div className="pillar_title">
-                      <p>Automation</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/*automation ends */}
-
-      {/* mobile Application starts */}
-      {/* <section className="mobile_section">
-        <div className="container">
-          <div className="row">
-            <div className="mobile_main_heading text-center pb-4">
-              <Heading
-                heading="Mobile Application Development"
-              />
-            </div>
-
-            <div className="col-md-4 andriod_app">
-              <div className="mobile_application_img">
-                <img src={ANDRIOD_APP} alt="" />
-              </div>
-              <div className="mobile_application_heading">
-                <h5>Android Development</h5>
-              </div>
-           
-            </div>
-            <div className="col-md-4 ios_app">
-              <div className="mobile_application_img">
-                <img src={IOS_APPLE} alt="" />
-              </div>
-              <div className="mobile_application_heading">
-                <h5>iOS Development</h5>
-                
-              </div>
-            </div>
-            <div className="col-md-4 cross_platform">
-              <div className="mobile_application_img">
-                <img src={CROSS_PLATFORM_APP} alt="" />
-              </div>
-              <div className="mobile_application_heading">
-                <h5>Cross Platform Development</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* mobile Application starts */}
 
       {/* mobile application ends */}
       <section className="mobile_section">
@@ -531,16 +473,6 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
-              {/* <div className="application_integration">
-                <div className="api_box">
-                  <h4> Open API business strategy for monetization of API’s</h4>
-                  <span>
-                    Open API business strategy for monetization of API’s. API
-                    Gateway/Manager. Hybrid Integration. In-Built Connectors,
-                    Enterprise Service Bus (ESB). Pluggable Adaptors.
-                  </span>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -805,20 +737,20 @@ const Automation = () => {
           <Swiper
             breakpoints={{
               320: {
-                slidesPerView:2,
-                spaceBetween:30
+                slidesPerView: 2,
+                spaceBetween: 30,
               },
               481: {
-                slidesPerView:3,
-                spaceBetween:30
+                slidesPerView: 3,
+                spaceBetween: 30,
               },
               768: {
-                slidesPerView:3,
-                spaceBetween:30
+                slidesPerView: 3,
+                spaceBetween: 30,
               },
               1024: {
                 slidesPerView: 5,
-                spaceBetween:30
+                spaceBetween: 30,
               },
             }}
             spaceBetween={20}
@@ -1096,7 +1028,7 @@ const Automation = () => {
       </section> */}
 
       {/* Why Sakshath starts*/}
-      <WhySakshath />
+      <WhySaksahthNew whyCrm={whyDEVOPS} />
       {/* why sakshath ends */}
     </>
   );

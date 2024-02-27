@@ -5,7 +5,6 @@ import Heading from "../../../Components/Utils/Heading";
 import { ABOUT_BANNER, SAFE } from "../../../Components/Breadcumb/Constant";
 import SubTitle from "../../../Components/Utils/Title_head";
 import { Fade } from "react-awesome-reveal";
-// import Contact from "../../../Components/Contact/Contact";
 import BreadCumb from "../../../Components/Breadcumb";
 import TimelineObserver from "react-timeline-animation";
 
@@ -61,7 +60,7 @@ const OurJounery = () => {
   const CoreValueData = [
     {
       id: 1,
-      name: "Honsety",
+      name: "Honesty",
       description:
         "A culture of honesty results in more than “happy” workplaces, and a deep-seated respect and expectation for honesty makes companies more successful and more profitable.",
       image: require("../../../Assets/images/Honesty.png"),
@@ -130,6 +129,9 @@ const OurJounery = () => {
           </div>
         </div>
       </section> */}
+
+
+      {/* Inception starts */}
       <Inception />
       {/* our jounery ends */}
       {/* Core values starts */}

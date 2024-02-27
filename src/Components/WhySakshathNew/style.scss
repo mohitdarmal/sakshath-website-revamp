@@ -1,0 +1,152 @@
+@import "../../Assets/saas/Main.scss";
+
+// .why_sak_col {
+//   display: flex;
+//   justify-content: space-between;
+//   position: sticky;
+//   // padding: ;
+// }
+
+
+.why_sakshath_new_section{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.why_sakshath_heading h3{
+  margin-bottom: 60px;
+}
+.why_sakshath_content1 {
+  background: rgb(128 128 128 / 23%);
+  padding: 25px;
+  min-height: 480px;
+
+  img {
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: -80px;
+    margin-bottom: 40px;
+    z-index: 1;
+    position: relative;
+    border: 4px solid;
+  }
+
+  h5 {
+    font-family: rajdhani;
+    font-weight: 700;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    margin-top: -6px;
+  }
+  p {
+    margin-top: 72px;
+    z-index: 99;
+    position: relative;
+  }
+}
+.why_sakshath_container1 {
+  position: relative;
+  content: "";
+  transition: 0.5s;
+}
+
+
+.why_sakshath_content1::before {
+  position: absolute;
+  content: "";
+  clip-path: polygon(100% 0, 100% 50%, 49% 84%, 0 44%, 0% 0%);
+  background: #23688f;
+  width: 100%;
+  height: 42%;
+  top: 0;
+  left: 0px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+// .why_sakshath_content1:hover::before{clip-path: none; height: 100%; transition: 0.5s;}
+// .why_sakshath_content1:hover{
+//     p{color: #fff;}
+// }
+
+.why_sakshath_content1:nth-child(even):hover::before {
+  clip-path: none;
+  height: 100%;
+  transition: 0.5s;
+  background: #23688f;
+}
+
+.why_sakshath_content1::before .why_sakshath_container1:nth-child(even) { background: #23688f;}
+.why_sakshath_content1::before .why_sakshath_container1:nth-child(odd) { background: #32a4d5;}
+
+.why_sakshath_content1:nth-child(even):hover {
+  p {
+    color: #fff;
+  }
+}
+
+.why_sakshath_content1:nth-child(odd):hover::before {
+  clip-path: none;
+  height: 100%;
+  transition: 0.5s;
+  background: #32a4d5;
+}
+
+.why_sakshath_content1:nth-child(odd):hover {
+  p {
+    color: #fff;
+  }
+}
+
+
+
+
+
+// .why_sakshath_content2 {
+//     background: rgb(128 128 128 / 12%);
+//     padding: 30px;
+
+//     img {
+//       background: #fff;
+//       border-radius: 50px;
+//       padding: 10px;
+//       margin-top: -80px;
+//       margin-bottom: 40px;
+//       z-index: 1;
+//       position: relative;
+//       border: 4px solid;
+
+//     }
+
+//     h5 {
+//       font-family: rajdhani;
+//       font-weight: 700;
+//       color: #fff;
+//       z-index: 1;
+//       position: relative;
+//     }
+//     p {
+//       margin-top: 65px;
+//       position: relative;
+//     }
+//   }
+//   .why_sakshath_container2 {
+//     position: relative;
+//     content: "";
+//   }
+//   .why_sakshath_content2::before {
+//     position: absolute;
+//     content: "";
+//     clip-path: polygon(100% 0, 100% 50%, 49% 84%, 0 44%, 0% 0%);
+//     background: #32a4d5;
+//     width: 100%;
+//     height: 42%;
+//     top: 0;
+//     left: 0px;
+//   }
+
+//   .why_sakshath_content2:hover::before{clip-path: none; height: 100%; transition: 0.5s;}
+// .why_sakshath_content2:hover{
+//     p{color: #fff;}
+// }

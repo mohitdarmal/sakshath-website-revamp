@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.scss";
 import {
   ABOUT_WHO_WE_ARE,
   EPICOR_OVERVIEW,
+  INDUSTRY_IMG,
   SUPPLY_CHAIN_IMG,
   Who_we_r,
 } from "./Constant";
@@ -12,214 +13,66 @@ import BreadCumb from "../../../Components/Breadcumb";
 import { EXPERIENCE } from "../../../Components/OurPrincipals/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 import CallToAction from "../../../Components/CallToAction";
-
+import WhySaksahthNew from "../../../Components/WhySakshathNew";
+import { Col } from "react-bootstrap";
 
 const Erp = () => {
+  const whyDEVOPS = [
+    {
+      id: 1,
+      title: "REMARKABLE EXPERTISE",
+      description:
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit.Fuga, autem doloremque? Aut fugiat odio illo id iste similique esse ea alias officiis dolorum, expedita,asperiores optio natus dolorem possimus amet?",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 2,
+      title: "ABSOLUTE RESILIENCE",
+      description:
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit.Fuga, autem doloremque? Aut fugiat odio illo id iste similique esse ea alias officiis dolorum, expedita,asperiores optio natus dolorem possimus amet?",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 3,
+      title: "RESULTS-DRIVEN DESIGN",
+      description:
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit.Fuga, autem doloremque? Aut fugiat odio illo id iste similique esse ea alias officiis dolorum, expedita,asperiores optio natus dolorem possimus amet?",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 4,
+      title: "ACCURATE IT SUPPORT",
+      description:
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit.Fuga, autem doloremque? Aut fugiat odio illo id iste similique esse ea alias officiis dolorum, expedita,asperiores optio natus dolorem possimus amet?",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 5,
+      title: "SUPERIORITY & SAFETY",
+      description:
+        " We introduce new cloud services and features to revamp your company without sacrificing security or quality.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 6,
+      title: "ADDING NEW CAPABILITIES",
+      description:
+        " By embracing our cloud-native development solution, your company’s capabilities will improve in trying to meet, win, and retain consumer demands. Be swift and constant.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+  ];
+
+  const [whyComp, setWhyComp] = useState([]);
+
+  useEffect(() => {
+    setWhyComp(whyDEVOPS);
+  }, []);
+
   return (
     <>
       {" "}
       <BreadCumb imgUrl={ABOUT_BANNER} title="ERP" />
-      {/* EPICOR  overview  starts*/}
-      {/* <section className="epicor_section">
-        <div className="container">
-          <div className="row align-items-center">
-
-            <div className="col-md-6">
-              <div className="epicor_content">
-                <div className="epicor_overview_main_heading text-center">
-                  <Heading heading=" EPICOR OVERVIEW " />
-                </div>
-                <div className="epicor_list">
-                  <ul>
-                    <li>
-                      Epicor’s powerful ERP platform and enterprise applications
-                      give you the fixability and agility you need to compete in
-                      today’s global space by assisting you in operations
-                      management optimizations and streamlining processes.
-                    </li>
-                    <li>
-                      Going beyond traditional ERP, our company provides an
-                      end-to-end software solution from Epicor that streamlines
-                      and optimizes crucial business departments, such as
-                      financial, inventory, and manufacturing management
-                      efficiencies.
-                    </li>
-                    <li>
-                      Epicor’s custom industry-specific business software
-                      solutions provided by Sakshath Technologies® are used by
-                      thousands of companies across several industries and
-                      verticals.
-                    </li>
-                    <li>
-                      These include healthcare, civil, manufacturing,
-                      distributing, and retail, as well as hospitality and
-                      service organizations.
-                    </li>
-                    <li>
-                      Each solution goes beyond tried and tested enterprise
-                      resource planning (ERP) to provide financial management,
-                      product management, customer relationship management
-                      (CRM), supply chain management (SCM), and much more.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="epicor_overview_img">
-                <img src={EPICOR_OVERVIEW} alt="EPOICOR OVERVIEW IMG" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* ERP_OVERVIEW ends */}
-      {/* Syspro Starts start */}
-      {/* <section>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <div className="syspro_img">
-                <img src={EPICOR_OVERVIEW} alt="" />
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="syspro_main_heading text-center">
-                <Heading heading=" SYSPRO  " />
-              </div>
-              <div className="syspro_content">
-                <p>
-                  Become a pioneer in your business with an custom
-                  industry-built ERP solutions designed to fit your business now
-                  and forever.
-                  <br />
-                  <br />
-                  SYSPRO’s powerful and versatile feature set integrated with
-                  the latest innovative technologies provides a gateway to
-                  digitizing your business, streamlining your supply chain, and
-                  providing greater control and visibility, while simplifying
-                  and personalizing the experience
-                </p>
-              </div>{" "}
-             
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* Syspro Starts ends*/}
-      {/* EPICOR  overview  starts*/}
-      {/* <section className="epicor_section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-7">
-              <div className="epicor_container">
-                <div className="epicor_main_heading">
-                  <Heading
-                    heading="EPICOR OVERVIEW"
-                    uppercase="text-uppercase"
-                  />
-                  <p>
-                    Epicor’s powerful ERP platform and enterprise applications
-                    give you the fixability and agility you need to compete in
-                    today’s global space by assisting you in operations
-                    management optimizations and streamlining processes.
-                  </p>
-                </div>
-                <div className="epicor_content d-flex">
-                  <div className="epicor_container_box">
-                    <p>
-                      Going beyond traditional ERP, our company provides an
-                      end-to-end software solution from Epicor that streamlines
-                      and optimizes crucial business departments, such as
-                      financial, inventory, and manufacturing management
-                      efficiencies.
-                    </p>
-                  </div>
-
-                  <div className="epicor_container_box">
-                    <p>
-                      Each solution goes beyond tried and tested enterprise
-                      resource planning (ERP) to provide financial management,
-                      product management, customer relationship management
-                      (CRM), supply chain management (SCM), and much more.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="epicor_bottom_content">
-                  <p>
-                    Epicor’s custom industry-specific business software
-                    solutions provided by Sakshath Technologies® are used by
-                    thousands of companies across several industries and
-                    verticals.
-                  </p>
-
-                  <p>
-                    These include healthcare, civil, manufacturing,
-                    distributing, and retail, as well as hospitality and service
-                    organizations
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-5 epicor_col_m5">
-              <div className="epicor_img">
-                <img src={ABOUT_WHO_WE_ARE} alt="" />
-              </div>
-              <div className="epicor_exprience_box">
-                <img src={EXPERIENCE} alt="" />
-                <h6>13+ Years</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* EPICOR  overview ends*/}
       {/* Syspro  overview Starts*/}
-      {/* <section className="syspro_section">
-        <div className="container">
-          <div className="row text-center">
-            <div className="syspro_container">
-              <div className="syspro_main_heading">
-                <Heading heading="SYSPRO" />
-              </div>
-
-              <div className="row">
-                <div className="col-md-2"></div>
-                <div className="col-md-8">
-                  <div className="syspro_center_content">
-                    <p>
-                      Become a pioneer in your business with an custom
-                      industry-built ERP solutions designed to fit your business
-                      now and forever.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-2"></div>
-              </div>
-
-              <div className="row">
-                <div className="col-md-2"></div>
-                <div className="col-md-8">
-                  <div className="syspro_bottom_content">
-                    <p>
-                      {" "}
-                      SYSPRO’s powerful and versatile feature set integrated
-                      with the latest innovative technologies provides a gateway
-                      to digitizing your business, streamlining your supply
-                      chain, and providing greater control and visibility, while
-                      simplifying and personalizing the experience
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-2"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* Syspro  overview ends*/}
-      {/* Industries starts */}
       {/* EPICOR  overview  starts*/}
       <section className="epicor_section">
         <div className="container">
@@ -244,7 +97,7 @@ const Erp = () => {
 
                   <li>
                     Epicor’s custom industry-specific business software
-                    solutions provided by Sakshath Technologies® are used by
+                    solutions provided by Sakshath Technologies are used by
                     thousands of companies across several industries and
                     verticals.
                   </li>
@@ -291,8 +144,6 @@ const Erp = () => {
                     management optimizations and streamlining processes.
                   </li>
                 </div>
-              
-
               </div>
             </div>
           </div>
@@ -300,30 +151,8 @@ const Erp = () => {
       </section>
       {/* epicor ends */}
       {/* call to action starts */}
-
-<CallToAction  ctaContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit doloribus labore exercitationem perspiciatis."/>
-
-      {/* <section className="call_to_action_section">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-9">
-              <div className="call_to_action_erp">
-                <h3>
-                  Contact Us Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. consectetur adipisicing elit.
-                </h3>
-              </div>
-            </div>
-            <div className="col-md-3">
-              <div className="call_to_action_button_sysypro">
-                <SlideAnimationButton btnName="Contact us" url="/contact-us" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-      {/* call to action ends */}
-      {/* syspo starts */}
+      <CallToAction ctaContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit doloribus labore exercitationem perspiciatis." />
+      {/* call tonaction ends */}
       <section className="syspro_section">
         <div className="container">
           <div className="row align-items-center">
@@ -359,7 +188,11 @@ const Erp = () => {
         <div className="container">
           <div className="row">
             <div className="main_heading_syspro_8_ways text-center">
-              <Heading heading="8 ways SYSPRO adds value to the entire supply chain" />
+              {/* <Heading heading=" 8 ways SYSPRO adds value to the entire supply chain" /> */}
+              <h3>
+                {" "}
+                8 Ways <span>SYSPRO</span> Adds Value To The Entire Supply Chain
+              </h3>
             </div>
           </div>
           <div className="row">
@@ -456,13 +289,14 @@ const Erp = () => {
       </section>
       {/* syspro 8 ways end */}
       {/* EPICOR  overview  ends*/}
-      <section className="industry_section">
+      {/* industry's starts */}
+      {/* <section className="industry_section">
         <div className="container">
-        <div className="row">
-              <div className="industry_main_heading text-center">
-                <Heading heading="Industry" uppercase="text-uppercase" />
-              </div>
+          <div className="row">
+            <div className="industry_main_heading text-center">
+              <Heading heading="Industry" uppercase="text-uppercase" />
             </div>
+          </div>
           <div className="row">
             <div className="col-md-12">
               <div className="top_industry d-flex">
@@ -514,6 +348,125 @@ const Erp = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section> */}
+      <section className="industry_erp">
+        <div className="container">
+          <div className="row text-center industry_heading">
+            <Heading heading="Industry" />
+          </div>
+          <div className="row">
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Supply Chain</h4>
+              </div>
+            </Col>
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={INDUSTRY_IMG} alt="" />
+                </div>
+                <h4>manufacturing</h4>
+              </div>
+            </Col>
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Retailers</h4>
+              </div>
+            </Col>
+          
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Automation</h4>
+              </div>
+            </Col>
+          </div>
+          <div className="row">
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Aerospace & Defence</h4>
+              </div>
+            </Col>
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4> Rubber & Plastics</h4>
+              </div>
+            </Col>
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Electronics & High Tech</h4>
+              </div>
+            </Col>
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Fabricated Metals</h4>
+              </div>
+            </Col>
+            
+          </div>
+          <div className="row">
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Industrial Machinery</h4>
+              </div>
+            </Col>
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Mental Service Centers</h4>
+              </div>
+            </Col>
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Construction & Engineering </h4>
+              </div>
+            </Col>
+            <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Medical</h4>
+              </div>
+            </Col>
+            {/* <Col>
+              <div className="industry_box">
+                <div className="industry_icon">
+                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                </div>
+                <h4>Furniture & Fixtures</h4>
+              </div>
+            </Col> */}
           </div>
         </div>
       </section>
@@ -598,41 +551,57 @@ const Erp = () => {
           </div>
         </div>
       </section>
-
       <section>
         <div className="container">
           <div className="row">
             <div className="col-md-6">
               <div className="dynamic_box">
                 <div className="dynamic_heading">
-                  <Heading heading="MS Dynamics"/>
+                  <Heading heading="MS Dynamics" />
                 </div>
 
                 <div className="dynamic_content">
                   <h4>FUELING BUSINESS WITH BETTER DATA</h4>
-           <p>Master data management (MDM) is the core process used to manage, centralize, organize, categorize, localize, synchronize and enrich master data according to the business rules of the sales, marketing and operational strategies of your company. The importance of MDM lies more crucial because it directly governs the business priorities with the ever-growing government regulations . Customer data, Supplier data, product life cycle management and data governance are all significant contributors of initiatives driven by the businesses</p>
+                  <p>
+                    Master data management (MDM) is the core process used to
+                    manage, centralize, organize, categorize, localize,
+                    synchronize and enrich master data according to the business
+                    rules of the sales, marketing and operational strategies of
+                    your company. The importance of MDM lies more crucial
+                    because it directly governs the business priorities with the
+                    ever-growing government regulations . Customer data,
+                    Supplier data, product life cycle management and data
+                    governance are all significant contributors of initiatives
+                    driven by the businesses
+                  </p>
 
-           <div className="dynamics_list">
-            <ul>
-              <li>
-              Senior management supports the entire program to help driven the initiatives from the top down approach.
-
-              </li>
-              <li>Business users to champion and assist with smooth implementation.</li>
-            </ul>
-           </div>
+                  <div className="dynamics_list">
+                    <ul>
+                      <li>
+                        Senior management supports the entire program to help
+                        driven the initiatives from the top down approach.
+                      </li>
+                      <li>
+                        Business users to champion and assist with smooth
+                        implementation.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="col-md-6">
-
               <div className="dynamic_img">
-                <img src={Who_we_r} alt=""  width="550px"/>
+                <img src={Who_we_r} alt="" width="550px" />
               </div>
             </div>
           </div>
         </div>
       </section>
+      {/* why sakshath */}
+      <WhySaksahthNew whyCrm={whyComp} />
+      {/* <WhySaksahthNew whyCrm={whyRpa} /> */}
+      {/* why sakshth ends */}
     </>
   );
 };

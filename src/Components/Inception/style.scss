@@ -30,43 +30,32 @@
   z-index: 2;
   height: 100px;
   line-height: 100px;
+  // animation: rotate;
+  // transition: 3s;
+  // cursor: pointer;
 }
+
+
 .how-it-works {
   position: relative;
   content: "";
+  transition: 3s;
+   animation: rotate;
 }
-// .how-it-works.row .col-2::after {
-//     content: "";
-//     position: absolute;
-//     z-index: 1;
-//     height: 150px;
-//     background: #32a4d5;
-//     top: 0;
-//     width: 2px;
-//     margin-left: -2px;
-// }
+
 .how-it-works.row .col-2 {
   align-self: stretch;
   overflow: hidden;
   position: relative;
 }
-// .how-it-works.row .col-2::after {
-//   content: "";
-//   position: absolute;
-//   z-index: 1;
-// }
+
 .how-it-works.row .col-2.bottom::after {
   //   height: 50%;
   //   left: 50%;
   top: 50%;
 }
-//   .how-it-works.row .col-2.full::after {
-//      height: 100%;
-//      left: calc(50% - 3px);
-//   }
+
 .how-it-works.row .col-2.top::after {
-  //   height: 50%;
-  //   left: 50%;
   top: 0;
 }
 
@@ -118,4 +107,17 @@
 .timeliness .left-bottom::before {
   position: relative;
   content: "";
+}
+
+
+ @keyframes rotate {
+
+    from{
+      transform: rotateX(0deg);
+    }
+  
+    to{
+      transform: rotateX(350deg);
+    }
+  
 }
