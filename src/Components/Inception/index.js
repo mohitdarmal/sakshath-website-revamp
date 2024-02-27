@@ -9,7 +9,7 @@ const Inception = () => {
         <div class="container">
 
         <div className="inception_main_heading text-center">
-          <Heading heading="Inception to Fruition" uppercase="text-uppercase"/>
+          <Heading heading="Inception to Fruition"/>
         </div>
           {/* 2012 */}
 
