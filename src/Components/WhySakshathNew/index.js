@@ -5,7 +5,7 @@ import "./style.scss";
 import { Col, Row } from "react-bootstrap";
 
 const WhySaksahthNew = (props) => {
-  console.log(props, "erpprops");
+  // console.log(props, "erpprops");
 
   return (
     <>

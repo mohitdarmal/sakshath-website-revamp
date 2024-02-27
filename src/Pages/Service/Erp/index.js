@@ -15,6 +15,7 @@ import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton
 import CallToAction from "../../../Components/CallToAction";
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Col } from "react-bootstrap";
+import { Fade } from "react-awesome-reveal";
 
 const Erp = () => {
   const whyDEVOPS = [
@@ -77,11 +78,19 @@ const Erp = () => {
       <section className="epicor_section">
         <div className="container">
           <div className="row align-items-center">
+       
+
+       
             <div className="col-md-6">
+
               <div className="epicor_overview_heading">
-                <Heading heading="Overview" />
+              <Fade direction="up" triggerOnce>
+                <Heading heading="Overview" uppercase="" />
+                </Fade>
               </div>
+            
               <div className="overview_right_content">
+              <Fade direction="up" triggerOnce>
                 <div className="epicor_content_right">
                   <li>
                     Epicor's manufacturing solutions revolutionize your shop
@@ -102,6 +111,7 @@ const Erp = () => {
                     verticals.
                   </li>
                 </div>
+                </Fade>
               </div>
             </div>
             <div className="col-md-6">
@@ -122,10 +132,13 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="overview_left_content">
+      
                 <div className="epicor_overview_heading">
+                <Fade direction="up" triggerOnce>
                   <Heading heading="Overview" />
+                  </Fade>
                 </div>
-
+                <Fade direction="up" triggerOnce>
                 <div className="epicor_content_left">
                   <li>
                     These include healthcare, civil, manufacturing,
@@ -144,6 +157,7 @@ const Erp = () => {
                     management optimizations and streamlining processes.
                   </li>
                 </div>
+                </Fade>
               </div>
             </div>
           </div>
@@ -151,15 +165,20 @@ const Erp = () => {
       </section>
       {/* epicor ends */}
       {/* call to action starts */}
+      <Fade direction="up" triggerOnce>
       <CallToAction ctaContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit doloribus labore exercitationem perspiciatis." />
+      </Fade>
       {/* call tonaction ends */}
       <section className="syspro_section">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 align-items-center">
               <div className="epicor_overview_heading">
-                <Heading heading="SYSPRO" uppercase="text-uppercase" />
+              <Fade direction="up" triggerOnce>
+                <Heading heading="Syspro" uppercase="" />
+                </Fade>
               </div>
+              <Fade direction="up" triggerOnce>
               <div className="syspro_content">
                 <li>
                   Become a pioneer in your business with custom, industry-built
@@ -173,6 +192,7 @@ const Erp = () => {
                   personalizing the experience.
                 </li>
               </div>
+              </Fade>
             </div>
             <div className="col-md-6">
               <div className="syspro_img">
@@ -188,13 +208,15 @@ const Erp = () => {
         <div className="container">
           <div className="row">
             <div className="main_heading_syspro_8_ways text-center">
-              {/* <Heading heading=" 8 ways SYSPRO adds value to the entire supply chain" /> */}
+              <Fade direction="up" triggerOnce>
               <h3>
                 {" "}
                 8 Ways <span>SYSPRO</span> Adds Value To The Entire Supply Chain
               </h3>
+              </Fade>
             </div>
           </div>
+          <Fade direction="up" triggerOnce>
           <div className="row">
             <div className="col-md-3">
               <div className="box_top">
@@ -285,6 +307,7 @@ const Erp = () => {
               </div>
             </div>
           </div>
+          </Fade>
         </div>
       </section>
       {/* syspro 8 ways end */}
@@ -356,6 +379,7 @@ const Erp = () => {
           <div className="row text-center industry_heading">
             <Heading heading="Industry" />
           </div>
+          <Fade direction="up" triggerOnce>
           <div className="row">
             <Col>
               <div className="industry_box">
@@ -391,6 +415,9 @@ const Erp = () => {
               </div>
             </Col>
           </div>
+          </Fade>
+
+          <Fade direction="up" triggerOnce>
           <div className="row">
             <Col>
               <div className="industry_box">
@@ -426,6 +453,8 @@ const Erp = () => {
             </Col>
             
           </div>
+          </Fade>
+          <Fade direction="up" triggerOnce>
           <div className="row">
             <Col>
               <div className="industry_box">
@@ -468,6 +497,7 @@ const Erp = () => {
               </div>
             </Col> */}
           </div>
+          </Fade>
         </div>
       </section>
       {/* Industries ends */}
@@ -477,9 +507,11 @@ const Erp = () => {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="migration_overview_heading">
-                <Heading heading="Migration" uppercase="text-uppercase" />
+              <Fade direction="up" triggerOnce>
+                <Heading heading="Migration" uppercase="" />
+                </Fade>
               </div>
-
+              <Fade direction="up" triggerOnce>
               <div className="migration">
                 <p>
                   The effectiveness of data migration in SYSPRO or any other ERP
@@ -491,6 +523,7 @@ const Erp = () => {
                   contribute to efficient data migration processes.
                 </p>
               </div>
+              </Fade>
             </div>
             <div className="col-md-6">
               <div className="migration_img">
@@ -513,9 +546,11 @@ const Erp = () => {
             <div className="col-md-6">
               <div className="sap_content_box">
                 <div className="sap_heading">
+                <Fade direction="up" triggerOnce>
                   <Heading heading="SAP" uppercase="text-uppercase" />
+                  </Fade>
                 </div>
-
+                <Fade direction="up" triggerOnce>
                 <div className="sap_content">
                   <div className="sap_box">
                     <h4>WIDE-RANGING EXPERIENCE</h4>
@@ -546,6 +581,7 @@ const Erp = () => {
                     </p>
                   </div>
                 </div>
+                </Fade>
               </div>
             </div>
           </div>
@@ -557,9 +593,11 @@ const Erp = () => {
             <div className="col-md-6">
               <div className="dynamic_box">
                 <div className="dynamic_heading">
+                <Fade direction="up" triggerOnce>
                   <Heading heading="MS Dynamics" />
+                  </Fade>
                 </div>
-
+                <Fade direction="up" triggerOnce>
                 <div className="dynamic_content">
                   <h4>FUELING BUSINESS WITH BETTER DATA</h4>
                   <p>
@@ -588,6 +626,7 @@ const Erp = () => {
                     </ul>
                   </div>
                 </div>
+                </Fade>
               </div>
             </div>
             <div className="col-md-6">
@@ -599,7 +638,9 @@ const Erp = () => {
         </div>
       </section>
       {/* why sakshath */}
+      <Fade direction="up" triggerOnce>
       <WhySaksahthNew whyCrm={whyComp} />
+      </Fade>
       {/* <WhySaksahthNew whyCrm={whyRpa} /> */}
       {/* why sakshth ends */}
     </>

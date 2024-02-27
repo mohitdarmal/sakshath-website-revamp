@@ -23,6 +23,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Contact from "../../Components/Contact/Contact";
+import Heading2 from "../../Components/Utils/Heading2";
 const About = () => {
   return (
     <>
@@ -38,7 +39,7 @@ const About = () => {
             <div className="col-md-6 ipad_full_width">
               <div className="about_who_we_r_content">
                 <Fade direction="up" delay={50} triggerOnce>
-                  <Heading heading="Who we are" uppercase="text-uppercase" />
+                  <Heading2 heading="Who we are"  />
                 </Fade>
                 <Fade direction="up" triggerOnce>
                   <p>
@@ -50,7 +51,7 @@ const About = () => {
                     having an ERP offshore development. If not quite a tale of
                     rags to riches, the story of Sakshath Technologies’ rise to
                     stardom certainly came closer. The birth of SAKSHATH
-                    TECHNOLOGIES in 2015, wouldn’t be possible without the
+                    TECHNOLOGIES' in 2015, wouldn’t be possible without the
                     utmost faith and trust of family and friends. <br />
                     <br />
                     Sakshath Technologies’ biggest USP’s are ERP (Epicor, MS
@@ -58,7 +59,7 @@ const About = () => {
                     BI, Qlik and Tableau).
                     <strong>
                       {" "}
-                      Sakshath Technologies is the only company in India to
+                      Sakshath Technologies' is the only company in India to
                       provide SYSPRO Services that are designed in a way to
                       support growth and improve profitability
                     </strong>
@@ -71,7 +72,7 @@ const About = () => {
 
                      <br />
                     <br />
-                    We go by the saying  <strong>“I’m Sakshath”</strong> the thought behind the phrase is the presence of all the employees<strong> ‘HERE’ and ‘NOW’</strong>. Starting as a self-funded business Sakshath Technologies' company ethos to date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from the beginning of the journey made what Sakshath Technologies is today, we grew gradually to a family of 150+ employees and now have a domestic presence in 3 metropolitan cities serving clients from all over the world. Celebrating decade milestones, today we take pride in onboarding the team of Country’s Best and strongly believe in Growing Together. 
+                    We go by the saying  <strong>“I’m Sakshath”</strong> the thought behind the phrase is the presence of all the employees<strong> ‘HERE’ and ‘NOW’</strong>. Starting as a self-funded business Sakshath Technologies' company ethos to date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from the beginning of the journey made what Sakshath Technologies' is today, we grew gradually to a family of 150+ employees and now have a domestic presence in 3 metropolitan cities serving clients from all over the world. Celebrating decade milestones, today we take pride in onboarding the team of Country’s Best and strongly believe in Growing Together. 
                   </p>
                 </Fade>
               </div>
@@ -124,9 +125,9 @@ const About = () => {
             <div className="col-md-5">
               <p className="vision_para">
                 <Fade direction="up" delay={150} triggerOnce>
-                  It is the desire of Sakshath Technologies to establish itself
+                  It is the desire of Sakshath Technologies' to establish itself
                   as a powerful business operation with vibrance and growth
-                  built on Sakshath Technologies principles that is highly
+                  built on Sakshath Technologies' principles that is highly
                   regarded by our customers, stake holders and our employees. As
                   an organization, we want to be in a place where customers rely
                   on the excellence of our products and services.
@@ -135,7 +136,7 @@ const About = () => {
             </div>
             <div className="col-md-2 text-center d-flex justify-content-center">
               <div className="vision_rounded">
-                <p>OUR VISION</p>
+                <p>Our Vision</p>
               </div>
             </div>
             <div className="col-md-5"></div>
@@ -144,7 +145,7 @@ const About = () => {
             <div className="col-md-5 "></div>
             <div className="col-md-2 text-center d-flex justify-content-center">
               <div className="mision_rounded">
-                <p>OUR MISSION</p>
+                <p>Our Mission</p>
               </div>
             </div>
             <div className="col-md-5">
