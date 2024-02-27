@@ -125,7 +125,7 @@ const About = () => {
             <div className="col-md-5">
               <p className="vision_para">
                 <Fade direction="up" delay={150} triggerOnce>
-                  It is the desire of Sakshath Technologies to establish itself
+                  It is the desire of Sakshath Technologies' to establish itself
                   as a powerful business operation with vibrance and growth
                   built on Sakshath Technologies' principles that is highly
                   regarded by our customers, stake holders and our employees. As
