@@ -1,0 +1,24 @@
+@import "../../../Assets/saas/Variable.scss";
+.sub_heading{
+    color: black;
+        font-size: $sub_heading;
+        font-weight: 700;
+        font-family: $rajdhani_font;
+        line-height: 23px;
+}
+
+
+
+@media screen and (max-width:480px){
+    .sub_heading{
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:767px){
+    .sub_heading{
+        font-size: 20px;
+        line-height: 21px;
+    }
+}

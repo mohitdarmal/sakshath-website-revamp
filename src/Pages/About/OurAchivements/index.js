@@ -96,7 +96,7 @@ useEffect(() => {
 								<h1>{`${data.title.substring(0, 35)}..`}</h1>
 							 
 								<p>{`${data.description.substring(0, 200)}..`}</p>
-                <Link className="book_btn" to="">Read More..</Link>
+                <Link className="book_btn" to={`/our-achievements/${data.title}`} state={data}>Read More..</Link>
 							</figcaption>
 						</figure>
 					</li>
