@@ -23,7 +23,7 @@ const ManagedServices = () => {
                         <div className="col-md-6">
                           <div className="overview_sec_left_managed_services">
                             {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
-                            <Heading heading="Unlock Effective Knowledge Management with Our Services" uppercase="text-uppercase"/>
+                            <Heading heading="Unlock Effective Knowledge Management with Our Services" uppercase=""/>
                             <p className="overview_sec_managed_services_para">At Sakshath, we understand the challenges businesses face in today's fast-paced environment. The constant demand for efficiency and the ever-present risks can be overwhelming. Discover seamless managed services offering effective knowledge management, continuous support, flexible pricing, and risk mitigation for your business needs.</p>
                             <SlideAnimationButton btnName="GET STARTED" />
 
@@ -113,7 +113,7 @@ const ManagedServices = () => {
                         <div className="col-md-6">
                         <div className="content_sec_right_managed_services">
 
-                         <Heading heading="overview" uppercase="text-uppercase" />
+                         <Heading heading="Overview" uppercase="" />
                             {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
                             {/* <BlueHeading bheading="overview" uppercase="text-uppercase"/> */}
                             {/* <p className="content_sec_managed_services_para"> */}

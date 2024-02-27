@@ -50,7 +50,7 @@ const ApplicationDevelopment = () => {
             <div className="col-md-8 offset-md-2 text-center app_dev_heading">
               <Heading
                 heading="Why choose Sakshath Technologies for app development?"
-                uppercase="text-uppercase"
+                uppercase=""
               />
             </div>
           </div>
@@ -191,7 +191,7 @@ const ApplicationDevelopment = () => {
       <section className="our_services_sec">
         <div className="container">
           <div className="row text-center mb-md-4">
-            <Heading heading="Our Services" uppercase="text-uppercase" />
+            <Heading heading="Our Services" uppercase="" />
           </div>
 
           <div className="row">
@@ -370,7 +370,7 @@ const ApplicationDevelopment = () => {
           <div className="text-center mb-3 pb-md-3" >
         <Heading
                 heading="Brouchure"
-                uppercase="text-uppercase"
+                uppercase=""
               />
               </div>
           <PdfViewer pdfUrl={pdfUrl} />
@@ -400,7 +400,7 @@ const ApplicationDevelopment = () => {
           <div className="contact_heading">
         <Heading
                 heading="Contact Us"
-                uppercase="text-uppercase"
+                uppercase=""
               />
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
               </div>

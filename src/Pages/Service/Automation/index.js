@@ -880,7 +880,7 @@ const Automation = () => {
                   <div className="devops_testing_right_content">
                     <Heading
                       heading="DevOps/Testing"
-                      uppercase="text-uppercase"
+                      uppercase=""
                     />
                     <p>
                       In transforming Testing to the world of Agile and DevOps,

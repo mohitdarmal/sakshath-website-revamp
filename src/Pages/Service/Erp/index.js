@@ -226,7 +226,7 @@ const Erp = () => {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="epicor_overview_heading">
-                <Heading heading="Overview" />
+                <Heading heading="Overview" uppercase="" />
               </div>
               <div className="overview_right_content">
                 <div className="epicor_content_right">
@@ -329,7 +329,7 @@ const Erp = () => {
           <div className="row align-items-center">
             <div className="col-md-6 align-items-center">
               <div className="epicor_overview_heading">
-                <Heading heading="SYSPRO" uppercase="text-uppercase" />
+                <Heading heading="Syspro" uppercase="" />
               </div>
               <div className="syspro_content">
                 <li>
@@ -359,7 +359,7 @@ const Erp = () => {
         <div className="container">
           <div className="row">
             <div className="main_heading_syspro_8_ways text-center">
-              <Heading heading="8 ways SYSPRO adds value to the entire supply chain" />
+              <Heading heading="8 ways SYSPRO adds value to the entire supply chain" uppercase="" />
             </div>
           </div>
           <div className="row">
@@ -460,7 +460,7 @@ const Erp = () => {
         <div className="container">
         <div className="row">
               <div className="industry_main_heading text-center">
-                <Heading heading="Industry" uppercase="text-uppercase" />
+                <Heading heading="Industry" uppercase="" />
               </div>
             </div>
           <div className="row">
@@ -524,7 +524,7 @@ const Erp = () => {
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="migration_overview_heading">
-                <Heading heading="Migration" uppercase="text-uppercase" />
+                <Heading heading="Migration" uppercase="" />
               </div>
 
               <div className="migration">

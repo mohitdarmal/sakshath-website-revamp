@@ -76,7 +76,7 @@ export const Analytics = () => {
             <div className="col-md-6">
               <div className="overview_sec_left_analytics">
                 {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
-                <Heading heading="Unlock growth potential with Advanced Data Analytics Services." uppercase="text-uppercase" />
+                <Heading heading="Unlock growth potential with Advanced Data Analytics Services." uppercase="" />
                 <p className="overview_sec_analytics_para">
                   
                   Sakshath Technologies specializes in leveraging AI + data science to
@@ -150,7 +150,7 @@ export const Analytics = () => {
                   <div className="col-md-6 ai_data_science_left ipad_full_width">
                     <Heading
                       heading="AI + Data Science"
-                      uppercase="text-uppercase"
+                      uppercase=""
                     />
 
                     <p>
@@ -293,8 +293,8 @@ export const Analytics = () => {
                     
                     <div className="bi_dashboard_left">
                       <Heading
-                        heading="Bi + dashboard"
-                        uppercase="text-uppercase"
+                        heading="BI + Dashboard"
+                        uppercase=""
                       />
                       <h4>Your Gateway to Business Intelligence</h4>
                       {/* <h4>*Visualize Success, Drive Results*</h4> */}
@@ -456,7 +456,7 @@ export const Analytics = () => {
 
               <div className="bi_feature_sec">
                <div className="bi_key_feature_heading_box">
-                  <Heading heading="BI Key Features" uppercase="text-uppercase" />
+                  <Heading heading="BI Key Features" uppercase="" />
                 </div>
               
                 <div className="bi_feature_content">
@@ -624,7 +624,7 @@ export const Analytics = () => {
                   <div className="col-md-6 ai_data_science_left ipad_full_width">
                     <Heading
                       heading="Data Integration"
-                      uppercase="text-uppercase"
+                      uppercase=""
                     />
                     <p>
                     Start optimizing your data AI-ready. You may use dynamic data sources to feed machine learning models by automating the data cleansing and synchronization processes.
@@ -775,7 +775,7 @@ export const Analytics = () => {
                   <div className="col-md-6 bi_dashboard_left ipad_full_width">
                     <Heading
                       heading="Big Data"
-                      uppercase="text-uppercase"
+                      uppercase=""
                     />
                     <p>
                     Take full advantage of your data. Employ science, the most up-to-date technologies, and approaches, and get one of your most valuable resources, data, to its fullest potential.
