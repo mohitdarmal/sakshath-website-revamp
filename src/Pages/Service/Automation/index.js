@@ -53,6 +53,7 @@ import {
 } from "../../../Components/ClientLogo/Constant";
 import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
+import {Fade} from "react-awesome-reveal";
 
 const Automation = () => {
   const menu = [
@@ -82,22 +83,27 @@ const Automation = () => {
           <div className="row align-items-center">
             <div className="col-md-6 ipad_full_width">
               <div className="overview_sec_left">
+              <Fade direction="up"  triggerOnce>
                 <Heading
                   heading="Streamline Your Operations with Automation"
                   // uppercase="text-uppercase"
                 />
+                </Fade>
+                <Fade direction="up"  triggerOnce>
                 <p className="sec_para">
                   Experience seamless automation with cloud-native
                   solutions.Using Simplify workflows, reduce costs, and boost
                   productivity. Business organizations are increasingly
                   automating operational costs and inefficiencies. They are
                   right on their way. Using automation, internal and external
-                  processes are becoming more efficient and productive.
-                </p>
+                  processes are becoming more efficient and productive.</p>
+                </Fade>
+                <Fade direction="up"  triggerOnce>
                 <SlideAnimationButton
                   btnName="Get Started Now"
                   url="/contact-us"
                 />
+                </Fade>
               </div>
             </div>
 
@@ -205,16 +211,21 @@ const Automation = () => {
                 </div>
                 <div className="col-md-6">
                   <div className="cloud_native_content">
+                  <Fade direction="up"  triggerOnce>
                     <Heading heading=" Cloud Native Development" />
+                   </Fade>
+                   <Fade direction="up"  triggerOnce> 
                     <p>
                       Organizations can leverage cloud-native technologies to
                       develop and run scalable applications in modern, dynamic
                       environments like public, private, and hybrid clouds.
                     </p>
+                    </Fade>
                   </div>
-
+                  <Fade direction="up"  triggerOnce>
                   <div className="row">
                     <div className="col-md-6">
+                    
                       <div className="automation_right_content_list">
                         <ul>
                           <li> Hybrid Integration</li>
@@ -226,6 +237,7 @@ const Automation = () => {
                           </li>
                         </ul>
                       </div>
+                      
                     </div>
 
                     <div className="col-md-6">
@@ -240,6 +252,7 @@ const Automation = () => {
                       </div>
                     </div>
                   </div>
+                  </Fade>
                 </div>
               </div>
             </div>
@@ -252,9 +265,12 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="pillars_heading text-center ">
+            <Fade direction="up"  triggerOnce>
               <Heading heading="Pillars Of  Cloud Native Application" />
+              </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke pillar_number_storke">
+            <Fade direction="up"  triggerOnce>
               <div className="number">{/* <h1> 01</h1> */}</div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -264,8 +280,10 @@ const Automation = () => {
                   <h5>Automation</h5>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke">
+            <Fade direction="up"  triggerOnce>
               <div className="number">{/* <h1> 02</h1> */}</div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -275,8 +293,10 @@ const Automation = () => {
                   <h5>Modern Design & Architecture</h5>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke">
+            <Fade direction="up"  triggerOnce>
               <div className="number">{/* <h1> 03</h1> */}</div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -286,8 +306,10 @@ const Automation = () => {
                   <h5>Microservices</h5>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke">
+            <Fade direction="up"  triggerOnce>
               <div className="number">{/* <h1> 04</h1> */}</div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -297,6 +319,7 @@ const Automation = () => {
                   <h5>Containers Backing Services</h5>
                 </div>
               </div>
+             </Fade>
             </div>
           </div>
         </div>
@@ -416,12 +439,15 @@ const Automation = () => {
           <div className="row text-center">
             <div className="col-md-4">
               <div className="mobile_app_main_heading">
+              <Fade direction="up"  triggerOnce>
                 <Heading heading="Mobile Application Development" />
+                </Fade>
               </div>
             </div>
             <div className="col-md-8 ">
               <div className="row ">
                 <div className="col-md-4 text-center">
+                <Fade direction="up"  triggerOnce>
                   <div className="application_box">
                     <div className="mobile_icon">
                       <img src={ANDRIOD_APP} alt="" />
@@ -432,8 +458,10 @@ const Automation = () => {
                       </h4>
                     </div>
                   </div>
+                  </Fade>
                 </div>
                 <div className="col-md-4 text-center">
+                <Fade direction="up"  triggerOnce>
                   <div className="application_box">
                     <div className="mobile_icon">
                       <img src={IOS_APPLE} alt="" />
@@ -444,8 +472,10 @@ const Automation = () => {
                       </h4>
                     </div>
                   </div>
+                  </Fade>
                 </div>
                 <div className="col-md-4 text-center">
+                <Fade direction="up"  triggerOnce>
                   <div className="application_box">
                     <div className="mobile_icon">
                       <img src={CROSS_PLATFORM_APP} alt="" />
@@ -456,6 +486,7 @@ const Automation = () => {
                       </h4>
                     </div>
                   </div>
+                  </Fade>
                 </div>
               </div>
             </div>
@@ -468,9 +499,12 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="application_main_heading text-center">
+            <Fade direction="up"  triggerOnce>
               <Heading heading="Application Integration" />
+              </Fade>
             </div>
             <div className="col-md-6 api_boxes">
+            <Fade direction="up"  triggerOnce>
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -485,8 +519,10 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-6 api_boxes">
+            <Fade direction="up"  triggerOnce>
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -500,8 +536,10 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-6 api_boxes">
+            <Fade direction="up"  triggerOnce>
               <div className="api_container ">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -516,8 +554,10 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-6 api_boxes">
+            <Fade direction="up"  triggerOnce>
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -531,6 +571,7 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
+              </Fade>
               {/* <div className="application_integration">
                 <div className="api_box">
                   <h4> Open API business strategy for monetization of API’s</h4>
@@ -563,10 +604,15 @@ const Automation = () => {
           <div className="row ">
             <div className="col-md-6">
               <div className="rpa_main_heading">
+              <Fade direction="up"  triggerOnce>
                 <Heading heading="RPA" uppercase="text-uppercase" />
+                </Fade>
+                <Fade direction="up"  triggerOnce>
                 <h4>(Robotic Process Automation) </h4>
+                </Fade>
 
                 <div className="rpa_lists">
+                <Fade direction="up"  triggerOnce>
                   <ul>
                     <li>
                       Sakshath RPA as a service is designed to help
@@ -588,13 +634,16 @@ const Automation = () => {
                       etc.
                     </li>
                   </ul>
+                 </Fade>
                 </div>
               </div>
             </div>
             <div className="col-md-6">
+            <Fade direction="up"  triggerOnce>
               <div className="rpa_graph">
                 <img src={RPA_GRAPH} alt="" />
               </div>
+              </Fade>
               <div className="rpa_text text-center mt-5">
                 {/* <h4>Robotic Process Automation Business Management</h4> */}
               </div>
@@ -703,7 +752,9 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="rpa_offering_main_heading text-center mb-4">
+            <Fade direction="up"  triggerOnce>
               <Heading heading="RPA Offering" />
+              </Fade>
             </div>
             <div className="col-md-2"></div>
             <div className="col-md-8">
@@ -794,12 +845,16 @@ const Automation = () => {
 
       <section className="rpa_tools_section">
         <div className="rpa_tools_main_heading text-center">
+        <Fade direction="up"  triggerOnce>
           <Heading heading="RPA Tools" />
+         </Fade>
+         <Fade direction="up"  triggerOnce>
           <p>
             In order to achieve value-based RPA solutions for our customers, our
             consultants have worked with a variety of technologies and RPA
             vendors.
           </p>
+         </Fade>
         </div>
         <div className="container rpa_tools_logos">
           <Swiper
@@ -878,15 +933,19 @@ const Automation = () => {
                 </div>
                 <div className="col-md-6">
                   <div className="devops_testing_right_content">
+                  <Fade direction="up"  triggerOnce>
                     <Heading
                       heading="DevOps/Testing"
                       uppercase=""
                     />
+                    </Fade>
+                    <Fade direction="up"  triggerOnce>
                     <p>
                       In transforming Testing to the world of Agile and DevOps,
                       Sakshath has been at the forefront of providing
                       best-in-class, tailored “QA Testing Services”.
                     </p>
+                    </Fade>
                   </div>
                 </div>
               </div>
@@ -903,7 +962,9 @@ const Automation = () => {
             <div className="col-md-12">
               <div className="devop_layer">
                 <div className="testing_layer_main_heading text-center">
+                <Fade direction="up"  triggerOnce>
                   <Heading heading="Testing Layer" />
+                  </Fade>
                 </div>
               </div>
             </div>
@@ -944,7 +1005,9 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="devops_heading_main text-center">
+            <Fade direction="up"  triggerOnce>
               <Heading heading="DevOps & Testing " />
+              </Fade>
             </div>
             <div className="row box1 ">
               <div className="col-md-3 devops_boxes">

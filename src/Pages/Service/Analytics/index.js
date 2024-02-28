@@ -74,12 +74,16 @@ export const Analytics = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
+           
               <div className="overview_sec_left_analytics">
                 {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
+                <Fade direction="up"  triggerOnce>
                 <Heading
                   heading="Unlock growth potential with Advanced Data Analytics Services."
                   uppercase=""
                 />
+                 </Fade>
+                 <Fade direction="up"  triggerOnce>
                 <p className="overview_sec_analytics_para">
                   Sakshath Technologies specializes in leveraging AI + data
                   science to provide you with actionable insights that drive
@@ -89,8 +93,11 @@ export const Analytics = () => {
                   tools, you can visualize your success and make informed
                   decisions faster than ever before.
                 </p>
+                
                 <SlideAnimationButton btnName="GET STARTED" />
+                </Fade>
               </div>
+             
             </div>
             <div className="col-md-6">
               <div className="overview_sec_right_analytics_img">
@@ -150,8 +157,10 @@ export const Analytics = () => {
                 <div className="row align-items-center">
                   {/* <div className="body_sec_three_parent"> */}
                   <div className="col-md-6 ai_data_science_left ipad_full_width">
+                  <Fade direction="up"  triggerOnce>
                     <Heading heading="AI + Data Science" uppercase="" />
-
+                  </Fade>
+                  <Fade direction="up"  triggerOnce>
                     <p>
                       Transform your data into actionable insights with
                       cutting-edge AI algorithms. Say goodbye to guesswork and
@@ -180,6 +189,7 @@ export const Analytics = () => {
                       <li>Product Ruggedization</li>
                       <li>Machine Learning</li>
                     </ul> */}
+                    </Fade>
                   </div>
                   <div className="col-md-6 ai_data_science_right ipad_full_width">
                     <img className="img-fluid ai_img" src={ANALYTICS_AI_IMG} />
@@ -312,10 +322,17 @@ export const Analytics = () => {
               <div className="container bi_dashboard_container">
                 <div className="row align-items-center">
                   <div className="col-md-6 ipad_full_width">
+                  
                     <div className="bi_dashboard_left">
+                    <Fade direction="up"  triggerOnce>
                       <Heading heading="BI + Dashboard" uppercase="" />
+                      </Fade>
+                      <Fade direction="up"  triggerOnce>
                       <h4>Your Gateway to Business Intelligence</h4>
+                      </Fade>
+                      
                       {/* <h4>*Visualize Success, Drive Results*</h4> */}
+                      <Fade direction="up"  triggerOnce>
                       <p>Power BI has emerged as a leading business intelligence tool, revolutionizing the way organizations analyze and visualize their data. With its robust features and intuitive interface, Power BI empowers users to gain valuable insights from their data, driving informed decision-making processes
 </p>
                       <p>
@@ -330,6 +347,7 @@ export const Analytics = () => {
                         clients direct access to the latest insights and better
                         decisions.
                       </p>
+                      </Fade>
 
                       {/* <div className="intergration_list"> */}
                       {/* <ul className="ai_datascience_list">
@@ -498,12 +516,15 @@ export const Analytics = () => {
 
                 <div className="bi_feature_sec">
                   <div className="bi_key_feature_heading_box">
+                  <Fade direction="up"  triggerOnce>
                     <Heading heading="BI Key Features" uppercase="" />
+                    </Fade>
                   </div>
 
                   <div className="bi_feature_content">
                     <div className="row align-items-center">
                       <div className="col-md-4">
+                      <Fade direction="up" delay={300} triggerOnce>
                         <div className="bi_feature_box bi_feature_box1">
                           <div className="bi_feature_icon">
                             <img src={RPA_DELIVERY} alt="" />
@@ -520,9 +541,11 @@ export const Analytics = () => {
                             individual needs.
                           </p>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-4">
+                      <Fade direction="up"  triggerOnce>
                         <div className="bi_feature_box bi_feature_box2 bi_feature_box2_bgcolor">
                           <div className="bi_feature_icon">
                             <img src={RPA_DELIVERY} alt="" />
@@ -538,9 +561,11 @@ export const Analytics = () => {
                             optimizing to a more efficient one.
                           </p>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-4">
+                      <Fade direction="up"  triggerOnce>
                         <div className="bi_feature_box bi_feature_box3 bi_feature_box3_bgcolor">
                           <div className="bi_feature_icon">
                             <img src={RPA_DELIVERY} alt="" />
@@ -555,9 +580,11 @@ export const Analytics = () => {
                             needs, you have our back.
                           </p>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-4">
+                      <Fade direction="up"  triggerOnce>
                         <div className="bi_feature_box bi_feature_box4 bi_feature_box4_bgcolor">
                           <div className="bi_feature_icon">
                             <img src={RPA_DELIVERY} alt="" />
@@ -573,9 +600,11 @@ export const Analytics = () => {
                             it with your organization’s workflow and operations.
                           </p>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-4">
+                      <Fade direction="up" triggerOnce>
                         <div className="bi_feature_box bi_feature_box5 bi_feature_box5_bgcolor">
                           <div className="bi_feature_icon">
                             <img src={RPA_DELIVERY} alt="" />
@@ -591,9 +620,11 @@ export const Analytics = () => {
                             from your.
                           </p>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-4">
+                      <Fade direction="up"  triggerOnce>
                         <div className="bi_feature_box bi_feature_box6 bi_feature_box6_bgcolor">
                           <div className="bi_feature_icon">
                             <img src={RPA_DELIVERY} alt="" />
@@ -609,6 +640,7 @@ export const Analytics = () => {
                             automotive, banking, hotel, and travel.
                           </p>
                         </div>
+                        </Fade>
                       </div>
                     </div>
                   </div>
@@ -692,7 +724,10 @@ export const Analytics = () => {
                 <div className="row align-items-center">
                   {/* <div className="body_sec_three_parent"> */}
                   <div className="col-md-6 ai_data_science_left ipad_full_width">
+                  <Fade direction="up"  triggerOnce>
                     <Heading heading="Data Integration" uppercase="" />
+                   </Fade>
+                   <Fade direction="up"  triggerOnce> 
                     <p>
                       Start optimizing your data AI-ready. You may use dynamic
                       data sources to feed machine learning models by automating
@@ -723,6 +758,7 @@ export const Analytics = () => {
                        Common data model
                       </li>
                     </ul> */}
+                    </Fade>
                   </div>
                   <div className="col-md-6 ai_data_science_right ipad_full_width">
                     <img
@@ -737,6 +773,7 @@ export const Analytics = () => {
                   <div className="ai_datascience_content">
                     <div className="row">
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box data_integration_box1">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_01} alt="" />
@@ -756,10 +793,12 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
-                        <div className="ai_datascience_content_col_box data_integration_box1">
+                      <Fade direction="up"  triggerOnce>
+                        <div className="ai_datascience_content_col_box data_integration_box2">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_02} alt="" />
                           </div>
@@ -779,9 +818,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_03} alt="" />
@@ -801,9 +842,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box data_integration_box4">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_04} alt="" />
@@ -823,9 +866,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                       </Fade> 
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box data_integration_box4">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_05} alt="" />
@@ -845,6 +890,7 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
                     </div>
                   </div>
@@ -861,7 +907,10 @@ export const Analytics = () => {
                 <div className="row align-items-center">
                   {/* <div className="body_sec_three_parent"> */}
                   <div className="col-md-6 bi_dashboard_left ipad_full_width">
+                  <Fade direction="up" triggerOnce>
                     <Heading heading="Big Data" uppercase="" />
+                    </Fade>
+                    <Fade direction="up"  triggerOnce>
                     <p>
                       Take full advantage of your data. Employ science, the most
                       up-to-date technologies, and approaches, and get one of
@@ -899,6 +948,7 @@ export const Analytics = () => {
                        Software service
                       </li>
                     </ul> */}
+                    </Fade>
                   </div>
 
                   <div className="col-md-6 bi_dashboard_right ipad_full_width">
@@ -915,6 +965,7 @@ export const Analytics = () => {
                   <div className="ai_datascience_content">
                     <div className="row">
                       <div className="col-md-6 ai_datascience_content_col ">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box bigdata_box1">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_01} alt="" />
@@ -934,9 +985,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box bigdata_box2">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_02} alt="" />
@@ -955,9 +1008,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box bigdata_box3">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_03} alt="" />
@@ -977,9 +1032,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box bigdata_box4">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_04} alt="" />
@@ -998,9 +1055,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box bigdata_box5">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_05} alt="" />
@@ -1019,6 +1078,7 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
                     </div>
                   </div>
@@ -1032,11 +1092,15 @@ export const Analytics = () => {
         <section>
           <div className="container">
             <div className="row">
+            
               <div className="col-md-1"> </div>
+              
               <div className="col-md-10">
                 <Faq />
               </div>
+              
               <div className="col-md-1"> </div>
+              
             </div>
           </div>
         </section>
