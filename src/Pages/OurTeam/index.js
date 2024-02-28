@@ -41,7 +41,7 @@ const OurTeam = () => {
         setActiveManmeetProfile(false);
         setActiveGauriProfile(false);
     }
-    else if(e.target.textContent === "Shravan Kumar (CEO-Founder)"){
+    else if(e.target.textContent === "Shravan Kumar (Founder-MD)"){
         setProfileData({content:"Shravan Kumar is an accomplished professional with 16+ years of Technical Recruitment and Resource Management experience, specializing in SYSPRO/EPICOR/SAP in the U.S., Canada, and India. He possesses strong technical/business acumen and an understanding of technical requirements. His strength includes multi-location recruitment, pre-screening and behavioral interviewing, client/hiring manager relationships, and offer negotiation and closing."})
         setActiveShravanProfile(true);
         setActiveKrishnaProfile(false);
@@ -97,7 +97,7 @@ const OurTeam = () => {
         setActiveGauriProfile(false);
     }
     else if(e.target.textContent === "Manmeet Singh (VP-Analytics)"){
-        setProfileData({content:"Manmeet Singh is a certified Azure specialist and the vice president (VP – Analytics) at Sakshath Technologies®. With 18+ years of IT experience, he supports our core and non-core programmers/project solutions with end-to-end delivery solutions. Manmeet has experience developing and implementing IT Analytics and best practice guides and managing the delivery of analytical solutions. He upholds end-to-end standard compliance while delivering within deadlines and at the needed quality. Qualification – Master’s in business administration (MBA – IT Systems) from IMT-Ghaziabad."})
+        setProfileData({content:"Manmeet Singh is a certified Azure specialist and the vice president (VP – Analytics) at Sakshath Technologies. With 18+ years of IT experience, he supports our core and non-core programmers/project solutions with end-to-end delivery solutions. He upholds end-to-end standard compliance while delivering within deadlines and at the needed quality. Qualification – Master’s in business administration (MBA – IT Systems) from IMT-Ghaziabad."})
         setActiveManmeetProfile(true);
         setActiveManishProfile(false);
         setActivePraveenProfile(false);
@@ -194,7 +194,7 @@ const OurTeam = () => {
                 <div className={`our_team_sec_box ${activeShravanProfile ? "active" : ""}`} onClick={handleChangeDetail}>
                   <div className="details">
                     <h5 >
-                      Shravan Kumar (CEO-Founder)
+                    Shravan Kumar (Founder-MD)
                     </h5>
                     <img src={SHRAVAN_PIC} />
                   </div>
