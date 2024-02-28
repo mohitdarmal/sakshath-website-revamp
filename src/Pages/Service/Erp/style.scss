@@ -1,164 +1,5 @@
 @import "../../../Assets/saas/Main.scss";
 
-// .epicor_section {
-//   padding-top: 80px;
-//   overflow: hidden;
-// }
-
-// .epicor_overview_img {
-//   img {
-//     width: 750px;
-//   }
-// }
-
-// .epicor_list ul {
-//   padding-top: 20px;
-//   padding-left: 0px;
-//   position: relative;
-//   content: "";
-
-//   li {
-//     padding-bottom: 10px;
-//   }
-// }
-
-// .epicor_list li::before {
-//   position: absolute;
-//   content: "";
-//   background-image: url("../../../Assets/images/application_integration_list_rightarrow.png");
-//   width: 20px;
-//   height: 20px;
-//   background-size: contain;
-//   margin-left: -30px;
-// }
-
-// // syspro
-
-// .syspro_img img {
-//   width: 775px;
-//   margin-left: -180px;
-// }
-// .syspro_content {
-//   margin-left: 20px;
-// }
-
-// .industry_top {
-//   background: #32a4d5;
-//   width: 82px;
-//   align-items: center;
-//   display: flex;
-//   border-radius: 50%;
-//   padding: 10px 10px;
-//   height: 82px;
-//   line-height: 82px;
-// }
-
-// .industry_center {
-//   clip-path: polygon(75% 0%, 100% 51%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
-//   background: $ball_blue_color;
-//   height: 20px;
-// }
-
-// epicor
-// .epicor_section {
-//   padding-top: 80px;
-//   padding-bottom: 80px;
-// }
-
-// .epicor_container_box {
-//   box-shadow: 0 2px 20px #00000012;
-//   padding: 30px;
-//   max-width: 280px;
-//   border-radius: 10px;
-//   margin-right: 15px;
-// }
-
-// .epicor_bottom_content {
-//   margin-top: 20px;
-// }
-// .epicor_img img {
-//   width: 600px;
-//   mix-blend-mode: darken;
-// }
-
-// .epicor_col_m5 {
-//   position: relative;
-// }
-// .epicor_exprience_box {
-//   display: flex;
-//   position: absolute;
-//   bottom: 0px;
-//   background: #32a4d5;
-//   animation: move 3s ease-in-out infinite;
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   right: 0;
-//   margin-bottom: 45px;
-
-//   img {
-//     width: 50px;
-//     color: white;
-//     filter: brightness(0) invert(1);
-//     align-items: center;
-//     display: flex;
-//     padding: 20px 5px;
-//     margin-right: 17px;
-//   }
-// }
-// .epicor_exprience_box h6 {
-//   font-size: 30px;
-//   padding: 10px;
-//   text-align: center;
-//   margin-top: 15px;
-//   font-family: "Rajdhani";
-//   font-weight: bold;
-//   color: white;
-//   border-left: 1px solid #fff;
-// }
-
-// @keyframes move {
-//   0% {
-//     transform: translateX(0);
-//   }
-//   50% {
-//     transform: translateX(-40px);
-//   }
-//   100% {
-//     transform: translateX(0);
-//   }
-// }
-
-// // syspro
-// .syspro_section {
-//   padding-top: 80px;
-//   padding-bottom: 80px;
-//   background-image: url("../../../Assets/images/pillar_bg_img.png");
-//   background-size: contain;
-//   padding: 120px;
-// }
-
-// .syspro_center_content {
-//   p {
-//     color: #fff;
-//     font-size: 22px;
-//     padding-top: 20px;
-//   }
-// }
-
-// .syspro_bottom_content {
-//   p {
-//     color: #fff;
-//     font-size: 22px;
-//   }
-// }
-// .syspro_main_heading h3 {
-//   color: #fff;
-//   font-size: 70px;
-// }
-
-// .syspro_main_heading p {
-//   color: #fff;
-// }
 
 // epicor
 
@@ -244,6 +85,12 @@ li {
 
 .main_heading_syspro_8_ways {
   padding-bottom: 20px;
+
+  span{
+    background-color: #32a4d5;
+    color: #fff;
+    padding: 3px;
+  }
 }
 
 .box_top {
@@ -309,90 +156,96 @@ li {
     font-weight: 700;
   }
 }
+
 // Industrys start
-.top_industry {
-  display: flex;
-  margin-bottom: 20px;
+ .top_industry {
+   display: flex;
+   margin-bottom: 20px;
 
-  .industry_box1 {
-    background: linear-gradient(45deg, #99d2eac9, transparent);
-    text-transform: capitalize;
-    width: 280px;
-    h5 {
-      font-size: 18px;
-      font-family: rajdhani;
-      font-weight: bold;
-      line-height: 40px;
-      margin-top: 20px;
-      margin-left: 26px;
-    }
-  }
-}
+   .industry_box1 {
+     background: linear-gradient(45deg, #99d2eac9, transparent);
+     text-transform: capitalize;
+     width: 280px;
+     h5 {
+       font-size: 18px;
+       font-family: rajdhani;
+       font-weight: bold;
+       line-height: 40px;
+       margin-top: 20px;
+       margin-left: 26px;
+     }
+   }
+ }
 
-.center_top_industry {
-  display: flex;
-  margin-left: 50px;
-  margin-bottom: 20px;
-}
+ .center_top_industry {
+   display: flex;
+   margin-left: 50px;
+   margin-bottom: 20px;
+ }
 
-.industry_box_2 {
-  // padding: 10px;
-  background: linear-gradient(45deg, rgb(18 131 195 / 73%), transparent);
-  width: 290px;
-  color: #141212;
-  h5 {
-    font-size: 18px;
-    font-family: rajdhani;
-    font-weight: bold;
-    line-height: 40px;
-    margin-top: 20px;
-    margin-left: 26px;
-  }
-}
+ .industry_box_2 {
+   background: linear-gradient(45deg, rgb(18 131 195 / 73%), transparent);
+   width: 290px;
+   color: #141212;
+   h5 {
+     font-size: 18px;
+     font-family: rajdhani;
+     font-weight: bold;
+     line-height: 40px;
+     margin-top: 20px;
+     margin-left: 26px;
+   }
+ }
 
-.center_bottom_industry {
-  display: flex;
-  margin-left: 100px;
-  margin-bottom: 20px;
-}
-.industry_box_3 {
-  background: linear-gradient(45deg, #2381a96b, transparent);
-  width: 290px;
-  color: #141212;
-  h5 {
-    font-size: 18px;
-    font-family: rajdhani;
-    font-weight: bold;
-    line-height: 40px;
-    margin-top: 20px;
-    margin-left: 26px;
-  }
-}
+ .center_bottom_industry {
+   display: flex;
+   margin-left: 100px;
+   margin-bottom: 20px;
+ }
+ .industry_box_3 {
+   background: linear-gradient(45deg, #2381a96b, transparent);
+   width: 290px;
+   color: #141212;
+   h5 {
+     font-size: 18px;
+     font-family: rajdhani;
+     font-weight: bold;
+     line-height: 40px;
+     margin-top: 20px;
+     margin-left: 26px;
+   }
+ }
 
-.bottom_industry {
-  display: flex;
-}
-.industry_box_4 {
-  background: linear-gradient(45deg, #67bbe0, transparent);
-  width: 290px;
-  color: #141212;
-  h5 {
-    font-size: 18px;
-    font-family: rajdhani;
-    font-weight: bold;
-    line-height: 40px;
-    margin-top: 20px;
-    margin-left: 26px;
-  }
-}
+ .bottom_industry {
+   display: flex;
+ }
+ .industry_box_4 {
+   background: linear-gradient(45deg, #67bbe0, transparent);
+   width: 290px;
+   color: #141212;
+   h5 {
+     font-size: 18px;
+     font-family: rajdhani;
+     font-weight: bold;
+     line-height: 40px;
+     margin-top: 20px;
+     margin-left: 26px;
+   }
+ }
 
 
 // industry ends
+
+
 
 //dynamics
 .dynamic_content{
   position: relative;
   content: "";
+  h4{
+    font-weight: bold;
+    font-family: $rajdhani_font;
+  }
 }
 .dynamics_list li::before{
   content: "\f111";
@@ -411,3 +264,53 @@ li {
 
 
 }
+// industry starts
+
+
+.industry_erp{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.industry_heading{
+  h3{
+    margin-bottom: 50px;
+  }
+}
+.industry_box{
+  text-align: center;
+    border: 1px solid #ccc;
+    // min-height: 160px;
+    position: relative;
+    margin-bottom: 56px;
+    transition: 0.5s;
+  img{width: 46px;}
+
+  &:hover{
+      background-color: $ball_blue_color;
+      transition: 0.5s;
+      h4{color: $white_color;}
+  }
+
+  .industry_icon{
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -41px);
+    background: #fff;
+}
+h4{
+    font-weight: bold;
+    font-family: $rajdhani_font;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 20px;
+    text-transform: capitalize;
+}
+}
+

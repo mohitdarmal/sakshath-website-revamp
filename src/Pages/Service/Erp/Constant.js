@@ -1,5 +1,6 @@
 export const EPICOR_OVERVIEW=require('../../../Assets/images/ERP_OVERVIEW.jpg')
 export const SUPPLY_CHAIN_IMG=require('../../../Assets/images/SUPPLY_CHAIN.png');
+export const INDUSTRY_IMG=require('../../../Assets/images/factory.png')
 
 
 export const Who_we_r=require('../../../Assets/images/who_we_are.jpg');
