@@ -84,8 +84,11 @@
    border-radius: 5px;
    min-height: 275px;
    margin-bottom: 5px;
+  
 
 }
+
+
 
 .title{
     padding-bottom: 20px;
@@ -106,46 +109,23 @@
 }
 }
 
- @media screen and  (max-width:480px){ 
-    .gJAGSz {
-        padding: 10px 14px !important;
-        clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0 0);
-        // border-radius: 0.2rem;
-        text-align: left !important;
-    
-        // font-weight: 600;
-        overflow: hidden;
+  .core_value_box:hover{
+    transform: scale(1.05, 1.04);
+     transition: .4s;
+  }
+
+
+// @keyframes up {
+
+//         0% {
+//             transform: translateY(0);
+//           }
+//           20% {
+//             transform: translateY(-2%);
+//           }
+//           100% {
+//             transform: translateY(0);
+//           }
         
-            border-radius: 0.2rem;
-            font-size: 10px !important;
-       
-        color: #007FFF;
-    }
-    .bXpluN
-    {
-       width: 40% !important;
-    //    align-items: center;
-    // display: flex;
-    }
-  
- }
-
-
-@media screen and (min-width:481px) and (max-width:767px){
-    /* For Mobile Landscape Screen  */
-    .bXpluN
-    {
-       width: 40% !important;
-       align-items: center;
-    display: flex;
-    }
-    
-    .gJAGSz{
-         padding:8px 20px !important;
-         text-align: center !important;
-         
-    }
-    // .right.vertical-item-row.visible > div {
-    //     width: 40% !important;
-    // }
-}
+     
+// }

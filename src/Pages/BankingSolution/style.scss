@@ -1,0 +1,83 @@
+@import '../../Assets/saas/Main.scss';
+
+.banking_section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.banking_main_content{
+
+    p{
+        margin-top: 20px;
+    }
+}
+
+
+ .customer_web_section{
+     background-image: url('../../Assets/images/Banking_bg_banner.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+    //   padding: 150px;
+    .banking_upper_heading{
+        h3{
+            color: #fff;
+        }
+    }
+ }
+
+
+ .banking_upper_heading{
+    padding-bottom: 140px;
+    padding-top: 80px;
+ }
+
+ .customer_web_box_section{
+    margin-top: -100px;
+    padding-bottom: 80px;
+ }
+.customer_web_box {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 20px #00000029;
+    border-radius: 6px;
+    transition: .5s;
+
+    h4{
+        font-weight: bold;
+        font-family: rajdhani;
+    }
+}
+
+.customer_web_box:hover{
+    // transition: .5s;
+    transform: scale(1.05,1.04);
+    background-color: #32a4d5;
+    color: #fff;
+    p{
+        color: #fff;
+    }
+}
+
+
+
+.key_feature_section{
+    padding-bottom: 80px;
+}
+.key_feature_box{
+    box-shadow: 0 2px 20px rgb(0 0 0 / 16%);
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    // background-image: url('../../Assets/images/Banking_bg_banner.png');
+// opacity: 0;
+    h4{
+        font-weight: bold;
+        font-family: rajdhani;
+    }
+
+    // img{
+    //     opacity: 0;
+    // }
+}
+.key_feature_box:hover img{
+opacity: 2;
+}

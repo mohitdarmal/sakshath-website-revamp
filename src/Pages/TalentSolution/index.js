@@ -419,6 +419,7 @@ const TalentSolution = () => {
 
 
     {/* Hire Section Start */}
+    
                 <section className="hire_sec">
                     <div className="container">
                         <div className="row text-center hire_heading">

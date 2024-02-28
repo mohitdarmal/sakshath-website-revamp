@@ -216,7 +216,7 @@ const Career = () => {
              
              <div className="join_our_team_wrapper">
                 
-                <Heading heading ="join our team" uppercase="text-uppercase"/>
+                <Heading heading ="Join our team" uppercase=""/>
 
                 <ul>
                   <li>
@@ -271,7 +271,7 @@ const Career = () => {
            {/* <div className="col-md-2"></div> */}
            <div className="col-md-8 careers_at_sakshath_main_box offset-md-2">
            
-           <Heading heading="careers at sakshath" uppercase="text-uppercase" />
+           <Heading heading="Careers at sakshath" uppercase="" />
            
            <ul>
             <li className="careers_at_sakshath_checkmark">
@@ -373,7 +373,7 @@ const Career = () => {
         <Container>
           <Row>
             <div className="benefits_heading text-center">
-              <Heading heading="Benefits of Working At Sakshath" uppercase="uppercase" />{" "}
+              <Heading heading="Benefits of working at sakshath" uppercase="" />{" "}
             </div>
             
 
@@ -488,7 +488,7 @@ const Career = () => {
       <section className="careers_apply_job_section">
         <div className="container">
         <div className="text-center mb-4 pb-md-1">
-           <Heading heading= "Most Popular Jobs" uppercase="text-uppercase" />
+           <Heading heading= "Most popular jobs" uppercase="" />
            <p>Beneath each of these categories, you can find its most popular</p>
            </div>
           <div className="row">

@@ -3,6 +3,7 @@ import "./style.scss";
 import {
   ABOUT_WHO_WE_ARE,
   RPA_BOT,
+  STAFFING,
   STAFFING_ASSESSMENT,
   STAFFING_BENIFIT,
   STAFFING_DATABASE,
@@ -65,7 +66,7 @@ const Staffing = () => {
             </div>
             <div className="col-md-6">
               <div className="staffing_img">
-                <img src={ABOUT_WHO_WE_ARE} alt="" width="650px" />
+                <img src={STAFFING} alt="" />
               </div>
             </div>
           </div>

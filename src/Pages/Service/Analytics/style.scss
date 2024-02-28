@@ -40,6 +40,7 @@ margin-bottom: 80px;
 }
 .AI_datascience_sec{
     margin-top: 80px;
+    position: relative;
 }
 .ai_data_science_left{
   padding-right: 80px;
@@ -126,7 +127,7 @@ margin-bottom: 80px;
 
 
 .data_integration_box1{
-    padding-bottom: 10px; //same css for box2 and 1 for padding bottom
+    padding-bottom: 62px; //same css for box2 and 1 for padding bottom
 }
 .data_integration_box4{
     padding-bottom: 1px;
@@ -155,27 +156,35 @@ margin-bottom: 80px;
 
 
 .ai_datascience_container::before{
+    
+    background-image: url("../../../Assets/images/contact_bg_arrow.png");
+    
     content: "";
     position: absolute;
     background-image: url("../../../Assets/images/contact_bg_arrow.png");
     height: 90px;
     background-size: contain;
-    margin-left: 60px;
+    /* margin-left: 60px; */
     width: 83px;
-    margin-top: 413px;
+    /* margin-top: 413px; */
     background-repeat: no-repeat;
+    top: 482px;
+    bottom: 0;
 }
 
 .bi_dashboard_container::before{
+   
     content: "";
     position: absolute;
-    background-image: url("../../../Assets/images/contact_us_arrow_mirror_image.png");
+    background-image: url("../../../Assets/images/contact_bg_arrow.png");
     height: 90px;
     background-size: contain;
     margin-left: 695px;
     width: 83px;
-    margin-top: 500px;
+    /* margin-top: 500px; */
     background-repeat: no-repeat;
+    top: 508px;
+    left: -570px;
 }
 
 .data_integration_container::before{
@@ -186,21 +195,26 @@ margin-bottom: 80px;
     background-size: contain;
     margin-left: 60px;
     width: 83px;
-    margin-top: 410px;
+    //margin-top: 410px;
     background-repeat: no-repeat;
+    top: 435px;
+    left: 60px 
+    
 
 }
 
 .bigdata_container::before{
     content: "";
     position: absolute;
-    background-image: url("../../../Assets/images/contact_us_arrow_mirror_image.png");
-    height: 122px;
+    background-image: url("../../../Assets/images/contact_bg_arrow.png");
+    height: 104px;
     background-size: contain;
-    margin-left: 643px;
-    width: 123px;
-    margin-top: 455px;
+    /* margin-left: 643px; */
+    width: 120px;
+    /* margin-top: 455px; */
     background-repeat: no-repeat;
+    top: 428px;
+    left: 118px;
 
 }
 
@@ -442,7 +456,16 @@ margin-bottom: 80px;
 .bi_dashboard_sec {
   padding-top: 80px;
   padding-bottom: 80px;
+  position: relative;
 }
+.data_integration_sec {
+  
+  position: relative;
+}
+.bigdata_sec{
+  position: relative;
+}
+
 .service_stickmenu_list a {
   padding: 20px 30px !important;
 

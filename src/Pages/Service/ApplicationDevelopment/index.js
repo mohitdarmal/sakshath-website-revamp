@@ -27,6 +27,7 @@ import { FaFilePdf } from "react-icons/fa";
 import BrouchurePopup from "../../../Components/BoruchurePopup";
 import Faq from "../../../Components/Faq";
 import ServiceContactForm from "../../../Components/ServiceContactForm";
+import {Fade} from "react-awesome-reveal";
 
 const ApplicationDevelopment = () => {
   const [showModal, setShowModal] = useState(false);
@@ -48,10 +49,12 @@ const ApplicationDevelopment = () => {
           {/* Heading start */}
           <div className="row">
             <div className="col-md-8 offset-md-2 text-center app_dev_heading">
+            <Fade direction="up"  triggerOnce>
               <Heading
                 heading="Why choose Sakshath Technologies for app development?"
                 uppercase=""
               />
+              </Fade>
             </div>
           </div>
           {/* Heading end */}
@@ -59,8 +62,12 @@ const ApplicationDevelopment = () => {
           {/* App devlopment details start */}
           <div className="row mt-md-5 align-items-center why_choose_app_dev_content">
             <div className="col-md-6 ipad_full_width">
+            <Fade direction="up"  triggerOnce>
+            
               <div className="row why_choose_app_dev_icon_content">
+              
                 <div className="col-md-6">
+                
                   {/* Start */}
                   <div className="app_dev_icon_with_text">
                     <div>
@@ -113,6 +120,7 @@ const ApplicationDevelopment = () => {
                     </div>
                   </div>
                   {/* End */}
+                  
                 </div>
 
                 <div className="col-md-6 ">
@@ -170,6 +178,7 @@ const ApplicationDevelopment = () => {
                   {/* End */}
                 </div>
               </div>
+              </Fade>
             </div>
 
             <div className="col-md-1"></div>
@@ -191,10 +200,13 @@ const ApplicationDevelopment = () => {
       <section className="our_services_sec">
         <div className="container">
           <div className="row text-center mb-md-4">
+          <Fade direction="up"  triggerOnce>
             <Heading heading="Our Services" uppercase="" />
+            </Fade>
           </div>
-
+          <Fade direction="up"  triggerOnce>
           <div className="row">
+          
             <div className="col-md-4 ipad_half_width">
               <div className="our_services_box">
                 <div className="our_services_box_content">
@@ -297,6 +309,7 @@ const ApplicationDevelopment = () => {
               </div>
             </div>
           </div>
+          </Fade>
         </div>
       </section>
       {/* @@@@@ SECTION- Our Services end @@@@@@ */}
@@ -368,10 +381,12 @@ const ApplicationDevelopment = () => {
       <section className="brouchure_sec">
         <div className="container">
           <div className="text-center mb-3 pb-md-3" >
+          <Fade direction="up"  triggerOnce>
         <Heading
                 heading="Brouchure"
                 uppercase=""
               />
+              </Fade>
               </div>
           <PdfViewer pdfUrl={pdfUrl} />
           <div className="downloadBrouchure">
@@ -398,11 +413,15 @@ const ApplicationDevelopment = () => {
          </div>
         <div className="col-md-5">
           <div className="contact_heading">
+          <Fade direction="up"  triggerOnce>
         <Heading
                 heading="Contact Us"
                 uppercase=""
               />
+              </Fade>
+              <Fade direction="up"  triggerOnce>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+              </Fade>
               </div>
         </div>
         </div>

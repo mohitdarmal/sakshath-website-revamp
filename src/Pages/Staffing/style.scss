@@ -4,7 +4,14 @@
 .staffing_main_section {
   padding-top: 80px;
 }
-
+.staffing_img img{
+  width: 550px;
+  transition: .5s;
+}
+.staffing_img:hover img{
+  transition: .5s;
+  transform: scale(1.05,1.04);
+}
 .staffing_content {
   margin-top: 20px;
   padding-right: 20px;
