@@ -57,7 +57,7 @@ const handleSubmit = (e) => {
         <div className="container">
           <div className="row text-center">
             <div className="col-md-8 offset-md-2">
-          <Heading heading="GET IN TOUCH WITH US" uppercase="text-uppercase" />
+          <Heading heading="Get in touch with us" uppercase="" />
           <p className="text-center mb-5">We are a firm who always support our customers through chat, person and also through mails on all our customers feedback, reveiws and our product enquiries. Kindly fill in the form and wait for the message to be displayed sent before you leave the form.
 </p>
 </div>
@@ -151,7 +151,7 @@ const handleSubmit = (e) => {
         <div className="container">
           <div className="row">
             <div className="text-center">
-              <Heading heading="Our Offices" uppercase="text-uppercase" />
+              <Heading heading="Our Offices" uppercase="" />
             </div>
           </div>
 
@@ -265,7 +265,7 @@ const handleSubmit = (e) => {
 
       <div className="col-md-8 offset-md-2">
         <div className="text-center mb-4">
-      <Heading heading="Work with us" uppercase="text-uppercase" />
+      <Heading heading="Work with us" uppercase="" />
       </div>
       <Form onSubmit={handleSubmit}>
         <Row>
