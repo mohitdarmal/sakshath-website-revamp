@@ -28,6 +28,7 @@ import BrouchurePopup from "../../../Components/BoruchurePopup";
 import pdfUrl from "../../../Assets/pdf/dummy.pdf";
 import { FaFilePdf } from "react-icons/fa";
 
+
 //import {SECTION_VECTOR} from "../../Assets/images/check icon psd.png";
 import {
   SOFTWARE_LOGO_1,
@@ -87,11 +88,13 @@ const menu = [{
           <div className="row align-items-center">
             
             <div className="col-md-6 ipad_full_width">
+            <Fade direction="up" delay={300} triggerOnce>
               <div className="overview_sec_left">
+              
               <Heading
                 heading="Overview"
-                uppercase="text-uppercase"
               />
+              
                 <p className="sec_para">
                 Data integration is the practice of consolidating data from disparate sources into a single dataset to provide users with consistent access to and delivery of data across all business processes.
                  Unlock seamless integration solutions with our expert consulting and managed services. 
@@ -99,15 +102,18 @@ const menu = [{
                 </p>
                 <SlideAnimationButton btnName="Get started now!" url="/contact-us"/>
               </div>
+              </Fade>
             </div>
 
             <div className="col-md-6 ipad_full_width">
+            {/* <Fade direction="up" delay={300} triggerOnce> */}
               <div className="overview_sec_right_img">
                 <img
                   className="img-fluid integration_img_left"
                   src={INTEGRATION_SECTION_ONE_IMG}
                 />
               </div>
+              {/* </Fade> */}
             </div>
           </div>
         </div>
@@ -117,8 +123,14 @@ const menu = [{
       {/* section four start */}
 
       <section className="partner_logo_section">
-      <h6 className="trusted_by">Trusted By</h6>
+      
+     
         <div className="container partner_logo_tab">
+          <div className="text-center">
+          <Heading
+                heading="Trusted By"
+              />
+          </div>
           
           <Swiper
             slidesPerView={5}
@@ -159,17 +171,20 @@ const menu = [{
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6  why_need_integration_left ipad_full_width">
+            {/* <Fade direction="up" delay={300} triggerOnce> */}
               <div>
                 <img
                   className="img-fluid integration_img_right"
                   src={INTEGRATION_SECTION_THREE_IMG}
                 />
               </div>
+              {/* </Fade> */}
             </div>
             <div className="col-md-6 why_need_integration_right ipad_full_width">
+            <Fade direction="up" delay={300} triggerOnce>
               <Heading
                 heading="Why do you need integration?"
-                uppercase="text-uppercase"
+                
               />
               <p className="sec_para">
                 Inhouse application integration: application to application –
@@ -178,6 +193,7 @@ const menu = [{
                 Business 2 Business application integration: connecting to
                 third-party or partner Integration of application to IoT Devices{" "}
               </p>
+              </Fade>
             </div>
           </div>
         </div>
@@ -254,26 +270,31 @@ const menu = [{
           <div className="row align-items-center">
             {/* <div className="body_sec_three_parent"> */}
             <div className="col-md-6 integration_coe_left ipad_full_width">
+            <Fade direction="up" delay={300} triggerOnce>
               <Heading
                 heading="Integration COE"
-                uppercase="text-uppercase"
+                
               />
 
               <p>
               Embrace the full potential of Integration Centers of Excellence (COE) to revolutionize your workplace through innovation and collaboration.
               </p>
               <ul className="intergration_list">
-                <li>CERTIFIED RESOURCES</li>
-                <li>RESUABLE ASSETS</li>
-                <li>INDUSTRY STANDARD BEST PRACTISES</li>
-                <li>QUALITY ASSURANCE </li>
+                <li> Cerified Resources</li>
+                <li> Resuable Assets</li>
+                <li> Industry Standard Best Practises</li>
+                <li> Quality Assurance</li>
               </ul>
+              </Fade>
             </div>
             <div className="col-md-6 integration_coe_right ipad_full_width">
+            {/* <Fade direction="up" delay={300} triggerOnce> */}
               <img
                 className="img-fluid integration_img"
                 src={SECTION_THREE_ICON_ONE}
               />
+              {/* </Fade> */}
+
             </div>
             {/* </div> */}
           </div>
@@ -290,7 +311,7 @@ const menu = [{
           <div className="row integration_planning_banner_content_box align-items-center">
             <div className="col-md-9 ipad_full_width">
               <div className="integration_left_planning_banner_content">
-                <Fade direction="up" triggerOnce>
+              <Fade direction="up" delay={300} triggerOnce>
                   {" "}
                   <h3>
                     Full Truckload Planning Reimagined Experts in Security
@@ -322,18 +343,21 @@ const menu = [{
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 ipad_full_width">
+            {/* <Fade direction="up" delay={300} triggerOnce> */}
               <div className="integration_consulting_left">
                 <img
                   className="img-fluid integration_consulting_img"
                   src={SECTION_THREE_ICON_TWO}
                 />
               </div>
+              {/* </Fade> */}
             </div>
             <div className="col-md-6 ipad_full_width">
+            <Fade direction="up" delay={300} triggerOnce>
               <div className="integration_consulting_right">
                 <Heading
                 heading="Integration Consulting "
-                uppercase="text-uppercase"
+                
               />
                 
                 <p>
@@ -367,6 +391,7 @@ const menu = [{
                   </div>
                 </div>
               </div>
+              </Fade>
             </div>
           </div>
         </div>
@@ -383,10 +408,10 @@ const menu = [{
           <div className="Migration_technologies ">
             <Heading
                 heading="Migration Technologies"
-                uppercase="text-uppercase"
+               
               />
           </div>
-          <p className="">Our solutions turn obstacles into opportunities, unlocking new possibilities for innovation, efficiency, and growth.Transform with Our Migration Assistance</p>
+          <p className="Migration_technologies_para">Our solutions turn obstacles into opportunities, unlocking new possibilities for innovation, efficiency, and growth.Transform with Our Migration Assistance</p>
           {/* <Swiper
             slidesPerView={5}
             spaceBetween={30}
@@ -470,14 +495,15 @@ const menu = [{
       {/* managed service start */}
       <div id="managedService"> 
       <Element name="managedService">
-      <section className="managed_services_sec">
+      <section className="integration_managed_services_sec">
         <div className="container">
           <div className="row align-items-center">
             {/* <div className="body_sec_three_parent"> */}
-            <div className="col-md-6 managed_services_left ipad_full_width">
+            <div className="col-md-6 integration_managed_services_left ipad_full_width">
+            <Fade direction="up" delay={300} triggerOnce>
                   <Heading
                     heading="Managed services"
-                    uppercase="text-uppercase"
+                    
                    
                   />
               <p>
@@ -504,12 +530,15 @@ const menu = [{
                   LB)
                 </li>
               </ul>
+              </Fade>
             </div>
             <div className="col-md-6 managed_services_right ipad_full_width">
+            {/* <Fade direction="up" delay={300} triggerOnce> */}
               <img
                 className="img-fluid integration_img"
                 src={SECTION_THREE_ICON_THREE}
               />
+              {/* </Fade> */}
             </div>
             {/* </div> */}
           </div>
