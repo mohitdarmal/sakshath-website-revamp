@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { BsTelephoneInbound } from "react-icons/bs";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
-
+import {Fade} from "react-awesome-reveal";
 
 import {
   HEADQUATERS_ICON,
@@ -57,9 +57,13 @@ const handleSubmit = (e) => {
         <div className="container">
           <div className="row text-center">
             <div className="col-md-8 offset-md-2">
+            <Fade direction="up" triggerOnce>
           <Heading heading="Get In Touch With Us" />
+          </Fade>
+          <Fade direction="up" triggerOnce>
           <p className="text-center mb-5">We are a firm who always support our customers through chat, person and also through mails on all our customers feedback, reveiws and our product enquiries. Kindly fill in the form and wait for the message to be displayed sent before you leave the form.
 </p>
+</Fade>
 </div>
           </div>
           <div className="row">
@@ -123,6 +127,7 @@ const handleSubmit = (e) => {
           </div>
 
           <div className="contact_page_social_icon">
+          
         <Link to="https://www.instagram.com/sakshath_technologies/" target="_blank">
           <img src={INSTAGRAM_ICON} />
         </Link>
