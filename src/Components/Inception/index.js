@@ -8,14 +8,10 @@ const Inception = () => {
     <>
       <section class="inception_section">
         <div class="container">
-          <div className="row">
-            <div className="inception_main_heading text-center mb-4">
-              <Heading
-                heading="Inception to Fruition"
-                uppercase="text-uppercase"
-              />
-            </div>
-          </div>
+
+        <div className="inception_main_heading text-center">
+          <Heading heading="Inception to Fruition"/>
+        </div>
           {/* 2012 */}
 
           <div class="row align-items-center how-it-works d-flex">

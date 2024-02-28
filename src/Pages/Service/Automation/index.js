@@ -54,6 +54,7 @@ import {
 import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
+import { Fade } from "react-awesome-reveal";
 
 const Automation = () => {
   const menu = [
@@ -71,7 +72,52 @@ const Automation = () => {
     },
   ];
 
-  const whyDEVOPS = [
+  const whyRpa = [
+    {
+      id: 1,
+      title: " Fastest Business Scaling",
+      description:
+        "Use a low-code or no-code platform to automate robotic processes to launch or grow your business. Get a greater ROI and faster business expansion with Sakshath Automation Services.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 2,
+      title: "Ample Opportunities",
+      description:
+        "You have access to an ocean of RPA business options with Sakshath for diverse procedures across departments.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 3,
+      title: " Huge Profits and Revenue",
+      description:
+        "Gain qualified leads for your company, accelerate the deployment of automation, and make recurring payments for the service with ease..",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 4,
+      title: "Automation of the Job Process",
+      description:
+        " Create bots immediately and connect them to the SaaS Operating system, a single web control panel from which you can manage and monitor each automation within and between different companies simultaneously.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 5,
+      title: "RPA Bots with One Click",
+      description:
+        " Our RPA solution will help you have an infinite number of free bots to handle any automation challenge, whether a high-volume, one-time or straightforward task bot.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 6,
+      title: "Boost Efficiency and Productivity",
+      description:
+        "Due to Sakshath’s RPA’s on-demand scalability, consistency, accuracy, and tailored solution, your business’s productivity and performance will improve.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+  ];
+
+  const whyCloud = [
     {
       id: 1,
       title: "REMARKABLE EXPERTISE",
@@ -116,6 +162,51 @@ const Automation = () => {
     },
   ];
 
+  const whyDevops = [
+    {
+      id: 1,
+      title: " Total and utter DevOps Process",
+      description:
+        "Your development and operations will be better coordinated with the aid of our DevOps team, allowing you to launch software more frequently while also increasing resilience.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 2,
+      title: "Single-stop Technical Advice",
+      description:
+        "Our DevOps professionals can create and assist with setting up a CI/CD pipeline for your company. We install and configure relevant DevOps-specific technologies to ensure effective execution.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 3,
+      title: "Complete Implementation Roadmap",
+      description:
+        " Our experienced staff can also handle your company’s initial technical DevOps deployment. We carry out strategic planning, create a thorough roadmap for implementing DevOps.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 4,
+      title: "Problem  Analysis",
+      description:
+        " Our DevOps consultants assess issues in the business model, implement solutions into your DevOps strategy, and fine-tune procedures like CI/CD technologies or application monitoring to eliminate potential problems.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 5,
+      title: "Complete Support and Maintenance",
+      description:
+        " Sakshath’s experts can coach your internal team on reliably managing the DevOps method and, if required, handle and support any tech difficulties that may develop (for example, CI/CD configuration failures).",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 6,
+      title: "Effective Strategy Planning",
+      description:
+        "Our specialists begin by reviewing your workflow, application portfolio, IT resources’ capacities, and the nature and scope of your IT infrastructures.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+  ];
+
   return (
     <>
       <BreadCumb
@@ -129,22 +220,25 @@ const Automation = () => {
           <div className="row align-items-center">
             <div className="col-md-6 ipad_full_width">
               <div className="overview_sec_left">
-                <Heading
-                  heading="Streamline Your Operations with Automation"
-                  // uppercase="text-uppercase"
-                />
-                <p className="sec_para">
-                  Experience seamless automation with cloud-native
-                  solutions.Using Simplify workflows, reduce costs, and boost
-                  productivity. Business organizations are increasingly
-                  automating operational costs and inefficiencies. They are
-                  right on their way. Using automation, internal and external
-                  processes are becoming more efficient and productive.
-                </p>
-                <SlideAnimationButton
-                  btnName="Get Started Now"
-                  url="/contact-us"
-                />
+                <Fade direction="up" triggerOnce>
+                  <Heading
+                    heading="Streamline Your Operations with Automation"
+                    // uppercase="text-uppercase"
+                  />
+                  <p className="sec_para">
+                    Experience seamless automation with cloud-native
+                    solutions.Using Simplify workflows, reduce costs, and boost
+                    productivity. Business organizations are increasingly
+                    automating operational costs and inefficiencies. They are
+                    right on their way. Using automation, internal and external
+                    processes are becoming more efficient and productive.
+                  </p>
+
+                  <SlideAnimationButton
+                    btnName="Get Started Now"
+                    url="/contact-us"
+                  />
+                </Fade>
               </div>
             </div>
 
@@ -162,38 +256,40 @@ const Automation = () => {
       {/* <!-- section one end --> */}
 
       <section className="partner_logo_section">
-        <div className="container partner_logo_tab">
-          <Swiper
-            slidesPerView={5}
-            spaceBetween={10}
-            autoplay={{
-              delay: 1500,
-              disableOnInteraction: false,
-            }}
-            loop={true}
-            modules={[Autoplay]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
-              <img src={CLIENT_LOGO1} />{" "}
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO2} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO3} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO4} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO5} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO6} />
-            </SwiperSlide>
-          </Swiper>
-        </div>
+        <Fade direction="up" triggerOnce>
+          <div className="container partner_logo_tab">
+            <Swiper
+              slidesPerView={5}
+              spaceBetween={10}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <img src={CLIENT_LOGO1} />{" "}
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO2} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO3} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO4} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO5} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={CLIENT_LOGO6} />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </Fade>
       </section>
 
       {/* <!-- section two start --> */}
@@ -226,13 +322,16 @@ const Automation = () => {
         </div>
       </section> */}
       {/* <!-- section two end --> */}
-      <ServiceStickMenu
-        pageName="Automation"
-        // title1="Cloud Automation DEVELOPMENT"
-        // title2="RPA"
-        // title3="Devops /Testing"
-        menuName={menu}
-      />
+
+      <Fade direction="up" triggerOnce>
+        <ServiceStickMenu
+          pageName="Automation"
+          // title1="Cloud Automation DEVELOPMENT"
+          // title2="RPA"
+          // title3="Devops /Testing"
+          menuName={menu}
+        />
+      </Fade>
       {/* automation starts */}
 
       <div id="cloudAutomate">
@@ -252,39 +351,46 @@ const Automation = () => {
                 </div>
                 <div className="col-md-6">
                   <div className="cloud_native_content">
-                    <Heading heading=" Cloud Native Development" />
-                    <p>
-                      Organizations can leverage cloud-native technologies to
-                      develop and run scalable applications in modern, dynamic
-                      environments like public, private, and hybrid clouds.
-                    </p>
+                    <Fade direction="up" triggerOnce>
+                      <Heading heading=" Cloud Native Development" />
+                      <p>
+                        Organizations can leverage cloud-native technologies to
+                        develop and run scalable applications in modern, dynamic
+                        environments like public, private, and hybrid clouds.
+                      </p>
+                    </Fade>
                   </div>
 
                   <div className="row">
                     <div className="col-md-6">
-                      <div className="automation_right_content_list">
-                        <ul>
-                          <li> Hybrid Integration</li>
-                          <li> Services- Based Integration</li>
-                          <li> API Gateway/Manager</li>
-                          <li>
-                            {" "}
-                            Open API business strategy for monetization of APIs
-                          </li>
-                        </ul>
-                      </div>
+                      <Fade direction="up" triggerOnce>
+                        <div className="automation_right_content_list">
+                          <ul>
+                            <li> Hybrid Integration</li>
+                            <li> Services- Based Integration</li>
+                            <li> API Gateway/Manager</li>
+                            <li>
+                              {" "}
+                              Open API business strategy for monetization of
+                              APIs
+                            </li>
+                          </ul>
+                        </div>
+                      </Fade>
                     </div>
 
                     <div className="col-md-6">
-                      <div className="automation_right_content_list">
-                        <ul>
-                          <li> Social Integration</li>
-                          <li> Marketplace Integration</li>
-                          <li> In-Built Connectors</li>
-                          <li> Enterprise Service Bus (ESB)</li>
-                          {/* <li> Pluggable Adaptors</li> */}
-                        </ul>
-                      </div>
+                      <Fade direction="up" triggerOnce>
+                        <div className="automation_right_content_list">
+                          <ul>
+                            <li> Social Integration</li>
+                            <li> Marketplace Integration</li>
+                            <li> In-Built Connectors</li>
+                            <li> Enterprise Service Bus (ESB)</li>
+                            {/* <li> Pluggable Adaptors</li> */}
+                          </ul>
+                        </div>
+                      </Fade>
                     </div>
                   </div>
                 </div>
@@ -302,6 +408,9 @@ const Automation = () => {
               <Heading heading="Pillars Of  Cloud Native Application" />
             </div>
             <div className="col-md-3 pillar_number_storke pillar_number_storke">
+            <Fade direction="up" triggerOnce>
+
+           
               <div className="number">{/* <h1> 01</h1> */}</div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -311,8 +420,10 @@ const Automation = () => {
                   <h5>Automation</h5>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke">
+            <Fade direction="up" triggerOnce delay={250}>
               <div className="number">{/* <h1> 02</h1> */}</div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -322,8 +433,10 @@ const Automation = () => {
                   <h5>Modern Design & Architecture</h5>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke">
+            <Fade direction="up" triggerOnce delay={350}>
               <div className="number">{/* <h1> 03</h1> */}</div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -333,8 +446,10 @@ const Automation = () => {
                   <h5>Microservices</h5>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke">
+            <Fade direction="up" triggerOnce delay={400}>
               <div className="number">{/* <h1> 04</h1> */}</div>
               <div className="pillars_box">
                 <div className="pillar_icon">
@@ -344,6 +459,7 @@ const Automation = () => {
                   <h5>Containers Backing Services</h5>
                 </div>
               </div>
+              </Fade>
             </div>
           </div>
         </div>
@@ -353,6 +469,7 @@ const Automation = () => {
       {/*automation ends */}
 
       {/* mobile application ends */}
+      <Fade direction="up" triggerOnce>
       <section className="mobile_section">
         <div className="container">
           <div className="row text-center">
@@ -404,6 +521,7 @@ const Automation = () => {
           </div>
         </div>
       </section>
+      </Fade>
 
       {/* application starts */}
       <section className="application_section">
@@ -483,7 +601,7 @@ const Automation = () => {
       {/* automation ends */}
 
       {/* why_Sakshath starts */}
-      <WhySakshath />
+      <WhySaksahthNew whyCrm={whyCloud} />
 
       {/* why_Sakshath ends*/}
 
@@ -795,7 +913,7 @@ const Automation = () => {
       {/* RPA TOOLS ENDS */}
 
       {/* why skashath starts */}
-      <WhySakshath />
+      <WhySaksahthNew whyCrm={whyRpa} />
       {/*  why skashath ends */}
 
       <div id="devops">
@@ -810,10 +928,7 @@ const Automation = () => {
                 </div>
                 <div className="col-md-6">
                   <div className="devops_testing_right_content">
-                    <Heading
-                      heading="DevOps/Testing"
-                      uppercase=""
-                    />
+                    <Heading heading="DevOps/Testing" uppercase="" />
                     <p>
                       In transforming Testing to the world of Agile and DevOps,
                       Sakshath has been at the forefront of providing
@@ -1028,7 +1143,7 @@ const Automation = () => {
       </section> */}
 
       {/* Why Sakshath starts*/}
-      <WhySaksahthNew whyCrm={whyDEVOPS} />
+      <WhySaksahthNew whyCrm={whyDevops} />
       {/* why sakshath ends */}
     </>
   );

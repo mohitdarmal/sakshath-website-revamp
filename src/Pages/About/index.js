@@ -78,7 +78,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-md-6 ipad_full_width">
-              <div className="who_we_are_img">
+              <div className="who_we_are_img ipad_full_width ">
                 <img src={about_who_we_Are} alt="" className="img-fluid" />
               </div>
             </div>
