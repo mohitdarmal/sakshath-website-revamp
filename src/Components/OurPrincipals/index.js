@@ -5,6 +5,7 @@ import SubTitle from "../Utils/Title_head";
 import Heading from "../Utils/Heading";
 import "./styles.scss";
 import { Link } from "react-router-dom";
+import SubHeading from "../Utils/SubHeading";
 
 const OurPrincipals = () => {
     return (
@@ -116,12 +117,12 @@ const OurPrincipals = () => {
               <div className="text-center">
                 <div className="title">
                   <Fade direction="up" triggerOnce>
-                    <SubTitle SubTitle="Our Principle " />{" "}
+                    <SubTitle SubTitle="Our Principles " />{" "}
                   </Fade>
                   <Fade direction="up" triggerOnce>
                     <Heading
-                      heading="SOLUTIONS CUSTOMERS HAVE BUILT WITH INSTABASE"
-                      uppercase="text-uppercase"
+                      heading="Top Four Reasons to Choose Sakshath Technologies"
+                      uppercase=""
                     />
                   </Fade>
                 </div>
@@ -138,7 +139,9 @@ const OurPrincipals = () => {
                   <img src={RELIABILTY1} alt="" />
                 </div>
                 <div className="principle_para">
-                  <h5>REABILITY</h5>
+                  {/* <h5>REABILITY</h5> */}
+                  <SubHeading heading="Reability" uppercase="" />
+                  
                   <p>
                     {" "}
                     Our customers rely on us as we provide high–quality,
@@ -176,7 +179,8 @@ const OurPrincipals = () => {
                   <img src={SPECIALIZATION1} alt="" />
                 </div>
                 <div className="principle_para">
-                  <h5>SPECIALIZATION</h5>
+                  {/* <h5>SPECIALIZATION</h5> */}
+                  <SubHeading heading="SPECIALIZATION" uppercase="" />
                   <p>
                     {" "}
                     Our customers rely on us as we provide high–quality,
@@ -195,7 +199,10 @@ const OurPrincipals = () => {
                   <img src={EXPERIENCE1} alt="" />
                 </div>
                 <div className="principle_para">
-                  <h5>EXPERIENCE</h5>
+                  {/* <h5>EXPERIENCE</h5> */}
+                  <SubHeading heading="EXPERIENCE" uppercase="" />
+                  
+                
                   <p>
                     {" "}
                     Our customers rely on us as we provide high–quality,

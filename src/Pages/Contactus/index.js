@@ -151,7 +151,7 @@ const handleSubmit = (e) => {
         <div className="container">
           <div className="row">
             <div className="text-center">
-              <Heading heading="Our Offices" uppercase="text-uppercase" />
+              <Heading heading="Our Offices" uppercase="" />
             </div>
           </div>
 
@@ -265,7 +265,7 @@ const handleSubmit = (e) => {
 
       <div className="col-md-8 offset-md-2">
         <div className="text-center mb-4">
-      <Heading heading="Work with us" uppercase="text-uppercase" />
+      <Heading heading="Work with us" uppercase="" />
       </div>
       <Form onSubmit={handleSubmit}>
         <Row>
