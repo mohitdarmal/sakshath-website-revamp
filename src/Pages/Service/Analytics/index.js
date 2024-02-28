@@ -4,6 +4,7 @@ import BreadCumb from "../../../Components/Breadcumb";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
 import Heading from "../../../Components/Utils/Heading";
+import {Fade} from "react-awesome-reveal";
 import {
   ANALYTICS_OVERVIEW_IMG,
   ANALYTICS_AI_IMG,
@@ -196,6 +197,7 @@ export const Analytics = () => {
                   <div className="ai_datascience_content">
                     <div className="row">
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box ai_box1_height">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_01} alt="" />
@@ -217,9 +219,11 @@ export const Analytics = () => {
                             </ul>
                           </div>
                         </div>
+                        </Fade> 
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box ai_box2_height">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_02} alt="" />
@@ -237,9 +241,11 @@ export const Analytics = () => {
                             </ul>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_03} alt="" />
@@ -263,9 +269,11 @@ export const Analytics = () => {
                             </ul>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box ai_box4_height">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_04} alt="" />
@@ -288,6 +296,7 @@ export const Analytics = () => {
                             </ul>
                           </div>
                         </div>
+                        </Fade> 
                       </div>
                     </div>
                   </div>
@@ -365,6 +374,7 @@ export const Analytics = () => {
                   <div className="ai_datascience_content">
                     <div className="row">
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box bi_dashboard_box1_height">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_01} alt="" />
@@ -385,9 +395,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_02} alt="" />
@@ -407,9 +419,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade> 
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box bi_box3">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_03} alt="" />
@@ -428,9 +442,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade>
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_04} alt="" />
@@ -449,9 +465,11 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                        </Fade> 
                       </div>
 
                       <div className="col-md-6 ai_datascience_content_col">
+                      <Fade direction="up"  triggerOnce>
                         <div className="ai_datascience_content_col_box bi_box5">
                           <div className="ai_datascience_content_img">
                             <img src={analytics_logo_05} alt="" />
@@ -472,6 +490,7 @@ export const Analytics = () => {
                             </p>
                           </div>
                         </div>
+                       </Fade> 
                       </div>
                     </div>
                   </div>
