@@ -4,6 +4,7 @@ import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/
 import "./style.scss";
 import SlideAnimationButton from '../../../Components/Utils/SlideAnimationButton';
 import { MANAGED_SERVICE_SECTION_RIGHT_IMG,MANAGED_SERVICE_SECTION_LEFT_IMG } from './Constant';
+import {Fade} from "react-awesome-reveal";
 import Heading from '../../../Components/Utils/Heading';
 
 const ManagedServices = () => {
@@ -23,9 +24,16 @@ const ManagedServices = () => {
                         <div className="col-md-6">
                           <div className="overview_sec_left_managed_services">
                             {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
+                            <Fade direction="up" delay={300} triggerOnce>
                             <Heading heading="Unlock Effective Knowledge Management with Our Services" uppercase=""/>
+                            </Fade>
+                            <Fade direction="up" delay={300} triggerOnce>
                             <p className="overview_sec_managed_services_para">At Sakshath, we understand the challenges businesses face in today's fast-paced environment. The constant demand for efficiency and the ever-present risks can be overwhelming. Discover seamless managed services offering effective knowledge management, continuous support, flexible pricing, and risk mitigation for your business needs.</p>
+                            </Fade>
+                            <Fade direction="up" delay={300} triggerOnce>
                             <SlideAnimationButton btnName="GET STARTED" />
+                            </Fade>
+
 
                         </div>
                         </div>
@@ -44,6 +52,7 @@ const ManagedServices = () => {
             <section className='managed_service_flowchart_sec'>
             {/* //<h2>Process</h2> */}
             <div className='container-fluid'>
+            <Fade direction="up" delay={300} triggerOnce>
                <div className='row'>
                 <div className='col-md-2 managed_service_box bg1'>
                   <div className='managed_service_content'>
@@ -87,6 +96,7 @@ const ManagedServices = () => {
                   </div>
                 </div>
                </div>
+              </Fade> 
                </div>
             </section>
 
@@ -111,12 +121,16 @@ const ManagedServices = () => {
                             </div>
                         </div>
                         <div className="col-md-6">
+
                         <div className="content_sec_right_managed_services">
+                        <Fade direction="up" delay={300} triggerOnce>
 
                          <Heading heading="Overview" uppercase="" />
+                         </Fade>
                             {/* <h1 className="overview_sec_managed_services_heading">Overview</h1> */}
                             {/* <BlueHeading bheading="overview" uppercase="text-uppercase"/> */}
                             {/* <p className="content_sec_managed_services_para"> */}
+                            <Fade direction="up" delay={300} triggerOnce>
                             <ul>
                               <li className='managed_services_main_content'>
                               The audit encompasses a thorough examination of licenses, system capacity, and infrastructure to identify any inefficiencies or vulnerabilities. Recommendations will focus on rationalizing resources, optimizing operations, and decommissioning redundant elements to eliminate single points of failure.
@@ -125,6 +139,7 @@ const ManagedServices = () => {
                               <li>Training and awareness programs will ensure staff proficiency and understanding of best practices. Continual optimization efforts will address system risks, both infrastructure and application-related, along with resource and engagement risks, particularly regarding dependencies on third-party services that could impact SLAs. </li>
                               
                             </ul>
+                            </Fade>
                             
 
 

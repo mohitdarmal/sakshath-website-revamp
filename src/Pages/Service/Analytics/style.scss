@@ -127,7 +127,7 @@ margin-bottom: 80px;
 
 
 .data_integration_box1{
-    padding-bottom: 10px; //same css for box2 and 1 for padding bottom
+    padding-bottom: 62px; //same css for box2 and 1 for padding bottom
 }
 .data_integration_box4{
     padding-bottom: 1px;
@@ -207,12 +207,14 @@ margin-bottom: 80px;
     content: "";
     position: absolute;
     background-image: url("../../../Assets/images/contact_bg_arrow.png");
-    height: 122px;
+    height: 104px;
     background-size: contain;
-    margin-left: 643px;
-    width: 123px;
-    margin-top: 455px;
+    /* margin-left: 643px; */
+    width: 120px;
+    /* margin-top: 455px; */
     background-repeat: no-repeat;
+    top: 428px;
+    left: 118px;
 
 }
 
@@ -458,6 +460,9 @@ margin-bottom: 80px;
 }
 .data_integration_sec {
   
+  position: relative;
+}
+.bigdata_sec{
   position: relative;
 }
 

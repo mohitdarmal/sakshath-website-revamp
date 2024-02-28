@@ -116,14 +116,19 @@
   background-color: lightblue;
 }
 .partner_logo_section {
-  padding: 5px 0px 5px 0px;
+  padding: 80px 0px;
 
   img{width: 170px;}
   // background-image: linear-gradient(to top,#ffffff,#b5d9ef);
 }
-.trusted_by{
-  text-align: center;
-  padding-top: 5px;
+// .trusted_by{
+//   text-align: center;
+//   padding-top: 5px;
+//   font-size:18px;
+// }
+.integration_overview_heading{
+  font-size: $sub_heading;
+  color: #111111;
 }
 h6.trusted_by {
   margin-top: 2%;
@@ -156,11 +161,11 @@ h6.trusted_by {
 
 // }
 
-.managed_services_sec {
+.integration_managed_services_sec{
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.managed_services_left {
+.integration_managed_services_left {
   padding-right: 80px;
 }
 // .intergration_list ::before{
@@ -170,6 +175,7 @@ h6.trusted_by {
 // }
 .intergration_list {
   list-style-type: none;
+  color: $para_color;
 }
 .integration_coe p {
   color: #111111;
@@ -181,6 +187,7 @@ h6.trusted_by {
   // text-align: center;
   padding-bottom: 15px;
 }
+
 
 .why_need_integration_sec {
   padding-bottom: 80px;
@@ -331,7 +338,7 @@ ul {
   .why_need_integration_right {
     padding-left: 0px;
   }
-  .managed_services_left {
+  .integration_managed_services_left {
     padding-left: 10px;
   }
   .why_need_integration_sec {
@@ -363,20 +370,19 @@ ul {
     font-weight: 700;
     padding-left: 11px;
   }
-
-  .managed_services_sec {
+.Migration_technologies p{
+  padding-left: 17px;
+}
+  .integration_managed_services_sec {
     padding-bottom: 40px;
     // padding-top:40px;
   }
   .integration_planning_banner {
     margin-top: 40px;
   }
-  .software_logo_section {
-    
-    padding-bottom: 40px;
-  }
+ 
   .software_logo_section img{
-    width:71px;
+    width:70px;
   }
  
   .integration_consulting_sec {
@@ -385,7 +391,7 @@ ul {
   }
 
  
-  .managed_services_sec{
+  .integration_managed_services_sec{
     padding-top:0px;
   }
 
@@ -393,7 +399,6 @@ ul {
     line-height: 31px;
     line-height: 28px;
   }
- 
 
   .migration_heading {
     font-size: 42px;
@@ -418,8 +423,13 @@ ul {
     padding-bottom: 6px;
   }
   .partner_logo_section img {
-    width: 71px;
+    width:50px;
 }
+.trusted_by{
+   
+  margin-bottom: 10px;
+  font-size: 14px;
+ }
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -435,9 +445,27 @@ ul {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+  .partner_logo_section {
+   
+  
+    img{width: 90px;}
+   
+  }
+  .software_logo_section img{
+    width:90px;
+  }
+  .software_logo_section{
+    padding-top:0px;
+  }
+  .integration_planning_banner {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+  
 
   .why_need_integration_right {
     padding-left: 0px;
+    padding-top:40px;
   }
   .integartion_coe_sec {
     padding-top: 40px;
@@ -446,25 +474,21 @@ ul {
   .why_need_integration_sec {
     padding-bottom: 40px;
   }
-  .integration_planning_banner {
-    margin-top: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .integration_consulting_sec {
-    padding-top: 40px;
-  }
+  
+  // .integration_consulting_sec {
+  //   padding-top: 40px;
+  // }
   .integration_consulting_right {
     padding-left: 0px;
+    padding-top: 40px;
   }
-  .software_logo_section {
-    padding: 40px 0px;
-  }
-  .managed_services_left {
+ 
+  .integration_managed_services_left {
     padding-top: 40px;
     padding-left: 0px;
   }
-  .managed_services_sec {
+  .integration_managed_services_sec {
+    padding-top:40px;
     padding-bottom: 40px;
   }
   .integration_planning_banner {
@@ -474,6 +498,10 @@ ul {
   .integration_planning_banner .integration_left_planning_banner_content {
     margin-bottom: 0px;
   }
+  .Migration_technologies_para{
+    width: 557px;
+  }
+  
 
   
 }
@@ -486,6 +514,7 @@ ul {
   }
   .why_need_integration_right {
     padding-left: 36px;
+    
   }
 
   .integartion_coe_sec {
@@ -494,19 +523,25 @@ ul {
   }
   .integration_consulting_right {
     padding-left: 36px;
+    padding-top:40px;
   }
-  .managed_services_sec {
+  .integration_managed_services_sec {
+    padding-top:40px;
     padding-bottom: 40px;
     padding-left: 36px;
   }
   .integration_consulting_sec {
     padding-top: 40px;
+    padding-bottom: 0px;
   }
   .integration_planning_banner {
     margin-top: 40px;
   }
   .partner_logo_section {
     padding: 20px 0px 20px 0px;
+  }
+  .partner_logo_section img{
+    width:100px;
   }
   .partner_logo_tab {
     padding-top: 0px;
@@ -517,11 +552,18 @@ ul {
   }
 }
 
-
+.why_need_integration_right{
+  padding-top:40px;
+}
 // responsive end
 .overview_sec_left h3{
   font-family: $rajdhani_font;
   font-weight: bold;
   font-size: 42px;
 }
-
+.software_logo_section img{
+  width: 170px;
+}
+.partner_logo_section img{
+  width:170px;
+}

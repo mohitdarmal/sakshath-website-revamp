@@ -360,7 +360,7 @@ const Automation = () => {
                       </p>
                     </Fade>
                   </div>
-
+                  <Fade direction="up"  triggerOnce>
                   <div className="row">
                     <div className="col-md-6">
                       <Fade direction="up" triggerOnce>
@@ -393,6 +393,7 @@ const Automation = () => {
                       </Fade>
                     </div>
                   </div>
+                  </Fade>
                 </div>
               </div>
             </div>
@@ -405,7 +406,9 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="pillars_heading text-center ">
+            <Fade direction="up"  triggerOnce>
               <Heading heading="Pillars Of  Cloud Native Application" />
+              </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke pillar_number_storke">
               <Fade direction="up" triggerOnce>
@@ -514,6 +517,7 @@ const Automation = () => {
                       </div>
                     </div>
                   </div>
+                  {/* </Fade> */}
                 </div>
               </div>
             </div>
@@ -532,6 +536,7 @@ const Automation = () => {
             </Fade>
 
             <div className="col-md-6 api_boxes">
+            <Fade direction="up"  triggerOnce>
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -546,8 +551,10 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-6 api_boxes">
+            <Fade direction="up"  triggerOnce>
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -561,8 +568,10 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-6 api_boxes">
+            <Fade direction="up"  triggerOnce>
               <div className="api_container ">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -577,8 +586,10 @@ const Automation = () => {
                   </span>
                 </div>
               </div>
+              </Fade>
             </div>
             <div className="col-md-6 api_boxes">
+            
               <div className="api_container">
                 <div className="api_icon">
                   <img src={RPA_DELIVERY} alt="" />
@@ -643,13 +654,16 @@ const Automation = () => {
                       etc.
                     </li>
                   </ul>
+                 {/* </Fade> */}
                 </div>
               </div>
             </div>
             <div className="col-md-6">
+            <Fade direction="up"  triggerOnce>
               <div className="rpa_graph">
                 <img src={RPA_GRAPH} alt="" />
               </div>
+              </Fade>
               <div className="rpa_text text-center mt-5">
                 {/* <h4>Robotic Process Automation Business Management</h4> */}
               </div>
@@ -962,8 +976,8 @@ const Automation = () => {
             <div className="col-md-12">
               <div className="devop_layer">
                 <div className="testing_layer_main_heading text-center">
-                  <Fade direction="up" triggerOnce>
-                    <Heading heading="Testing Layer" />
+                <Fade direction="up"  triggerOnce>
+                  <Heading heading="Testing Layer" />
                   </Fade>
                 </div>
               </div>
@@ -1005,7 +1019,9 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="devops_heading_main text-center">
+            <Fade direction="up"  triggerOnce>
               <Heading heading="DevOps & Testing " />
+              </Fade>
             </div>
             <div className="row box1 ">
               <div className="col-md-3 devops_boxes">
