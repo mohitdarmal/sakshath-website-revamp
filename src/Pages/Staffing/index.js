@@ -127,6 +127,7 @@ const Staffing = () => {
           ctaContent={
             "We focus on providing a quality staffing service for our clients and a smooth career transition for our candidates. "
           }
+          ctaTitle={"Read More"}
         />
       </Fade>
       {/* content2 */}

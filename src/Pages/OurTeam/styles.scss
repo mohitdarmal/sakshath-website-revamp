@@ -149,6 +149,12 @@ margin-left: -10px; margin-top: 0px;  cursor: pointer; padding: 10px; border-rad
         margin-bottom: 0px;
         // color: $white_color;
       }
+
+      h4{
+        font-size: 22px;
+        font-weight: bold;
+        font-family: $rajdhani_font;
+      }
   }
   .our_team_sec_box .details::after{
     content: "";
