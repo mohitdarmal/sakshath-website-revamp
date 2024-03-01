@@ -46,7 +46,7 @@ export const HAPPYICON = require("../../Assets/images/customer-satisfaction.png"
 // export const BLOGCPROFILE=require("../../Assets/images/blog_cust_profile.png");
 export const ACHIVEMENT_IMG1 = require("../../Assets/images/Achivement40.png");
 // export const ACHIVEMENT_IMG2=require('../../Assets/images/Achivemet2_img.png');
-export const ACHIVEMENT_IMG2 = require("../../Assets/images/Home_Achivemt_img_1.png");
+export const ACHIVEMENT_IMG2 = require("../../Assets/images/achivement_stall.png");
 export const ACHIVEMENT_IMG3 = require("../../Assets/images/Achivement_img3.png");
 
 export const DOTTED_IMG1 = require("../../Assets/images/dotted_img.png");

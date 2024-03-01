@@ -55,6 +55,7 @@ import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Fade } from "react-awesome-reveal";
+import Faq from "../../../Components/Faq";
 
 const Automation = () => {
   const menu = [
@@ -1191,6 +1192,18 @@ const Automation = () => {
       {/* Why Sakshath starts*/}
       <WhySaksahthNew whyCrm={whyDevops} />
       {/* why sakshath ends */}
+
+      <section>
+      <div className="container">
+        <div className="row"> 
+        <div className="col-md-1"> </div>
+        <div className="col-md-10">
+              <Faq />
+        </div>
+        <div className="col-md-1"> </div>
+        </div>
+      </div>
+     </section>
     </>
   );
 };

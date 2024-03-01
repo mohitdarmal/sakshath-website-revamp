@@ -150,7 +150,7 @@ export const Home = () => {
                   </div>
 
                   <div className="banner_text_slider_content">
-                    {/* <h6>Profesional IT Solution</h6> */}
+                    <h6>Future-Ready ERP Solutions for Today's Challenges.</h6>
                     <h3>Unveiling the Power of ERP in Modern Enterprises</h3>
                     <div className="banner_text_slider_links">
                       <Link to="/">Get Started Now</Link>
@@ -159,7 +159,7 @@ export const Home = () => {
                   </div>
 
                   <div className="banner_text_slider_content">
-                    {/* <h6>Profesional IT Solution</h6> */}
+                    <h6>Unlocking Productivity, One Automation at a Time</h6>
                     <h3>Revolutionizing Your Workflow with Automation Services</h3>
 
                     <div className="banner_text_slider_links">
@@ -169,7 +169,7 @@ export const Home = () => {
                   </div>
 
                   <div className="banner_text_slider_content">
-                    {/* <h6>Profesional IT Solution</h6> */}
+                    <h6>Innovative Banking Software Solutions for a Digital Future.</h6>
                     <h3>Navigating the Landscape of Solutions</h3>
 
                     <div className="banner_text_slider_links">
@@ -438,6 +438,62 @@ export const Home = () => {
             </div>
 
             <div className="row mt-4 pt-2">
+            <div className="col-md-4 d-flex ">
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={AWS} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>Outlook Business</h3>
+                        <p>
+                        Sakshath Technologies for winning Company of the Year - IT Services & IT Consulting in IT Industry at Outlook Business Spotlight- Business Excellence Awards 2023  
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
+                    </div>
+                  </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={TIMES_OF_INDIA} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>Times of India</h3>
+                        <p>
+                        Mr Shravan Kumar was awarded the prestigious "40 under 40" award by Bennett Coleman & Co. Ltd. - The Times of India.  
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
+                    </div>
+                  </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={WCRCINT} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>WCRCINT</h3>
+                        <p>
+                        World’s Leading brands and leaders at the prestigious House of Lords ceremony at the Palace of Westminster, London.  
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
+                    </div>
+                  </Fade>
+                </Link>
+              </div>
               <div className="col-md-4 d-flex ">
                 <Link>
                   <Fade direction="up" delay={400} triggerOnce>
@@ -555,65 +611,7 @@ export const Home = () => {
                 </Link>
               </div>
 
-              <div className="col-md-4 d-flex ">
-                <Link>
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={AWS} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>Outlook Business</h3>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
 
-              <div className="col-md-4 d-flex ">
-                <Link>
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={TIMES_OF_INDIA} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>Times of India</h3>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
-
-              <div className="col-md-4 d-flex ">
-                <Link>
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={WCRCINT} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>WCRCINT</h3>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -940,14 +938,21 @@ export const Home = () => {
                 />
               </Fade>
               <Fade direction="up" triggerOnce>
-                <p>
+                {/* <p>
                   Digitise your business by managing multiple process in a
                   single platform.
 
                   <br /> 
 
                   Transform your workflow with our all-in-one platform. Optimize efficiency and productivity effortlessly.Manage multiple processes seamlessly for optimal results.
-                </p>
+                </p> */}
+                <li>
+                Digitise your business by managing multiple process in a
+                  single platform.Optimize efficiency and productivity effortlessly
+                </li>
+                <li>Transform your workflow with our all-in-one platform.Manage multiple processes seamlessly for optimal results.</li>
+                {/* <li>Optimize efficiency and productivity effortlessly.</li> */}
+                {/* <li>Manage multiple processes seamlessly for optimal results.</li> */}
               </Fade>
               <Fade direction="up" triggerOnce>
                 <div className="our_principal_btn">

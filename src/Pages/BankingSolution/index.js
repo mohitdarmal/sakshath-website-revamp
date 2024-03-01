@@ -5,6 +5,8 @@ import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import BreadCumb from "../../Components/Breadcumb";
 import { BANKING_BG_IMG, Who_we_r } from "./Constant";
 import Heading from "../../Components/Utils/Heading";
+import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
+import Faq from "../../Components/Faq";
 const BankingSolution = () => {
   return (
     <>
@@ -28,11 +30,15 @@ const BankingSolution = () => {
                   seamlessly, and offering comprehensive analytical solutions to
                   understand and serve customers better.
                 </p>
+                <SlideAnimationButton
+                    btnName="Get Started Now"
+                    url="/contact-us"
+                  />
               </div>
             </div>
             <div className="col-md-6">
               <div className="banking_img ipad_full_width">
-                <img src={Who_we_r} alt=""  />
+                <img src={Who_we_r} alt="" className=" img-fluid" />
               </div>
             </div>
           </div>
@@ -86,7 +92,8 @@ const BankingSolution = () => {
                   centralized hub for insightful analysis and informed
                   decision-making across all levels of your organization.
                 </p>
-                {/* </div> */}
+               
+      
               </div>
             </div>
           </div>
@@ -152,6 +159,18 @@ const BankingSolution = () => {
           </div>
         </div>
       </section>
+
+      <section>
+      <div className="container">
+        <div className="row"> 
+        <div className="col-md-1"> </div>
+        <div className="col-md-10">
+              <Faq />
+        </div>
+        <div className="col-md-1"> </div>
+        </div>
+      </div>
+     </section>
     </>
   );
 };
