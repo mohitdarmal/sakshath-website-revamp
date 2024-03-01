@@ -214,7 +214,7 @@ const OurPrincipals = () => {
 
                     <p>
                       {" "}
-                      Sakshath Technologies consultants have an average of 10
+                      Sakshath Technologies consultants have an average of 12+
                       years experience with their processes and have worked on
                       projects of all sizes and scopes thus managing new
                       implementations upgrades.{" "}

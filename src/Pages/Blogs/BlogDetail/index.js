@@ -71,7 +71,7 @@ const BlogDetail = () => {
             <div className="col-md-8">
               <div className=" blogDetail_content_page">
                 <div className="blogdetail_img_box">
-                  <img src={state.blogImg} alt="" />
+                  <img src={state.blogImg} alt=""  className="img-fluid"/>
                 </div>
                 <div className="blogdetail_content_box">
                   <div className="blogdetail_date_box">
@@ -84,7 +84,7 @@ const BlogDetail = () => {
                   <p className="blogdetail_description">
                     {state.blogDescription}
                   </p>
-                  <img src={state.blogImg} alt="" className="img-fluid blogdetail_img2"/>
+                  <img src={state.blogImg_blog_detail_img} alt="" className="img-fluid blogdetail_img2"/>
                   <p className="blogdetail_description">
                     {state.blogDescription}
                   </p>

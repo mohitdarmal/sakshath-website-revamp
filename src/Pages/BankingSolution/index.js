@@ -30,6 +30,8 @@ import{
   CLIENT_LOGO36
 
 }from "../../Components/TrustedBy/Constant";
+import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
+import Faq from "../../Components/Faq";
 const BankingSolution = () => {
   return (
     <>
@@ -53,11 +55,15 @@ const BankingSolution = () => {
                   seamlessly, and offering comprehensive analytical solutions to
                   understand and serve customers better.
                 </p>
+                <SlideAnimationButton
+                    btnName="Get Started Now"
+                    url="/contact-us"
+                  />
               </div>
             </div>
             <div className="col-md-6">
               <div className="banking_img ipad_full_width">
-                <img src={Who_we_r} alt=""  />
+                <img src={Who_we_r} alt="" className=" img-fluid" />
               </div>
             </div>
           </div>
@@ -111,7 +117,8 @@ const BankingSolution = () => {
                   centralized hub for insightful analysis and informed
                   decision-making across all levels of your organization.
                 </p>
-                {/* </div> */}
+               
+      
               </div>
             </div>
           </div>
@@ -177,88 +184,18 @@ const BankingSolution = () => {
           </div>
         </div>
       </section>
-      {/* banking logo start */}
-      <section className="partner_logo_section">
-        <Fade direction="up" triggerOnce>
-        <div className="container partner_logo_tab">
-          <div className="text-center">
-          <Heading
-                heading="Trusted By"
-              />
-          </div>
-            <Swiper
-              slidesPerView={5}
-              spaceBetween={10}
-              autoplay={{
-                delay: 1500,
-                disableOnInteraction: false,
-              }}
-              loop={true}
-              modules={[Autoplay]}
-              className="mySwiper"
-            >
-            <SwiperSlide>
-              <img src={CLIENT_LOGO11}  />{" "}
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO15}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO2}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO16}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO18}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO19}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO20}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO22}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO23}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO24}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO25}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO26}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO27}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO28}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO29}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO37}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO38}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO34}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO36}  />
-            </SwiperSlide>
-            </Swiper>
-          </div>
-        </Fade>
-      </section>
-      {/* banking logo end */}
+
+      <section>
+      <div className="container">
+        <div className="row"> 
+        <div className="col-md-1"> </div>
+        <div className="col-md-10">
+              <Faq />
+        </div>
+        <div className="col-md-1"> </div>
+        </div>
+      </div>
+     </section>
     </>
   );
 };

@@ -16,6 +16,7 @@ import CallToAction from "../../../Components/CallToAction";
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Col } from "react-bootstrap";
 import { Fade } from "react-awesome-reveal";
+import Faq from "../../../Components/Faq";
 
 const Erp = () => {
   const whyDEVOPS = [
@@ -643,6 +644,18 @@ const Erp = () => {
       </Fade>
       {/* <WhySaksahthNew whyCrm={whyRpa} /> */}
       {/* why sakshth ends */}
+
+      <section>
+      <div className="container">
+        <div className="row"> 
+        <div className="col-md-1"> </div>
+        <div className="col-md-10">
+              <Faq />
+        </div>
+        <div className="col-md-1"> </div>
+        </div>
+      </div>
+     </section>
     </>
   );
 };
