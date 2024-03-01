@@ -120,6 +120,151 @@ export const Analytics = () => {
       img: require("../../../Assets/images/icon.png"),
     },
   ];
+
+  const whyBI = [
+    {
+      id: 1,
+      title: "Endless Business Opportunities",
+      
+      description:
+        "Sakshath offers BI + Dashboard services to improve the analysis of company requirements. With us, you may assess countless options and obtain the 360-degree visibility that modern businesses require.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 2,
+      title: "Connect with Customers",
+      description:
+        "Our support and solution empower businesses to gain meaningful answers with Sakshath’s interactive dashboards that inform at a glance.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 3,
+      title: "Track Business Activities",
+      description:
+        "You may efficiently execute sales evaluation, enhance market share, and obtain an overall picture of your company’s activities with Sakshath dashboards and BI engineering.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 4,
+      title: "Boost Market Exposure",
+      description:
+        "Leverage our business solutions to gain 360-degree visibility from customers to clients by managing all from production to delivery. We assist you in effectively controlling all business processes.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 5,
+      title: "Stay up to Date",
+      description:
+        "By remaining informed, you can improve decision-making, collaborate better and more effectively, and increase the quality of service.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 6,
+      title: "Data-Driven Decision",
+      
+      description:
+        "Now make more constructive and data-driven decisions with our BI integrated business model. With this solution, your business can drive positive outcomes.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+  ];
+
+  const whyDataIntegration = [
+    {
+      id: 1,
+      title: "Streamline the Information Flow",
+      
+      description:
+        "Get a cohesive 360-degree picture of your company and customer data by integrating all of your software, systems, and data warehouses in a real-time work model.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 2,
+      title: "Ensure More Seamless Team Cooperation",
+      description:
+        "Without incurring significant investments or completely reengineering your current IT systems, establish critical data interfaces to improve team collaboration and productivity with Sakshath.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 3,
+      title: "Boost Market Competitiveness",
+      description:
+        "Utilizing our data management and integration process, you can efficiently handle record sales, remain in step with your billing responsibilities, and seize development opportunities.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 4,
+      title: "Obtain Helpful Consumer Insights",
+      description:
+        "We assist you in analyzing a boatload of consumer data to determine what they require and when they need it and then use analytical insights to anticipate their needs.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 5,
+      title: "Less Data Integrity",
+      description:
+        "To ensure no detailed information is missing while transferring from one system to another, we remove inconsistencies and errors from your large datasets and maintain the integrity of all the data.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 6,
+      title: "Strict Data Security Requirements",
+      
+      description:
+        "We ensure all your business data is accessible to everyone in your team without any barriers or leaks. Hence, we utilize top-notch identity and access control procedures to safeguard your company’s data.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+  ];
+
+  const whyBigData = [
+    {
+      id: 1,
+      title: "Excellent Consultation",
+      
+      description:
+        "Via big data implementation, data quality management, fantastic architecture, and an outline of an optimal technological stack, Sakshath can help you develop a detailed roadmap for your business.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 2,
+      title: "Unmatched Support",
+      description:
+        "At Sakshath, you will experience big data solutions, administration, management, backup, recovery, monitoring, troubleshooting, and all comprehensive big data support under one umbrella.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 3,
+      title: "Robust Infrastructure",
+      description:
+        "Our big data setups and support help businesses construct a robust operational infrastructure to tune up with maximum profits and ROI. We help your business evolve with excellent results.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 4,
+      title: "Unwavering Dedication",
+      description:
+        "By using an unfailing commitment and the most outlay solutions for the client’s demands, Sakshath strives to offer its customers the highest compound annual growth rate in revenue.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 5,
+      title: "Important Insights",
+      description:
+        "We assist businesses in assembling big data from multiple sources, combining and analyzing it to gain insightful knowledge from undervalued data assets.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+    {
+      id: 6,
+      title: "Strengthening Decision-making",
+      
+      description:
+        "Sakshath is ready to assist you in achieving your big data goals for better business productivity and decision-making by using our extensive field of expertise.",
+      img: require("../../../Assets/images/icon.png"),
+    },
+  ];
+
+
+
+
   return (
     <>
       <BreadCumb
@@ -924,6 +1069,12 @@ export const Analytics = () => {
                 </div>
               </div>
             </section>
+
+            <section className="why_sakshath_bi">
+     <Fade direction="up" triggerOnce>
+        <WhySaksahthNew whyCrm={whyBI} />
+      </Fade>
+     </section>
           </Element>
         </div>
 
@@ -1216,6 +1367,12 @@ export const Analytics = () => {
                 </div>
               </div>
             </section>
+
+            <section className="why_sakshath_dataIntegration">
+     <Fade direction="up" triggerOnce>
+        <WhySaksahthNew whyCrm={whyDataIntegration} />
+      </Fade>
+     </section>
           </Element>
         </div>
 
@@ -1431,6 +1588,12 @@ export const Analytics = () => {
                 </div>
               </div>
             </section>
+
+            <section className="why_sakshath_bigdata">
+     <Fade direction="up" triggerOnce>
+        <WhySaksahthNew whyCrm={whyBigData} />
+      </Fade>
+     </section>
           </Element>
         </div>
 
