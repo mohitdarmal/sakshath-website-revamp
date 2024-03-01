@@ -5,6 +5,31 @@ import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import BreadCumb from "../../Components/Breadcumb";
 import { BANKING_BG_IMG, Who_we_r } from "./Constant";
 import Heading from "../../Components/Utils/Heading";
+import { Fade } from "react-awesome-reveal";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import{
+  CLIENT_LOGO11,
+  CLIENT_LOGO15,
+  CLIENT_LOGO2,
+  CLIENT_LOGO16,
+  CLIENT_LOGO18,
+  CLIENT_LOGO19,
+  CLIENT_LOGO20,
+  CLIENT_LOGO22,
+  CLIENT_LOGO23,
+  CLIENT_LOGO24,
+  CLIENT_LOGO25,
+  CLIENT_LOGO26,
+  CLIENT_LOGO27,
+  CLIENT_LOGO28,
+  CLIENT_LOGO29,
+  CLIENT_LOGO37,
+  CLIENT_LOGO38,
+  CLIENT_LOGO34,
+  CLIENT_LOGO36
+
+}from "../../Components/TrustedBy/Constant";
 const BankingSolution = () => {
   return (
     <>
@@ -149,6 +174,88 @@ const BankingSolution = () => {
           </div>
         </div>
       </section>
+      {/* banking logo start */}
+      <section className="partner_logo_section">
+        <Fade direction="up" triggerOnce>
+        <div className="container partner_logo_tab">
+          <div className="text-center">
+          <Heading
+                heading="Trusted By"
+              />
+          </div>
+            <Swiper
+              slidesPerView={5}
+              spaceBetween={10}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+            <SwiperSlide>
+              <img src={CLIENT_LOGO11}  />{" "}
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO15}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO2}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO16}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO18}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO19}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO20}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO22}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO23}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO24}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO25}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO26}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO27}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO28}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO29}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO37}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO38}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO34}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO36}  />
+            </SwiperSlide>
+            </Swiper>
+          </div>
+        </Fade>
+      </section>
+      {/* banking logo end */}
     </>
   );
 };

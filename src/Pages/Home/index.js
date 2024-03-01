@@ -35,6 +35,7 @@ import {
   TIMES_OF_INDIA,
   CLIQ_LOGO,
   WCRCINT,
+  OUT_LOOK
 } from "./Constant";
 
 import { SlCalender } from "react-icons/sl";
@@ -521,7 +522,7 @@ export const Home = () => {
                         <img src={AWS} alt="" />
                       </div>
                       <div className="content">
-                        <h3>Amzone AWS Partner</h3>
+                        <h3>Amzon AWS Partner</h3>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit Odit vitae.
@@ -558,7 +559,7 @@ export const Home = () => {
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
-                        <img src={AWS} alt="" />
+                        <img src={OUT_LOOK} alt="" />
                       </div>
                       <div className="content">
                         <h3>Outlook Business</h3>

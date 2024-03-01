@@ -1,5 +1,3 @@
-export const CLIENTS_BG = require("../../Assets/images/happyClient_bg_image.jpg");
-
 // Domestic Logo
 
 export const CLIENT_LOGO1 = require("../../Assets/images/Clix.png");  
@@ -20,9 +18,6 @@ export const CLIENT_LOGO15=require("../../Assets/images/Chaitanya_Microfinance.j
 export const CLIENT_LOGO45=require("../../Assets/images/Fullerton_india.png");
 export const CLIENT_LOGO46=require("../../Assets/images/Inox_air.jpg");
 export const CLIENT_LOGO47=require("../../Assets/images/kens.jpg");
-
-
-
 
 
 // International Logo
@@ -49,18 +44,3 @@ export const CLIENT_LOGO35 = require("../../Assets/images/EPSSW_USA.png");
 export const CLIENT_LOGO36 = require("../../Assets/images/Socremo_Mozambique.png");
 export const CLIENT_LOGO37 = require("../../Assets/images/FNB_Mozambique.jpg");
 export const CLIENT_LOGO38 = require("../../Assets/images/ABSA.png");
-
-
-
-//patners
-export const CLIENT_LOGO39 = require("../../Assets/images/kotak.jpg");
-export const CLIENT_LOGO40 = require("../../Assets/images/talend.png");
-export const CLIENT_LOGO41 = require("../../Assets/images/HDFC_Bank.png");
-export const CLIENT_LOGO42 = require("../../Assets/images/DNUS.jpg");
-export const CLIENT_LOGO43 = require("../../Assets/images/crawdord.png");
-export const CLIENT_LOGO44 = require("../../Assets/images/aws_partner.jpg");
-
-//
-
-
-// export const CLIENT_LOGO21=require("../../Assets/images/Azenia.jpg");
