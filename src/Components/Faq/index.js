@@ -4,6 +4,7 @@ import { Accordion } from "react-bootstrap";
 import SubTitle from "../Utils/Title_head";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import "./style.scss";
+import {Fade} from "react-awesome-reveal";
 
 const Faq = () => {
     return(
@@ -16,9 +17,14 @@ const Faq = () => {
             <div className="faq_content_box">
               <div className="faq_content">
               <div className="text-center faq_heading">
+              <Fade direction="up" triggerOnce>
               <SubTitle SubTitle="Do you have Question?" />
+              </Fade>
+              <Fade direction="up" triggerOnce>
                 <Heading heading="Frequently Asked Questions"></Heading>
+                </Fade>
                 </div>
+                <Fade direction="up" triggerOnce>
                 <Accordion defaultActiveKey="0">
                   <Accordion.Item eventKey="0">
                         <Accordion.Header className="question_button" ><BsFillQuestionCircleFill /> What are the services offered by Sakshath?</Accordion.Header>
@@ -91,6 +97,7 @@ const Faq = () => {
                   </Accordion.Item>    
                   
                 </Accordion>
+                </Fade>
               </div>
             </div>
         

@@ -3,8 +3,7 @@ export const AUTOMATION_BG_IMG = require("../../../Assets/images/Automation_Nati
 // Automation Section1 img right side
 
 // export const AUTOMATE_RIGHT_IMG1=require('../../../Assets/images/Automation_Streamline.jpg')
-export const AUTOMATE_RIGHT_IMG1 =
-  require("../../../Assets/images/Automation_img_1.svg").default;
+export const AUTOMATE_RIGHT_IMG1 =require("../../../Assets/images/Automation_img_1.svg").default;
 
 // export const CLOUD_NATIVE_IMG=require("../../../Assets/images/cloud_native_right_img.jpg");
 export const CHECK_ICON = require("../../../Assets/images/check-mark (2).png");
@@ -37,4 +36,4 @@ export const DEVOPS = require("../../../Assets/images/a.jpg");
 
 // rpa graph
 
-export const RPA_GRAPH = require("../../../Assets/images/rpa_graph1.jpg");
+export const RPA_GRAPH = require("../../../Assets/images/RPA_Chart_new.svg").default;

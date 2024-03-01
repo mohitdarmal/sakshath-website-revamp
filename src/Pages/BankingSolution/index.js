@@ -56,8 +56,8 @@ const BankingSolution = () => {
               </div>
             </div>
             <div className="col-md-6">
-              <div className="banking_img">
-                <img src={Who_we_r} alt="" />
+              <div className="banking_img ipad_full_width">
+                <img src={Who_we_r} alt=""  />
               </div>
             </div>
           </div>
@@ -150,7 +150,10 @@ const BankingSolution = () => {
             </div>
             <div className="col-md-3 key_feature_box">
               {/* <div className="key_feature_box"> */}
-              {/* <img src={Who_we_r} alt=""  width="200px"/> */}
+              {/* <div className="bank_img">
+    <img src={Who_we_r} alt=""/>
+              </div> */}
+          
               <h4>Operations Queue</h4>
               <p>
                 Streamline daily operational tasks such as application logins,

@@ -177,9 +177,12 @@
 
   .about_who_we_r_content {
     padding-right: 0px;
+    padding-top: 90px;
   }
   .who_we_are_img_bottom {
     padding-right: 0px !important;
+    // margin-top: -107px;
+
     // padding-bottom: 20px;
   }
 
@@ -219,7 +222,8 @@
 @media screen and (max-width: 1023px) {
   .about_who_we_r .who_we_are_img {
     padding-top: 0px !important;
-    margin-top: -250px;
+    // margin-top: -107px;
+
   }
 
   .contact_map_section {

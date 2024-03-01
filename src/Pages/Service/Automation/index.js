@@ -563,57 +563,55 @@ const Automation = () => {
               </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke pillar_number_storke">
-            <Fade direction="up" triggerOnce>
-
-           
-              <div className="number">{/* <h1> 01</h1> */}</div>
-              <div className="pillars_box">
-                <div className="pillar_icon">
-                  <img src={pillar_automation} alt="" />
+              <Fade direction="up" triggerOnce>
+                <div className="number">{/* <h1> 01</h1> */}</div>
+                <div className="pillars_box">
+                  <div className="pillar_icon">
+                    <img src={pillar_automation} alt="" />
+                  </div>
+                  <div className="pillar_title">
+                    <h5>Automation</h5>
+                  </div>
                 </div>
-                <div className="pillar_title">
-                  <h5>Automation</h5>
-                </div>
-              </div>
               </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke">
-            <Fade direction="up" triggerOnce delay={250}>
-              <div className="number">{/* <h1> 02</h1> */}</div>
-              <div className="pillars_box">
-                <div className="pillar_icon">
-                  <img src={pillar_modern} alt="" />
+              <Fade direction="up" triggerOnce delay={250}>
+                <div className="number">{/* <h1> 02</h1> */}</div>
+                <div className="pillars_box">
+                  <div className="pillar_icon">
+                    <img src={pillar_modern} alt="" />
+                  </div>
+                  <div className="pillar_title">
+                    <h5>Modern Design & Architecture</h5>
+                  </div>
                 </div>
-                <div className="pillar_title">
-                  <h5>Modern Design & Architecture</h5>
-                </div>
-              </div>
               </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke">
-            <Fade direction="up" triggerOnce delay={350}>
-              <div className="number">{/* <h1> 03</h1> */}</div>
-              <div className="pillars_box">
-                <div className="pillar_icon">
-                  <img src={pillar_microservice} alt="" />
+              <Fade direction="up" triggerOnce delay={350}>
+                <div className="number">{/* <h1> 03</h1> */}</div>
+                <div className="pillars_box">
+                  <div className="pillar_icon">
+                    <img src={pillar_microservice} alt="" />
+                  </div>
+                  <div className="pillar_title">
+                    <h5>Microservices</h5>
+                  </div>
                 </div>
-                <div className="pillar_title">
-                  <h5>Microservices</h5>
-                </div>
-              </div>
               </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke">
-            <Fade direction="up" triggerOnce delay={400}>
-              <div className="number">{/* <h1> 04</h1> */}</div>
-              <div className="pillars_box">
-                <div className="pillar_icon">
-                  <img src={pillar_bank} alt="" />
+              <Fade direction="up" triggerOnce delay={400}>
+                <div className="number">{/* <h1> 04</h1> */}</div>
+                <div className="pillars_box">
+                  <div className="pillar_icon">
+                    <img src={pillar_bank} alt="" />
+                  </div>
+                  <div className="pillar_title">
+                    <h5>Containers Backing Services</h5>
+                  </div>
                 </div>
-                <div className="pillar_title">
-                  <h5>Containers Backing Services</h5>
-                </div>
-              </div>
               </Fade>
             </div>
           </div>
@@ -625,76 +623,70 @@ const Automation = () => {
 
       {/* mobile application ends */}
       <Fade direction="up" triggerOnce>
-      <section className="mobile_section">
-        <div className="container">
-          <div className="row text-center">
-            <div className="col-md-4">
-              <div className="mobile_app_main_heading">
-              <Fade direction="up"  triggerOnce>
-                <Heading heading="Mobile Application Development" />
-                </Fade>
+        <section className="mobile_section">
+          <div className="container">
+            <div className="row text-center">
+              <div className="col-md-4">
+                <div className="mobile_app_main_heading">
+                  <Heading heading="Mobile Application Development" />
+                </div>
               </div>
-            </div>
-            <div className="col-md-8 ">
-              <div className="row ">
-                <div className="col-md-4 text-center">
-                <Fade direction="up"  triggerOnce>
-                  <div className="application_box">
-                    <div className="mobile_icon">
-                      <img src={ANDRIOD_APP} alt="" />
-                    </div>
-                    <div className="mobile_title text-center">
-                      <h4>
-                        Andriod <br /> Development
-                      </h4>
-                    </div>
-                  </div>
-                  </Fade>
-                </div>
-                <div className="col-md-4 text-center">
-                <Fade direction="up"  triggerOnce>
-                  <div className="application_box">
-                    <div className="mobile_icon">
-                      <img src={IOS_APPLE} alt="" />
-                    </div>
-                    <div className="mobile_title text-center">
-                      <h4>
-                        iOS <br /> Development
-                      </h4>
+              <div className="col-md-8 ">
+                <div className="row ">
+                  <div className="col-md-4 text-center">
+                    <div className="application_box">
+                      <div className="mobile_icon">
+                        <img src={ANDRIOD_APP} alt="" />
+                      </div>
+                      <div className="mobile_title text-center">
+                        <h4>
+                          Andriod <br /> Development
+                        </h4>
+                      </div>
                     </div>
                   </div>
-                  </Fade>
-                </div>
-                <div className="col-md-4 text-center">
-                <Fade direction="up"  triggerOnce>
-                  <div className="application_box">
-                    <div className="mobile_icon">
-                      <img src={CROSS_PLATFORM_APP} alt="" />
-                    </div>
-                    <div className="mobile_title text-center">
-                      <h4>
-                        CrossPlatform <br /> Development
-                      </h4>
+                  <div className="col-md-4 text-center">
+                    <div className="application_box">
+                      <div className="mobile_icon">
+                        <img src={IOS_APPLE} alt="" />
+                      </div>
+                      <div className="mobile_title text-center">
+                        <h4>
+                          iOS <br /> Development
+                        </h4>
+                      </div>
                     </div>
                   </div>
-                  </Fade>
+                  <div className="col-md-4 text-center">
+                    <div className="application_box">
+                      <div className="mobile_icon">
+                        <img src={CROSS_PLATFORM_APP} alt="" />
+                      </div>
+                      <div className="mobile_title text-center">
+                        <h4>
+                          CrossPlatform <br /> Development
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                  {/* </Fade> */}
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </Fade>
 
       {/* application starts */}
       <section className="application_section">
         <div className="container">
           <div className="row">
-            <div className="application_main_heading text-center">
-            <Fade direction="up"  triggerOnce>
-              <Heading heading="Application Integration" />
-              </Fade>
-            </div>
+            <Fade direction="up" triggerOnce>
+              <div className="application_main_heading text-center">
+                <Heading heading="Application Integration" />
+              </div>
+            </Fade>
+
             <div className="col-md-6 api_boxes">
             <Fade direction="up"  triggerOnce>
               <div className="api_container">
@@ -773,7 +765,9 @@ const Automation = () => {
       {/* automation ends */}
 
       {/* why_Sakshath starts */}
-      <WhySaksahthNew whyCrm={whyCloud} />
+      <Fade direction="up" triggerOnce>
+        <WhySaksahthNew whyCrm={whyCloud} />
+      </Fade>
 
       {/* why_Sakshath ends*/}
 
@@ -785,15 +779,12 @@ const Automation = () => {
           <div className="row ">
             <div className="col-md-6">
               <div className="rpa_main_heading">
-              <Fade direction="up"  triggerOnce>
-                <Heading heading="RPA" uppercase="text-uppercase" />
-                </Fade>
-                <Fade direction="up"  triggerOnce>
-                <h4>(Robotic Process Automation) </h4>
+                <Fade direction="up" triggerOnce>
+                  <Heading heading="RPA" uppercase="text-uppercase" />
+                  <h4>(Robotic Process Automation) </h4>
                 </Fade>
 
-                <div className="rpa_lists">
-                <Fade direction="up"  triggerOnce>
+                <div className="rpa_lists ">
                   <ul>
                     <li>
                       Sakshath RPA as a service is designed to help
@@ -815,7 +806,7 @@ const Automation = () => {
                       etc.
                     </li>
                   </ul>
-                 </Fade>
+                 {/* </Fade> */}
                 </div>
               </div>
             </div>
@@ -933,11 +924,12 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="rpa_offering_main_heading text-center mb-4">
-            <Fade direction="up"  triggerOnce>
-              <Heading heading="RPA Offering" />
+              <Fade direction="up" triggerOnce>
+                <Heading heading="RPA Offering" />
               </Fade>
             </div>
             <div className="col-md-2"></div>
+
             <div className="col-md-8">
               <div className="row ">
                 {/* left side rpa  */}
@@ -1026,16 +1018,14 @@ const Automation = () => {
 
       <section className="rpa_tools_section">
         <div className="rpa_tools_main_heading text-center">
-        <Fade direction="up"  triggerOnce>
-          <Heading heading="RPA Tools" />
-         </Fade>
-         <Fade direction="up"  triggerOnce>
-          <p>
-            In order to achieve value-based RPA solutions for our customers, our
-            consultants have worked with a variety of technologies and RPA
-            vendors.
-          </p>
-         </Fade>
+          <Fade direction="up" triggerOnce>
+            <Heading heading="RPA Tools" />
+            <p>
+              In order to achieve value-based RPA solutions for our customers,
+              our consultants have worked with a variety of technologies and RPA
+              vendors.
+            </p>
+          </Fade>
         </div>
         <div className="container rpa_tools_logos">
           <Swiper
@@ -1114,13 +1104,14 @@ const Automation = () => {
                 </div>
                 <div className="col-md-6">
                   <div className="devops_testing_right_content">
-                    <Heading heading="DevOps/Testing" uppercase="" />
-                    <p>
-                      In transforming Testing to the world of Agile and DevOps,
-                      Sakshath has been at the forefront of providing
-                      best-in-class, tailored “QA Testing Services”.
-                    </p>
-                    
+                    <Fade direction="up" triggerOnce>
+                      <Heading heading="DevOps/Testing" uppercase="" />
+                      <p>
+                        In transforming Testing to the world of Agile and
+                        DevOps, Sakshath has been at the forefront of providing
+                        best-in-class, tailored “QA Testing Services”.
+                      </p>
+                    </Fade>
                   </div>
                 </div>
               </div>
@@ -1186,104 +1177,120 @@ const Automation = () => {
             </div>
             <div className="row box1 ">
               <div className="col-md-3 devops_boxes">
-                <div className="devops_list_box">
-                  <div className="devops_ul">
-                    <ul>
-                      <li>Functional Testing</li>
-                      <li>Unit Testing</li>
-                      <li>Integration</li>
-                      <li>UAT Testing</li>
-                      <li>Regression Testing</li>
-                    </ul>
+                <Fade direction="up" triggerOnce>
+                  <div className="devops_list_box">
+                    <div className="devops_ul">
+                      <ul>
+                        <li>Functional Testing</li>
+                        <li>Unit Testing</li>
+                        <li>Integration</li>
+                        <li>UAT Testing</li>
+                        <li>Regression Testing</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </Fade>
               </div>
               <div className="col-md-3 devops_boxes">
-                <div className="devops_list_box">
-                  <div className="devops_ul">
-                    <ul>
-                      <li>Test Automation</li>
-                      <li>Installation & Scripting</li>
+                <Fade direction="up" triggerOnce>
+                  <div className="devops_list_box">
+                    <div className="devops_ul">
+                      <ul>
+                        <li>Test Automation</li>
+                        <li>Installation & Scripting</li>
 
-                      <li>Integration</li>
-                      <li>Code/Codeless testing</li>
-                      <li>Scalable framework</li>
-                    </ul>
+                        <li>Integration</li>
+                        <li>Code/Codeless testing</li>
+                        <li>Scalable framework</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </Fade>
               </div>
               <div className="col-md-3 devops_boxes">
-                <div className="devops_list_box">
-                  <div className="devops_ul">
-                    <ul>
-                      <li>Performance Testing</li>
-                      <li>Load Test</li>
-                      <li>Volume Test</li>
-                      <li>Stress Test</li>
-                      <li>Soak Test.</li>
-                    </ul>
+                <Fade direction="up" triggerOnce>
+                  <div className="devops_list_box">
+                    <div className="devops_ul">
+                      <ul>
+                        <li>Performance Testing</li>
+                        <li>Load Test</li>
+                        <li>Volume Test</li>
+                        <li>Stress Test</li>
+                        <li>Soak Test.</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </Fade>
               </div>
               <div className="col-md-3 devops_boxes">
-                <div className="devops_list_box">
-                  <div className="devops_ul">
-                    <ul>
-                      <li>Payment Testing</li>
-                      <li>Transaction Completion & Validation.</li>
+                <Fade direction="up" triggerOnce>
+                  <div className="devops_list_box">
+                    <div className="devops_ul">
+                      <ul>
+                        <li>Payment Testing</li>
+                        <li>Transaction Completion & Validation.</li>
 
-                      <li>Mobile Wallet Testing.</li>
-                      <li>E-commerce & M-commerce.</li>
-                    </ul>
+                        <li>Mobile Wallet Testing.</li>
+                        <li>E-commerce & M-commerce.</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </Fade>
               </div>
             </div>
 
             <div className="row box2 ">
               <div className="col-md-3 devops_boxes">
-                <div className="devops_list_box">
-                  <div className="devops_ul">
-                    <ul>
-                      <li>User Experience Testing</li>
-                      <li>User Interface Testing</li>
+                <Fade direction="up" triggerOnce>
+                  <div className="devops_list_box">
+                    <div className="devops_ul">
+                      <ul>
+                        <li>User Experience Testing</li>
+                        <li>User Interface Testing</li>
 
-                      <li>User Experience</li>
-                      <li>User Behavior</li>
-                      <li>Cross Browser</li>
-                      <li>Browser Testing</li>
-                      <li>Dynamic Page Testing</li>
-                      <li> BrowserLayout</li>
-                    </ul>
+                        <li>User Experience</li>
+                        <li>User Behavior</li>
+                        <li>Cross Browser</li>
+                        <li>Browser Testing</li>
+                        <li>Dynamic Page Testing</li>
+                        <li> BrowserLayout</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </Fade>
               </div>
 
               <div className="col-md-3 devops_boxes">
-                <div className="devops_list_box">
-                  <div className="devops_ul">
-                    <ul>
-                      <li>Security Testing & Injection.</li>
-                      <li>Broken authentication & session mgmt.</li>
-                      <li>Insufficient transport layer protection.</li>
-                      <li>Security Misconfiguration.</li>
-                      <li>Cross-Site Scripting (XSS).</li>
-                      <li>Insecure Direct Object References.</li>
-                    </ul>
+                <Fade direction="up" triggerOnce>
+                  <div className="devops_list_box">
+                    <div className="devops_ul">
+                      <ul>
+                        <li>Security Testing & Injection.</li>
+                        <li>Broken authentication & session mgmt.</li>
+                        <li>Insufficient transport layer protection.</li>
+                        <li>Security Misconfiguration.</li>
+                        <li>Cross-Site Scripting (XSS).</li>
+                        <li>Insecure Direct Object References.</li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </Fade>
               </div>
               <div className="col-md-3 devops_boxes">
-                <div className="devops_list_box">
-                  <div className="devops_ul">
-                    <ul>
-                      <li>Microservice & API testing</li>
-                      <li>UI & Functional testing</li>
+                <Fade direction="up" triggerOnce>
+                  <div className="devops_list_box">
+                    <div className="devops_ul">
+                      <ul>
+                        <li>Microservice & API testing</li>
+                        <li>UI & Functional testing</li>
 
-                      <li>Security, Run Time & Error Detection/Penetration</li>
-                    </ul>
+                        <li>
+                          Security, Run Time & Error Detection/Penetration
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
+                </Fade>
               </div>
             </div>
           </div>

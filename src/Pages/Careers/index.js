@@ -215,9 +215,11 @@ const Career = () => {
             <div className="col-md-5 empty_block">
              
              <div className="join_our_team_wrapper">
+             <Fade direction="up" triggerOnce>
                 
                 <Heading heading ="Join our team" uppercase=""/>
-
+                </Fade>
+                <Fade direction="up" triggerOnce>
                 <ul>
                   <li>
                   We are a collaborative firm where everyone helps each other in mutual growth and find a way to flourish. We don’t hire only smart people but also smart people who effectively work as a team.
@@ -227,6 +229,7 @@ const Career = () => {
                   </li>
                   {/* <li>We are a collaborative firm where everyone helps each other in mutual growth and find a way to flourish. We don’t hire only smart people but also smart people who effectively work as a team.</li> */}
                 </ul>
+                </Fade>
                 
                 
              </div>
@@ -270,9 +273,11 @@ const Career = () => {
            <div className="row">
            {/* <div className="col-md-2"></div> */}
            <div className="col-md-8 careers_at_sakshath_main_box offset-md-2">
+           <Fade direction="up" triggerOnce>
            
            <Heading heading="Careers at sakshath" uppercase="" />
-           
+           </Fade>
+           <Fade direction="up" triggerOnce>
            <ul>
             <li className="careers_at_sakshath_checkmark">
             Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.
@@ -288,6 +293,7 @@ const Career = () => {
              We’re dedicated to having an environment where everyone can thrive by emphasizing intense diversity, employment, engagement, ethics, transparency, and deep-rooted learning.
             </li>
            </ul>
+          </Fade>
            </div>
            {/* <div className="col-md-2"></div> */}
            </div>
@@ -371,20 +377,26 @@ const Career = () => {
       {/*  benfits starts*/}
        <section className="benefits_container">
         <Container>
+        <Fade direction="up" triggerOnce>
           <Row>
             <div className="benefits_heading text-center">
+            <Fade direction="up" triggerOnce>
               <Heading heading="Benefits of working at sakshath" uppercase="" />{" "}
+             </Fade>
             </div>
             
 
             <Col className="cols">
               <div className="benefit_icon">
+              
                 <div className="benefit_img">
                   {" "}
                   <img src={EXPRESSIVE} alt="" className="img-fluid" />
                 </div>
-
+                
+                <Fade direction="up" triggerOnce>
                 <p>Expressive</p>
+                </Fade>
               </div>
             </Col>
             <Col className="cols">
@@ -393,8 +405,9 @@ const Career = () => {
                   {" "}
                   <img src={MOTIVATED} alt="" className="img-fluid" />
                 </div>
-
+                <Fade direction="up" triggerOnce>
                 <p>Motivated</p>
+                </Fade>
               </div>
             </Col>
             <Col className="cols">
@@ -403,8 +416,9 @@ const Career = () => {
                   {" "}
                   <img src={ARTICULATE} alt="" className="img-fluid" />
                 </div>
-
+                <Fade direction="up" triggerOnce>
                 <p>Articulate & Talented</p>
+                </Fade>
               </div>
             </Col>
             <Col className="cols">
@@ -413,12 +427,14 @@ const Career = () => {
                   {" "}
                   <img src={NEW_CHALLENGES} alt="" className="img-fluid" />
                 </div>
-
+                <Fade direction="up" triggerOnce>
                 <p>New Challenges</p>
+               </Fade>
               </div>
             </Col>
             
           </Row>
+          </Fade>
         </Container>
       </section> 
       {/*  benfits end*/}
@@ -488,13 +504,19 @@ const Career = () => {
       <section className="careers_apply_job_section">
         <div className="container">
         <div className="text-center mb-4 pb-md-1">
+        <Fade direction="up" triggerOnce>
            <Heading heading= "Most popular jobs" uppercase="" />
+           </Fade>
+           <Fade direction="up" triggerOnce>
            <p>Beneath each of these categories, you can find its most popular</p>
+           </Fade>
            </div>
+           <Fade direction="up" triggerOnce>
           <div className="row">
           {jobOpeningData.map((data) => {
               return (
             <div className="col-md-6 position-relative careers_job_container" key={data.id}>
+            <Fade direction="up" triggerOnce>
             <div className="">
               <div className="careers_jobs_box">
                 
@@ -562,7 +584,7 @@ const Career = () => {
 
               
               </div>
-              
+              </Fade> 
             </div>
             );
             })}
@@ -580,6 +602,7 @@ const Career = () => {
            
             
           </div>
+          </Fade>
         </div>
       </section>
     </>

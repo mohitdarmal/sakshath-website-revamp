@@ -54,7 +54,7 @@ export const CLIENT_LOGO38 = require("../../Assets/images/ABSA.png");
 
 //patners
 export const CLIENT_LOGO39 = require("../../Assets/images/kotak.jpg");
-export const CLIENT_LOGO40 = require("../../Assets/images/talend.png");
+export const CLIENT_LOGO40 = require("../../Assets/images/talend_one.png");
 export const CLIENT_LOGO41 = require("../../Assets/images/HDFC_Bank.png");
 export const CLIENT_LOGO42 = require("../../Assets/images/DNUS.jpg");
 export const CLIENT_LOGO43 = require("../../Assets/images/crawdord.png");
