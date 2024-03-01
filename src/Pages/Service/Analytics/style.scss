@@ -105,12 +105,11 @@ margin-bottom: 80px;
     }
 }
 
-.ai_box2_height{
-    min-height: 177px ;
+.ai_box2_height,.ai_box4_height{
+    
+    padding-bottom: 49px ;
 }
-.ai_box4_height{
-    min-height: 247px;
-}
+
 
 
 
@@ -121,13 +120,13 @@ margin-bottom: 80px;
     padding-bottom: 3px;
 }
 .bi_box5{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 
 
 .data_integration_box1{
-    padding-bottom: 62px; //same css for box2 and 1 for padding bottom
+    padding-bottom: 24px; //same css for box2 and 1 for padding bottom
 }
 .data_integration_box4{
     padding-bottom: 1px;
@@ -155,68 +154,68 @@ margin-bottom: 80px;
 
 
 
-.ai_datascience_container::before{
+// .ai_datascience_container::before{
     
-    background-image: url("../../../Assets/images/contact_bg_arrow.png");
+//     background-image: url("../../../Assets/images/contact_bg_arrow.png");
     
-    content: "";
-    position: absolute;
-    background-image: url("../../../Assets/images/contact_bg_arrow.png");
-    height: 90px;
-    background-size: contain;
-    /* margin-left: 60px; */
-    width: 83px;
-    /* margin-top: 413px; */
-    background-repeat: no-repeat;
-    top: 482px;
-    bottom: 0;
-}
+//     content: "";
+//     position: absolute;
+//     background-image: url("../../../Assets/images/contact_bg_arrow.png");
+//     height: 90px;
+//     background-size: contain;
+//     /* margin-left: 60px; */
+//     width: 83px;
+//     /* margin-top: 413px; */
+//     background-repeat: no-repeat;
+//     top: 482px;
+//     bottom: 0;
+// }
 
-.bi_dashboard_container::before{
+// .bi_dashboard_container::before{
    
-    content: "";
-    position: absolute;
-    background-image: url("../../../Assets/images/contact_bg_arrow.png");
-    height: 90px;
-    background-size: contain;
-    margin-left: 695px;
-    width: 83px;
-    /* margin-top: 500px; */
-    background-repeat: no-repeat;
-    top: 508px;
-    left: -570px;
-}
+//     content: "";
+//     position: absolute;
+//     background-image: url("../../../Assets/images/contact_bg_arrow.png");
+//     height: 90px;
+//     background-size: contain;
+//     margin-left: 695px;
+//     width: 83px;
+//     /* margin-top: 500px; */
+//     background-repeat: no-repeat;
+//     top: 508px;
+//     left: -570px;
+// }
 
-.data_integration_container::before{
-    content: "";
-    position: absolute;
-    background-image: url("../../../Assets/images/contact_bg_arrow.png");
-    height: 90px;
-    background-size: contain;
-    margin-left: 60px;
-    width: 83px;
-    //margin-top: 410px;
-    background-repeat: no-repeat;
-    top: 435px;
-    left: 60px 
+// .data_integration_container::before{
+//     content: "";
+//     position: absolute;
+//     background-image: url("../../../Assets/images/contact_bg_arrow.png");
+//     height: 90px;
+//     background-size: contain;
+//     margin-left: 60px;
+//     width: 83px;
+//     //margin-top: 410px;
+//     background-repeat: no-repeat;
+//     top: 435px;
+//     left: 60px 
     
 
-}
+// }
 
-.bigdata_container::before{
-    content: "";
-    position: absolute;
-    background-image: url("../../../Assets/images/contact_bg_arrow.png");
-    height: 104px;
-    background-size: contain;
-    /* margin-left: 643px; */
-    width: 120px;
-    /* margin-top: 455px; */
-    background-repeat: no-repeat;
-    top: 428px;
-    left: 118px;
+// .bigdata_container::before{
+//     content: "";
+//     position: absolute;
+//     background-image: url("../../../Assets/images/contact_bg_arrow.png");
+//     height: 104px;
+//     background-size: contain;
+//     /* margin-left: 643px; */
+//     width: 120px;
+//     /* margin-top: 455px; */
+//     background-repeat: no-repeat;
+//     top: 428px;
+//     left: 118px;
 
-}
+// }
 
 
 .bi_key_feature_heading_box{
@@ -293,20 +292,20 @@ margin-bottom: 80px;
 }
 .bi_feature_box5_bgcolor::before{
     background: #9DDDFB;
-    margin-top: -52px;
+    margin-top: -64px;
 }
 .bi_feature_box5_bgcolor::after{
     background: #9DDDFB;
-    margin-top: 20px;
+    margin-top: 26px;
 }
 .bi_feature_box6_bgcolor::after {
     background: #B1E4FC;
-    margin-top: 46px;
+    margin-top: 38px;
 }
 
 .bi_feature_box6_bgcolor::before {
     background: #B1E4FC;
-    margin-top: -77px;
+    margin-top: -70px;
 }
 
 .bi_feature_icon img{
@@ -319,7 +318,7 @@ margin-bottom: 80px;
     padding: 57px;
 }
 .bi_feature_box3{
-    padding: 67px;
+    padding: 64px;
 
     .bi_feature_icon img{
             margin-top: -24px ;
@@ -328,8 +327,8 @@ margin-bottom: 80px;
 
     
 }
-.bi_feature_box2{
-    padding: 56px;
+.bi_feature_box2 {
+  padding: 45px;
 }
 // .bi_feature_box3::before{
 //     margin-top: -37px;
@@ -344,15 +343,15 @@ margin-bottom: 80px;
     
 // }
 .bi_feature_box4{
-    padding: 57px;
+    padding: 47px;
 }
 
 .bi_feature_box5{
-    padding: 52px;
+    padding: 65px;
 }
 
 .bi_feature_box6{
-    padding: 68px;
+    padding: 66px;
 
     .bi_feature_icon img{
         margin-top: -20px;
@@ -666,12 +665,23 @@ ul {
 
 // responsive start
 @media screen and (max-width: 480px) {
-  .overview_sec {
+  .overview_analytics_section{
     padding-top: 40px;
     padding-right: 0px !important;
   }
-  .overview_sec_left {
+  .overview_sec_left_analytics {
     padding-right: 0px !important;
+  }
+  .overview_sec_right_analytics_img{
+    padding: 0px;
+    padding-top: 40px;
+  }
+
+  .ai_data_science_left{
+    padding-right: 0px;
+  }
+  .ai_data_science_right{
+    padding-left: 0px;
   }
 
   .why_need_integration_right {
@@ -866,3 +876,7 @@ ul {
   font-family: $rajdhani_font;
   font-weight: bold;
 }
+
+   
+
+
