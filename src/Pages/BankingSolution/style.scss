@@ -110,3 +110,34 @@ transition: .5s;
         padding-bottom: 40px;
     }
 }
+
+@media screen and (max-width:480px){
+.banking_img img{
+  width: 100% !important;
+  margin-top: 20px;
+}
+.customer_web_box {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 6px;
+  transition: 0.5s;
+  margin-top: 20px;
+  min-height: 430px !important;
+}
+}
+@media screen and (min-width:481px) and (max-width:767px){
+  .banking_img img{
+    width: 100% !important;
+    margin-top: 20px;
+  }
+
+  .customer_web_box {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1607843137);
+    border-radius: 6px;
+    transition: 0.5s;
+    min-height: 430px !important;
+}
+}

@@ -1,6 +1,15 @@
 import React from "react";
-import { EXPERIENCE, EXPERIENCE1, PROFESSIONAL_TEAM, PROFESSIONAL_TEAM1, RELIABILTY, SPECIALIZATION, SPECIALIZATION1, RELIABILTY1 } from "./Constant";
-import {Fade} from "react-awesome-reveal";
+import {
+  EXPERIENCE,
+  EXPERIENCE1,
+  PROFESSIONAL_TEAM,
+  PROFESSIONAL_TEAM1,
+  RELIABILTY,
+  SPECIALIZATION,
+  SPECIALIZATION1,
+  RELIABILTY1,
+} from "./Constant";
+import { Fade } from "react-awesome-reveal";
 import SubTitle from "../Utils/Title_head";
 import Heading from "../Utils/Heading";
 import "./styles.scss";
@@ -8,9 +17,9 @@ import { Link } from "react-router-dom";
 import SubHeading from "../Utils/SubHeading";
 
 const OurPrincipals = () => {
-    return (
-        <>
-        {/* <section className="our_principals">
+  return (
+    <>
+      {/* <section className="our_principals">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-6 our_principals_heading">
@@ -107,12 +116,9 @@ const OurPrincipals = () => {
         </div>
       </section>   */}
 
-
-
-<section className="principle_section">
+      <section className="principle_section">
         <div className="container">
-
-        <div className="row justify-content-center">
+          <div className="row justify-content-center">
             <div className="col-md-6 our_principals_heading">
               <div className="text-center">
                 <div className="title">
@@ -131,96 +137,99 @@ const OurPrincipals = () => {
           </div>
 
           <div className="row ">
-        
             <div className="col-md-6 principle_cols">
-            <Fade direction="up"  triggerOnce>
-              <div className="principle_container d-flex horizontal-shake">
-                <div className="principle_icon">
-                  <img src={RELIABILTY1} alt="" />
-                </div>
-                <div className="principle_para">
-                  {/* <h5>REABILITY</h5> */}
-                  <SubHeading heading="Reability" uppercase="" />
-                  
-                  <p>
-                    {" "}
-                    Our customers rely on us as we provide high–quality,
-                    reliable products{" "}
-                  </p>
+              <Fade direction="up" triggerOnce>
+                <div className="principle_container d-flex horizontal-shake">
+                  <div className="principle_icon">
+                    <img src={RELIABILTY1} alt="" />
+                  </div>
+                  <div className="principle_para">
+                    {/* <h5>REABILITY</h5> */}
+                    <SubHeading heading="Reability" uppercase="" />
 
-                  <Link>Read More</Link>
+                    <p>
+                      {" "}
+                      Our customers rely on us as we provide high – quality,
+                      reliable products which have control over all their
+                      processes which are rigorously managed by our Quality
+                      management systems.{" "}
+                    </p>
+
+                    {/* <Link>Read More</Link> */}
+                  </div>
                 </div>
-              </div>
               </Fade>
             </div>
             <div className="col-md-6 principle_cols">
-            <Fade direction="up"  triggerOnce>
-              <div className="principle_container d-flex horizontal-shake">
-                <div className="principle_icon">
-                  <img src={PROFESSIONAL_TEAM1} alt="" />
-                </div>
-                <div className="principle_para">
-                  <h5>PROFESSIONAL TEAM</h5>
-                  <p>
-                    {" "}
-                    Our customers rely on us as we provide high–quality,
-                    reliable products{" "}
-                  </p>
+              <Fade direction="up" triggerOnce>
+                <div className="principle_container d-flex horizontal-shake">
+                  <div className="principle_icon">
+                    <img src={PROFESSIONAL_TEAM1} alt="" />
+                  </div>
+                  <div className="principle_para">
+                    <h5>PROFESSIONAL TEAM</h5>
+                    <p>
+                      {" "}
+                      In order to efficiently create and produce excellent
+                      products for our clients, Sakshath’s professional team of
+                      designers follow a simple process that makes working with
+                      us easy.{" "}
+                    </p>
 
-                  <Link>Read More</Link>
+                    {/* <Link>Read More</Link> */}
+                  </div>
                 </div>
-              </div>
               </Fade>
             </div>
             <div className="col-md-6 principle_cols">
-            <Fade direction="up"  triggerOnce>
-              <div className="principle_container d-flex horizontal-shake">
-                <div className="principle_icon">
-                  <img src={SPECIALIZATION1} alt="" />
-                </div>
-                <div className="principle_para">
-                  {/* <h5>SPECIALIZATION</h5> */}
-                  <SubHeading heading="SPECIALIZATION" uppercase="" />
-                  <p>
-                    {" "}
-                    Our customers rely on us as we provide high–quality,
-                    reliable products{" "}
-                  </p>
+              <Fade direction="up" triggerOnce>
+                <div className="principle_container d-flex horizontal-shake">
+                  <div className="principle_icon">
+                    <img src={SPECIALIZATION1} alt="" />
+                  </div>
+                  <div className="principle_para">
+                    {/* <h5>SPECIALIZATION</h5> */}
+                    <SubHeading heading="SPECIALIZATION" uppercase="" />
+                    <p>
+                      {" "}
+                      We specialize in implementations, process improvements,
+                      project management and staff augmentation in parallel with
+                      product lifecycle management and other solutions.{" "}
+                    </p>
 
-                  <Link>Read More</Link>
+                    {/* <Link>Read More</Link> */}
+                  </div>
                 </div>
-              </div>
               </Fade>
             </div>
             <div className="col-md-6 principle_cols">
-            <Fade direction="up"  triggerOnce>
-              <div className="principle_container d-flex horizontal-shake">
-                <div className="principle_icon">
-                  <img src={EXPERIENCE1} alt="" />
-                </div>
-                <div className="principle_para">
-                  {/* <h5>EXPERIENCE</h5> */}
-                  <SubHeading heading="EXPERIENCE" uppercase="" />
-                  
-                
-                  <p>
-                    {" "}
-                    Our customers rely on us as we provide high–quality,
-                    reliable products{" "}
-                  </p>
+              <Fade direction="up" triggerOnce>
+                <div className="principle_container d-flex horizontal-shake">
+                  <div className="principle_icon">
+                    <img src={EXPERIENCE1} alt="" />
+                  </div>
+                  <div className="principle_para">
+                    {/* <h5>EXPERIENCE</h5> */}
+                    <SubHeading heading="EXPERIENCE" uppercase="" />
 
-                  <Link>Read More</Link>
+                    <p>
+                      {" "}
+                      Sakshath Technologies consultants have an average of 12+
+                      years experience with their processes and have worked on
+                      projects of all sizes and scopes thus managing new
+                      implementations upgrades.{" "}
+                    </p>
+
+                    {/* <Link>Read More</Link> */}
+                  </div>
                 </div>
-              </div>
               </Fade>
             </div>
           </div>
         </div>
       </section>
-
-
-        </>
-    )
-} 
+    </>
+  );
+};
 
 export default OurPrincipals;

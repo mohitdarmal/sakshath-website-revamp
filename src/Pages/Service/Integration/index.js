@@ -13,14 +13,7 @@ import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import ServiceStickMenu from "../../../Components/ServiceStickMenu";
-import {
-  CLIENT_LOGO1,
-  CLIENT_LOGO2,
-  CLIENT_LOGO3,
-  CLIENT_LOGO4,
-  CLIENT_LOGO5,
-  CLIENT_LOGO6,
-} from "../../../Components/ClientLogo/Constant";
+import TrustedBy from "../../../Components/TrustedBy";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
@@ -120,53 +113,11 @@ const menu = [{
       </section>
       {/* <!-- section one end --> */}
 
-      {/* section four start */}
+      {/* section trusted by start */}
 
-      <section className="partner_logo_section">
-      
-     
-        <div className="container partner_logo_tab">
-          <div className="text-center">
-          <Heading
-                heading="Trusted By"
-              />
-          </div>
-          
-          <Swiper
-            slidesPerView={5}
-            spaceBetween={10}
-            autoplay={{
-              delay: 1500,
-              disableOnInteraction: false,
-            }}
-            loop={true}
-            modules={[Autoplay]}
-            className="mySwiper" 
-            >
-            <SwiperSlide>
-              <img src={CLIENT_LOGO1}  />{" "}
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO2}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO3}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO4}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO5}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO6}  />
-            </SwiperSlide>
-            
-          </Swiper>
-        </div>
-      </section>
-
-      {/* <!-- section two start --> */}
+     <TrustedBy/>
+     {/* section trusted by end  */}
+      {/* <!-- section why need integration start --> */}
       { <section className="why_need_integration_sec">
         <div className="container">
           <div className="row align-items-center">
@@ -198,7 +149,7 @@ const menu = [{
           </div>
         </div>
       </section> }
-       {/* <!-- section two end --> */}
+       {/* <!-- section why need integration end --> */}
 
             {/* <!-- section three start-->  */}
       {/* <section className="body_sec_two">

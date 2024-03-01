@@ -18,6 +18,9 @@ export const CLIENT_LOGO13=require("../../Assets/images/Aditya_Birla.jpg");
 export const CLIENT_LOGO14=require("../../Assets/images/Jupiter_hospital.png");
 export const CLIENT_LOGO15=require("../../Assets/images/Chaitanya_Microfinance.jpg");
 export const CLIENT_LOGO45=require("../../Assets/images/Fullerton_india.png");
+export const CLIENT_LOGO46=require("../../Assets/images/Inox_air.jpg");
+export const CLIENT_LOGO47=require("../../Assets/images/kens.jpg");
+
 
 
 
@@ -51,13 +54,13 @@ export const CLIENT_LOGO38 = require("../../Assets/images/ABSA.png");
 
 //patners
 export const CLIENT_LOGO39 = require("../../Assets/images/kotak.jpg");
-export const CLIENT_LOGO40 = require("../../Assets/images/talend.png");
+export const CLIENT_LOGO40 = require("../../Assets/images/talend_one.png");
 export const CLIENT_LOGO41 = require("../../Assets/images/HDFC_Bank.png");
 export const CLIENT_LOGO42 = require("../../Assets/images/DNUS.jpg");
 export const CLIENT_LOGO43 = require("../../Assets/images/crawdord.png");
 export const CLIENT_LOGO44 = require("../../Assets/images/aws_partner.jpg");
 
 //
-export const CLIENT_LOGO46=require("../../Assets/images/Inox_air.jpg");
+
 
 // export const CLIENT_LOGO21=require("../../Assets/images/Azenia.jpg");

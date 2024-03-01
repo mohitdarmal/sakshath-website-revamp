@@ -224,6 +224,11 @@ const Header = () => {
                         Integration
                       </NavLink>
                     </li>
+                    <li>
+                      <NavLink to="/talent-solution" className="dropdown-item">
+                       Talent Solution
+                      </NavLink>
+                    </li>
                   </ul>
                 </li>
                 <li>

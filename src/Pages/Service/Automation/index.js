@@ -43,18 +43,55 @@ import { Autoplay } from "swiper/modules";
 import BreadCumb from "../../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
 import ServiceStickMenu from "../../../Components/ServiceStickMenu";
-import {
-  CLIENT_LOGO1,
-  CLIENT_LOGO2,
-  CLIENT_LOGO3,
-  CLIENT_LOGO4,
-  CLIENT_LOGO5,
-  CLIENT_LOGO6,
-} from "../../../Components/ClientLogo/Constant";
+// import {
+//   CLIENT_LOGO1,
+//   CLIENT_LOGO2,
+//   CLIENT_LOGO3,
+//   CLIENT_LOGO4,
+//   CLIENT_LOGO5,
+//   CLIENT_LOGO6,
+//   CLIENT_LOGO7,
+//   CLIENT_LOGO8,
+//   CLIENT_LOGO9,
+//   CLIENT_LOGO10,
+//   CLIENT_LOGO11,
+//   CLIENT_LOGO12,
+//   CLIENT_LOGO13,
+//   CLIENT_LOGO14,
+//   CLIENT_LOGO15,
+//   CLIENT_LOGO45,
+//   CLIENT_LOGO46,
+//   CLIENT_LOGO47,
+//   CLIENT_LOGO16,
+//   CLIENT_LOGO17,
+//   CLIENT_LOGO18,
+//   CLIENT_LOGO19,
+//   CLIENT_LOGO20,
+//   CLIENT_LOGO21,
+//   CLIENT_LOGO22,
+//   CLIENT_LOGO23,
+//   CLIENT_LOGO24,
+//   CLIENT_LOGO25,
+//   CLIENT_LOGO26,
+//   CLIENT_LOGO27,
+//   CLIENT_LOGO28,
+//   CLIENT_LOGO29,
+//   CLIENT_LOGO30,
+//   CLIENT_LOGO31,
+//   CLIENT_LOGO32,
+//   CLIENT_LOGO33,
+//   CLIENT_LOGO34,
+//   CLIENT_LOGO35,
+//   CLIENT_LOGO36,
+//   CLIENT_LOGO37,
+//   CLIENT_LOGO38
+// } from "../../../Components/ClientLogo/Constant";
+import TrustedBy from "../../../Components/TrustedBy";
 import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Fade } from "react-awesome-reveal";
+import Faq from "../../../Components/Faq";
 
 const Automation = () => {
   const menu = [
@@ -254,10 +291,16 @@ const Automation = () => {
         </div>
       </section>
       {/* <!-- section one end --> */}
+      <TrustedBy/>
 
-      <section className="partner_logo_section">
+      {/* <section className="partner_logo_section">
         <Fade direction="up" triggerOnce>
-          <div className="container partner_logo_tab">
+        <div className="container partner_logo_tab">
+          <div className="text-center">
+          <Heading
+                heading="Trusted By"
+              />
+          </div>
             <Swiper
               slidesPerView={5}
               spaceBetween={10}
@@ -269,28 +312,138 @@ const Automation = () => {
               modules={[Autoplay]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <img src={CLIENT_LOGO1} />{" "}
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO2} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO3} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO4} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO5} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO6} />
-              </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO1}  />{" "}
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO2}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO47}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO34}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO3}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO4}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO28}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO5}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO27}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO6}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO7}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO35}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO8}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO9}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO10}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO11}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO12}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO29}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO13}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO14}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO15}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO16}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO17}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO18}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO19}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO20}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO21}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO22}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO23}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO24}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO25}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO26}  />
+            </SwiperSlide>
+      
+            
+            
+            <SwiperSlide>
+              <img src={CLIENT_LOGO30}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO31}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO32}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO33}  />
+            </SwiperSlide>
+          
+            
+            <SwiperSlide>
+              <img src={CLIENT_LOGO36}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO37}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO38}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO45}  />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO46}  />
+            </SwiperSlide>
             </Swiper>
           </div>
         </Fade>
-      </section>
+      </section> */}
 
       {/* <!-- section two start --> */}
       {/* <section className="why_need_integration_sec">
@@ -1191,6 +1344,18 @@ const Automation = () => {
       {/* Why Sakshath starts*/}
       <WhySaksahthNew whyCrm={whyDevops} />
       {/* why sakshath ends */}
+
+      <section>
+      <div className="container">
+        <div className="row"> 
+        <div className="col-md-1"> </div>
+        <div className="col-md-10">
+              <Faq />
+        </div>
+        <div className="col-md-1"> </div>
+        </div>
+      </div>
+     </section>
     </>
   );
 };
