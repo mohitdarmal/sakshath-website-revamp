@@ -36,12 +36,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import ServiceStickMenu from "../../../Components/ServiceStickMenu";
 import {
-  CLIENT_LOGO1,
-  CLIENT_LOGO2,
-  CLIENT_LOGO3,
+  CLIENT_LOGO43,
+  CLIENT_LOGO12,
+  CLIENT_LOGO20,
+  CLIENT_LOGO22,
+  CLIENT_LOGO45,
+  CLIENT_LOGO6,
+  CLIENT_LOGO7,
   CLIENT_LOGO4,
+  CLIENT_LOGO13,
+  CLIENT_LOGO46, 
+  CLIENT_LOGO47,
   CLIENT_LOGO5,
-} from "../../../Components/ClientLogo/Constant";
+  CLIENT_LOGO1
+}
+ from "../../../Components/ClientLogo/Constant";
+
 import ScrollSpy from "react-ui-scrollspy";
 import { Element, scroller } from "react-scroll";
 export const Analytics = () => {
@@ -113,6 +123,90 @@ export const Analytics = () => {
 
       {/* @@@@@@@@@@@@@@@@  partner logo section @@@@@@@@@ */}
       <section className="partner_logo_section">
+      
+     
+        <div className="container partner_logo_tab">
+          <div className="text-center">
+          <Heading
+                heading="Trusted By"
+              />
+          </div>
+          
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={10}
+             autoplay={{
+             delay: 1500,
+              disableOnInteraction: false,
+             }}
+            breakpoints={{
+              320: {
+                slidesPerView:2,
+                spaceBetween:30
+              },
+              481: {
+                slidesPerView:3,
+                spaceBetween:30
+              },
+              768: {
+                slidesPerView:3,
+                spaceBetween:30
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween:30
+              },
+            }}
+            loop={true}
+            modules={[Autoplay]}
+            className="mySwiper" 
+            >
+            <SwiperSlide>
+              <img src={CLIENT_LOGO43} />{" "}
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO12} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO20} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO22} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO45} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO6} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO7} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO4} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO13} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO46} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO47} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO5} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO1} />
+            </SwiperSlide>
+            
+          </Swiper>
+        </div>
+      </section>
+
+
+      {/* <section className="partner_logo_section">
         <div className="container partner_logo_tab">
           <Swiper
             slidesPerView={5}
@@ -126,26 +220,47 @@ export const Analytics = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src={CLIENT_LOGO1} />{" "}
+              <img src={CLIENT_LOGO43} />{" "}
             </SwiperSlide>
             <SwiperSlide>
-              <img src={CLIENT_LOGO2} />
+              <img src={CLIENT_LOGO12} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={CLIENT_LOGO3} />
+              <img src={CLIENT_LOGO20} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={CLIENT_LOGO4} />
+              <img src={CLIENT_LOGO22} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={CLIENT_LOGO5} />
+              <img src={CLIENT_LOGO45} />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={CLIENT_LOGO3} />
+              <img src={CLIENT_LOGO6} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO07} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO04} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO13} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO46} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO47} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO05} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO01} />
             </SwiperSlide>
           </Swiper>
         </div>
-      </section>
+      </section> */}
 
       {/* @@@@@@@@@@@@@@@@@@  */}
       <ServiceStickMenu pageName="Analytics" menuName={menu} />

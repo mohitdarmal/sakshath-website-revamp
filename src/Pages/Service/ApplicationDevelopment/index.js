@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import BreadCumb from "../../../Components/Breadcumb";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import TrustedBy from "../../../Components/TrustedBy";
 import {
   APPLICATION_DEVLOPMENT_BREADCUMB_IMG,
   APP_DEV_IMG,
@@ -17,7 +18,6 @@ import {
   QUALITY_ASSURANCE,
   SMOOTH_COMMUNICATION,
 } from "./Constant";
-import { TRAEGER, GE_HEALTHCARE, UNIVISION, NBC_UNIVESAL, RWI,DHL } from "../Constant";
 import Heading from "../../../Components/Utils/Heading";
 import "./styles.scss";
 import HappyClients from "../../../Components/HappyClients";
@@ -313,68 +313,10 @@ const ApplicationDevelopment = () => {
         </div>
       </section>
       {/* @@@@@ SECTION- Our Services end @@@@@@ */}
+      <TrustedBy/>
 
       {/* @@@@@ SECTION- Our Platform start @@@@@@ */}
-      <section className="our_paltform_sec">
-        <div className="container">
-          <div className="row">
-            <Swiper
-              slidesPerView={5}
-              spaceBetween={30}
-              breakpoints={{
-                320: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                },
-                481: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                },
-                768: {
-                  slidesPerView: 4,
-                  spaceBetween: 30,
-                },
-                1024: {
-                  slidesPerView: 5,
-                  spaceBetween: 30,
-                },
-              }}
-              autoplay={{
-                delay: 1500,
-                disableOnInteraction: false,
-              }}
-              loop={true}
-              modules={[Autoplay]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <img src={TRAEGER} />{" "}
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={GE_HEALTHCARE} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={UNIVISION} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={NBC_UNIVESAL} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={RWI} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={DHL} />
-              </SwiperSlide>
-              {/* <SwiperSlide>
-                <img src={CLIENT_LOGO3} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO4} />
-              </SwiperSlide> */}
-            </Swiper>
-          </div>
-        </div>
-      </section>
+     
       {/* @@@@@ SECTION- Our Platform end @@@@@@ */}
 
       {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}

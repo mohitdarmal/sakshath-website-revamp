@@ -18,7 +18,7 @@ const OurAchivement = () => {
     {
       id: 2,
       title:
-        " Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath Technologies",
+        " Analytics Vidhya - DataHack Summit 2023 ",
       image: require("../../../Assets/images/Achivement40.png"),
       description:
         "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking and innovative strategies in the tech sector. His commitment to technological advancement and user-centric design has positioned the company as a leading force in the industry, with a promising trajectory for future innovations.",

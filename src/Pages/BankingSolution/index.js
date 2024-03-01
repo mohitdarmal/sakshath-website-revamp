@@ -5,6 +5,31 @@ import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import BreadCumb from "../../Components/Breadcumb";
 import { BANKING_BG_IMG, Who_we_r } from "./Constant";
 import Heading from "../../Components/Utils/Heading";
+import { Fade } from "react-awesome-reveal";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import{
+  CLIENT_LOGO11,
+  CLIENT_LOGO15,
+  CLIENT_LOGO2,
+  CLIENT_LOGO16,
+  CLIENT_LOGO18,
+  CLIENT_LOGO19,
+  CLIENT_LOGO20,
+  CLIENT_LOGO22,
+  CLIENT_LOGO23,
+  CLIENT_LOGO24,
+  CLIENT_LOGO25,
+  CLIENT_LOGO26,
+  CLIENT_LOGO27,
+  CLIENT_LOGO28,
+  CLIENT_LOGO29,
+  CLIENT_LOGO37,
+  CLIENT_LOGO38,
+  CLIENT_LOGO34,
+  CLIENT_LOGO36
+
+}from "../../Components/TrustedBy/Constant";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Faq from "../../Components/Faq";
 const BankingSolution = () => {

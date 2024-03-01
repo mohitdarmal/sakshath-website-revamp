@@ -39,6 +39,7 @@ import {
   tagline_banner_erp,
   tagline_banner_bank,
   tagline_banner_fintech,
+  OUT_LOOK,
 } from "./Constant";
 
 import { SlCalender } from "react-icons/sl";
@@ -611,6 +612,25 @@ export const Home = () => {
                 </Link>
               </div>
 
+              <div className="col-md-4 d-flex ">
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={OUT_LOOK} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>Outlook Business</h3>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit Odit vitae.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
+                    </div>
+                  </Fade>
+                </Link>
+              </div>
 
             </div>
           </div>
