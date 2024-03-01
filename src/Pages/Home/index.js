@@ -439,62 +439,7 @@ export const Home = () => {
             </div>
 
             <div className="row mt-4 pt-2">
-            <div className="col-md-4 d-flex ">
-                <Link>
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={AWS} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>Outlook Business</h3>
-                        <p>
-                        Sakshath Technologies for winning Company of the Year - IT Services & IT Consulting in IT Industry at Outlook Business Spotlight- Business Excellence Awards 2023  
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
-
-              <div className="col-md-4 d-flex ">
-                <Link>
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={TIMES_OF_INDIA} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>Times of India</h3>
-                        <p>
-                        Mr Shravan Kumar was awarded the prestigious "40 under 40" award by Bennett Coleman & Co. Ltd. - The Times of India.  
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
-
-              <div className="col-md-4 d-flex ">
-                <Link>
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={WCRCINT} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>WCRCINT</h3>
-                        <p>
-                        World’s Leading brands and leaders at the prestigious House of Lords ceremony at the Palace of Westminster, London.  
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
+           
               <div className="col-md-4 d-flex ">
                 <Link>
                   <Fade direction="up" delay={400} triggerOnce>
@@ -533,6 +478,25 @@ export const Home = () => {
                 </Link>
               </div>
 
+              <div className="col-md-4">
+                <Fade direction="up" delay={10} triggerOnce>
+                  <Link>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={GREAT_PLACE_WORK} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3 className="text">Great Place to Work</h3>
+                        <p>
+                        Sakshath was recognised as a Great Place to Work again in 2024!
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
+                    </div>
+                  </Link>
+                </Fade>
+              </div>
+
               <div className="col-md-4 d-flex ">
                 <Link>
                   <Fade direction="up" delay={200} triggerOnce>
@@ -553,24 +517,7 @@ export const Home = () => {
                 </Link>
               </div>
 
-              <div className="col-md-4">
-                <Fade direction="up" delay={10} triggerOnce>
-                  <Link>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={GREAT_PLACE_WORK} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3 className="text">Great Place to Work</h3>
-                        <p>
-                        Sakshath was recognised as a Great Place to Work again in 2024!
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
-                  </Link>
-                </Fade>
-              </div>
+             
 
               <div className="col-md-4 d-flex ">
                 <Link>
@@ -611,7 +558,6 @@ export const Home = () => {
                   </Fade>
                 </Link>
               </div>
-
               <div className="col-md-4 d-flex ">
                 <Link>
                   <Fade direction="up" delay={400} triggerOnce>
@@ -622,15 +568,53 @@ export const Home = () => {
                       <div className="content">
                         <h3>Outlook Business</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
+                        Sakshath Technologies for winning Company of the Year - IT Services & IT Consulting in IT Industry at Outlook Business Spotlight- Business Excellence Awards 2023.
                         </p>
-                        <p className="learn_more">See Certificate</p>
+                        {/* <p className="learn_more">See Certificate</p> */}
                       </div>
                     </div>
                   </Fade>
                 </Link>
               </div>
+
+              <div className="col-md-4 d-flex ">
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={TIMES_OF_INDIA} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>Times of India</h3>
+                        <p>
+                        Mr Shravan Kumar was awarded the prestigious "40 under 40" award by Bennett Coleman & Co. Ltd. - The Times of India.  
+                        </p>
+                        {/* <p className="learn_more">See Certificate</p> */}
+                      </div>
+                    </div>
+                  </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-4 d-flex ">
+                <Link>
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={WCRCINT} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>WCRCINT</h3>
+                        <p>
+                        World’s Leading brands and leaders at the prestigious House of Lords ceremony at the Palace of Westminster, London.  
+                        </p>
+                        {/* <p className="learn_more">See Certificate</p> */}
+                      </div>
+                    </div>
+                  </Fade>
+                </Link>
+              </div>
+              
 
             </div>
           </div>
@@ -968,7 +952,7 @@ export const Home = () => {
                 </p> */}
                 <li>
                 Digitise your business by managing multiple process in a
-                  single platform.Optimize efficiency and productivity effortlessly
+                  single platform.Optimize efficiency and productivity effortlessly.
                 </li>
                 <li>Transform your workflow with our all-in-one platform.Manage multiple processes seamlessly for optimal results.</li>
                 {/* <li>Optimize efficiency and productivity effortlessly.</li> */}
@@ -1110,7 +1094,7 @@ export const Home = () => {
                       <p className="blog_sub_heading">
                         Sed ut perspiciatis unde omnsiste natus errors
                         voluptatem accusantium doloremque laudatium totae rem
-                        aperiam eaque quae abillo
+                        aperiam eaque quae abillo.
                       </p>
                       <SlideAnimationButton btnName="READ MORE" />
                     </div>
@@ -1135,7 +1119,7 @@ export const Home = () => {
                       <p className="blog_sub_heading">
                         Sed ut perspiciatis unde omnsiste natus errors
                         voluptatem accusantium doloremque laudatium totae rem
-                        aperiam eaque quae abillo
+                        aperiam eaque quae abillo.
                       </p>
                       <SlideAnimationButton btnName="READ MORE" />
                     </div>
@@ -1153,13 +1137,10 @@ export const Home = () => {
                     <div className="cust_profile"></div>
                     <div className="socail_icon">
                       <h5 className="blog_heading">
-                        Build Launch Powerful Responsives Websites With Editor
-                        Perfect
+                      Highlighting the impactful contributions of our employees across Africa
                       </h5>
                       <p className="blog_sub_heading">
-                        Sed ut perspiciatis unde omnsiste natus errors
-                        voluptatem accusantium doloremque laudatium totae rem
-                        aperiam eaque quae abillo
+                      Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club and claimed up to a 40% discount on sanitary pads.
                       </p>
 
                       <SlideAnimationButton btnName="READ MORE" />

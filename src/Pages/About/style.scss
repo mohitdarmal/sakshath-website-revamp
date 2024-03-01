@@ -274,6 +274,24 @@
   }
 }
 
+// service_indus
+.about_industry_box{
+  img{
+    width: 30px;
+
+  }
+  h2{
+    font-family: $rajdhani_font;
+    font-weight: bold;
+
+  }
+}
+.managed_service_content img {
+  width: 50px;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .who_we_are_img {
     padding-top: 200px !important;

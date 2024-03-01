@@ -5,4 +5,4 @@ export const WAVE_IMG=require('../../Assets/images/wave.svg').default;
 
 
 //core values
-// export const HONESTY = require('../../Assets/images/Honesty.svg').default;
+ export const HONESTY = require('../../Assets/images/Honesty.svg').default;

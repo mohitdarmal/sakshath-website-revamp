@@ -254,7 +254,7 @@ const Staffing = () => {
               <Heading heading="Benefits" />
             </div>
           </div>
-          <div className="row">
+          <div className="row text-center">
             {/* <div className="col-md-12"> */}
             {/* <div className="col-md-1"></div> */}
             <div className="col-md-12 d-flex">
