@@ -110,6 +110,23 @@ margin-bottom: 80px;
     padding-bottom: 49px ;
 }
 
+.why_sakshath_ai{
+  .why_sakshath_content1 {
+    
+    min-height: 545px;
+     h5 {
+      font-family: rajdhani;
+      font-weight: 700;
+      color: #fff;
+      z-index: 1;
+      position: relative;
+      margin-top: -6px;
+      text-transform: uppercase;
+      min-height: 48px;
+    }
+       }
+}
+
 
 
 
@@ -122,8 +139,20 @@ margin-bottom: 80px;
 .bi_box5{
     padding-bottom: 20px;
 }
+.why_sakshath_bi,.why_sakshath_bigdata{
 
+  .why_sakshath_content1 h5{
+    font-family: rajdhani;
+      font-weight: 700;
+      color: #fff;
+      z-index: 1;
+      position: relative;
+      margin-top: -6px;
+      text-transform: uppercase;
+      min-height: 48px;
+  }
 
+}
 
 .data_integration_box1{
     padding-bottom: 24px; //same css for box2 and 1 for padding bottom
@@ -135,8 +164,14 @@ margin-bottom: 80px;
     padding-bottom: 8px;
 }
 
+.why_sakshath_dataIntegration{
+   .why_sakshath_content1 {
+  
+  min-height: 500px;
 
 
+   }
+  }
 
 .bigdata_box1{
     padding-bottom: 6px;
@@ -662,6 +697,8 @@ ul {
   background-color: #041d26;
   border-radius: 15px;
 }
+
+
 
 // responsive start
 @media screen and (max-width: 480px) {
