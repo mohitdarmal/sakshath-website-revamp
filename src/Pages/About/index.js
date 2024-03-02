@@ -155,6 +155,9 @@ const About = () => {
       <section className="managed_service_flowchart_sec">
         {/* //<h2>Process</h2> */}
         <div className="container-fluid">
+          <div className="row text-center">
+            <Heading heading="Service Industries" />
+          </div>
           <Fade direction="up" delay={300} triggerOnce>
             <div className="row">
               <div className="col-md-2 about_industry_box bg1">
@@ -177,7 +180,7 @@ const About = () => {
                 <div className="managed_service_content">
                   {/* <p>3</p> */}
                   <img src={HONESTY} alt="" />
-                  <h5>Banking</h5>
+                  <h5>Manufacturing</h5>
                 </div>
               </div>
 
@@ -185,7 +188,7 @@ const About = () => {
                 <div className="managed_service_content">
                   {/* <p>4</p> */}
                   <img src={HONESTY} alt="" />
-                  <h5>NGO</h5>
+                  <h5>Medical</h5>
                 </div>
               </div>
 
@@ -201,7 +204,7 @@ const About = () => {
                 <div className="managed_service_content">
                   {/* <p>6</p> */}
                   <img src={HONESTY} alt="" />
-                  <h5>NGO</h5>
+                  <h5>Industry</h5>
                 </div>
               </div>
             </div>
