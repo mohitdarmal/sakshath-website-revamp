@@ -22,7 +22,7 @@ const Blog = () => {
             blogImg:require("../../Assets/images/blog1_img.png"),
             blogImg_blog_detail_img:require("../../Assets/images/blog1_detailImg.png"),
             blogImg_blog_detail_img2:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
-            blogAuthor:"wqertyu",
+            blogAuthor:"Nandini Chourey",
             blogAuthor_img:require("../../Assets/images/javalogo.png"),
             blogDate:"8 Feb 2024"
 
@@ -35,7 +35,7 @@ const Blog = () => {
             tags:["Technology", "Service"],
             blogImg:require("../../Assets/images/blog2_img.png"),
             blogImg_blog_detail_img:require("../../Assets/images/blog2_detailImg.png"),
-            blogAuthor:"wqertyu",
+            blogAuthor:"Mohit Darmal",
             blogDate:"8 Feb 2024"
 
         },
@@ -46,18 +46,19 @@ const Blog = () => {
             tags:["Technology", "Service"],
             blogImg:require("../../Assets/images/blog3_img.png"),
             blogImg_blog_detail_img:require("../../Assets/images/blog3_img.png"),
-            blogAuthor:"wqertyu",
+            blogAuthor:"Amar Singh",
             blogAuthor_img:require("../../Assets/images/javalogo.png"),
             blogDate:"8 Feb 2024"
 
         },
         {
             id:4,
-            blogTitle:"Build And Launch Powerful Responsive Websites With Editor Perfect Patterns For Screen Reader",
+            blogTitle:"Key Insights on Everything Intelligent Automation",
             blogDescription:"Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium doloremque laudantium totae rem aperiam, eaque ipsa quae abillo inventore veritatis etquasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
             tags:["Technology", "Service"],
-            blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
-            blogAuthor:"srishti",
+            blogImg:require("../../Assets/images/blog4_img.png"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog3_img.png"),
+            blogAuthor:"Srishti",
             blogDate:"8 Feb 2024"
 
         },
