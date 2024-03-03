@@ -12,7 +12,43 @@ li {
   // overflow: hidden;
   padding-bottom: 40px;
 }
+.epicor_right_img img{
+  width: 650px;
+  height: 400px;
+  transition: .5s;
+  &:hover{
+    transform: scale(1.04,1.05);
+      transition: .5s;
+  }
+}
 
+.epicor_left_img{
+  margin-top: -50px;
+
+  img{
+    width: 500px;
+    transition: .5s;
+    cursor: pointer;
+
+    &:hover{
+      transform: scale(1.04,1.05);
+      transition: .5s;
+    }
+  }
+}
+
+
+ .syspro_img img{
+   width: 503px;
+   height: 400px;
+   margin-left: 72px;
+   transition: .5s;
+
+   &:hover{
+    transition: .5s;
+    transform: scale(1.04,1.05);
+   }
+ }
 .overview_left_content {
   margin-left: 45px;
 }

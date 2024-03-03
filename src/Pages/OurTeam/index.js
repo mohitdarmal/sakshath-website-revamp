@@ -240,7 +240,7 @@ const OurTeam = () => {
                   onClick={handleChangeDetail}
                 >
                   <div className="details">
-                    <h5>Nitesh Khandelwal</h5>
+                    <h5>Niitesh Khandelwal</h5>
                     <img src={NITESH_PIC} />
                   </div>
                 </div>

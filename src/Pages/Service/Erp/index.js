@@ -3,6 +3,10 @@ import "./style.scss";
 import {
   ABOUT_WHO_WE_ARE,
   EPICOR_OVERVIEW,
+  ERP1_GRAPH_IMG,
+  ERP1_OVERVIEW,
+  ERP_INDUSTRY_1,
+  ERP_SYSPRO,
   INDUSTRY_IMG,
   SUPPLY_CHAIN_IMG,
   Who_we_r,
@@ -117,7 +121,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="epicor_right_img">
-                <img src={ABOUT_WHO_WE_ARE} alt="" width="600px" />
+                <img src={ERP1_GRAPH_IMG} alt="" width="600px" />
               </div>
             </div>
           </div>
@@ -128,7 +132,7 @@ const Erp = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="epicor_left_img">
-                <img src={Who_we_r} alt="" width="550px" />
+                <img src={ERP1_OVERVIEW} alt="" width="550px" />
               </div>
             </div>
             <div className="col-md-6">
@@ -167,7 +171,9 @@ const Erp = () => {
       {/* epicor ends */}
       {/* call to action starts */}
       <Fade direction="up" triggerOnce>
-      <CallToAction ctaContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit doloribus labore exercitationem perspiciatis." />
+      <CallToAction ctaContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit doloribus labore exercitationem perspiciatis."
+      
+      ctaTitle={"Contact Us"}  />
       </Fade>
       {/* call tonaction ends */}
       <section className="syspro_section">
@@ -197,7 +203,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="syspro_img">
-                <img src={ABOUT_WHO_WE_ARE} alt="" width="600px" />
+                <img src={ERP_SYSPRO} alt="" width="600px" />
               </div>
             </div>
           </div>
@@ -234,7 +240,7 @@ const Erp = () => {
               <div className="box_top">
                 <h4>02</h4>
                 <div className="syspro_value">
-                  <img src={EXPERIENCE} alt="" />
+                  <img src={ERP_INDUSTRY_1} alt="" />
                 </div>
                 <div className="syspro_value_content">
                   <h3>Choice & Flexibility</h3>
