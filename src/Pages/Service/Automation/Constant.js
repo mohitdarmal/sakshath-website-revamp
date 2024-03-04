@@ -37,3 +37,11 @@ export const DEVOPS = require("../../../Assets/images/a.jpg");
 // rpa graph
 
 export const RPA_GRAPH = require("../../../Assets/images/RPA_Chart_new.svg").default;
+
+
+// application starts
+export const AUTOMATION_SERVICE = require("../../../Assets/images/Automation_Service.png");
+export const AUTOMATION_MARKET = require("../../../Assets/images/Automation_Marketing.png");
+export const AUTOMATION_API = require("../../../Assets/images/Automation_API.png");
+export const AUTOMATION_SOCAIL = require("../../../Assets/images/Automation_Socail.png");
+

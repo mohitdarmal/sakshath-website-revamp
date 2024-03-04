@@ -4,9 +4,12 @@ import { Helmet } from "react-helmet";
 import BreadCumb from "../../Components/Breadcumb/index";
 import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import {
+  ABOUT_BANK,
   ABOUT_MISSION,
   ABOUT_VISION,
   HONESTY,
+  MEDICAL,
+  Manufacturing,
   WAVE_IMG,
   about_who_we_Are,
 } from "./Constant";
@@ -155,7 +158,7 @@ const About = () => {
       <section className="managed_service_flowchart_sec">
         {/* //<h2>Process</h2> */}
         <div className="container-fluid">
-          <div className="row text-center">
+          <div className="row text-center mb-4">
             <Heading heading="Service Industries" />
           </div>
           <Fade direction="up" delay={300} triggerOnce>
@@ -163,7 +166,7 @@ const About = () => {
               <div className="col-md-2 about_industry_box bg1">
                 <div className="managed_service_content">
                   {/* <p>1</p> */}
-                  <img src={HONESTY} alt="" />
+                  <img src={ABOUT_BANK} alt="" />
                   <h5>Banking</h5>
                 </div>
               </div>
@@ -179,7 +182,7 @@ const About = () => {
               <div className="col-md-2 about_industry_box bg3">
                 <div className="managed_service_content">
                   {/* <p>3</p> */}
-                  <img src={HONESTY} alt="" />
+                  <img src={Manufacturing} alt="" />
                   <h5>Manufacturing</h5>
                 </div>
               </div>
@@ -187,7 +190,7 @@ const About = () => {
               <div className="col-md-2 about_industry_box bg4">
                 <div className="managed_service_content">
                   {/* <p>4</p> */}
-                  <img src={HONESTY} alt="" />
+                  <img src={MEDICAL} alt="" />
                   <h5>Medical</h5>
                 </div>
               </div>
@@ -196,7 +199,7 @@ const About = () => {
                 <div className="managed_service_content">
                   {/* <p>5</p> */}
                   <img src={HONESTY} alt="" />
-                  <h5>Banking</h5>
+                  <h5> Industry</h5>
                 </div>
               </div>
 
@@ -220,9 +223,9 @@ const About = () => {
             <div className="col-md-5">
               <p className="vision_para">
                 <Fade direction="up" delay={150} triggerOnce>
-                  It is the desire of Sakshath Technologies' to establish itself
+                  It is the desire of Sakshath Technologies to establish itself
                   as a powerful business operation with vibrance and growth
-                  built on Sakshath Technologies' principles that is highly
+                  built on Sakshath Technologies principles that is highly
                   regarded by our customers, stake holders and our employees. As
                   an organization, we want to be in a place where customers rely
                   on the excellence of our products and services.

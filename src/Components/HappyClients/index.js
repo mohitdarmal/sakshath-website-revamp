@@ -69,7 +69,7 @@ const HappyClients = () => {
                     <h2>
                       <CountUp
                         start={0}
-                        end={600}
+                        end={60}
                         duration={3}
                         separator=""
                         decimal=","

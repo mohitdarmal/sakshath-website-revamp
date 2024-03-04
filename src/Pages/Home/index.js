@@ -1092,9 +1092,9 @@ export const Home = () => {
                         Technologies
                       </h5>
                       <p className="blog_sub_heading">
-                        Sed ut perspiciatis unde omnsiste natus errors
-                        voluptatem accusantium doloremque laudatium totae rem
-                        aperiam eaque quae abillo.
+
+                      {/* {{`{substring(0, 150)}`}...} */}
+                      Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking and innovative strategies in the tech sector.
                       </p>
                       <SlideAnimationButton btnName="READ MORE" />
                     </div>
@@ -1113,13 +1113,10 @@ export const Home = () => {
 
                     <div className="socail_icon">
                       <h5 className="blog_heading">
-                        Build Launch Powerful Responsives Websites With Editor
-                        Perfect
+                       Analytics Vidhya - DataHack Summit 2023 
                       </h5>
                       <p className="blog_sub_heading">
-                        Sed ut perspiciatis unde omnsiste natus errors
-                        voluptatem accusantium doloremque laudatium totae rem
-                        aperiam eaque quae abillo.
+                      DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data science and machine learning enthusiasts, experts, and practitioners from around the world.
                       </p>
                       <SlideAnimationButton btnName="READ MORE" />
                     </div>
