@@ -3,6 +3,7 @@ import "./style.scss";
 import {
   ABOUT_WHO_WE_ARE,
   RPA_BOT,
+  STAFFING,
   STAFFING_ASSESSMENT,
   STAFFING_BENIFIT,
   STAFFING_DATABASE,
@@ -65,7 +66,7 @@ const Staffing = () => {
             </div>
             <div className="col-md-6">
               <div className="staffing_img">
-                <img src={ABOUT_WHO_WE_ARE} alt="" width="650px" />
+                <img src={STAFFING} alt="" />
               </div>
             </div>
           </div>
@@ -126,6 +127,7 @@ const Staffing = () => {
           ctaContent={
             "We focus on providing a quality staffing service for our clients and a smooth career transition for our candidates. "
           }
+          ctaTitle={"Read More"}
         />
       </Fade>
       {/* content2 */}
@@ -252,7 +254,7 @@ const Staffing = () => {
               <Heading heading="Benefits" />
             </div>
           </div>
-          <div className="row">
+          <div className="row text-center">
             {/* <div className="col-md-12"> */}
             {/* <div className="col-md-1"></div> */}
             <div className="col-md-12 d-flex">

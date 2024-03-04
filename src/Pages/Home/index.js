@@ -26,15 +26,20 @@ import {
   ACHIVEMENT_IMG3,
   DOTTED_IMG1,
   MILESTONE_TEXT,
-  SLIDES1,
-  SLIDES2_IMG,
-  SLIDES2,
-  SLIDES3,
+  // SLIDES1,
+  // SLIDES2_IMG,
+  // SLIDES2,
+  // SLIDES3,
   TALEND,
   AWS,
   TIMES_OF_INDIA,
   CLIQ_LOGO,
   WCRCINT,
+  tagline_banner_analytic,
+  tagline_banner_erp,
+  tagline_banner_bank,
+  tagline_banner_fintech,
+  OUT_LOOK,
 } from "./Constant";
 
 import { SlCalender } from "react-icons/sl";
@@ -63,6 +68,7 @@ import BannerVideo from "../../Assets/images/banner_vid.mp4";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import CallToAction from "../../Components/CallToAction";
 
 export const Home = () => {
   const textSlider = useRef();
@@ -135,64 +141,63 @@ export const Home = () => {
                   }
                 >
                   <div className="banner_text_slider_content">
-                    <h6>Profesional IT Solution</h6>
-                    <h3>Transforming Ideas into Intelligent Solutions</h3>
+                    <h6>The Power of Analytics in Driving Growth. </h6>
+                    <h3>The power of advanced analytics for your business</h3>
 
                     <div className="banner_text_slider_links">
                       <Link to="/">Get Started Now</Link>
-                      <Link to="/">Explore More</Link>
+                      {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
 
                   <div className="banner_text_slider_content">
-                    <h6>Profesional IT Solution</h6>
-                    <h3>Elevating Experiences, One Line at a Time</h3>
-
+                    <h6>Future-Ready ERP Solutions for Today's Challenges.</h6>
+                    <h3>Unveiling the Power of ERP in Modern Enterprises</h3>
                     <div className="banner_text_slider_links">
                       <Link to="/">Get Started Now</Link>
-                      <Link to="/">Explore More</Link>
+                      {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
 
                   <div className="banner_text_slider_content">
-                    <h6>Profesional IT Solution</h6>
-                    <h3>Future-Proofing Your Digital Journey</h3>
+                    <h6>Unlocking Productivity, One Automation at a Time</h6>
+                    <h3>Revolutionizing Your Workflow with Automation Services</h3>
 
                     <div className="banner_text_slider_links">
                       <Link to="/">Get Started Now</Link>
-                      <Link to="/">Explore More</Link>
+                      {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
 
                   <div className="banner_text_slider_content">
-                    <h6>Profesional IT Solution</h6>
-                    <h3>Unleashing the Power of Purposeful Code</h3>
+                    <h6>Innovative Banking Software Solutions for a Digital Future.</h6>
+                    <h3>Navigating the Landscape of Solutions</h3>
 
                     <div className="banner_text_slider_links">
                       <Link to="/">Get Started Now</Link>
-                      <Link to="/">Explore More</Link>
+                      {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
 
-                  <div className="banner_text_slider_content">
+                  {/* <div className="banner_text_slider_content">
                     <h6>Profesional IT Solution</h6>
                     <h3>Elevating Businesses through Exceptional Code</h3>
 
                     <div className="banner_text_slider_links">
                       <Link to="/">Get Started Now</Link>
-                      <Link to="/">Explore More</Link>
+                      
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className="banner_text_slider_content">
+                  {/* <div className="banner_text_slider_content">
                     <h6>Profesional IT Solution</h6>
                     <h3>Unlocking Potential, One Code at a Time</h3>
 
                     <div className="banner_text_slider_links">
                       <Link to="/">Get Started Now</Link>
-                      <Link to="/">Explore More</Link>
+                    
                     </div>
-                  </div>
+                  </div> */}
                 </Slider>
               </div>
             </div>
@@ -207,23 +212,24 @@ export const Home = () => {
                   }
                 >
                   <div className="banner_image_slider_box">
-                    <img src={SLIDES1} />
+                    <img src={tagline_banner_analytic} />
                   </div>
                   <div className="banner_image_slider_box">
+                    <img src={tagline_banner_erp} />
+                  </div>
+                  <div className="banner_image_slider_box">
+                    <img src={tagline_banner_bank} />
+                  </div>
+                  <div className="banner_image_slider_box">
+                    <img src={tagline_banner_fintech} />
+                  </div>
+
+                  {/* <div className="banner_image_slider_box">
                     <img src={SLIDES2} />
                   </div>
                   <div className="banner_image_slider_box">
                     <img src={SLIDES3} />
-                  </div>
-                  <div className="banner_image_slider_box">
-                    <img src={SLIDES1} />
-                  </div>
-                  <div className="banner_image_slider_box">
-                    <img src={SLIDES2} />
-                  </div>
-                  <div className="banner_image_slider_box">
-                    <img src={SLIDES3} />
-                  </div>
+                  </div> */}
                 </Slider>
               </div>
             </div>
@@ -433,6 +439,7 @@ export const Home = () => {
             </div>
 
             <div className="row mt-4 pt-2">
+           
               <div className="col-md-4 d-flex ">
                 <Link>
                   <Fade direction="up" delay={400} triggerOnce>
@@ -443,8 +450,7 @@ export const Home = () => {
                       <div className="content">
                         <h3>ISO 27001</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
+                        2013 (Information Security Management System)   
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -463,14 +469,32 @@ export const Home = () => {
                       <div className="content">
                         <h3>ISO 9001</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
+                        2015 (Quality Management Systems)
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
                     </div>
                   </Fade>
                 </Link>
+              </div>
+
+              <div className="col-md-4">
+                <Fade direction="up" delay={10} triggerOnce>
+                  <Link>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={GREAT_PLACE_WORK} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3 className="text">Great Place to Work</h3>
+                        <p>
+                        Sakshath was recognised as a Great Place to Work again in 2024!
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
+                    </div>
+                  </Link>
+                </Fade>
               </div>
 
               <div className="col-md-4 d-flex ">
@@ -492,6 +516,8 @@ export const Home = () => {
                   </Fade>
                 </Link>
               </div>
+
+             
 
               <div className="col-md-4 d-flex ">
                 <Link>
@@ -521,7 +547,7 @@ export const Home = () => {
                         <img src={AWS} alt="" />
                       </div>
                       <div className="content">
-                        <h3>Amzone AWS Partner</h3>
+                        <h3>Amazon AWS Partner</h3>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit Odit vitae.
@@ -532,41 +558,19 @@ export const Home = () => {
                   </Fade>
                 </Link>
               </div>
-
-              <div className="col-md-4">
-                <Fade direction="up" delay={10} triggerOnce>
-                  <Link>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={GREAT_PLACE_WORK} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3 className="text">Great Place to Work</h3>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
-                  </Link>
-                </Fade>
-              </div>
-
               <div className="col-md-4 d-flex ">
                 <Link>
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
-                        <img src={AWS} alt="" />
+                        <img src={OUT_LOOK} alt="" />
                       </div>
                       <div className="content">
                         <h3>Outlook Business</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
+                        Sakshath Technologies for winning Company of the Year - IT Services & IT Consulting in IT Industry at Outlook Business Spotlight- Business Excellence Awards 2023.
                         </p>
-                        <p className="learn_more">See Certificate</p>
+                        {/* <p className="learn_more">See Certificate</p> */}
                       </div>
                     </div>
                   </Fade>
@@ -583,10 +587,9 @@ export const Home = () => {
                       <div className="content">
                         <h3>Times of India</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
+                        Mr Shravan Kumar was awarded the prestigious "40 under 40" award by Bennett Coleman & Co. Ltd. - The Times of India.  
                         </p>
-                        <p className="learn_more">See Certificate</p>
+                        {/* <p className="learn_more">See Certificate</p> */}
                       </div>
                     </div>
                   </Fade>
@@ -603,15 +606,16 @@ export const Home = () => {
                       <div className="content">
                         <h3>WCRCINT</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
+                        World’s Leading brands and leaders at the prestigious House of Lords ceremony at the Palace of Westminster, London.  
                         </p>
-                        <p className="learn_more">See Certificate</p>
+                        {/* <p className="learn_more">See Certificate</p> */}
                       </div>
                     </div>
                   </Fade>
                 </Link>
               </div>
+              
+
             </div>
           </div>
         </div>
@@ -865,10 +869,7 @@ export const Home = () => {
                   rise to stardom certainly came closer.
                 </p>
                 <Fade direction="up">
-                  <SlideAnimationButton
-                    url="/about"
-                    btnName="LEARN MORE ABOUT US"
-                  />
+                  <SlideAnimationButton url="/about" btnName="MORE ABOUT US" />
                 </Fade>
               </div>
             </div>
@@ -886,7 +887,7 @@ export const Home = () => {
       {/* @@@@@@@ SECTION - Our Principals @@@@@@@@@ */}
 
       {/* @@@@@@@ SECTION - planning banner starts @@@@@@ */}
-      <section className="planning_banner">
+      {/* <section className="planning_banner">
         <div className="container">
           <div className="row planning_banner_content_box align-items-center">
             <div className="col-md-9 ipad_full_width">
@@ -903,17 +904,26 @@ export const Home = () => {
             <div className="col-md-3 button_box ipad_full_width">
               <div className="right_planning_banner_content text-md-end">
                 <Fade direction="up" delay={300} triggerOnce>
-                  <Link className="lets_meet_us_button">Let's meet us</Link>
+                  <Link className="lets_meet_us_button">Let's meet us
+                  </Link>
+                 
                 </Fade>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <CallToAction  
+      ctaContent={
+            "Let’s connect. We’d love to hear about your project and discuss our procedure. Our executives will be at your service ASAP. "
+          }
+          ctaTitle={"Let's meet us"} />
       {/*SECTION - planning banner ends*/}
 
       {/* SECTION - Client Logo Start*/}
-      <ClientLogo />
+
+      <ClientLogo/>
       {/* @@@@@ SECTION - Client Logo End @@@@@*/}
 
       {/* @@@@@ SECTION - Popular service start @@@@@ */}
@@ -923,7 +933,7 @@ export const Home = () => {
             {/* Popuplar Princial Left Side Column Start */}
             <div className="col-md-5 mt-4 left_home_principle">
               <Fade direction="up" triggerOnce>
-                <SubTitle SubTitle="Our Popular Services" />
+                {/* <SubTitle SubTitle="Our Popular Services" /> */}
               </Fade>
               <Fade direction="up" triggerOnce>
                 <Heading
@@ -932,10 +942,21 @@ export const Home = () => {
                 />
               </Fade>
               <Fade direction="up" triggerOnce>
-                <p>
+                {/* <p>
                   Digitise your business by managing multiple process in a
                   single platform.
-                </p>
+
+                  <br /> 
+
+                  Transform your workflow with our all-in-one platform. Optimize efficiency and productivity effortlessly.Manage multiple processes seamlessly for optimal results.
+                </p> */}
+                <li>
+                Digitise your business by managing multiple process in a
+                  single platform.Optimize efficiency and productivity effortlessly.
+                </li>
+                <li>Transform your workflow with our all-in-one platform.Manage multiple processes seamlessly for optimal results.</li>
+                {/* <li>Optimize efficiency and productivity effortlessly.</li> */}
+                {/* <li>Manage multiple processes seamlessly for optimal results.</li> */}
               </Fade>
               <Fade direction="up" triggerOnce>
                 <div className="our_principal_btn">
@@ -1050,6 +1071,7 @@ export const Home = () => {
               <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
+                    "
                     <img src={ACHIVEMENT_IMG1} alt="" />
                   </Fade>
                 </div>
@@ -1072,7 +1094,7 @@ export const Home = () => {
                       <p className="blog_sub_heading">
                         Sed ut perspiciatis unde omnsiste natus errors
                         voluptatem accusantium doloremque laudatium totae rem
-                        aperiam eaque quae abillo
+                        aperiam eaque quae abillo.
                       </p>
                       <SlideAnimationButton btnName="READ MORE" />
                     </div>
@@ -1097,7 +1119,7 @@ export const Home = () => {
                       <p className="blog_sub_heading">
                         Sed ut perspiciatis unde omnsiste natus errors
                         voluptatem accusantium doloremque laudatium totae rem
-                        aperiam eaque quae abillo
+                        aperiam eaque quae abillo.
                       </p>
                       <SlideAnimationButton btnName="READ MORE" />
                     </div>
@@ -1115,13 +1137,10 @@ export const Home = () => {
                     <div className="cust_profile"></div>
                     <div className="socail_icon">
                       <h5 className="blog_heading">
-                        Build Launch Powerful Responsives Websites With Editor
-                        Perfect
+                      Highlighting the impactful contributions of our employees across Africa
                       </h5>
                       <p className="blog_sub_heading">
-                        Sed ut perspiciatis unde omnsiste natus errors
-                        voluptatem accusantium doloremque laudatium totae rem
-                        aperiam eaque quae abillo
+                      Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club and claimed up to a 40% discount on sanitary pads.
                       </p>
 
                       <SlideAnimationButton btnName="READ MORE" />

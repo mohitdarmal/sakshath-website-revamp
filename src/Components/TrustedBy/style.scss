@@ -1,0 +1,35 @@
+@import "../../Assets/saas/Main.scss";
+
+.our_paltform_sec img{
+    width:170px;
+
+}
+.our_paltform_sec{
+    padding: 80px 0px;
+}
+@media screen and (max-width:480px){
+    .our_paltform_sec img{
+        width:110px;
+    
+    }  
+}
+@media screen and (max-width:767px){
+    .our_paltform_sec img{
+        width:110px;
+    
+    }  
+    .our_paltform_sec {
+        margin-top: 10px;
+    }
+      .our_paltform_sec{padding: 40px 0;}
+    
+    
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .our_paltform_sec{
+      padding: 70px 0px;
+    }
+    .our_paltform_sec {
+      margin-top: 20px;
+  }
+  }

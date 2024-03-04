@@ -13,20 +13,14 @@ import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import ServiceStickMenu from "../../../Components/ServiceStickMenu";
-import {
-  CLIENT_LOGO1,
-  CLIENT_LOGO2,
-  CLIENT_LOGO3,
-  CLIENT_LOGO4,
-  CLIENT_LOGO5,
-  CLIENT_LOGO6,
-} from "../../../Components/ClientLogo/Constant";
+import TrustedBy from "../../../Components/TrustedBy";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
 import BrouchurePopup from "../../../Components/BoruchurePopup";
 import pdfUrl from "../../../Assets/pdf/dummy.pdf";
 import { FaFilePdf } from "react-icons/fa";
+
 
 //import {SECTION_VECTOR} from "../../Assets/images/check icon psd.png";
 import {
@@ -87,11 +81,13 @@ const menu = [{
           <div className="row align-items-center">
             
             <div className="col-md-6 ipad_full_width">
+            <Fade direction="up" delay={300} triggerOnce>
               <div className="overview_sec_left">
+              
               <Heading
                 heading="Overview"
-                uppercase="text-uppercase"
               />
+              
                 <p className="sec_para">
                 Data integration is the practice of consolidating data from disparate sources into a single dataset to provide users with consistent access to and delivery of data across all business processes.
                  Unlock seamless integration solutions with our expert consulting and managed services. 
@@ -99,77 +95,47 @@ const menu = [{
                 </p>
                 <SlideAnimationButton btnName="Get started now!" url="/contact-us"/>
               </div>
+              </Fade>
             </div>
 
             <div className="col-md-6 ipad_full_width">
+            {/* <Fade direction="up" delay={300} triggerOnce> */}
               <div className="overview_sec_right_img">
                 <img
                   className="img-fluid integration_img_left"
                   src={INTEGRATION_SECTION_ONE_IMG}
                 />
               </div>
+              {/* </Fade> */}
             </div>
           </div>
         </div>
       </section>
       {/* <!-- section one end --> */}
 
-      {/* section four start */}
+      {/* section trusted by start */}
 
-      <section className="partner_logo_section">
-      <h6 className="trusted_by">Trusted By</h6>
-        <div className="container partner_logo_tab">
-          
-          <Swiper
-            slidesPerView={5}
-            spaceBetween={10}
-            autoplay={{
-              delay: 1500,
-              disableOnInteraction: false,
-            }}
-            loop={true}
-            modules={[Autoplay]}
-            className="mySwiper" 
-            >
-            <SwiperSlide>
-              <img src={CLIENT_LOGO1}  />{" "}
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO2}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO3}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO4}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO5}  />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO6}  />
-            </SwiperSlide>
-            
-          </Swiper>
-        </div>
-      </section>
-
-      {/* <!-- section two start --> */}
+     <TrustedBy/>
+     {/* section trusted by end  */}
+      {/* <!-- section why need integration start --> */}
       { <section className="why_need_integration_sec">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6  why_need_integration_left ipad_full_width">
+            {/* <Fade direction="up" delay={300} triggerOnce> */}
               <div>
                 <img
                   className="img-fluid integration_img_right"
                   src={INTEGRATION_SECTION_THREE_IMG}
                 />
               </div>
+              {/* </Fade> */}
             </div>
             <div className="col-md-6 why_need_integration_right ipad_full_width">
+            <Fade direction="up" delay={300} triggerOnce>
               <Heading
                 heading="Why do you need integration?"
-                uppercase="text-uppercase"
+                
               />
               <p className="sec_para">
                 Inhouse application integration: application to application –
@@ -178,11 +144,12 @@ const menu = [{
                 Business 2 Business application integration: connecting to
                 third-party or partner Integration of application to IoT Devices{" "}
               </p>
+              </Fade>
             </div>
           </div>
         </div>
       </section> }
-       {/* <!-- section two end --> */}
+       {/* <!-- section why need integration end --> */}
 
             {/* <!-- section three start-->  */}
       {/* <section className="body_sec_two">
@@ -254,26 +221,31 @@ const menu = [{
           <div className="row align-items-center">
             {/* <div className="body_sec_three_parent"> */}
             <div className="col-md-6 integration_coe_left ipad_full_width">
+            <Fade direction="up" delay={300} triggerOnce>
               <Heading
                 heading="Integration COE"
-                uppercase="text-uppercase"
+                
               />
 
               <p>
               Embrace the full potential of Integration Centers of Excellence (COE) to revolutionize your workplace through innovation and collaboration.
               </p>
               <ul className="intergration_list">
-                <li>CERTIFIED RESOURCES</li>
-                <li>RESUABLE ASSETS</li>
-                <li>INDUSTRY STANDARD BEST PRACTISES</li>
-                <li>QUALITY ASSURANCE </li>
+                <li> Cerified Resources</li>
+                <li> Resuable Assets</li>
+                <li> Industry Standard Best Practises</li>
+                <li> Quality Assurance</li>
               </ul>
+              </Fade>
             </div>
             <div className="col-md-6 integration_coe_right ipad_full_width">
+            {/* <Fade direction="up" delay={300} triggerOnce> */}
               <img
                 className="img-fluid integration_img"
                 src={SECTION_THREE_ICON_ONE}
               />
+              {/* </Fade> */}
+
             </div>
             {/* </div> */}
           </div>
@@ -290,7 +262,7 @@ const menu = [{
           <div className="row integration_planning_banner_content_box align-items-center">
             <div className="col-md-9 ipad_full_width">
               <div className="integration_left_planning_banner_content">
-                <Fade direction="up" triggerOnce>
+              <Fade direction="up" delay={300} triggerOnce>
                   {" "}
                   <h3>
                     Full Truckload Planning Reimagined Experts in Security
@@ -322,18 +294,21 @@ const menu = [{
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 ipad_full_width">
+            {/* <Fade direction="up" delay={300} triggerOnce> */}
               <div className="integration_consulting_left">
                 <img
                   className="img-fluid integration_consulting_img"
                   src={SECTION_THREE_ICON_TWO}
                 />
               </div>
+              {/* </Fade> */}
             </div>
             <div className="col-md-6 ipad_full_width">
+            <Fade direction="up" delay={300} triggerOnce>
               <div className="integration_consulting_right">
                 <Heading
                 heading="Integration Consulting "
-                uppercase="text-uppercase"
+                
               />
                 
                 <p>
@@ -367,6 +342,7 @@ const menu = [{
                   </div>
                 </div>
               </div>
+              </Fade>
             </div>
           </div>
         </div>
@@ -383,10 +359,10 @@ const menu = [{
           <div className="Migration_technologies ">
             <Heading
                 heading="Migration Technologies"
-                uppercase="text-uppercase"
+               
               />
           </div>
-          <p className="">Our solutions turn obstacles into opportunities, unlocking new possibilities for innovation, efficiency, and growth.Transform with Our Migration Assistance</p>
+          <p className="Migration_technologies_para">Our solutions turn obstacles into opportunities, unlocking new possibilities for innovation, efficiency, and growth.Transform with Our Migration Assistance</p>
           {/* <Swiper
             slidesPerView={5}
             spaceBetween={30}
@@ -470,14 +446,15 @@ const menu = [{
       {/* managed service start */}
       <div id="managedService"> 
       <Element name="managedService">
-      <section className="managed_services_sec">
+      <section className="integration_managed_services_sec">
         <div className="container">
           <div className="row align-items-center">
             {/* <div className="body_sec_three_parent"> */}
-            <div className="col-md-6 managed_services_left ipad_full_width">
+            <div className="col-md-6 integration_managed_services_left ipad_full_width">
+            <Fade direction="up" delay={300} triggerOnce>
                   <Heading
                     heading="Managed services"
-                    uppercase="text-uppercase"
+                    
                    
                   />
               <p>
@@ -504,12 +481,15 @@ const menu = [{
                   LB)
                 </li>
               </ul>
+              </Fade>
             </div>
             <div className="col-md-6 managed_services_right ipad_full_width">
+            {/* <Fade direction="up" delay={300} triggerOnce> */}
               <img
                 className="img-fluid integration_img"
                 src={SECTION_THREE_ICON_THREE}
               />
+              {/* </Fade> */}
             </div>
             {/* </div> */}
           </div>

@@ -12,7 +12,6 @@ import { Autoplay } from "swiper/modules";
 
 import "./style.scss";
 import {
-  CLIENT_LOGO45,
   CLIENT_LOGO1,
   CLIENT_LOGO10,
   CLIENT_LOGO11,
@@ -50,6 +49,9 @@ import {
   CLIENT_LOGO42,
   CLIENT_LOGO43,
   CLIENT_LOGO44,
+  CLIENT_LOGO45,
+  CLIENT_LOGO46,
+  CLIENT_LOGO47,
   CLIENT_LOGO3,
   CLIENT_LOGO4,
   CLIENT_LOGO5,

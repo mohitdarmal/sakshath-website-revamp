@@ -184,7 +184,7 @@ const Service = () => {
               <div className="it_benefits_heading_section">
                 <span className='it_benefit_title'>IT BENEFITS</span>
                 <div className="heading_content">
-                <Heading heading="Digitise your business by managing multiple process in a single platform." uppercase="text-uppercase" />
+                <Heading heading="Digitise your business by managing multiple process in a single platform." uppercase="" />
                 </div>
               </div>
               <p>

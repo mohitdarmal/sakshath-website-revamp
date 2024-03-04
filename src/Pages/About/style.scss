@@ -103,6 +103,7 @@
   p {
     color: white;
     line-height: 100px;
+    // font-family: $sub_heading;
   }
 }
 
@@ -170,15 +171,18 @@
     z-index: -1;
   }
   .about_who {
-    padding-top: 40px;
+    // padding-top: 40px;
     padding-bottom: 40px;
   }
 
   .about_who_we_r_content {
     padding-right: 0px;
+    padding-top: 90px;
   }
   .who_we_are_img_bottom {
     padding-right: 0px !important;
+    // margin-top: -107px;
+
     // padding-bottom: 20px;
   }
 
@@ -208,13 +212,18 @@
     img{
       position: sticky;
     height: 50vh !important;
+    width: 100%;
     }
   }
 }
 
+
+
 @media screen and (max-width: 1023px) {
   .about_who_we_r .who_we_are_img {
     padding-top: 0px !important;
+    // margin-top: -107px;
+
   }
 
   .contact_map_section {
@@ -265,6 +274,24 @@
   }
 }
 
+// service_indus
+.about_industry_box{
+  img{
+    width: 30px;
+
+  }
+  h2{
+    font-family: $rajdhani_font;
+    font-weight: bold;
+
+  }
+}
+.managed_service_content img {
+  width: 50px;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .who_we_are_img {
     padding-top: 200px !important;
@@ -272,16 +299,16 @@
   .about_who_we_r_content {
     padding-right: 0px;
   }
-  .vision_rounded p::after {
-    position: absolute;
-    content: "";
-    width: 2px;
 
-    height: 310px;
-    right: 0;
-    border-right: 2px dashed #9fc9da;
-    top: 101px;
-    left: 50%;
+    .vision_rounded p::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 290px;
+      right: 0;
+      border-right: 2px dashed #9fc9da;
+      top: 101px;
+      left: 50%;
   }
 }
 
@@ -296,8 +323,19 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* For Tab Screen  */
 }
-
-
+// @media screen and (max-width: 1024px) {
+//   .vision_rounded p::after {
+//     position: absolute;
+//     content: "";
+//     width: 2px;
+//     height: 290px;
+//     right: 0;
+//     border-right: 2px dashed #9fc9da;
+//     top: 101px;
+//     left: 50%;
+//   }
+  
+// }
 
 // .about_who_we_r_content_wrapper  {
 //   position: sticky;

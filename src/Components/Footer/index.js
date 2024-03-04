@@ -34,7 +34,7 @@ const Footer = () => {
                 <div className="left_content">
                   <div className="left_content_icon">
                     <img
-                      className="img-fluid"
+                      className="img-fluid shake"
                       src={SUBSCRIPTION_OFFER}
                       alt=""
                     />

@@ -29,6 +29,7 @@ import OurTeam from "./Pages/OurTeam";
 import  PrivacyPolicy  from "./Pages/PrivacyPolicy";
 import Staffing from "./Pages/Staffing";
 import TalentSolution from "./Pages/TalentSolution";
+import AchievementDetail from "./Pages/About/OurAchivements/AchievementDetail";
 
 
 const App = () => {
@@ -92,6 +93,7 @@ const App = () => {
           <Route path="/company-journey" element={<OurJounery />} />
           <Route path="/our-team" element={<OurTeam />} />
           <Route path="/our-achievements" element={<OurAchivements />} />
+          <Route path="/our-achievements/:id" element={<AchievementDetail />} />
           <Route path="/integration" element={<Integration />} />
           <Route path="/managed-services" element={<ManagedServices />} />
           <Route path="/analytics" element={<Analytics />} />

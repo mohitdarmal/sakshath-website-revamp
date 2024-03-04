@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import BreadCumb from "../../../Components/Breadcumb";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import TrustedBy from "../../../Components/TrustedBy";
 import {
   APPLICATION_DEVLOPMENT_BREADCUMB_IMG,
   APP_DEV_IMG,
@@ -17,7 +18,6 @@ import {
   QUALITY_ASSURANCE,
   SMOOTH_COMMUNICATION,
 } from "./Constant";
-import { TRAEGER, GE_HEALTHCARE, UNIVISION, NBC_UNIVESAL, RWI,DHL } from "../Constant";
 import Heading from "../../../Components/Utils/Heading";
 import "./styles.scss";
 import HappyClients from "../../../Components/HappyClients";
@@ -27,6 +27,7 @@ import { FaFilePdf } from "react-icons/fa";
 import BrouchurePopup from "../../../Components/BoruchurePopup";
 import Faq from "../../../Components/Faq";
 import ServiceContactForm from "../../../Components/ServiceContactForm";
+import {Fade} from "react-awesome-reveal";
 
 const ApplicationDevelopment = () => {
   const [showModal, setShowModal] = useState(false);
@@ -48,10 +49,12 @@ const ApplicationDevelopment = () => {
           {/* Heading start */}
           <div className="row">
             <div className="col-md-8 offset-md-2 text-center app_dev_heading">
+            <Fade direction="up"  triggerOnce>
               <Heading
                 heading="Why choose Sakshath Technologies for app development?"
-                uppercase="text-uppercase"
+                uppercase=""
               />
+              </Fade>
             </div>
           </div>
           {/* Heading end */}
@@ -59,8 +62,12 @@ const ApplicationDevelopment = () => {
           {/* App devlopment details start */}
           <div className="row mt-md-5 align-items-center why_choose_app_dev_content">
             <div className="col-md-6 ipad_full_width">
+            <Fade direction="up"  triggerOnce>
+            
               <div className="row why_choose_app_dev_icon_content">
+              
                 <div className="col-md-6">
+                
                   {/* Start */}
                   <div className="app_dev_icon_with_text">
                     <div>
@@ -113,6 +120,7 @@ const ApplicationDevelopment = () => {
                     </div>
                   </div>
                   {/* End */}
+                  
                 </div>
 
                 <div className="col-md-6 ">
@@ -170,6 +178,7 @@ const ApplicationDevelopment = () => {
                   {/* End */}
                 </div>
               </div>
+              </Fade>
             </div>
 
             <div className="col-md-1"></div>
@@ -191,10 +200,13 @@ const ApplicationDevelopment = () => {
       <section className="our_services_sec">
         <div className="container">
           <div className="row text-center mb-md-4">
-            <Heading heading="Our Services" uppercase="text-uppercase" />
+          <Fade direction="up"  triggerOnce>
+            <Heading heading="Our Services" uppercase="" />
+            </Fade>
           </div>
-
+          <Fade direction="up"  triggerOnce>
           <div className="row">
+          
             <div className="col-md-4 ipad_half_width">
               <div className="our_services_box">
                 <div className="our_services_box_content">
@@ -297,81 +309,26 @@ const ApplicationDevelopment = () => {
               </div>
             </div>
           </div>
+          </Fade>
         </div>
       </section>
       {/* @@@@@ SECTION- Our Services end @@@@@@ */}
+      <TrustedBy/>
 
       {/* @@@@@ SECTION- Our Platform start @@@@@@ */}
-      <section className="our_paltform_sec">
-        <div className="container">
-          <div className="row">
-            <Swiper
-              slidesPerView={5}
-              spaceBetween={30}
-              breakpoints={{
-                320: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                },
-                481: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                },
-                768: {
-                  slidesPerView: 4,
-                  spaceBetween: 30,
-                },
-                1024: {
-                  slidesPerView: 5,
-                  spaceBetween: 30,
-                },
-              }}
-              autoplay={{
-                delay: 1500,
-                disableOnInteraction: false,
-              }}
-              loop={true}
-              modules={[Autoplay]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <img src={TRAEGER} />{" "}
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={GE_HEALTHCARE} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={UNIVISION} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={NBC_UNIVESAL} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={RWI} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={DHL} />
-              </SwiperSlide>
-              {/* <SwiperSlide>
-                <img src={CLIENT_LOGO3} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={CLIENT_LOGO4} />
-              </SwiperSlide> */}
-            </Swiper>
-          </div>
-        </div>
-      </section>
+     
       {/* @@@@@ SECTION- Our Platform end @@@@@@ */}
 
       {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}
       <section className="brouchure_sec">
         <div className="container">
           <div className="text-center mb-3 pb-md-3" >
+          <Fade direction="up"  triggerOnce>
         <Heading
                 heading="Brouchure"
-                uppercase="text-uppercase"
+                uppercase=""
               />
+              </Fade>
               </div>
           <PdfViewer pdfUrl={pdfUrl} />
           <div className="downloadBrouchure">
@@ -398,11 +355,15 @@ const ApplicationDevelopment = () => {
          </div>
         <div className="col-md-5">
           <div className="contact_heading">
+          <Fade direction="up"  triggerOnce>
         <Heading
                 heading="Contact Us"
-                uppercase="text-uppercase"
+                uppercase=""
               />
+              </Fade>
+              <Fade direction="up"  triggerOnce>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+              </Fade>
               </div>
         </div>
         </div>
