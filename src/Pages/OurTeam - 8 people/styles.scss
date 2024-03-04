@@ -12,12 +12,11 @@
 
     h5 {
         text-align: center;
-        width: max-content; 
+        width: 150px; 
         font-size: 16px;
         font-family: 'Rajdhani';
         font-weight: bold;
-        cursor: pointer; padding: 10px 22px; border-radius: 10px; border: 1px solid #b5b5b5;
-        border-radius: 4px;
+        cursor: pointer; padding: 10px; border-radius: 10px; border: 1px solid #b5b5b5;
 
         &:hover{
             background-color: $ball_blue_color;
@@ -57,106 +56,66 @@
   .our_team_sec_box:nth-child(1) {
     transform: translate(-50%, -50%) rotate(0deg) translateY(-400px);
   }
-  .our_team_sec_box:nth-child(1) h5{
-    cursor: pointer;
-    position: absolute;
-    margin-top: -65px;
-    left: 50%;
-    transform: translate(-50%);
-  }
+  .our_team_sec_box:nth-child(1) h5{  margin-top: 0px; cursor: pointer; padding: 10px; border-radius: 10px;
+        border: 1px solid #b5b5b5; position: absolute;
+        margin-top: -80px;}
   
 
   .our_team_sec_box:nth-child(2) {
-    transform: translate(-50%, -50%) rotate(36deg) translateY(-400px);
+    transform: translate(-50%, -50%) rotate(45deg) translateY(-400px);
   }
   .our_team_sec_box:nth-child(2) .details {
-    transform: rotate(-36deg);
+    transform: rotate(-45deg);
   }
-  .our_team_sec_box:nth-child(2) h5, .our_team_sec_box:nth-child(3) h5, .our_team_sec_box:nth-child(4) h5{    
-    position: absolute;
-    right: -206px;
-    top: 40px;
-    margin-top: 0px;}
-    .our_team_sec_box:nth-child(4) h5{right: -150px !important;}
+  .our_team_sec_box:nth-child(2) h5, .our_team_sec_box:nth-child(3) h5, .our_team_sec_box:nth-child(4) h5{position: absolute; right: -180px; top: 21px;   margin-top: 0px; }
 
-  .our_team_sec_box:nth-child(5) h5{      position: absolute;
-    margin-top: 40px;
-    cursor: pointer;
-    right: -140px;}
+  .our_team_sec_box:nth-child(5) h5{    position: absolute;
+bottom: -77px;
+margin-left: -10px; margin-top: 0px;  cursor: pointer; padding: 10px; border-radius: 10px; border: 1px solid #b5b5b5;}
   
   .our_team_sec_box:nth-child(3) {
-    transform: translate(-50%, -50%) rotate(72deg) translateY(-400px);
+    transform: translate(-50%, -50%) rotate(90deg) translateY(-400px);
   }
   .our_team_sec_box:nth-child(3) .details {
-    transform: rotate(-72deg);
+    transform: rotate(-90deg);
   }
 
   .our_team_sec_box:nth-child(4) {
-    transform: translate(-50%, -50%) rotate(108deg) translateY(-400px);
+    transform: translate(-50%, -50%) rotate(135deg) translateY(-400px);
   }
   .our_team_sec_box:nth-child(4) .details {
-    transform: rotate(-108deg);
+    transform: rotate(-135deg);
   }
 
   .our_team_sec_box:nth-child(5) {
-    transform: translate(-50%, -50%) rotate(144deg) translateY(-400px);
-  }
-  .our_team_sec_box:nth-child(5) .details {
-    transform: rotate(-144deg);
-  }
-
-  .our_team_sec_box:nth-child(6) {
     transform: translate(-50%, -50%) rotate(180deg) translateY(-400px);
   }
-  .our_team_sec_box:nth-child(6) .details {
+  .our_team_sec_box:nth-child(5) .details {
     transform: rotate(-180deg);
   }
 
+  .our_team_sec_box:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(225deg) translateY(-400px);
+  }
+  .our_team_sec_box:nth-child(6) .details {
+    transform: rotate(-225deg);
+  }
+
   .our_team_sec_box:nth-child(7) {
-    transform: translate(-50%, -50%) rotate(216deg) translateY(-400px);
+    transform: translate(-50%, -50%) rotate(270deg) translateY(-400px);
   }
   .our_team_sec_box:nth-child(7) .details {
-    transform: rotate(-216deg);
+    transform: rotate(-270deg);
   }
 
   .our_team_sec_box:nth-child(8) {
-    transform: translate(-50%, -50%) rotate(252deg) translateY(-400px);
+    transform: translate(-50%, -50%) rotate(315deg) translateY(-400px);
   }
   .our_team_sec_box:nth-child(8) .details {
-    transform: rotate(-252deg);
+    transform: rotate(-315deg);
   }
+ .our_team_sec_box:nth-child(6) h5, .our_team_sec_box:nth-child(7) h5, .our_team_sec_box:nth-child(8) h5{position: absolute; left: -185px; top: 21px;margin-top: 0px;  cursor: pointer; }
 
-  .our_team_sec_box:nth-child(9) {
-    transform: translate(-50%, -50%) rotate(288deg) translateY(-400px);
-  }
-  .our_team_sec_box:nth-child(9) .details {
-    transform: rotate(-288deg);
-  }
-
-  .our_team_sec_box:nth-child(10) {
-    transform: translate(-50%, -50%) rotate(324deg) translateY(-400px);
-  }
-  .our_team_sec_box:nth-child(10) .details {
-    transform: rotate(-324deg);
-  }
-
- .our_team_sec_box:nth-child(6) h5{
-  position: absolute;
-  right: -7px;
-  bottom: -70px;
-  margin-top: 0px;
-  cursor: pointer;
- }
-
- .our_team_sec_box:nth-child(7) h5, .our_team_sec_box:nth-child(8) h5, .our_team_sec_box:nth-child(9) h5, .our_team_sec_box:nth-child(10) h5{
-  position: absolute;
-  left: -175px;
-  margin-top: 44px;
-  cursor: pointer;
- }
- .our_team_sec_box:nth-child(8) h5{left: -160px !important;}
- .our_team_sec_box:nth-child(9) h5{left: -150px !important;}
- .our_team_sec_box:nth-child(10) h5{left: -150px !important; margin-top: 30px !important;}
 
   .our_team_sec_dot {
     width: 450px;
@@ -239,91 +198,89 @@
     height: 3.5px;
     bottom: 8px;
     transform-origin: 0;
-    transform: rotate(129deg);
+    transform: rotate(139deg);
     left: 19px;
   }
 
   .our_team_sec_box:nth-child(3) .details::after{
     bottom: -16px;
     left: 2%;
-    top: 47%;
+    top: 35%;
   }
 
   .our_team_sec_box:nth-child(3) .details::before{
-    width: 113px;
-    height: 3px;
-    bottom: 0;
-    transform-origin: 0;
-    transform: rotate(160deg);
-    left: 0;
-    top: 57%;
-  }
-
-  .our_team_sec_box:nth-child(4) .details::after{
-    bottom: -16px;
-    left: 7%;
-    top: 22%;
-  }
-  .our_team_sec_box:nth-child(4) .details::before{
-    width: 106px;
-    height: 3px;
-    bottom: 0;
-    transform-origin: 0;
-    transform: rotate(196deg);
-    left: 0px;
-    top: 38px;
-  }
-
-  .our_team_sec_box:nth-child(5) .details::after{
-    bottom: -16px;
-    left: 22%;
-    top: -1%;
-  }
-  .our_team_sec_box:nth-child(5) .details::before{
-    width: 104px;
-    height: 3px;
-    bottom: 0;
-    transform-origin: 0;
-    transform: rotate(229deg);
-    left: 21px;
-    top: 3px;
-  }
-
-  .our_team_sec_box:nth-child(6) .details::after{
-    bottom: 0px;
-    right: 33px;
-    top: -11%;
-  }
-  .our_team_sec_box:nth-child(6) .details::before{
     width: 111px;
     height: 3px;
     bottom: 0;
     transform-origin: 0;
-    transform: rotate(270deg);
-    left: 52%;
+    transform: rotate(181deg);
+    left: 0;
+    top: 47%;
+  }
+
+  .our_team_sec_box:nth-child(4) .details::after{
+    bottom: -16px;
+    left: 13%;
     top: 0%;
+  }
+  .our_team_sec_box:nth-child(4) .details::before{
+    width: 103px;
+    height: 3px;
+    bottom: 0;
+    transform-origin: 0;
+    transform: rotate(219deg);
+    left: 13px;
+    top: 11px;
+  }
+
+  .our_team_sec_box:nth-child(5) .details::after{
+    bottom: 0px;
+    left: 50%;
+    top: -15px;
+  }
+  .our_team_sec_box:nth-child(5) .details::before{
+    width: 3px;
+    height: 107px;
+    left: 50%;
+    top: -111px;
+
+  }
+
+  .our_team_sec_box:nth-child(6) .details::after{
+    bottom: 0px;
+    right: -5px;
+    top: 0%;
+  }
+  .our_team_sec_box:nth-child(6) .details::before{
+    width: 103px;
+    height: 3px;
+    bottom: 0;
+    transform-origin: 0;
+    transform: rotate(316deg);
+    left: 86%;
+    top: 8%;
   }
 
   .our_team_sec_box:nth-child(7) .details::after{
     bottom: 0px;
-    top: 0%;
-    right: -1%;
+    right: -30px;
+    top: 39%;
   }
 
   .our_team_sec_box:nth-child(7) .details::before{
-    width: 114px;
+    width: 111px;
     height: 3.5px;
     bottom: 0;
     transform-origin: 0;
-    transform: rotate(307deg);
-    left: 79%;
-    top: 12px;
+    transform: rotate(0deg);
+    left: 100%;
+    top: 49%;
   }
 
   .our_team_sec_box:nth-child(8) .details::after{
     bottom: 0px;
-    right: -28px;
-    top: 25%;
+    right: -14px;
+    top: 68%;
   }
 
   .our_team_sec_box:nth-child(8) .details::before{
@@ -331,39 +288,9 @@
     height: 3px;
     bottom: 0;
     transform-origin: 0;
-    transform: rotate(330deg);
-    right: -112px;
-    top: 30%;
-  }
-
-  .our_team_sec_box:nth-child(9) .details::after{
-    bottom: 0px;
-    right: -28px;
-    top: 38%;
-  }
-
-  .our_team_sec_box:nth-child(9) .details::before{
-    width: 102px;
-    height: 3px;
-    bottom: 0;
-    transform-origin: 0;
-    transform: rotate(20deg);
-    right: -112px;
-    top: 52%;
-  }
-
-  .our_team_sec_box:nth-child(10) .details::after{
-    right: -2px;
-    bottom: 0;
-  }
-
-  .our_team_sec_box:nth-child(10) .details::before{
-    width: 102px;
-    height: 3px;
-    bottom: 0;
-    transform-origin: 0;
-    transform: rotate(56deg);
-    right: -82px;
+    transform: rotate(47deg);
+    left: 95%;
+    top: 87%;
   }
 
 #tsparticles{
@@ -408,40 +335,32 @@
     }
 
     .our_team_sec_box:nth-child(2) {
-        transform: translate(-50%, -50%) rotate(36deg) translateY(-275px);
+        transform: translate(-50%, -50%) rotate(45deg) translateY(-275px);
     }
 
     .our_team_sec_box:nth-child(3) {
-        transform: translate(-50%, -50%) rotate(72deg) translateY(-275px);
+        transform: translate(-50%, -50%) rotate(90deg) translateY(-275px);
     }
 
     .our_team_sec_box:nth-child(4) {
-        transform: translate(-50%, -50%) rotate(108deg) translateY(-275px);
+        transform: translate(-50%, -50%) rotate(135deg) translateY(-275px);
     }
 
     .our_team_sec_box:nth-child(5) {
-        transform: translate(-50%, -50%) rotate(144deg) translateY(-275px);
-    }
-
-    .our_team_sec_box:nth-child(6) {
         transform: translate(-50%, -50%) rotate(180deg) translateY(-275px);
     }
 
+    .our_team_sec_box:nth-child(6) {
+        transform: translate(-50%, -50%) rotate(225deg) translateY(-275px);
+    }
+
     .our_team_sec_box:nth-child(7) {
-        transform: translate(-50%, -50%) rotate(216deg) translateY(-275px);
+        transform: translate(-50%, -50%) rotate(270deg) translateY(-275px);
     }
 
     .our_team_sec_box:nth-child(8) {
-        transform: translate(-50%, -50%) rotate(252deg) translateY(-275px);
+        transform: translate(-50%, -50%) rotate(315deg) translateY(-275px);
     }
-
-    .our_team_sec_box:nth-child(9) {
-      transform: translate(-50%, -50%) rotate(288deg) translateY(-275px);
-  }
-
-  .our_team_sec_box:nth-child(10) {
-    transform: translate(-50%, -50%) rotate(324deg) translateY(-275px);
-}
 
     .our_team_sec_box .details::after{
         width: 20px;

@@ -1,6 +1,44 @@
 @import "../../../Assets/saas/Main.scss";
 
 
+
+
+.erp_industries_sec{
+  padding: 80px 0;
+  .col{position: relative;}
+  .erp_ind_box{
+    border: 6px solid #32a4d5;
+    padding: 20px;
+    text-align: center;
+    min-height: 144px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    .erp_ind_img{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      border-radius: 50px;
+      width: 65px;
+      height: 65px;
+      text-align: center;
+      line-height: 65px;
+      box-shadow: 0px 2px 10px #0000002e;
+      img{    width: 45px;}
+     }
+    h4{font-size: 18px; margin-top: 20px;}
+  }
+
+  .erp_ind_box::after{
+    content: "";
+    width: 10px;
+    height: 100px;
+    background-color: #fff;
+  }
+}
+
 // epicor
 
 li {

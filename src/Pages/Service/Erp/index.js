@@ -18,7 +18,7 @@ import { EXPERIENCE } from "../../../Components/OurPrincipals/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 import CallToAction from "../../../Components/CallToAction";
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
-import { Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
 
@@ -80,6 +80,45 @@ const Erp = () => {
       <BreadCumb imgUrl={ABOUT_BANNER} title="ERP" />
       {/* Syspro  overview Starts*/}
       {/* EPICOR  overview  starts*/}
+
+
+<section className="erp_industries_sec">
+  <Container>
+    <Row>
+      <Col className="">
+        <div className="erp_ind_box">
+        <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+          <h4>Gather Customer Requirements</h4>
+        </div>
+      </Col>
+      <Col className="">
+        <div className="erp_ind_box"> 
+          <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+          <h4>Gather Customer Requirements</h4></div>
+      </Col>
+      <Col className="">
+        <div className="erp_ind_box">
+          <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+          <h4>Gather Customer Requirements</h4>
+        </div>
+      </Col>
+      <Col className="">
+        <div className="erp_ind_box">
+           <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+          <h4>Gather Customer Requirements</h4>
+        </div>
+      </Col>
+      <Col className="">
+        <div className="erp_ind_box">
+        <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+          <h4>Gather Customer Requirements</h4>
+        </div>
+      </Col>
+    </Row>
+  </Container>
+</section>
+
+
       <section className="epicor_section">
         <div className="container">
           <div className="row align-items-center">
