@@ -179,7 +179,7 @@
 // application
 .application_section {
   padding-top: 80px;
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
 }
 .application_main_heading {
   position: relative;
@@ -577,8 +577,8 @@
   font-weight: bold;
 }
 .api_icon img {
-  margin-right: 20px;
-  width: 45px;
+  margin-right: 5px;
+  width: 70px;
 }
 
 .rpa_graph img {
@@ -645,7 +645,7 @@
 
 .mobile_section {
   margin-top: 60px;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
   // background-image: -webkit-linear-gradient(360deg, #ffffff 36%, #00a7d6 33%);
@@ -889,7 +889,7 @@
   width: 30px;
   height: 30px;
   top: 0;
-  left: 12px;
+  left: 0px;
   border-top: 4px solid #32a4d5;
   border-left: 4px solid #32a4d5;
   opacity: 0;
@@ -897,13 +897,13 @@
 
 .api_container::before {
   content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  bottom: 24px;
-  right: 10px;
-  border-bottom: 4px solid #32a4d5;
-  border-right: 4px solid #32a4d5;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 4px solid #32a4d5;
+    border-right: 4px solid #32a4d5;
   opacity: 0;
 }
 .api_container:hover::before,
