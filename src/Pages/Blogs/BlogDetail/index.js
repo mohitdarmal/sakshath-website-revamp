@@ -4,6 +4,12 @@ import "./style.scss";
 import { IoIosSearch } from "react-icons/io";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import {
+  
+  YOUTUBE_ICON,
+  INSTAGRAM_ICON,
+  LINKEDIN_ICON
+} from "../../Contactus/Constant";
 
 const BlogDetail = () => {
   const { state } = useLocation();
@@ -95,7 +101,17 @@ const BlogDetail = () => {
                       <h6>Popular Tags:{state.tags}</h6>
                     </div>
                     <div className="sharenews">
-                      <h6>Share news:</h6>
+                      <h6>Share news:
+                      <Link to="https://www.instagram.com/sakshath_technologies/" target="_blank">
+          <img src={INSTAGRAM_ICON} />
+        </Link>
+        <Link to="https://www.linkedin.com/company/sakshath-technologies/" target="_blank">
+          <img src={LINKEDIN_ICON} />
+        </Link>
+        <Link to="https://www.youtube.com/watch?v=UHjZFuO8AYY" target="_blank">
+          <img src={YOUTUBE_ICON} />
+        </Link>
+        </h6>
                     </div>
                   </div>
                 </div>

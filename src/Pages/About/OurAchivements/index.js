@@ -19,25 +19,25 @@ const OurAchivement = () => {
       id: 2,
       title:
         " Analytics Vidhya - DataHack Summit 2023 ",
-      image: require("../../../Assets/images/Achivement40.png"),
+      image: require("../../../Assets/images/achievement_2.jpeg"),
       description:
-        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking and innovative strategies in the tech sector. His commitment to technological advancement and user-centric design has positioned the company as a leading force in the industry, with a promising trajectory for future innovations.",
+        "3-day event + 1 day hack day. DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data science and machine learning enthusiasts, experts, and practitioners from around the world. The event is hosted by Analytics Vidhya, a leading platform for data science and machine learning education.The conference is designed to be a collaborative and interactive experience, with plenty of opportunities for networking and knowledge sharing. Delhi & Mumbai team from Sakshath interacted with fellow data science professionals explored new tools and techniques, and gained insights into how data science is transforming industries and shaping the future.",
     },
     {
-      id: 1,
+      id: 3,
       title:
-        " Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath Technologies",
-      image: require("../../../Assets/images/Achivement40.png"),
+        "Highlighting the impactful contributions of our employees across Africa.",
+      image: require("../../../Assets/images/achievement_3.jpg"),
       description:
-        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking and innovative strategies in the tech sector. His commitment to technological advancement and user-centric design has positioned the company as a leading force in the industry, with a promising trajectory for future innovations.",
+        "Today, we stand as a close-knit family of over 150 employees, driven by a shared vision and purpose. We have also successfully established a strong domestic presence in three major metropolitan cities, and we continue to expand our reach globally, serving clients across the globe Good deeds go a long way!This initiative continued; furthermore, they provided desktops and printers for schools. Sanjay is an esteemed member of the Rotary Club, he identified the benefits of the club and claimed up to a 40% discount on sanitary pads, which is a great initiative by a startup in Kartanaka tied up with the Rotary Club.Later in the year, Sakshath Technologies donated Rotary Club for the education of children. One of the girl children graduated with flying colours this year.",
     },
     {
-      id: 2,
+      id: 4,
       title:
-        " Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath Technologies",
-      image: require("../../../Assets/images/Achivement40.png"),
+        "Times 40 under 40 Achiever Awards 2023 ",
+      image: require("../../../Assets/images/achievemnet_4.jpg"),
       description:
-        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking and innovative strategies in the tech sector. His commitment to technological advancement and user-centric design has positioned the company as a leading force in the industry, with a promising trajectory for future innovations.",
+        "Shravan Kumar - CEO & FOUNDER of Sakshath Technologies was awarded Times 40 under 40 Achiever Awards 2023 which was organized by The Times Group in Oberoi Gurgaon on 24th July 2023.Embarking on a new chapter filled with joy and excitement, let's take a moment to reflect on our remarkable journey, which began in the year 2012. At its inception, we started as a humble partnership firm known as Saaksh8 Consulting Services. Armed with nothing more than a smidgen of capital and a bold vision, we ventured into uncharted territory. Founder and Managing Director, Sakshath Technologies for winning Company of the Year - IT Services & IT Consulting in IT Industry at Outlook Business Spotlight- Business Excellence Awards 2023 powered by Digitech Media. While our story may not be a classic rags-to-riches tale, our ascent to stardom came impressively close. In the year 2015, we reached a significant milestone with the birth of SAKSHATH TECHNOLOGIES. At the core of our mission is unwavering commitment to the slogan 'BY THE PEOPLE, FOR THE PEOPLE,' and we proudly embrace the motto #Imsakshath.",
     },
   ];
 

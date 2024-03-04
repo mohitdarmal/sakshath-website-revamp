@@ -1,4 +1,5 @@
-export const SHRAVAN_PIC = require("../../Assets/images/our_team_shravan.jpg")
+ export const SHRAVAN_PIC = require("../../Assets/images/our_team_shravan.jpg")
+//  export const SHRAVAN_PIC = require("../../Assets/images/Achivement_img3.png")
 export const KRISHNA_PIC = require("../../Assets/images/our_team_krishna.jpg")
 export const GAURI_PIC = require("../../Assets/images/our_team_gauri.jpg")
 export const NITESH_PIC = require("../../Assets/images/our_team_nitesh.jpg")
