@@ -196,6 +196,108 @@ const BankingSolution = () => {
         </div>
       </div>
      </section>
+     {/* banking patners logo start */}
+     <section className="partner_logo_section">
+      
+     
+        <div className="container partner_logo_tab">
+          <div className="text-center">
+          <Heading
+                heading="Trusted By"
+              />
+          </div>
+          
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={10}
+             autoplay={{
+             delay: 1500,
+              disableOnInteraction: false,
+             }}
+            breakpoints={{
+              320: {
+                slidesPerView:2,
+                spaceBetween:30
+              },
+              481: {
+                slidesPerView:3,
+                spaceBetween:30
+              },
+              768: {
+                slidesPerView:3,
+                spaceBetween:30
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween:30
+              },
+            }}
+            loop={true}
+            modules={[Autoplay]}
+            className="mySwiper" 
+            >
+            <SwiperSlide>
+              <img src={CLIENT_LOGO11} />{" "}
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO15} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO16} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO18} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO19} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO20} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO22} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO23} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO24} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO25} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO26} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO27} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO28} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO29} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO37} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO38} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO34} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CLIENT_LOGO36} />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+      {/* baking patenrs logo end */}
+
     </>
   );
 };

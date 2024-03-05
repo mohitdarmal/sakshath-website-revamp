@@ -29,15 +29,11 @@
 //     // width: 600px;
 // }
 
+// integration start
 .integration_coe_left {
   padding-right: 80px;
 }
-.overview_sec_left {
-  padding-right: 80px;
-}
-.overview_sec {
-  padding-top: 80px;
-}
+
 .integration_img_right {
   width: 100%;
 }
@@ -56,6 +52,12 @@
 .integration_img {
   width: 100%;
 }
+.integration_overview_heading{
+  font-size: $sub_heading;
+  color: #111111;
+}
+//intefration end
+//software logo
 .software_logo_section{
   img{width: 170px;}
 }
@@ -66,7 +68,15 @@
   border: none;
   text-decoration: none;
 }
-
+//overview  start
+.overview_sec_left {
+  padding-right: 80px;
+}
+.overview_sec {
+  padding-top: 80px;
+}
+//overview end
+//data vissualization start
 .data-visualization-para {
   margin-top: 100px;
   height: 150px;
@@ -126,10 +136,7 @@
 //   padding-top: 5px;
 //   font-size:18px;
 // }
-.integration_overview_heading{
-  font-size: $sub_heading;
-  color: #111111;
-}
+
 h6.trusted_by {
   margin-top: 2%;
   margin-bottom: -41.1px;
@@ -161,6 +168,8 @@ h6.trusted_by {
 //     font-weight: 700;
 
 // }
+
+//integration managed service start
 
 .integration_managed_services_sec{
   padding-top: 80px;

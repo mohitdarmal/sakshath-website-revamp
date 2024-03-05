@@ -527,7 +527,7 @@ export const Home = () => {
                         <img src={CLIQ_LOGO} alt="" />
                       </div>
                       <div className="content">
-                        <h3>QLIK</h3>
+                        <h3>QLIKQ</h3>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit Odit vitae.
