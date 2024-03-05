@@ -25,11 +25,9 @@ const OurTeam = () => {
   const [activeNiteshProfile, setActiveNiteshProfile] = useState(false);
   const [activeNidhiProfile, setActiveNidhiProfile] = useState(false);
   const [activePraveenProfile, setActivePraveenProfile] = useState(false);
-  const [activeSanjayProfile, setActiveSanjayProfile] = useState(false);
+  const [activeManishProfile, setActiveManishProfile] = useState(false);
   const [activeManmeetProfile, setActiveManmeetProfile] = useState(false);
   const [activeGauriProfile, setActiveGauriProfile] = useState(false);
-  const [activePrashantProfile, setActivePrashantProfile] = useState(false);
-  const [activeSuchiProfile, setActiveSuchiProfile] = useState(false);
 
   const handleChangeDetail = (e) => {
     if (e.target.textContent === "Krishnananda Hegde") {
@@ -43,11 +41,9 @@ const OurTeam = () => {
       setActiveNiteshProfile(false);
       setActiveNidhiProfile(false);
       setActivePraveenProfile(false);
-      setActiveSanjayProfile(false);
+      setActiveManishProfile(false);
       setActiveManmeetProfile(false);
       setActiveGauriProfile(false);
-      setActivePrashantProfile(false);
-      setActiveSuchiProfile(false);
     } else if (e.target.textContent === "Shravan Kumar") {
       setProfileData({
         content:
@@ -59,11 +55,9 @@ const OurTeam = () => {
       setActiveNiteshProfile(false);
       setActiveNidhiProfile(false);
       setActivePraveenProfile(false);
-      setActiveSanjayProfile(false);
+      setActiveManishProfile(false);
       setActiveManmeetProfile(false);
       setActiveGauriProfile(false);
-      setActivePrashantProfile(false);
-      setActiveSuchiProfile(false);
     } else if (e.target.textContent === "Niitesh Khandelwal") {
       setProfileData({
         content:
@@ -75,11 +69,9 @@ const OurTeam = () => {
       setActiveKrishnaProfile(false);
       setActiveNidhiProfile(false);
       setActivePraveenProfile(false);
-      setActiveSanjayProfile(false);
+      setActiveManishProfile(false);
       setActiveManmeetProfile(false);
       setActiveGauriProfile(false);
-      setActivePrashantProfile(false);
-      setActiveSuchiProfile(false);
     } else if (e.target.textContent === "Nidhi Singh") {
       setProfileData({
         content:
@@ -91,7 +83,7 @@ const OurTeam = () => {
       setActiveNiteshProfile(false);
       setActiveShravanProfile(false);
       setActivePraveenProfile(false);
-      setActiveSanjayProfile(false);
+      setActiveManishProfile(false);
       setActiveManmeetProfile(false);
       setActiveGauriProfile(false);
     } else if (e.target.textContent === "Praveen D") {
@@ -105,14 +97,12 @@ const OurTeam = () => {
       setActiveNidhiProfile(false);
       setActiveNiteshProfile(false);
       setActiveShravanProfile(false);
-      setActiveSanjayProfile(false);
+      setActiveManishProfile(false);
       setActiveManmeetProfile(false);
       setActiveGauriProfile(false);
-      setActivePrashantProfile(false);
-      setActiveSuchiProfile(false);
-    } else if (e.target.textContent === "Sanjay Ganesh") {
-      setProfileData({ content: "Sanjay Ganesh" });
-      setActiveSanjayProfile(true);
+    } else if (e.target.textContent === "Manish Gajwani") {
+      setProfileData({ content: "Manish Gajwani" });
+      setActiveManishProfile(true);
       setActivePraveenProfile(false);
       setActiveKrishnaProfile(false);
       setActiveNidhiProfile(false);
@@ -120,8 +110,6 @@ const OurTeam = () => {
       setActiveShravanProfile(false);
       setActiveManmeetProfile(false);
       setActiveGauriProfile(false);
-      setActivePrashantProfile(false);
-      setActiveSuchiProfile(false);
     } else if (e.target.textContent === "Manmeet Singh") {
       setProfileData({
         content:
@@ -129,49 +117,14 @@ const OurTeam = () => {
         position: "Vice President-Analytics",
       });
       setActiveManmeetProfile(true);
-      setActiveSanjayProfile(false);
+      setActiveManishProfile(false);
       setActivePraveenProfile(false);
       setActiveKrishnaProfile(false);
       setActiveNidhiProfile(false);
       setActiveNiteshProfile(false);
       setActiveShravanProfile(false);
       setActiveGauriProfile(false);
-      setActivePrashantProfile(false);
-      setActiveSuchiProfile(false);
-    } else if (e.target.textContent === "Shuchi Shreshtha") {
-      setProfileData({
-        content:
-          "Shuchi Shreshtha",
-      });
-      setActiveSuchiProfile(true);
-      setActiveGauriProfile(false);
-      setActiveManmeetProfile(false);
-      setActiveSanjayProfile(false);
-      setActivePraveenProfile(false);
-      setActiveKrishnaProfile(false);
-      setActiveNidhiProfile(false);
-      setActiveNiteshProfile(false);
-      setActiveShravanProfile(false);
-      setActivePrashantProfile(false);
-    }
-    else if (e.target.textContent === "Prashant Tupe") {
-      setProfileData({
-        content:
-          "Prashant Tupe",
-        position: "Chief Operating Officer",
-      });
-      setActivePrashantProfile(true);
-      setActiveGauriProfile(false);
-      setActiveManmeetProfile(false);
-      setActiveSanjayProfile(false);
-      setActivePraveenProfile(false);
-      setActiveKrishnaProfile(false);
-      setActiveNidhiProfile(false);
-      setActiveNiteshProfile(false);
-      setActiveShravanProfile(false);
-      setActiveSuchiProfile(false);
-    }
-    else if (e.target.textContent === "Gouriprasad") {
+    } else if (e.target.textContent === "Gouri Prasad") {
       setProfileData({
         content:
           "Gouri Prasad is a Techno-Functional Consultant with 20+ Years of experience in the Accounting, Finance Domain, ERP Implementation, Software Quality Analysis, and Business Analysis and 10+ years of domain experience. He excels at functional design, planning, analysis, testing, development, and implementation of IT solutions while offering guidance, support, and training in challenging and complex system contexts.",
@@ -179,14 +132,12 @@ const OurTeam = () => {
       });
       setActiveGauriProfile(true);
       setActiveManmeetProfile(false);
-      setActiveSanjayProfile(false);
+      setActiveManishProfile(false);
       setActivePraveenProfile(false);
       setActiveKrishnaProfile(false);
       setActiveNidhiProfile(false);
       setActiveNiteshProfile(false);
       setActiveShravanProfile(false);
-      setActivePrashantProfile(false);
-      setActiveSuchiProfile(false);
     }
     console.log("Clicked", e.target.textContent);
   };
@@ -317,12 +268,12 @@ const OurTeam = () => {
                 </div>
                 <div
                   className={`our_team_sec_box ${
-                    activeSanjayProfile ? "active" : ""
+                    activeManishProfile ? "active" : ""
                   }`}
                   onClick={handleChangeDetail}
                 >
                   <div className="details">
-                    <h5>Sanjay Ganesh</h5>
+                    <h5>Manish Gajwani</h5>
                     <img src={MANISH_PIC} />
                   </div>
                 </div>
@@ -339,40 +290,15 @@ const OurTeam = () => {
                 </div>
                 <div
                   className={`our_team_sec_box ${
-                    activeSuchiProfile ? "active" : ""
-                  }`}
-                  onClick={handleChangeDetail}
-                >
-                  <div className="details">
-                    <h5>Shuchi Shreshtha</h5>
-                    <img src={GAURI_PIC} />
-                  </div>
-                </div>
-
-                <div
-                  className={`our_team_sec_box ${
-                    activePrashantProfile ? "active" : ""
-                  }`}
-                  onClick={handleChangeDetail}
-                >
-                  <div className="details">
-                    <h5>Prashant Tupe</h5>
-                    <img src={GAURI_PIC} />
-                  </div>
-                </div>
-
-                <div
-                  className={`our_team_sec_box ${
                     activeGauriProfile ? "active" : ""
                   }`}
                   onClick={handleChangeDetail}
                 >
                   <div className="details">
-                    <h5>Gouriprasad</h5>
+                    <h5>Gouri Prasad</h5>
                     <img src={GAURI_PIC} />
                   </div>
                 </div>
-
               </div>
 
               <div className="our_team_sec_dot">
