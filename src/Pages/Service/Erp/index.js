@@ -3,8 +3,34 @@ import "./style.scss";
 import {
   ABOUT_WHO_WE_ARE,
   EPICOR_OVERVIEW,
+  ERP1_GRAPH_IMG,
+  ERP1_OVERVIEW,
+  ERP_AUTOMATION,
+  ERP_CONSTRUCTION,
+  ERP_ELECTONIC,
+  ERP_INDUSTRY,
+  ERP_INDUSTRY_1,
+  ERP_INDUSTRY_MANUFACTURE,
+  ERP_MANUFATURE,
+  ERP_MEDICAL,
+  ERP_MENTAL_HEALTH,
+  ERP_METAL,
+  ERP_RETAIL,
+  ERP_RUBBER,
+  ERP_SUPPLCHAIN,
+  ERP_SYSPRO,
   INDUSTRY_IMG,
+  Migration,
+  SAP,
   SUPPLY_CHAIN_IMG,
+  SYSPRO_ACTIONABLE,
+  SYSPRO_BUSINESS,
+  SYSPRO_Choice,
+  SYSPRO_INDUSTRY,
+  SYSPRO_PERSONAL,
+  SYSPRO_SAFE,
+  SYSPRO_SCALE,
+  SYSPRO_USER,
   Who_we_r,
 } from "./Constant";
 import Heading from "../../../Components/Utils/Heading";
@@ -14,7 +40,7 @@ import { EXPERIENCE } from "../../../Components/OurPrincipals/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 import CallToAction from "../../../Components/CallToAction";
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
-import { Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
 
@@ -73,9 +99,48 @@ const Erp = () => {
   return (
     <>
       {" "}
-      <BreadCumb imgUrl={ABOUT_BANNER} title="ERP" />
+      <BreadCumb imgUrl={ABOUT_BANNER} title="ENTERPRISE RESOURCE PLANNING " />
       {/* Syspro  overview Starts*/}
       {/* EPICOR  overview  starts*/}
+
+
+<section className="erp_industries_sec">
+  <Container>
+    <Row>
+      <Col className="">
+        <div className="erp_ind_box">
+        <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+          <h4>Gather Customer Requirements</h4>
+        </div>
+      </Col>
+      <Col className="">
+        <div className="erp_ind_box"> 
+          <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+          <h4>Gather Customer Requirements</h4></div>
+      </Col>
+      <Col className="">
+        <div className="erp_ind_box">
+          <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+          <h4>Gather Customer Requirements</h4>
+        </div>
+      </Col>
+      <Col className="">
+        <div className="erp_ind_box">
+           <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+          <h4>Gather Customer Requirements</h4>
+        </div>
+      </Col>
+      <Col className="">
+        <div className="erp_ind_box">
+        <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+          <h4>Gather Customer Requirements</h4>
+        </div>
+      </Col>
+    </Row>
+  </Container>
+</section>
+
+
       <section className="epicor_section">
         <div className="container">
           <div className="row align-items-center">
@@ -117,7 +182,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="epicor_right_img">
-                <img src={ABOUT_WHO_WE_ARE} alt="" width="600px" />
+                <img src={ERP1_GRAPH_IMG} alt="" width="600px" />
               </div>
             </div>
           </div>
@@ -128,7 +193,7 @@ const Erp = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="epicor_left_img">
-                <img src={Who_we_r} alt="" width="550px" />
+                <img src={ERP1_OVERVIEW} alt="" width="550px" />
               </div>
             </div>
             <div className="col-md-6">
@@ -167,7 +232,9 @@ const Erp = () => {
       {/* epicor ends */}
       {/* call to action starts */}
       <Fade direction="up" triggerOnce>
-      <CallToAction ctaContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit doloribus labore exercitationem perspiciatis." />
+      <CallToAction ctaContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit doloribus labore exercitationem perspiciatis."
+      
+      ctaTitle={"Contact Us"}  />
       </Fade>
       {/* call tonaction ends */}
       <section className="syspro_section">
@@ -197,7 +264,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="syspro_img">
-                <img src={ABOUT_WHO_WE_ARE} alt="" width="600px" />
+                <img src={ERP_SYSPRO} alt="" width="600px" />
               </div>
             </div>
           </div>
@@ -223,7 +290,7 @@ const Erp = () => {
               <div className="box_top">
                 <h4>01</h4>
                 <div className="syspro_value">
-                  <img src={EXPERIENCE} alt="" />
+                  <img src={SYSPRO_INDUSTRY} alt="" />
                 </div>
                 <div className="syspro_value_content">
                   <h3>Industry Built</h3>
@@ -234,7 +301,7 @@ const Erp = () => {
               <div className="box_top">
                 <h4>02</h4>
                 <div className="syspro_value">
-                  <img src={EXPERIENCE} alt="" />
+                  <img src={SYSPRO_Choice} alt="" />
                 </div>
                 <div className="syspro_value_content">
                   <h3>Choice & Flexibility</h3>
@@ -245,7 +312,7 @@ const Erp = () => {
               <div className="box_top">
                 <h4>03</h4>
                 <div className="syspro_value">
-                  <img src={EXPERIENCE} alt="" />
+                  <img src={SYSPRO_ACTIONABLE} alt="" />
                 </div>
                 <div className="syspro_value_content">
                   <h3>Actionable Insights</h3>
@@ -256,7 +323,7 @@ const Erp = () => {
               <div className="box_top">
                 <h4>04</h4>
                 <div className="syspro_value">
-                  <img src={EXPERIENCE} alt="" />
+                  <img src={SYSPRO_SCALE} alt="" />
                 </div>
                 <div className="syspro_value_content">
                   <h3> Scalable</h3>
@@ -267,7 +334,7 @@ const Erp = () => {
               <div className="box_top">
                 <h4>05</h4>
                 <div className="syspro_value">
-                  <img src={EXPERIENCE} alt="" />
+                  <img src={SYSPRO_USER} alt="" />
                 </div>
                 <div className="syspro_value_content">
                   <h3>Engaging User Experience</h3>
@@ -278,7 +345,7 @@ const Erp = () => {
               <div className="box_top">
                 <h4>06</h4>
                 <div className="syspro_value">
-                  <img src={EXPERIENCE} alt="" />
+                  <img src={SYSPRO_SAFE} alt="" />
                 </div>
                 <div className="syspro_value_content">
                   <h3>Safeguard Your ERP Investment</h3>
@@ -289,7 +356,7 @@ const Erp = () => {
               <div className="box_top">
                 <h4>07</h4>
                 <div className="syspro_value">
-                  <img src={EXPERIENCE} alt="" />
+                  <img src={SYSPRO_PERSONAL} alt="" />
                 </div>
                 <div className="syspro_value_content">
                   <h3>Personalize Your Workspace</h3>
@@ -300,7 +367,7 @@ const Erp = () => {
               <div className="box_top">
                 <h4>08</h4>
                 <div className="syspro_value">
-                  <img src={EXPERIENCE} alt="" />
+                  <img src={SYSPRO_BUSINESS} alt="" />
                 </div>
                 <div className="syspro_value_content">
                   <h3>Enable Digital Business </h3>
@@ -385,7 +452,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_SUPPLCHAIN} alt="" />
                 </div>
                 <h4>Supply Chain</h4>
               </div>
@@ -393,7 +460,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={INDUSTRY_IMG} alt="" />
+                  <img src={ERP_INDUSTRY} alt="" />
                 </div>
                 <h4>manufacturing</h4>
               </div>
@@ -401,7 +468,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_RETAIL} alt="" />
                 </div>
                 <h4>Retailers</h4>
               </div>
@@ -410,7 +477,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_AUTOMATION} alt="" />
                 </div>
                 <h4>Automation</h4>
               </div>
@@ -423,7 +490,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_MANUFATURE} alt="" />
                 </div>
                 <h4>Aerospace & Defence</h4>
               </div>
@@ -431,7 +498,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_RUBBER} alt="" />
                 </div>
                 <h4> Rubber & Plastics</h4>
               </div>
@@ -439,7 +506,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_ELECTONIC} alt="" />
                 </div>
                 <h4>Electronics & High Tech</h4>
               </div>
@@ -447,7 +514,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_METAL} alt="" />
                 </div>
                 <h4>Fabricated Metals</h4>
               </div>
@@ -460,7 +527,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_INDUSTRY_MANUFACTURE} alt="" />
                 </div>
                 <h4>Industrial Machinery</h4>
               </div>
@@ -468,7 +535,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_MENTAL_HEALTH} alt="" />
                 </div>
                 <h4>Mental Service Centers</h4>
               </div>
@@ -476,7 +543,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_CONSTRUCTION} alt="" />
                 </div>
                 <h4>Construction & Engineering </h4>
               </div>
@@ -484,7 +551,7 @@ const Erp = () => {
             <Col>
               <div className="industry_box">
                 <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
+                  <img src={ERP_MEDICAL} alt="" />
                 </div>
                 <h4>Medical</h4>
               </div>
@@ -528,7 +595,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="migration_img">
-                <img src={Who_we_r} alt="" width="550px" />
+                <img src={Migration} alt="" width="550px" />
               </div>
             </div>
           </div>
@@ -541,7 +608,7 @@ const Erp = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="sap_img">
-                <img src={ABOUT_WHO_WE_ARE} alt="" width="600px" />
+                <img src={SAP} alt="" width="600px" />
               </div>
             </div>
             <div className="col-md-6">
@@ -640,7 +707,7 @@ const Erp = () => {
       </section>
       {/* why sakshath */}
       <Fade direction="up" triggerOnce>
-      <WhySaksahthNew whyCrm={whyComp} />
+      {/* <WhySaksahthNew whyCrm={whyComp} /> */}
       </Fade>
       {/* <WhySaksahthNew whyCrm={whyRpa} /> */}
       {/* why sakshth ends */}
