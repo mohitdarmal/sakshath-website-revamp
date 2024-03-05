@@ -350,3 +350,22 @@ h4{
 }
 }
 
+.migration_img img{
+  width: 400px;
+  margin-left: 100px;
+  transition: .5s;
+  &:hover{
+    transition: .5s;
+    transform: scale(1.05,1.04);
+  }
+}
+
+.sap_img img
+{
+  margin-top: -100px;
+  transition: .5s;
+  &:hover{
+    transition: .5s;
+    transform: scale(1.05,1.04);
+  }
+}
