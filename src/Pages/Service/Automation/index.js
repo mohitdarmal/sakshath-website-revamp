@@ -1,18 +1,18 @@
 import React from "react";
 import "./style.scss";
 import { Element, scroller } from "react-scroll";
+import ScrollSpy from "react-ui-scrollspy";
 import {
   ANDRIOD_APP,
   API_IMG,
   AUTOMATE_RIGHT_IMG1,
   AUTOMATE_RPA,
+  AUTOMATION_API,
   AUTOMATION_BG_IMG,
+  AUTOMATION_MARKET,
+  AUTOMATION_SERVICE,
+  AUTOMATION_SOCAIL,
   CHECK_ICON,
-  //   CLIENT_LOGO1,
-  //   CLIENT_LOGO2,
-  //   CLIENT_LOGO3,
-  //   CLIENT_LOGO4,
-  //   CLIENT_LOGO5,
   CROSS_PLATFORM_APP,
   DEVOPS,
   FLOW_CENTRIC_RPA,
@@ -43,56 +43,14 @@ import { Autoplay } from "swiper/modules";
 import BreadCumb from "../../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
 import ServiceStickMenu from "../../../Components/ServiceStickMenu";
-// import {
-//   CLIENT_LOGO1,
-//   CLIENT_LOGO2,
-//   CLIENT_LOGO3,
-//   CLIENT_LOGO4,
-//   CLIENT_LOGO5,
-//   CLIENT_LOGO6,
-//   CLIENT_LOGO7,
-//   CLIENT_LOGO8,
-//   CLIENT_LOGO9,
-//   CLIENT_LOGO10,
-//   CLIENT_LOGO11,
-//   CLIENT_LOGO12,
-//   CLIENT_LOGO13,
-//   CLIENT_LOGO14,
-//   CLIENT_LOGO15,
-//   CLIENT_LOGO45,
-//   CLIENT_LOGO46,
-//   CLIENT_LOGO47,
-//   CLIENT_LOGO16,
-//   CLIENT_LOGO17,
-//   CLIENT_LOGO18,
-//   CLIENT_LOGO19,
-//   CLIENT_LOGO20,
-//   CLIENT_LOGO21,
-//   CLIENT_LOGO22,
-//   CLIENT_LOGO23,
-//   CLIENT_LOGO24,
-//   CLIENT_LOGO25,
-//   CLIENT_LOGO26,
-//   CLIENT_LOGO27,
-//   CLIENT_LOGO28,
-//   CLIENT_LOGO29,
-//   CLIENT_LOGO30,
-//   CLIENT_LOGO31,
-//   CLIENT_LOGO32,
-//   CLIENT_LOGO33,
-//   CLIENT_LOGO34,
-//   CLIENT_LOGO35,
-//   CLIENT_LOGO36,
-//   CLIENT_LOGO37,
-//   CLIENT_LOGO38
-// } from "../../../Components/ClientLogo/Constant";
 import TrustedBy from "../../../Components/TrustedBy";
 import { INTEGRATION_SECTION_ONE_IMG } from "../Integration/Constant";
 import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton";
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
-import ScrollSpy from "react-ui-scrollspy";
+
+
 
 const Automation = () => {
   const menu = [
@@ -116,42 +74,42 @@ const Automation = () => {
       title: " Fastest Business Scaling",
       description:
         "Use a low-code or no-code platform to automate robotic processes to launch or grow your business. Get a greater ROI and faster business expansion with Sakshath Automation Services.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/ERP_IMG1.png"),
     },
     {
       id: 2,
       title: "Ample Opportunities",
       description:
         "You have access to an ocean of RPA business options with Sakshath for diverse procedures across departments.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/ERP_IMG2.png"),
     },
     {
       id: 3,
       title: " Huge Profits and Revenue",
       description:
         "Gain qualified leads for your company, accelerate the deployment of automation, and make recurring payments for the service with ease..",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/ERP_IMG3.png"),
     },
     {
       id: 4,
       title: "Automation of the Job Process",
       description:
         " Create bots immediately and connect them to the SaaS Operating system, a single web control panel from which you can manage and monitor each automation within and between different companies simultaneously.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/ERP_IMG4.png"),
     },
     {
       id: 5,
       title: "RPA Bots with One Click",
       description:
         " Our RPA solution will help you have an infinite number of free bots to handle any automation challenge, whether a high-volume, one-time or straightforward task bot.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/ERP_IMG5.png"),
     },
     {
       id: 6,
       title: "Boost Efficiency and Productivity",
       description:
         "Due to Sakshath’s RPA’s on-demand scalability, consistency, accuracy, and tailored solution, your business’s productivity and performance will improve.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/ERP_IMG6.png"),
     },
   ];
 
@@ -161,42 +119,42 @@ const Automation = () => {
       title: "REMARKABLE EXPERTISE",
       description:
         " Being a market leader, we provide cloud-native business applications and have helped companies make the necessary operational changes to benefit from the distributed architecture of the cloud.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/cloud_REMARKABLE.png"),
     },
     {
       id: 2,
       title: "ABSOLUTE RESILIENCES",
       description:
         "Gain access to these cloud-native applications’ size, resiliency, elasticity, and agility by collaborating with Sakshath.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/cloud_ABSOLUTE.png"),
     },
     {
       id: 3,
       title: "RESULTS-DRIVEN DESIGN",
       description:
         " Excellent apps are successful because they provide a solution.Our design team is here to assist you in testing your concepts and crafting the best version of your product.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/cloud_RESULTS-DRIVEN.png"),
     },
     {
       id: 4,
       title: "ACCURATE IT SUPPORT",
       description:
         " The domain-driven design methodology breaks down apps into business solutions for simple utilization and cost optimization.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/cloud_acurate.png"),
     },
     {
       id: 5,
       title: "SUPERIORITY & SAFETY",
       description:
         " We introduce new cloud services and features to revamp your company without sacrificing security or quality.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/cloud_safety.png"),
     },
     {
       id: 6,
       title: "ADDING NEW CAPABILITIES",
       description:
         " By embracing our cloud-native development solution, your company’s capabilities will improve in trying to meet, win, and retain consumer demands. Be swift and constant.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/cloud_capabilties.png"),
     },
   ];
 
@@ -206,42 +164,42 @@ const Automation = () => {
       title: " Total and utter DevOps Process",
       description:
         "Your development and operations will be better coordinated with the aid of our DevOps team, allowing you to launch software more frequently while also increasing resilience.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/DEVOPS_IMG1.png"),
     },
     {
       id: 2,
       title: "Single-stop Technical Advice",
       description:
         "Our DevOps professionals can create and assist with setting up a CI/CD pipeline for your company. We install and configure relevant DevOps-specific technologies to ensure effective execution.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/DEVOPS_IMG_2.png"),
     },
     {
       id: 3,
       title: "Complete Implementation Roadmap",
       description:
         " Our experienced staff can also handle your company’s initial technical DevOps deployment. We carry out strategic planning, create a thorough roadmap for implementing DevOps.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/DEVOPS_IMG_3.png"),
     },
     {
       id: 4,
       title: "Problem  Analysis",
       description:
         " Our DevOps consultants assess issues in the business model, implement solutions into your DevOps strategy, and fine-tune procedures like CI/CD technologies or application monitoring to eliminate potential problems.",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/DEVOPS_IMG_4.png"),
     },
     {
       id: 5,
       title: "Complete Support and Maintenance",
       description:
         " Sakshath’s experts can coach your internal team on reliably managing the DevOps method and, if required, handle and support any tech difficulties that may develop (for example, CI/CD configuration failures).",
-      img: require("../../../Assets/images/icon.png"),
+      img: require("../../../Assets/images/DEVOPS_IMG_5.png"),
     },
     {
       id: 6,
       title: "Effective Strategy Planning",
       description:
         "Our specialists begin by reviewing your workflow, application portfolio, IT resources’ capacities, and the nature and scope of your IT infrastructures.",
-      img: require("../../../Assets/images/icon.png"),
+        img: require("../../../Assets/images/DEVOPS_IMG_6.png"),
     },
   ];
 
@@ -292,7 +250,7 @@ const Automation = () => {
         </div>
       </section>
       {/* <!-- section one end --> */}
-      <TrustedBy/>
+      <TrustedBy />
 
       {/* <section className="partner_logo_section">
         <Fade direction="up" triggerOnce>
@@ -487,11 +445,8 @@ const Automation = () => {
         />
       </Fade>
       {/* automation starts */}
-
-      <ScrollSpy>
-
-     
-
+        <ScrollSpy>
+      
       <div id="cloudAutomate">
         <Element name="Cloud Automate Development">
           <section className="automation">
@@ -518,39 +473,39 @@ const Automation = () => {
                       </p>
                     </Fade>
                   </div>
-                  <Fade direction="up"  triggerOnce>
-                  <div className="row">
-                    <div className="col-md-6">
-                      <Fade direction="up" triggerOnce>
-                        <div className="automation_right_content_list">
-                          <ul>
-                            <li> Hybrid Integration</li>
-                            <li> Services- Based Integration</li>
-                            <li> API Gateway/Manager</li>
-                            <li>
-                              {" "}
-                              Open API business strategy for monetization of
-                              APIs
-                            </li>
-                          </ul>
-                        </div>
-                      </Fade>
-                    </div>
+                  <Fade direction="up" triggerOnce>
+                    <div className="row">
+                      <div className="col-md-6">
+                        <Fade direction="up" triggerOnce>
+                          <div className="automation_right_content_list">
+                            <ul>
+                              <li> Hybrid Integration</li>
+                              <li> Services- Based Integration</li>
+                              <li> API Gateway/Manager</li>
+                              <li>
+                                {" "}
+                                Open API business strategy for monetization of
+                                APIs
+                              </li>
+                            </ul>
+                          </div>
+                        </Fade>
+                      </div>
 
-                    <div className="col-md-6">
-                      <Fade direction="up" triggerOnce>
-                        <div className="automation_right_content_list">
-                          <ul>
-                            <li> Social Integration</li>
-                            <li> Marketplace Integration</li>
-                            <li> In-Built Connectors</li>
-                            <li> Enterprise Service Bus (ESB)</li>
-                            {/* <li> Pluggable Adaptors</li> */}
-                          </ul>
-                        </div>
-                      </Fade>
+                      <div className="col-md-6">
+                        <Fade direction="up" triggerOnce>
+                          <div className="automation_right_content_list">
+                            <ul>
+                              <li> Social Integration</li>
+                              <li> Marketplace Integration</li>
+                              <li> In-Built Connectors</li>
+                              <li> Enterprise Service Bus (ESB)</li>
+                              {/* <li> Pluggable Adaptors</li> */}
+                            </ul>
+                          </div>
+                        </Fade>
+                      </div>
                     </div>
-                  </div>
                   </Fade>
                 </div>
               </div>
@@ -564,8 +519,8 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="pillars_heading text-center ">
-            <Fade direction="up"  triggerOnce>
-              <Heading heading="Pillars Of  Cloud Native Application" />
+              <Fade direction="up" triggerOnce>
+                <Heading heading="Pillars Of  Cloud Native Application" />
               </Fade>
             </div>
             <div className="col-md-3 pillar_number_storke pillar_number_storke">
@@ -627,7 +582,7 @@ const Automation = () => {
 
       {/*automation ends */}
 
-      {/* mobile application ends */}
+      {/* mobile application SATRTS */}
       <Fade direction="up" triggerOnce>
         <section className="mobile_section">
           <div className="container">
@@ -637,7 +592,7 @@ const Automation = () => {
                   <Heading heading="Mobile Application Development" />
                 </div>
               </div>
-              <div className="col-md-8 ">
+              <div className="col-md-8">
                 <div className="row ">
                   <div className="col-md-4 text-center">
                     <div className="application_box">
@@ -683,6 +638,8 @@ const Automation = () => {
         </section>
       </Fade>
 
+      {/* MOBILE ENDS */}
+
       {/* application starts */}
       <section className="application_section">
         <div className="container">
@@ -694,63 +651,63 @@ const Automation = () => {
             </Fade>
 
             <div className="col-md-6 api_boxes">
-            <Fade direction="up"  triggerOnce>
-              <div className="api_container">
-                <div className="api_icon">
-                  <img src={RPA_DELIVERY} alt="" />
+              <Fade direction="up" triggerOnce>
+                <div className="api_container">
+                  <div className="api_icon">
+                    <img src={AUTOMATION_SERVICE} alt="" />
+                  </div>
+                  <div className="api_boxes">
+                    <h4>Service Based Integration</h4>
+                    <span>
+                      Restful and Restless (SOAP) service integration provides
+                      digital integration capabilities. It has small-scale to
+                      large-scale application data delivery and integration
+                      capabilities.
+                    </span>
+                  </div>
                 </div>
-                <div className="api_boxes">
-                  <h4>Service Based Integration</h4>
-                  <span>
-                    Restful and Restless (SOAP) service integration provides
-                    digital integration capabilities. It has small-scale to
-                    large-scale application data delivery and integration
-                    capabilities.
-                  </span>
-                </div>
-              </div>
               </Fade>
             </div>
             <div className="col-md-6 api_boxes">
-            <Fade direction="up"  triggerOnce>
-              <div className="api_container">
-                <div className="api_icon">
-                  <img src={RPA_DELIVERY} alt="" />
+              <Fade direction="up" triggerOnce>
+                <div className="api_container">
+                  <div className="api_icon">
+                    <img src={AUTOMATION_SOCAIL} alt="" />
+                  </div>
+                  <div className="api_boxes">
+                    <h4>Social Integration</h4>
+                    <span>
+                      Integration with social collaboration platforms such as,
+                      Facebook, Twitter, Instagram, and many more. It consumes
+                      their API and integrates the data in the DXP’s
+                      application.
+                    </span>
+                  </div>
                 </div>
-                <div className="api_boxes">
-                  <h4>Social Integration</h4>
-                  <span>
-                    Integration with social collaboration platforms such as,
-                    Facebook, Twitter, Instagram, and many more. It consumes
-                    their API and integrates the data in the DXP’s application.
-                  </span>
-                </div>
-              </div>
               </Fade>
             </div>
             <div className="col-md-6 api_boxes">
-            <Fade direction="up"  triggerOnce>
-              <div className="api_container ">
-                <div className="api_icon">
-                  <img src={RPA_DELIVERY} alt="" />
+              <Fade direction="up" triggerOnce>
+                <div className="api_container ">
+                  <div className="api_icon">
+                    <img src={AUTOMATION_MARKET} alt="" />
+                  </div>
+                  <div className="api_boxes">
+                    <h4>Marketplace Integration</h4>
+                    <span>
+                      Marketplace integration helps business users to integrate
+                      with multiple channels to buy or sell their services &
+                      products of different channels while consuming a single
+                      service.
+                    </span>
+                  </div>
                 </div>
-                <div className="api_boxes">
-                  <h4>Marketplace Integration</h4>
-                  <span>
-                    Marketplace integration helps business users to integrate
-                    with multiple channels: to buy or sell their services and
-                    products of different channels while consuming a single
-                    service.
-                  </span>
-                </div>
-              </div>
               </Fade>
             </div>
             <div className="col-md-6 api_boxes">
-            
               <div className="api_container">
                 <div className="api_icon">
-                  <img src={RPA_DELIVERY} alt="" />
+                  <img src={AUTOMATION_API} alt="" />
                 </div>
                 <div className="api_boxes">
                   <h4> Open API business strategy for monetization</h4>
@@ -767,7 +724,6 @@ const Automation = () => {
       </section>
 
       {/* application starts */}
-
       {/* automation ends */}
 
       {/* why_Sakshath starts */}
@@ -812,15 +768,15 @@ const Automation = () => {
                       etc.
                     </li>
                   </ul>
-                 {/* </Fade> */}
+                  {/* </Fade> */}
                 </div>
               </div>
             </div>
             <div className="col-md-6">
-            <Fade direction="up"  triggerOnce>
-              <div className="rpa_graph">
-                <img src={RPA_GRAPH} alt="" />
-              </div>
+              <Fade direction="up" triggerOnce>
+                <div className="rpa_graph">
+                  <img src={RPA_GRAPH} alt="" />
+                </div>
               </Fade>
               <div className="rpa_text text-center mt-5">
                 {/* <h4>Robotic Process Automation Business Management</h4> */}
@@ -1134,8 +1090,8 @@ const Automation = () => {
             <div className="col-md-12">
               <div className="devop_layer">
                 <div className="testing_layer_main_heading text-center">
-                <Fade direction="up"  triggerOnce>
-                  <Heading heading="Testing Layer" />
+                  <Fade direction="up" triggerOnce>
+                    <Heading heading="Testing Layer" />
                   </Fade>
                 </div>
               </div>
@@ -1177,8 +1133,8 @@ const Automation = () => {
         <div className="container">
           <div className="row">
             <div className="devops_heading_main text-center">
-            <Fade direction="up"  triggerOnce>
-              <Heading heading="DevOps & Testing " />
+              <Fade direction="up" triggerOnce>
+                <Heading heading="DevOps & Testing " />
               </Fade>
             </div>
             <div className="row box1 ">
@@ -1350,18 +1306,19 @@ const Automation = () => {
       <WhySaksahthNew whyCrm={whyDevops} />
       {/* why sakshath ends */}
 
-      <section>
-      <div className="container">
-        <div className="row"> 
-        <div className="col-md-1"> </div>
-        <div className="col-md-10">
+      <section className="automationFaq">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-1"> </div>
+            <div className="col-md-10">
               <Faq />
+            </div>
+            <div className="col-md-1"> </div>
+          </div>
         </div>
-        <div className="col-md-1"> </div>
-        </div>
-      </div>
-     </section>
-     </ScrollSpy>
+      </section>
+          
+      </ScrollSpy>
     </>
   );
 };

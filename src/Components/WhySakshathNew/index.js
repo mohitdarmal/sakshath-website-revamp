@@ -26,7 +26,7 @@ const WhySaksahthNew = (props) => {
                
                   <>
                   <Col>
-                    <div className="why_sakshath_container1 text-center">
+                    <div className="why_sakshath_container1 text-center mb-5">
                       <div className="why_sakshath_content1">
                         <img src={data.img} alt="" />
                         <h5>{data.title}</h5>

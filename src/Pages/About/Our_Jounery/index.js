@@ -57,48 +57,94 @@ const OurJounery = () => {
     },
   ];
   // corevalues starts
+  // const CoreValueData = [
+  //   {
+  //     id: 1,
+  //     name: "Honesty",
+  //     description:
+  //       "A culture of honesty results in more than “happy” workplaces, and a deep-seated respect and expectation for honesty makes companies more successful and more profitable.",
+  //     image: require("../../../Assets/images/Honesty.png"),
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Transparency",
+  //     description:
+  //       "Business transparency is the process of being open, honest, and straightforward about various company operations to their employees and stakeholders.",
+  //     image: require("../../../Assets/images/Transparency.png"),
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Integrity",
+  //     description:
+  //       "As an integral firm, we ensure that we act with high integrity and consistency in whatever we undertake. We act with honesty and be consistent on belief compass you have.",
+  //     image: require("../../../Assets/images/Integrity.png"),
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Value Creation",
+  //     description:
+  //       "Business owner’s extensive reservoir of understanding on customers’ needs and preferences, business environments and their dynamics add to value creation.",
+  //     image: require("../../../Assets/images/value-proposition.png"),
+  //   },
+  //   {
+  //     id: 5,
+  //     name: "Ethics",
+  //     description:
+  //       "Improved Ethical performance results in improved financial performances. It makes good financial sense for investors to prefer such companies who have good ethical performances.",
+  //     image: require("../../../Assets/images/Ethics.png"),
+  //   },
+  //   {
+  //     id: 6,
+  //     name: "Knowledge",
+  //     description:
+  //       "Value is the ultimate benefit that your business provides and is the reason why others want to purchase your products or services. Creating a value puts a company above the other.",
+  //     image: require("../../../Assets/images/Knowledge.png"),
+  //   },
+  // ];
+
+
   const CoreValueData = [
     {
       id: 1,
       name: "Honesty",
       description:
         "A culture of honesty results in more than “happy” workplaces, and a deep-seated respect and expectation for honesty makes companies more successful and more profitable.",
-      image: require("../../../Assets/images/Honesty.png"),
+      image: require("../../../Assets/images/About_corevalue_img1.png"),
     },
     {
       id: 2,
       name: "Transparency",
       description:
         "Business transparency is the process of being open, honest, and straightforward about various company operations to their employees and stakeholders.",
-      image: require("../../../Assets/images/Transparency.png"),
+      image: require("../../../Assets/images/About_corevalue_img2.png"),
     },
     {
       id: 3,
       name: "Integrity",
       description:
         "As an integral firm, we ensure that we act with high integrity and consistency in whatever we undertake. We act with honesty and be consistent on belief compass you have.",
-      image: require("../../../Assets/images/Integrity.png"),
+      image: require("../../../Assets/images/About_corevalue_img3.png"),
     },
     {
       id: 4,
       name: "Value Creation",
       description:
         "Business owner’s extensive reservoir of understanding on customers’ needs and preferences, business environments and their dynamics add to value creation.",
-      image: require("../../../Assets/images/value-proposition.png"),
+      image: require("../../../Assets/images/About_corevalue_img4.png"),
     },
     {
       id: 5,
       name: "Ethics",
       description:
         "Improved Ethical performance results in improved financial performances. It makes good financial sense for investors to prefer such companies who have good ethical performances.",
-      image: require("../../../Assets/images/Ethics.png"),
+      image: require("../../../Assets/images/About_corevalue_img5.png"),
     },
     {
       id: 6,
       name: "Knowledge",
       description:
         "Value is the ultimate benefit that your business provides and is the reason why others want to purchase your products or services. Creating a value puts a company above the other.",
-      image: require("../../../Assets/images/Knowledge.png"),
+      image: require("../../../Assets/images/About_corevalue_img6.png"),
     },
   ];
 
