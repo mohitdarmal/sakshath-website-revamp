@@ -92,6 +92,7 @@ import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
+import ScrollSpy from "react-ui-scrollspy";
 
 const Automation = () => {
   const menu = [
@@ -486,6 +487,10 @@ const Automation = () => {
         />
       </Fade>
       {/* automation starts */}
+
+      <ScrollSpy>
+
+     
 
       <div id="cloudAutomate">
         <Element name="Cloud Automate Development">
@@ -1356,6 +1361,7 @@ const Automation = () => {
         </div>
       </div>
      </section>
+     </ScrollSpy>
     </>
   );
 };
