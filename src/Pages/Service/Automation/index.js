@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.scss";
 import { Element, scroller } from "react-scroll";
+import ScrollSpy from "react-ui-scrollspy";
 import {
   ANDRIOD_APP,
   API_IMG,
@@ -48,6 +49,8 @@ import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
+
+
 
 const Automation = () => {
   const menu = [
@@ -442,7 +445,8 @@ const Automation = () => {
         />
       </Fade>
       {/* automation starts */}
-
+        <ScrollSpy>
+      
       <div id="cloudAutomate">
         <Element name="Cloud Automate Development">
           <section className="automation">
@@ -588,7 +592,7 @@ const Automation = () => {
                   <Heading heading="Mobile Application Development" />
                 </div>
               </div>
-              <div className="col-md-8 ">
+              <div className="col-md-8">
                 <div className="row ">
                   <div className="col-md-4 text-center">
                     <div className="application_box">
@@ -1302,7 +1306,7 @@ const Automation = () => {
       <WhySaksahthNew whyCrm={whyDevops} />
       {/* why sakshath ends */}
 
-      <section>
+      <section className="automationFaq">
         <div className="container">
           <div className="row">
             <div className="col-md-1"> </div>
@@ -1313,6 +1317,8 @@ const Automation = () => {
           </div>
         </div>
       </section>
+          
+      </ScrollSpy>
     </>
   );
 };

@@ -39,7 +39,7 @@ margin-bottom: 80px;
     padding-left: 80px;
 }
 .AI_datascience_sec{
-    margin-top: 80px;
+    padding-top: 80px;
     position: relative;
 }
 .ai_data_science_left{
@@ -58,7 +58,7 @@ margin-bottom: 80px;
 }
 .ai_datascience_content_box{
     margin-top: 105px;
-    margin-bottom: 80px;
+   // margin-bottom: 80px;
 }
 // .ai_box1_height{
 //     min-height: 217px !important;
@@ -111,6 +111,10 @@ margin-bottom: 80px;
 }
 
 .why_sakshath_ai{
+  
+  //margin-top: 80px;
+    //margin-bottom: 80px;
+
   .why_sakshath_content1 {
     
     min-height: 545px;
@@ -125,6 +129,7 @@ margin-bottom: 80px;
       min-height: 48px;
     }
        }
+       img{width: 92px;}
 }
 
 
@@ -140,6 +145,8 @@ margin-bottom: 80px;
     padding-bottom: 20px;
 }
 .why_sakshath_bi,.why_sakshath_bigdata{
+  //margin-top: 80px;
+ // margin-bottom: 80px;
 
   .why_sakshath_content1 h5{
     font-family: rajdhani;
@@ -150,6 +157,9 @@ margin-bottom: 80px;
       margin-top: -6px;
       text-transform: uppercase;
       min-height: 48px;
+  }
+  img{
+    width: 92px;
   }
 
 }
@@ -165,11 +175,16 @@ margin-bottom: 80px;
 }
 
 .why_sakshath_dataIntegration{
+ // margin-top: 80px;
+  margin-bottom: 80px;
    .why_sakshath_content1 {
   
   min-height: 500px;
 
 
+   }
+   img{
+    width: 92px;
    }
   }
 
@@ -187,7 +202,7 @@ margin-bottom: 80px;
 }
 
 
-
+.why
 
 // .ai_datascience_container::before{
     
@@ -252,12 +267,16 @@ margin-bottom: 80px;
 
 // }
 
-
-.bi_key_feature_heading_box{
-    
+.bi_feature_sec{
+  padding-top: 80px;
+  
+  .bi_key_feature_heading_box{
     text-align: center;
     margin-bottom: 30px;
+  }
 }
+
+
 
 
 .bi_feature_box{
@@ -489,11 +508,11 @@ margin-bottom: 80px;
 }
 .bi_dashboard_sec {
   padding-top: 80px;
-  padding-bottom: 80px;
+  //padding-bottom: 80px;
   position: relative;
 }
 .data_integration_sec {
-  
+  //padding-top: 80px;
   position: relative;
 }
 .bigdata_sec{
@@ -697,8 +716,11 @@ ul {
   background-color: #041d26;
   border-radius: 15px;
 }
-
-
+ .analytics_faq{
+  .faq_section {
+ 
+  padding: 80px 0;}
+  }
 
 // responsive start
 @media screen and (max-width: 480px) {
