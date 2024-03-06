@@ -16,8 +16,8 @@ export const SOFTWARE_LOGO_10=require('../../../Assets/images/software_logo_10.p
 export const SOFTWARE_LOGO_11=require('../../../Assets/images/software_logo_11.png');
 export const SECTION_VECTOR=require('../../../Assets/images/check icon psd.png');
 export const analytics_logo_01=require('../../../Assets/images/analytics_navy_blue_logo.png');
-export const analytics_logo_02=require('../../../Assets/images/analytics_navyblue_logo2.png');
+export const analytics_logo_02=require('../../../Assets/images/analytics_skyblue_logo _2.png');
 export const analytics_logo_03=require('../../../Assets/images/analytics_blue_logo_3.png');
-export const analytics_logo_04=require('../../../Assets/images/analytics_skyblue_logo_4.png');
+export const analytics_logo_04=require('../../../Assets/images/analytics_navyblue_logo_4.png');
 export const analytics_logo_05=require('../../../Assets/images/analytics_navyblue_logo_5.png');
-
+export const analytics_logo_05_skyBlue=require('../../../Assets/images/analytics_skyblue_logo_5.png');

@@ -28,6 +28,7 @@ import {
   analytics_logo_03,
   analytics_logo_04,
   analytics_logo_05,
+  analytics_logo_05_skyBlue
 } from "./Constant";
 import SubHeading from "../../../Components/Utils/SubHeading";
 import { RPA_DELIVERY } from "../Automation/Constant";
@@ -847,7 +848,7 @@ export const Analytics = () => {
                           <Fade direction="up" triggerOnce>
                             <div className="ai_datascience_content_col_box bi_box5">
                               <div className="ai_datascience_content_img">
-                                <img src={analytics_logo_05} alt="" />
+                                <img src={analytics_logo_05_skyBlue} alt="" />
                               </div>
                               <div className="ai_datascience_content_para">
                                 <Fade direction="up" triggerOnce>
