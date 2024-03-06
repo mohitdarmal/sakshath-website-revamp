@@ -649,7 +649,7 @@ const Automation = () => {
               </Fade>
 
               <div className="col-md-6 api_boxes">
-                <Fade direction="up" triggerOnce>
+                {/* <Fade direction="up" triggerOnce> */}
                   <div className="api_container">
                     <div className="api_icon">
                       <img src={AUTOMATION_SERVICE} alt="" />
@@ -664,10 +664,10 @@ const Automation = () => {
                       </span>
                     </div>
                   </div>
-                </Fade>
+                {/* </Fade> */}
               </div>
               <div className="col-md-6 api_boxes">
-                <Fade direction="up" triggerOnce>
+                {/* <Fade direction="up" triggerOnce> */}
                   <div className="api_container">
                     <div className="api_icon">
                       <img src={AUTOMATION_SOCAIL} alt="" />
@@ -682,10 +682,10 @@ const Automation = () => {
                       </span>
                     </div>
                   </div>
-                </Fade>
+                {/* </Fade> */}
               </div>
               <div className="col-md-6 api_boxes">
-                <Fade direction="up" triggerOnce>
+                {/* <Fade direction="up" triggerOnce> */}
                   <div className="api_container ">
                     <div className="api_icon">
                       <img src={AUTOMATION_MARKET} alt="" />
@@ -700,7 +700,7 @@ const Automation = () => {
                       </span>
                     </div>
                   </div>
-                </Fade>
+                {/* </Fade> */}
               </div>
               <div className="col-md-6 api_boxes">
                 <div className="api_container">

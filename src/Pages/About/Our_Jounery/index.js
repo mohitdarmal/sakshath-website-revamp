@@ -180,6 +180,7 @@ const OurJounery = () => {
       {/* Inception starts */}
       <Inception />
       {/* our jounery ends */}
+      
       {/* Core values starts */}
       <section className="core_values">
         <div className="container">
@@ -193,7 +194,8 @@ const OurJounery = () => {
                   <div className="core_value_box">
                     <div className="title d-flex justify-content-between">
                       <Fade direction="up" delay={450} triggerOnce>
-                        <p>{data.name}</p> <img src={data.image} alt="" />
+                        <p>{data.name}</p>
+                         <img src={data.image} alt="" />
                       </Fade>
                     </div>
                     <Fade direction="up" delay={450} triggerOnce>

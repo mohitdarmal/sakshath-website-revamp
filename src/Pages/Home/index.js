@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import {
   WHO_WE_ARE_IMG,
@@ -98,6 +98,39 @@ export const Home = () => {
     nextArrow: <MdArrowForwardIos />,
   };
 
+  const achivementData = [
+    {
+      id: 1,
+      heading_Title:
+        "Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath Technologies",
+      description:
+        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking",
+      image: require("../../Assets/images/Achivement40.png"),
+    },
+    {
+      id: 2,
+      heading_Title:
+        "Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath Technologies",
+      description:
+        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking",
+      image: require("../../Assets/images/achivement_stall.png"),
+    },
+    {
+      id: 3,
+      heading_Title:
+        "Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath Technologies",
+      description:
+        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking",
+      image: require("../../Assets/images/Achivement_sanjay_sir.png"),
+    },
+  ];
+
+  const [achivementHome, setAchivementHome] = useState([]);
+
+  useEffect(() => {
+    setAchivementHome(achivementData);
+  }, []);
+
   return (
     <>
       {/* @@@@@@ Banner Video start @@@@@@ */}
@@ -161,7 +194,9 @@ export const Home = () => {
 
                   <div className="banner_text_slider_content">
                     <h6>Unlocking Productivity, One Automation at a Time</h6>
-                    <h3>Revolutionizing Your Workflow with Automation Services</h3>
+                    <h3>
+                      Revolutionizing Your Workflow with Automation Services
+                    </h3>
 
                     <div className="banner_text_slider_links">
                       <Link to="/">Get Started Now</Link>
@@ -170,7 +205,10 @@ export const Home = () => {
                   </div>
 
                   <div className="banner_text_slider_content">
-                    <h6>Innovative Banking Software Solutions for a Digital Future.</h6>
+                    <h6>
+                      Innovative Banking Software Solutions for a Digital
+                      Future.
+                    </h6>
                     <h3>Navigating the Landscape of Solutions</h3>
 
                     <div className="banner_text_slider_links">
@@ -439,7 +477,6 @@ export const Home = () => {
             </div>
 
             <div className="row mt-4 pt-2">
-           
               <div className="col-md-4 d-flex ">
                 <Link>
                   <Fade direction="up" delay={400} triggerOnce>
@@ -449,9 +486,7 @@ export const Home = () => {
                       </div>
                       <div className="content">
                         <h3>ISO 27001</h3>
-                        <p>
-                        2013 (Information Security Management System)   
-                        </p>
+                        <p>2013 (Information Security Management System)</p>
                         <p className="learn_more">See Certificate</p>
                       </div>
                     </div>
@@ -468,9 +503,7 @@ export const Home = () => {
                       </div>
                       <div className="content">
                         <h3>ISO 9001</h3>
-                        <p>
-                        2015 (Quality Management Systems)
-                        </p>
+                        <p>2015 (Quality Management Systems)</p>
                         <p className="learn_more">See Certificate</p>
                       </div>
                     </div>
@@ -488,7 +521,8 @@ export const Home = () => {
                       <div className="content">
                         <h3 className="text">Great Place to Work</h3>
                         <p>
-                        Sakshath was recognised as a Great Place to Work again in 2024!
+                          Sakshath was recognised as a Great Place to Work again
+                          in 2024!
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -516,8 +550,6 @@ export const Home = () => {
                   </Fade>
                 </Link>
               </div>
-
-             
 
               <div className="col-md-4 d-flex ">
                 <Link>
@@ -568,7 +600,10 @@ export const Home = () => {
                       <div className="content">
                         <h3>Outlook Business</h3>
                         <p>
-                        Sakshath Technologies for winning Company of the Year - IT Services & IT Consulting in IT Industry at Outlook Business Spotlight- Business Excellence Awards 2023.
+                          Sakshath Technologies for winning Company of the Year
+                          - IT Services & IT Consulting in IT Industry at
+                          Outlook Business Spotlight- Business Excellence Awards
+                          2023.
                         </p>
                         {/* <p className="learn_more">See Certificate</p> */}
                       </div>
@@ -587,7 +622,9 @@ export const Home = () => {
                       <div className="content">
                         <h3>Times of India</h3>
                         <p>
-                        Mr Shravan Kumar was awarded the prestigious "40 under 40" award by Bennett Coleman & Co. Ltd. - The Times of India.  
+                          Mr Shravan Kumar was awarded the prestigious "40 under
+                          40" award by Bennett Coleman & Co. Ltd. - The Times of
+                          India.
                         </p>
                         {/* <p className="learn_more">See Certificate</p> */}
                       </div>
@@ -606,7 +643,9 @@ export const Home = () => {
                       <div className="content">
                         <h3>WCRCINT</h3>
                         <p>
-                        World’s Leading brands and leaders at the prestigious House of Lords ceremony at the Palace of Westminster, London.  
+                          World’s Leading brands and leaders at the prestigious
+                          House of Lords ceremony at the Palace of Westminster,
+                          London.
                         </p>
                         {/* <p className="learn_more">See Certificate</p> */}
                       </div>
@@ -614,8 +653,6 @@ export const Home = () => {
                   </Fade>
                 </Link>
               </div>
-              
-
             </div>
           </div>
         </div>
@@ -914,16 +951,17 @@ export const Home = () => {
         </div>
       </section> */}
 
-      <CallToAction  
-      ctaContent={
-            "Let’s connect. We’d love to hear about your project and discuss our procedure. Our executives will be at your service ASAP. "
-          }
-          ctaTitle={"Let's meet us"} />
+      <CallToAction
+        ctaContent={
+          "Let’s connect. We’d love to hear about your project and discuss our procedure. Our executives will be at your service ASAP. "
+        }
+        ctaTitle={"Let's meet us"}
+      />
       {/*SECTION - planning banner ends*/}
 
       {/* SECTION - Client Logo Start*/}
 
-      <ClientLogo/>
+      <ClientLogo />
       {/* @@@@@ SECTION - Client Logo End @@@@@*/}
 
       {/* @@@@@ SECTION - Popular service start @@@@@ */}
@@ -951,10 +989,14 @@ export const Home = () => {
                   Transform your workflow with our all-in-one platform. Optimize efficiency and productivity effortlessly.Manage multiple processes seamlessly for optimal results.
                 </p> */}
                 <li>
-                Digitise your business by managing multiple process in a
-                  single platform.Optimize efficiency and productivity effortlessly.
+                  Digitise your business by managing multiple process in a
+                  single platform.Optimize efficiency and productivity
+                  effortlessly.
                 </li>
-                <li>Transform your workflow with our all-in-one platform.Manage multiple processes seamlessly for optimal results.</li>
+                <li>
+                  Transform your workflow with our all-in-one platform.Manage
+                  multiple processes seamlessly for optimal results.
+                </li>
                 {/* <li>Optimize efficiency and productivity effortlessly.</li> */}
                 {/* <li>Manage multiple processes seamlessly for optimal results.</li> */}
               </Fade>
@@ -1068,40 +1110,40 @@ export const Home = () => {
           </div>
           <div className="bottom_blog_container mt-md-4">
             <div className="row blog_boxes">
-              <div className="col-md-4  blog_box ipad_half_width">
-                <div className="bottom_blog_img">
-                  <Fade direction="up" triggerOnce>
-                    "
-                    <img src={ACHIVEMENT_IMG1} alt="" />
-                  </Fade>
-                </div>
-                <Fade direction="up" triggerOnce>
-                  <div className="blog_content">
-                    <div className="cust_profile"></div>
-
-                    <div className="socail_icon">
-                      {/* <ul className="d-flex justify-content-between list-unstyled">
-                        <li>
-                          <div className="icon">
-                            <SlCalender /> &nbsp; 18 JAN 2024
-                          </div>
-                        </li>
-                      </ul> */}
-                      <h5 className="blog_heading">
-                        Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath
-                        Technologies
-                      </h5>
-                      <p className="blog_sub_heading">
-
-                      {/* {{`{substring(0, 150)}`}...} */}
-                      Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking and innovative strategies in the tech sector.
-                      </p>
-                      <SlideAnimationButton btnName="READ MORE" />
-                    </div>
+              {achivementHome.map((data) => {
+                return(
+                <div className="col-md-4  blog_box ipad_half_width">
+                  <div className="bottom_blog_img">
+                    <Fade direction="up" triggerOnce>
+                      {/* <img src={ACHIVEMENT_IMG1} alt="" /> */}
+                      <img src={data.image} alt="" />
+                    </Fade>
                   </div>
-                </Fade>
-              </div>
-              <div className="col-md-4  blog_box ipad_half_width">
+                  <Fade direction="up" triggerOnce>
+                    <div className="blog_content">
+                      <div className="cust_profile"></div>
+                      <div className="socail_icon">
+                        <h5 className="blog_heading">
+                          {/* Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath
+                        Technologies */}
+                          {data.heading_Title}
+                        </h5>
+                        <p className="blog_sub_heading">
+                          {/* {{`{substring(0, 150)}`}...} */}
+                          {/* Selected as World’s Best Emerging Leader, Shravan Kumar,
+                        CEO and Founder of Sakshath Technologies exemplifies the
+                        impact of visionary thinking and innovative strategies
+                        in the tech sector. */}
+                          {data.description}
+                        </p>
+                        <SlideAnimationButton btnName="READ MORE" />
+                      </div>
+                    </div>
+                  </Fade>
+                </div>)
+              })}
+
+              {/* <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
                     <img src={ACHIVEMENT_IMG2} alt="" />
@@ -1113,17 +1155,20 @@ export const Home = () => {
 
                     <div className="socail_icon">
                       <h5 className="blog_heading">
-                       Analytics Vidhya - DataHack Summit 2023 
+                        Analytics Vidhya - DataHack Summit 2023
                       </h5>
                       <p className="blog_sub_heading">
-                      DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data science and machine learning enthusiasts, experts, and practitioners from around the world.
+                        DataHack Summit 2023 by Analytics Vidhya is an annual
+                        conference that brings together data science and machine
+                        learning enthusiasts, experts, and practitioners from
+                        around the world.
                       </p>
                       <SlideAnimationButton btnName="READ MORE" />
                     </div>
                   </div>
                 </Fade>
-              </div>
-              <div className="col-md-4  blog_box ipad_half_width">
+              </div> */}
+              {/* <div className="col-md-4  blog_box ipad_half_width">
                 <div className="bottom_blog_img">
                   <Fade direction="up" triggerOnce>
                     <img src={ACHIVEMENT_IMG3} alt="" />
@@ -1134,17 +1179,20 @@ export const Home = () => {
                     <div className="cust_profile"></div>
                     <div className="socail_icon">
                       <h5 className="blog_heading">
-                      Highlighting the impactful contributions of our employees across Africa
+                        Highlighting the impactful contributions of our
+                        employees across Africa
                       </h5>
                       <p className="blog_sub_heading">
-                      Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club and claimed up to a 40% discount on sanitary pads.
+                        Sanjay is an esteemed member of the Rotary Club.He
+                        identified the benefits of the club and claimed up to a
+                        40% discount on sanitary pads.
                       </p>
 
                       <SlideAnimationButton btnName="READ MORE" />
                     </div>
                   </div>
                 </Fade>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

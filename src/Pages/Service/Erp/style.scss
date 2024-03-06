@@ -1,7 +1,12 @@
 @import "../../../Assets/saas/Main.scss";
 
 
-
+.modal-title {
+  margin-left: 90px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
 
 .erp_industries_sec{
   padding: 80px 0 0;
@@ -16,6 +21,7 @@
     border-radius: 15px;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     cursor: pointer;
     .erp_ind_img{
