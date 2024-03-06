@@ -12,6 +12,7 @@ import { TRAEGER, GE_HEALTHCARE, UNIVISION, NBC_UNIVESAL, RWI,DHL } from "./Cons
 import BreadCumb from "../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from './ApplicationDevelopment/Constant';
 import OurPrincipals from '../../Components/OurPrincipals';
+import TrustedBy from '../../Components/TrustedBy';
 
 const Service = () => {
   return (
@@ -226,8 +227,9 @@ const Service = () => {
     {/* @@@@@@@@  It benefits ends @@@@@@@@ */}
 
     {/* @@@@@@@ partner logo section starts @@@@@@@ */}
+    <TrustedBy/>
 
-    <section className='partner_logo_section'>
+    {/* <section className='partner_logo_section'>
       <div className="container partner_logo_tab">
       <Swiper
         slidesPerView={6}
@@ -248,7 +250,7 @@ const Service = () => {
         <SwiperSlide><img src={DHL} /></SwiperSlide>
       </Swiper>
       </div>
-    </section>
+    </section> */}
 
     {/* @@@@@@@ partner logo section ends @@@@@@@ */}
       

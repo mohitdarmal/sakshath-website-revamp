@@ -15,7 +15,7 @@ export const WHO_WE_ARE_IMG = require("../../Assets/images/who_we_are.jpg");
 export const TALEND = require("../../Assets/images/talend.png");
 export const AWS = require("../../Assets/images/aws.png");
 export const TIMES_OF_INDIA = require("../../Assets/images/times_of_india_logo.png");
-export const CLIQ_LOGO = require("../../Assets/images/cliq_logo.png");
+export const CLIQ_LOGO = require("../../Assets/images/Qlik.png");
 export const WCRCINT = require("../../Assets/images/wcrcint_logo.png");
 export const OUT_LOOK=require("../../Assets/images/outloo_bussiness.jpg")
 

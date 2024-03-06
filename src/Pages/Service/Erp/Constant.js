@@ -43,3 +43,8 @@ export const ERP_MENTAL_HEALTH = require("../../../Assets/images/ERP_MENTAL_HEAL
 export const ERP_METAL = require("../../../Assets/images/ERP_METAL.png");
 export const ERP_CONSTRUCTION = require("../../../Assets/images/ERP-CONSTRUCTION.png");
 export const ERP_MEDICAL = require("../../../Assets/images/ERP-MEDICAL.png");
+
+
+// Industries Icon
+export const INTERNAL_OPERATION = require("../../../Assets/images/internal_operation.svg").default;
+export const SUPPLY_CHAIN = require("../../../Assets/images/supply_chain.svg").default;

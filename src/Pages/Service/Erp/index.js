@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Button, Modal} from 'react-bootstrap';
 import "./style.scss";
 import {
   ABOUT_WHO_WE_ARE,
@@ -20,8 +21,10 @@ import {
   ERP_SUPPLCHAIN,
   ERP_SYSPRO,
   INDUSTRY_IMG,
+  INTERNAL_OPERATION,
   Migration,
   SAP,
+  SUPPLY_CHAIN,
   SUPPLY_CHAIN_IMG,
   SYSPRO_ACTIONABLE,
   SYSPRO_BUSINESS,
@@ -96,9 +99,45 @@ const Erp = () => {
     setWhyComp(whyDEVOPS);
   }, []);
 
+  const [modalShow, setModalShow] = React.useState(false);
+  const [industriesContent, setIndustriesContent] = useState([])
+
+  function IndustriesPopup(props) {
+    console.log(props, "props")
+    return (
+      <Modal
+        {...props}
+        size="md"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+          {industriesContent.title}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Centered Modal</h4>
+          <p dangerouslySetInnerHTML={{__html: industriesContent.content}}>
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
+
   return (
     <>
-      {" "}
+      
+      <IndustriesPopup
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+      
+
       <BreadCumb imgUrl={ABOUT_BANNER} title="ENTERPRISE RESOURCE PLANNING " />
       {/* Syspro  overview Starts*/}
       {/* EPICOR  overview  starts*/}
@@ -108,14 +147,30 @@ const Erp = () => {
   <Container>
     <Row>
       <Col className="">
-        <div className="erp_ind_box">
-        <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+        <div className="erp_ind_box"
+         onClick={() => {
+          setModalShow(true)
+          setIndustriesContent({
+            title: "Internal Operation",
+            content:"<ul><li>Manufacturing operations management</li><li>Job nesting</li><li>Bill of materials </li><li>Materials </li><li>Quality management </li><li>Traceability  </li></ul>"
+          })
+        }}
+         >
+        <div className="erp_ind_img"><img src={INTERNAL_OPERATION} /></div>
           <h4>Gather Customer Requirements</h4>
         </div>
       </Col>
       <Col className="">
-        <div className="erp_ind_box"> 
-          <div className="erp_ind_img"><img src={SUPPLY_CHAIN_IMG} /></div>
+        <div className="erp_ind_box"
+         onClick={() => {
+          setModalShow(true)
+          setIndustriesContent({
+            title: "Supply Chain",
+            content:"Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+          })
+        }}
+        > 
+          <div className="erp_ind_img"><img src={SUPPLY_CHAIN} /></div>
           <h4>Gather Customer Requirements</h4></div>
       </Col>
       <Col className="">
