@@ -20,6 +20,7 @@ import Faq from "../../../Components/Faq";
 import BrouchurePopup from "../../../Components/BoruchurePopup";
 import pdfUrl from "../../../Assets/pdf/dummy.pdf";
 import { FaFilePdf } from "react-icons/fa";
+import CallToAction from "../../../Components/CallToAction";
 
 
 //import {SECTION_VECTOR} from "../../Assets/images/check icon psd.png";
@@ -75,7 +76,7 @@ const menu = [{
         className="img-fluid"
         title="Integration"
       />
-      {/* <!-- section one start --> */}
+      {/* <!-- overview  start --> */}
       <section className="overview_sec">
         <div className="container">
           <div className="row align-items-center">
@@ -111,7 +112,7 @@ const menu = [{
           </div>
         </div>
       </section>
-      {/* <!-- section one end --> */}
+      {/* <!-- overview  end --> */}
 
       {/* section trusted by start */}
 
@@ -151,7 +152,7 @@ const menu = [{
       </section> }
        {/* <!-- section why need integration end --> */}
 
-            {/* <!-- section three start-->  */}
+            {/* <!-- data visualization start-->  */}
       {/* <section className="body_sec_two">
                 <div className="container">
                     <div className="row">
@@ -201,7 +202,7 @@ const menu = [{
                 </div>
             </section> */}
 
-      {/* <!-- section three end --> */}
+      {/* <!-- data visualization end --> */}
 
       {/* section navbar start */}
 
@@ -212,7 +213,7 @@ const menu = [{
 
       {/* section navbar end */}
 
-      {/* section five start */}
+      {/* integartion coe start */}
       <ScrollSpy>
       <div id="integrationCoe">
       <Element name="integrationCoe">
@@ -254,10 +255,10 @@ const menu = [{
       </Element>
       </div>
       
-      {/* section five end */}
+      {/* integartion coe end */}
 
       {/* integration planning banner start */}
-      <section className="integration_planning_banner">
+      {/* <section className="integration_planning_banner">
         <div className="container">
           <div className="row integration_planning_banner_content_box align-items-center">
             <div className="col-md-9 ipad_full_width">
@@ -283,10 +284,17 @@ const menu = [{
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* call to action start */}
+      <CallToAction  
+      ctaContent={
+            "Let’s connect. We’d love to hear about your project and discuss our procedure. Our executives will be at your service ASAP. "
+          }
+          ctaTitle={"Let's meet us"} />
+      {/* call to action end */}
       {/*  integartion planning banner end*/}
 
-      {/* section six start */}
+      {/* integration Consult start */}
     
       <div id="integrationConsult">
       <Element name="integrationConsult">
