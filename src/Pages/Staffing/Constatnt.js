@@ -3,6 +3,7 @@
 
 export const STAFFING=require('../../Assets/images/Staffing2.svg').default;
 export const RPA_BOT = require("../../Assets/images/rpa_bot_img3.png");
+export const STAFFING_FINTECH = require("../../Assets/images/Staffing_fintech (2).png");
 
 
 export const STAFFING_BENIFIT=require('../../Assets/images/Staffing_benifit_img_1.png')

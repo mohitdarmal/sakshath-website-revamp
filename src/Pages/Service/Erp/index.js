@@ -232,7 +232,7 @@ const Erp = () => {
       {/* epicor ends */}
       {/* call to action starts */}
       <Fade direction="up" triggerOnce>
-      <CallToAction ctaContent="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit doloribus labore exercitationem perspiciatis."
+      <CallToAction ctaContent="Let’s connect. We’d love to hear about your project and discuss our procedure. Our executives will be at your service ASAP."
       
       ctaTitle={"Contact Us"}  />
       </Fade>

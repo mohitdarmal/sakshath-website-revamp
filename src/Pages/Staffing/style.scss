@@ -220,3 +220,12 @@
   // border-bottom: 3px solid #32a4d5;
 
 }
+
+.staffing_job_section .col-md-4{
+  transition: .5s;
+
+  &:hover{
+    transform: scale(1.04,1.05);
+    transition: .5s
+  }
+}

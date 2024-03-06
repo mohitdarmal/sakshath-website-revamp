@@ -7,6 +7,7 @@ import {
   STAFFING_ASSESSMENT,
   STAFFING_BENIFIT,
   STAFFING_DATABASE,
+  STAFFING_FINTECH,
 } from "./Constatnt";
 import Breadcumb from "../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../Service/ApplicationDevelopment/Constant";
@@ -87,7 +88,7 @@ const Staffing = () => {
             <div className="col-md-3">
               <Fade direction="up" triggerOnce>
                 <div className="staffing_industry_offer_box ">
-                  <img src={RPA_BOT} alt="" />
+                  <img src={STAFFING_FINTECH} alt="" />
                   <h5>Fintech</h5>
                 </div>
               </Fade>
