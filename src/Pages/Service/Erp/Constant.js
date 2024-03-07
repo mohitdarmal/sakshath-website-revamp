@@ -48,3 +48,6 @@ export const ERP_MEDICAL = require("../../../Assets/images/ERP-MEDICAL.png");
 // Industries Icon
 export const INTERNAL_OPERATION = require("../../../Assets/images/internal_operation.svg").default;
 export const SUPPLY_CHAIN = require("../../../Assets/images/supply_chain.svg").default;
+export const ORGANIZATION=require('../../../Assets/images/ERP_Internal_operations.png')
+export const INFORMATION=require('../../../Assets/images/ERP_InFORMATION.png')
+export const BUSINESS=require('../../../Assets/images/ERP_Business operations.png')

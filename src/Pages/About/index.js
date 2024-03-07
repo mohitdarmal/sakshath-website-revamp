@@ -10,6 +10,7 @@ import {
   HONESTY,
   MEDICAL,
   Manufacturing,
+  NGO,
   WAVE_IMG,
   about_who_we_Are,
 } from "./Constant";
@@ -174,7 +175,7 @@ const About = () => {
               <div className="col-md-2  about_industry_box bg2">
                 <div className="managed_service_content">
                   {/* <p>2</p> */}
-                  <img src={HONESTY} alt="" />
+                  <img src={NGO} alt="" />
                   <h5>NGO</h5>
                 </div>
               </div>
@@ -198,7 +199,7 @@ const About = () => {
               <div className="col-md-2 about_industry_box bg5">
                 <div className="managed_service_content">
                   {/* <p>5</p> */}
-                  <img src={HONESTY} alt="" />
+                  <img src={NGO} alt="" />
                   <h5> Industry</h5>
                 </div>
               </div>
@@ -206,7 +207,7 @@ const About = () => {
               <div className="col-md-2 about_industry_box bg6">
                 <div className="managed_service_content">
                   {/* <p>6</p> */}
-                  <img src={HONESTY} alt="" />
+                  <img src={NGO} alt="" />
                   <h5>Industry</h5>
                 </div>
               </div>

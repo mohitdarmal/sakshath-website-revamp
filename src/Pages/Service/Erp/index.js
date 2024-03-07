@@ -3,6 +3,7 @@ import { Button, Modal } from "react-bootstrap";
 import "./style.scss";
 import {
   ABOUT_WHO_WE_ARE,
+  BUSINESS,
   EPICOR_OVERVIEW,
   ERP1_GRAPH_IMG,
   ERP1_OVERVIEW,
@@ -21,8 +22,10 @@ import {
   ERP_SUPPLCHAIN,
   ERP_SYSPRO,
   INDUSTRY_IMG,
+  INFORMATION,
   INTERNAL_OPERATION,
   Migration,
+  ORGANIZATION,
   SAP,
   SUPPLY_CHAIN,
   SUPPLY_CHAIN_IMG,
@@ -117,7 +120,7 @@ const Erp = () => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
+          {/* <h4>Centered Modal</h4> */}
           <p
             dangerouslySetInnerHTML={{ __html: industriesContent.content }}
           ></p>
@@ -153,7 +156,7 @@ const Erp = () => {
                 }}
               >
                 <div className="erp_ind_img">
-                  <img src={INTERNAL_OPERATION} />
+                  <img src={ORGANIZATION} />
                 </div>
                 <h4>Internal Operation</h4>
               </div>
@@ -190,7 +193,7 @@ const Erp = () => {
                 }}
               >
                 <div className="erp_ind_img">
-                  <img src={SUPPLY_CHAIN_IMG} />
+                  <img src={INTERNAL_OPERATION} />
                 </div>
                 <h4>Organizational Controls</h4>
               </div>
@@ -208,7 +211,7 @@ const Erp = () => {
                 }}
               >
                 <div className="erp_ind_img">
-                  <img src={SUPPLY_CHAIN_IMG} />
+                  <img src={INFORMATION} />
                 </div>
                 <h4>Information & Intelligence</h4>
               </div>
@@ -226,7 +229,7 @@ const Erp = () => {
                 }}
               >
                 <div className="erp_ind_img">
-                  <img src={SUPPLY_CHAIN_IMG} />
+                  <img src={BUSINESS} />
                 </div>
                 <h4>Digital Business Platform</h4>
               </div>

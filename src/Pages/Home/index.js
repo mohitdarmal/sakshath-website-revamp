@@ -110,17 +110,17 @@ export const Home = () => {
     {
       id: 2,
       heading_Title:
-        "Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath Technologies",
+        "Analytics Vidhya - DataHack Summit 2023",
       description:
-        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking",
+        " DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data science and machinelearning enthusiasts, experts, and practitioners from around the world.",
       image: require("../../Assets/images/achivement_stall.png"),
     },
     {
       id: 3,
       heading_Title:
-        "Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath Technologies",
+        "Highlighting the impactful contributions of our employees across Africa",
       description:
-        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking",
+        " Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club and claimed up to a40% discount on sanitary pads.",
       image: require("../../Assets/images/Achivement_sanjay_sir.png"),
     },
   ];
@@ -1158,6 +1158,7 @@ export const Home = () => {
                         Analytics Vidhya - DataHack Summit 2023
                       </h5>
                       <p className="blog_sub_heading">
+                     
                         DataHack Summit 2023 by Analytics Vidhya is an annual
                         conference that brings together data science and machine
                         learning enthusiasts, experts, and practitioners from
@@ -1183,6 +1184,7 @@ export const Home = () => {
                         employees across Africa
                       </h5>
                       <p className="blog_sub_heading">
+                        
                         Sanjay is an esteemed member of the Rotary Club.He
                         identified the benefits of the club and claimed up to a
                         40% discount on sanitary pads.
