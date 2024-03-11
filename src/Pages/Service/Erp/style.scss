@@ -91,9 +91,10 @@ li {
   padding-bottom: 40px;
 }
 .epicor_right_img img{
-  width: 650px;
+  width: 430px;
   height: 400px;
-  transition: .5s;
+  transition: 0.5s;
+  margin-left: 100px;
   &:hover{
     transform: scale(1.04,1.05);
       transition: .5s;

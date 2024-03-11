@@ -13,6 +13,7 @@ import BreadCumb from "../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from './ApplicationDevelopment/Constant';
 import OurPrincipals from '../../Components/OurPrincipals';
 import TrustedBy from '../../Components/TrustedBy';
+import Faq from '../../Components/Faq';
 
 const Service = () => {
   return (
@@ -253,6 +254,20 @@ const Service = () => {
     </section> */}
 
     {/* @@@@@@@ partner logo section ends @@@@@@@ */}
+
+{/* FAQ Starts */}
+    <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-1"> </div>
+            <div className="col-md-10">
+              <Faq />
+            </div>
+            <div className="col-md-1"> </div>
+          </div>
+        </div>
+      </section>
+      {/* FAQ ENDS */}
       
     </>
   )
