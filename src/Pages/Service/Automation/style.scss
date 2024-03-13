@@ -889,7 +889,7 @@
   width: 30px;
   height: 30px;
   top: 0;
-  left: 0px;
+  left: 10px;
   border-top: 4px solid #32a4d5;
   border-left: 4px solid #32a4d5;
   opacity: 0;
@@ -897,13 +897,13 @@
 
 .api_container::before {
   content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    bottom: 0px;
-    right: 0px;
-    border-bottom: 4px solid #32a4d5;
-    border-right: 4px solid #32a4d5;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 24px;
+  right: 12px;
+  border-bottom: 4px solid #32a4d5;
+  border-right: 4px solid #32a4d5;
   opacity: 0;
 }
 .api_container:hover::before,

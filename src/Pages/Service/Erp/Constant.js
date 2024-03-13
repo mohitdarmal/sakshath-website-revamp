@@ -8,8 +8,8 @@ export const ABOUT_WHO_WE_ARE = require("../../../Assets/images/who_we_r_img.png
 
 export const ERP_INDUSTRY_1 = require("../../../Assets/images/demo6.png");
 
-export const ERP1_GRAPH_IMG =
-  require("../../../Assets/images/ERP 1 (1).svg").default;
+// export const ERP1_GRAPH_IMG =require("../../../Assets/images/ERP 1 (1).svg").default;
+export const ERP1_GRAPH_IMG =require("../../../Assets/images/ERP NEW.svg").default;
 export const ERP1_OVERVIEW =
   require("../../../Assets/images/ERP2 .svg").default;
 export const ERP_SYSPRO =
@@ -43,3 +43,11 @@ export const ERP_MENTAL_HEALTH = require("../../../Assets/images/ERP_MENTAL_HEAL
 export const ERP_METAL = require("../../../Assets/images/ERP_METAL.png");
 export const ERP_CONSTRUCTION = require("../../../Assets/images/ERP-CONSTRUCTION.png");
 export const ERP_MEDICAL = require("../../../Assets/images/ERP-MEDICAL.png");
+
+
+// Industries Icon
+export const INTERNAL_OPERATION = require("../../../Assets/images/internal_operation.svg").default;
+export const SUPPLY_CHAIN = require("../../../Assets/images/supply_chain.svg").default;
+export const ORGANIZATION=require('../../../Assets/images/ERP_Internal_operations.png')
+export const INFORMATION=require('../../../Assets/images/ERP_InFORMATION.png')
+export const BUSINESS=require('../../../Assets/images/ERP_Business operations.png')
