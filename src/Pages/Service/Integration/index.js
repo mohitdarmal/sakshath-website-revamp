@@ -533,11 +533,11 @@ const menu = [{
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-md-1"> </div>
-            <div className="col-md-10">
+            <div className="col-md-1 ipad_full_width"> </div>
+            <div className="col-md-10 ipad_full_width">
               <Faq />
             </div>
-            <div className="col-md-1"> </div>
+            <div className="col-md-1 ipad_full_width"> </div>
           </div>
         </div>
       </section>
