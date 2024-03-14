@@ -1,18 +1,19 @@
-// .achievement_detail_image_section{
-//     position:relative;
-// }
 .achievement_detail_image_section{
-    // position:absolute;
+    position:relative;
 }
-.achievemnt_img {
-    width:100%;
-    // position: relative;
-    top:0px;
+.achievement_detail_image_section{
+    position:absolute;
+}
+// .achievemnt_img {
+    
+//     // position: relative;
+//     top:0px;
+//     width:50%;
    
-}
+// }
 
 .achievmentdetails_content_box{
-    margin-top: -100px;
+    
     // z-index: ;
    
     // padding-bottom: 200px;
@@ -24,5 +25,77 @@
     p{
         padding-top: 20px;
     }
+
+}
+.achievemnt_img{
+    height: 450px;
+    width: 1182px;
+
+}
+.achievmentdetails_content_box_section{
+    padding-left: 14px;
+    padding-top: 421px;
+    
+}
+.achievment_para{
+    background-color: aliceblue;
+}
+
+
+// .achievmentdetails_content_box img{
+//     width:100%;
+//     // height:100%;
+//     border-radius: 44px;
+   
+// }
+// .achievement_detail_section{
+//     padding-top:80px;
+//     padding-bottom: 80px;
+// }
+// .achievment_detail_heading{
+//     padding-bottom: 15px;
+// }
+@media screen and (max-width: 480px) {
+    .achievement_detail_section{
+        padding-top:40px;
+        padding-bottom: 40px;
+    }
+    .achievment_detail_heading{
+        padding-top:40px;
+    }
+    .achievemnt_img{
+        width: 360px;
+        height: 214px;
+    }
+    .achievmentdetails_content_box_section {
+        padding-left: 14px;
+        padding-top: 287px;
+    }
+    .achievmentdetails_content_box p {
+        padding-top: 20px;
+        padding-left: 9px;
+    }
+
+   
+
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .achievement_detail_section{
+        padding-top:40px;
+        padding-bottom: 40px;
+    }
+    
+    .achievment_detail_heading{
+        padding-top: 40px;
+    }
+    .achievemnt_img{
+        padding-right: 80px;
+    }
+    .achievmentdetails_content_box{
+        width: 1088px;
+    }
+   
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
 }
