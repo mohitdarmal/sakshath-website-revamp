@@ -12,33 +12,33 @@ const Faq = () => {
   const faqcontent = [
     {
       id: 1,
-      heading: "kdcbch",
+      heading: "QUESTION 1?",
       description:
-        "ckdkck cm Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa soluta, voluptatum magnam sed explicabo dicta quod porro quae. Quaerat minus optio eum, hic aspernatur quisquam voluptates doloremque unde voluptatum!",
+        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa soluta, voluptatum magnam sed explicabo dicta quod porro quae. Quaerat minus optio eum, hic aspernatur quisquam voluptates doloremque unde voluptatum!",
     },
     {
       id: 2,
-      heading: "kuch bhi",
+      heading: "QUESTION 2?",
       description:
-        "ckdkck Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa soluta, voluptatum magnam sed explicabo dicta quod porro quae. Quaerat minus optio eum, hic aspernatur quisquam voluptates doloremque unde voluptatum!",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa soluta, voluptatum magnam sed explicabo dicta quod porro quae. Quaerat minus optio eum, hic aspernatur quisquam voluptates doloremque unde voluptatum!",
     },
     {
       id: 3,
-      heading: "Something",
+      heading: "QUESTION 3?",
       description:
-        "ckdkck Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa soluta, voluptatum magnam sed explicabo dicta quod porro quae. Quaerat minus optio eum, hic aspernatur quisquam voluptates doloremque unde voluptatum!",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa soluta, voluptatum magnam sed explicabo dicta quod porro quae. Quaerat minus optio eum, hic aspernatur quisquam voluptates doloremque unde voluptatum!",
     },
     {
       id: 4,
-      heading: "Something",
+      heading: "QUESTION 4?",
       description:
-        "ckdkck Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa soluta, voluptatum magnam sed explicabo dicta quod porro quae. Quaerat minus optio eum, hic aspernatur quisquam voluptates doloremque unde voluptatum!",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa soluta, voluptatum magnam sed explicabo dicta quod porro quae. Quaerat minus optio eum, hic aspernatur quisquam voluptates doloremque unde voluptatum!",
     },
     {
       id: 5,
-      heading: "Something",
+      heading: "QUESTION 5?",
       description:
-        "ckdkck Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa soluta, voluptatum magnam sed explicabo dicta quod porro quae. Quaerat minus optio eum, hic aspernatur quisquam voluptates doloremque unde voluptatum!",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi ipsa soluta, voluptatum magnam sed explicabo dicta quod porro quae. Quaerat minus optio eum, hic aspernatur quisquam voluptates doloremque unde voluptatum!",
     },
   ];
 

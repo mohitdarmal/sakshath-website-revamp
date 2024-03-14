@@ -18,7 +18,7 @@
 .why_sakshath_content1 {
   background: rgb(241 241 241);
   padding: 25px;
-  min-height: 480px;
+  min-height: 500px;
 
   img {
     background: #fff;
@@ -38,8 +38,9 @@
     color: #fff;
     z-index: 1;
     position: relative;
-    margin-top: -6px;
+    margin-top: -24px;
     text-transform: uppercase;
+    min-height: 80px;
   }
   p {
     margin-top: 72px;

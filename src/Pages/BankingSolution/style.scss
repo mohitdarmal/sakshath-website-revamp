@@ -27,6 +27,14 @@
   }
 }
 
+.banking_img img{
+  transition: .5s;
+  &:hover{
+    transition: .5s;
+    transform: scale(1.05,1.04);
+  }
+}
+
 .banking_upper_heading {
   padding-bottom: 140px;
   padding-top: 80px;
