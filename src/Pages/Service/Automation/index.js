@@ -49,6 +49,7 @@ import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
+import ServicePopup from "../../../Components/ServicePopup";
 
 const Automation = () => {
   const menu = [
@@ -203,6 +204,12 @@ const Automation = () => {
 
   return (
     <>
+
+    
+<ServicePopup  popUpHeading={
+  "Automation Popup"
+  
+}/>
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Automation"

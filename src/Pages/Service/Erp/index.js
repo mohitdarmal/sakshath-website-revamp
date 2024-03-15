@@ -49,6 +49,7 @@ import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Col, Container, Row } from "react-bootstrap";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
+import ServicePopup from "../../../Components/ServicePopup";
 
 const Erp = () => {
   const whyDEVOPS = [
@@ -134,6 +135,11 @@ const Erp = () => {
 
   return (
     <>
+
+<ServicePopup  popUpHeading={
+  "ERP Popup"
+  
+}/>
       <IndustriesPopup show={modalShow} onHide={() => setModalShow(false)} />
 
       <BreadCumb imgUrl={ABOUT_BANNER} title="ENTERPRISE RESOURCE PLANNING " />

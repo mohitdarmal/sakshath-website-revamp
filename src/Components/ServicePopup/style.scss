@@ -1,0 +1,58 @@
+@import "../../Assets/saas/Main.scss";
+
+.newsletter_close_btn {
+    svg{
+    font-size: 34px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #e51212;
+    cursor: pointer;
+    &:hover{
+        color: $ball_blue_color;
+    }
+}
+}
+
+.newsletter_sec{
+    img{
+        width: 230px;
+    }
+    h4 {
+        font-family: $rajdhani_font;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 25px;
+    }
+}
+
+.newsletter_sec {
+    // padding: 20px 40px 40px 40px;
+    padding: 30px;
+}
+
+.subscription_form.newsletter_form{
+    display: block;
+
+
+    .input-group{border: 1px solid #bcbcbc;}
+
+    .input-group-text, input{
+        height: 55px;
+        padding: 10px;
+    }
+
+    .newsletter_submit{
+        text-align: center;
+
+        button{
+            margin-left: 0;
+            width: 100%;
+            margin-bottom: 20px;
+            &:hover{
+                background-color: green;
+            }
+        }
+    }
+}

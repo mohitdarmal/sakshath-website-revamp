@@ -69,6 +69,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CallToAction from "../../Components/CallToAction";
+import SeecertificatePopup from "../../Components/SeecertificatePopup";
 
 export const Home = () => {
   const textSlider = useRef();
@@ -131,6 +132,22 @@ export const Home = () => {
     setAchivementHome(achivementData);
   }, []);
 
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleSeeCertificate=()=>{
+    // const [showModal, setShowModal] = useState(true);
+    setShowModal(false);
+  }
+
+  
+// onHide(()=>{
+//   setShowModal(false);
+// })
+
+const handleCloseModal=()=>{
+  setShowModal(false);
+}
   return (
     <>
       {/* @@@@@@ Banner Video start @@@@@@ */}
@@ -478,7 +495,9 @@ export const Home = () => {
 
             <div className="row mt-4 pt-2">
               <div className="col-md-4 d-flex ">
-                <Link>
+                <Link onClick={()=>{
+                  setShowModal(true)
+                }}>
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -487,7 +506,15 @@ export const Home = () => {
                       <div className="content">
                         <h3>ISO 27001</h3>
                         <p>2013 (Information Security Management System)</p>
-                        <p className="learn_more">See Certificate</p>
+
+
+                        <button  style={{background:"none", border:'none', outline:'none'}}> <p className="learn_more">
+
+                        See Certificate </p>
+       
+
+                       </button>
+
                       </div>
                     </div>
                   </Fade>
@@ -1494,6 +1521,10 @@ export const Home = () => {
           </div>
         </div>
       </section> */}
+
+      <SeecertificatePopup  show={showModal} onHide={handleCloseModal} popUpHeading={
+                          "ISO Certificate"
+                        } />   
     </>
   );
 };

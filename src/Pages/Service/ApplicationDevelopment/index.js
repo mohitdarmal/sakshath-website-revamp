@@ -29,6 +29,9 @@ import Faq from "../../../Components/Faq";
 import ServiceContactForm from "../../../Components/ServiceContactForm";
 import { Fade } from "react-awesome-reveal";
 
+// import servicePopup from "../../../Components/ServicePopup";
+import ServicePopup from '../../../Components/ServicePopup'
+
 const ApplicationDevelopment = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -42,6 +45,12 @@ const ApplicationDevelopment = () => {
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Application Development"
       />
+
+<ServicePopup  popUpHeading={
+  "Application Development Popup"
+  
+}/>
+
 
       {/* @@@@@ SECTION- App Development Start @@@@@@ */}
       <section className="why_choose_app_dev_sec">
@@ -375,6 +384,8 @@ const ApplicationDevelopment = () => {
           </div>
         </div>
       </section>
+
+      {/* <servicePopup/> */}
     </>
   );
 };
