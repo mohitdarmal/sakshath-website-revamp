@@ -7,7 +7,7 @@ import { FaRegUser, FaPhone } from "react-icons/fa";
 
 import "./style.scss";
 
-const SeecertificatePopup = (props) => {
+const SeeCertificatePopup = (props) => {
     console.log("see here", props)
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
@@ -28,24 +28,14 @@ const SeecertificatePopup = (props) => {
     // console.log("Email submitted:", email);
   };
 
-  useEffect(() => {
-    // Open the modal after 20 seconds
-    const timeoutId = setTimeout(() => {
-      setShowModal(true);
-    }, 20); // 20 seconds in milliseconds
-
-    // Clear the timeout if the component unmounts
-    return () => clearTimeout(timeoutId);
-  }, []); // The empty dependency array ensures that this effect runs only once on mount
-
 //   show={showModal} onHide={handleClose}
 
   return (
     <Modal  centered  {...props}>
+      <Modal.Header closeButton>
+        <div className="newsletter_close_btn">  </div>
+      </Modal.Header>
       <Modal.Body className="newsletter_sec">
-        <div  className="newsletter_close_btn">
-          <IoCloseCircle />
-        </div>
         <div className="text-center mt-md-4">
           <img className="img-fluid" src={NEWSLETTER_POPUP} />
         </div>
@@ -147,6 +137,6 @@ const SeecertificatePopup = (props) => {
   );
 };
 
-export default SeecertificatePopup;
+export default SeeCertificatePopup;
 
 

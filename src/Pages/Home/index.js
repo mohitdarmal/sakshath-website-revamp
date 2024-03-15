@@ -69,7 +69,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CallToAction from "../../Components/CallToAction";
-import SeecertificatePopup from "../../Components/SeecertificatePopup";
+import SeeCertificatePopup from "../../Components/SeecertificatePopup";
 
 export const Home = () => {
   const textSlider = useRef();
@@ -134,16 +134,6 @@ export const Home = () => {
 
 
   const [showModal, setShowModal] = useState(false);
-
-  const handleSeeCertificate=()=>{
-    // const [showModal, setShowModal] = useState(true);
-    setShowModal(false);
-  }
-
-  
-// onHide(()=>{
-//   setShowModal(false);
-// })
 
 const handleCloseModal=()=>{
   setShowModal(false);
@@ -1522,7 +1512,7 @@ const handleCloseModal=()=>{
         </div>
       </section> */}
 
-      <SeecertificatePopup  show={showModal} onHide={handleCloseModal} popUpHeading={
+      <SeeCertificatePopup  show={showModal} onHide={handleCloseModal} popUpHeading={
                           "ISO Certificate"
                         } />   
     </>
