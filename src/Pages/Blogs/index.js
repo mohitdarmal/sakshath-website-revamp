@@ -68,7 +68,7 @@ const Blog = () => {
             blogDescription:"Composable ERP solutions represent a cutting-edge approach to enterprise resource planning, emphasizing modularity and flexibility in system architecture. Significance of Future-Proofing, Flexibility, and Agility in Distribution. The dynamics of the distribution industry necessitate adaptive strategies. Composable ERP solutions play a pivotal role in ensuring distributors are equipped with future-proofing capabilities, flexibility, and the agility required to navigate the ever-evolving market.",
             tags:["Technology", "Service", "IT", "Development"],
             blogImg:require("../../Assets/images/blog5_img.png"),
-            blogImg_blog_detail_img:require("../../Assets/images/blog5_img.png"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog5_detailimg.png"),
             blogAuthor:"wqertyu",
             
             blogDate:"8 Feb 2024"
@@ -81,7 +81,7 @@ const Blog = () => {
             blogDescription:"In the intricate world of manufacturing, Enterprise Resource Planning (ERP) is a comprehensive software solution designed to integrate and manage core business processes. This includes everything from production and procurement to finance and human resources. The contemporary manufacturing landscape demands a delicate balance between speed and quality in bringing new products to market. This article explores how ERP solutions play a pivotal role in achieving this equilibrium, providing manufacturers with the tools to streamline processes and enhance outcomes.",
             tags:["Technology", "Service"],
             blogImg:require("../../Assets/images/blog6_img.png"),
-            blogImg_blog_detail_img:require("../../Assets/images/blog5_img.png"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog6_detailimg.png"),
             blogAuthor:"wqertyu",
             blogDate:"8 Feb 2024"
 

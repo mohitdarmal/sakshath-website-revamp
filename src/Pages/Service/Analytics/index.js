@@ -514,9 +514,9 @@ export const Analytics = () => {
                 <div className="ai_datascience_content_box">
                   <div className="ai_datascience_content">
                     <div className="row">
-                      <div className="col-md-6 ai_datascience_content_col">
+                      <div className="col-md-6 ai_datascience_content_col ">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box ai_box1_height">
+                          <div className="ai_datascience_content_col_box ai_box1_height horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_01} alt="" />
                             </div>
@@ -547,7 +547,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box ai_box2_height">
+                          <div className="ai_datascience_content_col_box ai_box2_height horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_02} alt="" />
                             </div>
@@ -573,7 +573,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box">
+                          <div className="ai_datascience_content_col_box horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_03} alt="" />
                             </div>
@@ -605,7 +605,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box ai_box4_height">
+                          <div className="ai_datascience_content_col_box ai_box4_height horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_04} alt="" />
                             </div>
