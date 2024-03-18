@@ -70,6 +70,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CallToAction from "../../Components/CallToAction";
 import SeeCertificatePopup from "../../Components/SeecertificatePopup";
+import { Helmet } from "react-helmet";
 
 export const Home = () => {
   const textSlider = useRef();
@@ -140,6 +141,10 @@ const handleCloseModal=()=>{
 }
   return (
     <>
+     <Helmet>
+        <title>Home - Sakshath</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       {/* @@@@@@ Banner Video start @@@@@@ */}
       <section className="tagline_sec">
         <div className="video_background">

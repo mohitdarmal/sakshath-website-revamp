@@ -1,447 +1,393 @@
 @import "../../Assets/saas/Main.scss";
 
 /// @@@@@@@@@@@@@   experience section css starts @@@@@@@@@
-.experience_section{
-     padding-top: 90px;
-     padding-bottom: 90px;
-     
-    .experience_section_container{
+.experience_section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  .experience_section_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .experience_text .upper_textbox {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+
+    .upper_left_textbox {
+      font-size: 300px;
+      font-family: $rajdhani_font;
+      font-weight: 700;
+      color: $ball_blue_color;
+      line-height: 85px;
+    }
+
+    .upper_right_textbox {
+      padding-left: 35px;
+      font-family: $rajdhani_font;
+
+      span {
+        font-size: 18px;
+        font-weight: 600;
+        color: gray;
+        margin-bottom: 5px;
+      }
+      h2 {
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+      blockquote {
+        padding-left: 25px;
+        border-left: 4px solid #0071dc;
+      }
+    }
+
+    .happy_customer_number {
+      h2 {
+        font-family: $rajdhani_font;
+      }
+    }
+  }
+}
+
+/// @@@@@@@@@@@@@   experience section css ends @@@@@@@@@
+
+//  @@@@@@@@@   Ready to get our services  css starts  @@@@@@@@@
+
+.ready_to_get_our_professional_services {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(../../Assets/images/Service_ready_to_get_our_services.png);
+  background-repeat: no-repeat;
+
+  .heading_box {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+    .text_box {
+      h3 {
+        font-size: 52px;
+        line-height: 75px;
+        color: #fff;
+        text-decoration: underline;
+        margin-bottom: 20px;
+        font-family: $rajdhani_font;
+        font-weight: 600;
+      }
+
+      .buttons_box {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        
-        margin-right: -15px;
-        margin-left: -15px;}
+        justify-content: center;
+        gap: 20px;
+      }
 
-        
-            
-            
-            
-            .experience_text .upper_textbox{
-                display: flex;
-                align-items: center;
-                border-bottom: 1px solid lightgray;
-                padding-bottom: 15px;
-                margin-bottom: 50px;
+      li {
+        list-style-type: none;
+      }
 
-                .upper_left_textbox{
-                font-size: 300px;
-                font-family: $rajdhani_font;
-                font-weight: 700;
-                color: $ball_blue_color;
-                line-height: 85px;}
+      .meet_button {
+        padding: 12px 35px;
+        background: white;
+        color: $light_navy_blue;
+        border-radius: 5px;
+        font-family: $rajdhani_font;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-weight: 700;
+        display: inline-block;
+      }
 
-                .upper_right_textbox{
-                    padding-left: 35px;
-                    font-family: $rajdhani_font;
+      .meet_button:hover {
+        text-decoration: none;
+      }
 
-                    span{
-                        
-                        font-size: 18px;
-                        font-weight: 600;
-                        color: gray;
-                        margin-bottom: 5px;
-        
-                        
-                    }
-                    h2{
-                        font-size: 30px;
-                        line-height: 32px;
-                        margin-bottom: 15px;
-                        font-weight: 700;
-                    }
-                    blockquote{
-                        padding-left: 25px;
-                        border-left: 4px solid #0071dc;
-                    }
-
-                    
-
-
-                }
-
-                 .happy_customer_number{
-                    h2 {
-                        font-family: $rajdhani_font;
-                    }
-                }
-
-
-
-        
-    
-    }}
-
-    /// @@@@@@@@@@@@@   experience section css ends @@@@@@@@@
-
-    //  @@@@@@@@@   Ready to get our services  css starts  @@@@@@@@@
-
-    .ready_to_get_our_professional_services{
-        padding-top: 90px;
-        padding-bottom: 140px;
-        background-image: url(../../Assets/images/Service_ready_to_get_our_services.png);
-        background-repeat: no-repeat;
-
-        .heading_box{
-            padding-left: 15px;
-            padding-right: 15px;
-            text-align: center;
-
-        
-        
-
-        .text_box{
-            h3{
-                font-size: 60px;
-                line-height: 75px;
-                color: #fff;
-                text-decoration: underline;
-                margin-bottom: 20px;
-                font-family: $rajdhani_font;
-                font-weight: 600;}
-
-                .buttons_box{
-                    display:flex;
-                    justify-content: center;
-                    gap: 20px;
-                }
-
-
-                 li{
-                    list-style-type: none;
-                    
-                
-                }
-
-
-                .meet_button {
-                    padding: 12px 35px;
-                    background: $light_navy_blue;
-                    color: white;
-                    border-radius: 5px;
-                    font-family: $rajdhani_font;
-                    text-transform: uppercase;
-                    text-decoration: underline;
-                    font-weight: 700;
-                    display: inline-block;
-                  }  
-                  
-                  .meet_button:hover{
-                    text-decoration: none;
-                  }
-
-                  .our_services_button{
-                    padding: 12px 35px;
-                   background-color: #32a4d5;
-                    color: white;
-                    border-radius: 5px;
-                    font-family: $rajdhani_font;
-                    text-transform: uppercase;
-                    text-decoration: underline;
-                    font-weight: 700;
-                    display: inline-block;
-
-                  }
-                  .our_services_button:hover{
-                  text-decoration: none;
-            }
-        }
+      .our_services_button {
+        padding: 12px 35px;
+        background-color: #32a4d5;
+        color: white;
+        border-radius: 5px;
+        font-family: $rajdhani_font;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-weight: 700;
+        display: inline-block;
+      }
+      .our_services_button:hover {
+        text-decoration: none;
+      }
     }
-    
+  }
+}
+
+// @@@@@@@@@   Ready to get our services css ends   @@@@@@@@@@
+
+/// @@@@@@@@    IT Benefits css starts  @@@@@@@@@@@
+
+.it_benefits {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .it_benefits_box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .img_holder_left_top_img img {
+    border-radius: 0 117.5px 117.5px 117.5px;
+    margin-bottom: 40px;
+  }
+
+  .img_holder_left_bottom_img img {
+    border-radius: 117.5px 117.5px 117.5px 0;
+    margin-top: 24px;
+  }
+
+  .it_benefits_box_area {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+  }
+
+  .right_box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .it_benefits_text_wrapper {
+    padding-left: 70px;
+    margin-bottom: 50px;
+
+    .it_benefits_heading_section {
+      margin-bottom: 25px;
+
+      .heading_content {
+        margin-top: 25px;
+        text-decoration: underline;
+      }
     }
 
-    // @@@@@@@@@   Ready to get our services css ends   @@@@@@@@@@
+    .it_benefit_title {
+      background-color: $ball_blue_color;
+      color: white;
+      font-family: $rajdhani_font;
+      padding: 5px 15px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
 
-    /// @@@@@@@@    IT Benefits css starts  @@@@@@@@@@@
-    
-    .it_benefits{
-        padding-top: 40px;
-        padding-bottom: 40px;
+    .technology_list {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
 
-        .it_benefits_box{
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: -15px;
-            margin-right:-15px;
-        }
+    .left_side_technology,
+    .right_side_technology {
+      flex: 1;
+      margin-left: 20px;
 
-        .img_holder_left_top_img img{
-             border-radius: 0 117.5px 117.5px 117.5px;
-             margin-bottom: 40px;
-        } 
-
-        .img_holder_left_bottom_img img{
-            border-radius: 117.5px 117.5px 117.5px 0;
-            margin-top: 24px;
-        }
-
-        
-
-        
-        .it_benefits_box_area{
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-bottom: 25px;
-        }
-
-        .right_box{
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        .it_benefits_text_wrapper{
-            padding-left: 70px;
-            margin-bottom: 50px;
-
-            .it_benefits_heading_section{
-                margin-bottom: 25px;
-
-                .heading_content{
-                    margin-top: 25px;
-                    text-decoration: underline;
-                }
-            }
-
-            .it_benefit_title{
-                background-color: $ball_blue_color;
-                color: white;
-                font-family: $rajdhani_font;
-                padding: 5px 15px;
-                border-radius: 5px;
-                font-weight: 700;
-                font-size: 20px;
-                text-transform: uppercase;
-                 
-
-            }
-
-            .technology_list{
-                display: flex;
-                justify-content: space-between;
-                padding: 0
-            }
-
-            .left_side_technology, .right_side_technology{
-                flex:1;
-                margin-left: 20px;
-
-                ul{
-                    padding: 0;
-                    list-style-type: none;
-                    margin-top: 10px;
-                    margin-bottom: 20px;
-                    color: #616161;
-                }
-                li{
-                    margin-bottom: 15px;
-
-                }
-                li:before{
-                    // content: "\f058";
-                    // position: relative;
-                    // font-family: "FontAwesome";
-                    // padding-right: 15px;
-                    // font-size: 22px;
-                    // color: #7141b1;      
-                    content: "\f111";
+      ul {
+        padding: 0;
+        list-style-type: none;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #616161;
+      }
+      li {
+        margin-bottom: 15px;
+      }
+      li:before {
+        // content: "\f058";
+        // position: relative;
+        // font-family: "FontAwesome";
+        // padding-right: 15px;
+        // font-size: 22px;
+        // color: #7141b1;
+        content: "\f111";
         position: absolute;
         font-family: "FontAwesome";
         //font-size: 22px;
         width: 15px;
-    height: 15px;
-    background: #32a4d533;
-    font-size: 9px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 15px;
-    color: #32a4d5;
-    margin-left: -22px;
-        margin-top: 5px;          
-
-
-                }
-
-            }
-            .it_benefits_button_box{
-                padding-left: 0px; 
-            }
-
-            
-        }
-
+        height: 15px;
+        background: #32a4d533;
+        font-size: 9px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 15px;
+        color: #32a4d5;
+        margin-left: -22px;
+        margin-top: 5px;
+      }
     }
-
-    /// @@@@@@@@    IT Benefits css ends  @@@@@@@@@@@
-
-    //  media query starts//////
-    @media screen and (max-width:480px){
-        .experience_section{
-            padding-top: 90px;
-            padding-bottom: 90px;
-            
-          .upper_textbox{
-            flex-direction: column;
-            align-items: flex-start;
-            display: flex;
-    
-            border-bottom: 1px solid rgba(20,29,56,.07);
-            padding-bottom: 15px;
-            margin-bottom: 50px;
-        
-           .upper_left_textbox {
-           margin-bottom: 60px;
-           line-height: .5;}
-
-          }
-          .counter_wrapper{
-            .counter_row{
-            display: flex;
-            flex-wrap: wrap;
-          }
-        }
+    .it_benefits_button_box {
+      padding-left: 0px;
     }
-
-
- 
- .ready_to_get_our_professional_services {
-   background-repeat: no-repeat;
-   position:relative;
- 
- .heading_box .text_box{
-      h3{
-        font-size: 30px;}
-      
- 
- .buttons_box {
-    display: block;
-
-       
-    .meet_button{
-        margin-bottom: 25px;
-    }
+  }
 }
 
+/// @@@@@@@@    IT Benefits css ends  @@@@@@@@@@@
 
-}
+//  media query starts//////
+@media screen and (max-width: 480px) {
+  .experience_section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    .upper_textbox {
+      flex-direction: column;
+      align-items: flex-start;
+      display: flex;
+
+      border-bottom: 1px solid rgba(20, 29, 56, 0.07);
+      padding-bottom: 15px;
+      margin-bottom: 50px;
+
+      .upper_left_textbox {
+        margin-bottom: 60px;
+        line-height: 0.5;
+      }
     }
+    .counter_wrapper {
+      .counter_row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
 
+  .ready_to_get_our_professional_services {
+    background-repeat: no-repeat;
+    position: relative;
 
-.heading_content{
+    .heading_box .text_box {
+      h3 {
+        font-size: 30px;
+      }
+
+      .buttons_box {
+        display: block;
+
+        .meet_button {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+
+  .heading_content {
     margin-top: 30px;
+  }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* For Tab Screen  */
+  .it_benefits {
+    // display: block;
 
-    }
+    .it_benefits_box {
+      display: flex;
 
-@media screen and (min-width:768px) and (max-width:1023px){
-        /* For Tab Screen  */
-.it_benefits{
-   // display: block;
-
-    .it_benefits_box{
-        display: flex;
-
-        .it_benefits_box_area{
-
-            .img_holder_left_bottom_img img{
-                margin-top: -10px; 
-            }
-
-            .img_holder_right_img img{
-                margin-top: 35px ;
-            }
-        } 
-        .img_happy_customer img{
-            margin-left: 30px;
-        }
-        
-
-        
-    
-
-    
-        
-
-
-             
-
-
-
-}
-}   
-
-.experience_section{
-    margin: 80px 10px 0px 10px;
-    .experience_section_container{
-        display: inline;
-    }
-    
-    .upper_textbox{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        .upper_left_textbox{
-            margin-bottom: 60px;
-            margin-left: -400px;
-        }
-        .upper_right_textbox{
-            margin: 25px 0px 12px 20px;
+      .it_benefits_box_area {
+        .img_holder_left_bottom_img img {
+          margin-top: -10px;
         }
 
-    }
-    .counter_wrapper{
-        margin-bottom: 30px;
-    }
-    .counter_row{
+        .img_holder_right_img img {
+          margin-top: 35px;
+        }
+      }
+      .img_happy_customer img {
         margin-left: 30px;
+      }
     }
-    
+  }
+
+  .experience_section {
+    margin: 80px 10px 0px 10px;
+    .experience_section_container {
+      display: inline;
+    }
+
+    .upper_textbox {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .upper_left_textbox {
+        margin-bottom: 60px;
+        margin-left: -400px;
+      }
+      .upper_right_textbox {
+        margin: 25px 0px 12px 20px;
+      }
+    }
+    .counter_wrapper {
+      margin-bottom: 30px;
+    }
+    .counter_row {
+      margin-left: 30px;
+    }
+  }
 }
-    
+
+@media screen and (max-width: 480px) {
+  /* For Mobile Screen  */
+
+  .it_benefits {
+    .left_side {
+      margin: 35px 35px;
+    }
+    .img_holder_left_top_img img {
+      display: none;
+    }
+    .img_holder_left_bottom_img img {
+      display: none;
+    }
+
+    .img_holder_right_img img {
+      display: none;
+    }
+    .it_benefits_text_wrapper {
+      margin-left: -25px;
+    }
+  }
 }
 
-@media screen and (max-width:480px){
-    /* For Mobile Screen  */
+/// @@@@@@@@@@   meddia query ends@@@@@@@
 
-.it_benefits{
+/// @@@@@@@@@ client_logo css starts @@@@@@
+.partner_logo_section {
+  padding: 80px 80px 80px 80px;
+  // background-image: linear-gradient(to top,#ffffff,#b5d9ef);
 
-    .left_side{
-        margin: 35px 35px;
-    }
-    .img_holder_left_top_img img{
-        display: none;
+  //    .partner_logo_tab {
 
-    }
-    .img_holder_left_bottom_img img{
-        display: none;
-    }
+  //    }
+}
+//@@@@@@ client logo css ends @@@@@@@@
 
-    .img_holder_right_img img{
-        display: none;
-    }
-    .it_benefits_text_wrapper{
-        margin-left: -25px ;}
 
+
+// fixedpopup starts
+.fixedpopup button{
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    background: $ball_blue_color;
+    border: none;
 
 }
-}
-
-    /// @@@@@@@@@@   meddia query ends@@@@@@@
-
-    
-
-   /// @@@@@@@@@ client_logo css starts @@@@@@
-.partner_logo_section{
-    padding: 80px 80px 80px 80px;
-    // background-image: linear-gradient(to top,#ffffff,#b5d9ef);
-
-//    .partner_logo_tab {
-
-    
-       
-    
-
-//    }
-}  
- //@@@@@@ client logo css ends @@@@@@@@ 

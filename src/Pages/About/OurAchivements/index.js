@@ -4,6 +4,7 @@ import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton
 import { Fade } from "react-awesome-reveal";
 import { ACHIVMENTS_ONE } from "./Constant";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const OurAchivement = () => {
   const achivementItem = [
@@ -49,6 +50,11 @@ const OurAchivement = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Our-Achivement</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
+    
       <section className="our_achievment">
         <div className="container">
           <div className="row">

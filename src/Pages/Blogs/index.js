@@ -9,6 +9,7 @@ import BreadCumb from "../../Components/Breadcumb";
 import { ABOUT_BANNER, CARRER_IMG } from '../../Components/Breadcumb/Constant';
 import { IoIosArrowBack, IoIosArrowForward  } from "react-icons/io";
 import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { Helmet } from 'react-helmet';
 
 
 const Blog = () => {
@@ -242,6 +243,10 @@ const blogCountChangePage = (data) => {
 
   return (
     <>
+     <Helmet>
+        <title>Our-Blogs</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
      <BreadCumb imgUrl={ABOUT_BANNER} title="Blogs" className="img-fluid" />
       <section className='blog_page'>
         <div className="container blog_box_container">

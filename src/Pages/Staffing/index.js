@@ -15,9 +15,14 @@ import Heading from "../../Components/Utils/Heading";
 import CallToAction from "../../Components/CallToAction";
 import { Fade } from "react-awesome-reveal";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
+import { Helmet } from "react-helmet";
 const Staffing = () => {
   return (
     <>
+     <Helmet>
+        <title>Staffing</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <Breadcumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Staffing"
@@ -224,9 +229,7 @@ const Staffing = () => {
                   consultant on a Full-Time basis at some point in the future.
                   The company has the opportunity to evaluate the performance of
                   the contractor before making a formal offer of employment
-                  under a contract-to-hire arrangement. Before moving on to a
-                  full-time position, the consultant will be employed as a
-                  contractor for a designated evaluation period.
+                  under a contract-to-hire arrangement.
                 </p>
               </div>
             </div>

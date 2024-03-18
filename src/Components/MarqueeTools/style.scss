@@ -1,0 +1,15 @@
+@import "../../Assets/saas/Main.scss";
+
+.marquee_scroll {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  background: $ball_blue_color;
+  padding: 10px;
+  font-size: 24px;
+
+  span {
+    font-family: $rajdhani_font;
+    font-weight: bold;
+  }
+}

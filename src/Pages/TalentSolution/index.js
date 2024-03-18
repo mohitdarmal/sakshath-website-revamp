@@ -10,10 +10,15 @@ import { Link } from "react-router-dom";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import { Col } from "react-bootstrap";
 import { MOBILE_APP_DEVELOPMENT } from "../Service/ApplicationDevelopment/Constant";
+import { Helmet } from "react-helmet";
 
 const TalentSolution = () => {
   return (
     <>
+     <Helmet>
+        <title>Talent Solution</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <BreadCumb imgUrl={ABOUT_BANNER} title="Talent Solution" />
 
       {/* Managed Team Section Start */}
