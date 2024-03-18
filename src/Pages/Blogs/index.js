@@ -64,22 +64,24 @@ const Blog = () => {
         },
         {
             id:5,
-            blogTitle:"Composable ERP solutions: providing distributors with future-proofing, flexibility, and agility",
+            blogTitle:"The Future of Business Applications: Power Apps & AI ",
             blogDescription:"Composable ERP solutions represent a cutting-edge approach to enterprise resource planning, emphasizing modularity and flexibility in system architecture. Significance of Future-Proofing, Flexibility, and Agility in Distribution. The dynamics of the distribution industry necessitate adaptive strategies. Composable ERP solutions play a pivotal role in ensuring distributors are equipped with future-proofing capabilities, flexibility, and the agility required to navigate the ever-evolving market.",
             tags:["Technology", "Service", "IT", "Development"],
-            blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
+            blogImg:require("../../Assets/images/blog5_img.png"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog5_img.png"),
             blogAuthor:"wqertyu",
-            blogAuthor_img:require("../../Assets/images/javalogo.png"),
+            
             blogDate:"8 Feb 2024"
 
 
         },
         {
             id:6,
-            blogTitle:"ERP Solutions Help Manufacturers Get New Products to Market Faster - and Better",
+            blogTitle:"The Impact of Digital Clutter on Mobile App Development Efficiency",
             blogDescription:"In the intricate world of manufacturing, Enterprise Resource Planning (ERP) is a comprehensive software solution designed to integrate and manage core business processes. This includes everything from production and procurement to finance and human resources. The contemporary manufacturing landscape demands a delicate balance between speed and quality in bringing new products to market. This article explores how ERP solutions play a pivotal role in achieving this equilibrium, providing manufacturers with the tools to streamline processes and enhance outcomes.",
             tags:["Technology", "Service"],
-            blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
+            blogImg:require("../../Assets/images/blog6_img.png"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog5_img.png"),
             blogAuthor:"wqertyu",
             blogDate:"8 Feb 2024"
 
