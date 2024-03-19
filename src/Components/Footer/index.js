@@ -83,7 +83,7 @@ const Footer = () => {
             <div className="col-md-3 ftr_col1">
               <Fade direction="up">
                 {" "}
-                <img className="pb-4" src={FOOTER_LOGO} alt="" />{" "}
+                <img className="pb-4 img-fluid" src={FOOTER_LOGO} alt=""   />{" "}
               </Fade>
               <Fade direction="up" delay={50}>
                 {" "}
@@ -105,7 +105,7 @@ const Footer = () => {
                 <Fade direction="up" delay={150}>
                   <li className="mt-3 ftr_addr ">
                     <p>
-                    Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV, Hebbal ORR, Bengaluru – 560045.
+                    Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV, Hebbal ORR, &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Bengaluru – 560045.
                     </p>
                   </li>{" "}
                 </Fade>
@@ -124,22 +124,22 @@ const Footer = () => {
               <ul className="">
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
-                    <Link to="/">Application Development</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/">Automation</Link>
+                    <Link to="/">About us</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Managed Services</Link>
+                    <Link to="/about">Teams</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">ERP</Link>
+                    <Link to="/about">Achievements</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Integration</Link>
+                    <Link to="/about">Careers</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Analytics</Link>
+                    <Link to="/about">Contact us</Link>
                   </li>
                 </Fade>
               </ul>
@@ -149,22 +149,22 @@ const Footer = () => {
               <ul>
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
-                    <Link to="">About Company</Link>
+                    <Link to="">Application Development</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Latest News & Blog</Link>
+                    <Link to="/about">RPA</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Professional Members</Link>
+                    <Link to="/about">Deveops/testing</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Our Achievment</Link>
+                    <Link to="/about">BI + Dashboard</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Company Journey</Link>
+                    <Link to="/about">ERP</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Meet Out Teams</Link>
+                    <Link to="/about">Banking Solution</Link>
                   </li>
                 </Fade>
               </ul>
@@ -175,19 +175,19 @@ const Footer = () => {
               <ul className="font-medium">
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
-                    <Link to="">Premium Support</Link>
+                    <Link to="">Talent Solution</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/talent-solution">Talent Solution</Link>
+                    <Link to="/talent-solution">Staffing</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Help & FAQ</Link>
+                    <Link to="/about">Managed Services</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Pricing and plans</Link>
+                    <Link to="/about">Cookies</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Cookies Policy</Link>
+                    <Link to="/about">dfghjkl</Link>
                   </li>
                   <li className="mt-3">
                     <Link to="/privacy">Privacy Policy</Link>

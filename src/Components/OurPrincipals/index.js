@@ -149,10 +149,10 @@ const OurPrincipals = () => {
 
                     <p>
                       {" "}
-                      Our customers rely on us as we provide high – quality,
+                      Our customers rely on us as we provide high quality,
                       reliable products which have control over all their
                       processes which are rigorously managed by our Quality
-                      management systems.{" "}
+                      Management System.{" "}
                     </p>
 
                     {/* <Link>Read More</Link> */}
@@ -171,7 +171,7 @@ const OurPrincipals = () => {
                     <p>
                       {" "}
                       In order to efficiently create and produce excellent
-                      products for our clients, Sakshath’s professional team of
+                      products for our clients, Sakshath Technologies' professional team of
                       designers follow a simple process that makes working with
                       us easy.{" "}
                     </p>

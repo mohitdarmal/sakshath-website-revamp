@@ -20,7 +20,7 @@ const HappyClients = () => {
                     <h2>
                       <CountUp
                         start={0}
-                        end={500}
+                        end={50}
                         duration={3}
                         separator=""
                         decimal=","
@@ -30,7 +30,7 @@ const HappyClients = () => {
                         // scrollSpyOnce={true}
                       ></CountUp>
                     </h2>
-                    <h5>Happy Client</h5>
+                    <h5>Happy Clients</h5>
                   </div>
                 </Fade>
               </div>
@@ -54,7 +54,7 @@ const HappyClients = () => {
                 useEasing={true}
               ></CountUp>
                     </h2>
-                    <h5>Professional work</h5>
+                    <h5>Experienced Professionals </h5>
                   </div>
                 </Fade>
               </div>
@@ -69,7 +69,7 @@ const HappyClients = () => {
                     <h2>
                       <CountUp
                         start={0}
-                        end={60}
+                        end={15}
                         duration={3}
                         separator=""
                         decimal=","
@@ -94,7 +94,7 @@ const HappyClients = () => {
                     <h2>
                       <CountUp
                         start={0}
-                        end={1000}
+                        end={250}
                         duration={3}
                         separator=""
                         decimal=","

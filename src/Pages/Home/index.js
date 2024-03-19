@@ -572,8 +572,7 @@ const handleCloseModal=()=>{
                       <div className="content">
                         <h3 className="">Talend Gold Partner</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Odit vitae.
+                        We leverage Talend's unified platform capabilities across integrated domains.
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -594,8 +593,7 @@ const handleCloseModal=()=>{
                       <div className="content">
                         <h3>QLIK</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
+                        Licensed with Qlik for various access types and core-based models.
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -616,8 +614,7 @@ const handleCloseModal=()=>{
                       <div className="content">
                         <h3>Amazon AWS Partner</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
+                        We leverage AWS programs, expertise, and tools to build solutions for customers.
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -927,7 +924,7 @@ const handleCloseModal=()=>{
                     <SubTitle SubTitle="Who we are" />
                   </Fade>
                   <Heading
-                    heading="The Enterprise Productivity Platform For Complex Data"
+                    heading="Our Story"
                     uppercase="text-uppercase"
                   />
                 </div>
@@ -988,7 +985,7 @@ const handleCloseModal=()=>{
 
       <CallToAction
         ctaContent={
-          "Let’s connect. We’d love to hear about your project and discuss our procedure. Our executives will be at your service ASAP. "
+          "Let’s connect! We’d love to hear about your project and discuss our procedure. Our executives will be at your service. "
         }
         ctaTitle={"Let's meet us"}
       />
