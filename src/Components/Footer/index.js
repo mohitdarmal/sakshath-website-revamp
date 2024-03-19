@@ -105,7 +105,7 @@ const Footer = () => {
                 <Fade direction="up" delay={150}>
                   <li className="mt-3 ftr_addr ">
                     <p>
-                    Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV, Hebbal ORR, Bengaluru – 560045.
+                    Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV, Hebbal ORR,  Bengaluru – 560045.
                     </p>
                   </li>{" "}
                 </Fade>

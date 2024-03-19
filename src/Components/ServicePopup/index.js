@@ -45,7 +45,7 @@ const ServicePopup = (props) => {
           <IoCloseCircle />
         </div>
         <div className="text-center mt-md-4">
-          <img className="img-fluid" src={NEWSLETTER_POPUP} />
+          {/* <img className="img-fluid" src={NEWSLETTER_POPUP} /> */}
         </div>
 
         <div>
@@ -68,7 +68,7 @@ const ServicePopup = (props) => {
 
                 <Form.Control
                   type="text"
-                  placeholder=" First Name"
+                  placeholder=" Full Name"
                   //   value={fName}
                   required
                   onChange={(e) => setFormData(e.target.value)}
@@ -76,7 +76,7 @@ const ServicePopup = (props) => {
               </div>
             </Form.Group>
 
-            <Form.Group controlId="formEmail">
+            {/* <Form.Group controlId="formEmail">
               <div className="input-group">
                 <div className="input-group-prepend">
                   <span className="input-group-text">
@@ -88,6 +88,22 @@ const ServicePopup = (props) => {
                   type="text"
                   placeholder=" Last Name"
                   //   value={lName}
+                  required
+                  onChange={(e) => setFormData(e.target.value)}
+                />
+              </div>
+            </Form.Group> */}
+            <Form.Group controlId="formEmail">
+              <div className="input-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text">
+                    <FaPhone />
+                  </span>
+                </div>
+
+                <Form.Control
+                  type="tel"
+                  placeholder=" Mobile Number"
                   required
                   onChange={(e) => setFormData(e.target.value)}
                 />
@@ -113,23 +129,7 @@ const ServicePopup = (props) => {
               </div>
             </Form.Group>
 
-            <Form.Group controlId="formEmail">
-              <div className="input-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text">
-                    <FaPhone />
-                  </span>
-                </div>
-
-                <Form.Control
-                  type="tel"
-                  placeholder=" Mobile Number"
-                  //   value={phoneNo}
-                  required
-                  onChange={(e) => setFormData(e.target.value)}
-                />
-              </div>
-            </Form.Group>
+          
             </div>
 
             <div className="newsletter_submit mt-2">
