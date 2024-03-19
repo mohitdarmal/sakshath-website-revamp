@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.scss";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const AchievementDetail = () => {
   const { state } = useLocation();
@@ -47,6 +48,10 @@ const AchievementDetail = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Our-Achivement</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <section className="achievement_detail_section">
         <div className="container">
           <div className="row">

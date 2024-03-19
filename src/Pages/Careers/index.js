@@ -204,7 +204,7 @@ const Career = () => {
   return (
     <>
       <Helmet>
-        <title>About - Sakshath</title>
+        <title>Career - Sakshath</title>
         <meta name="description" content="About SEO" />
       </Helmet>
       <BreadCumb imgUrl={CARRER_IMG} title=" CAREERS" className="img-fluid" />

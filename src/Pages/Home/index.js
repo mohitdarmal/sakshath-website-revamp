@@ -70,6 +70,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CallToAction from "../../Components/CallToAction";
 import SeeCertificatePopup from "../../Components/SeecertificatePopup";
+import { Helmet } from "react-helmet";
+import BrouchurePopup from "../../Components/BoruchurePopup";
 
 export const Home = () => {
   const textSlider = useRef();
@@ -140,6 +142,10 @@ const handleCloseModal=()=>{
 }
   return (
     <>
+     <Helmet>
+        <title>Home - Sakshath</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       {/* @@@@@@ Banner Video start @@@@@@ */}
       <section className="tagline_sec">
         <div className="video_background">
@@ -498,12 +504,14 @@ const handleCloseModal=()=>{
                         <p>2013 (Information Security Management System)</p>
 
 
-                        <button  style={{background:"none", border:'none', outline:'none'}}> <p className="learn_more">
+                        {/* <button  style={{background:"none", border:'none', outline:'none'}}> */}
+                        
+                         <p className="learn_more">
 
                         See Certificate </p>
        
 
-                       </button>
+                       {/* </button> */}
 
                       </div>
                     </div>
@@ -512,7 +520,9 @@ const handleCloseModal=()=>{
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link>
+              <Link onClick={()=>{
+                  setShowModal(true)
+                }}>
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -530,7 +540,9 @@ const handleCloseModal=()=>{
 
               <div className="col-md-4">
                 <Fade direction="up" delay={10} triggerOnce>
-                  <Link>
+                <Link onClick={()=>{
+                  setShowModal(true)
+                }}>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
                         <img src={GREAT_PLACE_WORK} alt="" />
@@ -549,7 +561,9 @@ const handleCloseModal=()=>{
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link>
+                <Link onClick={()=>{
+                  setShowModal(true);
+                }}>
                   <Fade direction="up" delay={200} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -569,14 +583,16 @@ const handleCloseModal=()=>{
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link>
+                <Link onClick={()=>{
+                  setShowModal(true);
+                }}>
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
                         <img src={CLIQ_LOGO} alt="" />
                       </div>
                       <div className="content">
-                        <h3>QLIKQ</h3>
+                        <h3>QLIK</h3>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit Odit vitae.
@@ -589,7 +605,9 @@ const handleCloseModal=()=>{
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link>
+                <Link onClick={()=>{
+                  setShowModal(true)
+                }}>
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">

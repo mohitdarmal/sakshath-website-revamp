@@ -1,0 +1,1 @@
+export const NGO = require("../../Assets/images/About_NGO_IMG.png");

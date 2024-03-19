@@ -31,6 +31,8 @@ import { Fade } from "react-awesome-reveal";
 
 // import servicePopup from "../../../Components/ServicePopup";
 import ServicePopup from '../../../Components/ServicePopup'
+import MarqueeTools from "../../../Components/MarqueeTools";
+import { Helmet } from "react-helmet";
 
 const ApplicationDevelopment = () => {
   const [showModal, setShowModal] = useState(false);
@@ -41,6 +43,10 @@ const ApplicationDevelopment = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Application Development</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Application Development"
@@ -50,6 +56,8 @@ const ApplicationDevelopment = () => {
   "Application Development Popup"
   
 }/>
+
+<MarqueeTools/>
 
 
       {/* @@@@@ SECTION- App Development Start @@@@@@ */}

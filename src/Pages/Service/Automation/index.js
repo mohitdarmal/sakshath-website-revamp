@@ -50,6 +50,7 @@ import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
 import ServicePopup from "../../../Components/ServicePopup";
+import { Helmet } from "react-helmet";
 
 const Automation = () => {
   const menu = [
@@ -210,6 +211,10 @@ const Automation = () => {
   "Automation Popup"
   
 }/>
+ <Helmet>
+        <title>Automation</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Automation"

@@ -55,6 +55,7 @@ import {
 import ScrollSpy from "react-ui-scrollspy";
 import { Element, scroller } from "react-scroll";
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
+import { Helmet } from "react-helmet";
 export const Analytics = () => {
   const menu = [
     {
@@ -264,6 +265,10 @@ export const Analytics = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Analytics</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Analytics"

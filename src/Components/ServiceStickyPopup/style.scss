@@ -1,0 +1,102 @@
+@import "../../Assets/saas/Main.scss";
+
+.servicePopup .ripple .ripple-surface button {
+  float: right;
+  position: fixed;
+  background: #32a4d5;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+.modal-header h5 {
+  margin-left: 90px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 24px !important;
+  margin-left: 25% !important;
+}
+
+.servicePopup {
+  .input-group {
+    padding: 0px !important;
+  }
+ 
+}
+.input-group-text span {
+  height: 65px;
+  padding: 15px;
+}
+
+.newsletter_submit {
+  text-align: center;
+
+  Button {
+    margin-left: 0;
+    width: 100% !important;
+    margin-bottom: 20px;
+    &:hover {
+      background-color: green;
+    }
+  }
+}
+
+.input-group-text {
+  font-size: 24px;
+  background: no-repeat;
+  border: none;
+}
+
+.ripple {
+  position: fixed;
+  margin-left: 10px;
+
+  border: none;
+  margin-top: 10px;
+}
+
+.btn-close {
+  color: red;
+  border-radius: 50px;
+  // margin-left: 425px !important;
+  &:hover {
+    color: white !important;
+  }
+}
+
+.stickyScrollpopup {
+  .fixedpopup button {
+    position: fixed;
+    right: 0;
+    background: #32a4d5;
+    border: none;
+    transform: rotate(90deg);
+    margin-top: 50px;
+    margin-right: 10px;
+    z-index: 999;
+  }
+
+  .newsletter_submit button {
+    width: 90%;
+    &:hover {
+      background: green;
+    }
+  }
+}
+
+.stickyScrollpopup .modal-title {
+  margin-left: 100px !important;
+  font-family: "Rajdhani", sans-serif !important;
+  font-weight: 700;
+  font-size: 24px;
+
+  .btn-close {
+    color: red;
+    border-radius: 50px;
+    // margin-left: 425px !important;
+  }
+  input{
+    padding: 10px;
+  }
+}
