@@ -112,8 +112,7 @@ export const Home = () => {
     },
     {
       id: 2,
-      heading_Title:
-        "Analytics Vidhya - DataHack Summit 2023",
+      heading_Title: "Analytics Vidhya - DataHack Summit 2023",
       description:
         " DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data science and machinelearning enthusiasts, experts, and practitioners from around the world.",
       image: require("../../Assets/images/achivement_stall.png"),
@@ -134,15 +133,14 @@ export const Home = () => {
     setAchivementHome(achivementData);
   }, []);
 
-
   const [showModal, setShowModal] = useState(false);
 
-const handleCloseModal=()=>{
-  setShowModal(false);
-}
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Home - Sakshath</title>
         <meta name="description" content="About SEO" />
       </Helmet>
@@ -491,9 +489,11 @@ const handleCloseModal=()=>{
 
             <div className="row mt-4 pt-2">
               <div className="col-md-4 d-flex ">
-                <Link onClick={()=>{
-                  setShowModal(true)
-                }}>
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -503,16 +503,11 @@ const handleCloseModal=()=>{
                         <h3>ISO 27001</h3>
                         <p>2013 (Information Security Management System)</p>
 
-
                         {/* <button  style={{background:"none", border:'none', outline:'none'}}> */}
-                        
-                         <p className="learn_more">
 
-                        See Certificate </p>
-       
+                        <p className="learn_more">See Certificate </p>
 
-                       {/* </button> */}
-
+                        {/* </button> */}
                       </div>
                     </div>
                   </Fade>
@@ -520,9 +515,11 @@ const handleCloseModal=()=>{
               </div>
 
               <div className="col-md-4 d-flex ">
-              <Link onClick={()=>{
-                  setShowModal(true)
-                }}>
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -530,8 +527,10 @@ const handleCloseModal=()=>{
                       </div>
                       <div className="content">
                         <h3>ISO 9001</h3>
-                        <p>2015 (Quality Management Systems)</p>
-                        <p className="learn_more">See Certificate</p>
+                        <p> 2015  (Quality Management Systems)  </p> 
+                        {/* &nbsp;  */}
+                        
+                        <p className="" style={{paddingTop:'15px', color:'#32A4D5', fontWeight:'bold', fontFamily:'rajdhani'}}>See Certificate</p>
                       </div>
                     </div>
                   </Fade>
@@ -540,9 +539,11 @@ const handleCloseModal=()=>{
 
               <div className="col-md-4">
                 <Fade direction="up" delay={10} triggerOnce>
-                <Link onClick={()=>{
-                  setShowModal(true)
-                }}>
+                  <Link
+                    onClick={() => {
+                      setShowModal(true);
+                    }}
+                  >
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
                         <img src={GREAT_PLACE_WORK} alt="" />
@@ -561,9 +562,11 @@ const handleCloseModal=()=>{
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link onClick={()=>{
-                  setShowModal(true);
-                }}>
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
                   <Fade direction="up" delay={200} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -582,9 +585,11 @@ const handleCloseModal=()=>{
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link onClick={()=>{
-                  setShowModal(true);
-                }}>
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -603,9 +608,11 @@ const handleCloseModal=()=>{
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link onClick={()=>{
-                  setShowModal(true)
-                }}>
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -1143,36 +1150,37 @@ const handleCloseModal=()=>{
           <div className="bottom_blog_container mt-md-4">
             <div className="row blog_boxes">
               {achivementHome.map((data) => {
-                return(
-                <div className="col-md-4  blog_box ipad_half_width">
-                  <div className="bottom_blog_img">
+                return (
+                  <div className="col-md-4  blog_box ipad_half_width">
+                    <div className="bottom_blog_img">
+                      <Fade direction="up" triggerOnce>
+                        {/* <img src={ACHIVEMENT_IMG1} alt="" /> */}
+                        <img src={data.image} alt="" />
+                      </Fade>
+                    </div>
                     <Fade direction="up" triggerOnce>
-                      {/* <img src={ACHIVEMENT_IMG1} alt="" /> */}
-                      <img src={data.image} alt="" />
-                    </Fade>
-                  </div>
-                  <Fade direction="up" triggerOnce>
-                    <div className="blog_content">
-                      <div className="cust_profile"></div>
-                      <div className="socail_icon">
-                        <h5 className="blog_heading">
-                          {/* Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath
+                      <div className="blog_content">
+                        <div className="cust_profile"></div>
+                        <div className="socail_icon">
+                          <h5 className="blog_heading">
+                            {/* Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath
                         Technologies */}
-                          {data.heading_Title}
-                        </h5>
-                        <p className="blog_sub_heading">
-                          {/* {{`{substring(0, 150)}`}...} */}
-                          {/* Selected as World’s Best Emerging Leader, Shravan Kumar,
+                            {data.heading_Title}
+                          </h5>
+                          <p className="blog_sub_heading">
+                            {/* {{`{substring(0, 150)}`}...} */}
+                            {/* Selected as World’s Best Emerging Leader, Shravan Kumar,
                         CEO and Founder of Sakshath Technologies exemplifies the
                         impact of visionary thinking and innovative strategies
                         in the tech sector. */}
-                          {data.description}
-                        </p>
-                        <SlideAnimationButton btnName="READ MORE" />
+                            {data.description}
+                          </p>
+                          <SlideAnimationButton btnName="READ MORE" />
+                        </div>
                       </div>
-                    </div>
-                  </Fade>
-                </div>)
+                    </Fade>
+                  </div>
+                );
               })}
 
               {/* <div className="col-md-4  blog_box ipad_half_width">
@@ -1527,9 +1535,11 @@ const handleCloseModal=()=>{
         </div>
       </section> */}
 
-      <SeeCertificatePopup  show={showModal} onHide={handleCloseModal} popUpHeading={
-                          "ISO Certificate"
-                        } />   
+      <SeeCertificatePopup
+        show={showModal}
+        onHide={handleCloseModal}
+        popUpHeading={"ISO Certificate"}
+      />
     </>
   );
 };

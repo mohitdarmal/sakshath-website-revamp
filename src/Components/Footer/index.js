@@ -83,7 +83,7 @@ const Footer = () => {
             <div className="col-md-3 ftr_col1">
               <Fade direction="up">
                 {" "}
-                <img className="pb-4 img-fluid" src={FOOTER_LOGO} alt=""   />{" "}
+                <img className="pb-4" src={FOOTER_LOGO} alt=""  img-fluid />{" "}
               </Fade>
               <Fade direction="up" delay={50}>
                 {" "}
