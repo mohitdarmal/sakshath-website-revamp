@@ -192,7 +192,7 @@ const About = () => {
                 <div className="managed_service_content">
                   {/* <p>4</p> */}
                   <img src={MEDICAL} alt="" />
-                  <h5>Health Care</h5>
+                  <h5>Healthcare</h5>
                 </div>
               </div>
 
@@ -200,7 +200,7 @@ const About = () => {
                 <div className="managed_service_content">
                   {/* <p>5</p> */}
                   <img src={NGO} alt="" />
-                  <h5>Retails</h5>
+                  <h5>Retail</h5>
                 </div>
               </div>
 
@@ -208,7 +208,7 @@ const About = () => {
                 <div className="managed_service_content">
                   {/* <p>6</p> */}
                   <img src={NGO} alt="" />
-                  <h5>Food & Beverage</h5>
+                  <h5>Food & Beverages</h5>
                 </div>
               </div>
             </div>
@@ -254,7 +254,7 @@ const About = () => {
                   transition into ERP solutions that are easy to use, scalable,
                   enable business insight and ultimately benefit the user
                   community. We want to be a fair, reliable and professional
-                  partner to our customers by offering useful and effective
+                  partners to our customers by offering useful and effective
                   products and services that contribute to their success
                 </Fade>
               </p>

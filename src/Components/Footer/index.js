@@ -83,7 +83,7 @@ const Footer = () => {
             <div className="col-md-3 ftr_col1">
               <Fade direction="up">
                 {" "}
-                <img className="pb-4" src={FOOTER_LOGO} alt=""  img-fluid />{" "}
+                {/* <img className="pb-4" src={FOOTER_LOGO} alt=""  img-fluid />{" "} */}
               </Fade>
               <Fade direction="up" delay={50}>
                 {" "}
@@ -105,7 +105,7 @@ const Footer = () => {
                 <Fade direction="up" delay={150}>
                   <li className="mt-3 ftr_addr ">
                     <p>
-                    Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV, Hebbal ORR, &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Bengaluru – 560045.
+                    Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV, Hebbal ORR,  Bengaluru – 560045.
                     </p>
                   </li>{" "}
                 </Fade>
