@@ -68,7 +68,7 @@ const ServicePopup = (props) => {
 
                 <Form.Control
                   type="text"
-                  placeholder="Enter First Name"
+                  placeholder=" First Name"
                   //   value={fName}
                   required
                   onChange={(e) => setFormData(e.target.value)}
@@ -86,7 +86,7 @@ const ServicePopup = (props) => {
 
                 <Form.Control
                   type="text"
-                  placeholder="Enter Last Name"
+                  placeholder=" Last Name"
                   //   value={lName}
                   required
                   onChange={(e) => setFormData(e.target.value)}
@@ -105,7 +105,7 @@ const ServicePopup = (props) => {
 
                 <Form.Control
                   type="email"
-                  placeholder="Enter email"
+                  placeholder=" Email Address"
                   //   value={email}
                   required
                   onChange={(e) => setFormData(e.target.value)}
@@ -123,7 +123,7 @@ const ServicePopup = (props) => {
 
                 <Form.Control
                   type="tel"
-                  placeholder="Enter Mobile Number"
+                  placeholder=" Mobile Number"
                   //   value={phoneNo}
                   required
                   onChange={(e) => setFormData(e.target.value)}

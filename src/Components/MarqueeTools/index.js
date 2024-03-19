@@ -7,15 +7,40 @@ import axios from "axios";
 const MarqueeTools = () => {
   const [uData, setData] = useState("");
 
+  // useEffect(() => {
+  //   axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
+  //     console.log(res);
+  //     setData(res.uData);
+  //   });
+  // }, []);
+
+  const [direction,setDirection]=useState("left");
+  const[rightDirection,setRightDirection]=useState("right");
+
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
-      console.log(res);
-      setData(res.uData);
-    });
-  }, []);
+    const intervalId = setInterval(() => {
+      setDirection(direction === "left" ? "right" : "left");
+      setRightDirection(rightDirection== "right"? "left":"right");
+    }, 15000); // Change direction every 10 seconds
+
+    return () => clearInterval(intervalId); 
+  }, [direction, rightDirection]);
+
+  
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+   
+      setRightDirection(rightDirection== "right"? "left":"right");
+    }, 20000); // Change direction every 10 seconds
+
+    return () => clearInterval(intervalId); 
+  }, [ rightDirection]);
+
+
+
   return (
     <div>
-      <section>
+      <section className="application_tools_section">
         <div className="container-fluid">
           <div className="row">
             <div className="tools_heading text-center mt-4 mb-4">
@@ -23,50 +48,25 @@ const MarqueeTools = () => {
             </div>
           </div>
           <div className="row">
-            <Marquee speed={50} pauseOnHover direction="left">
+            <Marquee speed={25} pauseOnHover direction={direction}>
               <div className="marquee_scroll">
                 <div className="marquee_scroll box1">
-                  <span>React Js</span>
+                  <span>Angular Developers</span>
                 </div>
                 <div className="marquee_scroll box1">
-                  <span>Angular</span>
+                  <span>Reactjs Developers</span>
                 </div>
                 <div className="marquee_scroll box1">
-                  <span>Java Full Stack</span>
+                  <span>NodeJs Developers</span>
                 </div>
                 <div className="marquee_scroll box1">
-                  <span>Dot Net</span>
+                  <span>Dedicated Developers</span>
                 </div>
                 <div className="marquee_scroll box1">
-                  <span>RPA</span>
+                  <span>Ruby Rails Developers</span>
                 </div>
-                <div className="marquee_scroll box1">
-                  <span>MERN Stack</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
+               
+             
               </div>
             </Marquee>
           </div>
@@ -76,49 +76,22 @@ const MarqueeTools = () => {
       <section>
         <div className="container-fluid">
           <div className="row">
-            <Marquee speed={50} pauseOnHover direction="right">
+            <Marquee speed={25} pauseOnHover direction={rightDirection}>
               <div className="marquee_scroll">
                 <div className="marquee_scroll box1">
-                  <span>React Js</span>
+                  <span>React Native Developers</span>
                 </div>
                 <div className="marquee_scroll box1">
-                  <span>Angular</span>
+                  <span>Mobile App Developers</span>
                 </div>
                 <div className="marquee_scroll box1">
-                  <span>Java Full Stack</span>
+                  <span>Dedicated Software Development Teams</span>
                 </div>
                 <div className="marquee_scroll box1">
-                  <span>Dot Net</span>
+                  <span>Python Developers</span>
                 </div>
                 <div className="marquee_scroll box1">
-                  <span>RPA</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>MERN Stack</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
-                </div>
-                <div className="marquee_scroll box1">
-                  <span>React Js</span>
+                  <span>ASP.NET Developers</span>
                 </div>
               </div>
             </Marquee>

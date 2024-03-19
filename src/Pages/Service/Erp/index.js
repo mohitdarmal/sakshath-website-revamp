@@ -140,109 +140,13 @@ const Erp = () => {
   "ERP Popup"
   
 }/>
-      <IndustriesPopup show={modalShow} onHide={() => setModalShow(false)} />
+      {/* <IndustriesPopup show={modalShow} onHide={() => setModalShow(false)} /> */}
 
       <BreadCumb imgUrl={ABOUT_BANNER} title="ENTERPRISE RESOURCE PLANNING " />
       {/* Syspro  overview Starts*/}
       {/* EPICOR  overview  starts*/}
 
-      <section className="erp_industries_sec">
-        <Container>
-          <Row>
-            <Col className="">
-              <div
-                className="erp_ind_box"
-                onClick={() => {
-                  setModalShow(true);
-                  setIndustriesContent({
-                    title: "Internal Operation",
-                    content:
-                      "<ul><li>Manufacturing operations management</li><li>Job nesting</li><li>Bill of materials </li><li>Materials </li><li>Quality management </li><li>Traceability  </li></ul>",
-                  });
-                }}
-              >
-                <div className="erp_ind_img">
-                  <img src={ORGANIZATION} />
-                </div>
-                <h4>Internal Operation</h4>
-              </div>
-            </Col>
-            <Col className="">
-              <div
-                className="erp_ind_box"
-                onClick={() => {
-                  setModalShow(true);
-                  setIndustriesContent({
-                    title: "Supply Chain",
-                    content:
-                      "<ul><li>Warehouse management system</li><li>Supply chain portal</li><li>Pricing engine: Product Catalog </li><li>Cycle counting  </li><li>Sales order picking </li></ul>",
-                  });
-                }}
-              >
-                <div className="erp_ind_img">
-                  <img src={SUPPLY_CHAIN} />
-                </div>
-                <h4>Supply Chain</h4>
-              </div>
-            </Col>
-            <Col className="">
-              {/* <div className="erp_ind_box"> */}
-              <div
-                className="erp_ind_box"
-                onClick={() => {
-                  setModalShow(true);
-                  setIndustriesContent({
-                    title: "Organizational Controls",
-                    content:
-                      "<ul><li>Warehouse management system</li><li>Supply chain portal</li><li>Pricing engine: Product Catalog </li><li>Cycle counting  </li><li>Sales order picking  </li></ul>",
-                  });
-                }}
-              >
-                <div className="erp_ind_img">
-                  <img src={INTERNAL_OPERATION} />
-                </div>
-                <h4>Organizational Controls</h4>
-              </div>
-            </Col>
-            <Col className="">
-              <div
-                className="erp_ind_box"
-                onClick={() => {
-                  setModalShow(true);
-                  setIndustriesContent({
-                    title: "Information & Intelligence",
-                    content:
-                      "<ul><li>Warehouse management system</li><li>Supply chain portal</li><li>Pricing engine: Product Catalog </li><li>Cycle counting  </li><li>Sales order picking  </li></ul>",
-                  });
-                }}
-              >
-                <div className="erp_ind_img">
-                  <img src={INFORMATION} />
-                </div>
-                <h4>Information & Intelligence</h4>
-              </div>
-            </Col>
-            <Col className="">
-              <div
-                className="erp_ind_box"
-                onClick={() => {
-                  setModalShow(true);
-                  setIndustriesContent({
-                    title: "Digital Business Platform",
-                    content:
-                      "<ul><li>Warehouse management system</li><li>Supply chain portal</li><li>Pricing engine: Product Catalog </li><li>Cycle counting  </li><li>Sales order picking  </li></ul>",
-                  });
-                }}
-              >
-                <div className="erp_ind_img">
-                  <img src={BUSINESS} />
-                </div>
-                <h4>Digital Business Platform</h4>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      
 
       <section className="epicor_section">
         <div className="container">
@@ -342,7 +246,7 @@ const Erp = () => {
             <div className="col-md-6 align-items-center">
               <div className="epicor_overview_heading">
                 <Fade direction="up" triggerOnce>
-                  <Heading heading="Syspro" uppercase="" />
+                  <Heading heading="SYSPRO" uppercase="" />
                 </Fade>
               </div>
               <Fade direction="up" triggerOnce>
@@ -669,6 +573,111 @@ const Erp = () => {
         </div>
       </section>
       {/* Industries ends */}
+
+
+
+      {/*  */}
+      <section className="erp_industries_sec">
+        <Container>
+          <Row>
+            <Col className="">
+              <div
+                className="erp_ind_box"
+                onClick={() => {
+                  setModalShow(true);
+                  setIndustriesContent({
+                    title: "Internal Operation",
+                    content:
+                      "<ul><li>Manufacturing operations management</li><li>Job nesting</li><li>Bill of materials </li><li>Materials </li><li>Quality management </li><li>Traceability  </li></ul>",
+                  });
+                }}
+              >
+                <div className="erp_ind_img">
+                  <img src={ORGANIZATION} />
+                </div>
+                <h4>Internal Operation</h4>
+              </div>
+            </Col>
+            <Col className="">
+              <div
+                className="erp_ind_box"
+                onClick={() => {
+                  setModalShow(true);
+                  setIndustriesContent({
+                    title: "Supply Chain",
+                    content:
+                      "<ul><li>Warehouse management system</li><li>Supply chain portal</li><li>Pricing engine: Product Catalog </li><li>Cycle counting  </li><li>Sales order picking </li></ul>",
+                  });
+                }}
+              >
+                <div className="erp_ind_img">
+                  <img src={SUPPLY_CHAIN} />
+                </div>
+                <h4>Supply Chain</h4>
+              </div>
+            </Col>
+            <Col className="">
+              {/* <div className="erp_ind_box"> */}
+              <div
+                className="erp_ind_box"
+                onClick={() => {
+                  setModalShow(true);
+                  setIndustriesContent({
+                    title: "Organizational Controls",
+                    content:
+                      "<ul><li>Warehouse management system</li><li>Supply chain portal</li><li>Pricing engine: Product Catalog </li><li>Cycle counting  </li><li>Sales order picking  </li></ul>",
+                  });
+                }}
+              >
+                <div className="erp_ind_img">
+                  <img src={INTERNAL_OPERATION} />
+                </div>
+                <h4>Organizational Controls</h4>
+              </div>
+            </Col>
+            <Col className="">
+              <div
+                className="erp_ind_box"
+                onClick={() => {
+                  setModalShow(true);
+                  setIndustriesContent({
+                    title: "Information & Intelligence",
+                    content:
+                      "<ul><li>Warehouse management system</li><li>Supply chain portal</li><li>Pricing engine: Product Catalog </li><li>Cycle counting  </li><li>Sales order picking  </li></ul>",
+                  });
+                }}
+              >
+                <div className="erp_ind_img">
+                  <img src={INFORMATION} />
+                </div>
+                <h4>Information & Intelligence</h4>
+              </div>
+            </Col>
+            <Col className="">
+              <div
+                className="erp_ind_box"
+                onClick={() => {
+                  setModalShow(true);
+                  setIndustriesContent({
+                    title: "Digital Business Platform",
+                    content:
+                      "<ul><li>Warehouse management system</li><li>Supply chain portal</li><li>Pricing engine: Product Catalog </li><li>Cycle counting  </li><li>Sales order picking  </li></ul>",
+                  });
+                }}
+              >
+                <div className="erp_ind_img">
+                  <img src={BUSINESS} />
+                </div>
+                <h4>Digital Business Platform</h4>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/* industry ends */}
+
+
+      
       {/* migration */}
       <section>
         <div className="container">

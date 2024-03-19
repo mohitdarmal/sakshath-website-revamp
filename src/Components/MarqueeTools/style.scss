@@ -1,5 +1,9 @@
 @import "../../Assets/saas/Main.scss";
 
+.application_tools_section{
+  padding-top: 80px;
+}
+
 .marquee_scroll {
   display: flex;
   justify-content: space-between;
@@ -11,5 +15,11 @@
   span {
     font-family: $rajdhani_font;
     font-weight: bold;
+  
+    font-size: 45px;
+    color: #fff;
+    margin-right: 30px;
+    margin-left: 30px;
+
   }
 }

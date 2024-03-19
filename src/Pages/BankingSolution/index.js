@@ -80,7 +80,7 @@ const BankingSolution = () => {
           <div className="row">
             <div className="banking_upper_heading text-center">
               {/* <img src={BANKING_BG_IMG} alt="" /> */}
-              <Heading heading="Recent Projects Showcase" />
+              <Heading heading="Project Spotlight" />
             </div>
           </div>
         </div>

@@ -18,8 +18,11 @@
   margin-left: 25% !important;
 }
 
-.servicePopup .input-group {
-  padding: 15px;
+.servicePopup {
+  .input-group {
+    padding: 0px !important;
+  }
+ 
 }
 .input-group-text span {
   height: 65px;
@@ -48,7 +51,7 @@
 .ripple {
   position: fixed;
   margin-left: 10px;
-  //   background-color: #32a4d5;
+
   border: none;
   margin-top: 10px;
 }
@@ -56,7 +59,7 @@
 .btn-close {
   color: red;
   border-radius: 50px;
-  margin-left: 425px !important;
+  // margin-left: 425px !important;
   &:hover {
     color: white !important;
   }
@@ -66,23 +69,34 @@
   .fixedpopup button {
     position: fixed;
     right: 0;
-    z-index: 999;
-    background: $ball_blue_color;
+    background: #32a4d5;
     border: none;
+    transform: rotate(90deg);
+    margin-top: 50px;
+    margin-right: 10px;
+    z-index: 999;
   }
-   .modal-title {
-     margin-left: 100px !important;
-     font-family: "Rajdhani", sans-serif !important;
-     font-weight: 700;
-     font-size: 24px;
-   }
-   .newsletter_submit button {
+
+  .newsletter_submit button {
     width: 90%;
     &:hover {
       background: green;
     }
   }
- 
 }
 
+.stickyScrollpopup .modal-title {
+  margin-left: 100px !important;
+  font-family: "Rajdhani", sans-serif !important;
+  font-weight: 700;
+  font-size: 24px;
 
+  .btn-close {
+    color: red;
+    border-radius: 50px;
+    // margin-left: 425px !important;
+  }
+  input{
+    padding: 10px;
+  }
+}
