@@ -20,18 +20,18 @@ const MarqueeTools = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setDirection(direction === "left" ? "right" : "left");
-      setRightDirection(rightDirection== "right"? "left":"right");
+      // setRightDirection(rightDirection== "right"? "left":"right");
     }, 15000); // Change direction every 10 seconds
 
     return () => clearInterval(intervalId); 
-  }, [direction, rightDirection]);
+  }, [direction]);
 
   
   useEffect(() => {
     const intervalId = setInterval(() => {
    
       setRightDirection(rightDirection== "right"? "left":"right");
-    }, 20000); // Change direction every 10 seconds
+    }, 17000); // Change direction every 10 seconds
 
     return () => clearInterval(intervalId); 
   }, [ rightDirection]);
