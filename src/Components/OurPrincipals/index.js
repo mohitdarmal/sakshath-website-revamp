@@ -145,7 +145,7 @@ const OurPrincipals = () => {
                   </div>
                   <div className="principle_para">
                     {/* <h5>REABILITY</h5> */}
-                    <SubHeading heading="Reability" uppercase="" />
+                    <SubHeading heading="Reliability" uppercase="" />
 
                     <p>
                       {" "}

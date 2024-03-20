@@ -105,16 +105,16 @@ export const Home = () => {
     {
       id: 1,
       heading_Title:
-        "Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath Technologies",
+        "World's Leading Brands & Leaders' House Of Lords, London",
       description:
-        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking",
+        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO & Founder of Sakshath Technologies...",
       image: require("../../Assets/images/Achivement40.png"),
     },
     {
       id: 2,
-      heading_Title: "Analytics Vidhya - DataHack Summit 2023",
+      heading_Title: "Analytics Vidhya - DataHack Summit 2023 Community Sponsor",
       description:
-        " DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data science and machinelearning enthusiasts, experts, and practitioners from around the world.",
+        " DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data...",
       image: require("../../Assets/images/achivement_stall.png"),
     },
     {
@@ -122,7 +122,7 @@ export const Home = () => {
       heading_Title:
         "Highlighting the impactful contributions of our employees across Africa",
       description:
-        " Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club and claimed up to a40% discount on sanitary pads.",
+        " Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club...",
       image: require("../../Assets/images/Achivement_sanjay_sir.png"),
     },
   ];
@@ -1136,7 +1136,7 @@ export const Home = () => {
           <div className="row">
             <div className="top_blog_container text-center">
               <Fade direction="up" triggerOnce>
-                <SubTitle SubTitle="Our Achivements" />
+                <SubTitle SubTitle="Our Achievement" />
               </Fade>
               <Fade direction="up" delay={100} triggerOnce>
                 <Heading
@@ -1168,14 +1168,12 @@ export const Home = () => {
                             {data.heading_Title}
                           </h5>
                           <p className="blog_sub_heading">
-                            {/* {{`{substring(0, 150)}`}...} */}
-                            {/* Selected as World’s Best Emerging Leader, Shravan Kumar,
-                        CEO and Founder of Sakshath Technologies exemplifies the
-                        impact of visionary thinking and innovative strategies
-                        in the tech sector. */}
+                          
                             {data.description}
+
+                            
                           </p>
-                          <SlideAnimationButton btnName="READ MORE" />
+                          <SlideAnimationButton btnName="READ MORE"   url="/our-achievements"/>
                         </div>
                       </div>
                     </Fade>

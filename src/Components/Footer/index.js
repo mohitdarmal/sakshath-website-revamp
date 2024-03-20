@@ -88,7 +88,7 @@ const Footer = () => {
               <Fade direction="up" delay={50}>
                 {" "}
                 <h4 className="text-decoration-underline mt-md-3">
-                  Don’t Hesitate to Conatct With Our Experites
+                  Don’t Hesitate to Contact With Our Experites
                 </h4>{" "}
               </Fade>
               <ul className=" font-medium ">
