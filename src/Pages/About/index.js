@@ -254,7 +254,7 @@ const About = () => {
                   transition into ERP solutions that are easy to use, scalable,
                   enable business insight and ultimately benefit the user
                   community. We want to be a fair, reliable and professional
-                  partner to our customers by offering useful and effective
+                  partners to our customers by offering useful and effective
                   products and services that contribute to their success
                 </Fade>
               </p>

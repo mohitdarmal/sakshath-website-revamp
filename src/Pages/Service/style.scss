@@ -30,20 +30,23 @@
     }
 
     .upper_right_textbox {
+      
       padding-left: 35px;
-      font-family: $rajdhani_font;
+      
 
       span {
         font-size: 18px;
         font-weight: 600;
         color: gray;
         margin-bottom: 5px;
+        font-family: $rajdhani_font;
       }
       h2 {
         font-size: 30px;
         line-height: 32px;
         margin-bottom: 15px;
         font-weight: 700;
+        font-family: $rajdhani_font;
       }
       blockquote {
         padding-left: 25px;
