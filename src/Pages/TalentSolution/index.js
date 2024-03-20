@@ -317,7 +317,7 @@ const TalentSolution = () => {
                         <Heading heading="Scalable, agile teams are in demand" />
                         <h5>Focus on your business goals with Sakshath's IT outsourcing services</h5>
                         <p>With our Agile Team service, you can access world-class professionals, tech experts, and techniques necessary to test and scale ideas effectively.</p>
-                        <SlideAnimationButton url="#" btnName="Book Free Consultation" />
+                        <SlideAnimationButton url="/contact-us" btnName="Book Free Consultation" />
                         </Fade>
                     </div>
                 </div>

@@ -189,7 +189,7 @@ export const Home = () => {
                     <h3>The power of advanced analytics for your business</h3>
 
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/analytics">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -198,7 +198,7 @@ export const Home = () => {
                     <h6>Future-Ready ERP Solutions for Today's Challenges.</h6>
                     <h3>Unveiling the Power of ERP in Modern Enterprises</h3>
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/erp">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -210,7 +210,7 @@ export const Home = () => {
                     </h3>
 
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/automation">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -223,7 +223,7 @@ export const Home = () => {
                     <h3>Navigating the Landscape of Solutions</h3>
 
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/banking-solution">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -1029,11 +1029,11 @@ export const Home = () => {
                 </p> */}
                 <li>
                   Digitise your business by managing multiple process in a
-                  single platform.Optimize efficiency and productivity
+                  single platform. Optimize efficiency and productivity
                   effortlessly.
                 </li>
                 <li>
-                  Transform your workflow with our all-in-one platform.Manage
+                  Transform your workflow with our all-in-one platform. Manage
                   multiple processes seamlessly for optimal results.
                 </li>
                 {/* <li>Optimize efficiency and productivity effortlessly.</li> */}
@@ -1041,7 +1041,7 @@ export const Home = () => {
               </Fade>
               <Fade direction="up" triggerOnce>
                 <div className="our_principal_btn">
-                  <SlideAnimationButton btnName="Read More" />
+                  <SlideAnimationButton url ="/service" btnName="Read More" />
                 </div>
               </Fade>
             </div>
@@ -1064,7 +1064,7 @@ export const Home = () => {
                         <p className="justify-content-end  right_para ">
                           Elevating Experiences through Exceptional
                           Applications. Empowering businesses through innovative
-                          apps.Next-Gen Apps for Next-Level Performance.
+                          apps. Next-Gen Apps for Next-Level Performance.
                         </p>
                       </div>
                     </Fade>
@@ -1079,7 +1079,7 @@ export const Home = () => {
                       <div className="right_home_principle_heading pe-md-0">
                         <h4 className="right_home_subheading">AUTOMATION</h4>
                         <p className=" right_para">
-                          Our automation solutions lead the way. Our automation
+                          Our automation solution leads the way. Our automation
                           is to your advantage. Driving productivity through
                           precision automation.
                         </p>
@@ -1099,7 +1099,7 @@ export const Home = () => {
                         <h5 className="right_home_subheading">ANALYTICS</h5>
                         <p className="justify-content-end right_para">
                           Elevate your business with our analytics solutions. We
-                          are transforming Data into actionable intelligence.
+                          are transforming data into actionable intelligence.
                         </p>
                       </div>
                     </Fade>
@@ -1136,7 +1136,7 @@ export const Home = () => {
           <div className="row">
             <div className="top_blog_container text-center">
               <Fade direction="up" triggerOnce>
-                <SubTitle SubTitle="Our Achievement" />
+                <SubTitle SubTitle="Our Achievements" />
               </Fade>
               <Fade direction="up" delay={100} triggerOnce>
                 <Heading

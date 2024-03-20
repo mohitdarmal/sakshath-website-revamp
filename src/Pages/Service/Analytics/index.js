@@ -297,7 +297,7 @@ export const Analytics = () => {
                     informed decisions faster than ever before.
                   </p>
 
-                  <SlideAnimationButton btnName="GET STARTED" />
+                  <SlideAnimationButton btnName="GET STARTED" url="/contact-us"/>
                 </Fade>
               </div>
             </div>
