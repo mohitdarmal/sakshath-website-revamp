@@ -33,6 +33,7 @@ import { Fade } from "react-awesome-reveal";
 import ServicePopup from '../../../Components/ServicePopup'
 import MarqueeTools from "../../../Components/MarqueeTools";
 import { Helmet } from "react-helmet";
+import PopUp from "../../../Components/PopUp";
 
 const ApplicationDevelopment = () => {
   const [showModal, setShowModal] = useState(false);
@@ -51,11 +52,20 @@ const ApplicationDevelopment = () => {
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Application Development"
       />
-
+{/* 
 <ServicePopup  popUpHeading={
   "Let’s Create Big Stories Together"
   
-}/>
+}
+popUpPara={"We don’t just build apps, we create brand.Choosing us will be your best decision."}
+/> */}
+
+<PopUp  popUpHeading={
+  "Let’s Create Big Stories Together"
+  
+}
+popUpPara={"We don’t just build apps, we create brand.Choosing us will be your best decision."}
+/>
 
 <MarqueeTools/>
 

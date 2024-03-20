@@ -208,9 +208,9 @@ const Automation = () => {
 
     
 <ServicePopup  popUpHeading={
-  "Automation Popup"
-  
-}/>
+  "Automation Popup"}
+ 
+  />
  <Helmet>
         <title>Automation</title>
         <meta name="description" content="About SEO" />

@@ -42,7 +42,7 @@
     display: block;
 
 
-    .input-group{border: 1px solid #bcbcbc;}
+    .input-group{border-bottom: 1px solid #bcbcbc;}
 
     .input-group-text, input{
         height: 55px;
@@ -54,7 +54,7 @@
 
         button{
             margin-left: 0;
-            width: 100%;
+            width: 70%;
             margin-bottom: 20px;
             &:hover{
                 background-color: green;

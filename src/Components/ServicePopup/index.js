@@ -39,7 +39,7 @@ const ServicePopup = (props) => {
   }, []); // The empty dependency array ensures that this effect runs only once on mount
 
   return (
-    <Modal show={showModal} onHide={handleClose} centered>
+    <Modal show={showModal} onHide={handleClose} centered      >
       <Modal.Body className="newsletter_sec">
         <div onClick={handleClose} className="newsletter_close_btn">
           <IoCloseCircle />
@@ -49,34 +49,43 @@ const ServicePopup = (props) => {
         </div>
 
         <div>
-          <h4 className="mb-4">{props.popUpHeading}</h4>
+          <h3 className="mb-4">{props.popUpHeading}</h3>
+          <h6>{props.popUpPara}</h6>
           <Form
             onSubmit={handleSubmit}
             className="subscription_form newsletter_form"
           >
-        <div className="form1" style={{display:'flex', justifyContent:'space-between', gap:'20px', marginBottom:'20px'}}>
+            <div
+              className="form1"
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                gap: "20px",
+                marginBottom: "20px",
+              }}
+            >
+              <Form.Group
+                controlId="formEmail"
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                <div className="input-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">
+                      <FaRegUser />
+                    </span>
+                  </div>
 
-
-        
-            <Form.Group controlId="formEmail" style={{display:'flex',justifyContent:'space-between'}}>
-              <div className="input-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text">
-                    <FaRegUser />
-                  </span>
+                  <Form.Control
+                    type="text"
+                    placeholder=" Full Name"
+                    //   value={fName}
+                    required
+                    onChange={(e) => setFormData(e.target.value)}
+                  />
                 </div>
+              </Form.Group>
 
-                <Form.Control
-                  type="text"
-                  placeholder=" Full Name"
-                  //   value={fName}
-                  required
-                  onChange={(e) => setFormData(e.target.value)}
-                />
-              </div>
-            </Form.Group>
-
-            {/* <Form.Group controlId="formEmail">
+              {/* <Form.Group controlId="formEmail">
               <div className="input-group">
                 <div className="input-group-prepend">
                   <span className="input-group-text">
@@ -93,43 +102,66 @@ const ServicePopup = (props) => {
                 />
               </div>
             </Form.Group> */}
-            <Form.Group controlId="formEmail">
-              <div className="input-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text">
-                    <FaPhone />
-                  </span>
-                </div>
+              <Form.Group controlId="formEmail">
+                <div className="input-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">
+                      <FaPhone />
+                    </span>
+                  </div>
 
-                <Form.Control
-                  type="tel"
-                  placeholder=" Mobile Number"
-                  required
-                  onChange={(e) => setFormData(e.target.value)}
-                />
-              </div>
-            </Form.Group>
+                  <Form.Control
+                    type="tel"
+                    placeholder=" Mobile Number"
+                    required
+                    onChange={(e) => setFormData(e.target.value)}
+                  />
+                </div>
+              </Form.Group>
             </div>
-            <div className="form1" style={{display:'flex', justifyContent:'space-between', gap:'20px', marginBottom:'20px'}}>
-            <Form.Group controlId="formEmail">
-              <div className="input-group">
-                <div className="input-group-prepend">
-                  <span className="input-group-text">
-                    <MdOutlineEmail />
-                  </span>
+            <div
+              className="form1"
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                gap: "20px",
+                marginBottom: "20px",
+              }}
+            >
+              <Form.Group controlId="formEmail">
+                <div className="input-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">
+                      <MdOutlineEmail />
+                    </span>
+                  </div>
+
+                  <Form.Control
+                    type="email"
+                    placeholder=" Email Address"
+                    //   value={email}
+                    required
+                    onChange={(e) => setFormData(e.target.value)}
+                  />
                 </div>
+              </Form.Group>
+              <Form.Group controlId="formEmail">
+                <div className="input-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">
+                      <MdOutlineEmail />
+                    </span>
+                  </div>
 
-                <Form.Control
-                  type="email"
-                  placeholder=" Email Address"
-                  //   value={email}
-                  required
-                  onChange={(e) => setFormData(e.target.value)}
-                />
-              </div>
-            </Form.Group>
-
-          
+                  <Form.Control
+                    type="text"
+                    placeholder=" Comments"
+                    //   value={email}
+                    required
+                    onChange={(e) => setFormData(e.target.value)}
+                  />
+                </div>
+              </Form.Group>
             </div>
 
             <div className="newsletter_submit mt-2">
