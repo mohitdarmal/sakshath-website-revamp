@@ -189,7 +189,7 @@ export const Home = () => {
                     <h3>The power of advanced analytics for your business</h3>
 
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/analytics">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -198,7 +198,7 @@ export const Home = () => {
                     <h6>Future-Ready ERP Solutions for Today's Challenges.</h6>
                     <h3>Unveiling the Power of ERP in Modern Enterprises</h3>
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/erp">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -210,7 +210,7 @@ export const Home = () => {
                     </h3>
 
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/automation">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -223,7 +223,7 @@ export const Home = () => {
                     <h3>Navigating the Landscape of Solutions</h3>
 
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/banking-solution">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -1041,7 +1041,7 @@ export const Home = () => {
               </Fade>
               <Fade direction="up" triggerOnce>
                 <div className="our_principal_btn">
-                  <SlideAnimationButton btnName="Read More" />
+                  <SlideAnimationButton url ="/service" btnName="Read More" />
                 </div>
               </Fade>
             </div>
@@ -1136,7 +1136,7 @@ export const Home = () => {
           <div className="row">
             <div className="top_blog_container text-center">
               <Fade direction="up" triggerOnce>
-                <SubTitle SubTitle="Our Achievement" />
+                <SubTitle SubTitle="Our Achievements" />
               </Fade>
               <Fade direction="up" delay={100} triggerOnce>
                 <Heading

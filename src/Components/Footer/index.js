@@ -127,19 +127,19 @@ const Footer = () => {
                     <Link to="/">Home</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/">About us</Link>
+                    <Link to="/about">About us</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Teams</Link>
+                    <Link to="/our-team">Teams</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Achievements</Link>
+                    <Link to="/our-achievements">Achievements</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Careers</Link>
+                    <Link to="/career">Careers</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Contact us</Link>
+                    <Link to="/contact-us">Contact us</Link>
                   </li>
                 </Fade>
               </ul>
@@ -149,22 +149,22 @@ const Footer = () => {
               <ul>
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
-                    <Link to="">Application Development</Link>
+                    <Link to="/application-development">Application Development</Link>
                   </li>
                   <li className="mt-3">
                     <Link to="/about">RPA</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Deveops/testing</Link>
+                    <Link to="/about">Devops/testing</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">BI + Dashboard</Link>
+                    <Link to="/analytics">BI + Dashboard</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">ERP</Link>
+                    <Link to="/erp">ERP</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Banking Solution</Link>
+                    <Link to="/banking-solution">Banking Solution</Link>
                   </li>
                 </Fade>
               </ul>
@@ -175,20 +175,21 @@ const Footer = () => {
               <ul className="font-medium">
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
-                    <Link to="">Talent Solution</Link>
+                    <Link to="/talent-solution">Talent Solution</Link>
+                  </li>
+                  <li className="mt-4">
+                    <Link to="/career">Hire</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/talent-solution">Staffing</Link>
+                    <Link to="/staffing">Staffing</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Managed Services</Link>
+                    <Link to="/managed-services">Managed Services</Link>
                   </li>
                   <li className="mt-3">
                     <Link to="/about">Cookies</Link>
                   </li>
-                  <li className="mt-3">
-                    <Link to="/about">dfghjkl</Link>
-                  </li>
+                  
                   <li className="mt-3">
                     <Link to="/privacy">Privacy Policy</Link>
                   </li>

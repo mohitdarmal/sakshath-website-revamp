@@ -390,6 +390,12 @@
     border-radius: 13px;
     padding: 25px; 
     background-color: $white_color;
+
+    
+}
+.careers_jobs_box:hover{
+  box-shadow: 0px 2px 20px rgb(0 0 0 / 12%);
+    border: 1px dashed #32a4d5;
 }
  
 .description_box_withicon{
