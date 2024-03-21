@@ -1,101 +1,331 @@
-.achievement_detail_image_section{
-    position:relative;
-}
-.achievement_detail_image_section{
-    position:absolute;
-}
-// .achievemnt_img {
+
+@import "../../../../Assets/saas/Main.scss";
+.achievement_detail_section{
+    background: #f8f8f8d9;
+    padding: 80px 0px 80px 0px;
+    .achievement_content_page{
+        border: 1px solid #dddddd;
+    box-shadow: 0px 2px 20px #0000003d;
+    }
+
+    .achievement_detail_image_section img{
+        box-shadow: 0px 2px 20px #0000003d;
+        border-radius:6px;
+        
+    }
+    .achievement_content_page{
+        border-radius:6px;
+    }
+
+    .achievement_content_box{
+        padding: 30px;
+        
+        
+    }
+    // .blogdetail_date_box{
+    //     //margin-top: 20px;
+
+    //     .blogdetail_date svg{
+    //         vertical-align: text-top;
+    //         color:#32a4d5 ;
+            
+    //     }
+    // }
+    .achievement_mainHeading{
+        font-size: 30px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    }
+    .achievement_detail_img2{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .popular_tags{
+        margin-bottom: 30px;
+    margin-top: 30px;
+    }
+    .search_box{
+        border: 1px solid #d0d0cc;
+        padding: 10px 20px 20px;
+        margin-bottom: 40px;
+
+        h4{
+            margin-top: 10px;
+            font-family:$rajdhani_font;
+            font-weight: 700;
+        }
+        input{
+            border: none;
+    background: #ededed;
+    padding: 10px;
+    font-family: 'Rajdhani';
+    font-weight: 600;
+    display:block;
+    width:250px;
+        }
+
+//         .fg_search {
+//             background: rgb(147, 123, 123);
+//             position: relative;
+//             width: 300px;
+//           }
+          
+
+
+
+//         button{
+//         background: transparent;
+//   border: none;
+//   cursor: pointer;
+//   display: inline-block;
+//   font-size: 20px;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   padding: 18px 20px;
+//   z-index: 2;
+//         }
+
+.fg_search{
+    display: flex;
     
-//     // position: relative;
-//     top:0px;
-//     width:50%;
+}
+.magnifying_glass_box {
+    background-color:#ededed;
+    padding: 10px;
+}
+
+  svg{
+    
+    font: black;
+
+}
+}
+
+.top_of_recent_newsbox_heading{
+    margin-left: 3px;
+    margin-top:10px;
+    font-family: $rajdhani_font;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.recent_news_content_box{
+    //padding-left: -10px;
+    margin-left: -10px;
+
+
+}
+.sharenews{
+//     text-align: center;
+// margin-top: 50px;
+
+img {
+    width: 30px;
+    margin: 0 10px;
+}
+}
+
+
+.achievement_search_box_recent_achievement{
+    margin-left: 40px;
+}
+.achievement_news{
+    padding: 10px 20px 15px;
+}
+.achievement_news{
+    margin-top: 15px;
+    border: 1px solid #d0d0cc;
+    margin-bottom: 40px;
+}
+
+.recent_achievement_column{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -7px ;
+
+    .recent_achievement_img_box {
+        padding: 10px; 
+    }
+    
+    img{
+        max-width: 100px;
+        max-height:100px;
+        object-fit:cover;
+
+    }
+    // .recent_achievement_img_box {
+    //     width: 100% !important;
+    // }
+    .recent_achievement_title_box{
+        padding: 10px;
+        text-align: start;
+
+        h5{
+            font-size: 12px;
+            line-height: 15px;
+            text-decoration: underline;
+        }
+    }
+    .recent_news_date_box{
+        
+        margin-top: -15px;
+    margin-left: 10px
+    }
+    .recentnews_blog_date{
+        font-size: 12px;
+        svg{
+            vertical-align: text-top;
+        }
+    }
+}
+.achievement_description{
+    text-align: justify;
+    padding-top:25px;
+}
+
+.best_tags_box_wrapper_box{
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+    padding:10px 20px 15px;
+}
+.best_tags_box{
+    margin-bottom: 15px;
+
+    h4{
+        font-family: $rajdhani_font;
+        font-weight: 700;
+        font-size: 24px;
+    }
+}
+
+
+.tags_box{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.tags_design{
+    background: #32a4d5;;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #ffffff;
+    
+    text-decoration: none;
+    
+ 
+
+
+        
+
+    }
+}
+
+
+
+
+
+
+// .achievement_detail_image_section{
+//     position:relative;
+// }
+// .achievement_detail_image_section{
+//     position:absolute;
+// }
+// // .achievemnt_img {
+    
+// //     // position: relative;
+// //     top:0px;
+// //     width:50%;
    
+// // }
+
+// .achievmentdetails_content_box{
+    
+//     // z-index: ;
+   
+//     // padding-bottom: 200px;
+    
+//     background-color: aliceblue;
+
+//     position: relative;
+//     z-index: 0;
+//     p{
+//         padding-top: 20px;
+//     }
+
+// }
+// .achievemnt_img{
+//     height: 450px;
+//     width: 1182px;
+
+// }
+// .achievmentdetails_content_box_section{
+//     padding-left: 14px;
+//     padding-top: 421px;
+    
+// }
+// .achievment_para{
+//     background-color: aliceblue;
 // }
 
-.achievmentdetails_content_box{
-    
-    // z-index: ;
+
+// // .achievmentdetails_content_box img{
+// //     width:100%;
+// //     // height:100%;
+// //     border-radius: 44px;
    
-    // padding-bottom: 200px;
+// // }
+// // .achievement_detail_section{
+// //     padding-top:80px;
+// //     padding-bottom: 80px;
+// // }
+// // .achievment_detail_heading{
+// //     padding-bottom: 15px;
+// // }
+// @media screen and (max-width: 480px) {
+//     .achievement_detail_section{
+//         padding-top:40px;
+//         padding-bottom: 40px;
+//     }
+//     .achievment_detail_heading{
+//         padding-top:40px;
+//     }
+//     .achievemnt_img{
+//         width: 360px;
+//         height: 214px;
+//     }
+//     .achievmentdetails_content_box_section {
+//         padding-left: 14px;
+//         padding-top: 287px;
+//     }
+//     .achievmentdetails_content_box p {
+//         padding-top: 20px;
+//         padding-left: 9px;
+//     }
+
+   
+
+// }
+// @media screen and (min-width: 481px) and (max-width: 767px) {
+//     .achievement_detail_section{
+//         padding-top:40px;
+//         padding-bottom: 40px;
+//     }
     
-    background-color: aliceblue;
-
-    position: relative;
-    z-index: 0;
-    p{
-        padding-top: 20px;
-    }
-
-}
-.achievemnt_img{
-    height: 450px;
-    width: 1182px;
-
-}
-.achievmentdetails_content_box_section{
-    padding-left: 14px;
-    padding-top: 421px;
-    
-}
-.achievment_para{
-    background-color: aliceblue;
-}
-
-
-// .achievmentdetails_content_box img{
-//     width:100%;
-//     // height:100%;
-//     border-radius: 44px;
+//     .achievment_detail_heading{
+//         padding-top: 40px;
+//     }
+//     .achievemnt_img{
+//         padding-right: 80px;
+//     }
+//     .achievmentdetails_content_box{
+//         width: 1088px;
+//     }
    
 // }
-// .achievement_detail_section{
-//     padding-top:80px;
-//     padding-bottom: 80px;
+// @media screen and (min-width: 768px) and (max-width: 1023px) {
+
 // }
-// .achievment_detail_heading{
-//     padding-bottom: 15px;
-// }
-@media screen and (max-width: 480px) {
-    .achievement_detail_section{
-        padding-top:40px;
-        padding-bottom: 40px;
-    }
-    .achievment_detail_heading{
-        padding-top:40px;
-    }
-    .achievemnt_img{
-        width: 360px;
-        height: 214px;
-    }
-    .achievmentdetails_content_box_section {
-        padding-left: 14px;
-        padding-top: 287px;
-    }
-    .achievmentdetails_content_box p {
-        padding-top: 20px;
-        padding-left: 9px;
-    }
-
-   
-
-}
-@media screen and (min-width: 481px) and (max-width: 767px) {
-    .achievement_detail_section{
-        padding-top:40px;
-        padding-bottom: 40px;
-    }
-    
-    .achievment_detail_heading{
-        padding-top: 40px;
-    }
-    .achievemnt_img{
-        padding-right: 80px;
-    }
-    .achievmentdetails_content_box{
-        width: 1088px;
-    }
-   
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-}
