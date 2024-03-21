@@ -104,7 +104,7 @@ import { MdMarkEmailUnread } from "react-icons/md";
 import "./style.scss";
 
 const SeeCertificatePopup = (props) => {
-  console.log(props, "props");
+//   console.log(props, "props");
 
   const [email, setEmail] = useState("");
 

@@ -1,14 +1,17 @@
 import { useState } from "react";
 // import Button from "react-bootstrap/Button";
 // import Modal from "react-bootstrap/Modal";
-import { Form, Modal, Button } from "react-bootstrap";
+// import { Form, Modal, Button, } from "react-bootstrap";
 import { FaPhone } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
+import { MdMarkEmailUnread, MdOutlineEmail } from "react-icons/md";
 import "./style.scss";
+import { PiCertificateLight } from "react-icons/pi";
+ import { Modal, Button, Form, InputGroup  } from "react-bootstrap";
 // import { NGO } from "./Constant";
 
 function ServiceStickyPopup() {
   const [show, setShow] = useState(false);
+  const [email, setEmail] = useState("");
   const [formData, setFormData] = useState({
     email: "",
     fName: "",
@@ -18,13 +21,17 @@ function ServiceStickyPopup() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Email submitted:", email);
+  };
 
   return (
     <>
       <div className="stickyScrollpopup">
         <div className="fixedpopup">
           <Button variant="primary" onClick={handleShow}>
-            {/* <img src={NGO} alt="" /> */}
+         
             Popup
           </Button>
         </div>
@@ -34,7 +41,48 @@ function ServiceStickyPopup() {
           backdrop="static"
           keyboard={false}
         >
-          <Modal.Header closeButton>
+        <Modal.Header closeButton>
+          <div className="brouchure_icon">
+            <PiCertificateLight />
+          </div>
+        </Modal.Header>
+        <Modal.Body>
+          <h4 className="text-center" style={{fontFamily:"rajdhani",fontWeight:'bold'}}>Contact Us</h4>
+
+          <Form onSubmit={handleSubmit}>
+          <InputGroup className="mb-3">
+              <InputGroup.Text>
+                <MdMarkEmailUnread />
+              </InputGroup.Text>
+              <Form.Control
+                type="type"
+                placeholder=" Full Name"
+                // value={email}
+                required
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </InputGroup>
+            <InputGroup className="mb-3">
+              <InputGroup.Text>
+                <MdMarkEmailUnread />
+              </InputGroup.Text>
+              <Form.Control
+                type="email"
+                placeholder=" Email Address"
+                // value={email}
+                required
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </InputGroup>
+            <div className="submit-button text-center w-100">
+            <Button variant="primary" type="submit">
+       Submit
+            </Button>
+            </div>
+           
+          </Form>
+        </Modal.Body>
+          {/* <Modal.Header closeButton>
             <Modal.Title>Get Touch soon with us.</Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -66,7 +114,7 @@ function ServiceStickyPopup() {
                   <Form.Control
                     type="tel"
                     placeholder="Enter Mobile Number"
-                    // value={phoneNo}
+                    
                     required
                     onChange={(e) => setFormData(e.target.value)}
                   />
@@ -78,7 +126,7 @@ function ServiceStickyPopup() {
                 </Button>
               </div>
             </div>
-          </Modal.Body>
+          </Modal.Body> */}
         </Modal>
       </div>
     </>
