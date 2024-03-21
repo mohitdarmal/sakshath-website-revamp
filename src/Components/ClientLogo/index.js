@@ -73,7 +73,7 @@ const ClientLogo = () => {
               WE HAVE{" "}
               <CountUp
                 start={0}
-                end={2345}
+                end={50}
                 duration={3}
                 separator=""
                 decimal=","

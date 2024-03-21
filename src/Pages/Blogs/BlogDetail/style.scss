@@ -31,6 +31,14 @@
     .blogdetail_img2{
         margin-bottom: 20px;
         margin-top: 20px;
+        mix-blend-mode: darken;
+        transition: .4s;
+        // transform: scale(1.04,1.05);
+
+        &:hover{
+            transition: .4s;
+            transform: scale(1.04,1.05);
+        }
     }
     .popular_tags{
         margin-bottom: 30px;

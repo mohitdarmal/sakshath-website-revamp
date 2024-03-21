@@ -233,6 +233,7 @@
 
 .rpa_lists{
   margin-top: 25px;
+  margin-left: 10PX;
 }
 .rpa_lists li{
   padding-bottom: 15px;
@@ -275,128 +276,124 @@
 
 //RPA oFFERNING  STARTS
 
-.rpa_offering_section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: #24688f;
-  position: relative;
-  content: "";
-}
-.rpa_list {
-  margin-left: -42px;
-  margin-top: 23px;
-}
-.rpa_list li {
-  padding-bottom: 10px;
-}
-.rpa_list li::before {
-  content: "\f111";
-  position: absolute;
-  margin-left: -25px;
-  font-family: "FontAwesome";
-  width: 15px;
-  height: 15px;
-  background: rgba(50, 164, 213, 0.2);
-  font-size: 9px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 15px;
-  color: #32a4d5;
-  margin-top: 5px;
-}
+// .rpa_offering_section {
+//   padding-top: 80px;
+//   padding-bottom: 80px;
+//   background-color: #24688f;
+//   position: relative;
+//   content: "";
+// }
+// .rpa_list {
+//   margin-left: -42px;
+//   margin-top: 23px;
+// }
+// .rpa_list li {
+//   padding-bottom: 10px;
+// }
+// .rpa_list li::before {
+//   content: "\f111";
+//   position: absolute;
+//   margin-left: -25px;
+//   font-family: "FontAwesome";
+//   width: 15px;
+//   height: 15px;
+//   background: rgba(50, 164, 213, 0.2);
+//   font-size: 9px;
+//   border-radius: 50%;
+//   text-align: center;
+//   line-height: 15px;
+//   color: #32a4d5;
+//   margin-top: 5px;
+// }
 
-.rpa_offering_main_heading h3 {
-  color: #fff;
-}
+// .rpa_offering_main_heading h3 {
+//   color: #fff;
+// }
 
-.left_boxes_rpa {
-  border-bottom: 1px solid #9295964d;
-  box-shadow: 0 2px 2px #0f0e0e5c;
-  border-radius: 2px;
-  padding-right: 0px;
-  padding-left: 0px;
-  background-color: #fff;
-  max-height: 450px;
-}
-.rpa_box_left {
-  border-bottom: 1px solid #9295964d;
-  display: flex;
-  padding: 14px;
+// .left_boxes_rpa {
+//   border-bottom: 1px solid #9295964d;
+//   box-shadow: 0 2px 2px #0f0e0e5c;
+//   border-radius: 2px;
+//   padding-right: 0px;
+//   padding-left: 0px;
+//   background-color: #fff;
+//   max-height: 450px;
+// }
+// .rpa_box_left {
+//   border-bottom: 1px solid #9295964d;
+//   display: flex;
+//   padding: 14px;
 
-  .rpa_imgs {
-    // display: flex;
+//   .rpa_imgs {
+//     // display: flex;
 
-    img {
-      width: 50px;
-      margin-left: 8px;
-    }
-  }
+//     img {
+//       width: 50px;
+//       margin-left: 8px;
+//     }
+//   }
 
-  .rpa_heading h4 {
-    font-family: "Rajdhani";
-    font-weight: 700;
-    padding-top: 11px;
-    margin-left: 20px;
-  }
-}
+//   .rpa_heading h4 {
+//     font-family: "Rajdhani";
+//     font-weight: 700;
+//     padding-top: 11px;
+//     margin-left: 20px;
+//   }
+// }
 
-.rpa_box_left_down {
-  padding: 20px;
-  .rpa_imgs {
-    // display: flex;
-    // justify-content: center;
+// .rpa_box_left_down {
+//   padding: 20px;
+//   .rpa_imgs {
 
-    img {
-      width: 50px;
-    }
-  }
-  .rpa_heading h4 {
-    font-family: "Rajdhani";
-    font-weight: 700;
-    // text-align: center;
-    padding-top: 15px;
-    // padding-bottom: 12px;
-    margin-left: 13px;
-  }
-}
-.rpa_box_left_down {
-  display: flex;
-}
-.right_boxes_rpa {
-  box-shadow: 0 2px 2px #0f0e0e5c;
-  border-radius: 2px;
-  padding-left: 0;
-  padding-right: 0;
-  background: #fff;
-  max-height: 450px;
+//     img {
+//       width: 50px;
+//     }
+//   }
+//   .rpa_heading h4 {
+//     font-family: "Rajdhani";
+//     font-weight: 700;
+//     // text-align: center;
+//     padding-top: 15px;
+//     // padding-bottom: 12px;
+//     margin-left: 13px;
+//   }
+// }
+// .rpa_box_left_down {
+//   display: flex;
+// }
+// .right_boxes_rpa {
+//   box-shadow: 0 2px 2px #0f0e0e5c;
+//   border-radius: 2px;
+//   padding-left: 0;
+//   padding-right: 0;
+//   background: #fff;
+//   max-height: 450px;
 
-  .rpa_box_right {
-    border-bottom: 1px solid #9295964d;
-    padding: 7px;
-    display: flex;
-    // min-height: 280px;
-  }
-  .rpa_box_right_down {
-    padding: 20px;
-    min-height: 280px;
-    display: flex;
-  }
-  .rpa_imgs {
-    // display: flex;
-    // justify-content: center;
+//   .rpa_box_right {
+//     border-bottom: 1px solid #9295964d;
+//     padding: 7px;
+//     display: flex;
+//     // min-height: 280px;
+//   }
+//   .rpa_box_right_down {
+//     padding: 20px;
+//     min-height: 280px;
+//     display: flex;
+//   }
+//   .rpa_imgs {
 
-    img {
-      width: 50px;
-      padding-top: 5px;
-    }
-  }
-  .rpa_heading h4 {
-    font-family: "Rajdhani";
-    font-weight: 700;
-    padding-top: 15px;
-    margin-left: 20px;
-  }
-}
+//     img {
+//       width: 50px;
+//       padding-top: 5px;
+//     }
+//   }
+//   .rpa_heading h4 {
+//     font-family: "Rajdhani";
+//     font-weight: 700;
+//     padding-top: 15px;
+//     margin-left: 20px;
+//   }
+// }
 
 // rpa tools
 
@@ -915,4 +912,40 @@
 .automationFaq  .faq_section{
   padding-top: 0px;
 
+}
+
+.rpa_offerning_section{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #25678f;
+.col-md-6 {
+  background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #80808042;
+    border-right: 1px solid #80808042;
+}
+}
+
+.rpa_box{
+  display: flex;
+
+
+  img{
+    width: 50px;
+  }
+
+  h4{
+    margin-top: 13px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: $rajdhani_font;
+  }
+
+  .rpa_lists {
+    margin-left: 10px;
+  }
+}
+
+.rpa_offer_heading h3{
+  color: #fff;
 }

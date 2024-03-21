@@ -145,14 +145,14 @@ const OurPrincipals = () => {
                   </div>
                   <div className="principle_para">
                     {/* <h5>REABILITY</h5> */}
-                    <SubHeading heading="Reability" uppercase="" />
+                    <SubHeading heading="Reliability" uppercase="" />
 
                     <p>
                       {" "}
-                      Our customers rely on us as we provide high – quality,
+                      Our customers rely on us as we provide high quality,
                       reliable products which have control over all their
                       processes which are rigorously managed by our Quality
-                      management systems.{" "}
+                      Management System.{" "}
                     </p>
 
                     {/* <Link>Read More</Link> */}
@@ -167,13 +167,13 @@ const OurPrincipals = () => {
                     <img src={PROFESSIONAL_TEAM1} alt="" />
                   </div>
                   <div className="principle_para">
-                    <h5>PROFESSIONAL TEAM</h5>
+                    <h5>EXPERIENCE</h5>
                     <p>
                       {" "}
-                      In order to efficiently create and produce excellent
-                      products for our clients, Sakshath’s professional team of
-                      designers follow a simple process that makes working with
-                      us easy.{" "}
+                      Sakshath Technologies consultants have an average of 12+
+                      years experience with their processes and have worked on
+                      projects of all sizes and scopes thus managing new
+                      implementations upgrades.{" "}
                     </p>
 
                     {/* <Link>Read More</Link> */}
@@ -210,14 +210,14 @@ const OurPrincipals = () => {
                   </div>
                   <div className="principle_para">
                     {/* <h5>EXPERIENCE</h5> */}
-                    <SubHeading heading="EXPERIENCE" uppercase="" />
+                    <SubHeading heading="PROFESSIONAL TEAM" uppercase="" />
 
                     <p>
                       {" "}
-                      Sakshath Technologies consultants have an average of 12+
-                      years experience with their processes and have worked on
-                      projects of all sizes and scopes thus managing new
-                      implementations upgrades.{" "}
+                      In order to efficiently create and produce excellent
+                      products for our clients, Sakshath Technologies' professional team of
+                      designers follow a simple process that makes working with
+                      us easy. {" "}
                     </p>
 
                     {/* <Link>Read More</Link> */}

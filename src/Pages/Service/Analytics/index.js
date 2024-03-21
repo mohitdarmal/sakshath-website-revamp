@@ -55,6 +55,7 @@ import {
 import ScrollSpy from "react-ui-scrollspy";
 import { Element, scroller } from "react-scroll";
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
+import { Helmet } from "react-helmet";
 export const Analytics = () => {
   const menu = [
     {
@@ -264,6 +265,10 @@ export const Analytics = () => {
 
   return (
     <>
+     <Helmet>
+        <title>Analytics</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Analytics"
@@ -292,7 +297,7 @@ export const Analytics = () => {
                     informed decisions faster than ever before.
                   </p>
 
-                  <SlideAnimationButton btnName="GET STARTED" />
+                  <SlideAnimationButton btnName="GET STARTED" url="/contact-us"/>
                 </Fade>
               </div>
             </div>
@@ -514,9 +519,9 @@ export const Analytics = () => {
                 <div className="ai_datascience_content_box">
                   <div className="ai_datascience_content">
                     <div className="row">
-                      <div className="col-md-6 ai_datascience_content_col">
+                      <div className="col-md-6 ai_datascience_content_col ">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box ai_box1_height">
+                          <div className="ai_datascience_content_col_box ai_box1_height horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_01} alt="" />
                             </div>
@@ -547,7 +552,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box ai_box2_height">
+                          <div className="ai_datascience_content_col_box ai_box2_height horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_02} alt="" />
                             </div>
@@ -573,7 +578,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box">
+                          <div className="ai_datascience_content_col_box horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_03} alt="" />
                             </div>
@@ -605,7 +610,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box ai_box4_height">
+                          <div className="ai_datascience_content_col_box ai_box4_height horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_04} alt="" />
                             </div>
@@ -731,7 +736,7 @@ export const Analytics = () => {
                     <div className="row">
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box bi_dashboard_box1_height">
+                          <div className="ai_datascience_content_col_box bi_dashboard_box1_height horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_01} alt="" />
                             </div>
@@ -747,10 +752,7 @@ export const Analytics = () => {
                                   Intelligent dashboards presenting information
                                   with incredible clarity help you grasp fresh
                                   ideas immediately. Data can be quickly sliced
-                                  and diced with dynamic control mechanisms,
-                                  refined executive-ready insights can be
-                                  shared, and teams can be equipped with
-                                  top-notch Customizable tools.
+                                  and diced with dynamic control mechanisms.
                                 </p>
                               </Fade>
                             </div>
@@ -760,7 +762,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box">
+                          <div className="ai_datascience_content_col_box horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_02} alt="" />
                             </div>
@@ -777,8 +779,7 @@ export const Analytics = () => {
                                   services with individuals proficient in all
                                   industry’s best BI technologies featured in
                                   the Gartner Magic Quadrant TM, including
-                                  Microsoft, SAP, IBM Watson, Oracle, Tableau,
-                                  Micro strategy, Qlikview, and so more.
+                                  Microsoft, SAP, IBM Watson, Oracle, Tableau.
                                 </p>
                               </Fade>
                             </div>
@@ -788,14 +789,14 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box bi_box3">
+                          <div className="ai_datascience_content_col_box bi_box3 horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_03} alt="" />
                             </div>
                             <div className="ai_datascience_content_para">
                               <Fade direction="up" triggerOnce>
                                 <SubHeading
-                                  heading="Intelligent Live Dashboards"
+                                  heading="Big Data Visualization"
                                   uppercase="text-uppercase"
                                 />
                               </Fade>
@@ -805,8 +806,7 @@ export const Analytics = () => {
                                   a growing stream of data with precision.
                                   Whether the data is structured or
                                   unstructured, powered by businesses or the
-                                  Internet-Of-things, the value lies in clarity
-                                  and comprehension.
+                                  Internet-Of-things.
                                 </p>
                               </Fade>
                             </div>
@@ -816,7 +816,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box">
+                          <div className="ai_datascience_content_col_box horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_04} alt="" />
                             </div>
@@ -846,7 +846,7 @@ export const Analytics = () => {
                       <div className="row">
                         <div className="col-md-6 ai_datascience_content_col offset-md-3">
                           <Fade direction="up" triggerOnce>
-                            <div className="ai_datascience_content_col_box bi_box5">
+                            <div className="ai_datascience_content_col_box bi_box5 horizontal-shake">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_05_skyBlue} alt="" />
                               </div>
@@ -864,9 +864,7 @@ export const Analytics = () => {
                                     solution, tool, and available platform.
                                     Hence, we can swiftly build and deliver
                                     client reports on their selected BI
-                                    platform. Feeling challenged without a
-                                    specific tool? Let us assist in selecting
-                                    and implementing the best platform for you.{" "}
+                                    platform.{" "}
                                   </p>
                                 </Fade>
                               </div>
@@ -1210,7 +1208,7 @@ export const Analytics = () => {
                     <div className="row">
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box data_integration_box1">
+                          <div className="ai_datascience_content_col_box data_integration_box1 horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_01} alt="" />
                             </div>
@@ -1237,7 +1235,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box data_integration_box2">
+                          <div className="ai_datascience_content_col_box data_integration_box2 horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_02} alt="" />
                             </div>
@@ -1266,7 +1264,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box">
+                          <div className="ai_datascience_content_col_box horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_03} alt="" />
                             </div>
@@ -1294,7 +1292,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box data_integration_box4">
+                          <div className="ai_datascience_content_col_box data_integration_box4 horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_04} alt="" />
                             </div>
@@ -1324,7 +1322,7 @@ export const Analytics = () => {
                       <div className="row">
                         <div className="col-md-6 ai_datascience_content_col offset-md-3">
                           <Fade direction="up" triggerOnce>
-                            <div className="ai_datascience_content_col_box bi_box5">
+                            <div className="ai_datascience_content_col_box bi_box5 horizontal-shake">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_05} alt="" />
                               </div>
@@ -1441,7 +1439,7 @@ export const Analytics = () => {
                     <div className="row">
                       <div className="col-md-6 ai_datascience_content_col ">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box bigdata_box1">
+                          <div className="ai_datascience_content_col_box bigdata_box1 horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_01} alt="" />
                             </div>
@@ -1469,7 +1467,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box bigdata_box2">
+                          <div className="ai_datascience_content_col_box bigdata_box2 horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_02} alt="" />
                             </div>
@@ -1496,7 +1494,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box bigdata_box3">
+                          <div className="ai_datascience_content_col_box bigdata_box3 horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_03} alt="" />
                             </div>
@@ -1525,7 +1523,7 @@ export const Analytics = () => {
 
                       <div className="col-md-6 ai_datascience_content_col">
                         <Fade direction="up" triggerOnce>
-                          <div className="ai_datascience_content_col_box bigdata_box4">
+                          <div className="ai_datascience_content_col_box bigdata_box4 horizontal-shake">
                             <div className="ai_datascience_content_img">
                               <img src={analytics_logo_04} alt="" />
                             </div>
@@ -1554,7 +1552,7 @@ export const Analytics = () => {
                       <div className="row">
                         <div className="col-md-6 ai_datascience_content_col offset-md-3">
                           <Fade direction="up" triggerOnce>
-                            <div className="ai_datascience_content_col_box bi_box5">
+                            <div className="ai_datascience_content_col_box bi_box5 horizontal-shake">
                               <div className="ai_datascience_content_img">
                                 <img src={analytics_logo_05} alt="" />
                               </div>

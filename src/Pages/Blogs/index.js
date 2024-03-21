@@ -9,6 +9,7 @@ import BreadCumb from "../../Components/Breadcumb";
 import { ABOUT_BANNER, CARRER_IMG } from '../../Components/Breadcumb/Constant';
 import { IoIosArrowBack, IoIosArrowForward  } from "react-icons/io";
 import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
+import { Helmet } from 'react-helmet';
 
 
 const Blog = () => {
@@ -64,23 +65,25 @@ const Blog = () => {
         },
         {
             id:5,
-            blogTitle:"Composable ERP solutions: providing distributors with future-proofing, flexibility, and agility",
+            blogTitle:"The Future of Business Applications: Power Apps & AI ",
             blogDescription:"Composable ERP solutions represent a cutting-edge approach to enterprise resource planning, emphasizing modularity and flexibility in system architecture. Significance of Future-Proofing, Flexibility, and Agility in Distribution. The dynamics of the distribution industry necessitate adaptive strategies. Composable ERP solutions play a pivotal role in ensuring distributors are equipped with future-proofing capabilities, flexibility, and the agility required to navigate the ever-evolving market.",
             tags:["Technology", "Service", "IT", "Development"],
-            blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
-            blogAuthor:"wqertyu",
-            blogAuthor_img:require("../../Assets/images/javalogo.png"),
+            blogImg:require("../../Assets/images/blog5_img.png"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog5_detailimg.png"),
+            blogAuthor:"Senthil",
+            
             blogDate:"8 Feb 2024"
 
 
         },
         {
             id:6,
-            blogTitle:"ERP Solutions Help Manufacturers Get New Products to Market Faster - and Better",
+            blogTitle:"The Impact of Digital Clutter on Mobile App Development Efficiency",
             blogDescription:"In the intricate world of manufacturing, Enterprise Resource Planning (ERP) is a comprehensive software solution designed to integrate and manage core business processes. This includes everything from production and procurement to finance and human resources. The contemporary manufacturing landscape demands a delicate balance between speed and quality in bringing new products to market. This article explores how ERP solutions play a pivotal role in achieving this equilibrium, providing manufacturers with the tools to streamline processes and enhance outcomes.",
             tags:["Technology", "Service"],
-            blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
-            blogAuthor:"wqertyu",
+            blogImg:require("../../Assets/images/blog6_img.png"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog6_detailimg.png"),
+            blogAuthor:"Palanisamy",
             blogDate:"8 Feb 2024"
 
         },
@@ -105,7 +108,7 @@ const Blog = () => {
             blogDate:"8 Feb 2024"
         },
         {
-            id:1,
+            id:9,
             blogTitle:"Composable ERP solutions: providing distributors with future-proofing, flexibility, and agility",
             blogDescription:"Composable ERP solutions represent a cutting-edge approach to enterprise resource planning, emphasizing modularity and flexibility in system architecture. Significance of Future-Proofing, Flexibility, and Agility in Distribution. The dynamics of the distribution industry necessitate adaptive strategies. Composable ERP solutions play a pivotal role in ensuring distributors are equipped with future-proofing capabilities, flexibility, and the agility required to navigate the ever-evolving market.",
             tags:["Technology", "Service", "IT", "Development"],
@@ -117,7 +120,7 @@ const Blog = () => {
 
         },
         {
-            id:2,
+            id:10,
             blogTitle:"ERP Solutions Help Manufacturers Get New Products to Market Faster - and Better",
             blogDescription:"In the intricate world of manufacturing, Enterprise Resource Planning (ERP) is a comprehensive software solution designed to integrate and manage core business processes. This includes everything from production and procurement to finance and human resources. The contemporary manufacturing landscape demands a delicate balance between speed and quality in bringing new products to market. This article explores how ERP solutions play a pivotal role in achieving this equilibrium, providing manufacturers with the tools to streamline processes and enhance outcomes.",
             tags:["Technology", "Service"],
@@ -127,7 +130,7 @@ const Blog = () => {
 
         },
         {
-            id:3,
+            id:11,
             blogTitle:"Three Great Benefits of SYSPRO Espresso - Mobile ERP for Manufacturers",
             blogDescription:"SYSPRO Espresso stands as a revolutionary mobile Enterprise Resource Planning (ERP) solution designed specifically for manufacturers. Offering a dynamic interface and advanced functionalities, it redefines how manufacturers engage with their production processes on the go.",
             tags:["Technology", "Service"],
@@ -138,7 +141,7 @@ const Blog = () => {
 
         },
         {
-            id:4,
+            id:12,
             blogTitle:" Key Insights on Everything Intelligent Automation",
             blogDescription:"Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium doloremque laudantium totae rem aperiam, eaque ipsa quae abillo inventore veritatis etquasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
             tags:["Technology", "Service"],
@@ -148,29 +151,28 @@ const Blog = () => {
 
         },
         {
-            id:5,
+            id:13,
             blogTitle:"Composable ERP solutions: providing distributors with future-proofing, flexibility, and agility",
             blogDescription:"Composable ERP solutions represent a cutting-edge approach to enterprise resource planning, emphasizing modularity and flexibility in system architecture. Significance of Future-Proofing, Flexibility, and Agility in Distribution. The dynamics of the distribution industry necessitate adaptive strategies. Composable ERP solutions play a pivotal role in ensuring distributors are equipped with future-proofing capabilities, flexibility, and the agility required to navigate the ever-evolving market.",
             tags:["Technology", "Service", "IT", "Development"],
             blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
-            blogAuthor:"wqertyu",
-            blogAuthor_img:require("../../Assets/images/javalogo.png"),
+            blogAuthor:"senthil",
             blogDate:"8 Feb 2024"
 
 
         },
         {
-            id:6,
+            id:14,
             blogTitle:"ERP Solutions Help Manufacturers Get New Products to Market Faster - and Better",
             blogDescription:"In the intricate world of manufacturing, Enterprise Resource Planning (ERP) is a comprehensive software solution designed to integrate and manage core business processes. This includes everything from production and procurement to finance and human resources. The contemporary manufacturing landscape demands a delicate balance between speed and quality in bringing new products to market. This article explores how ERP solutions play a pivotal role in achieving this equilibrium, providing manufacturers with the tools to streamline processes and enhance outcomes.",
             tags:["Technology", "Service"],
             blogImg:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
-            blogAuthor:"wqertyu",
+            blogAuthor:"Palanisamy",
             blogDate:"8 Feb 2024"
 
         },
         {
-            id:7,
+            id:15,
             blogTitle:"Three Great Benefits of SYSPRO Espresso - Mobile ERP for Manufacturers",
             blogDescription:"SYSPRO Espresso stands as a revolutionary mobile Enterprise Resource Planning (ERP) solution designed specifically for manufacturers. Offering a dynamic interface and advanced functionalities, it redefines how manufacturers engage with their production processes on the go.",
             tags:["Technology", "Service"],
@@ -181,7 +183,7 @@ const Blog = () => {
 
         },
         {
-            id:8,
+            id:16,
             blogTitle:"Build And Launch Powerful Responsive Websites With Editor Perfect Patterns For Screen Reader",
             blogDescription:"Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium doloremque laudantium totae rem aperiam, eaque ipsa quae abillo inventore veritatis etquasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
             tags:["Technology", "Service"],
@@ -242,6 +244,10 @@ const blogCountChangePage = (data) => {
 
   return (
     <>
+     <Helmet>
+        <title>Our-Blogs</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
      <BreadCumb imgUrl={ABOUT_BANNER} title="Blogs" className="img-fluid" />
       <section className='blog_page'>
         <div className="container blog_box_container">
@@ -288,7 +294,7 @@ const blogCountChangePage = (data) => {
             <nav aria-label="..." className='text-center'>
   <ul className="pagination justify-content-center blogPagination">
     <li className="page-item">
-      <a className="page-link prevBtn"  onClick={prevPage} >Next </a>
+      <a className="page-link prevBtn"  onClick={prevPage} >Prev </a>
     </li>
     <li className="page-item">
       <a className="page-link"  onClick={jumpToFirstBlog} ><MdKeyboardDoubleArrowLeft /> </a>
@@ -303,7 +309,7 @@ const blogCountChangePage = (data) => {
       <a className="page-link"  onClick={jumpToLastPage}> <MdKeyboardDoubleArrowRight /></a>
     </li>
     <li className="page-item">
-      <a className="page-link nextBtn"  onClick={nextPage}> Prev</a>
+      <a className="page-link nextBtn"  onClick={nextPage}> Next</a>
     </li>
   </ul>
 </nav>

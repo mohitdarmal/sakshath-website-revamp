@@ -32,9 +32,14 @@ import{
 }from "../../Components/TrustedBy/Constant";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import Faq from "../../Components/Faq";
+import { Helmet } from "react-helmet";
 const BankingSolution = () => {
   return (
     <>
+     <Helmet>
+        <title>Sakshath- Banking Solution</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <BreadCumb imgUrl={ABOUT_BANNER} title="Banking Solution" />
 
       <section className="banking_section">
@@ -75,7 +80,7 @@ const BankingSolution = () => {
           <div className="row">
             <div className="banking_upper_heading text-center">
               {/* <img src={BANKING_BG_IMG} alt="" /> */}
-              <Heading heading="Recent Projects Showcase" />
+              <Heading heading="Project Spotlight" />
             </div>
           </div>
         </div>

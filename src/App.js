@@ -24,7 +24,7 @@ import Automation from "./Pages/Service/Automation";
 import Erp from "./Pages/Service/Erp";
 import ManagedServices from "./Pages/Service/ManagedServices";
 import Analytics from "./Pages/Service/Analytics";
-import ScrollToTop from "./Components/scrollToTop"
+import ScrollToTop from "./Components/scrollToTop";
 import OurTeam from "./Pages/OurTeam";
 import  PrivacyPolicy  from "./Pages/PrivacyPolicy";
 import Staffing from "./Pages/Staffing";

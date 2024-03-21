@@ -172,7 +172,7 @@ const Header = () => {
                     </li>
                     <li>
                       <NavLink to="/contact-us" className="dropdown-item">
-                       Contact
+                       Contact us
                       </NavLink>
                     </li>
                   </ul>

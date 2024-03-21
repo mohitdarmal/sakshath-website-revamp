@@ -10,6 +10,11 @@
   }
 }
 
+.banking_img img{
+  height: 400px;
+  margin-left: 100px;
+}
+
 .customer_web_section {
   background-image: url("../../Assets/images/Banking_bg_banner.png");
   background-size: cover;
@@ -19,6 +24,14 @@
     h3 {
       color: #fff;
     }
+  }
+}
+
+.banking_img img{
+  transition: .5s;
+  &:hover{
+    transition: .5s;
+    transform: scale(1.05,1.04);
   }
 }
 
@@ -55,10 +68,10 @@
 }
 
 .key_feature_section {
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
 }
 .key_feature_box {
-  box-shadow: 0 2px 20px rgb(0 0 0 / 16%);
+  box-shadow: 0 2px 20px rgb(0 0 0 / 5%);
   padding: 30px;
   border-radius: 5px;
   margin-top: 20px;

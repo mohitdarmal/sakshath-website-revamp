@@ -252,7 +252,7 @@ const OurTeam = () => {
 
   return (
     <>
-      <BreadCumb imgUrl={ABOUT_BANNER} title="Our Team" />
+      <BreadCumb imgUrl={ABOUT_BANNER} title="Our Brands" />
 
       <section>
         <div className="container">

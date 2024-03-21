@@ -12,7 +12,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { INSTAGRAM_ICON, LINKEDIN_ICON, YOUTUBE_ICON } from "../Header/Constant";
 import BackToTop from "../BackToTop";
 import FloatingActionButton from "../FloatingActionButton";
-import OnLoadPopup from "../NewsLetterPopup";
+// import OnLoadPopup from "../NewsLetterPopup";
 
 
 
@@ -83,12 +83,12 @@ const Footer = () => {
             <div className="col-md-3 ftr_col1">
               <Fade direction="up">
                 {" "}
-                <img className="pb-4" src={FOOTER_LOGO} alt="" />{" "}
+                <img className="pb-4 img-fluid" src={FOOTER_LOGO} alt=""   />{" "}
               </Fade>
               <Fade direction="up" delay={50}>
                 {" "}
                 <h4 className="text-decoration-underline mt-md-3">
-                  Don’t Hesitate to Conatct With Our Experites
+                  Don’t Hesitate to Contact With Our Experites
                 </h4>{" "}
               </Fade>
               <ul className=" font-medium ">
@@ -105,7 +105,7 @@ const Footer = () => {
                 <Fade direction="up" delay={150}>
                   <li className="mt-3 ftr_addr ">
                     <p>
-                    Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV, Hebbal ORR, Bengaluru – 560045.
+                    Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV, Hebbal ORR,   &nbsp;   &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; Bengaluru – 560045.
                     </p>
                   </li>{" "}
                 </Fade>
@@ -124,22 +124,22 @@ const Footer = () => {
               <ul className="">
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
-                    <Link to="/">Application Development</Link>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/">Automation</Link>
+                    <Link to="/about">About us</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Managed Services</Link>
+                    <Link to="/our-team">Teams</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">ERP</Link>
+                    <Link to="/our-achievements">Achievements</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Integration</Link>
+                    <Link to="/career">Careers</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Analytics</Link>
+                    <Link to="/contact-us">Contact us</Link>
                   </li>
                 </Fade>
               </ul>
@@ -149,22 +149,22 @@ const Footer = () => {
               <ul>
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
-                    <Link to="">About Company</Link>
+                    <Link to="/application-development">Application Development</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Latest News & Blog</Link>
+                    <Link to="/about">RPA</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Professional Members</Link>
+                    <Link to="/about">Devops/testing</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Our Achievment</Link>
+                    <Link to="/analytics">BI + Dashboard</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Company Journey</Link>
+                    <Link to="/erp">ERP</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Meet Out Teams</Link>
+                    <Link to="/banking-solution">Banking Solution</Link>
                   </li>
                 </Fade>
               </ul>
@@ -175,20 +175,21 @@ const Footer = () => {
               <ul className="font-medium">
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
-                    <Link to="">Premium Support</Link>
-                  </li>
-                  <li className="mt-3">
                     <Link to="/talent-solution">Talent Solution</Link>
                   </li>
-                  <li className="mt-3">
-                    <Link to="/about">Help & FAQ</Link>
+                  <li className="mt-4">
+                    <Link to="/career">Hire</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Pricing and plans</Link>
+                    <Link to="/staffing">Staffing</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/about">Cookies Policy</Link>
+                    <Link to="/managed-services">Managed Services</Link>
                   </li>
+                  <li className="mt-3">
+                    <Link to="/about">Cookies</Link>
+                  </li>
+                  
                   <li className="mt-3">
                     <Link to="/privacy">Privacy Policy</Link>
                   </li>

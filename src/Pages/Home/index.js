@@ -69,6 +69,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CallToAction from "../../Components/CallToAction";
+import SeeCertificatePopup from "../../Components/SeecertificatePopup";
+import { Helmet } from "react-helmet";
+import BrouchurePopup from "../../Components/BoruchurePopup";
 
 export const Home = () => {
   const textSlider = useRef();
@@ -102,17 +105,16 @@ export const Home = () => {
     {
       id: 1,
       heading_Title:
-        "Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath Technologies",
+        "World's Leading Brands & Leaders' House Of Lords, London",
       description:
-        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO and Founder of Sakshath Technologies exemplifies the impact of visionary thinking",
+        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO & Founder of Sakshath Technologies...",
       image: require("../../Assets/images/Achivement40.png"),
     },
     {
       id: 2,
-      heading_Title:
-        "Analytics Vidhya - DataHack Summit 2023",
+      heading_Title: "Analytics Vidhya - DataHack Summit 2023 Community Sponsor",
       description:
-        " DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data science and machinelearning enthusiasts, experts, and practitioners from around the world.",
+        " DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data...",
       image: require("../../Assets/images/achivement_stall.png"),
     },
     {
@@ -120,7 +122,7 @@ export const Home = () => {
       heading_Title:
         "Highlighting the impactful contributions of our employees across Africa",
       description:
-        " Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club and claimed up to a40% discount on sanitary pads.",
+        " Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club...",
       image: require("../../Assets/images/Achivement_sanjay_sir.png"),
     },
   ];
@@ -131,8 +133,17 @@ export const Home = () => {
     setAchivementHome(achivementData);
   }, []);
 
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   return (
     <>
+      <Helmet>
+        <title>Home - Sakshath</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       {/* @@@@@@ Banner Video start @@@@@@ */}
       <section className="tagline_sec">
         <div className="video_background">
@@ -178,7 +189,7 @@ export const Home = () => {
                     <h3>The power of advanced analytics for your business</h3>
 
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/analytics">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -187,7 +198,7 @@ export const Home = () => {
                     <h6>Future-Ready ERP Solutions for Today's Challenges.</h6>
                     <h3>Unveiling the Power of ERP in Modern Enterprises</h3>
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/erp">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -199,7 +210,7 @@ export const Home = () => {
                     </h3>
 
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/automation">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -212,7 +223,7 @@ export const Home = () => {
                     <h3>Navigating the Landscape of Solutions</h3>
 
                     <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
+                      <Link to="/banking-solution">Get Started Now</Link>
                       {/* <Link to="/">Explore More</Link> */}
                     </div>
                   </div>
@@ -478,7 +489,11 @@ export const Home = () => {
 
             <div className="row mt-4 pt-2">
               <div className="col-md-4 d-flex ">
-                <Link>
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -487,7 +502,12 @@ export const Home = () => {
                       <div className="content">
                         <h3>ISO 27001</h3>
                         <p>2013 (Information Security Management System)</p>
-                        <p className="learn_more">See Certificate</p>
+
+                        {/* <button  style={{background:"none", border:'none', outline:'none'}}> */}
+
+                        <p className="learn_more">See Certificate </p>
+
+                        {/* </button> */}
                       </div>
                     </div>
                   </Fade>
@@ -495,7 +515,11 @@ export const Home = () => {
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link>
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -503,8 +527,10 @@ export const Home = () => {
                       </div>
                       <div className="content">
                         <h3>ISO 9001</h3>
-                        <p>2015 (Quality Management Systems)</p>
-                        <p className="learn_more">See Certificate</p>
+                        <p> 2015  (Quality Management Systems)  </p> 
+                        {/* &nbsp;  */}
+                        
+                        <p className="" style={{paddingTop:'15px', color:'#32A4D5', fontWeight:'bold', fontFamily:'rajdhani'}}>See Certificate</p>
                       </div>
                     </div>
                   </Fade>
@@ -513,7 +539,11 @@ export const Home = () => {
 
               <div className="col-md-4">
                 <Fade direction="up" delay={10} triggerOnce>
-                  <Link>
+                  <Link
+                    onClick={() => {
+                      setShowModal(true);
+                    }}
+                  >
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
                         <img src={GREAT_PLACE_WORK} alt="" />
@@ -532,7 +562,11 @@ export const Home = () => {
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link>
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
                   <Fade direction="up" delay={200} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -541,8 +575,7 @@ export const Home = () => {
                       <div className="content">
                         <h3 className="">Talend Gold Partner</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Odit vitae.
+                        We leverage Talend's unified platform capabilities across integrated domains.
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -552,17 +585,20 @@ export const Home = () => {
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link>
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
                         <img src={CLIQ_LOGO} alt="" />
                       </div>
                       <div className="content">
-                        <h3>QLIKQ</h3>
+                        <h3>QLIK</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
+                        Licensed with Qlik for various access types and core-based models.
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -572,7 +608,11 @@ export const Home = () => {
               </div>
 
               <div className="col-md-4 d-flex ">
-                <Link>
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
@@ -581,8 +621,7 @@ export const Home = () => {
                       <div className="content">
                         <h3>Amazon AWS Partner</h3>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit Odit vitae.
+                        We leverage AWS programs, expertise, and tools to build solutions for customers.
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -892,7 +931,7 @@ export const Home = () => {
                     <SubTitle SubTitle="Who we are" />
                   </Fade>
                   <Heading
-                    heading="The Enterprise Productivity Platform For Complex Data"
+                    heading="Our Story"
                     uppercase="text-uppercase"
                   />
                 </div>
@@ -953,7 +992,7 @@ export const Home = () => {
 
       <CallToAction
         ctaContent={
-          "Let’s connect. We’d love to hear about your project and discuss our procedure. Our executives will be at your service ASAP. "
+          "Let’s connect! We’d love to hear about your project and discuss our procedure. Our executives will be at your service. "
         }
         ctaTitle={"Let's meet us"}
       />
@@ -990,11 +1029,11 @@ export const Home = () => {
                 </p> */}
                 <li>
                   Digitise your business by managing multiple process in a
-                  single platform.Optimize efficiency and productivity
+                  single platform. Optimize efficiency and productivity
                   effortlessly.
                 </li>
                 <li>
-                  Transform your workflow with our all-in-one platform.Manage
+                  Transform your workflow with our all-in-one platform. Manage
                   multiple processes seamlessly for optimal results.
                 </li>
                 {/* <li>Optimize efficiency and productivity effortlessly.</li> */}
@@ -1002,7 +1041,7 @@ export const Home = () => {
               </Fade>
               <Fade direction="up" triggerOnce>
                 <div className="our_principal_btn">
-                  <SlideAnimationButton btnName="Read More" />
+                  <SlideAnimationButton url ="/service" btnName="Read More" />
                 </div>
               </Fade>
             </div>
@@ -1025,7 +1064,7 @@ export const Home = () => {
                         <p className="justify-content-end  right_para ">
                           Elevating Experiences through Exceptional
                           Applications. Empowering businesses through innovative
-                          apps.Next-Gen Apps for Next-Level Performance.
+                          apps. Next-Gen Apps for Next-Level Performance.
                         </p>
                       </div>
                     </Fade>
@@ -1040,7 +1079,7 @@ export const Home = () => {
                       <div className="right_home_principle_heading pe-md-0">
                         <h4 className="right_home_subheading">AUTOMATION</h4>
                         <p className=" right_para">
-                          Our automation solutions lead the way. Our automation
+                          Our automation solution leads the way. Our automation
                           is to your advantage. Driving productivity through
                           precision automation.
                         </p>
@@ -1060,7 +1099,7 @@ export const Home = () => {
                         <h5 className="right_home_subheading">ANALYTICS</h5>
                         <p className="justify-content-end right_para">
                           Elevate your business with our analytics solutions. We
-                          are transforming Data into actionable intelligence.
+                          are transforming data into actionable intelligence.
                         </p>
                       </div>
                     </Fade>
@@ -1097,7 +1136,7 @@ export const Home = () => {
           <div className="row">
             <div className="top_blog_container text-center">
               <Fade direction="up" triggerOnce>
-                <SubTitle SubTitle="Our Achivements" />
+                <SubTitle SubTitle="Our Achievements" />
               </Fade>
               <Fade direction="up" delay={100} triggerOnce>
                 <Heading
@@ -1111,36 +1150,35 @@ export const Home = () => {
           <div className="bottom_blog_container mt-md-4">
             <div className="row blog_boxes">
               {achivementHome.map((data) => {
-                return(
-                <div className="col-md-4  blog_box ipad_half_width">
-                  <div className="bottom_blog_img">
+                return (
+                  <div className="col-md-4  blog_box ipad_half_width">
+                    <div className="bottom_blog_img">
+                      <Fade direction="up" triggerOnce>
+                        {/* <img src={ACHIVEMENT_IMG1} alt="" /> */}
+                        <img src={data.image} alt="" />
+                      </Fade>
+                    </div>
                     <Fade direction="up" triggerOnce>
-                      {/* <img src={ACHIVEMENT_IMG1} alt="" /> */}
-                      <img src={data.image} alt="" />
+                      <div className="blog_content">
+                        <div className="cust_profile"></div>
+                        <div className="socail_icon">
+                          <h5 className="blog_heading">
+                            {/* Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath
+                        Technologies */}
+                            {data.heading_Title}
+                          </h5>
+                          <p className="blog_sub_heading">
+                          
+                            {data.description}
+
+                            
+                          </p>
+                          <SlideAnimationButton btnName="READ MORE"   url="/our-achievements"/>
+                        </div>
+                      </div>
                     </Fade>
                   </div>
-                  <Fade direction="up" triggerOnce>
-                    <div className="blog_content">
-                      <div className="cust_profile"></div>
-                      <div className="socail_icon">
-                        <h5 className="blog_heading">
-                          {/* Redefining Tomorrow: Shravan Kumar’s Quest at Sakshath
-                        Technologies */}
-                          {data.heading_Title}
-                        </h5>
-                        <p className="blog_sub_heading">
-                          {/* {{`{substring(0, 150)}`}...} */}
-                          {/* Selected as World’s Best Emerging Leader, Shravan Kumar,
-                        CEO and Founder of Sakshath Technologies exemplifies the
-                        impact of visionary thinking and innovative strategies
-                        in the tech sector. */}
-                          {data.description}
-                        </p>
-                        <SlideAnimationButton btnName="READ MORE" />
-                      </div>
-                    </div>
-                  </Fade>
-                </div>)
+                );
               })}
 
               {/* <div className="col-md-4  blog_box ipad_half_width">
@@ -1494,6 +1532,12 @@ export const Home = () => {
           </div>
         </div>
       </section> */}
+
+      <SeeCertificatePopup
+        show={showModal}
+        onHide={handleCloseModal}
+        popUpHeading={"ISO Certificate"}
+      />
     </>
   );
 };

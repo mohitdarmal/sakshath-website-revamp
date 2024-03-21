@@ -35,9 +35,19 @@ margin-bottom: 80px;
 .overview_sec_left_analytics{
     padding-right: 80px;
 }
-.overview_sec_right_analytics_img{
+.overview_sec_right_analytics_img img{
     padding-left: 80px;
+    transition: .5s;
+  &:hover{
+    transform: scale(1.04,1.05);
+     transition: .5s;
+  }
 }
+
+// .overview_sec_right_analytics_img:hover img{
+//   transform: scale(1.04,1.05);
+//     transition: .5s;
+// }
 .AI_datascience_sec{
     padding-top: 80px;
     position: relative;
@@ -47,6 +57,13 @@ margin-bottom: 80px;
 }
 .ai_data_science_right{
     padding-left: 80px;
+    img{
+      transition: .5s;
+  &:hover{
+    transform: scale(1.04,1.05);
+     transition: .5s;
+  }
+    }
     p{
         margin-top: 20px;
     }
@@ -59,22 +76,34 @@ margin-bottom: 80px;
 .ai_datascience_content_box{
     margin-top: 105px;
    // margin-bottom: 80px;
+   
 }
+// .ai_datascience_content_box:hover{
+//   transform: translateY(-20px);
+//   transition: 0.5s;
+// }
 // .ai_box1_height{
 //     min-height: 217px !important;
     
 // }
+.horizontal-shake:hover img{
+  animation: horizontal-shaking 0.5s 2 forwards;
+}
 
 .ai_datascience_content_col_box{
      
      display: flex;
-    background: aliceblue;
+    //background: aliceblue;
+    background: white;
     padding: 25px;
-    border: 1px dashed;
+    //border: 1px dashed;
+    border:2px dashed #32a4d5;
     margin-bottom: 20px;
     /* min-height: 232px; */
     border-radius: 10px;
     /* align-items: center;*/
+    //box-shadow: 0px 2px 20px #00000008;
+    //transition: 0.5s;
 
     
     
@@ -82,9 +111,12 @@ margin-bottom: 80px;
         img{
             width: 80px;
             /* padding: 10px; */ 
+            
         }
     }
 }
+.ai_datascience_content_col_box:hover{
+box-shadow: 0px 2px 20px rgb(0 0 0 / 20%);}
 
 .ai_datascience_content_para_list li{
     list-style-type: disc;
@@ -92,7 +124,7 @@ margin-bottom: 80px;
 .ai_datascience_content_para{
     
     padding-left: 15px;
-    /* padding-top: 10px; */
+    padding-top: 10px; 
     /* padding-bottom: 10px; */
     padding-right: 10px;
     
@@ -135,15 +167,15 @@ margin-bottom: 80px;
 
 
 
-.bi_dashboard_box1_height{
-    padding-bottom: 2px;
-}
-.bi_box3{
-    padding-bottom: 3px;
-}
-.bi_box5{
-    padding-bottom: 20px;
-}
+// .bi_dashboard_box1_height{
+//     padding-bottom: 2px;
+// }
+// .bi_box3{
+//     padding-bottom: 3px;
+// }
+// .bi_box5{
+//     padding-bottom: 20px;
+// }
 .why_sakshath_bi,.why_sakshath_bigdata{
   //margin-top: 80px;
  // margin-bottom: 80px;
@@ -165,13 +197,13 @@ margin-bottom: 80px;
 }
 
 .data_integration_box1{
-    padding-bottom: 24px; //same css for box2 and 1 for padding bottom
+    //padding-bottom: 24px; //same css for box2 and 1 for padding bottom
 }
 .data_integration_box4{
-    padding-bottom: 1px;
+    //padding-bottom: 1px;
 }
 .data_integration_box5{
-    padding-bottom: 8px;
+   // padding-bottom: 8px;
 }
 
 .why_sakshath_dataIntegration{
@@ -189,16 +221,16 @@ margin-bottom: 80px;
   }
 
 .bigdata_box1{
-    padding-bottom: 6px;
+    //padding-bottom: 6px;
 }
 .bigdata_box2{
-    padding-bottom: 30px;
+    //padding-bottom: 30px;
 }
 .bigdata_box3,.bigdata_box4{
-    padding-bottom: 9px ;
+    //padding-bottom: 9px ;
 }
 .bigdata_box5{
-    padding-bottom: 7px;
+   // padding-bottom: 7px;
 }
 
 
@@ -434,6 +466,11 @@ margin-bottom: 80px;
 // }
 .bi_dashboard_img {
   width: 100%;
+  transition: .5s;
+  &:hover{
+    transform: scale(1.04,1.05);
+     transition: .5s;
+  }
 }
 // .integration_img {
 //   width: 100%;

@@ -9,6 +9,7 @@ import BreadCumb from "../../../Components/Breadcumb";
 import TimelineObserver from "react-timeline-animation";
 
 import Inception from "../../../Components/Inception";
+import { Helmet } from "react-helmet";
 
 const OurJounery = () => {
   const items = [
@@ -155,7 +156,12 @@ const OurJounery = () => {
   }, []);
 
   return (
+    
     <>
+    <Helmet>
+        <title>Our-Jounery</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <BreadCumb imgUrl={ABOUT_BANNER} title="Our Jounery" />{" "}
       {/* our jounery starts */}
       {/* <section className="Inception">

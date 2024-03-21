@@ -10,10 +10,15 @@ import { Link } from "react-router-dom";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import { Col } from "react-bootstrap";
 import { MOBILE_APP_DEVELOPMENT } from "../Service/ApplicationDevelopment/Constant";
+import { Helmet } from "react-helmet";
 
 const TalentSolution = () => {
   return (
     <>
+     <Helmet>
+        <title>Talent Solution</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <BreadCumb imgUrl={ABOUT_BANNER} title="Talent Solution" />
 
       {/* Managed Team Section Start */}
@@ -312,7 +317,7 @@ const TalentSolution = () => {
                         <Heading heading="Scalable, agile teams are in demand" />
                         <h5>Focus on your business goals with Sakshath's IT outsourcing services</h5>
                         <p>With our Agile Team service, you can access world-class professionals, tech experts, and techniques necessary to test and scale ideas effectively.</p>
-                        <SlideAnimationButton url="#" btnName="Book Free Consultation" />
+                        <SlideAnimationButton url="/contact-us" btnName="Book Free Consultation" />
                         </Fade>
                     </div>
                 </div>

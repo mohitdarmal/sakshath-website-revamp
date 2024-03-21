@@ -49,6 +49,8 @@ import SlideAnimationButton from "../../../Components/Utils/SlideAnimationButton
 import WhySaksahthNew from "../../../Components/WhySakshathNew";
 import { Fade } from "react-awesome-reveal";
 import Faq from "../../../Components/Faq";
+import ServicePopup from "../../../Components/ServicePopup";
+import { Helmet } from "react-helmet";
 
 const Automation = () => {
   const menu = [
@@ -203,6 +205,16 @@ const Automation = () => {
 
   return (
     <>
+
+    
+<ServicePopup  popUpHeading={
+  "Automation Popup"}
+ 
+  />
+ <Helmet>
+        <title>Automation</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Automation"
@@ -650,56 +662,56 @@ const Automation = () => {
 
               <div className="col-md-6 api_boxes">
                 {/* <Fade direction="up" triggerOnce> */}
-                  <div className="api_container">
-                    <div className="api_icon">
-                      <img src={AUTOMATION_SERVICE} alt="" />
-                    </div>
-                    <div className="api_boxes">
-                      <h4>Service Based Integration</h4>
-                      <span>
-                        Restful and Restless (SOAP) service integration provides
-                        digital integration capabilities. It has small-scale to
-                        large-scale application data delivery and integration
-                        capabilities.
-                      </span>
-                    </div>
+                <div className="api_container">
+                  <div className="api_icon">
+                    <img src={AUTOMATION_SERVICE} alt="" />
                   </div>
+                  <div className="api_boxes">
+                    <h4>Service Based Integration</h4>
+                    <span>
+                      Restful and Restless (SOAP) service integration provides
+                      digital integration capabilities. It has small-scale to
+                      large-scale application data delivery and integration
+                      capabilities.
+                    </span>
+                  </div>
+                </div>
                 {/* </Fade> */}
               </div>
               <div className="col-md-6 api_boxes">
                 {/* <Fade direction="up" triggerOnce> */}
-                  <div className="api_container">
-                    <div className="api_icon">
-                      <img src={AUTOMATION_SOCAIL} alt="" />
-                    </div>
-                    <div className="api_boxes">
-                      <h4>Social Integration</h4>
-                      <span>
-                        Integration with social collaboration platforms such as,
-                        Facebook, Twitter, Instagram, and many more. It consumes
-                        their API and integrates the data in the DXP’s
-                        application.
-                      </span>
-                    </div>
+                <div className="api_container">
+                  <div className="api_icon">
+                    <img src={AUTOMATION_SOCAIL} alt="" />
                   </div>
+                  <div className="api_boxes">
+                    <h4>Social Integration</h4>
+                    <span>
+                      Integration with social collaboration platforms such as,
+                      Facebook, Twitter, Instagram, and many more. It consumes
+                      their API and integrates the data in the DXP’s
+                      application.
+                    </span>
+                  </div>
+                </div>
                 {/* </Fade> */}
               </div>
               <div className="col-md-6 api_boxes">
                 {/* <Fade direction="up" triggerOnce> */}
-                  <div className="api_container ">
-                    <div className="api_icon">
-                      <img src={AUTOMATION_MARKET} alt="" />
-                    </div>
-                    <div className="api_boxes">
-                      <h4>Marketplace Integration</h4>
-                      <span>
-                        Marketplace integration helps business users to
-                        integrate with multiple channels to buy or sell their
-                        services & products of different channels while
-                        consuming a single service.
-                      </span>
-                    </div>
+                <div className="api_container ">
+                  <div className="api_icon">
+                    <img src={AUTOMATION_MARKET} alt="" />
                   </div>
+                  <div className="api_boxes">
+                    <h4>Marketplace Integration</h4>
+                    <span>
+                      Marketplace integration helps business users to integrate
+                      with multiple channels to buy or sell their services &
+                      products of different channels while consuming a single
+                      service.
+                    </span>
+                  </div>
+                </div>
                 {/* </Fade> */}
               </div>
               <div className="col-md-6 api_boxes">
@@ -880,7 +892,7 @@ const Automation = () => {
         </div>
       </section> */}
 
-        <section className="rpa_offering_section">
+        {/* <section className="rpa_offering_section">
           <div className="container">
             <div className="row">
               <div className="rpa_offering_main_heading text-center mb-4">
@@ -892,7 +904,7 @@ const Automation = () => {
 
               <div className="col-md-8">
                 <div className="row ">
-                  {/* left side rpa  */}
+                 
                   <div className="col-md-6 left_boxes_rpa">
                     <div className=" rpa_box_left">
                       <div className="rpa_imgs">
@@ -934,7 +946,6 @@ const Automation = () => {
                     </div>
                   </div>
 
-                  {/* right box rpa */}
                   <div className="col-md-6 right_boxes_rpa">
                     <div className=" rpa_box_right">
                       <div className="rpa_imgs">
@@ -971,6 +982,82 @@ const Automation = () => {
                 </div>
               </div>
               <div className="col-md-2"></div>
+            </div>
+          </div>
+        </section> */}
+
+        <section className="rpa_offerning_section">
+          <div className="container">
+            <div className="row">
+              <div className="rpa_offer_heading text-center ">
+                <Heading heading="RPA Offerning" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-1"></div>
+
+              <div className="col-md-10">
+                <div className="row ">
+                  <div className="col-md-6">
+                    <div className="rpa_box">
+                      <img src={RPA_ADVISORY} alt="" />
+                      <h4>RPA Advisory</h4>
+                    </div>
+                    <div className="rpa_lists">
+                      <ul>
+                        <li>Process & Platform Assessment.</li>
+                        <li>
+                          Business Case Preparation – Functional & Technical.
+                        </li>
+                        <li>Standard Operation Procedure (SOP’s).</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="rpa_box">
+                      <img src={RPA_PILOT} alt="" />
+                      <h4>RPA Pilot & POC</h4>
+                    </div>
+                    <div className="rpa_lists">
+                      <ul>
+                        <li>Identification & Shortlisting of the use case.</li>
+                        <li>Proof of concept creation & Prototyping.</li>
+                        <li>
+                          RPA Pilot & Enterprise Automation Roadmap (Creation &
+                          Blueprint).
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="rpa_box">
+                      <img src={RPA_DELIVERY} alt="" />
+                      <h4>RPA Delivery</h4>
+                    </div>
+                    <div className="rpa_lists">
+                      <ul>
+                        <li>Automation Scripting.</li>
+                        <li> Attended, Unattended, Hybrid Bots.</li>
+                        <li>Robot Training.</li>
+                        <li> Robot Testing.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="rpa_box">
+                      <img src={RPA_BOT} alt="" />
+                      <h4>RPA Bot Support</h4>
+                    </div>
+                    <div className="rpa_lists">
+                      <ul>
+                        <li>Level 1 Support.</li>
+                        <li>L2 2 Support.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-1"></div>
             </div>
           </div>
         </section>

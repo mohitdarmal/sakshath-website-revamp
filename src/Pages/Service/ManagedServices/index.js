@@ -31,7 +31,7 @@ const ManagedServices = () => {
                             <p className="overview_sec_managed_services_para">At Sakshath, we understand the challenges businesses face in today's fast-paced environment. The constant demand for efficiency and the ever-present risks can be overwhelming. Discover seamless managed services offering effective knowledge management, continuous support, flexible pricing, and risk mitigation for your business needs.</p>
                             </Fade>
                             <Fade direction="up" delay={300} triggerOnce>
-                            <SlideAnimationButton btnName="GET STARTED" />
+                            <SlideAnimationButton btnName="GET STARTED" url="/contact-us"/>
                             </Fade>
 
 

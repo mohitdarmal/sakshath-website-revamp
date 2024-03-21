@@ -21,6 +21,7 @@ import BreadCumb from "../../Components/Breadcumb";
 import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import { FaPaperPlane } from "react-icons/fa";
 import Heading from "../../Components/Utils/Heading";
+import { Helmet } from "react-helmet";
 
 const Contactus = () => {
   const [key, setKey] = useState("home");
@@ -51,6 +52,10 @@ const handleSubmit = (e) => {
 
   return (
     <>
+     <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="About SEO" />
+      </Helmet>
       <BreadCumb imgUrl={ABOUT_BANNER} title="Contact Us" />
 
       <section className="contact_us_sec">

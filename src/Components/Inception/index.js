@@ -169,7 +169,7 @@ const Inception = () => {
               <p>
                 Sakshath Technologies has an ever-evolving spirit within the
                 organization, led by committed professionals. Sakshath
-                Technologies continually reviews its product/service offering,
+                Technologies continually reviews its service offering,
                 always being at the cutting edge of technology-based business
                 solutions in a dynamic market.
               </p>

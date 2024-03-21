@@ -2,7 +2,7 @@ import React from "react";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import "./style.scss";
 import { Fade } from "react-awesome-reveal";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const CallToAction = (props) => {
 
@@ -43,7 +43,7 @@ const CallToAction = (props) => {
             <div className="col-md-3 button_box ipad_full_width">
               <div className="right_planning_banner_content text-md-end">
                 <Fade direction="up" delay={300} triggerOnce>
-                  <Link to='/contact-us' className="lets_meet_us_button">
+                  <Link to="/contact-us" className="lets_meet_us_button">
 
                   <h5>{props.ctaTitle}</h5>
                   </Link>
