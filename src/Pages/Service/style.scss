@@ -54,13 +54,25 @@
       }
     }
 
-    .happy_customer_number {
-      h2 {
-        font-family: $rajdhani_font;
-      }
-    }
+    
   }
 }
+.happy_customer_number {
+  
+  
+  h1 {
+    font-family: $rajdhani_font;
+   
+    font-weight: 600;
+    font-size: 60px;
+  }
+  p{
+    font-family: $rajdhani_font;
+    font-weight: 600;
+    
+  }
+}
+.happy_c{padding-left: 20px;}
 
 /// @@@@@@@@@@@@@   experience section css ends @@@@@@@@@
 
@@ -176,7 +188,7 @@
       margin-bottom: 25px;
 
       .heading_content {
-        margin-top: 25px;
+        //margin-top: 25px;
         text-decoration: underline;
       }
     }
@@ -238,9 +250,12 @@
     }
     .it_benefits_button_box {
       padding-left: 0px;
+      margin-top: 25px ;
+
+}
     }
   }
-}
+
 
 /// @@@@@@@@    IT Benefits css ends  @@@@@@@@@@@
 

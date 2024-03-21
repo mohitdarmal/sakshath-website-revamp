@@ -63,7 +63,7 @@ const Service = () => {
             <div className="col-md-7 experience_section_textarea ipad_full_width">
               <div className="experience_text">
                 <div className="upper_textbox">
-                  <div className="upper_left_textbox mb-45">13</div>
+                  <div className="upper_left_textbox mb-45">12</div>
                   <div className="upper_right_textbox mb-45">
                     <span>Years Of Experience</span>
                     <h2>We have a Strategy for Serving Things Right.</h2>
@@ -81,10 +81,10 @@ const Service = () => {
                     <div className="col-md-4">
                       <div className="counter-item">
                         <div className="happy_customer_number text-black">
-                          <h2>
+                          <h1>
                             <CountUp
                               start={0}
-                              end={25630}
+                              end={200}
                               duration={3}
                               separator=""
                               decimal=","
@@ -93,7 +93,27 @@ const Service = () => {
                               useEasing={true}
                               scrollSpyOnce={true}
                             ></CountUp>
-                          </h2>
+                          </h1>
+                          <p>Experienced Professionals</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="counter-item">
+                        <div className="happy_customer_number text-black happy_c">
+                          <h1>
+                            <CountUp
+                              start={0}
+                              end={50}
+                              duration={3}
+                              separator=""
+                              decimal=","
+                              suffix=" +"
+                              enableScrollSpy={true}
+                              useEasing={true}
+                              scrollSpyOnce={true}
+                            ></CountUp>
+                          </h1>
                           <p>Happy Customer</p>
                         </div>
                       </div>
@@ -101,10 +121,10 @@ const Service = () => {
                     <div className="col-md-4">
                       <div className="counter-item">
                         <div className="happy_customer_number text-black">
-                          <h2>
+                          <h1>
                             <CountUp
                               start={0}
-                              end={75646}
+                              end={250}
                               duration={3}
                               separator=""
                               decimal=","
@@ -113,28 +133,8 @@ const Service = () => {
                               useEasing={true}
                               scrollSpyOnce={true}
                             ></CountUp>
-                          </h2>
-                          <p>Star Work Reviews</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="counter-item">
-                        <div className="happy_customer_number text-black">
-                          <h2>
-                            <CountUp
-                              start={0}
-                              end={89634}
-                              duration={3}
-                              separator=""
-                              decimal=","
-                              suffix=" +"
-                              enableScrollSpy={true}
-                              useEasing={true}
-                              scrollSpyOnce={true}
-                            ></CountUp>
-                          </h2>
-                          <p>Project Complate</p>
+                          </h1>
+                          <p>Project Completed</p>
                         </div>
                       </div>
                     </div>
@@ -208,7 +208,7 @@ const Service = () => {
             <div className="col-md-6 right_box">
               <div className="it_benefits_text_wrapper">
                 <div className="it_benefits_heading_section">
-                  <span className="it_benefit_title">IT BENEFITS</span>
+                  {/* <span className="it_benefit_title">IT BENEFITS</span> */}
                   <div className="heading_content">
                     <Heading
                       heading="Digitise your business by managing multiple process in a single platform."
@@ -217,10 +217,7 @@ const Service = () => {
                   </div>
                 </div>
                 <p>
-                  On the other hand denounce with righteous indignation and
-                  dislike men who are so beguiled and demoralized by the charms
-                  of pleasure of the moment blinded by desire that they cannot
-                  foresee
+                We offers the complete spectrum of Software Development, Strategic Staffing, IT Consulting in the areas of SYSPRO, Epicor, Talend, QA , RPA, Java and BI to its clients to help them focus on their core processes and meet their evolving business objectives.
                 </p>
                 <div className="container technology_list">
                   <div className="left_side_technology">

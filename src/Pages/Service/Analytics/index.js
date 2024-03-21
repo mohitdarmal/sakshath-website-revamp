@@ -1282,7 +1282,7 @@ export const Analytics = () => {
                                   the standards, policies, governance, and tools
                                   addressed to build and maintain critical data.
                                   We provide a centralized location for data
-                                  within an organization.
+                                  within an organization. Lorem ipsum toyota spandid futuristic lorem
                                 </p>
                               </Fade>
                             </div>
@@ -1339,7 +1339,7 @@ export const Analytics = () => {
                                     for your business by grouping the data into
                                     a consistent structure. Data from many
                                     databases are translated into a standardized
-                                    format and then methodically evaluated.{" "}
+                                    format and then methodically evaluated. Lorem ipsum toyota spandid futuristic lorem{" "}
                                   </p>
                                 </Fade>
                               </div>
@@ -1484,7 +1484,7 @@ export const Analytics = () => {
                                   components: data warehouses and data lakes. A
                                   data warehouse with innovative architecture
                                   can grow to accommodate your demands today and
-                                  in the near future.
+                                  in the near future. Lorem ipsum toyota spandid futuristic lorem
                                 </p>
                               </Fade>
                             </div>
