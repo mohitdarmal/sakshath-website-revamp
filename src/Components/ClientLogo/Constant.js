@@ -12,12 +12,12 @@ export const CLIENT_LOGO7 = require("../../Assets/images/Abinbev.jpg");
 export const CLIENT_LOGO8 = require("../../Assets/images/Akshya_pathra.png");  
 export const CLIENT_LOGO9 = require("../../Assets/images/Clariant.jpg");  
 export const CLIENT_LOGO10 = require("../../Assets/images/Ace_green_recycling.jpg");
-export const CLIENT_LOGO11 = require("../../Assets/images/Co_operative_Bank.png");
+// export const CLIENT_LOGO11 = require("../../Assets/images/Co_operative_Bank.png");
 export const CLIENT_LOGO12 =require("../../Assets/images/Mastek.png");
 export const CLIENT_LOGO13=require("../../Assets/images/Aditya_Birla.jpg");
 export const CLIENT_LOGO14=require("../../Assets/images/Jupiter_hospital.png");
 export const CLIENT_LOGO15=require("../../Assets/images/Chaitanya_Microfinance.jpg");
-export const CLIENT_LOGO45=require("../../Assets/images/Fullerton_india.png");
+ export const CLIENT_LOGO45=require("../../Assets/images/Fullerton_india.png");
 export const CLIENT_LOGO46=require("../../Assets/images/Inox_air.jpg");
 export const CLIENT_LOGO47=require("../../Assets/images/kens.jpg");
 
@@ -49,6 +49,7 @@ export const CLIENT_LOGO35 = require("../../Assets/images/EPSSW_USA.png");
 export const CLIENT_LOGO36 = require("../../Assets/images/Socremo_Mozambique.png");
 export const CLIENT_LOGO37 = require("../../Assets/images/FNB_Mozambique.jpg");
 export const CLIENT_LOGO38 = require("../../Assets/images/ABSA.png");
+export const CLIENT_LOGO11 = require("../../Assets/images/Co_operative_Bank.png");
 
 
 

@@ -142,6 +142,9 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO18} />
                     </SwiperSlide>
                     <SwiperSlide>
+                      <img src={CLIENT_LOGO11} />
+                    </SwiperSlide>
+                    <SwiperSlide>
                       <img src={CLIENT_LOGO19} />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -246,9 +249,7 @@ const ClientLogo = () => {
                     modules={[Autoplay]}
                     className="mySwiper"
                   >
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO45} />
-                    </SwiperSlide>
+                    
                    <SwiperSlide>
                       <img src={CLIENT_LOGO1} />
                     </SwiperSlide>
@@ -279,9 +280,7 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO10} />
                     </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO11} />
-                    </SwiperSlide>
+                    
                     <SwiperSlide>
                       <img src={CLIENT_LOGO12} />
                     </SwiperSlide>
