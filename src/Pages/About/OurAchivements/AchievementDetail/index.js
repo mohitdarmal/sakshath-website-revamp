@@ -27,7 +27,7 @@ const AchievementDetail = () => {
     {
       id: 2,
       title: "Analytics Vidhya - DataHack Summit 2023",
-      image: require("../../../../Assets/images/achievement_img_two.jpeg"),
+      image: require("../../../../Assets/images/achivement_stall.png"),
       description:
         "3-day event + 1 day hack day. DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data science and machine learning enthusiasts, experts, and practitioners from around the world. The event is hosted by Analytics Vidhya, a leading platform for data science and machine learning education.The conference is designed to be a collaborative and interactive experience, with plenty of opportunities for networking and knowledge sharing. Delhi & Mumbai team from Sakshath interacted with fellow data science professionals explored new tools and techniques, and gained insights into how data science is transforming industries and shaping the future.AI sessions are led by industry titans like Microsoft, Google, and Amazon. Hack sessions that offer direct engagement with next-gen technologies. Connecting with industry leaders and experts. Workshops led by industry experts. ",
     },
@@ -74,13 +74,16 @@ const AchievementDetail = () => {
                     </p>
                   </div> */}
                   <h2 className="achievement_mainHeading">{state.title}</h2>
-                  <p className="achievement_description">
+                  <p className="achievement_description" style={{ whiteSpace: 'pre-line', wordBreak: 'break-word', overflowWrap: 'break-word' }}>
                     {/* {state.description} */}
-                    {`${state.description.substring(0, 2000)}...`}
+                    {/* return text.split('\\\\n').join('<br />'); */}
+                    {`${state.description.split('\\n').join('<br />').substring(0, 2000)}...`}
+
                   </p>
                   <img src={state.image} alt="" className="img-fluid" />
                   <p className="achievement_description">
-                    {`${state.description.substring(2001, 3521)}...`}
+                  {`${state.description.split('\\n').join('<br />').substring(2001, 3567)}...`}
+
                   </p>
 
                   <div className="popular_tags_sharenews_box">
@@ -143,7 +146,7 @@ const AchievementDetail = () => {
                               <img
                                 src={data.image}
                                 alt=""
-                                className="img-fluid"
+                                // className="img-fluid"
                               />
                             </div>
                             <div className="recent_achievement_content_box">

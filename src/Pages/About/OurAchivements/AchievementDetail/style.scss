@@ -135,7 +135,7 @@ img {
     padding: 10px 20px 15px;
 }
 .achievement_news{
-    margin-top: 15px;
+ 
     border: 1px solid #d0d0cc;
     margin-bottom: 40px;
 }
@@ -150,8 +150,8 @@ img {
     }
     
     img{
-        max-width: 100px;
-        max-height:100px;
+        width: 100px;
+        height:100px;
         object-fit:cover;
 
     }
@@ -159,13 +159,12 @@ img {
     //     width: 100% !important;
     // }
     .recent_achievement_title_box{
-        padding: 10px;
+     
         text-align: start;
 
-        h5{
-            font-size: 12px;
-            line-height: 15px;
-            text-decoration: underline;
+        h5 {
+            margin-top: 30px;
+            font-size: 14px;
         }
     }
     .recent_news_date_box{
@@ -180,9 +179,14 @@ img {
         }
     }
 }
+
 .achievement_description{
     text-align: justify;
     padding-top:25px;
+}
+.recent_achievement_title_box_heading{
+    padding-top:10px;
+    font-size:14px;
 }
 
 .best_tags_box_wrapper_box{
@@ -223,6 +227,46 @@ img {
     }
 }
 
+
+@media screen and (max-width: 480px){
+    .achievement_search_box_recent_achievement {
+        margin-left: 0px !important;
+        margin-top: 24px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .achievement_detail_section .achievement_search_box_recent_achievement {
+     margin-left: 0px;
+    }
+    .achievement_detail_section .recent_achievement_column {
+       
+         justify-content: normal;
+        
+    }
+    .achievement_search_box_recent_achievement{
+        padding-top:40px;
+    }
+    
+    .achievement_detail_section .recent_achievement_column .recent_achievement_title_box h5 {
+        margin-top: 44px;
+        font-size: 16px;
+    }
+
+
+.achievement_detail_section .achievement_search_box_recent_achievement {
+    margin-left: 0px !important;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .achievement_detail_section .achievement_search_box_recent_achievement {
+         margin-left: 0px;
+    }
+    .achievement_detail_section .recent_achievement_column .recent_achievement_title_box h5 {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+}
 
 
 
