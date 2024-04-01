@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import "./style.scss";
 import { SERVICE_HAPPY_CUSTOMER } from "./Constant";
@@ -28,17 +28,41 @@ import Faq from "../../Components/Faq";
 import ServiceStickyPopup from "../../Components/ServiceStickyPopup";
 import { Button } from "react-bootstrap";
 import { Helmet } from "react-helmet";
+import axios from "axios";
 
 const Service = () => {
   const [modalShow, setModalShow] = React.useState(false);
+  const [serviceSeoData, setServiceSeoData] = React.useState({});
+
+  useEffect(() => {
+    axios.get("https://dummyjson.com/posts/user/5").then((data) => {
+      // console.log(data);
+      if (data.status === 200) {
+        setServiceSeoData(data.data.posts[0]);
+        console.log(data);
+      }
+    });
+  }, []);
+
+  console.log(serviceSeoData.title, "hello");
+
   return (
     <>
       <Helmet>
-        <title>Our-Services</title>
-        <meta name="description" content="About SEO" />
+        {/* <title>Our-Services</title> */}
+        {/* <title> {serviceSeoData.title !==" undefined"? serviceSeoData.title: " "}</title> */}
+        {/* <title> {serviceSeoData.title}</title> */}
+
+        {serviceSeoData ? (
+        
+            <title>{serviceSeoData.title }</title>
+      
+        ) : (
+          <title>Loading...</title>
+        )}
       </Helmet>
 
-      
+      {/* { serviceSeoData.title} */}
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Services"
@@ -217,7 +241,11 @@ const Service = () => {
                   </div>
                 </div>
                 <p>
-                We offers the complete spectrum of Software Development, Strategic Staffing, IT Consulting in the areas of SYSPRO, Epicor, Talend, QA , RPA, Java and BI to its clients to help them focus on their core processes and meet their evolving business objectives.
+                  We offers the complete spectrum of Software Development,
+                  Strategic Staffing, IT Consulting in the areas of SYSPRO,
+                  Epicor, Talend, QA , RPA, Java and BI to its clients to help
+                  them focus on their core processes and meet their evolving
+                  business objectives.
                 </p>
                 <div className="container technology_list">
                   <div className="left_side_technology">

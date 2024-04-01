@@ -737,16 +737,30 @@ const Automation = () => {
         {/* automation ends */}
 
         {/* why_Sakshath starts */}
-        <Fade direction="up" triggerOnce>
-          <WhySaksahthNew whyCrm={whyCloud} />
-        </Fade>
+        {/* <Fade direction="up" triggerOnce> */}
+       
+          
+          
+            {/* <div id="rpa">
+          <Element name="RPA"> */}
+          <WhySaksahthNew whyCrm={whyCloud}  />
+          {/* </Element> 
+          </div> */}
+          {/* /> */}
+         
+          
+     {/* </Fade> */}
 
         {/* why_Sakshath ends*/}
 
         {/* RPA */}
         {/* <div id="rpa"> */}
-
+        {/* <div id="rpa">
+          <Element name="RPA"> */}
+         
         <section className="rpa_section">
+        <div id="rpa">
+          <Element name="RPA">
           <div className="container">
             <div className="row ">
               <div className="col-md-6">
@@ -794,7 +808,10 @@ const Automation = () => {
               </div>
             </div>
           </div>
+          </Element> 
+          </div>
         </section>
+        
         {/* </Element> */}
         {/* </div> */}
 
