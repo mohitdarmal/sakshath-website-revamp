@@ -418,14 +418,26 @@ li {
     left: 50%;
     transform: translate(-50%, -41px);
     background: #fff;
+    &:hover{
+      // stroke-dasharray: 260, 262;
+      // stroke-dashoffset: 0;
+      stroke-dasharray: 90, 92; stroke-dashoffset: 0;
+    }
 }
 h4{
+    // font-weight: bold;
+    // font-family: $rajdhani_font;
+    // font-size: 20px;
+    // text-align: center;
+    // padding: 50px 20px;
+    // text-transform: capitalize;
     font-weight: bold;
-    font-family: $rajdhani_font;
-    font-size: 20px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 18px;
     text-align: center;
-    padding: 50px 20px;
+    padding: 25px;
     text-transform: capitalize;
+    margin-top: 20px;
 }
 }
 
