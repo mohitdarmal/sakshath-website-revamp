@@ -33,38 +33,43 @@ import axios from "axios";
 const Service = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [serviceSeoData, setServiceSeoData] = React.useState({});
+  const seoTag= async (()=>{
+    try{
+      const res = await axios.get("https://dummyjson.com/posts/user/5").then((data) => {
+        
+      // if (data.status === 200) {
+      //   setServiceSeoData(data.data.posts[0]);
+      //   console.log(data);
+      // }
+
+    });
+    }
+
+    catch(err){
+      console.log(err);
+
+    }
+  })
 
   useEffect(() => {
-    axios.get("https://dummyjson.com/posts/user/5").then((data) => {
-      // console.log(data);
-      if (data.status === 200) {
-        setServiceSeoData(data.data.posts[0]);
-        console.log(data);
-      }
-    });
+    seoTag();
   }, []);
 
   console.log(serviceSeoData.title, "hello");
+  // console.log(serviceSeoData.body, "des")
 
   return (
     <>
       <Helmet>
-        {/* <title>Our-Services</title> */}
-        {/* <meta name="description" content="About SEO" /> */}
-        {/* <title> {serviceSeoData.title !==" undefined"? serviceSeoData.title: " "}</title> */}
-        {/* <title> {serviceSeoData.title}</title> */}
-
-        {serviceSeoData ? (
-        
-            <title>{serviceSeoData.title}</title>
-
-      
+      <title>{serviceSeoData.title }</title>
+      <meta name="description" content={serviceSeoData.body} />
+        {/* {serviceSeoData ? (
+            <title>{serviceSeoData.title }</title>
         ) : (
           <title>Loading...</title>
-        )}
+        )} */}
       </Helmet>
 
-      {/* { serviceSeoData.title} */}
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Services"
