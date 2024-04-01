@@ -50,12 +50,14 @@ const Service = () => {
     <>
       <Helmet>
         {/* <title>Our-Services</title> */}
+        {/* <meta name="description" content="About SEO" /> */}
         {/* <title> {serviceSeoData.title !==" undefined"? serviceSeoData.title: " "}</title> */}
         {/* <title> {serviceSeoData.title}</title> */}
 
         {serviceSeoData ? (
         
-            <title>{serviceSeoData.title }</title>
+            <title>{serviceSeoData.title}</title>
+
       
         ) : (
           <title>Loading...</title>
