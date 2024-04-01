@@ -8,14 +8,22 @@
   outline: none;
   border-radius: 50px;
   margin-left: 20px;
+
 }
 
-.modal-header h5 {
+.modal-header
+  
+{
+
+  border-bottom: none;
+  h5 {
   margin-left: 90px;
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   font-size: 24px !important;
   margin-left: 25% !important;
+  
+}
 }
 
 .servicePopup {
@@ -108,7 +116,7 @@
   margin-top: 20px;
 }   
 
-.brouchure_icon{
+.top_icon{
   background: $light_navy_blue;
 margin-top: 30px;
 color: #fff;

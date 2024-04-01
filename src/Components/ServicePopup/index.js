@@ -32,7 +32,7 @@ const ServicePopup = (props) => {
     // Open the modal after 20 seconds
     const timeoutId = setTimeout(() => {
       setShowModal(true);
-    }, 20); // 20 seconds in milliseconds
+    }, 20000); // 20 seconds in milliseconds
 
     // Clear the timeout if the component unmounts
     return () => clearTimeout(timeoutId);

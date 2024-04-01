@@ -52,6 +52,10 @@
     background: #ffffff;
     box-shadow: 0px 2px 20px #0000001a;
 }
+.blog_img img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
    
 
 .blog_date_author-box{
@@ -65,10 +69,13 @@
     font-family: "Rajdhani", sans-serif;
     font-weight: bolder;
     text-decoration: underline;}
-
+  
      .blog_content{
         padding: 30px;
         background: #fff;
+        border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
 
         svg{
             vertical-align: text-top;

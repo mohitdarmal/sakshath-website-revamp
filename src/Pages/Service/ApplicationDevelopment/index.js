@@ -66,7 +66,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
 }
 popUpPara={"We don’t just build apps, we create brand.Choosing us will be your best decision."}
 />
-<MarqueeTools/>
+
 
       {/* @@@@@ SECTION- App Development Start @@@@@@ */}
       <section className="why_choose_app_dev_sec">
@@ -335,9 +335,9 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
       {/* @@@@@ SECTION- Our Services end @@@@@@ */}
       <TrustedBy />
 
-      {/* @@@@@ SECTION- Our Platform start @@@@@@ */}
-
-      {/* @@@@@ SECTION- Our Platform end @@@@@@ */}
+      {/* @@@@@ SECTION-  Marquee Tools start @@@@@@ */}
+      <MarqueeTools/>
+      {/* @@@@@ SECTION- Marquee Tools @@@@@@ */}
 
       {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}
       <section className="brouchure_sec">

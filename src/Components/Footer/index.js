@@ -158,7 +158,7 @@ const Footer = () => {
                     <Link to="/about">Devops/testing</Link>
                   </li>
                   <li className="mt-3">
-                    <Link to="/analytics">BI + Dashboard</Link>
+                    <a href="/analytics#Bi+dashboard">BI + Dashboard</a>
                   </li>
                   <li className="mt-3">
                     <Link to="/erp">ERP</Link>

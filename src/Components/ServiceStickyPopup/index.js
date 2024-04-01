@@ -42,7 +42,7 @@ function ServiceStickyPopup() {
           keyboard={false}
         >
         <Modal.Header closeButton>
-          <div className="brouchure_icon">
+          <div className="top_icon">
             <PiCertificateLight />
           </div>
         </Modal.Header>

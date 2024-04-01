@@ -543,6 +543,9 @@ export const Analytics = () => {
                                     Highly reliable system design with
                                     reusability in mind
                                   </li>
+                                  <li>
+                                  Systems engineering ensures scalable, maintainable AI solutions with modularity and interoperability.
+                                  </li>
                                 </ul>
                               </Fade>
                             </div>
@@ -568,6 +571,9 @@ export const Analytics = () => {
                                   <li>
                                     Big Data Sciences with Machine learning for
                                     ease of humans and the world economy
+                                  </li>
+                                  <li>
+                                  Technical advantages including automated feature extraction, nonlinear modeling, anomaly detection, optimization, real-time processing.
                                   </li>
                                 </ul>
                               </Fade>
@@ -631,6 +637,9 @@ export const Analytics = () => {
                                   <li>
                                     Usage of IP Cores of our and partners, for
                                     effective cost, time and reliability
+                                  </li>
+                                  <li>
+                                  Faster deployment and time-to-market for products.
                                   </li>
                                 </ul>
                               </Fade>
@@ -848,7 +857,7 @@ export const Analytics = () => {
                           <Fade direction="up" triggerOnce>
                             <div className="ai_datascience_content_col_box bi_box5 horizontal-shake">
                               <div className="ai_datascience_content_img">
-                                <img src={analytics_logo_05_skyBlue} alt="" />
+                                <img src={analytics_logo_05} alt="" />
                               </div>
                               <div className="ai_datascience_content_para">
                                 <Fade direction="up" triggerOnce>
@@ -1281,8 +1290,8 @@ export const Analytics = () => {
                                   Our master data management solution refers to
                                   the standards, policies, governance, and tools
                                   addressed to build and maintain critical data.
-                                  We provide a centralized location for data
-                                  within an organization. Lorem ipsum toyota spandid futuristic lorem
+                                  We at Sakshath Technologies provide a completely secured centralized location for data
+                                  within an organization.
                                 </p>
                               </Fade>
                             </div>
