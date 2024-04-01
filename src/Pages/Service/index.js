@@ -49,20 +49,15 @@ const Service = () => {
   return (
     <>
       <Helmet>
-        {/* <title>Our-Services</title> */}
-        {/* <title> {serviceSeoData.title !==" undefined"? serviceSeoData.title: " "}</title> */}
-        {/* <title> {serviceSeoData.title}</title> */}
-
-        {serviceSeoData ? (
-        
+      <title>{serviceSeoData.title }</title>
+      <meta name="description" content={serviceSeoData.body} />
+        {/* {serviceSeoData ? (
             <title>{serviceSeoData.title }</title>
-      
         ) : (
           <title>Loading...</title>
-        )}
+        )} */}
       </Helmet>
 
-      {/* { serviceSeoData.title} */}
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Services"
