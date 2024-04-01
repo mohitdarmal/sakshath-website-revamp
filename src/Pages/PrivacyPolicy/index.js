@@ -18,16 +18,16 @@ export const PrivacyPolicy=()=>
             <div className="row">
                 <div className="col-md-12">
                     <div className="privacy_policy_intro_para">
-                        <p>This Privacy Policy describes how [Your Company Name] ("we," "us," or "our") collects, 
+                        <p>This Privacy Policy describes how Sakshath Technologies we collects, 
                             uses, and discloses the personal information collected from users of our website ("the Platform"). 
                             By using our services, you agree to the terms outlined in this privacy policy.</p>
                     </div>
                     <div className="information_we_collect_section">
-                        <h4 className="Personal_Information"> Personal Information :</h4>
+                        <h4 className="Personal_Information"> Personal Information</h4>
                         <p className="Personal_Information_para"> We may collect personal information when you use our platform, such as your name, 
                             email address, company name, phone number, and resume. This information is collected when you fill out forms,
                              subscribe to newsletters, or submit job applications.</p>
-                        <h4 className="Usage_Information"> Usage Information:</h4>
+                        <h4 className="Usage_Information"> Usage Information</h4>
                         <p className="Usage_Information_para">  We gather information about your interactions with the platform, including your IP address,
                          browser type, and pages visited. This helps us understand how you navigate our site,
                          improve user experience, and ensure the security of our services.</p>
@@ -53,7 +53,7 @@ export const PrivacyPolicy=()=>
                         <p className="consent_para">
                         By using the platform, you provide explicit consent for the processing of your data as outlined in this privacy policy.
                         </p>
-                        <h5 className="Contractual_necessity_heading">Contractual Necessity:</h5>
+                        <h5 className="Contractual_necessity_heading">Contractual Necessity</h5>
                         <p className="Contractual_necessity_para">
                         Certain processing activities are necessary for the performance of a contract between you and [Your Company Name]. For instance, to provide the services you have requested.
                         </p>
@@ -80,7 +80,7 @@ export const PrivacyPolicy=()=>
                         <p className="providing_service_para"> We use the collected information to provide and improve our services. 
                         For example, personalizing your experience, responding to inquiries, and ensuring the proper functioning of our Platform.
                         </p>
-                        <h5 className="communication_heading"> Communication</h5>
+                        <h5 className="communication_heading">Communication</h5>
                         <p className="communiaction_para"> Your contact information may be used to send you updates, newsletters, and promotional materials related to our services. 
                         You have the option to opt out of these communications at any time.</p>
                         <h5 className="analytics_heading">Analytics</h5>
@@ -172,7 +172,7 @@ export const PrivacyPolicy=()=>
                     <div className="your_rights_section">
                         <h4 className="your_rights_heading">Your Rights</h4>
                         <p className="your_right_para">As a data subject, you have the right to access, rectify, erase, or restrict the processing of your personal data. 
-                        You can exercise these rights by contacting us at [Your Contact Email].
+                        You can exercise these rights by contacting us at  <a href="">info@sakshath-technologies.com</a>.
                         </p>
                     </div>
 
@@ -226,10 +226,10 @@ export const PrivacyPolicy=()=>
             <div className="row">
                 <div className="col-md-12">
                     <div className="contact_information_section">
-                        <h4 className="contact_information_heading"> CONTACT INFORMATION</h4>
+                        <h4 className="contact_information_heading">CONTACT INFORMATION</h4>
                         <p className="contact_information_para">
                         For any questions or concerns regarding this Privacy Policy,
-                         please contact us at  <a>Info@sakshath-technologies.com</a> By using our services, 
+                         please contact us at <strong> <a href="mailto:Info@sakshath-technologies.com" style={{textDecoration:'none'}}>Info@sakshath-technologies.com</a> </strong> By using our services, 
                          you acknowledge that you have read, understood,
                          and agreed to be bound by this comprehensive privacy policy.
 
