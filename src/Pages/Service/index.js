@@ -33,26 +33,30 @@ import axios from "axios";
 const Service = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [serviceSeoData, setServiceSeoData] = React.useState({});
-  const seoTag= async (()=>{
+ 
+  const seoTag = async () => {
     try{
-      const res = await axios.get("https://dummyjson.com/posts/user/5").then((data) => {
-        
-      // if (data.status === 200) {
-      //   setServiceSeoData(data.data.posts[0]);
-      //   console.log(data);
-      // }
-
-    });
+      await axios.get("https://dummyjson.com/posts/user/5").then((data) => {
+        // console.log(data);
+        if (data.status === 200) {
+          setServiceSeoData(data.data.posts[0]);
+          console.log(data);
+        }
+      });
+    }catch(err) {
+      console.log(err, "err")
     }
-
-    catch(err){
-      console.log(err);
-
-    }
-  })
+  }
 
   useEffect(() => {
-    seoTag();
+    // axios.get("https://dummyjson.com/posts/user/5").then((data) => {
+    //   // console.log(data);
+    //   if (data.status === 200) {
+    //     setServiceSeoData(data.data.posts[0]);
+    //     console.log(data);
+    //   }
+    // });
+    seoTag()
   }, []);
 
   console.log(serviceSeoData.title, "hello");
