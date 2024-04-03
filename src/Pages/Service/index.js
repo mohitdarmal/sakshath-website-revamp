@@ -33,9 +33,9 @@ import axios from "axios";
 const Service = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [serviceSeoData, setServiceSeoData] = React.useState({});
- 
+
   const seoTag = async () => {
-    try{
+    try {
       await axios.get("https://dummyjson.com/posts/user/5").then((data) => {
         // console.log(data);
         if (data.status === 200) {
@@ -43,10 +43,10 @@ const Service = () => {
           console.log(data);
         }
       });
-    }catch(err) {
-      console.log(err, "err")
+    } catch (err) {
+      console.log(err, "err");
     }
-  }
+  };
 
   useEffect(() => {
     // axios.get("https://dummyjson.com/posts/user/5").then((data) => {
@@ -56,7 +56,7 @@ const Service = () => {
     //     console.log(data);
     //   }
     // });
-    seoTag()
+    seoTag();
   }, []);
 
   console.log(serviceSeoData.title, "hello");
@@ -65,8 +65,8 @@ const Service = () => {
   return (
     <>
       <Helmet>
-      <title>{serviceSeoData.title }</title>
-      <meta name="description" content={serviceSeoData.body} />
+        <title>{serviceSeoData.title}</title>
+        <meta name="description" content={serviceSeoData.body} />
         {/* {serviceSeoData ? (
             <title>{serviceSeoData.title }</title>
         ) : (
@@ -205,7 +205,7 @@ const Service = () => {
                 <h3>Let’s Create Big Stories Together</h3>
                 <ul className="buttons_box">
                   <li>
-                    <Link className="meet_button">meet the team</Link>
+                    <Link to="/contact-us" className="meet_button">meet the team</Link>
                   </li>
                 </ul>
               </div>
@@ -275,7 +275,10 @@ const Service = () => {
                   </div>
                 </div>
                 <div className="it_benefits_button_box">
-                  <SlideAnimationButton btnName="Learn more about us" />
+                  <SlideAnimationButton
+                    btnName="Learn more about us"
+                    
+                  />
                 </div>
               </div>
             </div>

@@ -49,7 +49,7 @@ export const CLIENT_LOGO35 = require("../../Assets/images/EPSSW_USA.png");
 export const CLIENT_LOGO36 = require("../../Assets/images/Socremo_Mozambique.png");
 export const CLIENT_LOGO37 = require("../../Assets/images/FNB_Mozambique.jpg");
 export const CLIENT_LOGO38 = require("../../Assets/images/ABSA.png");
-export const CLIENT_LOGO11 = require("../../Assets/images/Co_operative_Bank.png");
+// export const CLIENT_LOGO11 = require("../../Assets/images/Co_operative_Bank.png");
 
 
 

@@ -14,7 +14,7 @@ import "./style.scss";
 import {
   CLIENT_LOGO1,
   CLIENT_LOGO10,
-  CLIENT_LOGO11,
+  // CLIENT_LOGO11,
   CLIENT_LOGO12,
   CLIENT_LOGO13,
   CLIENT_LOGO14,
@@ -32,17 +32,8 @@ import {
   CLIENT_LOGO25,
   CLIENT_LOGO26,
   CLIENT_LOGO27,
-  CLIENT_LOGO28,
-  CLIENT_LOGO29,
-  CLIENT_LOGO30,
-  CLIENT_LOGO31,
-  CLIENT_LOGO32,
-  CLIENT_LOGO33,
-  CLIENT_LOGO34,
-  CLIENT_LOGO35,
-  CLIENT_LOGO36,
-  CLIENT_LOGO37,
-  CLIENT_LOGO38,
+ CLIENT_LOGO37,
+
   CLIENT_LOGO39,
   CLIENT_LOGO40,
   CLIENT_LOGO41,
@@ -59,6 +50,9 @@ import {
   CLIENT_LOGO7,
   CLIENT_LOGO8,
   CLIENT_LOGO9,
+  CLIENT_LOGO32,
+  CLIENT_LOGO33,
+  CLIENT_LOGO34,
 } from "./Constant";
 
 const ClientLogo = () => {
@@ -142,7 +136,7 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO18} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO11} />
+                      {/* <img src={CLIENT_LOGO11} /> */}
                     </SwiperSlide>
                     <SwiperSlide>
                       <img src={CLIENT_LOGO19} />
@@ -171,7 +165,7 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO27} />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    {/* <SwiperSlide>
                       <img src={CLIENT_LOGO28} />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -183,6 +177,13 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO31} />
                     </SwiperSlide>
+                   
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO35} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <img src={CLIENT_LOGO36} />
+                    </SwiperSlide> */}
                     <SwiperSlide>
                       <img src={CLIENT_LOGO32} />
                     </SwiperSlide>
@@ -193,17 +194,11 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO34} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO35} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO36} />
-                    </SwiperSlide>
-                    <SwiperSlide>
                       <img src={CLIENT_LOGO37} />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    {/* <SwiperSlide>
                       <img src={CLIENT_LOGO38} />
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                   </Swiper>
                 </Tab>
                 {/* </div> */}

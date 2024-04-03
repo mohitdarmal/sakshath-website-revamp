@@ -103,9 +103,16 @@
     font-size: 26px;
     line-height: 40px;
   }
-
-
+   .lets_meet_us_button::after {
+    content: "";
+    position: absolute;
+  
+    margin-left: 170px !important;
+    animation: horizontal-shaking 0.9s infinite;
 }
+  }
+
+
 
 @media screen and (max-width: 767px) {
   .planning_banner {
