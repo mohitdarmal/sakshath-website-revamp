@@ -72,7 +72,7 @@ const Staffing = () => {
             </div>
             <div className="col-md-6">
               <div className="staffing_img">
-                <img src={STAFFING} alt="" />
+                <img src={STAFFING} alt=""  className="img-fluid"/>
               </div>
             </div>
           </div>

@@ -229,3 +229,23 @@
     transition: .5s
   }
 }
+
+
+@media screen and (max-width:480px){
+  .staffing_benifit_section
+  {
+    display: none;
+  }
+
+  .staffing_job_section .col-md-4{
+    margin-bottom: 20px
+  }
+  .discovery_section .col-md-4{
+    margin-bottom: 20px
+  }
+
+  .staffing_industry_offer_box{
+    margin-bottom: 20px;
+  }
+  
+}

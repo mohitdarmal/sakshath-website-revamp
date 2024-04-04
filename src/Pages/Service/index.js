@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CountUp from "react-countup";
 import "./style.scss";
 import { SERVICE_HAPPY_CUSTOMER } from "./Constant";
@@ -28,17 +28,52 @@ import Faq from "../../Components/Faq";
 import ServiceStickyPopup from "../../Components/ServiceStickyPopup";
 import { Button } from "react-bootstrap";
 import { Helmet } from "react-helmet";
+import axios from "axios";
 
 const Service = () => {
   const [modalShow, setModalShow] = React.useState(false);
+  const [serviceSeoData, setServiceSeoData] = React.useState({});
+
+  const seoTag = async () => {
+    try {
+      await axios.get("https://dummyjson.com/posts/user/5").then((data) => {
+        // console.log(data);
+        if (data.status === 200) {
+          setServiceSeoData(data.data.posts[0]);
+          console.log(data);
+        }
+      });
+    } catch (err) {
+      console.log(err, "err");
+    }
+  };
+
+  useEffect(() => {
+    // axios.get("https://dummyjson.com/posts/user/5").then((data) => {
+    //   // console.log(data);
+    //   if (data.status === 200) {
+    //     setServiceSeoData(data.data.posts[0]);
+    //     console.log(data);
+    //   }
+    // });
+    seoTag();
+  }, []);
+
+  console.log(serviceSeoData.title, "hello");
+  // console.log(serviceSeoData.body, "des")
+
   return (
     <>
       <Helmet>
-        <title>Our-Services</title>
-        <meta name="description" content="About SEO" />
+        <title>{serviceSeoData.title}</title>
+        <meta name="description" content={serviceSeoData.body} />
+        {/* {serviceSeoData ? (
+            <title>{serviceSeoData.title }</title>
+        ) : (
+          <title>Loading...</title>
+        )} */}
       </Helmet>
 
-      
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Services"
@@ -170,7 +205,7 @@ const Service = () => {
                 <h3>Let’s Create Big Stories Together</h3>
                 <ul className="buttons_box">
                   <li>
-                    <Link className="meet_button">meet the team</Link>
+                    <Link to="/contact-us" className="meet_button">meet the team</Link>
                   </li>
                 </ul>
               </div>
@@ -217,7 +252,11 @@ const Service = () => {
                   </div>
                 </div>
                 <p>
-                We offers the complete spectrum of Software Development, Strategic Staffing, IT Consulting in the areas of SYSPRO, Epicor, Talend, QA , RPA, Java and BI to its clients to help them focus on their core processes and meet their evolving business objectives.
+                  We offers the complete spectrum of Software Development,
+                  Strategic Staffing, IT Consulting in the areas of SYSPRO,
+                  Epicor, Talend, QA , RPA, Java and BI to its clients to help
+                  them focus on their core processes and meet their evolving
+                  business objectives.
                 </p>
                 <div className="container technology_list">
                   <div className="left_side_technology">
