@@ -48,7 +48,7 @@ const Service = () => {
   //   }
   // };
 
-  useEffect(() => {
+  // useEffect(() => {
     // try{
     //  const response= fetch("http://172.20.12.189:3000/confApp/api/v1/seo",{
     //     method:'GET',
@@ -69,20 +69,20 @@ const Service = () => {
     //      console.log(data);
     //    }
     //  });
-    axios.get("http://172.20.12.189:3000/confApp/api/v1/seo", {
-      headers:{
-        "Content-Type": "application/json",
-      }
-    }).then((data) => {
-      console.log(data, "Hello Data");
+    // axios.get("http://172.20.12.189:3000/confApp/api/v1/seo", {
+    //   headers:{
+    //     "Content-Type": "application/json",
+    //   }
+    // }).then((data) => {
+    //   console.log(data, "Hello Data");
       //  if (data.status === 200) {
       //    setServiceSeoData();
       //    console.log(data);
       //  }
-    });
+    // });
 
     // seoTag();
-  }, []);
+  // }, []);
 
   console.log(serviceSeoData.title, "hello");
   // console.log(serviceSeoData.body, "des")
@@ -302,7 +302,7 @@ const Service = () => {
                   </div>
                 </div>
                 <div className="it_benefits_button_box">
-                  <SlideAnimationButton btnName="Learn more about us" />
+                  <SlideAnimationButton  url = "/about" btnName="Learn more about us"  />
                 </div>
               </div>
             </div>
