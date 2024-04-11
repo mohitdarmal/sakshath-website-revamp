@@ -1136,7 +1136,7 @@ export const Home = () => {
           <div className="row">
             <div className="top_blog_container text-center">
               <Fade direction="up" triggerOnce>
-                <SubTitle SubTitle="Our Achievements" />
+                {/* <SubTitle SubTitle="Our Achievements" /> */}
               </Fade>
               <Fade direction="up" delay={100} triggerOnce>
                 <Heading

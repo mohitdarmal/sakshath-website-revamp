@@ -62,7 +62,7 @@ const ClientLogo = () => {
       <section className="popular_clients">
         <div className="container">
           <div className="row text-center">
-            <SubTitle SubTitle="Popular Partners" />
+            {/* <SubTitle SubTitle="Popular Partners" /> */}
             <p className="popular_partner_heading">
               WE HAVE{" "}
               <CountUp

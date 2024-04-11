@@ -159,11 +159,11 @@ const Header = () => {
                         Our Team
                       </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink to="/company-journey" className="dropdown-item">
                         Company Jounery
                       </NavLink>
-                    </li>
+                    </li> */}
                     
                     <li>
                       <NavLink to="/our-achievements" className="dropdown-item">

@@ -505,7 +505,7 @@ const Career = () => {
         <div className="container">
         <div className="text-center mb-4 pb-md-1">
         <Fade direction="up" triggerOnce>
-           <Heading heading= "Most popular jobs" uppercase="" />
+           <Heading heading= "Current Openings" uppercase="uppercase" />
            </Fade>
            <Fade direction="up" triggerOnce>
            <p>Beneath each of these categories, you can find its most popular</p>

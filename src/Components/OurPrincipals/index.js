@@ -123,7 +123,7 @@ const OurPrincipals = () => {
               <div className="text-center">
                 <div className="title">
                   <Fade direction="up" triggerOnce>
-                    <SubTitle SubTitle="Our Principles " />{" "}
+                    <SubTitle SubTitle=" " />{" "}
                   </Fade>
                   <Fade direction="up" triggerOnce>
                     <Heading
