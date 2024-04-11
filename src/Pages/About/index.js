@@ -83,7 +83,7 @@ const About = () => {
                     date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from
                     the beginning of the journey made what Sakshath
                     Technologies' is today, we grew gradually to a family of
-                    150+ employees and now have a domestic presence in 3
+                    200+ employees and now have a domestic presence in 3
                     metropolitan cities serving clients from all over the world.
                     Celebrating decade milestones, today we take pride in
                     onboarding the team of Country’s Best and strongly believe
