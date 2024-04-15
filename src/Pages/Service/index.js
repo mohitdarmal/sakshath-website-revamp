@@ -48,27 +48,31 @@ const Service = () => {
   //   }
   // };
 
-  //  useEffect(() => 
+  //  useEffect(() =>
   //  {
-  
+
   //    axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data) => {
   //     console.log(data);
   //     //  if (data.status === 200) {
   //     //    setServiceSeoData(data.data.posts[0]);
-  //     //    console.log(data);
+  //     //    console.log(data);  http://172.20.12.189:3000/confApp/api/v1/seo
   //     //  }
   //    });
-    
-     useEffect(()=>{
-      axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data)=>{
-        console.log(data)
-      })
-     })
-    
 
-    // seoTag();
+  useEffect(() => {
+    try {
+    const res=  fetch("http://172.20.12.189:3000/confApp/api/v1/seo", {
+      method:"GET",
+      
+    } );
+    console.log(res);
+    } catch (err) {
+      console.log(err, "err");
+    }
+  });
+
+  // seoTag();
   // }, []);
-  
 
   // console.log(serviceSeoData.title, "hello");
   // console.log(serviceSeoData.body, "des")
@@ -288,7 +292,10 @@ const Service = () => {
                   </div>
                 </div>
                 <div className="it_benefits_button_box">
-                  <SlideAnimationButton  url = "/about" btnName="Learn more about us"  />
+                  <SlideAnimationButton
+                    url="/about"
+                    btnName="Learn more about us"
+                  />
                 </div>
               </div>
             </div>
