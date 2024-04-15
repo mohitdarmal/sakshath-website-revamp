@@ -48,43 +48,29 @@ const Service = () => {
   //   }
   // };
 
-  // useEffect(() => {
-    // try{
-    //  const response= fetch("http://172.20.12.189:3000/confApp/api/v1/seo",{
-    //     method:'GET',
-
-    //   })
-    //           // console.log(data, "datapass")
-
-    // }
-    // catch(err){
-
-    //   console.log(err, "error");
-
-    // }
-    //  axios.get("https://dummyjson.com/posts/user/5").then((data) => {
-    //   console.log(data);
-    //    if (data.status === 200) {
-    //      setServiceSeoData(data.data.posts[0]);
-    //      console.log(data);
-    //    }
-    //  });
-    // axios.get("http://172.20.12.189:3000/confApp/api/v1/seo", {
-    //   headers:{
-    //     "Content-Type": "application/json",
-    //   }
-    // }).then((data) => {
-    //   console.log(data, "Hello Data");
-      //  if (data.status === 200) {
-      //    setServiceSeoData();
-      //    console.log(data);
-      //  }
-    // });
+  //  useEffect(() => 
+  //  {
+  
+  //    axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data) => {
+  //     console.log(data);
+  //     //  if (data.status === 200) {
+  //     //    setServiceSeoData(data.data.posts[0]);
+  //     //    console.log(data);
+  //     //  }
+  //    });
+    
+     useEffect(()=>{
+      axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data)=>{
+        console.log(data)
+      })
+     })
+    
 
     // seoTag();
   // }, []);
+  
 
-  console.log(serviceSeoData.title, "hello");
+  // console.log(serviceSeoData.title, "hello");
   // console.log(serviceSeoData.body, "des")
 
   return (
