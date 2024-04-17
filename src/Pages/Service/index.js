@@ -62,11 +62,12 @@ const Service = () => {
 
     useEffect(()=>{
       axios.get("http://172.20.12.189:3000/confApp/api/v1/seo", {
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*"
-        },
+        // mode: "no-cors",
+        // headers: {
+        //   "Content-Type": "application/json",
+        //   "Access-Control-Allow-Origin": "*"
+        // },
+        
       }).then((data)=>{
         console.log(data);
       })
