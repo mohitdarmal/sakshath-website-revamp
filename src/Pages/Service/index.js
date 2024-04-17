@@ -59,14 +59,14 @@ const Service = () => {
   //     //  }
   //    });
     
-     useEffect(()=>{
-      axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data)=>{
-        console.log(data)
-      })
-     })
+    //  useEffect(()=>{
+    //   axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data)=>{
+    //     console.log(data)
+    //   })
+    //  })
     
 
-    // seoTag();
+  //   seoTag();
   // }, []);
   
 

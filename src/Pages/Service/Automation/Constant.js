@@ -36,7 +36,7 @@ export const DEVOPS = require("../../../Assets/images/a.jpg");
 
 // rpa graph
 
-export const RPA_GRAPH = require("../../../Assets/images/RPA_Chart_new.svg").default;
+export const RPA_GRAPH = require("../../../Assets/images/RPA_Chart_new-svg.svg").default;
 
 
 // application starts
