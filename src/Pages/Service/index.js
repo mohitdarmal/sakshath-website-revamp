@@ -50,29 +50,30 @@ const Service = () => {
 
   // useEffect(() =>
   // {
-    
-    // axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then ((data) => {
-    //  console.log(data);
-    //  if (data.status === 200) {
-    //    setServiceSeoData(data.data.posts[0]);
-    //    console.log(data);  http://172.20.12.189:3000/confApp/api/v1/seo
-    //    }
-      
-    // });
 
-    useEffect(()=>{
-      axios.get("http://172.20.12.189:3000/confApp/api/v1/seo", {
+  // axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then ((data) => {
+  //  console.log(data);
+  //  if (data.status === 200) {
+  //    setServiceSeoData(data.data.posts[0]);
+  //    console.log(data);  http://172.20.12.189:3000/confApp/api/v1/seo
+  //    }
+
+  // });
+
+  useEffect(() => {
+    axios
+      //.get("https://dummy.restapiexample.com/api/v1/employee/1", {
+        .get("http://172.20.12.189:3000/confApp/api/v1/seo", {
         // mode: "no-cors",
-        // headers: {
-        //   "Content-Type": "application/json",
-        //   "Access-Control-Allow-Origin": "*"
-        // },
-        
-      }).then((data)=>{
-        console.log(data);
+        //headers: {
+        //  "Content-Type": "application/json",
+        //  "Access-Control-Allow-Origin": "*"
+        //},
       })
-    })
-  
+      .then((data) => {
+        console.log("My data is : ", data);
+      });
+  });
 
   // useEffect(() => {
   //   try {
@@ -369,6 +370,5 @@ const Service = () => {
     </>
   );
 };
-
 
 export default Service;
