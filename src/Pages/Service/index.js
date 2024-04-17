@@ -48,6 +48,7 @@ const Service = () => {
   //   }
   // };
 
+<<<<<<< HEAD
   //  useEffect(() => 
   //  {
   
@@ -67,8 +68,54 @@ const Service = () => {
     
 
   //   seoTag();
+=======
+  // useEffect(() =>
+  // {
+
+  // axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then ((data) => {
+  //  console.log(data);
+  //  if (data.status === 200) {
+  //    setServiceSeoData(data.data.posts[0]);
+  //    console.log(data);  http://172.20.12.189:3000/confApp/api/v1/seo
+  //    }
+
+  // });
+
+  useEffect(() => {
+    axios
+      //.get("https://dummy.restapiexample.com/api/v1/employee/1", {
+        .get("http://172.20.12.189:3000/confApp/api/v1/seo", {
+        // mode: "no-cors",
+        //headers: {
+        //  "Content-Type": "application/json",
+        //  "Access-Control-Allow-Origin": "*"
+        //},
+      })
+      .then((data) => {
+        console.log("My data is : ", data);
+      });
+  });
+
+  // useEffect(() => {
+  //   try {
+  //     const res = fetch("http://172.20.12.189:3000/confApp/api/v1/seo", {
+  //       method: "GET",
+  //       mode: "no-cors",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         // "Access-Control-Allow-Origin": "*",
+  //       },
+  //     });
+  //     const data= res.json();
+  //     console.log(data, "result");
+  //   } catch (err) {
+  //     console.log(err, "err");
+  //   }
+  // });
+
+  // seoTag();
+>>>>>>> 293c8ce4398644ab152b92f8c6e0e2cc374d1e09
   // }, []);
-  
 
   // console.log(serviceSeoData.title, "hello");
   // console.log(serviceSeoData.body, "des")
@@ -288,7 +335,10 @@ const Service = () => {
                   </div>
                 </div>
                 <div className="it_benefits_button_box">
-                  <SlideAnimationButton  url = "/about" btnName="Learn more about us"  />
+                  <SlideAnimationButton
+                    url="/about"
+                    btnName="Learn more about us"
+                  />
                 </div>
               </div>
             </div>
