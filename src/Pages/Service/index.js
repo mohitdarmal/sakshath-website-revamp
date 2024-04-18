@@ -33,6 +33,7 @@ import axios from "axios";
 const Service = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [serviceSeoData, setServiceSeoData] = React.useState({});
+
   const [seoData, setSeoData] = useState({});
 
   // const seoTag = async () => {
@@ -49,27 +50,6 @@ const Service = () => {
   //   }
   // };
 
-<<<<<<< HEAD
-  //  useEffect(() => 
-  //  {
-  
-  //    axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data) => {
-  //     console.log(data);
-  //     //  if (data.status === 200) {
-  //     //    setServiceSeoData(data.data.posts[0]);
-  //     //    console.log(data);
-  //     //  }
-  //    });
-    
-    //  useEffect(()=>{
-    //   axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data)=>{
-    //     console.log(data)
-    //   })
-    //  })
-    
-
-  //   seoTag();
-=======
   // useEffect(() =>
   // {
 
@@ -86,8 +66,7 @@ const Service = () => {
   // use this for api
 
   useEffect(() => {
-    axios
-      .get("http://172.20.12.189:8086/confApp/api/v1/seo", {
+    axios.get("http://172.20.12.189:8086/confApp/api/v1/seo", {
         // mode: "no-cors",
         //headers: {
         //  "Content-Type": "application/json",
@@ -128,7 +107,6 @@ const Service = () => {
   //  });
 
   // seoTag();
->>>>>>> 293c8ce4398644ab152b92f8c6e0e2cc374d1e09
   // }, []);
 
   // console.log(serviceSeoData.title, "hello");
