@@ -128,6 +128,7 @@ export const Home = () => {
   ];
 
   const [achivementHome, setAchivementHome] = useState([]);
+  // const [seoData, setSeoData] = useState({});
 
   useEffect(() => {
     setAchivementHome(achivementData);
