@@ -20,8 +20,8 @@ const Blog = () => {
             blogTitle:"Composable ERP solutions: providing distributors with future-proofing, flexibility, and agility",
             blogDescription:"Composable ERP solutions represent a cutting-edge approach to enterprise resource planning, emphasizing modularity and flexibility in system architecture. Significance of Future-Proofing, Flexibility, and Agility in Distribution. The dynamics of the distribution industry necessitate adaptive strategies. Composable ERP solutions play a pivotal role in ensuring distributors are equipped with future-proofing capabilities, flexibility, and the agility required to navigate the ever-evolving market.",
             tags:["Technology", "Service", "IT", "Development"],
-            blogImg:require("../../Assets/images/blog1_img.png"),
-            blogImg_blog_detail_img:require("../../Assets/images/blog1_detailImg.png"),
+            blogImg:require("../../Assets/images/blog1_img.jpg"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog1_detailImg.jpg"),
             blogImg_blog_detail_img2:"https://muntech.vercel.app/assets/images/blog/blog-single-1.jpg",
             blogAuthor:"Nandini Chourey",
             blogAuthor_img:require("../../Assets/images/javalogo.png"),
@@ -34,8 +34,8 @@ const Blog = () => {
             blogTitle:"ERP Solutions Help Manufacturers Get New Products to Market Faster - and Better",
             blogDescription:"In the intricate world of manufacturing, Enterprise Resource Planning (ERP) is a comprehensive software solution designed to integrate and manage core business processes. This includes everything from production and procurement to finance and human resources. The contemporary manufacturing landscape demands a delicate balance between speed and quality in bringing new products to market. This article explores how ERP solutions play a pivotal role in achieving this equilibrium, providing manufacturers with the tools to streamline processes and enhance outcomes.",
             tags:["Technology", "Service"],
-            blogImg:require("../../Assets/images/blog2_img.png"),
-            blogImg_blog_detail_img:require("../../Assets/images/blog2_detailImg.png"),
+            blogImg:require("../../Assets/images/blog2_img.jpg"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog2_detailImg.jpg"),
             blogAuthor:"Mohit Darmal",
             blogDate:"8 Feb 2024"
 
@@ -45,8 +45,8 @@ const Blog = () => {
             blogTitle:"Three Great Benefits of SYSPRO Espresso - Mobile ERP for Manufacturers",
             blogDescription:"SYSPRO Espresso stands as a revolutionary mobile Enterprise Resource Planning (ERP) solution designed specifically for manufacturers. Offering a dynamic interface and advanced functionalities, it redefines how manufacturers engage with their production processes on the go.",
             tags:["Technology", "Service"],
-            blogImg:require("../../Assets/images/blog3_img.png"),
-            blogImg_blog_detail_img:require("../../Assets/images/blog3_img.png"),
+            blogImg:require("../../Assets/images/blog3_img.jpg"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog3_img.jpg"),
             blogAuthor:"Amar Singh",
             blogAuthor_img:require("../../Assets/images/javalogo.png"),
             blogDate:"8 Feb 2024"
@@ -57,8 +57,8 @@ const Blog = () => {
             blogTitle:"Key Insights on Everything Intelligent Automation",
             blogDescription:"Sed ut perspiciatis unde omnis iste natus errorsit voluptatem accusantium doloremque laudantium totae rem aperiam, eaque ipsa quae abillo inventore veritatis etquasi architecto beatae vitae dicta sunt explicabo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
             tags:["Technology", "Service"],
-            blogImg:require("../../Assets/images/blog4_img.png"),
-            blogImg_blog_detail_img:require("../../Assets/images/blog3_img.png"),
+            blogImg:require("../../Assets/images/blog4_img.jpg"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog3_img.jpg"),
             blogAuthor:"Srishti",
             blogDate:"8 Feb 2024"
 
@@ -68,8 +68,8 @@ const Blog = () => {
             blogTitle:"The Future of Business Applications: Power Apps & AI ",
             blogDescription:"Composable ERP solutions represent a cutting-edge approach to enterprise resource planning, emphasizing modularity and flexibility in system architecture. Significance of Future-Proofing, Flexibility, and Agility in Distribution. The dynamics of the distribution industry necessitate adaptive strategies. Composable ERP solutions play a pivotal role in ensuring distributors are equipped with future-proofing capabilities, flexibility, and the agility required to navigate the ever-evolving market.",
             tags:["Technology", "Service", "IT", "Development"],
-            blogImg:require("../../Assets/images/blog5_img.png"),
-            blogImg_blog_detail_img:require("../../Assets/images/blog5_detailimg.png"),
+            blogImg:require("../../Assets/images/blog5_img.jpg"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog5_detailimg.jpg"),
             blogAuthor:"Senthil",
             
             blogDate:"8 Feb 2024"
@@ -81,8 +81,8 @@ const Blog = () => {
             blogTitle:"The Impact of Digital Clutter on Mobile App Development Efficiency",
             blogDescription:"In the intricate world of manufacturing, Enterprise Resource Planning (ERP) is a comprehensive software solution designed to integrate and manage core business processes. This includes everything from production and procurement to finance and human resources. The contemporary manufacturing landscape demands a delicate balance between speed and quality in bringing new products to market. This article explores how ERP solutions play a pivotal role in achieving this equilibrium, providing manufacturers with the tools to streamline processes and enhance outcomes.",
             tags:["Technology", "Service"],
-            blogImg:require("../../Assets/images/blog6_img.png"),
-            blogImg_blog_detail_img:require("../../Assets/images/blog6_detailimg.png"),
+            blogImg:require("../../Assets/images/blog6_img.jpg"),
+            blogImg_blog_detail_img:require("../../Assets/images/blog6_detailimg.jpg"),
             blogAuthor:"Palanisamy",
             blogDate:"8 Feb 2024"
 
