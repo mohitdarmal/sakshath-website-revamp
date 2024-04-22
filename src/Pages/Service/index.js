@@ -65,27 +65,51 @@ const Service = () => {
 
   // use this for api
 
+  // useEffect(() => {
+  //   axios.get("http://172.20.12.189:8086/confApp/api/v1/seo", {
+  //       // mode: "no-cors",
+  //       //headers: {
+  //       //  "Content-Type": "application/json",
+  //       //  "Access-Control-Allow-Origin": "*"
+  //       //},
+  //     })
+  //     .then((data) => {
+  //       setSeoData(data.data);
+  //       data.data.map((data) => {
+  //         if (data.pageName == "page name") {
+  //           setSeoData(data);
+  //         }
+  //       });
+  //       console.log("My data is :", data);
+       
+  //     });
+  //     catch (err) {
+  //       console.log(err, "err");
+  //     }
+   
+  // }, []);
   useEffect(() => {
     axios.get("http://172.20.12.189:8086/confApp/api/v1/seo", {
-        // mode: "no-cors",
-        //headers: {
-        //  "Content-Type": "application/json",
-        //  "Access-Control-Allow-Origin": "*"
-        //},
-      })
+      // mode: "no-cors", // Uncomment if needed for CORS issues
+      // headers: {
+      //   "Content-Type": "application/json",
+      //   "Access-Control-Allow-Origin": "*",
+      // }, // Uncomment if needed for CORS issues
+    })
       .then((data) => {
         setSeoData(data.data);
         data.data.map((data) => {
-          if (data.pageName == "page name") {
+          if (data.pageName === "page name") { 
             setSeoData(data);
           }
         });
         console.log("My data is :", data);
+      })
+      .catch((err) => { 
+        console.error('Error fetching data:', err); 
       });
-    // catch (err) {
-    //         console.log(err, "err");
-    //       }
   }, []);
+  
 
   console.log(seoData);
 
