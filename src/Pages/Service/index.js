@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import "./style.scss";
 import { SERVICE_HAPPY_CUSTOMER } from "./Constant";
@@ -34,6 +34,8 @@ const Service = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [serviceSeoData, setServiceSeoData] = React.useState({});
 
+  const [seoData, setSeoData] = useState({});
+
   // const seoTag = async () => {
   //   try {
   //     await axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data) => {
@@ -59,11 +61,12 @@ const Service = () => {
   //    }
 
   // });
+  //.get("https://dummy.restapiexample.com/api/v1/employee/1", {
+
+  // use this for api
 
   useEffect(() => {
-    axios
-      //.get("https://dummy.restapiexample.com/api/v1/employee/1", {
-        .get("http://172.20.12.189:3000/confApp/api/v1/seo", {
+    axios.get("http://172.20.12.189:8086/confApp/api/v1/seo", {
         // mode: "no-cors",
         //headers: {
         //  "Content-Type": "application/json",
@@ -71,26 +74,37 @@ const Service = () => {
         //},
       })
       .then((data) => {
-        console.log("My data is : ", data);
+        setSeoData(data.data);
+        data.data.map((data) => {
+          if (data.pageName == "page name") {
+            setSeoData(data);
+          }
+        });
+        console.log("My data is :", data);
       });
-  });
+    // catch (err) {
+    //         console.log(err, "err");
+    //       }
+  }, []);
+
+  console.log(seoData);
 
   // useEffect(() => {
   //   try {
-  //     const res = fetch("http://172.20.12.189:3000/confApp/api/v1/seo", {
-  //       method: "GET",
-  //       mode: "no-cors",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         // "Access-Control-Allow-Origin": "*",
-  //       },
-  //     });
-  //     const data= res.json();
-  //     console.log(data, "result");
-  //   } catch (err) {
-  //     console.log(err, "err");
-  //   }
-  // });
+  //     const res = fetch("http://172.20.12.79:8080/confApp/api/v1/seo", {
+  // //       method: "GET",
+  // //       mode: "no-cors",
+  // //       headers: {
+  // //         "Content-Type": "application/json",
+  // //         // "Access-Control-Allow-Origin": "*",
+  // //       },
+  //      });
+  //      const data= res.json();
+  //      console.log(data, "result");
+  //    } catch (err) {
+  //      console.log(err, "err");
+  //    }
+  //  });
 
   // seoTag();
   // }, []);
@@ -101,8 +115,8 @@ const Service = () => {
   return (
     <>
       <Helmet>
-        <title>{serviceSeoData.title}</title>
-        <meta name="description" content={serviceSeoData.body} />
+        <title>{seoData.pageTitle}</title>
+        <meta name="description" content={seoData.seoDescription} />
         {/* {serviceSeoData ? (
             <title>{serviceSeoData.title }</title>
         ) : (
