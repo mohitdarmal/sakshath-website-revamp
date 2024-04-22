@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import "./style.scss";
 import { SERVICE_HAPPY_CUSTOMER } from "./Constant";
@@ -34,6 +34,8 @@ const Service = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [serviceSeoData, setServiceSeoData] = React.useState({});
 
+  const [seoData, setSeoData] = useState({});
+
   // const seoTag = async () => {
   //   try {
   //     await axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data) => {
@@ -48,27 +50,88 @@ const Service = () => {
   //   }
   // };
 
-  //  useEffect(() => 
-  //  {
-  
-  //    axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data) => {
-  //     console.log(data);
-  //     //  if (data.status === 200) {
-  //     //    setServiceSeoData(data.data.posts[0]);
-  //     //    console.log(data);
-  //     //  }
-  //    });
-    
-     useEffect(()=>{
-      axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data)=>{
-        console.log(data)
-      })
-     })
-    
+  // useEffect(() =>
+  // {
 
-    // seoTag();
+  // axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then ((data) => {
+  //  console.log(data);
+  //  if (data.status === 200) {
+  //    setServiceSeoData(data.data.posts[0]);
+  //    console.log(data);  http://172.20.12.189:3000/confApp/api/v1/seo
+  //    }
+
+  // });
+  //.get("https://dummy.restapiexample.com/api/v1/employee/1", {
+
+  // use this for api
+
+  // useEffect(() => {
+  //   axios.get("http://172.20.12.189:8086/confApp/api/v1/seo", {
+  //       // mode: "no-cors",
+  //       //headers: {
+  //       //  "Content-Type": "application/json",
+  //       //  "Access-Control-Allow-Origin": "*"
+  //       //},
+  //     })
+  //     .then((data) => {
+  //       setSeoData(data.data);
+  //       data.data.map((data) => {
+  //         if (data.pageName == "page name") {
+  //           setSeoData(data);
+  //         }
+  //       });
+  //       console.log("My data is :", data);
+       
+  //     });
+  //     catch (err) {
+  //       console.log(err, "err");
+  //     }
+   
   // }, []);
+  useEffect(() => {
+    axios.get("http://172.20.12.189:8086/confApp/api/v1/seo", {
+      // mode: "no-cors", // Uncomment if needed for CORS issues
+      // headers: {
+      //   "Content-Type": "application/json",
+      //   "Access-Control-Allow-Origin": "*",
+      // }, // Uncomment if needed for CORS issues
+    })
+      .then((data) => {
+        setSeoData(data.data);
+        data.data.map((data) => {
+          if (data.pageName === "page name") { 
+            setSeoData(data);
+          }
+        });
+        console.log("My data is :", data);
+      })
+      .catch((err) => { 
+        console.error('Error fetching data:', err); 
+      });
+  }, []);
   
+
+  console.log(seoData);
+
+  // useEffect(() => {
+  //   try {
+  //     const res = fetch("http://172.20.12.79:8080/confApp/api/v1/seo", {
+  // //       method: "GET",
+  // //       mode: "no-cors",
+  // //       headers: {
+  // //         "Content-Type": "application/json",
+  // //         // "Access-Control-Allow-Origin": "*",
+  // //       },
+  //      });
+  //      const data= res.json();
+  //      console.log(data, "result");
+  //    } catch (err) {
+  //      console.log(err, "err");
+  //    }
+  //  });
+
+  // seoTag();
+  // }, []);
 
   // console.log(serviceSeoData.title, "hello");
   // console.log(serviceSeoData.body, "des")
@@ -76,8 +139,8 @@ const Service = () => {
   return (
     <>
       <Helmet>
-        <title>{serviceSeoData.title}</title>
-        <meta name="description" content={serviceSeoData.body} />
+        <title>{seoData.pageTitle}</title>
+        <meta name="description" content={seoData.seoDescription} />
         {/* {serviceSeoData ? (
             <title>{serviceSeoData.title }</title>
         ) : (
@@ -288,7 +351,10 @@ const Service = () => {
                   </div>
                 </div>
                 <div className="it_benefits_button_box">
-                  <SlideAnimationButton  url = "/about" btnName="Learn more about us"  />
+                  <SlideAnimationButton
+                    url="/about"
+                    btnName="Learn more about us"
+                  />
                 </div>
               </div>
             </div>
