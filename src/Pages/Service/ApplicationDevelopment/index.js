@@ -34,16 +34,39 @@ import ServicePopup from '../../../Components/ServicePopup'
 import MarqueeTools from "../../../Components/MarqueeTools";
 import { Helmet } from "react-helmet";
 import PopUp from "../../../Components/PopUp";
+import axios from "axios";
 
 const ApplicationDevelopment = () => {
   const [showModal, setShowModal] = useState(false);
+  const [data, setData] = useState({})
 
   const handleCloseModal = () => {
     setShowModal(false);
   };
 
+  const seoTag = () => {
+    axios.get("https://dummyjson.com/posts/user/5").then((data) => {
+    console.log(data);
+     if (data.status === 200) {
+      data.data.posts.map((data) => {
+        if(data.id == 17){
+          setData(data)
+        }
+      })
+      //  setServiceSeoData(data.data.posts[0]);
+       console.log(data);
+     }
+   });
+  }
+console.log(data, "Dataaaa")
+  useEffect(() => {
+    seoTag()
+  }, [])
+
   return (
     <>
+ 
+
      <Helmet>
         <title>Application Development</title>
         <meta name="description" content="About SEO" />
