@@ -48,27 +48,6 @@ const Service = () => {
   //   }
   // };
 
-<<<<<<< HEAD
-  //  useEffect(() => 
-  //  {
-  
-  //    axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data) => {
-  //     console.log(data);
-  //     //  if (data.status === 200) {
-  //     //    setServiceSeoData(data.data.posts[0]);
-  //     //    console.log(data);
-  //     //  }
-  //    });
-    
-    //  useEffect(()=>{
-    //   axios.get("http://172.20.12.189:3000/confApp/api/v1/seo").then((data)=>{
-    //     console.log(data)
-    //   })
-    //  })
-    
-
-  //   seoTag();
-=======
   // useEffect(() =>
   // {
 
@@ -114,7 +93,6 @@ const Service = () => {
   // });
 
   // seoTag();
->>>>>>> 293c8ce4398644ab152b92f8c6e0e2cc374d1e09
   // }, []);
 
   // console.log(serviceSeoData.title, "hello");
