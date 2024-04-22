@@ -27,7 +27,7 @@ const Contactus = () => {
   const [key, setKey] = useState("home");
 // Initialize form state
 const [formData, setFormData] = useState({
-  name: '',
+  fullName: '',
   email: '',
   phoneNumber: '',
   services: '',
@@ -36,13 +36,15 @@ const [formData, setFormData] = useState({
 
 // Handle form field changes
 const handleChange = (e) => {
-  const { name, value } = e.target;
-  setFormData(prevState => ({
-    ...prevState,
-    [name]: value
-  }));
-};
+  // const { name, value } = e.target;
+  // console.log(name, "Checking", value)
+  // setFormData(prevState => ({
+  //   ...prevState,
+  //   [name]: value
+  // }));
 
+};
+console.log(formData,"formData")
 // Handle form submission
 const handleSubmit = (e) => {
   e.preventDefault();
@@ -283,9 +285,9 @@ const handleSubmit = (e) => {
             <FloatingLabel controlId="firstName" label="First Name" className="mb-3">
               <Form.Control
                 type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
+                name="fullName"
+                value={formData.fullName}
+                onChange={(e) => setFormData({...formData, fullName:e.target.value})}
                 placeholder="First Name"
               />
             </FloatingLabel>
@@ -296,7 +298,7 @@ const handleSubmit = (e) => {
                 type="email"
                 name="email"
                 value={formData.email}
-                onChange={handleChange}
+                onChange={(e) => setFormData({...formData, email:e.target.value})}
                 placeholder="Email ID"
               />
             </FloatingLabel>
@@ -309,7 +311,7 @@ const handleSubmit = (e) => {
                 type="tel"
                 name="phoneNumber"
                 value={formData.phoneNumber}
-                onChange={handleChange}
+                onChange={(e) => setFormData({...formData, phoneNumber:e.target.value})}
                 placeholder="Phone Number"
               />
             </FloatingLabel>
@@ -320,7 +322,7 @@ const handleSubmit = (e) => {
                 aria-label="Floating label select example"
                 name="services"
                 value={formData.services}
-                onChange={handleChange}
+                onChange={(e) => setFormData({...formData, services:e.target.value})}
               >
                 <option>Select Option</option>
                 <option value="businessInquiry">Business Inquiry</option>
@@ -337,7 +339,7 @@ const handleSubmit = (e) => {
                 as="textarea"
                 name="comments"
                 value={formData.comments}
-                onChange={handleChange}
+                onChange={(e) => setFormData({...formData, comments:e.target.value})}
                 placeholder="Leave a comment here"
                 style={{ height: '150px' }}
               />

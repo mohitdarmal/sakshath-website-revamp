@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { BsTelephoneInbound } from "react-icons/bs";
+import CookieConsent from "react-cookie-consent";
 import { FOOTER_LOGO, SUBSCRIPTION_OFFER } from "./Constant";
 import "./style.scss";
 import Heading from "../Utils/Heading";
@@ -236,6 +237,19 @@ const Footer = () => {
       <FloatingActionButton />
 {/* <OnLoadPopup /> */}
       
+<CookieConsent
+  location="bottom"
+  // enableDeclineButton 
+  flipButtons
+  buttonText="I Accept"
+  // declineButtonText="Decline"
+  cookieName="Sakshath_Cookies"
+  style={{ background: "#24688fed" }}
+  buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+  expires={365}
+>
+  Please accept the cookies. This website uses cookies to enhance the user experience.
+</CookieConsent>
     
     </>
   );
