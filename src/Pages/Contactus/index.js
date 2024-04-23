@@ -35,7 +35,6 @@ import axios from "axios";
 
 const Contactus = () => {
   const [key, setKey] = useState("home");
-  // Initialize form state
   // const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
@@ -44,9 +43,6 @@ const Contactus = () => {
     description: "",
     comments: "",
   });
-// const handleReset=()=>{
-//   location.reload()
-// }
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -73,7 +69,7 @@ const Contactus = () => {
       comments: "",
     });
     // setIsLoading(true);
-    console.log(e.target.value, "amar");
+    // console.log(e.target.value, "amar");
     try {
       const res = await axios
         .post("http://172.20.12.189:8086/confApp/api/v1/contacts", {
@@ -85,12 +81,9 @@ const Contactus = () => {
             comments: formData.comments,
           },
         })
-
         .then((data) => {
-          console.log(data)
+          console.log(data);
         });
-       
-
     } catch (err) {
       console.log(err, "err");
     }
