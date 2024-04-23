@@ -77,12 +77,12 @@ const AchievementDetail = () => {
                   <p className="achievement_description" style={{ whiteSpace: 'pre-line', wordBreak: 'break-word', overflowWrap: 'break-word' }}>
                     {/* {state.description} */}
                     {/* return text.split('\\\\n').join('<br />'); */}
-                    {`${state.description.split('\\n').join('<br />').substring(0, 2000)}...`}
+                    {`${state.description.split('\\n').join('<br />').substring(0, 1000)}...`}
 
                   </p>
                   <img src={state.image} alt="" className="img-fluid" />
                   <p className="achievement_description">
-                  {`${state.description.split('\\n').join('<br />').substring(2001, 3567)}...`}
+                  {`${state.description.split('\\n').join('<br />').substring(1001, 2500)}...`}
 
                   </p>
 
