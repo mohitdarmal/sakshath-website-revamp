@@ -272,7 +272,7 @@ theme="light"
                 <img
                   src={SERVICE_HAPPY_CUSTOMER}
                   alt=""
-                  className="img-fluid"
+                  className="img-fluid ipad_full_width"
                 />
               </div>
             </div>
