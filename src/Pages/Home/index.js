@@ -953,17 +953,17 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      {/* @@@@@@ SECTION - "Who we are" end @@@@@@ */}
+      {/*  SECTION - "Who we are" end  */}
 
-      {/* @@@@@@ SECTION - Happy client counter starts @@@@@*/}
+      {/*  SECTION - Happy client counter starts /}
       <HappyClients />
-      {/* @@@@@ SECTION- Happy client counter end @@@@@@ */}
+      {/* SECTION- Happy client counter end  */}
 
-      {/* @@@@@@@ SECTION - Our Principals @@@@@@@@@ */}
+      {/*  SECTION - Our Principals @@@ */}
       <OurPrincipals />
-      {/* @@@@@@@ SECTION - Our Principals @@@@@@@@@ */}
+      {/* @ SECTION - Our Principals @@@ */}
 
-      {/* @@@@@@@ SECTION - planning banner starts @@@@@@ */}
+      {/* @ SECTION - planning banner starts  */}
       {/* <section className="planning_banner">
         <div className="container">
           <div className="row planning_banner_content_box align-items-center">
@@ -993,7 +993,7 @@ export const Home = () => {
 
       <CallToAction
         ctaContent={
-          "Let’s connect! We’d love to hear about your project and discuss our procedure. Our executives will be at your service. "
+          "Let’s connect! We’d love to hear from you. "
         }
         ctaTitle={"Let's meet us"}
       />

@@ -1220,6 +1220,8 @@ const Automation = () => {
                 <div className="layer_title">
                   <h4>Business Logic Layer</h4>
                 </div>
+                <img src={AUTOMATE_RPA} alt=""  style={{width:'50%',marginLeft: '100px',
+    marginTop: '10px'}}/>
               </div>
               <div className="col-md-4">
                 <div className="box3">

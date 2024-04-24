@@ -131,13 +131,7 @@ const Header = () => {
             </div>
             <div className="offcanvas-body header_menu">
               <ul className="navbar-nav justify-content-center flex-grow-1">
-                {/* home */}
-                {/* <li>
-                  <NavLink to="/" className="nav-link">
-                    Home
-                  </NavLink>
-                </li> */}
-
+               
                 {/* about */}
                 <li className="nav-item dropdown">
                   <NavLink

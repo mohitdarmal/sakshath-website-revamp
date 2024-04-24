@@ -207,10 +207,16 @@ const Footer = () => {
                 <Fade direction="up">
                   {" "}
                   <p>
-                    Copyrights © 2023 Sakshath Technologies. All rights
-                    reserved.
+                    Copyrights © 2024  <b>
+                    Sakshath Technologies
+                    </b>. All rights
+                    reserved. Powered by <b>
+                    Skandha
+                    </b> 
                   </p>
+                  <p></p>
                 </Fade>
+                
               </div>
             </div>
 
@@ -229,6 +235,7 @@ const Footer = () => {
                 </Link>
               </Fade>
             </div>
+            {/* <p className="text-center ">Powered by #Skanada</p> */}
           </div>
         </div>
       </footer>

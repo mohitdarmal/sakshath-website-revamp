@@ -135,18 +135,12 @@ const Erp = () => {
 
   return (
     <>
-
-<ServicePopup  popUpHeading={
-  "ERP Popup"
-  
-}/>
+      <ServicePopup popUpHeading={"ERP Popup"} />
       {/* <IndustriesPopup show={modalShow} onHide={() => setModalShow(false)} /> */}
 
       <BreadCumb imgUrl={ABOUT_BANNER} title="ENTERPRISE RESOURCE PLANNING " />
       {/* Syspro  overview Starts*/}
       {/* EPICOR  overview  starts*/}
-
-      
 
       <section className="epicor_section">
         <div className="container">
@@ -574,8 +568,6 @@ const Erp = () => {
       </section>
       {/* Industries ends */}
 
-
-
       {/*  */}
       <section className="erp_industries_sec">
         <Container>
@@ -676,8 +668,6 @@ const Erp = () => {
       </section>
       {/* industry ends */}
 
-
-      
       {/* migration */}
       <section>
         <div className="container">
@@ -712,6 +702,7 @@ const Erp = () => {
         </div>
       </section>
       {/* migration ends */}
+
       {/* sap STARTS */}
       <section className="sap_section">
         <div className="container">

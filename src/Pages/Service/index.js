@@ -29,6 +29,9 @@ import ServiceStickyPopup from "../../Components/ServiceStickyPopup";
 import { Button } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import environment from "../../Environment";
 
 const Service = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -81,35 +84,31 @@ const Service = () => {
   //         }
   //       });
   //       console.log("My data is :", data);
-       
+
   //     });
   //     catch (err) {
   //       console.log(err, "err");
   //     }
-   
+
   // }, []);
+
+  // .get(environment.SEO_DATA, {})
+  
   useEffect(() => {
-    axios.get("http://172.20.12.189:8086/confApp/api/v1/seo", {
-      // mode: "no-cors", // Uncomment if needed for CORS issues
-      // headers: {
-      //   "Content-Type": "application/json",
-      //   "Access-Control-Allow-Origin": "*",
-      // }, // Uncomment if needed for CORS issues
-    })
+    axios
+      .get("http://172.20.12.189:8086/confApp/api/v1/seo", {})
       .then((data) => {
         setSeoData(data.data);
         data.data.map((data) => {
-          if (data.pageName === "page name") { 
+          if (data.pageName === "service") {
             setSeoData(data);
           }
         });
-        console.log("My data is :", data);
       })
-      .catch((err) => { 
-        console.error('Error fetching data:', err); 
+      .catch((err) => {
+        toast.error(err.message);
       });
   }, []);
-  
 
   console.log(seoData);
 
@@ -141,12 +140,29 @@ const Service = () => {
       <Helmet>
         <title>{seoData.pageTitle}</title>
         <meta name="description" content={seoData.seoDescription} />
+       
         {/* {serviceSeoData ? (
             <title>{serviceSeoData.title }</title>
         ) : (
           <title>Loading...</title>
         )} */}
       </Helmet>
+
+<ToastContainer
+style={{ width: '350px' }}
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+//  transition: Bounce,
+/>
+
 
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}

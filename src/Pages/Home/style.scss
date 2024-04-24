@@ -817,9 +817,8 @@ border-radius: 5px;
       font-size: 12px;
     }
   }
-
   .planning_banner .left_planning_banner_content h3 {
-    font-size: 26px;
+    font-size: 16px;
     line-height: 40px;
   }
   .tagline_sec .tagline_heading::after {
@@ -895,7 +894,13 @@ border-radius: 5px;
   }
 
 }
-
+.accreditation_sec .col-md-4 .d-flex{
+  min-width: 345px;
+}
+.principle_section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .principle_para {
   padding-left: 25px;
 
