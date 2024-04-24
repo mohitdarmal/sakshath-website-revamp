@@ -108,14 +108,14 @@ export const Home = () => {
         "World's Leading Brands & Leaders' House Of Lords, London",
       description:
         "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO & Founder of Sakshath Technologies...",
-      image: require("../../Assets/images/Achivement40.png"),
+      image: require("../../Assets/images/Achivement40.jpg"),
     },
     {
       id: 2,
       heading_Title: "Analytics Vidhya - DataHack Summit 2023 Community Sponsor",
       description:
         " DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data...",
-      image: require("../../Assets/images/achivement_stall.png"),
+      image: require("../../Assets/images/achivement_stall.jpg"),
     },
     {
       id: 3,
@@ -123,7 +123,7 @@ export const Home = () => {
         "Highlighting the impactful contributions of our employees across Africa",
       description:
         " Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club...",
-      image: require("../../Assets/images/Achivement_sanjay_sir.png"),
+      image: require("../../Assets/images/achievemnt_img_three.jpg"),
     },
   ];
 

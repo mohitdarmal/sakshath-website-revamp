@@ -136,3 +136,34 @@
 }
 
 ///@@@@@@@@@@@@@@@@@@@@  main content-managed services starts @@@@@@@@@@@@@@@@
+/// 
+/// media query starts
+
+@media screen and (max-width: 480px) {
+
+    .overview_sec_right_managed_services_img{
+        padding: 40px 0px 0px!important;
+    }
+    .content_sec_left_managed_services_img {
+        padding-right: 0px !important;
+    }
+    .content_sec_right_managed_services{
+        padding-top: 40px;
+    }
+    .overview_sec_left_managed_services{
+    padding: 0px!important;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:767px){ 
+   .overview_sec_right_managed_services_img{
+ padding: 40px 0px 0px !important;
+   }
+   .content_sec_left_managed_services_img {
+    padding: 0px!important;
+   }
+   .content_sec_right_managed_services{
+    padding-top: 40px;
+
+   }
+}

@@ -567,7 +567,7 @@ Gurugram, Haryana 122016
               </Link>
 
               <Link to="">
-                  <img src={INSTAGRAM_ICON} /> 
+                  <img src={INSTAGRAM_ICON} />  
               </Link>
 
               <Link to="">
