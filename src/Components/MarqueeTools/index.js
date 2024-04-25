@@ -44,7 +44,7 @@ const MarqueeTools = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="tools_heading text-center mt-4 mb-4">
-              <Heading heading="Tools" />
+              <Heading heading="Technologies" />
             </div>
           </div>
           <div className="row">

@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <>
-      <section className="subscription_footer">
+      {/* <section className="subscription_footer">
         <div className="container subscription_box">
           <div className="subscription_content_box">
             <div className="row subscription_content_box_area align-items-center">
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <footer className="footer_section">
         <div className="container ftr_top">

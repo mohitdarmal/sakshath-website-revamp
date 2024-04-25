@@ -223,6 +223,11 @@ const Header = () => {
                        Talent Solution
                       </NavLink>
                     </li>
+                    <li>
+                  <NavLink to="/staffing" className="nav-link">
+                    Staffing Solutions
+                  </NavLink>
+                </li>
                   </ul>
                 </li>
                 
@@ -243,11 +248,7 @@ const Header = () => {
                   </NavLink>
                 </li>
                
-                <li>
-                  <NavLink to="/staffing" className="nav-link">
-                    Staffing
-                  </NavLink>
-                </li>
+               
 
                 {/* <li>
                   <NavLink to="/contact-us" className="nav-link">

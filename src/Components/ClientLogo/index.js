@@ -64,7 +64,7 @@ const ClientLogo = () => {
           <div className="row text-center">
             {/* <SubTitle SubTitle="Popular Partners" /> */}
             <p className="popular_partner_heading">
-              WE HAVE{" "}
+              {/* WE HAVE{" "}
               <CountUp
                 start={0}
                 end={50}
@@ -75,7 +75,10 @@ const ClientLogo = () => {
                 enableScrollSpy={true}
                 useEasing={true}
               ></CountUp>{" "}
-              WORLD WIDE CLIENTS
+
+              WORLD WIDE CLIENTS */}
+
+              Happy Clients
             </p>
           </div>
 
@@ -95,7 +98,7 @@ const ClientLogo = () => {
                         <GiCommercialAirplane />
                         &nbsp;&nbsp;
                       </p>
-                      <p>International</p>
+                      <p>Overseas</p>
                     </div>
                   }
                 >
