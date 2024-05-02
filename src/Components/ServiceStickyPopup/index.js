@@ -4,6 +4,7 @@ import { useState } from "react";
 // import { Form, Modal, Button, } from "react-bootstrap";
 import { FaPhone } from "react-icons/fa";
 import { MdMarkEmailUnread, MdOutlineEmail } from "react-icons/md";
+import { FaUserCircle } from "react-icons/fa";
 import "./style.scss";
 import { PiCertificateLight } from "react-icons/pi";
  import { Modal, Button, Form, InputGroup  } from "react-bootstrap";
@@ -49,10 +50,10 @@ function ServiceStickyPopup() {
         <Modal.Body>
           <h4 className="text-center" style={{fontFamily:"rajdhani",fontWeight:'bold'}}>Contact Us</h4>
 
-          <Form onSubmit={handleSubmit}>
+          <Form onSubmit={handleSubmit} className="stickyPopupService">
           <InputGroup className="mb-3">
               <InputGroup.Text>
-                <MdMarkEmailUnread />
+                <FaUserCircle />
               </InputGroup.Text>
               <Form.Control
                 type="type"

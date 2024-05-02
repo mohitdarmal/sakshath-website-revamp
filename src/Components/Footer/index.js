@@ -121,7 +121,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link ">
-              <h5>Best Services</h5>
+              {/* <h5>Best Services</h5> */}
               <ul className="">
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
@@ -146,7 +146,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link">
-              <h5>IT Company</h5>
+              {/* <h5>IT Company</h5> */}
               <ul>
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
@@ -171,7 +171,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link">
-              <h5>Our Support</h5>
+              {/* <h5>Our Support</h5> */}
 
               <ul className="font-medium">
                 <Fade direction="up" cascade damping={0.1}>

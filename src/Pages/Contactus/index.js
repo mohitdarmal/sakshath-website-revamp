@@ -418,7 +418,7 @@ const Contactus = () => {
                   <Col md={6}>
                     <FloatingLabel
                       controlId="description"
-                      label="Select Reason"
+                      // label="Select Reason"
                     >
                       <Form.Select
                         aria-label="Floating label select example"

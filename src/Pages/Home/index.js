@@ -673,7 +673,7 @@ export const Home = () => {
                         <img src={TIMES_OF_INDIA} alt="" />
                       </div>
                       <div className="content">
-                        <h3>Times of India</h3>
+                        <h3>Times 40 Under 40</h3>
                         <p>
                           Mr Shravan Kumar was awarded the prestigious "40 under
                           40" award by Bennett Coleman & Co. Ltd. - The Times of

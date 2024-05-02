@@ -32,11 +32,10 @@ import {
   CLIENT_LOGO25,
   CLIENT_LOGO26,
   CLIENT_LOGO27,
- CLIENT_LOGO37,
-
+  CLIENT_LOGO37,
   CLIENT_LOGO39,
   CLIENT_LOGO40,
-  CLIENT_LOGO41,
+  // CLIENT_LOGO41,
   CLIENT_LOGO42,
   CLIENT_LOGO43,
   CLIENT_LOGO44,
@@ -44,15 +43,13 @@ import {
   CLIENT_LOGO46,
   CLIENT_LOGO47,
   CLIENT_LOGO3,
-  CLIENT_LOGO4,
-  CLIENT_LOGO5,
   CLIENT_LOGO6,
   CLIENT_LOGO7,
   CLIENT_LOGO8,
   CLIENT_LOGO9,
   CLIENT_LOGO32,
   CLIENT_LOGO33,
-  CLIENT_LOGO34,
+  // CLIENT_LOGO34,
 } from "./Constant";
 
 const ClientLogo = () => {
@@ -77,8 +74,7 @@ const ClientLogo = () => {
               ></CountUp>{" "}
 
               WORLD WIDE CLIENTS */}
-
-              Happy Clients
+             We Are Trusted By
             </p>
           </div>
 
@@ -105,20 +101,20 @@ const ClientLogo = () => {
                   <Swiper
                     breakpoints={{
                       320: {
-                        slidesPerView:2,
-                        spaceBetween:30
+                        slidesPerView: 2,
+                        spaceBetween: 30,
                       },
                       481: {
-                        slidesPerView:3,
-                        spaceBetween:30
+                        slidesPerView: 3,
+                        spaceBetween: 30,
                       },
                       768: {
-                        slidesPerView:3,
-                        spaceBetween:30
+                        slidesPerView: 3,
+                        spaceBetween: 30,
                       },
                       1024: {
                         slidesPerView: 5,
-                        spaceBetween:30
+                        spaceBetween: 30,
                       },
                     }}
                     autoplay={{
@@ -194,9 +190,6 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO33} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO34} />
-                    </SwiperSlide>
-                    <SwiperSlide>
                       <img src={CLIENT_LOGO37} />
                     </SwiperSlide>
                     {/* <SwiperSlide>
@@ -219,26 +212,24 @@ const ClientLogo = () => {
                   }
                 >
                   <Swiper
-                  breakpoints={{
-                    320: {
-                      slidesPerView:2,
-                      spaceBetween:30
-                    },
-                    481: {
-                      slidesPerView:3,
-                      spaceBetween:30
-                    },
-                    768: {
-                      slidesPerView:3,
-                      spaceBetween:30
-                    },
-                    1024: {
-                      slidesPerView: 5,
-                      spaceBetween:30
-                    },
-                  }}
-                  
-                    
+                    breakpoints={{
+                      320: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                      },
+                      481: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                      },
+                      768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                      },
+                      1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 30,
+                      },
+                    }}
                     autoplay={{
                       delay: 1500,
                       disableOnInteraction: false,
@@ -247,8 +238,7 @@ const ClientLogo = () => {
                     modules={[Autoplay]}
                     className="mySwiper"
                   >
-                    
-                   <SwiperSlide>
+                    <SwiperSlide>
                       <img src={CLIENT_LOGO1} />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -257,12 +247,9 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO3} />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    {/* <SwiperSlide>
                       <img src={CLIENT_LOGO4} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO5} />
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                     <SwiperSlide>
                       <img src={CLIENT_LOGO6} />
                     </SwiperSlide>
@@ -278,7 +265,7 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO10} />
                     </SwiperSlide>
-                    
+
                     <SwiperSlide>
                       <img src={CLIENT_LOGO12} />
                     </SwiperSlide>
@@ -306,24 +293,24 @@ const ClientLogo = () => {
                   }
                 >
                   <Swiper
-                   breakpoints={{
-                    320: {
-                      slidesPerView:2,
-                      spaceBetween:30
-                    },
-                    481: {
-                      slidesPerView:3,
-                      spaceBetween:30
-                    },
-                    768: {
-                      slidesPerView:3,
-                      spaceBetween:30
-                    },
-                    1024: {
-                      slidesPerView: 5,
-                      spaceBetween:30
-                    },
-                  }}
+                    breakpoints={{
+                      320: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                      },
+                      481: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                      },
+                      768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                      },
+                      1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 30,
+                      },
+                    }}
                     autoplay={{
                       delay: 1500,
                       disableOnInteraction: false,
@@ -338,9 +325,9 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO40} />
                     </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO41} />
-                    </SwiperSlide>
+                    {/* <SwiperSlide>
+                      <img src={CLIENT_LOGO41} />  //HDFC
+                    </SwiperSlide> */}
                     <SwiperSlide>
                       <img src={CLIENT_LOGO42} />
                     </SwiperSlide>
@@ -349,7 +336,7 @@ const ClientLogo = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <img src={CLIENT_LOGO44} />
-                    </SwiperSlide>  
+                    </SwiperSlide>
                   </Swiper>
                 </Tab>
               </Tabs>

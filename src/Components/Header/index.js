@@ -39,8 +39,7 @@ const Header = () => {
           <div className="row">
             <div className="col-md-6">
               <Link className="top_header_location">
-                <MdOutlineLocationOn /> Bengaluru &nbsp;&nbsp; |
-                &nbsp;&nbsp;
+                <MdOutlineLocationOn /> Bengaluru &nbsp;&nbsp; | &nbsp;&nbsp;
               </Link>
               <Link to="mailto:info@sakshath-technologies.com">
                 <BsEnvelope /> &nbsp;info@sakshath-technologies.com &nbsp;
@@ -131,7 +130,6 @@ const Header = () => {
             </div>
             <div className="offcanvas-body header_menu">
               <ul className="navbar-nav justify-content-center flex-grow-1">
-               
                 {/* about */}
                 <li className="nav-item dropdown">
                   <NavLink
@@ -158,7 +156,7 @@ const Header = () => {
                         Company Jounery
                       </NavLink>
                     </li> */}
-                    
+
                     <li>
                       <NavLink to="/our-achievements" className="dropdown-item">
                         Our Achievements
@@ -166,7 +164,7 @@ const Header = () => {
                     </li>
                     <li>
                       <NavLink to="/contact-us" className="dropdown-item">
-                       Contact us
+                        Contact us
                       </NavLink>
                     </li>
                   </ul>
@@ -189,7 +187,15 @@ const Header = () => {
                     aria-labelledby="accountDropdown"
                   >
                     <li>
-                      <NavLink to="/application-development" className="dropdown-item">
+                      <NavLink to="/erp" className="dropdown-item">
+                        ERP
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/application-development"
+                        className="dropdown-item"
+                      >
                         Application Development
                       </NavLink>
                     </li>
@@ -203,11 +209,7 @@ const Header = () => {
                         Automation
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/erp" className="dropdown-item">
-                        ERP
-                      </NavLink>
-                    </li>
+
                     <li>
                       <NavLink to="/managed-services" className="dropdown-item">
                         Managed Services
@@ -218,37 +220,62 @@ const Header = () => {
                         Integration
                       </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink to="/talent-solution" className="dropdown-item">
                        Talent Solution
                       </NavLink>
-                    </li>
-                    <li>
-                  <NavLink to="/staffing" className="nav-link">
-                    Staffing Solutions
-                  </NavLink>
-                </li>
+                    </li> */}
                   </ul>
                 </li>
-                
-                <li>
+
+                {/* <li>
                   <NavLink to="/banking-solution" className="nav-link">
                     Banking Solution
                   </NavLink>
+                </li> */}
+                <li className="nav-item dropdown">
+                  <NavLink
+                    to="#"
+                    className="nav-link dropdown-toggle"
+                    id="accountDropdown"
+                    role="button"
+                    // data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Solutions
+                  </NavLink>
+                  <ul
+                    className="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="accountDropdown"
+                  >
+                    <li>
+                      <NavLink to="/banking-solution" className="dropdown-item">
+                        Banking Solution
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/talent-solution" className="dropdown-item">
+                        Talent Solution
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/staffing" className="nav-link">
+                        Staffing
+                      </NavLink>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <NavLink to="/career" className="nav-link">
                     Careers
                   </NavLink>
                 </li>
-             
+
                 <li>
                   <NavLink to="/blogs" className="nav-link">
                     Blogs
                   </NavLink>
                 </li>
-               
-               
 
                 {/* <li>
                   <NavLink to="/contact-us" className="nav-link">
