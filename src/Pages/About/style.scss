@@ -27,7 +27,7 @@
   padding-left: 0px;
 }
 .about_who_we_r_content p {
-  text-align: start;
+  text-align: justify;
 }
 
 .who_we_are_img_bottom {
@@ -132,6 +132,7 @@
   padding: 30px;
   box-shadow: 0 2px 20px #0000003d;
   border-radius: 15px;
+  text-align: justify;
 }
 
 .vision_rounded {
@@ -165,6 +166,7 @@
 .core_values{
   // padding-top: 80px;
   padding-bottom: 80px;
+  
 }
 .our_values{
   padding-top: 12px;
@@ -197,7 +199,7 @@
 
   .about_who_we_r_content {
     padding-right: 0px;
-    padding-top: 90px;
+    
   }
   .who_we_are_img_bottom {
     padding-right: 0px !important;
@@ -227,11 +229,11 @@
     position: sticky;
     top: 0;
     width: 350px;
-    height: 50vh;
+    height: 40vh;
 
     img{
       position: sticky;
-    height: 50vh !important;
+    height: 40vh !important;
     width: 100%;
     }
   }
@@ -292,6 +294,8 @@
   .vision_rounded p::after {
     display: none;
   }
+
+  
 }
 
 // service_indus
@@ -312,7 +316,19 @@
   filter: brightness(0) invert(1);
 }
 
+@media screen and (max-width:767px) {
+ 
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .core_values .title p{
+    font-size: 20px !important;
+  }
+  .core_value_box {
+    
+    min-height: 380px !important;
+    
+}
   .who_we_are_img {
     padding-top: 200px !important;
   }

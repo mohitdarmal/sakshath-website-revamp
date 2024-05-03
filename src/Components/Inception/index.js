@@ -116,7 +116,7 @@ const Inception = () => {
               </Fade>
             </div>
             <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-              <div class="circle font-weight-bold">2013-2015</div>
+              <div class="circle font-weight-bold">2018-2020</div>
             </div>
           </div>
 

@@ -43,11 +43,11 @@ import Heading from "../../../Components/Utils/Heading";
 import BreadCumb from "../../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
 export const Integration = () => {
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
 
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
+  // const handleCloseModal = () => {
+  //   setShowModal(false);
+  // };
 
 const menu = [{
   id:"integrationCoe",
@@ -509,7 +509,7 @@ const menu = [{
       {/*  managed service end*/}
 
       {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}
-      <section className="brouchure_sec">
+      {/* <section className="brouchure_sec">
         <div className="container">
           <div className="text-center mb-3 pb-md-3">
             <Heading heading="Brouchure" uppercase="text-uppercase" />
@@ -526,7 +526,7 @@ const menu = [{
           </div>
         </div>
         <BrouchurePopup show={showModal} onHide={handleCloseModal} />
-      </section>
+      </section> */}
       {/* @@@@@ SECTION- Brouchure end @@@@@@ */}
 
       {/* Faq start */}

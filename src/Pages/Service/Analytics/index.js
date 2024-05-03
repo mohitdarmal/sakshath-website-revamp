@@ -370,9 +370,9 @@ export const Analytics = () => {
             <SwiperSlide>
               <img src={CLIENT_LOGO7} />
             </SwiperSlide>
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <img src={CLIENT_LOGO4} />
-            </SwiperSlide>
+            </SwiperSlide> */}
             <SwiperSlide>
               <img src={CLIENT_LOGO13} />
             </SwiperSlide>
@@ -382,9 +382,7 @@ export const Analytics = () => {
             <SwiperSlide>
               <img src={CLIENT_LOGO47} />
             </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO5} />
-            </SwiperSlide>
+           
             <SwiperSlide>
               <img src={CLIENT_LOGO1} />
             </SwiperSlide>

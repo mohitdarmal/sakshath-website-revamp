@@ -123,7 +123,7 @@ const Contactus = () => {
           <div className="row text-center">
             <div className="col-md-8 offset-md-2">
               <Fade direction="up" triggerOnce>
-                <Heading heading="Get In Touch With Us" />
+                <Heading heading="Contact Us" />
               </Fade>
               <Fade direction="up" triggerOnce>
                 <p className="text-center mb-5">
@@ -418,7 +418,7 @@ const Contactus = () => {
                   <Col md={6}>
                     <FloatingLabel
                       controlId="description"
-                      label="Select Reason"
+                      // label="Select Reason"
                     >
                       <Form.Select
                         aria-label="Floating label select example"

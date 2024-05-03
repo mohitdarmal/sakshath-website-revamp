@@ -104,15 +104,15 @@ export const Home = () => {
   const achivementData = [
     {
       id: 1,
-      heading_Title:
-        "World's Leading Brands & Leaders' House Of Lords, London",
+      heading_Title: "World's Leading Brands & Leaders' House Of Lords, London",
       description:
         "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO & Founder of Sakshath Technologies...",
       image: require("../../Assets/images/Achivement40.jpg"),
     },
     {
       id: 2,
-      heading_Title: "Analytics Vidhya - DataHack Summit 2023 Community Sponsor",
+      heading_Title:
+        "Analytics Vidhya - DataHack Summit 2023 Community Sponsor",
       description:
         " DataHack Summit 2023 by Analytics Vidhya is an annual conference that brings together data...",
       image: require("../../Assets/images/achivement_stall.jpg"),
@@ -528,10 +528,20 @@ export const Home = () => {
                       </div>
                       <div className="content">
                         <h3>ISO 9001</h3>
-                        <p> 2015  (Quality Management Systems)  </p> 
+                        <p> 2015 (Quality Management Systems) </p>
                         {/* &nbsp;  */}
-                        
-                        <p className="" style={{paddingTop:'15px', color:'#32A4D5', fontWeight:'bold', fontFamily:'rajdhani'}}>See Certificate</p>
+
+                        <p
+                          className=""
+                          style={{
+                            paddingTop: "15px",
+                            color: "#32A4D5",
+                            fontWeight: "bold",
+                            fontFamily: "rajdhani",
+                          }}
+                        >
+                          See Certificate
+                        </p>
                       </div>
                     </div>
                   </Fade>
@@ -576,7 +586,8 @@ export const Home = () => {
                       <div className="content">
                         <h3 className="">Talend Gold Partner</h3>
                         <p>
-                        We leverage Talend's unified platform capabilities across integrated domains.
+                          We leverage Talend's unified platform capabilities
+                          across integrated domains.
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -599,7 +610,8 @@ export const Home = () => {
                       <div className="content">
                         <h3>QLIK</h3>
                         <p>
-                        Licensed with Qlik for various access types and core-based models.
+                          Licensed with Qlik for various access types and
+                          core-based models.
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -622,7 +634,8 @@ export const Home = () => {
                       <div className="content">
                         <h3>Amazon AWS Partner</h3>
                         <p>
-                        We leverage AWS programs, expertise, and tools to build solutions for customers.
+                          We leverage AWS programs, expertise, and tools to
+                          build solutions for customers.
                         </p>
                         <p className="learn_more">See Certificate</p>
                       </div>
@@ -660,7 +673,7 @@ export const Home = () => {
                         <img src={TIMES_OF_INDIA} alt="" />
                       </div>
                       <div className="content">
-                        <h3>Times of India</h3>
+                        <h3>Times 40 Under 40</h3>
                         <p>
                           Mr Shravan Kumar was awarded the prestigious "40 under
                           40" award by Bennett Coleman & Co. Ltd. - The Times of
@@ -931,10 +944,7 @@ export const Home = () => {
                   <Fade direction="up">
                     <SubTitle SubTitle="Who we are" />
                   </Fade>
-                  <Heading
-                    heading="Our Story"
-                    uppercase="text-uppercase"
-                  />
+                  <Heading heading="Our Story" uppercase="text-uppercase" />
                 </div>
                 <p>
                   Our journey started way back in the year 2012. It started as a
@@ -953,17 +963,17 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      {/* @@@@@@ SECTION - "Who we are" end @@@@@@ */}
+      {/*  SECTION - "Who we are" end  */}
 
-      {/* @@@@@@ SECTION - Happy client counter starts @@@@@*/}
+      {/*  SECTION - Happy client counter starts /}
       <HappyClients />
-      {/* @@@@@ SECTION- Happy client counter end @@@@@@ */}
+      {/* SECTION- Happy client counter end  */}
 
-      {/* @@@@@@@ SECTION - Our Principals @@@@@@@@@ */}
+      {/*  SECTION - Our Principals @@@ */}
       <OurPrincipals />
-      {/* @@@@@@@ SECTION - Our Principals @@@@@@@@@ */}
+      {/* @ SECTION - Our Principals @@@ */}
 
-      {/* @@@@@@@ SECTION - planning banner starts @@@@@@ */}
+      {/* @ SECTION - planning banner starts  */}
       {/* <section className="planning_banner">
         <div className="container">
           <div className="row planning_banner_content_box align-items-center">
@@ -992,9 +1002,7 @@ export const Home = () => {
       </section> */}
 
       <CallToAction
-        ctaContent={
-          "Let’s connect! We’d love to hear about your project and discuss our procedure. Our executives will be at your service. "
-        }
+        ctaContent={"Let’s connect! We’d love to hear from you. "}
         ctaTitle={"Let's meet us"}
       />
       {/*SECTION - planning banner ends*/}
@@ -1005,13 +1013,14 @@ export const Home = () => {
       {/* @@@@@ SECTION - Client Logo End @@@@@*/}
 
       {/* @@@@@ SECTION - Popular service start @@@@@ */}
-      <section className="popular_princial  text-white ">
+
+      {/* <section className="popular_princial  text-white ">
         <div className="container ">
           <div className="row ">
-            {/* Popuplar Princial Left Side Column Start */}
+         
             <div className="col-md-5 mt-4 left_home_principle">
               <Fade direction="up" triggerOnce>
-                {/* <SubTitle SubTitle="Our Popular Services" /> */}
+              
               </Fade>
               <Fade direction="up" triggerOnce>
                 <Heading
@@ -1020,14 +1029,6 @@ export const Home = () => {
                 />
               </Fade>
               <Fade direction="up" triggerOnce>
-                {/* <p>
-                  Digitise your business by managing multiple process in a
-                  single platform.
-
-                  <br /> 
-
-                  Transform your workflow with our all-in-one platform. Optimize efficiency and productivity effortlessly.Manage multiple processes seamlessly for optimal results.
-                </p> */}
                 <li>
                   Digitise your business by managing multiple process in a
                   single platform. Optimize efficiency and productivity
@@ -1037,18 +1038,14 @@ export const Home = () => {
                   Transform your workflow with our all-in-one platform. Manage
                   multiple processes seamlessly for optimal results.
                 </li>
-                {/* <li>Optimize efficiency and productivity effortlessly.</li> */}
-                {/* <li>Manage multiple processes seamlessly for optimal results.</li> */}
               </Fade>
               <Fade direction="up" triggerOnce>
                 <div className="our_principal_btn">
-                  <SlideAnimationButton url ="/service" btnName="Read More" />
+                  <SlideAnimationButton url="/service" btnName="Read More" />
                 </div>
               </Fade>
             </div>
-            {/*  SECTION - Popuplar Princial Left Side Column End @ */}
-
-            {/*  SECTION - Popuplar Princial Right Side Column Start  */}
+          
             <div className="col-md-7 right_home_principle">
               <div className="row">
                 <div className="col-md-6 right_home_principle_left_content_box">
@@ -1070,7 +1067,6 @@ export const Home = () => {
                       </div>
                     </Fade>
                   </div>
-
                   <div className="d-flex horizontal-shake">
                     <Fade direction="up" triggerOnce>
                       <div className="right_home_principle_img">
@@ -1128,7 +1124,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/*  SECTION - Popuplar Princial End @ */}
 
       {/*  SECTION - Blogs Start  */}
@@ -1141,7 +1137,7 @@ export const Home = () => {
               </Fade>
               <Fade direction="up" delay={100} triggerOnce>
                 <Heading
-                  heading="Get every single update article & tips"
+                  heading="News & Events"
                   uppercase="text-uppercase"
                 />
                 GET EVERY SINGLE UPDATE ARTICLE & TIPES
@@ -1168,13 +1164,11 @@ export const Home = () => {
                         Technologies */}
                             {data.heading_Title}
                           </h5>
-                          <p className="blog_sub_heading">
-                          
-                            {data.description}
-
-                            
-                          </p>
-                          <SlideAnimationButton btnName="READ MORE"   url="/our-achievements"/>
+                          <p className="blog_sub_heading">{data.description}</p>
+                          <SlideAnimationButton
+                            btnName="READ MORE"
+                            url="/our-achievements"
+                          />
                         </div>
                       </div>
                     </Fade>

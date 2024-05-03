@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <>
-      <section className="subscription_footer">
+      {/* <section className="subscription_footer">
         <div className="container subscription_box">
           <div className="subscription_content_box">
             <div className="row subscription_content_box_area align-items-center">
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <footer className="footer_section">
         <div className="container ftr_top">
@@ -121,7 +121,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link ">
-              <h5>Best Services</h5>
+              {/* <h5>Best Services</h5> */}
               <ul className="">
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
@@ -146,7 +146,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link">
-              <h5>IT Company</h5>
+              {/* <h5>IT Company</h5> */}
               <ul>
                 <Fade direction="up" cascade damping={0.1}>
                   <li className="mt-4">
@@ -171,7 +171,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-3 footer_link">
-              <h5>Our Support</h5>
+              {/* <h5>Our Support</h5> */}
 
               <ul className="font-medium">
                 <Fade direction="up" cascade damping={0.1}>
@@ -207,10 +207,16 @@ const Footer = () => {
                 <Fade direction="up">
                   {" "}
                   <p>
-                    Copyrights © 2023 Sakshath Technologies. All rights
-                    reserved.
+                    Copyrights © 2024  <b>
+                    Sakshath Technologies
+                    </b>. All rights
+                    reserved. Powered by <b>
+                    Skandha
+                    </b> 
                   </p>
+                  <p></p>
                 </Fade>
+                
               </div>
             </div>
 
@@ -229,6 +235,7 @@ const Footer = () => {
                 </Link>
               </Fade>
             </div>
+            {/* <p className="text-center ">Powered by #Skanada</p> */}
           </div>
         </div>
       </footer>

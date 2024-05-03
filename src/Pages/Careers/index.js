@@ -217,7 +217,7 @@ const Career = () => {
              <div className="join_our_team_wrapper">
              <Fade direction="up" triggerOnce>
                 
-                <Heading heading ="Join our team" uppercase=""/>
+                <Heading heading ="Life At Sakshath" uppercase=""/>
                 </Fade>
                 <Fade direction="up" triggerOnce>
                 <ul>

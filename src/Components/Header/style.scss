@@ -81,6 +81,11 @@
         }
     }
 }
+
+.bsb-navbar.navbar-expand-md{
+  margin-right: 0px !important;
+  padding-right: 0px !important;
+}
 .header_translator{line-height: 57px; padding-right: 20px;}
 .bsb-navbar{transition: background-color 0.5s ease}
 .bsb-navbar.sticky-top{  animation: slideDown 0.5s ease;}
