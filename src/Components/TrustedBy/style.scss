@@ -2,11 +2,18 @@
 
 .our_paltform_sec img{
     width:170px;
+    // // border: 1px solid $light_navy_blue;
+    // border: 1px solid $ball_blue_color;
+    // border-radius: 5px;
+    // height: 70px;
+    // padding: 8px;
+    // box-shadow: 0px 2px 20px #0000001a;
 
 }
 .our_paltform_sec{
     padding: 80px 0px;
 }
+
 @media screen and (max-width:480px){
     .our_paltform_sec img{
         width:110px;
