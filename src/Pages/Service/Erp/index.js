@@ -169,7 +169,7 @@ const Erp = () => {
 
                     <li>
                       Epicor’s custom industry-specific business software
-                      solutions provided by Sakshath Technologies are used by
+                      solutions provided by Sakshath Technologies&#174; are used by
                       thousands of companies across several industries and
                       verticals.
                     </li>

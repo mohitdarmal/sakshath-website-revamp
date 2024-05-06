@@ -248,6 +248,11 @@ const Header = () => {
                     className="dropdown-menu border-0 shadow bsb-zoomIn"
                     aria-labelledby="accountDropdown"
                   >
+                  <li>
+                      <NavLink to="/erp" className="dropdown-item">
+                        ERP Solution
+                      </NavLink>
+                    </li>
                     <li>
                       <NavLink to="/banking-solution" className="dropdown-item">
                         Banking Solution

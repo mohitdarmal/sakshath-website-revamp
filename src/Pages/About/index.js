@@ -105,17 +105,17 @@ const About = () => {
                     capital, later in the years this small consulting firm
                     providing IT recruitment Services ran into the idea of
                     having an ERP offshore development. If not quite a tale of
-                    rags to riches, the story of Sakshath Technologies’ rise to
+                    rags to riches, the story of Sakshath Technologies<span>&#174;</span> rise to
                     stardom certainly came closer. The birth of SAKSHATH
-                    TECHNOLOGIES' in 2015, wouldn’t be possible without the
+                    TECHNOLOGIES<span>&#174;</span> in 2015, wouldn’t be possible without the
                     utmost faith and trust of family and friends. <br />
                     <br />
-                    Sakshath Technologies’ biggest USP’s are ERP (Epicor, MS
+                    Sakshath Technologies<span>&#174;</span> biggest USP’s are ERP (Epicor, MS
                     Dynamics, JD Edwards and SYSPRO), QA, BI & Analytics (Power
                     BI, Qlik and Tableau).
                     <strong>
                       {" "}
-                      Sakshath Technologies' is the only company in India to
+                      Sakshath Technologies<span>&#174;</span> is the only company in India to
                       provide SYSPRO Services that are designed in a way to
                       support growth and improve profitability
                     </strong>
@@ -130,10 +130,10 @@ const About = () => {
                     We go by the saying <strong>“I’m Sakshath”</strong> the
                     thought behind the phrase is the presence of all the
                     employees<strong> ‘HERE’ and ‘NOW’</strong>. Starting as a
-                    self-funded business Sakshath Technologies' company ethos to
+                    self-funded business Sakshath Technologies<span>&#174;</span> company ethos to
                     date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from
                     the beginning of the journey made what Sakshath
-                    Technologies' is today, we grew gradually to a family of
+                    Technologies<span>&#174;</span> is today, we grew gradually to a family of
                     200+ employees and now have a domestic presence in 3
                     metropolitan cities serving clients from all over the world.
                     Celebrating decade milestones, today we take pride in
@@ -275,9 +275,9 @@ const About = () => {
             <div className="col-md-5">
               <p className="vision_para">
                 <Fade direction="up" delay={150} triggerOnce>
-                  It is the desire of Sakshath Technologies to establish itself
+                  It is the desire of Sakshath Technologies&#174; to establish itself
                   as a powerful business operation with vibrance and growth
-                  built on Sakshath Technologies principles that is highly
+                  built on Sakshath Technologies&#174; principles that is highly
                   regarded by our customers, stake holders and our employees. As
                   an organization, we want to be in a place where customers rely
                   on the excellence of our products and services.
