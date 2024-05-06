@@ -53,6 +53,10 @@ import {
   const TrustedBy = () => {
     return (
       <>
+      
+ 
+ 
+
       <section className="our_paltform_sec">
       <div className="text-center">
           <Heading
