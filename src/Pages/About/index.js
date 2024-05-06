@@ -105,7 +105,7 @@ const About = () => {
                     capital, later in the years this small consulting firm
                     providing IT recruitment Services ran into the idea of
                     having an ERP offshore development. If not quite a tale of
-                    rags to riches, the story of Sakshath Technologies’ rise to
+                    rags to riches, the story of Sakshath Technologies® rise to
                     stardom certainly came closer. The birth of SAKSHATH
                     TECHNOLOGIES' in 2015, wouldn’t be possible without the
                     utmost faith and trust of family and friends. <br />
@@ -207,8 +207,8 @@ const About = () => {
   </div>
 </section> */}
 
-      <section className="managed_service_flowchart_sec">
-        {/* //<h2>Process</h2> */}
+      {/* <section className="managed_service_flowchart_sec">
+        
         <div className="container-fluid">
           <div className="row text-center mb-4">
             <Heading heading="Service Industries" />
@@ -217,7 +217,6 @@ const About = () => {
             <div className="row">
               <div className="col-md-2 about_industry_box bg1">
                 <div className="managed_service_content">
-                  {/* <p>1</p> */}
                   <img src={ABOUT_BANK} alt="" />
                   <h5>Banking</h5>
                 </div>
@@ -225,7 +224,7 @@ const About = () => {
 
               <div className="col-md-2  about_industry_box bg2">
                 <div className="managed_service_content">
-                  {/* <p>2</p> */}
+                 
                   <img src={NGO} alt="" />
                   <h5>NGO</h5>
                 </div>
@@ -233,7 +232,7 @@ const About = () => {
 
               <div className="col-md-2 about_industry_box bg3">
                 <div className="managed_service_content">
-                  {/* <p>3</p> */}
+                 
                   <img src={Manufacturing} alt="" />
                   <h5>Manufacturing</h5>
                 </div>
@@ -241,7 +240,7 @@ const About = () => {
 
               <div className="col-md-2 about_industry_box bg4">
                 <div className="managed_service_content">
-                  {/* <p>4</p> */}
+                  
                   <img src={MEDICAL} alt="" />
                   <h5>Healthcare</h5>
                 </div>
@@ -249,7 +248,7 @@ const About = () => {
 
               <div className="col-md-2 about_industry_box bg5">
                 <div className="managed_service_content">
-                  {/* <p>5</p> */}
+                 
                   <img src={NGO} alt="" />
                   <h5>Retail</h5>
                 </div>
@@ -257,7 +256,7 @@ const About = () => {
 
               <div className="col-md-2 about_industry_box bg6">
                 <div className="managed_service_content">
-                  {/* <p>6</p> */}
+                  
                   <img src={NGO} alt="" />
                   <h5>Food & Beverages</h5>
                 </div>
@@ -265,7 +264,7 @@ const About = () => {
             </div>
           </Fade>
         </div>
-      </section>
+      </section> */}
       {/* industry ends */}
       {/* vision misson starts */}
 

@@ -38,6 +38,8 @@
 
 .header_social_icons img{
   width: 22px;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 .dropdown-item.active, .dropdown-item:active{background-color: $light_navy_blue !important;}

@@ -1,7 +1,7 @@
 import React from "react";
 import SubTitle from "../Utils/Title_head";
 import CountUp from "react-countup";
-import { Tabs, Tab } from "react-bootstrap";
+// import { Tabs, Tab } from "react-bootstrap";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
 import { MdOutlineBusinessCenter } from "react-icons/md";
@@ -74,19 +74,19 @@ const ClientLogo = () => {
               ></CountUp>{" "}
 
               WORLD WIDE CLIENTS */}
-             We Are Trusted By
+              Trusted By
             </p>
           </div>
 
           <div className="popular_client_tab_sec">
             <div className="row">
-              <Tabs
+              {/* <Tabs
                 defaultActiveKey="internation"
                 id="clients_logo"
                 className="mb-3 client_tabs"
-              >
+              > */}
                 {/* <div className="international"> */}
-                <Tab
+                {/* <Tab
                   eventKey="internation"
                   title={
                     <div className="d-flex">
@@ -97,7 +97,7 @@ const ClientLogo = () => {
                       <p>Overseas</p>
                     </div>
                   }
-                >
+                > */}
                   <Swiper
                     breakpoints={{
                       320: {
@@ -196,9 +196,9 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO38} />
                     </SwiperSlide> */}
                   </Swiper>
-                </Tab>
+                {/* </Tab> */}
                 {/* </div> */}
-                <Tab
+                {/* <Tab
                   eventKey="domestic"
                   title={
                     <div className="d-flex">
@@ -210,7 +210,7 @@ const ClientLogo = () => {
                       <p>Domestic</p>
                     </div>
                   }
-                >
+                > */}
                   <Swiper
                     breakpoints={{
                       320: {
@@ -279,7 +279,7 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO15} />
                     </SwiperSlide>
                   </Swiper>
-                </Tab>
+                {/* </Tab>
                 <Tab
                   eventKey="partners"
                   title={
@@ -291,8 +291,8 @@ const ClientLogo = () => {
                       <p>Partners</p>
                     </span>
                   }
-                >
-                  <Swiper
+                > */}
+                  {/* <Swiper
                     breakpoints={{
                       320: {
                         slidesPerView: 2,
@@ -325,9 +325,6 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO40} />
                     </SwiperSlide>
-                    {/* <SwiperSlide>
-                      <img src={CLIENT_LOGO41} />  //HDFC
-                    </SwiperSlide> */}
                     <SwiperSlide>
                       <img src={CLIENT_LOGO42} />
                     </SwiperSlide>
@@ -337,9 +334,9 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO44} />
                     </SwiperSlide>
-                  </Swiper>
-                </Tab>
-              </Tabs>
+                  </Swiper> */}
+                {/* </Tab> */}
+              {/* </Tabs> */}
             </div>
           </div>
         </div>

@@ -208,7 +208,7 @@ const Footer = () => {
                   {" "}
                   <p>
                     Copyrights © 2024  <b>
-                    Sakshath Technologies
+                    Sakshath Technologies®
                     </b>. All rights
                     reserved. Powered by <b>
                     Skandha
