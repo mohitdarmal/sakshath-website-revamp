@@ -106,7 +106,7 @@ export const Home = () => {
       id: 1,
       heading_Title: "World's Leading Brands & Leaders' House Of Lords, London",
       description:
-        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO & Founder of Sakshath Technologies...",
+        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO & Founder of Sakshath Technologies®...",
       image: require("../../Assets/images/Achivement40.jpg"),
     },
     {
@@ -653,7 +653,7 @@ export const Home = () => {
                       <div className="content">
                         <h3>Outlook Business</h3>
                         <p>
-                          Sakshath Technologies for winning Company of the Year
+                        Sakshath Technologies® for winning Company of the Year
                           - IT Services & IT Consulting in IT Industry at
                           Outlook Business Spotlight- Business Excellence Awards
                           2023.
@@ -930,7 +930,7 @@ export const Home = () => {
       <section className="who_we_are">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 col-lg-6">
               <div className="image-box ">
                 <Fade direction="left" delay={10} triggerOnce>
                   <img className="img-fluid" src={WHO_WE_ARE_IMG} alt="" />

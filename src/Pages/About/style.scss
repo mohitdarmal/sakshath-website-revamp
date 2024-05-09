@@ -235,6 +235,7 @@
       position: sticky;
     height: 40vh !important;
     width: 100%;
+    margin-top: -70px !important;
     }
   }
 }
@@ -254,7 +255,7 @@
   }
   .about_who_we_r .col-md-6:first-child {
     order: 2;
-    padding-top: 20px;
+    // padding-top: 20px;
   }
   .who_we_are_img_bottom {
     padding-right: 0px !important;
