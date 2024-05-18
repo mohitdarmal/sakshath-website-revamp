@@ -896,11 +896,11 @@
   }
 }
 .accreditation_sec .col-md-4 .d-flex {
-  min-width: 350px;
+  min-width: 385px;
 }
 .principle_section {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 .principle_para {
   padding-left: 25px;
@@ -928,6 +928,9 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
+  .who_we_are{
+    margin-bottom: 0px !important;
+  }
   .banner_caption {
     width: 500px;
     margin: 0 auto;
@@ -1006,7 +1009,7 @@
   }
 
   .who_we_are {
-    padding-bottom: 3rem;
+    padding-bottom: 100px;
   }
 
   .specilation_feature .col-md-4 {
@@ -1072,12 +1075,10 @@
 
   .specilation_feature .col-md-4 {
     width: 100% !important;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
   }
 
   .specilation_feature .col-md-4:not(:last-child) {
-    border-bottom: 1px solid #c3c1c1;
+    // border-bottom: 1px solid #c3c1c1;
   }
 
   .specilation_feature {
@@ -1217,7 +1218,7 @@
   }
 
   .who_we_are {
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
   }
 
   .who_we_are .col-md-5 {

@@ -13,7 +13,7 @@ const Inception = () => {
           </div>
           {/* 2012 */}
 
-          <div class="row align-items-center how-it-works d-flex  col-mob">
+          <div class="row align-items-center how-it-works d-flex  col-mob1">
             <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center abc">
               <div class="circle font-weight-bold">2012</div>
             </div>
@@ -71,7 +71,7 @@ const Inception = () => {
             </div>
           </div>
 
-          <div class="row align-items-center how-it-works d-flex col-mob">
+          <div class="row align-items-center how-it-works d-flex col-mob1">
             <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
               <div class="circle font-weight-bold">2015-2018</div>
             </div>
@@ -115,7 +115,12 @@ const Inception = () => {
               </Fade>
             </div>
             <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-              <div class="circle font-weight-bold">2018-2020</div>
+              <div class="circle font-weight-bold">
+                2018-2020
+                {/* <p>
+              2018-2020
+              </p> */}
+              </div>
             </div>
           </div>
 
@@ -132,7 +137,7 @@ const Inception = () => {
             </div>
           </div>
 
-          <div class="row align-items-center how-it-works d-flex col-mob">
+          <div class="row align-items-center how-it-works d-flex col-mob1">
             <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
               <div class="circle font-weight-bold">2020-2023</div>
             </div>
@@ -167,16 +172,19 @@ const Inception = () => {
               <Fade direction="up" triggerOnce>
                 <h4>ROAD AHEAD</h4>
                 <p>
-                  Sakshath Technologies®has an ever-evolving spirit within the
+                  Sakshath Technologies® has an ever-evolving spirit within the
                   organization, led by committed professionals. Sakshath
-                  Technologies continually reviews its service offering, always
+                  Technologies® continually reviews its service offering, always
                   being at the cutting edge of technology-based business
                   solutions in a dynamic market.
                 </p>
               </Fade>
             </div>
-            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-              <div class="circle font-weight-bold">2024</div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center para">
+              <div class="circle font-weight-bold">
+                2024
+                {/* <p>2024</p> */}
+              </div>
             </div>
           </div>
         </div>
