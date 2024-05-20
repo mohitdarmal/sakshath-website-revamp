@@ -141,7 +141,7 @@ const About = () => {
                 </Fade>
               </div>
             </div>
-            <div className="col-md-6 ipad_full_width">
+            <div className="col-md-6 ipad_full_width about_img_col6">
               <div className="who_we_are_img ipad_full_width ">
                 <img src={about_who_we_Are} alt="" className="img-fluid" />
               </div>

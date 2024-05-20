@@ -134,9 +134,7 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO18} />
                     </SwiperSlide>
-                    <SwiperSlide>
-                      {/* <img src={CLIENT_LOGO11} /> */}
-                    </SwiperSlide>
+
                     <SwiperSlide>
                       <img src={CLIENT_LOGO19} />
                     </SwiperSlide>

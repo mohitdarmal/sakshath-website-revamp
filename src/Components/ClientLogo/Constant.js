@@ -5,8 +5,7 @@ export const CLIENTS_BG = require("../../Assets/images/happyClient_bg_image.jpg"
 export const CLIENT_LOGO1 = require("../../Assets/images/Clix.png");  
 export const CLIENT_LOGO2 = require("../../Assets/images/Smfc_india_credit.jpg"); 
 export const CLIENT_LOGO3 = require("../../Assets/images/One_Assist.png"); 
-// export const CLIENT_LOGO4 = require("../../Assets/images/Third_wave_coffee.png");  
-//  export const CLIENT_LOGO5 = require("../../Assets/images/Daikin.png");  
+
 export const CLIENT_LOGO6 = require("../../Assets/images/Piramal.png");   
 export const CLIENT_LOGO7 = require("../../Assets/images/Abinbev.jpg");  
 export const CLIENT_LOGO8 = require("../../Assets/images/Akshya_pathra.png");  
@@ -28,7 +27,7 @@ export const CLIENT_LOGO47=require("../../Assets/images/kens.jpg");
 // International Logo
 export const CLIENT_LOGO16 = require("../../Assets/images/NCBA_Kenya.png");  
 export const CLIENT_LOGO17 = require("../../Assets/images/Free_au_senegal.png"); 
-export const CLIENT_LOGO18 = require("../../Assets/images/stanbic_bank.png"); 
+ export const CLIENT_LOGO18 = require("../../Assets/images/stanbic_bank.png"); 
 export const CLIENT_LOGO19 = require("../../Assets/images/Raw_bank.png"); 
 export const CLIENT_LOGO20 = require("../../Assets/images/Standard_bank.png"); 
 export const CLIENT_LOGO21 = require("../../Assets/images/Moov_africa.jpg");  

@@ -247,5 +247,54 @@
   .staffing_industry_offer_box{
     margin-bottom: 20px;
   }
+  .dicovery_box::before{
+    display: none !important;
+  }
   
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .staffing_industry_offer_box{
+    box-shadow: 0 2px 20px rgba(115, 115, 115, 0.1294117647);
+    padding: 15px !important;
+    border-radius: 5px;
+    border: 1px solid #32a4d5;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+  } h5 {
+    font-family: rajdhani;
+    font-size: 28px;
+    color: #24688f;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 13px;
+  }
+  .staffing_industry_offer_box img {
+    width: 40px !important;
+}
+
+  .staffing_job_box1 {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    min-height: 452px;
+}
+.box_dis {
+  position: relative;
+  content: "";
+  padding: 30px;
+  color: #fff;
+  margin-left: 20px;
+  background: #23688e;
+  border-radius: 10px;
+  min-height: 304px;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .discovery_section .col-md-4 {
+      margin-bottom: 30px;
+  }
 }

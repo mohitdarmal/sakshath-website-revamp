@@ -142,7 +142,7 @@ transition: .5s;
   border-radius: 6px;
   transition: 0.5s;
   margin-top: 20px;
-  min-height: 430px !important;
+  min-height: 320px !important;
 }
 }
 @media screen and (min-width:481px) and (max-width:767px){
@@ -157,6 +157,24 @@ transition: .5s;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1607843137);
     border-radius: 6px;
     transition: 0.5s;
-    min-height: 430px !important;
+    min-height: 245px !important;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .customer_web_box {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1607843137);
+    border-radius: 6px;
+    transition: 0.5s;
+    min-height: 306px;
+  }
+  .key_feature_box h4 {
+    font-weight: bold;
+    font-family: "Rajdhani", sans-serif;
+    margin-bottom: 20px;
+    font-size: 22px;
+    min-height: 56px;
 }
 }

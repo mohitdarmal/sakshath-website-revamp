@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useVoiceToText } from "react-speakup";
 import { Link, NavLink } from "react-router-dom";
 import {
   WHO_WE_ARE_IMG,
@@ -77,7 +78,7 @@ export const Home = () => {
   const textSlider = useRef();
   const imageSlider = useRef();
   const [currentSlide, setCurrentSlide] = useState(0);
-
+  const { startListening, stopListening, transcript } = useVoiceToText();
   const handleTextSlideChange = (index) => {
     setCurrentSlide(index);
     imageSlider.current.slickGoTo(index);
@@ -958,6 +959,12 @@ export const Home = () => {
                   {/* <label for="audio-message">Audio Message:</label> */}
 {/* <i class="fas fa-volume-up"></i> */}
 {/* <input type="speaker" id="audio-message" name="audio-message" placeholder="Enter audio message description"></input> */}
+
+<div>
+      <button onClick={startListening}>Start Listening</button>
+      <button onClick={stopListening}>Stop Listening</button>
+      <span>{transcript}</span>
+    </div>
 
 
                 </div>
