@@ -127,7 +127,7 @@ const OurPrincipals = () => {
                   </Fade>
                   <Fade direction="up" triggerOnce>
                     <Heading
-                      heading="Top Four Reasons to Choose Sakshath Technologies"
+                      heading="Top Four Reasons to Choose Sakshath Technologies&#174;"
                       uppercase=""
                     />
                   </Fade>
@@ -170,7 +170,11 @@ const OurPrincipals = () => {
                     <h5>EXPERIENCE</h5>
                     <p>
                       {" "}
+<<<<<<< HEAD
+                      Sakshath Technologies&#174; consultants have an average of 12+
+=======
                       Sakshath Technologies® consultants have an average of 12+
+>>>>>>> 9f28974a46133bbadea09268ae095848cd69b4b6
                       years experience with their processes and have worked on
                       projects of all sizes and scopes thus managing new
                       implementations upgrades.{" "}
@@ -215,7 +219,11 @@ const OurPrincipals = () => {
                     <p>
                       {" "}
                       In order to efficiently create and produce excellent
+<<<<<<< HEAD
+                      products for our clients, Sakshath Technologies&#174;professional team of
+=======
                       products for our clients,Sakshath Technologies® professional team of
+>>>>>>> 9f28974a46133bbadea09268ae095848cd69b4b6
                       designers follow a simple process that makes working with
                       us easy. {" "}
                     </p>

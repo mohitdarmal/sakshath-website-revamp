@@ -131,3 +131,29 @@
 //     color: #fff;
 //     padding: 8px 12px;
 // }
+
+@media screen and (max-width:480px){
+    .blogPagination{
+        padding: 0px!important;
+    }
+}
+@media screen and (min-width:481px) and (max-width:767px){
+    //no need
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    /* For Tab Screen  */
+    .blog_content_ipad{
+        padding: 36px;
+    }
+
+
+.recent_blog_list{
+    //min-height: 670px;
+    min-height: 711px;
+    background: white;
+}
+.blogs_read_more_button {
+    margin-bottom: 30px;
+}
+    
+}
