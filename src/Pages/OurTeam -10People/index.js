@@ -23,12 +23,12 @@ const OurTeam = () => {
   const [activeShravanProfile, setActiveShravanProfile] = useState(true);
   const [activeKrishnaProfile, setActiveKrishnaProfile] = useState(false);
   const [activeNiteshProfile, setActiveNiteshProfile] = useState(false);
-  // const [activeNidhiProfile, setActiveNidhiProfile] = useState(false);
+  const [activeNidhiProfile, setActiveNidhiProfile] = useState(false);
   const [activePraveenProfile, setActivePraveenProfile] = useState(false);
-  // const [activeSanjayProfile, setActiveSanjayProfile] = useState(false);
-  // const [activeManmeetProfile, setActiveManmeetProfile] = useState(false);
+  const [activeSanjayProfile, setActiveSanjayProfile] = useState(false);
+  const [activeManmeetProfile, setActiveManmeetProfile] = useState(false);
   const [activeGauriProfile, setActiveGauriProfile] = useState(false);
-  // const [activePrashantProfile, setActivePrashantProfile] = useState(false);
+  const [activePrashantProfile, setActivePrashantProfile] = useState(false);
   const [activeSuchiProfile, setActiveSuchiProfile] = useState(false);
 
   const handleChangeDetail = (e) => {
@@ -41,12 +41,12 @@ const OurTeam = () => {
       setActiveKrishnaProfile(true);
       setActiveShravanProfile(false);
       setActiveNiteshProfile(false);
-      // setActiveNidhiProfile(false);
+      setActiveNidhiProfile(false);
       setActivePraveenProfile(false);
-      // setActiveSanjayProfile(false);
-      // setActiveManmeetProfile(false);
+      setActiveSanjayProfile(false);
+      setActiveManmeetProfile(false);
       setActiveGauriProfile(false);
-      // setActivePrashantProfile(false);
+      setActivePrashantProfile(false);
       setActiveSuchiProfile(false);
     } else if (e.target.textContent === "Shravan Kumar") {
       setProfileData({
@@ -57,12 +57,12 @@ const OurTeam = () => {
       setActiveShravanProfile(true);
       setActiveKrishnaProfile(false);
       setActiveNiteshProfile(false);
-      // setActiveNidhiProfile(false);
+      setActiveNidhiProfile(false);
       setActivePraveenProfile(false);
-      // setActiveSanjayProfile(false);
-      // setActiveManmeetProfile(false);
+      setActiveSanjayProfile(false);
+      setActiveManmeetProfile(false);
       setActiveGauriProfile(false);
-      // setActivePrashantProfile(false);
+      setActivePrashantProfile(false);
       setActiveSuchiProfile(false);
     } else if (e.target.textContent === "Niitesh Khandelwal") {
       setProfileData({
@@ -73,30 +73,28 @@ const OurTeam = () => {
       setActiveNiteshProfile(true);
       setActiveShravanProfile(false);
       setActiveKrishnaProfile(false);
-      // setActiveNidhiProfile(false);
+      setActiveNidhiProfile(false);
       setActivePraveenProfile(false);
-      // setActiveSanjayProfile(false);
-      // setActiveManmeetProfile(false);
+      setActiveSanjayProfile(false);
+      setActiveManmeetProfile(false);
       setActiveGauriProfile(false);
-      // setActivePrashantProfile(false);
+      setActivePrashantProfile(false);
       setActiveSuchiProfile(false);
-    } 
-    // else if (e.target.textContent === "Nidhi Singh") {
-    //   setProfileData({
-    //     content:
-    //       "Nidhi Singh is a working professional with broad HR and operation expertise. She dedicatedly built a robust corporate culture that encourages ongoing business growth and fosters customer loyalty, enabling employees to reach their greatest potential and give their best at work. Nidhi’s experience and knowledge have significantly augmented Sakshath’s success tales. “My guru mantra – you keep your people happy; they will take care of everything else” Happy team = Productive team",
-    //     position: "HR - Business Partner",
-    //   });
-    //   setActiveNidhiProfile(true);
-    //   setActiveKrishnaProfile(false);
-    //   setActiveNiteshProfile(false);
-    //   setActiveShravanProfile(false);
-    //   setActivePraveenProfile(false);
-    //   setActiveSanjayProfile(false);
-    //   setActiveManmeetProfile(false);
-    //   setActiveGauriProfile(false);
-    // } 
-    else if (e.target.textContent === "Praveen D") {
+    } else if (e.target.textContent === "Nidhi Singh") {
+      setProfileData({
+        content:
+          "Nidhi Singh is a working professional with broad HR and operation expertise. She dedicatedly built a robust corporate culture that encourages ongoing business growth and fosters customer loyalty, enabling employees to reach their greatest potential and give their best at work. Nidhi’s experience and knowledge have significantly augmented Sakshath’s success tales. “My guru mantra – you keep your people happy; they will take care of everything else” Happy team = Productive team",
+        position: "HR - Business Partner",
+      });
+      setActiveNidhiProfile(true);
+      setActiveKrishnaProfile(false);
+      setActiveNiteshProfile(false);
+      setActiveShravanProfile(false);
+      setActivePraveenProfile(false);
+      setActiveSanjayProfile(false);
+      setActiveManmeetProfile(false);
+      setActiveGauriProfile(false);
+    } else if (e.target.textContent === "Praveen D") {
       setProfileData({
         content:
           "Praveen has gained extensive knowledge and expertise in various aspects of technical consulting, particularly in end user productivity solutions. Praveen has successfully delivered numerous projects that have resulted in increased efficiency, streamlined workflows, and improved user experiences for clients across diverse industries. Praveen’s key strengths lie in his abilities to understand complex technical requirements, analyze business needs, and develop tailored solutions that align with client objectives.",
@@ -104,78 +102,75 @@ const OurTeam = () => {
       });
       setActivePraveenProfile(true);
       setActiveKrishnaProfile(false);
-      // setActiveNidhiProfile(false);
+      setActiveNidhiProfile(false);
       setActiveNiteshProfile(false);
       setActiveShravanProfile(false);
-      // setActiveSanjayProfile(false);
-      // setActiveManmeetProfile(false);
+      setActiveSanjayProfile(false);
+      setActiveManmeetProfile(false);
       setActiveGauriProfile(false);
-      // setActivePrashantProfile(false);
+      setActivePrashantProfile(false);
       setActiveSuchiProfile(false);
-    } 
-    // else if (e.target.textContent === "Sanjay Ganesh") {
-    //   setProfileData({ content: "Sanjay Ganesh" });
-    //   setActiveSanjayProfile(true);
-    //   setActivePraveenProfile(false);
-    //   setActiveKrishnaProfile(false);
-    // //   setActiveNidhiProfile(false);
-    //   setActiveNiteshProfile(false);
-    //   setActiveShravanProfile(false);
-    //   setActiveManmeetProfile(false);
-    //   setActiveGauriProfile(false);
-    // //   setActivePrashantProfile(false);
-    //   setActiveSuchiProfile(false);
-    // }
-    //  else if (e.target.textContent === "Manmeet Singh") {
-    //   setProfileData({
-    //     content:
-    //       "Manmeet Singh is a certified Azure specialist and the vice president (VP – Analytics) atSakshath Technologies . With 18+ years of IT experience, he supports our core and non-core programmers/project solutions with end-to-end delivery solutions. Manmeet has experience developing and implementing IT Analytics and best practice guides and managing the delivery of analytical solutions. He upholds end-to-end standard compliance while delivering within deadlines and at the needed quality. Qualification – Master’s in business administration (MBA – IT Systems) from IMT-Ghaziabad.",
-    //     position: "Vice President-Analytics",
-    //   });
-    //   setActiveManmeetProfile(true);
-    //   setActiveSanjayProfile(false);
-    //   setActivePraveenProfile(false);
-    //   setActiveKrishnaProfile(false);
-    // //   setActiveNidhiProfile(false);
-    //   setActiveNiteshProfile(false);
-    //   setActiveShravanProfile(false);
-    //   setActiveGauriProfile(false);
-    //   setActivePrashantProfile(false);
-    //   setActiveSuchiProfile(false);
-    // } 
-    else if (e.target.textContent === "Shuchi Shreshtha") {
+    } else if (e.target.textContent === "Sanjay Ganesh") {
+      setProfileData({ content: "Sanjay Ganesh" });
+      setActiveSanjayProfile(true);
+      setActivePraveenProfile(false);
+      setActiveKrishnaProfile(false);
+      setActiveNidhiProfile(false);
+      setActiveNiteshProfile(false);
+      setActiveShravanProfile(false);
+      setActiveManmeetProfile(false);
+      setActiveGauriProfile(false);
+      setActivePrashantProfile(false);
+      setActiveSuchiProfile(false);
+    } else if (e.target.textContent === "Manmeet Singh") {
+      setProfileData({
+        content:
+          "Manmeet Singh is a certified Azure specialist and the vice president (VP – Analytics) at Sakshath Technologies. With 18+ years of IT experience, he supports our core and non-core programmers/project solutions with end-to-end delivery solutions. Manmeet has experience developing and implementing IT Analytics and best practice guides and managing the delivery of analytical solutions. He upholds end-to-end standard compliance while delivering within deadlines and at the needed quality. Qualification – Master’s in business administration (MBA – IT Systems) from IMT-Ghaziabad.",
+        position: "Vice President-Analytics",
+      });
+      setActiveManmeetProfile(true);
+      setActiveSanjayProfile(false);
+      setActivePraveenProfile(false);
+      setActiveKrishnaProfile(false);
+      setActiveNidhiProfile(false);
+      setActiveNiteshProfile(false);
+      setActiveShravanProfile(false);
+      setActiveGauriProfile(false);
+      setActivePrashantProfile(false);
+      setActiveSuchiProfile(false);
+    } else if (e.target.textContent === "Shuchi Shreshtha") {
       setProfileData({
         content:
           "Shuchi Shreshtha",
       });
       setActiveSuchiProfile(true);
       setActiveGauriProfile(false);
-      // setActiveManmeetProfile(false);
-      // setActiveSanjayProfile(false);
+      setActiveManmeetProfile(false);
+      setActiveSanjayProfile(false);
       setActivePraveenProfile(false);
       setActiveKrishnaProfile(false);
-      // setActiveNidhiProfile(false);
+      setActiveNidhiProfile(false);
       setActiveNiteshProfile(false);
       setActiveShravanProfile(false);
-      // setActivePrashantProfile(false);
+      setActivePrashantProfile(false);
     }
-    // else if (e.target.textContent === "Prashant Tupe") {
-    //   setProfileData({
-    //     content:
-    //       "Prashant Tupe",
-    //     position: "Chief Operating Officer",
-    //   });
-    //   setActivePrashantProfile(true);
-    //   setActiveGauriProfile(false);
-    //   setActiveManmeetProfile(false);
-    //   setActiveSanjayProfile(false);
-    //   setActivePraveenProfile(false);
-    //   setActiveKrishnaProfile(false);
-    // //   setActiveNidhiProfile(false);
-    //   setActiveNiteshProfile(false);
-    //   setActiveShravanProfile(false);
-    //   setActiveSuchiProfile(false);
-    // }
+    else if (e.target.textContent === "Prashant Tupe") {
+      setProfileData({
+        content:
+          "Prashant Tupe",
+        position: "Chief Operating Officer",
+      });
+      setActivePrashantProfile(true);
+      setActiveGauriProfile(false);
+      setActiveManmeetProfile(false);
+      setActiveSanjayProfile(false);
+      setActivePraveenProfile(false);
+      setActiveKrishnaProfile(false);
+      setActiveNidhiProfile(false);
+      setActiveNiteshProfile(false);
+      setActiveShravanProfile(false);
+      setActiveSuchiProfile(false);
+    }
     else if (e.target.textContent === "Gouriprasad") {
       setProfileData({
         content:
@@ -183,14 +178,14 @@ const OurTeam = () => {
         position: "Chief Operating Officer",
       });
       setActiveGauriProfile(true);
-      // setActiveManmeetProfile(false);
-      // setActiveSanjayProfile(false);
+      setActiveManmeetProfile(false);
+      setActiveSanjayProfile(false);
       setActivePraveenProfile(false);
       setActiveKrishnaProfile(false);
-      // setActiveNidhiProfile(false);
+      setActiveNidhiProfile(false);
       setActiveNiteshProfile(false);
       setActiveShravanProfile(false);
-      // // setActivePrashantProfile(false);
+      setActivePrashantProfile(false);
       setActiveSuchiProfile(false);
     }
     console.log("Clicked", e.target.textContent);
@@ -298,7 +293,7 @@ const OurTeam = () => {
                     <img src={NITESH_PIC} />
                   </div>
                 </div>
-                {/* <div
+                <div
                   className={`our_team_sec_box ${
                     activeNidhiProfile ? "active" : ""
                   }`}
@@ -308,7 +303,7 @@ const OurTeam = () => {
                     <h5>Nidhi Singh</h5>
                     <img src={NIDHI_PIC} />
                   </div>
-                </div> */}
+                </div>
                 <div
                   className={`our_team_sec_box ${
                     activePraveenProfile ? "active" : ""
@@ -320,7 +315,7 @@ const OurTeam = () => {
                     <img src={PRAVEEN_PIC} />
                   </div>
                 </div>
-                {/* <div
+                <div
                   className={`our_team_sec_box ${
                     activeSanjayProfile ? "active" : ""
                   }`}
@@ -330,8 +325,8 @@ const OurTeam = () => {
                     <h5>Sanjay Ganesh</h5>
                     <img src={MANISH_PIC} />
                   </div>
-                </div> */}
-                {/* <div
+                </div>
+                <div
                   className={`our_team_sec_box ${
                     activeManmeetProfile ? "active" : ""
                   }`}
@@ -341,7 +336,7 @@ const OurTeam = () => {
                     <h5>Manmeet Singh</h5>
                     <img src={MANMEET_PIC} />
                   </div>
-                </div> */}
+                </div>
                 <div
                   className={`our_team_sec_box ${
                     activeSuchiProfile ? "active" : ""
@@ -354,7 +349,7 @@ const OurTeam = () => {
                   </div>
                 </div>
 
-                {/* <div
+                <div
                   className={`our_team_sec_box ${
                     activePrashantProfile ? "active" : ""
                   }`}
@@ -364,7 +359,7 @@ const OurTeam = () => {
                     <h5>Prashant Tupe</h5>
                     <img src={GAURI_PIC} />
                   </div>
-                </div> */}
+                </div>
 
                 <div
                   className={`our_team_sec_box ${

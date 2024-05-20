@@ -462,6 +462,9 @@ const Automation = () => {
               <div className="container">
                 <div className="row align-items-center">
                   <div className="col-md-6">
+                  <Fade direction="up" delay={500} >
+
+                
                     <div className="cloud_bg_img">
                       <img
                         src={AUTOMATION_BG_IMG}
@@ -470,6 +473,7 @@ const Automation = () => {
                         height="460px"
                       />
                     </div>
+                    </Fade>
                   </div>
                   <div className="col-md-6">
                     <div className="cloud_native_content">

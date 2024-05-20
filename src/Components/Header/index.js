@@ -46,10 +46,21 @@ const Header = () => {
               </Link>
             </div>
             <div className="col-md-6 text-md-end">
+                {/* <div className="dropdown"> */}
+                  {/* <span className="header_translator">
+                    <HiOutlineGlobeAlt /> English
+                  </span> */}
+                {/* </div> */}
+
+                <span>
+                <HiOutlineGlobeAlt /> English &nbsp; | &nbsp;
+                </span>
+              
               <Link to="tel:+918067819998">
                 <BsTelephoneInbound /> &nbsp;+91 80 67819878 &nbsp; | &nbsp;
                 &nbsp;
               </Link>
+
 
               <span className="header_social_icons">
                 Follow us &nbsp; &nbsp;
@@ -292,7 +303,7 @@ const Header = () => {
                   <span className="header_translator">
                     <HiOutlineGlobeAlt /> English
                   </span>
-                  <SlideAnimationButton btnName="Get Free Quote" />
+                  <SlideAnimationButton btnName="Contact us"/>
                 </div>
               </div>
             </div>

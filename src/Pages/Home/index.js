@@ -106,7 +106,7 @@ export const Home = () => {
       id: 1,
       heading_Title: "World's Leading Brands & Leaders' House Of Lords, London",
       description:
-        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO & Founder of Sakshath Technologies...",
+        "Selected as World’s Best Emerging Leader, Shravan Kumar, CEO & Founder of Sakshath Technologies®...",
       image: require("../../Assets/images/Achivement40.jpg"),
     },
     {
@@ -481,14 +481,14 @@ export const Home = () => {
               <div className="text-center">
                 <Fade direction="up" delay={20} triggerOnce>
                   <Heading
-                    heading="Certification & Accreditation"
+                    heading="Certifications"
                     uppercase="text-uppercase"
                   />
                 </Fade>
               </div>
             </div>
 
-            <div className="row mt-4 pt-2">
+            <div className="row">
               <div className="col-md-4 d-flex ">
                 <Link
                   onClick={() => {
@@ -571,7 +571,14 @@ export const Home = () => {
                   </Link>
                 </Fade>
               </div>
-
+                  <div className="row mt-4 pt-2">
+                  <div className="text-center">
+                  <Heading
+                    heading="partner"
+                    uppercase="text-uppercase"
+                  />
+                  </div>
+                 
               <div className="col-md-4 d-flex ">
                 <Link
                   onClick={() => {
@@ -643,6 +650,8 @@ export const Home = () => {
                   </Fade>
                 </Link>
               </div>
+              </div>
+              {/* <div className="row mt-4 pt-2"> */}
               <div className="col-md-4 d-flex ">
                 <Link>
                   <Fade direction="up" delay={400} triggerOnce>
@@ -653,7 +662,7 @@ export const Home = () => {
                       <div className="content">
                         <h3>Outlook Business</h3>
                         <p>
-                          Sakshath Technologies for winning Company of the Year
+                        Sakshath Technologies® for winning Company of the Year
                           - IT Services & IT Consulting in IT Industry at
                           Outlook Business Spotlight- Business Excellence Awards
                           2023.
@@ -706,9 +715,10 @@ export const Home = () => {
                   </Fade>
                 </Link>
               </div>
+              </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
       </section>
       {/* @@@@@ SECTION - ISO CERTIFICATES END */}
 
@@ -930,7 +940,7 @@ export const Home = () => {
       <section className="who_we_are">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 col-lg-6">
               <div className="image-box ">
                 <Fade direction="left" delay={10} triggerOnce>
                   <img className="img-fluid" src={WHO_WE_ARE_IMG} alt="" />
@@ -945,6 +955,11 @@ export const Home = () => {
                     <SubTitle SubTitle="Who we are" />
                   </Fade>
                   <Heading heading="Our Story" uppercase="text-uppercase" />
+                  {/* <label for="audio-message">Audio Message:</label> */}
+{/* <i class="fas fa-volume-up"></i> */}
+{/* <input type="speaker" id="audio-message" name="audio-message" placeholder="Enter audio message description"></input> */}
+
+
                 </div>
                 <p>
                   Our journey started way back in the year 2012. It started as a
@@ -965,7 +980,7 @@ export const Home = () => {
       </section>
       {/*  SECTION - "Who we are" end  */}
 
-      {/*  SECTION - Happy client counter starts /}
+      {/*  SECTION - Happy client counter starts */}
       <HappyClients />
       {/* SECTION- Happy client counter end  */}
 

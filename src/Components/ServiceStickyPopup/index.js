@@ -63,7 +63,7 @@ function ServiceStickyPopup() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </InputGroup>
-            <InputGroup className="mb-3">
+            <InputGroup className="mb-3"> 
               <InputGroup.Text>
                 <MdMarkEmailUnread />
               </InputGroup.Text>
