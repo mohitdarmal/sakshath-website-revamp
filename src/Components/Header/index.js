@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./style.scss";
 import { Link, NavLink } from "react-router-dom";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { BsEnvelope, BsTelephoneInbound } from "react-icons/bs";
 import { TfiLinkedin } from "react-icons/tfi";
@@ -177,7 +177,6 @@ const Header = () => {
                     className="nav-link dropdown-toggle"
                     id="accountDropdown"
                     role="button"
-                    // data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Services
@@ -234,19 +233,18 @@ const Header = () => {
                   </NavLink>
                 </li> */}
                 <li className="nav-item dropdown">
-                  <NavLink
-                    to="#"
+                <NavLink
+                     to="/abc"
                     className="nav-link dropdown-toggle"
-                    id="accountDropdown"
+                    id="account1Dropdown"
                     role="button"
-                    // data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Solutions
+                    Solution
                   </NavLink>
                   <ul
                     className="dropdown-menu border-0 shadow bsb-zoomIn"
-                    aria-labelledby="accountDropdown"
+                    aria-labelledby="account1Dropdown"
                   >
                   <li>
                       <NavLink to="/erp" className="dropdown-item">

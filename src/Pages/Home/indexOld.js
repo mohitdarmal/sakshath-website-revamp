@@ -727,7 +727,7 @@ export const Home = () => {
                   Services with smidgen capital, later in the years this small
                   consulting firm providing IT recruitment Services ran into the
                   idea of having an ERP offshore development. If not quite a
-                  tale of rags to riches, the story of Sakshath Technologies’
+                  tale of rags to riches, the story of Sakshath Technologies®
                   rise to stardom certainly came closer.
                 </p>
                 <Fade direction="up">

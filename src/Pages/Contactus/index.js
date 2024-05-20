@@ -141,7 +141,7 @@ const Contactus = () => {
             <div className="col-md-5 position-relative">
               <div className="head_location">
                 <img src={HEADQUATERS_ICON} />
-                <h2>HeadQuater Office</h2>
+                <h2> Corporate Office</h2>
                 <ul>
                   <li className="address">
                     8, KV Jairam Rd, MCHS Layout, Jakkuru Layout, Jakkur,
@@ -169,7 +169,7 @@ const Contactus = () => {
             <div className="col-md-5 position-relative">
               <div className="head_location">
                 <img src={REGISTERED_ICON} />
-                <h2>Corporate Office</h2>
+                <h2>HeadQuater Office</h2>
                 <ul>
                   <li className="address">
                     Level 7, Mfar Greenheart, Manyata Tech Park, Phase IV,
@@ -362,7 +362,7 @@ const Contactus = () => {
           <div className="row">
             <div className="col-md-8 offset-md-2">
               <div className="text-center mb-4">
-                <Heading heading="Work with us" uppercase="" />
+                <Heading heading="Contact Us" uppercase="" />
               </div>
               <Form onSubmit={handleSubmit}>
                 <Row>

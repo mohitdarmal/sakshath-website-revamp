@@ -952,7 +952,7 @@ export const Home = () => {
                   Services with smidgen capital, later in the years this small
                   consulting firm providing IT recruitment Services ran into the
                   idea of having an ERP offshore development. If not quite a
-                  tale of rags to riches, the story of Sakshath Technologies’
+                  tale of rags to riches, the story of Sakshath Technologies®
                   rise to stardom certainly came closer.
                 </p>
                 <Fade direction="up">
@@ -1007,10 +1007,12 @@ export const Home = () => {
       />
       {/*SECTION - planning banner ends*/}
 
-      {/* SECTION - Client Logo Start*/}
 
+      {/* SECTION - Client Logo Start*/}
+      
       <ClientLogo />
-      {/* @@@@@ SECTION - Client Logo End @@@@@*/}
+
+      {/*  SECTION - Client Logo End */}
 
       {/* @@@@@ SECTION - Popular service start @@@@@ */}
 
@@ -1146,9 +1148,10 @@ export const Home = () => {
           </div>
           <div className="bottom_blog_container mt-md-4">
             <div className="row blog_boxes">
-              {achivementHome.map((data) => {
+              {achivementHome.map((data,index) => {
                 return (
-                  <div className="col-md-4  blog_box ipad_half_width">
+                
+                  <div className="col-md-4  blog_box ipad_half_width" key={index}>
                     <div className="bottom_blog_img">
                       <Fade direction="up" triggerOnce>
                         {/* <img src={ACHIVEMENT_IMG1} alt="" /> */}

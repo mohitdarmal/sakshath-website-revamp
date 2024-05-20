@@ -167,7 +167,7 @@ const Inception = () => {
             <Fade direction="up" triggerOnce>
               <h4>ROAD AHEAD</h4>
               <p>
-                Sakshath Technologies&#174; has an ever-evolving spirit within the
+              Sakshath Technologies®has an ever-evolving spirit within the
                 organization, led by committed professionals. Sakshath
                 Technologies&#174; continually reviews its service offering,
                 always being at the cutting edge of technology-based business

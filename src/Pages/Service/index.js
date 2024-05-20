@@ -282,12 +282,10 @@ theme="light"
 
       {/* @@@@@@@ Experience section ends @@@@@@@@@ */}
 
-      {/* @@@@@@@ Our Principals start @@@@@@@@@ */}
-      <OurPrincipals />
-      {/* @@@@@@@ Our Principals ends @@@@@@@@@ */}
+
 
       {/* @@@@@@@@  Ready_to_get_our_professional_services starts  @@@@@@@@ */}
-      <section className="ready_to_get_our_professional_services">
+      {/* <section className="ready_to_get_our_professional_services">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-md-8 heading_box">
@@ -304,7 +302,7 @@ theme="light"
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* @@@@@@@@  Ready_to_get_our_professional_services ends  @@@@@@@@ */}
 
@@ -381,7 +379,7 @@ theme="light"
       {/* @@@@@@@@  It benefits ends @@@@@@@@ */}
 
       {/* @@@@@@@ partner logo section starts @@@@@@@ */}
-      <TrustedBy />
+      {/* <TrustedBy /> */}
 
       {/* <section className='partner_logo_section'>
       <div className="container partner_logo_tab">
