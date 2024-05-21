@@ -43,7 +43,7 @@ const OurPrincipals = () => {
           <div className="row mt-4 pt-md-3">
             <div className="col-md-3 d-flex ">
               <div className="our_principals_box">
-                <Fade direction="up" triggerOnce>
+                <Fade direction="up" triggerOnce>g
                   <div className="icon_box">
                     <img src={RELIABILTY} alt="" />
                   </div>
@@ -127,7 +127,7 @@ const OurPrincipals = () => {
                   </Fade>
                   <Fade direction="up" triggerOnce>
                     <Heading
-                      heading="Top Four Reasons to Choose Sakshath Technologies&#174;"
+                      heading="Top Four Reasons to Choose Sakshath Technologies"
                       uppercase=""
                     />
                   </Fade>
@@ -215,9 +215,9 @@ const OurPrincipals = () => {
                     <p>
                       {" "}
                       In order to efficiently create and produce excellent
-                      products for our clients,Sakshath Technologies® professional team of
-                      designers follow a simple process that makes working with
-                      us easy. {" "}
+                      products for our clients,Sakshath Technologies®
+                      professional team of designers follow a simple process
+                      that makes working with us easy.{" "}
                     </p>
 
                     {/* <Link>Read More</Link> */}

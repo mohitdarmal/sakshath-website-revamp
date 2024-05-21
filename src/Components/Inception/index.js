@@ -167,17 +167,17 @@ const Inception = () => {
             </div>
           </div>
 
-          <div class="row align-items-center justify-content-end how-it-works d-flex col-mob">
-            <div class="col-6 text-right col-f-width">
-              <Fade direction="up" triggerOnce>
-                <h4>ROAD AHEAD</h4>
-                <p>
-                  Sakshath Technologies® has an ever-evolving spirit within the
-                  organization, led by committed professionals. Sakshath
-                  Technologies® continually reviews its service offering, always
-                  being at the cutting edge of technology-based business
-                  solutions in a dynamic market.
-                </p>
+          <div class="row align-items-center justify-content-end how-it-works d-flex">
+            <div class="col-6 text-right">
+            <Fade direction="up" triggerOnce>
+              <h4>ROAD AHEAD</h4>
+              <p>
+              Sakshath Technologies®has an ever-evolving spirit within the
+                organization, led by committed professionals. Sakshath
+                Technologies&#174; continually reviews its service offering,
+                always being at the cutting edge of technology-based business
+                solutions in a dynamic market.
+              </p>
               </Fade>
             </div>
             <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center para">
