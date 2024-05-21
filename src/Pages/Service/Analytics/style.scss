@@ -769,8 +769,8 @@ ul {
   .overview_sec_left_analytics {
     padding-right: 0px !important;
   }
-  .overview_sec_right_analytics_img{
-    padding: 0px;
+  .overview_sec_right_analytics_img img{
+    padding-left: 0px !important;
     padding-top: 40px;
   }
 
@@ -780,6 +780,59 @@ ul {
   .ai_data_science_right{
     padding-left: 0px;
   }
+
+  .ai_datascience_content_para h5 {
+     margin-left: 0px!important;
+  }
+  .bi_dashboard_last_row,.data_integration_last_row,.bigdata_last_row{
+    padding-right: 0px;
+     .ai_datascience_content_col{
+      padding-right: 0px;
+     }
+  }
+
+
+  .bi_dashboard_left {
+    padding: 0px!important;
+}
+  .bi_dashboard_right{
+    padding: 0px!important;
+  }
+
+  .bi_feature_box::before{
+    width:352px!important;
+    margin-left:-176px!important;}
+    
+    
+    .bi_feature_box::after{
+    width: 352px!important;
+    margin-left: -177px !important;
+    margin-top: 16px!important;
+    }
+    .bi_feature_box2_bgcolor::after{
+      margin-top: 5px!important;
+    }
+    .bi_feature_box3_bgcolor::before {
+     
+      margin-top: -75px!important;
+  }
+  .bi_feature_box3_bgcolor::after {
+     
+    margin-top: 24px!important;
+}
+.bi_feature_box5_bgcolor::after{
+  margin-top: 24px!important;
+}
+.bi_feature_box6_bgcolor::after{
+  margin-top: 26px!important;
+}
+
+.bigdata_sec {
+  .bi_dashboard_left{
+    padding: 12px!important;
+  }
+}
+
 
   .why_need_integration_right {
     padding-left: 0px;
@@ -872,99 +925,174 @@ ul {
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
   /* For Mobile Landscape Screen  */
-  .overview_sec {
-    padding-right: 0px !important;
-    padding-top: 40px;
-  }
-  .partner_logo_section {
-    padding: 40px 0px;
-  }
-  .partner_logo_tab {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
+//   .overview_sec_left_analytics {
+//     padding: 0px !important;
+// }
+.overview_sec_left_analytics {
+  padding-right: 0px!important;
+}
+.overview_sec_right_analytics_img img {
+  padding: 0px!important;
+}
+.ai_data_science_left {
+  padding-right: 0px!important;
+}
+.ai_data_science_right {
+  padding-left: 0px!important;
+}
 
-  .why_need_integration_right {
-    padding-left: 0px;
-  }
-  .integartion_coe_sec {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .why_need_integration_sec {
-    padding-bottom: 40px;
-  }
-  .integration_planning_banner {
-    margin-top: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .integration_consulting_sec {
-    padding-top: 40px;
-    padding-bottom:40px;
-  }
-  .integration_consulting_right {
-    padding-left: 0px;
-  }
-  // .software_logo_section {
-  //   padding: 40px 0px;
-  // }
-  .managed_services_left {
-    padding-top: 40px;
-    padding-left: 0px;
-  }
-  .managed_services_sec {
-    padding-bottom: 40px;
-    padding-top: 40px;
-  }
-  .integration_planning_banner {
-    margin-top: 0px;
-    padding-top: 0px;
-  }
-  .integration_planning_banner .integration_left_planning_banner_content {
-    margin-bottom: 0px;
-  }
+.bi_dashboard_left {
+  padding-right: 0px!important;
+}
 
+.bi_dashboard_right {
+  padding-left: 0px!important;
+}
+.bi_dashboard_last_row,.data_integration_last_row,.bigdata_last_row{
+  padding-right: 2px;
+   .ai_datascience_content_col{
+    padding-right: 0px;
+   }
+}
+.bi_feature_box::before{
+  width: 516px!important;
+  margin-left: -258px!important;
+  margin-top: -57px!important;
   
 }
+.bi_feature_box::after{
+  width: 516px!important;
+  margin-left: -258px!important;
+  margin-top: 17px!important;
+  
+}
+.bi_feature_box3_bgcolor::before ,.bi_feature_box5_bgcolor::before {
+ margin-top: -64px!important;
+}
+.bi_feature_box3_bgcolor::after{
+  margin-top: 24px!important;
+ }
+ .bi_feature_box5_bgcolor::after {
+  
+  margin-top: 25px!important;
+}
+.bi_feature_box6_bgcolor::before {
+ 
+  margin-top: -70px!important;
+}
+.bi_feature_box6_bgcolor::after {
+  
+  margin-top: 38px!important;
+}
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* For Tab Screen  */
-  .paragraph {
-    padding-top: 18px;
-    font-size: 9px;
-    height: 47px;
-  }
-  .why_need_integration_right {
-    padding-left: 36px;
-  }
+  .overview_sec_left_analytics {
+    padding-right: 0px!important; 
+}
+.overview_sec_right_analytics_img img {
+   padding-left: 0px!important;
+}
+.ai_data_science_left {
+  padding-right: 0px!important;
+}
+.ai_data_science_right{
+  padding-left: 0px!important;
+}
+.offset-md-3 {
+  margin-left: 0%;
+  padding-right: 0px;
+}
+.bi_dashboard_left{
+  padding-right: 0px!important;
+}
+.bi_dashboard_right {
+  padding-left: 0px!important;
+}
+.bi_dashboard_last_row{
+  padding-right: 0px;
+}
+.bigdata_last_row{
+  padding-right: 0px;
+}
+.data_integration_last_row{
+  padding-right: 0px;
+}
+.bi_feature_box::after ,.bi_feature_box::before{
+  width: 696px !important;
+        margin-left: -348px !important;
+    }
 
-  .integartion_coe_sec {
-    padding-left: 36px;
-    padding-top: 40px;
-  }
-  .integration_consulting_right {
-    padding-left: 36px;
-  }
-  .managed_services_sec {
-    padding-bottom: 40px;
-    padding-left: 36px;
-  }
-  .integration_consulting_sec {
-    padding-top: 40px;
-  }
-  .integration_planning_banner {
-    margin-top: 40px;
-  }
-  .partner_logo_section {
-    padding: 20px 0px 20px 0px;
-  }
-  .partner_logo_tab {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  .why_need_integration_sec {
-    padding-bottom: 40px;
-  }
+    .bi_feature_box2_bgcolor::after{
+      margin-top: 11px!important;
+    }
+.bi_feature_box2_bgcolor::before{
+
+
+    margin-top: -47px!important;
+
+}
+.bi_feature_box3_bgcolor::before{
+
+
+  margin-top: -67px!important;
+
+}
+.bi_feature_box3_bgcolor::after{
+
+
+  margin-top: 25px!important;
+
+}
+.bi_feature_box4_bgcolor::after{
+
+
+  margin-top: 17px!important;
+
+}
+.bi_feature_box6_bgcolor::before{
+
+
+  margin-top: -70px!important;
+
+}
+  // .paragraph {
+  //   padding-top: 18px;
+  //   font-size: 9px;
+  //   height: 47px;
+  // }
+  // .why_need_integration_right {
+  //   padding-left: 36px;
+  // }
+
+  // .integartion_coe_sec {
+  //   padding-left: 36px;
+  //   padding-top: 40px;
+  // }
+  // .integration_consulting_right {
+  //   padding-left: 36px;
+  // }
+  // .managed_services_sec {
+  //   padding-bottom: 40px;
+  //   padding-left: 36px;
+  // }
+  // .integration_consulting_sec {
+  //   padding-top: 40px;
+  // }
+  // .integration_planning_banner {
+  //   margin-top: 40px;
+  // }
+  // .partner_logo_section {
+  //   padding: 20px 0px 20px 0px;
+  // }
+  // .partner_logo_tab {
+  //   padding-top: 0px;
+  //   padding-bottom: 0px;
+  // }
+  // .why_need_integration_sec {
+  //   padding-bottom: 40px;
+  // }
 }
 
 

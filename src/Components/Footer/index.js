@@ -10,7 +10,7 @@ import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { Form, Button } from "react-bootstrap";
 import { MdOutlineEmail } from "react-icons/md";
-import { INSTAGRAM_ICON, LINKEDIN_ICON, YOUTUBE_ICON } from "../Header/Constant";
+import { INSTAGRAM_ICON, LINKEDIN_ICON, YOUTUBE_ICON,X_ICON } from "../Header/Constant";
 import BackToTop from "../BackToTop";
 import FloatingActionButton from "../FloatingActionButton";
 // import OnLoadPopup from "../NewsLetterPopup";
@@ -225,6 +225,9 @@ const Footer = () => {
 
             <div className="col-md-4 social_media ">
               <Fade direction="up" cascade damping={0.1}>
+              {/* <Link to=""> */}
+                    {/* <img src={X_ICON} /> */}
+                {/* </Link> */}
                 <Link to="">
                   {/* <RiInstagramFill />  */} <img src={LINKEDIN_ICON} />
                 </Link>

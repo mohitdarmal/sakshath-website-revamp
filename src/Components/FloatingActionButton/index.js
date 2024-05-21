@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import { IoChatbubbleEllipsesOutline, IoCloseSharp  } from "react-icons/io5";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdOutlineLocationOn } from "react-icons/md";
+
 
 
 const FloatingActionButton = () => {
@@ -51,6 +55,14 @@ useEffect(() => {
       </Link>
       <Link className={classname} to="mailto:info@sakshath-technologies.com">
        <MdMarkEmailUnread />
+      </Link>
+      <Link className={classname} to="tel:+918067819878">
+       <FaWhatsapp />
+      </Link>
+      <Link className={classname} to="/contact-us">
+      {/* <FaLocationDot /> */}
+      <MdOutlineLocationOn />
+      
       </Link>
       
       <Link className={close} onClick={toggleFloatingButton} href="#">
