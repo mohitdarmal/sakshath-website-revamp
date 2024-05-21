@@ -51,7 +51,7 @@ const OurTeam = () => {
     } else if (e.target.textContent === "Shravan Kumar") {
       setProfileData({
         content:
-          "Shravan Kumar is an accomplished professional with 16+ years of Technical Recruitment and Resource Management experience, specializing in SYSPRO/EPICOR/SAP in the U.S., Canada, and India. He possesses strong technical/business acumen and an understanding of technical requirements. His strength includes multi-location recruitment, pre-screening and behavioral interviewing, client/hiring manager relationships, and offer negotiation and closing.",
+          "Shravan Kumar is an accomplished professional with 20+ years of Technical Recruitment and Resource Management experience, specializing in SYSPRO/EPICOR/SAP in the U.S., Canada, and India. He possesses strong technical/business acumen and an understanding of technical requirements. His strength includes multi-location recruitment, pre-screening and behavioral interviewing, client/hiring manager relationships, and offer negotiation and closing.",
         position: "Founder & Managing Director",
       });
       setActiveShravanProfile(true);
@@ -145,8 +145,9 @@ const OurTeam = () => {
     // } 
     else if (e.target.textContent === "Shuchi Shreshtha") {
       setProfileData({
-        content:
-          "Shuchi Shreshtha",
+           content:
+           "Shuchi is a seasoned agile-certified Human Resource professional with over 1.3 decade of experience in Human Resource Management, Consulting, Transformation Projects, HR Analytics, Organizational Development, and Team Building. Throughout her career, she has demonstrated exceptional communication skills and a talent for effective presentation and people management. She has successfully collaborated with global multinational clients in diverse sectors such as IT/ITES, Banking, Auction, Accounting, Audit, Asset Remarketing, and Education. Shuchi is a focused business professional, and she has a proven track record of ensuring the accomplishment of organizational goals through her strategic vision and ability to foster a positive workplace culture.",
+        position: "VP – HR",
       });
       setActiveSuchiProfile(true);
       setActiveGauriProfile(false);
@@ -311,39 +312,6 @@ const OurTeam = () => {
                 </div> */}
                 <div
                   className={`our_team_sec_box ${
-                    activePraveenProfile ? "active" : ""
-                  }`}
-                  onClick={handleChangeDetail}
-                >
-                  <div className="details">
-                    <h5>Praveen D</h5>
-                    <img src={PRAVEEN_PIC} />
-                  </div>
-                </div>
-                {/* <div
-                  className={`our_team_sec_box ${
-                    activeSanjayProfile ? "active" : ""
-                  }`}
-                  onClick={handleChangeDetail}
-                >
-                  <div className="details">
-                    <h5>Sanjay Ganesh</h5>
-                    <img src={MANISH_PIC} />
-                  </div>
-                </div> */}
-                {/* <div
-                  className={`our_team_sec_box ${
-                    activeManmeetProfile ? "active" : ""
-                  }`}
-                  onClick={handleChangeDetail}
-                >
-                  <div className="details">
-                    <h5>Manmeet Singh</h5>
-                    <img src={MANMEET_PIC} />
-                  </div>
-                </div> */}
-                <div
-                  className={`our_team_sec_box ${
                     activeSuchiProfile ? "active" : ""
                   }`}
                   onClick={handleChangeDetail}
@@ -354,17 +322,11 @@ const OurTeam = () => {
                   </div>
                 </div>
 
-                {/* <div
-                  className={`our_team_sec_box ${
-                    activePrashantProfile ? "active" : ""
-                  }`}
-                  onClick={handleChangeDetail}
-                >
-                  <div className="details">
-                    <h5>Prashant Tupe</h5>
-                    <img src={GAURI_PIC} />
-                  </div>
-                </div> */}
+               
+               
+                
+
+                
 
                 <div
                   className={`our_team_sec_box ${
@@ -375,6 +337,17 @@ const OurTeam = () => {
                   <div className="details">
                     <h5>Gouriprasad</h5>
                     <img src={GAURI_PIC} />
+                  </div>
+                </div>
+                <div
+                  className={`our_team_sec_box ${
+                    activePraveenProfile ? "active" : ""
+                  }`}
+                  onClick={handleChangeDetail}
+                >
+                  <div className="details">
+                    <h5>Praveen D</h5>
+                    <img src={PRAVEEN_PIC} />
                   </div>
                 </div>
 
