@@ -31,7 +31,7 @@
 }
 
 .who_we_are_img_bottom {
-  // padding-right: 90px;
+
 }
 
 // contact starts
@@ -84,7 +84,6 @@
 .vision {
   padding-top: 80px;
   padding-bottom: 80px;
-  // background-image: url("../../Assets/images/mission.png");
   background-image: url("../../Assets/images/wave.svg");
   //  padding: 120px;
   background-size: cover;
@@ -151,7 +150,6 @@
   position: absolute;
   content: "";
   width: 2px;
-  /* background: red; */
   height: 153px;
   right: 0;
   border-right: 2px dashed #9fc9da;
@@ -346,45 +344,40 @@
   .how-it-works p{
     text-align: start !important;
   }
+
+  // error
+//   .about_who .col-md-6 {
+//     flex: 0 0 auto;
+//     width: 100%;
+// }
+// .vision_rounded p::after {
+//   height: 200px !important;
+// }
+
+// .about_img_col6
+// {
+//   display: none;
+//  .who_we_are_img img{
+//   display: none;
+// }
+// }
 }
 
 // Media query start
-@media screen and (min-width:1024px){
-//   .about_who {
-//     padding-top: 0px !important;
-//     padding-bottom: 0px !important;
-// }
-.about_who_we_r{
-  // .col-md-6{
-  //   width: 100% !important;
-  // }
-}
-  .about_img_col6{
-    // display: none !important;
-  }
-
-//   .vision_rounded p::after {
-//     position: absolute;
-//     content: "";
-//     width: 2px;
-//     height: 190px !important;
-//     right: 0;
-//     border-right: 2px dashed #9fc9da;
-//     top: 101px;
-//     left: 50%;
-// }
 
 
-@media (min-width: 768px) {
-  .col-md-6 {
-      flex: 0 0 auto;
-      width: 100%;
-  }
-}
-.vision_rounded p::after {
-  height: 200px !important;
-}
+
+ @media (max-width: 768px) {
+   .about_who .col-md-6 {
+       flex: 0 0 auto;
+       width: 100%;
+   }
+   .vision_rounded p::after {
+     height: 200px !important;
+   }
+ }
 
 
-}
+
+
 
