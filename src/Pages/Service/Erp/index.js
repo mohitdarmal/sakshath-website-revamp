@@ -116,7 +116,7 @@ const Erp = () => {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
+          <Modal.Title id="contained-modal-title-vcenter " className="ind_title">
             {industriesContent.title}
           </Modal.Title>
         </Modal.Header>
@@ -135,8 +135,8 @@ const Erp = () => {
 
   return (
     <>
-      <ServicePopup popUpHeading={"ERP Popup"} />
-      {/* <IndustriesPopup show={modalShow} onHide={() => setModalShow(false)} /> */}
+      {/* <ServicePopup popUpHeading={"ERP Popup"} /> */}
+      <IndustriesPopup show={modalShow} onHide={() => setModalShow(false)} />
 
       <BreadCumb imgUrl={ABOUT_BANNER} title="ENTERPRISE RESOURCE PLANNING " />
       {/* Syspro  overview Starts*/}
@@ -179,7 +179,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="epicor_right_img">
-                <img src={ERP1_GRAPH_IMG} alt="" width="600px" />
+                <img src={ERP1_GRAPH_IMG} alt="" width="600px" className="img-fluid"/>
               </div>
             </div>
           </div>
@@ -190,7 +190,7 @@ const Erp = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="epicor_left_img">
-                <img src={ERP1_OVERVIEW} alt="" width="550px" />
+                <img src={ERP1_OVERVIEW} alt="" width="550px" className="img-fluid"/>
               </div>
             </div>
             <div className="col-md-6">
@@ -262,7 +262,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="syspro_img">
-                <img src={ERP_SYSPRO} alt="" width="600px" />
+                <img src={ERP_SYSPRO} alt="" width="600px"  className="img-fluid"/>
               </div>
             </div>
           </div>
@@ -379,68 +379,7 @@ const Erp = () => {
       </section>
       {/* syspro 8 ways end */}
       {/* EPICOR  overview  ends*/}
-      {/* industry's starts */}
-      {/* <section className="industry_section">
-        <div className="container">
-          <div className="row">
-            <div className="industry_main_heading text-center">
-              <Heading heading="Industry" uppercase="text-uppercase" />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12">
-              <div className="top_industry d-flex">
-                <div className="industry_box1">
-                  <h5>supply chain</h5>
-                </div>
-                <div className="industry_box1">
-                  <h5>manufacturing</h5>
-                </div>
-                <div className="industry_box1">
-                  <h5>Retailers</h5>
-                </div>
-              </div>
-
-              <div className="center_top_industry">
-                <div className="industry_box_2">
-                  <h5>Feedback Analysis</h5>
-                </div>
-                <div className="industry_box_2">
-                  <h5>Assement</h5>
-                </div>
-                <div className="industry_box_2">
-                  <h5>Feedback Analysis</h5>
-                </div>
-              </div>
-              <div className="center_bottom_industry ">
-                <div className="industry_box_3">
-                  <h5>Feedback Analysis</h5>
-                </div>
-                <div className="industry_box_3">
-                  <h5>Feedback Analysis</h5>
-                </div>
-                <div className="industry_box_3">
-                  <h5>Feedback Analysis</h5>
-                </div>
-              </div>
-              <div className="bottom_industry">
-                <div className="industry_box_4">
-                  <h5>Feedback Analysis</h5>
-                </div>
-                <div className="industry_box_4">
-                  <h5>Feedback Analysis</h5>
-                </div>
-                <div className="industry_box_4">
-                  <h5>Feedback Analysis</h5>
-                </div>
-                <div className="industry_box_3">
-                  <h5>Feedback Analysis</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
       <section className="industry_erp">
         <div className="container">
           <div className="row text-center industry_heading">
@@ -554,15 +493,7 @@ const Erp = () => {
                   <h4>Medical</h4>
                 </div>
               </Col>
-              {/* <Col>
-              <div className="industry_box">
-                <div className="industry_icon">
-                  <img src={SUPPLY_CHAIN_IMG} alt="" />
-                </div>
-                <h4>Furniture & Fixtures</h4>
-              </div>
-            </Col> */}
-            </div>
+               </div>
           </Fade>
         </div>
       </section>
@@ -580,7 +511,7 @@ const Erp = () => {
                   setIndustriesContent({
                     title: "Internal Operation",
                     content:
-                      "<ul><li>Manufacturing operations management</li><li>Job nesting</li><li>Bill of materials </li><li>Materials </li><li>Quality management </li><li>Traceability  </li></ul>",
+                      "  <ul><li>Manufacturing operations management</li><li>Job nesting</li><li>Bill of materials </li><li>Materials </li><li>Quality management </li><li>Traceability  </li></ul>",
                   });
                 }}
               >
@@ -695,7 +626,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="migration_img">
-                <img src={Migration} alt="" width="550px" />
+                <img src={Migration} alt="" width="550px" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -709,7 +640,7 @@ const Erp = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="sap_img">
-                <img src={SAP} alt="" width="600px" />
+                <img src={SAP} alt="" width="600px" className="img-fluid" />
               </div>
             </div>
             <div className="col-md-6">
@@ -800,7 +731,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="dynamic_img">
-                <img src={Who_we_r} alt="" width="550px" />
+                <img src={Who_we_r} alt="" width="550px" className="img-fluid" />
               </div>
             </div>
           </div>

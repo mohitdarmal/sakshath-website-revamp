@@ -167,7 +167,7 @@ const Inception = () => {
             </div>
           </div>
 
-          <div class="row align-items-center justify-content-end how-it-works d-flex">
+          <div class="row align-items-center justify-content-end how-it-works d-flex col-mob">
             <div class="col-6 text-right">
             <Fade direction="up" triggerOnce>
               <h4>ROAD AHEAD</h4>

@@ -99,32 +99,33 @@ transition: .5s;
 }
 
 
-@media screen and (min-width:480px) and (max-width:767px){
-    .banking_section {
-        padding-top: 40px !important;
-        padding-bottom: 40px !important;
-    }
+// @media screen and (min-width:480px) and (max-width:767px){
+//     .banking_section {
+//         padding-top: 40px !important;
+//         padding-bottom: 40px !important;
+//     }
 
 
-    .customer_web_box {
-        background-color: #fff;
-        padding: 30px;
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1607843137);
-        border-radius: 6px;
-        transition: 0.5s;
-        margin-top: 20px;
-    }
+//     .customer_web_box {
+//         background-color: #fff;
+//         padding: 30px;
+//         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1607843137);
+//         border-radius: 6px;
+//         transition: 0.5s;
+//         margin-top: 20px;
+//         min-height: 430px !important;
+//     }
 
     
-    .customer_web_box_section {
-        margin-top: -100px;
-        padding-bottom: 40px;
-    }
-    .banking_img img{
-  height: 400px;
-   margin-left: 0px !important;
-}
-}
+//     .customer_web_box_section {
+//         margin-top: -100px;
+//         padding-bottom: 40px;
+//     }
+//     .banking_img img{
+//   height: 400px;
+//    margin-left: 0px !important;
+// }
+// }
 
 @media screen and (max-width:480px){
 .banking_img img{
@@ -157,18 +158,27 @@ transition: .5s;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1607843137);
     border-radius: 6px;
     transition: 0.5s;
-    min-height: 245px !important;
+    min-height: 430px !important;
 }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  
+.heading_title {
+  color: black;
+  font-size: 35px !important;
+  font-weight: 700;
+  font-family: "Rajdhani", sans-serif;
+  line-height: 40px !important;
+}
   .customer_web_box {
     background-color: #fff;
     padding: 30px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1607843137);
     border-radius: 6px;
     transition: 0.5s;
-    min-height: 306px;
+  min-height: 430px !important;
   }
   .key_feature_box h4 {
     font-weight: bold;

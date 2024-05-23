@@ -9,6 +9,8 @@ export const BENIFTS_IMG= require('../../Assets/images/Benfits_right.png');
 export const SAFE=require("../../Assets/images/shield.png");
  export const BONUS=require("../../Assets/images/bonus.png");
 
+ export const BAN_ABT_IMG=require("../../Assets/images/about-img-ban.png")
+
 
 
 

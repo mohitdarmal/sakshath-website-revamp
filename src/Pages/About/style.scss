@@ -186,7 +186,7 @@
     z-index: -1;
   }
   .about_who {
-    // padding-top: 40px;
+  padding-top: 20px;
     padding-bottom: 40px;
   }
 
@@ -374,6 +374,11 @@
    }
    .vision_rounded p::after {
      height: 200px !important;
+   }
+   .about_who .col-md-6{
+    .who_we_are_img img{
+      display: none !important;
+     }
    }
  }
 
