@@ -43,7 +43,7 @@ const OurPrincipals = () => {
           <div className="row mt-4 pt-md-3">
             <div className="col-md-3 d-flex ">
               <div className="our_principals_box">
-                <Fade direction="up" triggerOnce>
+                <Fade direction="up" triggerOnce>g
                   <div className="icon_box">
                     <img src={RELIABILTY} alt="" />
                   </div>
