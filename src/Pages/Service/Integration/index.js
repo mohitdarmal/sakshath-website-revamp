@@ -530,7 +530,7 @@ const menu = [{
       {/* @@@@@ SECTION- Brouchure end @@@@@@ */}
 
       {/* Faq start */}
-      <section>
+      {/* <section>
         <div className="container">
           <div className="row">
             <div className="col-md-1 ipad_full_width"> </div>
@@ -540,7 +540,7 @@ const menu = [{
             <div className="col-md-1 ipad_full_width"> </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Faq end */}
       </ScrollSpy>
     </>

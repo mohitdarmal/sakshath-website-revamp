@@ -813,7 +813,7 @@ const Erp = () => {
       {/* <WhySaksahthNew whyCrm={whyRpa} /> */}
       {/* why sakshth ends */}
 
-      <section>
+      {/* <section>
         <div className="container">
           <div className="row">
             <div className="col-md-1"> </div>
@@ -823,7 +823,7 @@ const Erp = () => {
             <div className="col-md-1"> </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
