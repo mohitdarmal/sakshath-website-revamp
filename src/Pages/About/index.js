@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 // import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import BreadCumb from "../../Components/Breadcumb/index";
 import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
+import {BAN_ABT_IMG  } from "../../Components/Breadcumb/Constant";
 import {
   ABOUT_BANK,
   ABOUT_MISSION,
@@ -88,7 +89,7 @@ const About = () => {
         <meta name="description" content="About SEO" />
       </Helmet>
 
-      <BreadCumb imgUrl={ABOUT_BANNER} title="About Us" />
+      <BreadCumb imgUrl={BAN_ABT_IMG} title="About Us" />
       <section className=" about_who">
         <div className="container mt-4">
           <div className="row mt-4 about_who_we_r ">
@@ -106,7 +107,8 @@ const About = () => {
                     providing IT recruitment Services ran into the idea of
                     having an ERP offshore development. If not quite a tale of
                     rags to riches, the story of Sakshath Technologies® rise to
-                    stardom certainly came closer. The birth of Sakshath Technologies® in 2015, wouldn’t be possible without the
+                    stardom certainly came closer. The birth of Sakshath
+                    Technologies® in 2015, wouldn’t be possible without the
                     utmost faith and trust of family and friends. <br />
                     <br />
                     Sakshath Technologies® biggest USP’s are ERP (Epicor, MS
@@ -131,7 +133,8 @@ const About = () => {
                     employees<strong> ‘HERE’ and ‘NOW’</strong>. Starting as a
                     self-funded business Sakshath Technologies® company ethos to
                     date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from
-                    the beginning of the journey made what Sakshath Technologies® is today, we grew gradually to a family of
+                    the beginning of the journey made what Sakshath
+                    Technologies® is today, we grew gradually to a family of
                     200+ employees and now have a domestic presence in 3
                     metropolitan cities serving clients from all over the world.
                     Celebrating decade milestones, today we take pride in
@@ -319,7 +322,7 @@ const About = () => {
 
       {/* Inception starts*/}
 
-<Inception/>
+      <Inception />
       {/* Inception ennds */}
 
       {/* client logo */}
@@ -351,8 +354,6 @@ const About = () => {
         </div>
       </section> */}
 
-
-
       {/* Core values starts */}
       <section className="core_values">
         <div className="container">
@@ -367,7 +368,7 @@ const About = () => {
                     <div className="title d-flex justify-content-between">
                       <Fade direction="up" delay={450} triggerOnce>
                         <p>{data.name}</p>
-                         <img src={data.image} alt="" />
+                        <img src={data.image} alt="" />
                       </Fade>
                     </div>
                     <Fade direction="up" delay={450} triggerOnce>

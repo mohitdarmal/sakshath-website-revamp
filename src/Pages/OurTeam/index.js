@@ -146,7 +146,7 @@ const OurTeam = () => {
     else if (e.target.textContent === "Shuchi Shreshtha") {
       setProfileData({
            content:
-           "Shuchi is a seasoned agile-certified Human Resource professional with over 1.3 decade of experience in Human Resource Management, Consulting, Transformation Projects, HR Analytics, Organizational Development, and Team Building. Throughout her career, she has demonstrated exceptional communication skills and a talent for effective presentation and people management. She has successfully collaborated with global multinational clients in diverse sectors such as IT/ITES, Banking, Auction, Accounting, Audit, Asset Remarketing, and Education. Shuchi is a focused business professional, and she has a proven track record of ensuring the accomplishment of organizational goals through her strategic vision and ability to foster a positive workplace culture.",
+           "Shuchi is a seasoned agile-certified Human Resource professional with over 1.3 decades of experience in Human Resource Management, Consulting, Transformation Projects, HR Analytics, Organizational Development, and Team Building. She has exceptional communication skills and a talent for effective presentation and people management. She has successfully collaborated with multinational clients in IT/ITES, Banking, Auction, Accounting, Audit, Asset Remarketing, and Education. Shuchi is a focused professional with a proven track record of accomplishing organizational goals through her strategic vision and ability to foster a positive workplace culture.",
         position: "VP – HR",
       });
       setActiveSuchiProfile(true);
