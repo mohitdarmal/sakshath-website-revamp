@@ -756,6 +756,13 @@
 //     transition: all 0.3s;
 //   }
 // }
+.principle_container{
+  transition:  all .5s;
+  &:hover{
+    transform: scale(1.02,1.05);
+  }
+
+}
 
 // ================= Media Query Start =================
 @media screen and (max-width: 480px) {
@@ -806,6 +813,9 @@
     margin-bottom: 30px;
     text-transform: uppercase;
 }
+.accreditation_sec {
+  padding: 40px 0;
+}
 }
 
 
@@ -841,7 +851,7 @@
   }
 }
 .accreditation_sec .col-md-4 .d-flex {
-  min-width: 385px;
+  min-width: 350px !important;
 }
 .principle_section {
   padding-top: 80px;
@@ -897,15 +907,18 @@
     left: 0;
   }
 
-  .accreditation_sec .col-md-4 .d-flex {
-    min-width: 520px;
-  }
+   .accreditation_sec .col-md-4 .d-flex {
+     min-width: 520px;
+   }
   .tagline_sec .tagline_heading::after {
 
     display: none !important;
     width: 0% !important;
     height: 0% !important;
   }
+  // .accreditation_sec .col-md-4 .d-flex {
+  //   min-width: 385px !important;
+  // }
 
 
   .happy_client .conter_up_item {

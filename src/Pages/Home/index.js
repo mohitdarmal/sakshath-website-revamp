@@ -36,10 +36,10 @@ import {
   TIMES_OF_INDIA,
   CLIQ_LOGO,
   WCRCINT,
-  tagline_banner_analytic,
-  tagline_banner_erp,
-  tagline_banner_bank,
-  tagline_banner_fintech,
+  // tagline_banner_analytic,
+  // tagline_banner_erp,
+  // tagline_banner_bank,
+  // tagline_banner_fintech,
   OUT_LOOK,
 } from "./Constant";
 
@@ -73,6 +73,8 @@ import CallToAction from "../../Components/CallToAction";
 import SeeCertificatePopup from "../../Components/SeecertificatePopup";
 import { Helmet } from "react-helmet";
 import BrouchurePopup from "../../Components/BoruchurePopup";
+import LetsTalk from "../../Components/LetsTalk";
+import { CLIENT_LOGO1, CLIENT_LOGO2, CLIENT_LOGO3, CLIENT_LOGO6 } from "../../Components/ClientLogo/Constant";
 
 export const Home = () => {
   const textSlider = useRef();
@@ -164,7 +166,14 @@ export const Home = () => {
                   <img src={MILESTONE_TEXT} />{" "}
                 </div>
                 <div className="position-relative">
-                  <h1 className="tagline_heading"> Making IT Look Easy </h1>
+                  <h1 className="tagline_heading">
+                    {" "}
+                    Making <span style={{ color: "#32A4D5" }}>
+                      {" "}
+                      IT Look{" "}
+                    </span>{" "}
+                    Easy{" "}
+                  </h1>
                 </div>
               </Fade>
             </div>
@@ -174,7 +183,7 @@ export const Home = () => {
       {/* @@@@@@ Banner Video end @@@@@@ */}
 
       {/* @@@@@@ Banner Slider start @@@@@@ */}
-      <section className="banner_slides_sec">
+      {/* <section className="banner_slides_sec">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
@@ -192,7 +201,7 @@ export const Home = () => {
 
                     <div className="banner_text_slider_links">
                       <Link to="/analytics">Get Started Now</Link>
-                      {/* <Link to="/">Explore More</Link> */}
+               
                     </div>
                   </div>
 
@@ -201,7 +210,7 @@ export const Home = () => {
                     <h3>Unveiling the Power of ERP in Modern Enterprises</h3>
                     <div className="banner_text_slider_links">
                       <Link to="/erp">Get Started Now</Link>
-                      {/* <Link to="/">Explore More</Link> */}
+              
                     </div>
                   </div>
 
@@ -213,7 +222,7 @@ export const Home = () => {
 
                     <div className="banner_text_slider_links">
                       <Link to="/automation">Get Started Now</Link>
-                      {/* <Link to="/">Explore More</Link> */}
+                    
                     </div>
                   </div>
 
@@ -226,29 +235,9 @@ export const Home = () => {
 
                     <div className="banner_text_slider_links">
                       <Link to="/banking-solution">Get Started Now</Link>
-                      {/* <Link to="/">Explore More</Link> */}
+                     
                     </div>
-                  </div>
-
-                  {/* <div className="banner_text_slider_content">
-                    <h6>Profesional IT Solution</h6>
-                    <h3>Elevating Businesses through Exceptional Code</h3>
-
-                    <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
-                      
-                    </div>
-                  </div> */}
-
-                  {/* <div className="banner_text_slider_content">
-                    <h6>Profesional IT Solution</h6>
-                    <h3>Unlocking Potential, One Code at a Time</h3>
-
-                    <div className="banner_text_slider_links">
-                      <Link to="/">Get Started Now</Link>
-                    
-                    </div>
-                  </div> */}
+                  </div>           
                 </Slider>
               </div>
             </div>
@@ -274,19 +263,12 @@ export const Home = () => {
                   <div className="banner_image_slider_box">
                     <img src={tagline_banner_fintech} />
                   </div>
-
-                  {/* <div className="banner_image_slider_box">
-                    <img src={SLIDES2} />
-                  </div>
-                  <div className="banner_image_slider_box">
-                    <img src={SLIDES3} />
-                  </div> */}
-                </Slider>
+              </Slider>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* @@@@@@ Banner Video end @@@@@@ */}
 
@@ -572,85 +554,82 @@ export const Home = () => {
                   </Link>
                 </Fade>
               </div>
-                  <div className="row mt-4 pt-2">
-                  <div className="text-center">
-                  <Heading
-                    heading="partner"
-                    uppercase="text-uppercase"
-                  />
-                  </div>
-                 
-              <div className="col-md-4 d-flex ">
-                <Link
-                  onClick={() => {
-                    setShowModal(true);
-                  }}
-                >
-                  <Fade direction="up" delay={200} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={TALEND} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3 className="">Talend Gold Partner</h3>
-                        <p>
-                          We leverage Talend's unified platform capabilities
-                          across integrated domains.
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
+              <div className="row mt-4 pt-2">
+                <div className="text-center">
+                  <Heading heading="partners" uppercase="text-uppercase" />
+                </div>
 
-              <div className="col-md-4 d-flex ">
-                <Link
-                  onClick={() => {
-                    setShowModal(true);
-                  }}
-                >
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={CLIQ_LOGO} alt="" />
+                <div className="col-md-4 d-flex ">
+                  <Link
+                    onClick={() => {
+                      setShowModal(true);
+                    }}
+                  >
+                    <Fade direction="up" delay={200} triggerOnce>
+                      <div className="d-flex horizontal-shake">
+                        <div className="icon">
+                          <img src={TALEND} alt="" />
+                        </div>
+                        <div className="content">
+                          <h3 className="">Talend Gold Partner</h3>
+                          <p>
+                            We leverage Talend's unified platform capabilities
+                            across integrated domains.
+                          </p>
+                          <p className="learn_more">See Certificate</p>
+                        </div>
                       </div>
-                      <div className="content">
-                        <h3>QLIK</h3>
-                        <p>
-                          Licensed with Qlik for various access types and
-                          core-based models.
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
+                    </Fade>
+                  </Link>
+                </div>
 
-              <div className="col-md-4 d-flex ">
-                <Link
-                  onClick={() => {
-                    setShowModal(true);
-                  }}
-                >
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={AWS} alt="" />
+                <div className="col-md-4 d-flex ">
+                  <Link
+                    onClick={() => {
+                      setShowModal(true);
+                    }}
+                  >
+                    <Fade direction="up" delay={400} triggerOnce>
+                      <div className="d-flex horizontal-shake">
+                        <div className="icon">
+                          <img src={CLIQ_LOGO} alt="" />
+                        </div>
+                        <div className="content">
+                          <h3>QLIK</h3>
+                          <p>
+                            Licensed with Qlik for various access types and
+                            core-based models.
+                          </p>
+                          <p className="learn_more">See Certificate</p>
+                        </div>
                       </div>
-                      <div className="content">
-                        <h3>Amazon AWS Partner</h3>
-                        <p>
-                          We leverage AWS programs, expertise, and tools to
-                          build solutions for customers.
-                        </p>
-                        <p className="learn_more">See Certificate</p>
+                    </Fade>
+                  </Link>
+                </div>
+
+                <div className="col-md-4 d-flex ">
+                  <Link
+                    onClick={() => {
+                      setShowModal(true);
+                    }}
+                  >
+                    <Fade direction="up" delay={400} triggerOnce>
+                      <div className="d-flex horizontal-shake">
+                        <div className="icon">
+                          <img src={AWS} alt="" />
+                        </div>
+                        <div className="content">
+                          <h3>Amazon AWS Partner</h3>
+                          <p>
+                            We leverage AWS programs, expertise, and tools to
+                            build solutions for customers.
+                          </p>
+                          <p className="learn_more">See Certificate</p>
+                        </div>
                       </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
+                    </Fade>
+                  </Link>
+                </div>
               </div>
               {/* <div className="row mt-4 pt-2"> */}
               <div className="col-md-4 d-flex ">
@@ -663,7 +642,7 @@ export const Home = () => {
                       <div className="content">
                         <h3>Outlook Business</h3>
                         <p>
-                        Sakshath Technologies® for winning Company of the Year
+                          Sakshath Technologies® for winning Company of the Year
                           - IT Services & IT Consulting in IT Industry at
                           Outlook Business Spotlight- Business Excellence Awards
                           2023.
@@ -716,9 +695,9 @@ export const Home = () => {
                   </Fade>
                 </Link>
               </div>
-              </div>
             </div>
           </div>
+        </div>
         {/* </div> */}
       </section>
       {/* @@@@@ SECTION - ISO CERTIFICATES END */}
@@ -944,7 +923,9 @@ export const Home = () => {
             <div className="col-md-6 col-lg-6">
               <div className="image-box ">
                 <Fade direction="left" delay={10} triggerOnce>
-                  <img className="img-fluid" src={WHO_WE_ARE_IMG} alt="" />
+                  <a href="https://maps.app.goo.gl/Tr7oJgpQf1d5DET48">
+                    <img className="img-fluid" src={WHO_WE_ARE_IMG} alt="" />
+                  </a>
                 </Fade>
               </div>
             </div>
@@ -957,26 +938,29 @@ export const Home = () => {
                   </Fade>
                   <Heading heading="Our Story" uppercase="text-uppercase" />
                   {/* <label for="audio-message">Audio Message:</label> */}
-{/* <i class="fas fa-volume-up"></i> */}
-{/* <input type="speaker" id="audio-message" name="audio-message" placeholder="Enter audio message description"></input> */}
+                  {/* <i class="fas fa-volume-up"></i> */}
+                  {/* <input type="speaker" id="audio-message" name="audio-message" placeholder="Enter audio message description"></input> */}
 
-<div>
+                  {/* <div>
       <button onClick={startListening}>Start Listening</button>
       <button onClick={stopListening}>Stop Listening</button>
       <span>{transcript}</span>
-    </div>
-
-
+    </div> */}
                 </div>
                 <p>
-                  Our journey started way back in the year 2012. It started as a
-                  partnership firm initially under the name Saaksh8 Consulting
-                  Services with smidgen capital, later in the years this small
-                  consulting firm providing IT recruitment Services ran into the
-                  idea of having an ERP offshore development. If not quite a
-                  tale of rags to riches, the story of Sakshath Technologies®
-                  rise to stardom certainly came closer.
+                  Our story begins in 2012 with a small partnership firm called
+                  Saaksh8 Consulting Services, founded with minimal capital but
+                  grand ambitions. We initially focused on IT recruitment
+                  services, but our vision soon expanded, leading us to explore
+                  ERP offshore development. This pivotal shift marked the
+                  transformation into Sakshath Technologies®. Officially
+                  established in 2015, our journey, though not quite a
+                  rags-to-riches tale, is a testament to relentless effort,
+                  dedication, and unwavering support from family and friends.
                 </p>
+
+                {/* <br/>
+               <p>Imagine a small team with big dreams, navigating challenges and seizing opportunities. Our breakthrough came with the realization that ERP systems like Epicor, MS Dynamics, JD Edwards, and SYSPRO could revolutionize businesses. We embraced QA and BI & Analytics with tools like Power BI, Qlik, and Tableau. Today, we proudly stand as the only company in India offering tailored SYSPRO services designed to foster growth and profitability. Our mission is to help clients see that choosing the right software is a strategic business decision.</p> */}
                 <Fade direction="up">
                   <SlideAnimationButton url="/about" btnName="MORE ABOUT US" />
                 </Fade>
@@ -991,9 +975,14 @@ export const Home = () => {
       <HappyClients />
       {/* SECTION- Happy client counter end  */}
 
+
+
       {/*  SECTION - Our Principals @@@ */}
       <OurPrincipals />
+
       {/* @ SECTION - Our Principals @@@ */}
+
+
 
       {/* @ SECTION - planning banner starts  */}
       {/* <section className="planning_banner">
@@ -1029,12 +1018,36 @@ export const Home = () => {
       />
       {/*SECTION - planning banner ends*/}
 
-
       {/* SECTION - Client Logo Start*/}
-      
+
       <ClientLogo />
 
       {/*  SECTION - Client Logo End */}
+      <LetsTalk />
+      {/* <section>
+        <div className="container">
+          <div className="row">
+          <Heading heading="Trusted By" />
+          </div>
+          <div className="ROW text-center">
+          <div className="COL-2" style={{display:"inline", border:'1px solid grey', padding:'30px'}}>
+            <img src={CLIENT_LOGO1} alt=""  width="120px" height="100px"/ >
+          </div>
+          <div className="COL-2"style={{display:"inline", border:'1px solid grey', padding:'30px'}}>
+            <img src={CLIENT_LOGO2} alt="" width="120px" height="100px" />
+          </div>
+          <div className="COL-2" style={{display:"inline" , border:'1px solid grey', padding:'30px'}}>
+          <img src={CLIENT_LOGO1} alt="" width="120px" height="100px" />
+          </div>
+          <div className="COL-2" style={{display:"inline" , border:'1px solid grey', padding:'30px'}}>
+          <img src={CLIENT_LOGO2} alt="" width="120px" height="100px" />
+          </div>
+          <div className="COL-2" style={{display:"inline" , border:'1px solid grey', padding:'30px'}}>
+          <img src={CLIENT_LOGO1} alt="" width="120px" height="100px" />
+          </div>
+          </div>
+        </div>
+      </section> */}
 
       {/* @@@@@ SECTION - Popular service start @@@@@ */}
 
@@ -1160,20 +1173,19 @@ export const Home = () => {
                 {/* <SubTitle SubTitle="Our Achievements" /> */}
               </Fade>
               <Fade direction="up" delay={100} triggerOnce>
-                <Heading
-                  heading="News & Events"
-                  uppercase="text-uppercase"
-                />
+                <Heading heading="News & Events" uppercase="text-uppercase" />
                 GET EVERY SINGLE UPDATE ARTICLE & TIPES
               </Fade>
             </div>
           </div>
           <div className="bottom_blog_container mt-md-4">
             <div className="row blog_boxes">
-              {achivementHome.map((data,index) => {
+              {achivementHome.map((data, index) => {
                 return (
-                
-                  <div className="col-md-4  blog_box ipad_half_width" key={index}>
+                  <div
+                    className="col-md-4  blog_box ipad_half_width"
+                    key={index}
+                  >
                     <div className="bottom_blog_img">
                       <Fade direction="up" triggerOnce>
                         {/* <img src={ACHIVEMENT_IMG1} alt="" /> */}

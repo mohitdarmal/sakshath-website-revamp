@@ -62,7 +62,7 @@ const Contactus = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setFormData({
-      fullName: "",
+      fullName: "", 
       emailId: "",
       contactNumber: "",
       description: "",

@@ -7,7 +7,7 @@ import { BsEnvelope, BsTelephoneInbound } from "react-icons/bs";
 import { TfiLinkedin } from "react-icons/tfi";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
-import { INSTAGRAM_ICON, LINKEDIN_ICON, LOGO, YOUTUBE_ICON } from "./Constant";
+import { INSTAGRAM_ICON, LINKEDIN_ICON, LOGO, YOUTUBE_ICON, TWITTER_ICON } from "./Constant";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 
@@ -257,11 +257,7 @@ const Header = () => {
                     className="dropdown-menu border-0 shadow bsb-zoomIn"
                     aria-labelledby="account1Dropdown"
                   >
-                  <li>
-                      <NavLink to="/erp" className="dropdown-item">
-                        ERP Solution
-                      </NavLink>
-                    </li>
+                  
                     <li>
                       <NavLink to="/banking-solution" className="dropdown-item">
                         Banking Solution
