@@ -1416,7 +1416,7 @@ const Automation = () => {
         <WhySaksahthNew whyCrm={whyDevops} />
         {/* why sakshath ends */}
 
-        <section className="automationFaq">
+        {/* <section className="automationFaq">
           <div className="container">
             <div className="row">
               <div className="col-md-1"> </div>
@@ -1426,7 +1426,7 @@ const Automation = () => {
               <div className="col-md-1"> </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </ScrollSpy>
     </>
   );

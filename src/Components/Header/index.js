@@ -7,7 +7,7 @@ import { BsEnvelope, BsTelephoneInbound } from "react-icons/bs";
 import { TfiLinkedin } from "react-icons/tfi";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
-import { INSTAGRAM_ICON, LINKEDIN_ICON, LOGO, YOUTUBE_ICON, TWITTER_ICON } from "./Constant";
+import { INSTAGRAM_ICON, LINKEDIN_ICON, LOGO, YOUTUBE_ICON } from "./Constant";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 

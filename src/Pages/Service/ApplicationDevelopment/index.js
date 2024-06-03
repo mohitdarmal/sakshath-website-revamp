@@ -412,7 +412,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
         <img src={CONTACT_US} className="w-100" />
       </section>
 
-      <section>
+      {/* <section>
         <div className="container">
           <div className="row">
             <div className="col-md-1"> </div>
@@ -422,7 +422,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
             <div className="col-md-1"> </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <servicePopup/> */}
     </>

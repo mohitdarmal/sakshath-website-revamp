@@ -407,7 +407,7 @@ theme="light"
       {/* @@@@@@@ partner logo section ends @@@@@@@ */}
 
       {/* FAQ Starts */}
-      <section>
+      {/* <section>
         <div className="container">
           <div className="row">
             <div className="col-md-1"> </div>
@@ -417,7 +417,7 @@ theme="light"
             <div className="col-md-1"> </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* FAQ ENDS */}
     </>
   );

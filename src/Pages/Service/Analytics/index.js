@@ -1600,7 +1600,7 @@ export const Analytics = () => {
         </div> */}
 
         {/* Faq start */}
-        <section>
+        {/* <section>
           <div className="container">
             <div className="row">
               <div className="col-md-1"> </div>
@@ -1612,7 +1612,7 @@ export const Analytics = () => {
               <div className="col-md-1"> </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* Faq end */}
       </ScrollSpy>
     </>
