@@ -76,7 +76,7 @@ useEffect(() => {
       
       
     </div>
-    <span className="msg_pop_contact_us_text">Contact us</span>
+    <span className={`msg_pop_contact_us_text ${backToTop ? 'toTop' : ''}`}>Contact us</span>
     
     
     </>
