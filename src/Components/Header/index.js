@@ -230,6 +230,8 @@ const Header = () => {
                         Integration
                       </NavLink>
                     </li>
+
+                   
                     {/* <li>
                       <NavLink to="/talent-solution" className="dropdown-item">
                        Talent Solution
@@ -271,6 +273,11 @@ const Header = () => {
                     <li>
                       <NavLink to="/staffing" className="nav-link">
                         Staffing
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/mobility" className="dropdown-item">
+                      Enterprise Mobility
                       </NavLink>
                     </li>
                   </ul>

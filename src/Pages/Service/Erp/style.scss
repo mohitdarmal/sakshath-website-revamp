@@ -522,6 +522,16 @@ h4{
 .syspro_8_ways_section{
 margin-bottom: 40px;
 }
+.overview_left_content{
+  margin-left: 0px !important;
+}
+.sap_section{
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.sap_content_box {
+   margin-left: 0px; 
+}
 }
 
 @media screen and (min-width:481px) and (max-width:767px){

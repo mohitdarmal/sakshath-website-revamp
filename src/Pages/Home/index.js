@@ -56,7 +56,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-cube";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Pagination, Navigation, Autoplay, FreeMode } from "swiper/modules";
 import { Fade } from "react-awesome-reveal";
 import ClientLogo from "../../Components/ClientLogo";
 import Faq from "../../Components/Faq";
@@ -74,7 +74,16 @@ import SeeCertificatePopup from "../../Components/SeecertificatePopup";
 import { Helmet } from "react-helmet";
 import BrouchurePopup from "../../Components/BoruchurePopup";
 import LetsTalk from "../../Components/LetsTalk";
-import { CLIENT_LOGO1, CLIENT_LOGO2, CLIENT_LOGO3, CLIENT_LOGO6 } from "../../Components/ClientLogo/Constant";
+import {
+  CLIENT_LOGO1,
+  CLIENT_LOGO10,
+  CLIENT_LOGO15,
+  CLIENT_LOGO2,
+  CLIENT_LOGO3,
+  CLIENT_LOGO40,
+  CLIENT_LOGO6,
+} from "../../Components/ClientLogo/Constant";
+import { Container, Row, Col } from "react-bootstrap";
 
 export const Home = () => {
   const textSlider = useRef();
@@ -90,6 +99,22 @@ export const Home = () => {
     setCurrentSlide(index);
     textSlider.current.slickGoTo(index);
   };
+  const [showClientToggle, setShowClientToggle]=useState(false);
+
+  const showLogo=()=>{
+    // console.log("show more")
+   
+    // if(showClientToggle =="none"){
+    //   setShowClientToggle("block")
+    // }
+    // else{
+    //   setShowClientToggle("none")
+    // }
+console.log("showtoggle", showClientToggle)
+    setShowClientToggle(!showClientToggle)
+    
+
+  }
 
   const settings = {
     dots: false,
@@ -142,6 +167,9 @@ export const Home = () => {
   const handleCloseModal = () => {
     setShowModal(false);
   };
+
+
+
   return (
     <>
       <Helmet>
@@ -456,7 +484,6 @@ export const Home = () => {
       </section> */}
       {/* @@@@@@@ SECTION - Banner Section end @@@@@@@ */}
 
-      {/*  @@@@@@ SECTION - ISO CERTIFICATES START @@@@@@ */}
       <section className="overflow-hidden">
         <div className="accreditation_sec specilation_feature">
           <div className="container">
@@ -700,6 +727,69 @@ export const Home = () => {
         </div>
         {/* </div> */}
       </section>
+
+      <section>
+        <div className="container">
+          <div className="row">
+            <Swiper
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                // delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation]}
+            >
+              <SwiperSlide>
+                <div className="col-md-4 text-center">
+                  <div className="service_home_box1 ">
+                    <h4>Analytics</h4>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Distinctio sunt, illo sequi labore corrupti minus saepe
+                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
+                      consectetur adipisicing elit. Distinctio sunt, illo sequi
+                      labore corrupti minus saepe optio quod non quibusdam.
+                    </p>
+
+                    <img src={P_IMG} alt="" />
+                  </div>
+                </div>
+                <div className="col-md-4 text-center">
+                  <div className="service_home_box1 ">
+                    <h4>Analytics</h4>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Distinctio sunt, illo sequi labore corrupti minus saepe
+                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
+                      consectetur adipisicing elit. Distinctio sunt, illo sequi
+                      labore corrupti minus saepe optio quod non quibusdam.
+                    </p>
+
+                    <img src={P_IMG} alt="" />
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                Slide 2<div className="col-md-3">cce</div>
+              </SwiperSlide>
+              <SwiperSlide>
+                Slide 3<div className="col-md-3">vr</div>
+              </SwiperSlide>
+              <SwiperSlide>
+                Slide 4 <div className="col-md-3">vr</div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </section>
+
+      {/*  @@@@@@ SECTION - ISO CERTIFICATES START @@@@@@ */}
+      
       {/* @@@@@ SECTION - ISO CERTIFICATES END */}
 
       {/* @@@@@@ SECTION - ISO certifcates start @@@@@@ */}
@@ -975,14 +1065,10 @@ export const Home = () => {
       <HappyClients />
       {/* SECTION- Happy client counter end  */}
 
-
-
       {/*  SECTION - Our Principals @@@ */}
       <OurPrincipals />
 
       {/* @ SECTION - Our Principals @@@ */}
-
-
 
       {/* @ SECTION - planning banner starts  */}
       {/* <section className="planning_banner">
@@ -1163,6 +1249,158 @@ export const Home = () => {
         </div>
       </section> */}
       {/*  SECTION - Popuplar Princial End @ */}
+
+      <section className="client_list_lat">
+        <Container>
+        <div className="row text-center">
+
+        <Heading heading="Trusted By" />
+        </div>
+          <Row>
+            <Col>
+              <div className="c_img">
+                <img src={CLIENT_LOGO1} alt="" />
+              </div>
+            </Col>
+            <Col>
+              <div className="c_img">
+                <img src={CLIENT_LOGO10} alt="" />
+              </div>
+            </Col>
+            <Col>
+              <div className="c_img">
+                <img src={CLIENT_LOGO2} alt="" />
+              </div>
+            </Col>
+            <Col>
+              <div className="c_img">
+                <img src={CLIENT_LOGO40} alt="" />
+              </div>
+            </Col>
+            <Col>
+              <div className="c_img">
+                <img src={CLIENT_LOGO15} alt="" />
+              </div>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col>
+              <div className="c_img">
+                <img src={CLIENT_LOGO1} alt="" />
+              </div>
+            </Col>
+            <Col>
+              <div className="c_img">
+                <img src={CLIENT_LOGO10} alt="" />
+              </div>
+            </Col>
+            <Col>
+              <div className="c_img">
+                <img src={CLIENT_LOGO2} alt="" />
+              </div>
+            </Col>
+            <Col>
+              <div className="c_img">
+                <img src={CLIENT_LOGO40} alt="" />
+              </div>
+            </Col>
+            <Col>
+              <div className="c_img">
+                <img src={CLIENT_LOGO15} alt="" />
+              </div>
+            </Col>
+          </Row>
+          <div className={`d-${showClientToggle ? "block": "none"}`}>
+            <Row>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO1} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO10} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO2} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO40} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO15} alt="" />
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO1} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO10} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO2} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO40} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO15} alt="" />
+                </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO1} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO10} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO2} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO40} alt="" />
+                </div>
+              </Col>
+              <Col>
+                <div className="c_img">
+                  <img src={CLIENT_LOGO15} alt="" />
+                </div>
+              </Col>
+            </Row>
+          </div>
+          <div className="client_list_button">
+          <button onClick={showLogo}>{showClientToggle ? "Show Less" :"Show More Client"}</button>
+          </div>
+        
+          {/* <SlideAnimationButton btnName="View MORE"  onClick={showLogo} /> */}
+        </Container>
+      </section>
 
       {/*  SECTION - Blogs Start  */}
       <section className="blogs">

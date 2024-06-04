@@ -100,7 +100,7 @@ const OurTeam = () => {
       setProfileData({
         content:
           "Praveen has gained extensive knowledge and expertise in various aspects of technical consulting, particularly in end user productivity solutions. Praveen has successfully delivered numerous projects that have resulted in increased efficiency, streamlined workflows, and improved user experiences for clients across diverse industries. Praveen’s key strengths lie in his abilities to understand complex technical requirements, analyze business needs, and develop tailored solutions that align with client objectives.",
-        position: "AVP Mobility",
+        position: "AVP Enterprise Mobility and Application Readiness ",
       });
       setActivePraveenProfile(true);
       setActiveKrishnaProfile(false);
