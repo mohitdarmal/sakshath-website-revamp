@@ -37,19 +37,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import ServiceStickMenu from "../../../Components/ServiceStickMenu";
 import {
-  CLIENT_LOGO43,
-  CLIENT_LOGO12,
-  CLIENT_LOGO20,
-  CLIENT_LOGO22,
-  CLIENT_LOGO45,
-  CLIENT_LOGO6,
-  CLIENT_LOGO7,
-  CLIENT_LOGO4,
-  CLIENT_LOGO13,
-  CLIENT_LOGO46,
-  CLIENT_LOGO47,
-  CLIENT_LOGO5,
-  CLIENT_LOGO1,
+  // CLIENT_LOGO43,
+  // CLIENT_LOGO12,
+  // CLIENT_LOGO20,
+  // CLIENT_LOGO22,
+  // CLIENT_LOGO45,
+  // CLIENT_LOGO6,
+  // CLIENT_LOGO7,
+  // CLIENT_LOGO4,
+  // CLIENT_LOGO13,
+  // CLIENT_LOGO46,
+  // CLIENT_LOGO47,
+  // CLIENT_LOGO5,
+  // CLIENT_LOGO1,
 } from "../../../Components/ClientLogo/Constant";
 
 import ScrollSpy from "react-ui-scrollspy";
@@ -349,7 +349,7 @@ export const Analytics = () => {
             modules={[Autoplay]}
             className="mySwiper"
           >
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <img src={CLIENT_LOGO43} />{" "}
             </SwiperSlide>
             <SwiperSlide>
@@ -369,11 +369,9 @@ export const Analytics = () => {
             </SwiperSlide>
             <SwiperSlide>
               <img src={CLIENT_LOGO7} />
-            </SwiperSlide>
-            {/* <SwiperSlide>
-              <img src={CLIENT_LOGO4} />
             </SwiperSlide> */}
-            <SwiperSlide>
+          
+            {/* <SwiperSlide>
               <img src={CLIENT_LOGO13} />
             </SwiperSlide>
             <SwiperSlide>
@@ -385,7 +383,7 @@ export const Analytics = () => {
            
             <SwiperSlide>
               <img src={CLIENT_LOGO1} />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </section>

@@ -12,44 +12,42 @@ import { Autoplay } from "swiper/modules";
 
 import "./style.scss";
 import {
-  CLIENT_LOGO1,
-  CLIENT_LOGO10,
-  // CLIENT_LOGO11,
-  CLIENT_LOGO12,
-  CLIENT_LOGO13,
-  CLIENT_LOGO14,
-  CLIENT_LOGO15,
-  CLIENT_LOGO16,
-  CLIENT_LOGO17,
-  CLIENT_LOGO18,
-  CLIENT_LOGO19,
-  CLIENT_LOGO2,
-  CLIENT_LOGO20,
-  CLIENT_LOGO21,
-  CLIENT_LOGO22,
-  CLIENT_LOGO23,
-  CLIENT_LOGO24,
-  CLIENT_LOGO25,
-  CLIENT_LOGO26,
-  CLIENT_LOGO27,
-  CLIENT_LOGO37,
-  CLIENT_LOGO39,
-  CLIENT_LOGO40,
-  // CLIENT_LOGO41,
-  CLIENT_LOGO42,
-  CLIENT_LOGO43,
-  CLIENT_LOGO44,
-  CLIENT_LOGO45,
-  CLIENT_LOGO46,
-  CLIENT_LOGO47,
-  CLIENT_LOGO3,
-  CLIENT_LOGO6,
-  CLIENT_LOGO7,
-  CLIENT_LOGO8,
-  CLIENT_LOGO9,
-  CLIENT_LOGO32,
-  CLIENT_LOGO33,
-  // CLIENT_LOGO34,
+  ABINBEV,
+  ABSA,
+  ACEGREEN,
+  ADITYABIRLA,
+  AIRTELTIGO,
+  AKSHYAPATHRA,
+  BANKONE,
+  CHAITANYA,
+  CLARIANT,
+  CLIX,
+  CRAWDORD,
+  DTB,
+  ECOBANK,
+  EPSSWUSA,
+  EQUITY,
+  FNB,
+  FREEAU,
+  FULLERTON,
+  GWOSEVO,
+  INOXAIR,
+  JUIPTERHOSPITAL,
+  KCB,
+  KENS,
+  MASTEK,
+  MCB,
+  MOOVAFRICA,
+  NCBA,
+  NEDBANK,
+  ONEASSIST,
+  PIRAMAL,
+  RAWBANK,
+  REDINGTON,
+  SAFARICOM,
+  SMFC,
+  SOCREMO,
+  STANBICBANK,
 } from "./Constant";
 
 const ClientLogo = () => {
@@ -85,8 +83,8 @@ const ClientLogo = () => {
                 id="clients_logo"
                 className="mb-3 client_tabs"
               > */}
-                {/* <div className="international"> */}
-                {/* <Tab
+              {/* <div className="international"> */}
+              {/* <Tab
                   eventKey="internation"
                   title={
                     <div className="d-flex">
@@ -98,105 +96,68 @@ const ClientLogo = () => {
                     </div>
                   }
                 > */}
-                  <Swiper
-                    breakpoints={{
-                      320: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
-                      },
-                      481: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                      },
-                      768: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                      },
-                      1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 30,
-                      },
-                    }}
-                    autoplay={{
-                      delay: 1500,
-                      disableOnInteraction: false,
-                    }}
-                    loop={true}
-                    modules={[Autoplay]}
-                    className="mySwiper"
-                  >
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO16} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO17} />{" "}
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO18} />
-                    </SwiperSlide>
+              <Swiper
+                breakpoints={{
+                  320: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  481: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                  1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                  },
+                }}
+                autoplay={{
+                  delay: 1500,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                modules={[Autoplay]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <img src={CLIX} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={CRAWDORD} />{" "}
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={NCBA} />
+                </SwiperSlide>
 
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO19} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO20} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO21} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO22} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO23} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO24} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO25} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO26} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO27} />
-                    </SwiperSlide>
-                    {/* <SwiperSlide>
-                      <img src={CLIENT_LOGO28} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO29} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO30} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO31} />
-                    </SwiperSlide>
-                   
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO35} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO36} />
-                    </SwiperSlide> */}
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO32} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO33} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO37} />
-                    </SwiperSlide>
-                    {/* <SwiperSlide>
-                      <img src={CLIENT_LOGO38} />
-                    </SwiperSlide> */}
-                  </Swiper>
-                {/* </Tab> */}
-                {/* </div> */}
-                {/* <Tab
+                <SwiperSlide>
+                  <img src={ABINBEV} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={RAWBANK} />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src={PIRAMAL} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={JUIPTERHOSPITAL} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={EQUITY} />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src={ADITYABIRLA} />
+                </SwiperSlide>
+            
+              </Swiper>
+              {/* </Tab> */}
+              {/* </div> */}
+              {/* <Tab
                   eventKey="domestic"
                   title={
                     <div className="d-flex">
@@ -209,75 +170,135 @@ const ClientLogo = () => {
                     </div>
                   }
                 > */}
-                  <Swiper
-                    breakpoints={{
-                      320: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
-                      },
-                      481: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                      },
-                      768: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                      },
-                      1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 30,
-                      },
-                    }}
-                    autoplay={{
-                      delay: 1500,
-                      disableOnInteraction: false,
-                    }}
-                    loop={true}
-                    modules={[Autoplay]}
-                    className="mySwiper"
-                  >
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO1} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO2} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO3} />
-                    </SwiperSlide>
-                    {/* <SwiperSlide>
+              <Swiper
+                breakpoints={{
+                  320: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  481: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                  1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                  },
+                }}
+                autoplay={{
+                  delay: 1500,
+                  disableOnInteraction: false,
+                }}
+                loop={true}
+                modules={[Autoplay]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <img src={SMFC} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={ONEASSIST} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={AKSHYAPATHRA} />
+                </SwiperSlide>
+                {/* <SwiperSlide>
                       <img src={CLIENT_LOGO4} />
                     </SwiperSlide> */}
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO6} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO7} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO8} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO9} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO10} />
-                    </SwiperSlide>
+                <SwiperSlide>
+                  <img src={ACEGREEN} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={CLARIANT} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={MASTEK} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={CHAITANYA} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={FULLERTON} />
+                </SwiperSlide>
 
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO12} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO13} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO14} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO15} />
-                    </SwiperSlide>
-                  </Swiper>
-                {/* </Tab>
+                <SwiperSlide>
+                  <img src={INOXAIR} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={KENS} />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src={FREEAU} />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src={STANBICBANK} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={EQUITY} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={MOOVAFRICA} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={NEDBANK} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={SAFARICOM} />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src={DTB} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={KCB} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={ECOBANK} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={MCB} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={BANKONE} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={AIRTELTIGO} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={GWOSEVO} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={REDINGTON} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={EPSSWUSA} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={SOCREMO} />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img src={BANKONE} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={FNB} />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={ABSA} />
+                </SwiperSlide>
+               
+                <SwiperSlide>
+                  <img src={MCB} />
+                </SwiperSlide>
+              </Swiper>
+
+              {/* </Tab>
                 <Tab
                   eventKey="partners"
                   title={
@@ -290,7 +311,7 @@ const ClientLogo = () => {
                     </span>
                   }
                 > */}
-                  {/* <Swiper
+              {/* <Swiper
                     breakpoints={{
                       320: {
                         slidesPerView: 2,
@@ -333,7 +354,7 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO44} />
                     </SwiperSlide>
                   </Swiper> */}
-                {/* </Tab> */}
+              {/* </Tab> */}
               {/* </Tabs> */}
             </div>
           </div>

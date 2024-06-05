@@ -78,13 +78,26 @@ import { Helmet } from "react-helmet";
 import BrouchurePopup from "../../Components/BoruchurePopup";
 import LetsTalk from "../../Components/LetsTalk";
 import {
-  CLIENT_LOGO1,
-  CLIENT_LOGO10,
-  CLIENT_LOGO15,
-  CLIENT_LOGO2,
-  CLIENT_LOGO3,
-  CLIENT_LOGO40,
-  CLIENT_LOGO6,
+ 
+  ABINBEV,
+  ABSA,
+  AIRTELTIGO,
+  AKSHYAPATHRA,
+  CHAITANYA,
+  CLIX,
+  CRAWDORD,
+  ECOBANK,
+  EQUITY,
+  FNB,
+  GWOSEVO,
+  KCB,
+  MOOVAFRICA,
+  NCBA,
+  ONEASSIST,
+  RAWBANK,
+  SMFC,
+  STANBICBANK,
+  STANDARDBANK,
 } from "../../Components/ClientLogo/Constant";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -673,13 +686,11 @@ export const Home = () => {
               <div className="swipper_service d-flex">
                 <div className="col-md-4 text-center">
                   <div className="service_home_box1 ">
-                    <h4>Analytics</h4>
+                    <h3>Profesional IT Solution</h3>
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio sunt, illo sequi labore corrupti minus saepe
-                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
-                      consectetur adipisicing elit. Distinctio sunt, illo sequi
-                      labore corrupti minus saepe optio quod non quibusdam.
+                    
+
+                      Transforming Ideas into Intelligent Solutions
                     </p>
 
                     <img src={P_IMG} alt="" />
@@ -699,7 +710,7 @@ export const Home = () => {
                     <img src={P_IMG} alt="" />
                   </div>
                 </div>
-                <div className="col-md-4 text-center">
+                {/* <div className="col-md-4 text-center">
                   <div className="service_home_box1 ">
                     <h4>Analytics</h4>
                     <p>
@@ -712,7 +723,7 @@ export const Home = () => {
 
                     <img src={P_IMG} alt="" />
                   </div>
-                </div>
+                </div> */}
 
                 </div>
 
@@ -1377,27 +1388,27 @@ export const Home = () => {
           <Row>
             <Col>
               <div className="c_img">
-                <img src={CLIENT_LOGO1} alt="" />
+                <img src={CRAWDORD} alt="" />
               </div>
             </Col>
             <Col>
               <div className="c_img">
-                <img src={CLIENT_LOGO10} alt="" />
+                <img src={NCBA} alt="" />
               </div>
             </Col>
             <Col>
               <div className="c_img">
-                <img src={CLIENT_LOGO2} alt="" />
+                <img src={RAWBANK} alt="" />
               </div>
             </Col>
             <Col>
               <div className="c_img">
-                <img src={CLIENT_LOGO40} alt="" />
+                <img src={ABINBEV} alt="" />
               </div>
             </Col>
             <Col>
               <div className="c_img">
-                <img src={CLIENT_LOGO15} alt="" />
+                <img src={STANBICBANK} alt="" />
               </div>
             </Col>
           </Row>
@@ -1405,27 +1416,27 @@ export const Home = () => {
           <Row>
             <Col>
               <div className="c_img">
-                <img src={CLIENT_LOGO1} alt="" />
+                <img src={CLIX} alt="" />
               </div>
             </Col>
             <Col>
               <div className="c_img">
-                <img src={CLIENT_LOGO10} alt="" />
+                <img src={ONEASSIST} alt="" />
               </div>
             </Col>
             <Col>
               <div className="c_img">
-                <img src={CLIENT_LOGO2} alt="" />
+                <img src={EQUITY} alt="" />
               </div>
             </Col>
             <Col>
               <div className="c_img">
-                <img src={CLIENT_LOGO40} alt="" />
+                <img src={STANDARDBANK} alt="" />
               </div>
             </Col>
             <Col>
               <div className="c_img">
-                <img src={CLIENT_LOGO15} alt="" />
+                <img src={MOOVAFRICA} alt="" />
               </div>
             </Col>
           </Row>
@@ -1433,84 +1444,59 @@ export const Home = () => {
             <Row>
               <Col>
                 <div className="c_img">
-                  <img src={CLIENT_LOGO1} alt="" />
+                  <img src={SMFC} alt="" />
                 </div>
               </Col>
               <Col>
                 <div className="c_img">
-                  <img src={CLIENT_LOGO10} alt="" />
+                  <img src={AKSHYAPATHRA} alt="" />
                 </div>
               </Col>
               <Col>
                 <div className="c_img">
-                  <img src={CLIENT_LOGO2} alt="" />
+                  <img src={FNB} alt="" />
                 </div>
               </Col>
               <Col>
                 <div className="c_img">
-                  <img src={CLIENT_LOGO40} alt="" />
+                  <img src={CHAITANYA} alt="" />
                 </div>
               </Col>
               <Col>
                 <div className="c_img">
-                  <img src={CLIENT_LOGO15} alt="" />
+                  <img src={KCB} alt="" />
                 </div>
               </Col>
             </Row>
             <Row>
               <Col>
                 <div className="c_img">
-                  <img src={CLIENT_LOGO1} alt="" />
+                  <img src={ECOBANK} alt="" />
                 </div>
               </Col>
               <Col>
                 <div className="c_img">
-                  <img src={CLIENT_LOGO10} alt="" />
+                  <img src={AIRTELTIGO} alt="" />
                 </div>
               </Col>
               <Col>
                 <div className="c_img">
-                  <img src={CLIENT_LOGO2} alt="" />
+                  <img src={GWOSEVO} alt="" />
                 </div>
               </Col>
               <Col>
                 <div className="c_img">
-                  <img src={CLIENT_LOGO40} alt="" />
+                  <img src={ABSA} alt="" />
                 </div>
               </Col>
               <Col>
                 <div className="c_img">
-                  <img src={CLIENT_LOGO15} alt="" />
+                  <img src={STANBICBANK} alt="" />
                 </div>
               </Col>
             </Row>
-            <Row>
-              <Col>
-                <div className="c_img">
-                  <img src={CLIENT_LOGO1} alt="" />
-                </div>
-              </Col>
-              <Col>
-                <div className="c_img">
-                  <img src={CLIENT_LOGO10} alt="" />
-                </div>
-              </Col>
-              <Col>
-                <div className="c_img">
-                  <img src={CLIENT_LOGO2} alt="" />
-                </div>
-              </Col>
-              <Col>
-                <div className="c_img">
-                  <img src={CLIENT_LOGO40} alt="" />
-                </div>
-              </Col>
-              <Col>
-                <div className="c_img">
-                  <img src={CLIENT_LOGO15} alt="" />
-                </div>
-              </Col>
-            </Row>
+            
+            
           </div>
           <div className="client_list_button">
             <button onClick={showLogo}>
