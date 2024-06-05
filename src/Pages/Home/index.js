@@ -44,6 +44,7 @@ import {
   SOTI,
   JAMF,
   Microsoft,
+  
 } from "./Constant";
 
 import { SlCalender } from "react-icons/sl";
@@ -78,7 +79,6 @@ import { Helmet } from "react-helmet";
 import BrouchurePopup from "../../Components/BoruchurePopup";
 import LetsTalk from "../../Components/LetsTalk";
 import {
- 
   ABINBEV,
   ABSA,
   AIRTELTIGO,
@@ -292,7 +292,7 @@ export const Home = () => {
                   }
                 >
                   <div className="banner_image_slider_box">
-                    <img src={tagline_banner_analytic} />
+                    <img src={tagline_banner_erp} />
                   </div>
                   <div className="banner_image_slider_box">
                     <img src={tagline_banner_erp} />
@@ -308,7 +308,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>  */}
 
       {/* @@@@@@ Banner Video end @@@@@@ */}
 
@@ -664,8 +664,7 @@ export const Home = () => {
         {/* </div> */}
       </section>
 
-     
-{/* service start */}
+      {/* service start */}
       <section>
         <div className="container">
           <div className="row">
@@ -673,7 +672,7 @@ export const Home = () => {
               spaceBetween={50}
               centeredSlides={true}
               autoplay={{
-                 delay: 1500,
+                delay: 1500,
                 disableOnInteraction: false,
               }}
               pagination={{
@@ -683,34 +682,31 @@ export const Home = () => {
               modules={[Pagination, Navigation]}
             >
               <SwiperSlide>
-              <div className="swipper_service d-flex">
-                <div className="col-md-4 text-center">
-                  <div className="service_home_box1 ">
-                    <h3>Profesional IT Solution</h3>
-                    <p>
-                    
+                <div className="swipper_service d-flex">
+                  <div className="col-md-4 text-center">
+                    <div className="service_home_box1 ">
+                      <h3>Profesional IT Solution</h3>
+                      <p>Transforming Ideas into Intelligent Solutions</p>
 
-                      Transforming Ideas into Intelligent Solutions
-                    </p>
-
-                    <img src={P_IMG} alt="" />
+                      <img src={P_IMG} alt="" />
+                    </div>
                   </div>
-                </div>
-                <div className="col-md-4 text-center">
-                  <div className="service_home_box1 ">
-                    <h4>Analytics</h4>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio sunt, illo sequi labore corrupti minus saepe
-                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
-                      consectetur adipisicing elit. Distinctio sunt, illo sequi
-                      labore corrupti minus saepe optio quod non quibusdam.
-                    </p>
+                  <div className="col-md-4 text-center">
+                    <div className="service_home_box1 ">
+                      <h4>Analytics</h4>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Distinctio sunt, illo sequi labore corrupti minus
+                        saepe optio quod non quibusdam. Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit. Distinctio sunt, illo
+                        sequi labore corrupti minus saepe optio quod non
+                        quibusdam.
+                      </p>
 
-                    <img src={P_IMG} alt="" />
+                      <img src={P_IMG} alt="" />
+                    </div>
                   </div>
-                </div>
-                {/* <div className="col-md-4 text-center">
+                  {/* <div className="col-md-4 text-center">
                   <div className="service_home_box1 ">
                     <h4>Analytics</h4>
                     <p>
@@ -724,75 +720,71 @@ export const Home = () => {
                     <img src={P_IMG} alt="" />
                   </div>
                 </div> */}
-
                 </div>
-
-                
               </SwiperSlide>
               <SwiperSlide>
-              <div className="swipper_service d-flex">
-                <div className="col-md-4 text-center">
-                  <div className="service_home_box1 ">
-                    <h4>Automation</h4>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio sunt, illo sequi labore corrupti minus saepe
-                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
-                      consectetur adipisicing elit. Distinctio sunt, illo sequi
-                      labore corrupti minus saepe optio quod non quibusdam.
-                    </p>
+                <div className="swipper_service d-flex">
+                  <div className="col-md-4 text-center">
+                    <div className="service_home_box1 ">
+                      <h4>Automation</h4>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Distinctio sunt, illo sequi labore corrupti minus
+                        saepe optio quod non quibusdam. Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit. Distinctio sunt, illo
+                        sequi labore corrupti minus saepe optio quod non
+                        quibusdam.
+                      </p>
 
-                    <img src={P_IMG} alt="" />
+                      <img src={P_IMG} alt="" />
+                    </div>
                   </div>
-                </div>
-                <div className="col-md-4 text-center">
-                  <div className="service_home_box1 ">
-                    <h4>Analytics</h4>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio sunt, illo sequi labore corrupti minus saepe
-                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
-                      consectetur adipisicing elit. Distinctio sunt, illo sequi
-                      labore corrupti minus saepe optio quod non quibusdam.
-                    </p>
+                  <div className="col-md-4 text-center">
+                    <div className="service_home_box1 ">
+                      <h4>Analytics</h4>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Distinctio sunt, illo sequi labore corrupti minus
+                        saepe optio quod non quibusdam. Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit. Distinctio sunt, illo
+                        sequi labore corrupti minus saepe optio quod non
+                        quibusdam.
+                      </p>
 
-                    <img src={P_IMG} alt="" />
+                      <img src={P_IMG} alt="" />
+                    </div>
                   </div>
-                </div>
-                <div className="col-md-4 text-center">
-                  <div className="service_home_box1 ">
-                    <h4>Analytics</h4>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio sunt, illo sequi labore corrupti minus saepe
-                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
-                      consectetur adipisicing elit. Distinctio sunt, illo sequi
-                      labore corrupti minus saepe optio quod non quibusdam.
-                    </p>
+                  <div className="col-md-4 text-center">
+                    <div className="service_home_box1 ">
+                      <h4>Analytics</h4>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Distinctio sunt, illo sequi labore corrupti minus
+                        saepe optio quod non quibusdam. Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit. Distinctio sunt, illo
+                        sequi labore corrupti minus saepe optio quod non
+                        quibusdam.
+                      </p>
 
-                    <img src={P_IMG} alt="" />
+                      <img src={P_IMG} alt="" />
+                    </div>
                   </div>
-                </div>
-
                 </div>
               </SwiperSlide>
-              
             </Swiper>
           </div>
         </div>
       </section>
       {/* service ends */}
 
-
-
-     {/* partners start */}
+      {/* partners start */}
       <section className="partners_section">
         <div className="container">
           <div className="row text-center mb-4">
             <Heading heading="PARTNERS" />
           </div>
           <div className="row">
-          <div className="col-md-4 d-flex  ">
+            <div className="col-md-4 d-flex  ">
               <Link
                 onClick={() => {
                   setShowModal(true);
@@ -839,9 +831,6 @@ export const Home = () => {
               </Link>
             </div>
 
-           
-
-
             <div className="col-md-4 d-flex">
               <Link
                 onClick={() => {
@@ -856,7 +845,8 @@ export const Home = () => {
                     <div className="content">
                       <h3>Jamf</h3>
                       <p>
-                      Ensure seamless integration and real-time management for all your Apple devices.
+                        Ensure seamless integration and real-time management for
+                        all your Apple devices.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>
@@ -867,7 +857,7 @@ export const Home = () => {
           </div>
 
           <div className="row">
-          <div className="col-md-4 d-flex  ">
+            <div className="col-md-4 d-flex  ">
               <Link
                 onClick={() => {
                   setShowModal(true);
@@ -881,7 +871,9 @@ export const Home = () => {
                     <div className="content">
                       <h3>Microsoft</h3>
                       <p>
-                      Streamline operations, enhance security, and boost productivity with Microsoft's comprehensive software solutions.
+                        Streamline operations, enhance security, and boost
+                        productivity with Microsoft's comprehensive software
+                        solutions.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>
@@ -903,7 +895,8 @@ export const Home = () => {
                     <div className="content">
                       <h3>Soti</h3>
                       <p>
-                      Empower your enterprise with SOTI’s innovative solutions and transform your digital landscape.
+                        Empower your enterprise with SOTI’s innovative solutions
+                        and transform your digital landscape.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>
@@ -911,8 +904,6 @@ export const Home = () => {
                 </Fade>
               </Link>
             </div>
-
-            
           </div>
         </div>
       </section>
@@ -1495,8 +1486,6 @@ export const Home = () => {
                 </div>
               </Col>
             </Row>
-            
-            
           </div>
           <div className="client_list_button">
             <button onClick={showLogo}>
