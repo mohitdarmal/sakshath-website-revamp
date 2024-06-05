@@ -7,3 +7,7 @@ export const EXPRESSIVE = require("../../Assets/images/expressive.png");
 export const MOTIVATED = require("../../Assets/images/motivated.png");
 export const ARTICULATE = require("../../Assets/images/articulate.png");
 export const NEW_CHALLENGES = require("../../Assets/images/new_challenges.png");
+
+//@@@@@  career_footprint @@@@@@@@@@
+export const bangalore_img1 = require("../../Assets/images/career_footprint_bangalore_image.webp");
+export const bangalore_map = require("../../Assets/images/career_footprint_map.webp")
