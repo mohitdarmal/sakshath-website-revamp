@@ -2,6 +2,7 @@
 @import '../../Assets/saas/Main.scss';
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
+
 // .join_our_team
 // {
 //     padding-top: 80px;
@@ -284,15 +285,32 @@
 
 
 //////////@@@@@@@@@@@@@@@ career footprint @@@@@@@@@@@@@@@@
+.careers_footprint_section{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .careers_footprint_bangalore_section{
   display: flex;
+  padding: 25px 30px;
 
 }
-.image-gallery-slide-wrapper {
-  width: 118%;
-}
+// .image-gallery-slide-wrapper {
+//   width: 118%;
+// }
 .career_footprint_right-section{
   padding-left: 80px;
+}
+.career_footprint_gallery{
+  padding: 55px 50px;
+.career_footprint_company_images{
+  img{
+  width: 75%;
+}
+}
+.react-multi-carousel-track{
+  li{width: 285px !important;}
+}
 }
 
 // new benefits ends

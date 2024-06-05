@@ -11,7 +11,7 @@ import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
 //import BlueHeading from "../../Components/Utils/BlueHeading";
 import SubTitle from "../../Components/Utils/Title_head";
-import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES} from "./Constant";
+import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES, bangalore_img1, bangalore_map} from "./Constant";
 import { BsEnvelope } from "react-icons/bs";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import axios from "axios";
@@ -27,6 +27,8 @@ import Heading from "../../Components/Utils/Heading";
 import ImageGallery from "react-image-gallery";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 
 
@@ -48,6 +50,26 @@ const Career = () => {
       thumbnail: "https://picsum.photos/id/1019/250/150/",
     },
   ];
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
   const jobOpening = [
     {
@@ -329,7 +351,7 @@ const Career = () => {
            <Heading heading= "Our Growing Global Footprint" uppercase="uppercase" />
            </Fade>
            <Fade direction="up" triggerOnce>
-           <p>We have a diverse team of professionals working across offices in North America, China and India</p>
+           <p>We have a diverse team of professionals working across offices in Bengaluru, Mumbai and Gurugram</p>
            </Fade>
            </div>
       
@@ -339,33 +361,91 @@ const Career = () => {
       className="mb-3"
       justify
     >
-      <Tab eventKey="home" title="Home">
-        
-      </Tab>
-      <Tab eventKey="profile" title="Profile">
-        <div className="careers_footprint_bangalore_section">
-          <div className="career_footprint_left_section">
+      <Tab eventKey="mumbai" title="Mumbai">
 
-          <div className="image_gallery_box">
+      <div className="careers_footprint_bangalore_section">
+          <div className="career_footprint_left_section">
+           <img src={bangalore_map} alt="" />
+          {/* <div className="image_gallery_box">
           <ImageGallery items={images} />
-          </div>
+          </div> */}
           
 
           </div>
           <div className="career_footprint_right-section">
-          <h6>profile</h6>
+          <Heading heading= "Bengaluru" uppercase="uppercase" />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam at voluptatibus ut consequuntur et ratione architecto odio, id est provident dolore sunt? Voluptatem asperiores, dolorum numquam, atque esse ad non nesciunt voluptates eius eum est animi provident ipsum dolor eos possimus quaerat laboriosam impedit quibusdam, saepe mollitia. Ducimus, ex?</p>
             
 
           </div>
         </div>
+        <div className="career_footprint_gallery">
+        <Carousel responsive={responsive}>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+</Carousel>
+
+        </div>
+        
       </Tab>
-      <Tab eventKey="longer-tab" title="Loooonger Tab">
-        Tab content for Loooonger Tab
+      <Tab eventKey="bengaluru" title="Bengaluru">
+        <div className="careers_footprint_bangalore_section">
+          <div className="career_footprint_left_section">
+           <img src={bangalore_map} alt="" />
+          {/* <div className="image_gallery_box">
+          <ImageGallery items={images} />
+          </div> */}
+          
+
+          </div>
+          <div className="career_footprint_right-section">
+          <Heading heading= "Bengaluru" uppercase="uppercase" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam at voluptatibus ut consequuntur et ratione architecto odio, id est provident dolore sunt? Voluptatem asperiores, dolorum numquam, atque esse ad non nesciunt voluptates eius eum est animi provident ipsum dolor eos possimus quaerat laboriosam impedit quibusdam, saepe mollitia. Ducimus, ex?</p>
+            
+
+          </div>
+        </div>
+        <div className="career_footprint_gallery">
+        <Carousel responsive={responsive}>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+</Carousel>
+
+        </div>
+        
       </Tab>
-      <Tab eventKey="contact" title="Contact" disabled>
-        Tab content for Contact
+      <Tab eventKey="gurugram" title="Gurugram">
+      <div className="careers_footprint_bangalore_section">
+          <div className="career_footprint_left_section">
+           <img src={bangalore_map} alt="" />
+          {/* <div className="image_gallery_box">
+          <ImageGallery items={images} />
+          </div> */}
+          
+
+          </div>
+          <div className="career_footprint_right-section">
+          <Heading heading= "Bengaluru" uppercase="uppercase" />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam at voluptatibus ut consequuntur et ratione architecto odio, id est provident dolore sunt? Voluptatem asperiores, dolorum numquam, atque esse ad non nesciunt voluptates eius eum est animi provident ipsum dolor eos possimus quaerat laboriosam impedit quibusdam, saepe mollitia. Ducimus, ex?</p>
+            
+
+          </div>
+        </div>
+        <div className="career_footprint_gallery">
+        <Carousel responsive={responsive}>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+</Carousel>
+
+        </div>
       </Tab>
+      
     </Tabs>
 
 
