@@ -11,6 +11,7 @@ import {
   NITESH_PIC,
   PRAVEEN_PIC,
   SHRAVAN_PIC,
+  SUCHI_PIC,
 } from "./Constants";
 
 const OurTeam = () => {
@@ -318,15 +319,9 @@ const OurTeam = () => {
                 >
                   <div className="details">
                     <h5>Shuchi Shreshtha</h5>
-                    <img src={GAURI_PIC} />
+                    <img src={SUCHI_PIC} />
                   </div>
-                </div>
-
-               
-               
-                
-
-                
+                </div>              
 
                 <div
                   className={`our_team_sec_box ${

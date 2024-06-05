@@ -31,6 +31,7 @@ import Staffing from "./Pages/Staffing";
 import TalentSolution from "./Pages/TalentSolution";
 import AchievementDetail from "./Pages/About/OurAchivements/AchievementDetail";
 import Mobility from "./Pages/Service/Mobility";
+import ApplicationReadiness from "./Pages/Service/ApplicationReadiness";
 // import OurTeam8 from './Pages/OurTeam - 8 people'
 
 
@@ -105,6 +106,8 @@ const App = () => {
           <Route path='/staffing' element={<Staffing/>}/>
           <Route path="/talent-solution" element={<TalentSolution/>} />
           <Route path='/mobility' element={<Mobility/>}/>
+          <Route path='/application-readiness' element={<ApplicationReadiness/>}/>
+
    
 
           <Route path="*" element={<NotFound />} />

@@ -280,6 +280,12 @@ const Header = () => {
                       Enterprise Mobility
                       </NavLink>
                     </li>
+
+                    <li>
+                      <NavLink to="/application-readiness" className="dropdown-item">
+                     Application Readiness
+                      </NavLink>
+                    </li>
                   </ul>
                 </li>
                 <li>

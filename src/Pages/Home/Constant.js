@@ -18,6 +18,10 @@ export const TIMES_OF_INDIA = require("../../Assets/images/times_of_india_logo.p
 export const CLIQ_LOGO = require("../../Assets/images/Qlik.png");
 export const WCRCINT = require("../../Assets/images/wcrcint_logo.png");
 export const OUT_LOOK=require("../../Assets/images/outloo_bussiness.jpg")
+export const SOTI = require("../../Assets/images/soti_partners.png");
+export const JAMF = require("../../Assets/images/Jamf_partners.png");
+export const Microsoft = require("../../Assets/images/Microsoft_partners.jpg");
+
 
 export const TEAM_IMG = require("../../Assets/images/teammember.png");
 export const IT_IMG = require("../../Assets/images/it.png");

@@ -49,7 +49,7 @@ const Mobility = () => {
 
   return (
     <>
-      <BreadCumb imgUrl={ABOUT_BANNER} title="Mobility" />
+      <BreadCumb imgUrl={ABOUT_BANNER} title="Enterprise Mobility" />
 
       <section className="mobility_overview_section">
         <div className="container">
@@ -88,7 +88,7 @@ const Mobility = () => {
           </div>
 
           <div className="row mt-4">
-            <div className="col-md-3">
+            <div className="col-md-6">
               <div className="mobility_service_box">
                 <h5>SOTI MobiControl</h5>
                 <p>
@@ -101,7 +101,7 @@ const Mobility = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6">
               <div className="mobility_service_box">
                 <h5>Microsoft Intune</h5>
                 <p>
@@ -115,7 +115,7 @@ const Mobility = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6">
               <div className="mobility_service_box">
                 <h5> VMware Workspace ONE</h5>
                 <p>
@@ -128,7 +128,7 @@ const Mobility = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6">
               <div className="mobility_service_box">
                 <h5>Jamf Pro</h5>
                 <p>

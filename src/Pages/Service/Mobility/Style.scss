@@ -21,11 +21,11 @@
 }
 .mobility_service_box {
   padding: 30px;
-  box-shadow: 0 2px 20px #0000002e;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1803921569);
   border-radius: 6px;
-  min-height: 470px; 
-  margin-bottom: 10px;
-  transition: 0.5s;
+  min-height: 260px;
+  margin-bottom: 20px;
+  transition: .7s;
 
   h5 {
     font-family: rajdhani;

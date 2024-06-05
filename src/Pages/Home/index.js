@@ -41,6 +41,9 @@ import {
   // tagline_banner_bank,
   // tagline_banner_fintech,
   OUT_LOOK,
+  SOTI,
+  JAMF,
+  Microsoft,
 } from "./Constant";
 
 import { SlCalender } from "react-icons/sl";
@@ -99,22 +102,20 @@ export const Home = () => {
     setCurrentSlide(index);
     textSlider.current.slickGoTo(index);
   };
-  const [showClientToggle, setShowClientToggle]=useState(false);
+  const [showClientToggle, setShowClientToggle] = useState(false);
 
-  const showLogo=()=>{
+  const showLogo = () => {
     // console.log("show more")
-   
+
     // if(showClientToggle =="none"){
     //   setShowClientToggle("block")
     // }
     // else{
     //   setShowClientToggle("none")
     // }
-console.log("showtoggle", showClientToggle)
-    setShowClientToggle(!showClientToggle)
-    
-
-  }
+    console.log("showtoggle", showClientToggle);
+    setShowClientToggle(!showClientToggle);
+  };
 
   const settings = {
     dots: false,
@@ -167,8 +168,6 @@ console.log("showtoggle", showClientToggle)
   const handleCloseModal = () => {
     setShowModal(false);
   };
-
-
 
   return (
     <>
@@ -581,85 +580,9 @@ console.log("showtoggle", showClientToggle)
                   </Link>
                 </Fade>
               </div>
-              <div className="row mt-4 pt-2">
-                <div className="text-center">
-                  <Heading heading="partners" uppercase="text-uppercase" />
-                </div>
 
-                <div className="col-md-4 d-flex ">
-                  <Link
-                    onClick={() => {
-                      setShowModal(true);
-                    }}
-                  >
-                    <Fade direction="up" delay={200} triggerOnce>
-                      <div className="d-flex horizontal-shake">
-                        <div className="icon">
-                          <img src={TALEND} alt="" />
-                        </div>
-                        <div className="content">
-                          <h3 className="">Talend Gold Partner</h3>
-                          <p>
-                            We leverage Talend's unified platform capabilities
-                            across integrated domains.
-                          </p>
-                          <p className="learn_more">See Certificate</p>
-                        </div>
-                      </div>
-                    </Fade>
-                  </Link>
-                </div>
-
-                <div className="col-md-4 d-flex ">
-                  <Link
-                    onClick={() => {
-                      setShowModal(true);
-                    }}
-                  >
-                    <Fade direction="up" delay={400} triggerOnce>
-                      <div className="d-flex horizontal-shake">
-                        <div className="icon">
-                          <img src={CLIQ_LOGO} alt="" />
-                        </div>
-                        <div className="content">
-                          <h3>QLIK</h3>
-                          <p>
-                            Licensed with Qlik for various access types and
-                            core-based models.
-                          </p>
-                          <p className="learn_more">See Certificate</p>
-                        </div>
-                      </div>
-                    </Fade>
-                  </Link>
-                </div>
-
-                <div className="col-md-4 d-flex ">
-                  <Link
-                    onClick={() => {
-                      setShowModal(true);
-                    }}
-                  >
-                    <Fade direction="up" delay={400} triggerOnce>
-                      <div className="d-flex horizontal-shake">
-                        <div className="icon">
-                          <img src={AWS} alt="" />
-                        </div>
-                        <div className="content">
-                          <h3>Amazon AWS Partner</h3>
-                          <p>
-                            We leverage AWS programs, expertise, and tools to
-                            build solutions for customers.
-                          </p>
-                          <p className="learn_more">See Certificate</p>
-                        </div>
-                      </div>
-                    </Fade>
-                  </Link>
-                </div>
-              </div>
               {/* <div className="row mt-4 pt-2"> */}
-              <div className="col-md-4 d-flex ">
+              {/* <div className="col-md-4 d-flex ">
                 <Link>
                   <Fade direction="up" delay={400} triggerOnce>
                     <div className="d-flex horizontal-shake">
@@ -674,7 +597,7 @@ console.log("showtoggle", showClientToggle)
                           Outlook Business Spotlight- Business Excellence Awards
                           2023.
                         </p>
-                        {/* <p className="learn_more">See Certificate</p> */}
+                   
                       </div>
                     </div>
                   </Fade>
@@ -695,7 +618,7 @@ console.log("showtoggle", showClientToggle)
                           40" award by Bennett Coleman & Co. Ltd. - The Times of
                           India.
                         </p>
-                        {/* <p className="learn_more">See Certificate</p> */}
+                        
                       </div>
                     </div>
                   </Fade>
@@ -716,26 +639,28 @@ console.log("showtoggle", showClientToggle)
                           House of Lords ceremony at the Palace of Westminster,
                           London.
                         </p>
-                        {/* <p className="learn_more">See Certificate</p> */}
+                    
                       </div>
                     </div>
                   </Fade>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
         {/* </div> */}
       </section>
 
+     
+{/* service start */}
       <section>
         <div className="container">
           <div className="row">
             <Swiper
-              spaceBetween={30}
+              spaceBetween={50}
               centeredSlides={true}
               autoplay={{
-                // delay: 2500,
+                 delay: 1500,
                 disableOnInteraction: false,
               }}
               pagination={{
@@ -745,6 +670,7 @@ console.log("showtoggle", showClientToggle)
               modules={[Pagination, Navigation]}
             >
               <SwiperSlide>
+              <div className="swipper_service d-flex">
                 <div className="col-md-4 text-center">
                   <div className="service_home_box1 ">
                     <h4>Analytics</h4>
@@ -773,23 +699,216 @@ console.log("showtoggle", showClientToggle)
                     <img src={P_IMG} alt="" />
                   </div>
                 </div>
+                <div className="col-md-4 text-center">
+                  <div className="service_home_box1 ">
+                    <h4>Analytics</h4>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Distinctio sunt, illo sequi labore corrupti minus saepe
+                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
+                      consectetur adipisicing elit. Distinctio sunt, illo sequi
+                      labore corrupti minus saepe optio quod non quibusdam.
+                    </p>
+
+                    <img src={P_IMG} alt="" />
+                  </div>
+                </div>
+
+                </div>
+
+                
               </SwiperSlide>
               <SwiperSlide>
-                Slide 2<div className="col-md-3">cce</div>
+              <div className="swipper_service d-flex">
+                <div className="col-md-4 text-center">
+                  <div className="service_home_box1 ">
+                    <h4>Automation</h4>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Distinctio sunt, illo sequi labore corrupti minus saepe
+                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
+                      consectetur adipisicing elit. Distinctio sunt, illo sequi
+                      labore corrupti minus saepe optio quod non quibusdam.
+                    </p>
+
+                    <img src={P_IMG} alt="" />
+                  </div>
+                </div>
+                <div className="col-md-4 text-center">
+                  <div className="service_home_box1 ">
+                    <h4>Analytics</h4>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Distinctio sunt, illo sequi labore corrupti minus saepe
+                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
+                      consectetur adipisicing elit. Distinctio sunt, illo sequi
+                      labore corrupti minus saepe optio quod non quibusdam.
+                    </p>
+
+                    <img src={P_IMG} alt="" />
+                  </div>
+                </div>
+                <div className="col-md-4 text-center">
+                  <div className="service_home_box1 ">
+                    <h4>Analytics</h4>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Distinctio sunt, illo sequi labore corrupti minus saepe
+                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
+                      consectetur adipisicing elit. Distinctio sunt, illo sequi
+                      labore corrupti minus saepe optio quod non quibusdam.
+                    </p>
+
+                    <img src={P_IMG} alt="" />
+                  </div>
+                </div>
+
+                </div>
               </SwiperSlide>
-              <SwiperSlide>
-                Slide 3<div className="col-md-3">vr</div>
-              </SwiperSlide>
-              <SwiperSlide>
-                Slide 4 <div className="col-md-3">vr</div>
-              </SwiperSlide>
+              
             </Swiper>
           </div>
         </div>
       </section>
+      {/* service ends */}
+
+
+
+     {/* partners start */}
+      <section className="partners_section">
+        <div className="container">
+          <div className="row text-center mb-4">
+            <Heading heading="PARTNERS" />
+          </div>
+          <div className="row">
+          <div className="col-md-4 d-flex  ">
+              <Link
+                onClick={() => {
+                  setShowModal(true);
+                }}
+              >
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="partners_box horizontal-shake">
+                    <div className="icon">
+                      <img src={AWS} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>Amazon AWS Partner</h3>
+                      <p>
+                        We leverage AWS programs, expertise, and tools to build
+                        solutions for customers.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+              </Link>
+            </div>
+            <div className="col-md-4 d-flex">
+              <Link
+                onClick={() => {
+                  setShowModal(true);
+                }}
+              >
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="partners_box horizontal-shake">
+                    <div className="icon">
+                      <img src={CLIQ_LOGO} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>QLIK</h3>
+                      <p>
+                        Licensed with Qlik for various access types and
+                        core-based models.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+              </Link>
+            </div>
+
+           
+
+
+            <div className="col-md-4 d-flex">
+              <Link
+                onClick={() => {
+                  setShowModal(true);
+                }}
+              >
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="partners_box horizontal-shake">
+                    <div className="icon">
+                      <img src={JAMF} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>Jamf</h3>
+                      <p>
+                      Ensure seamless integration and real-time management for all your Apple devices.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+              </Link>
+            </div>
+          </div>
+
+          <div className="row">
+          <div className="col-md-4 d-flex  ">
+              <Link
+                onClick={() => {
+                  setShowModal(true);
+                }}
+              >
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="partners_box horizontal-shake">
+                    <div className="icon">
+                      <img src={Microsoft} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>Microsoft</h3>
+                      <p>
+                      Streamline operations, enhance security, and boost productivity with Microsoft's comprehensive software solutions.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+              </Link>
+            </div>
+            <div className="col-md-4 d-flex">
+              <Link
+                onClick={() => {
+                  setShowModal(true);
+                }}
+              >
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="partners_box horizontal-shake">
+                    <div className="icon">
+                      <img src={SOTI} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>Soti</h3>
+                      <p>
+                      Empower your enterprise with SOTI’s innovative solutions and transform your digital landscape.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+              </Link>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+      {/* partners ends */}
 
       {/*  @@@@@@ SECTION - ISO CERTIFICATES START @@@@@@ */}
-      
+
       {/* @@@@@ SECTION - ISO CERTIFICATES END */}
 
       {/* @@@@@@ SECTION - ISO certifcates start @@@@@@ */}
@@ -1252,10 +1371,9 @@ console.log("showtoggle", showClientToggle)
 
       <section className="client_list_lat">
         <Container>
-        <div className="row text-center">
-
-        <Heading heading="Trusted By" />
-        </div>
+          <div className="row text-center">
+            <Heading heading="Trusted By" />
+          </div>
           <Row>
             <Col>
               <div className="c_img">
@@ -1311,7 +1429,7 @@ console.log("showtoggle", showClientToggle)
               </div>
             </Col>
           </Row>
-          <div className={`d-${showClientToggle ? "block": "none"}`}>
+          <div className={`d-${showClientToggle ? "block" : "none"}`}>
             <Row>
               <Col>
                 <div className="c_img">
@@ -1395,9 +1513,11 @@ console.log("showtoggle", showClientToggle)
             </Row>
           </div>
           <div className="client_list_button">
-          <button onClick={showLogo}>{showClientToggle ? "Show Less" :"Show More Client"}</button>
+            <button onClick={showLogo}>
+              {showClientToggle ? "Show Less" : "Show More Client"}
+            </button>
           </div>
-        
+
           {/* <SlideAnimationButton btnName="View MORE"  onClick={showLogo} /> */}
         </Container>
       </section>

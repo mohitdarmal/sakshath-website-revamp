@@ -81,7 +81,7 @@
 .nav-item.dropdown ul.dropdown-menu {
   // border-radius: 2px;
   padding: 0;
-  li {
+  li:not(:last-child) {
     border-bottom: 1px solid #dbdbdb;
   }
   li a {

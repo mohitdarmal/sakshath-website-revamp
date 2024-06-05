@@ -1305,6 +1305,11 @@ transition: 1s;
 .client_list_lat{
   padding-top: 80px;
   padding-bottom: 80px;
+  position: relative;
+  content: "";
+  z-index: 111;
+
+
   .c_img{
     text-align: center;
       border: 1px solid #ddd;
@@ -1315,6 +1320,19 @@ transition: 1s;
     width: 130px;
   }
 }
+
+// .client_list_lat::before{
+//   background-image: url("../../Assets/images/dotted_img.png") !important;
+//   position: absolute;
+//   content: "";
+//   z-index: -9;
+//   margin-top: -50px;
+//   margin-left: -35px;
+//   opacity: 0.7;
+//   width: 100px !important;
+//   height: 100px !important;
+//   background-size: cover;
+// }
 
 
 .client_list_button{
@@ -1337,4 +1355,33 @@ transition: 1s;
 
 .tagline_heading::before{
 
+}
+
+
+// .swiper-button-next,.swiper-button-prev{
+//   display: none !important;
+// }
+
+.partners_section{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f5fcff;
+
+
+  .partners_box {
+    box-shadow: 0 2px 20px #0000001c;
+    padding: 20px;
+    display: flex;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  a{
+    text-decoration: none !important;
+  }
+
+  .learn_more{
+    color: #32A4D5;
+    font-weight: 700;
+    font-family: "Rajdhani", sans-serif;
+  }
 }
