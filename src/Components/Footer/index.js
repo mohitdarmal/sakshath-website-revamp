@@ -86,12 +86,12 @@ const Footer = () => {
                 {" "}
                 <img className="pb-4 img-fluid" src={FOOTER_LOGO} alt=""   />{" "}
               </Fade>
-              <Fade direction="up" delay={50}>
+              {/* <Fade direction="up" delay={50}>
                 {" "}
                 <h4 className="text-decoration-underline mt-md-3">
-                  Don’t Hesitate to Contact With Our Experites
+                  
                 </h4>{" "}
-              </Fade>
+              </Fade> */}
               <ul className=" font-medium ">
                 <li className="contact_hover">
                   <Fade direction="up" delay={400}>

@@ -81,6 +81,7 @@ import LetsTalk from "../../Components/LetsTalk";
 import {
   ABINBEV,
   ABSA,
+  ADITYABIRLA,
   AIRTELTIGO,
   AKSHYAPATHRA,
   CHAITANYA,
@@ -90,10 +91,12 @@ import {
   EQUITY,
   FNB,
   GWOSEVO,
+  JUIPTERHOSPITAL,
   KCB,
   MOOVAFRICA,
   NCBA,
   ONEASSIST,
+  PIRAMAL,
   RAWBANK,
   SMFC,
   STANBICBANK,
@@ -1399,7 +1402,7 @@ export const Home = () => {
             </Col>
             <Col>
               <div className="c_img">
-                <img src={STANBICBANK} alt="" />
+                <img src={CLIX} alt="" />
               </div>
             </Col>
           </Row>
@@ -1407,12 +1410,12 @@ export const Home = () => {
           <Row>
             <Col>
               <div className="c_img">
-                <img src={CLIX} alt="" />
+                <img src={PIRAMAL} alt="" />
               </div>
             </Col>
             <Col>
               <div className="c_img">
-                <img src={ONEASSIST} alt="" />
+                <img src={JUIPTERHOSPITAL} alt="" />
               </div>
             </Col>
             <Col>
@@ -1422,7 +1425,7 @@ export const Home = () => {
             </Col>
             <Col>
               <div className="c_img">
-                <img src={STANDARDBANK} alt="" />
+                <img src={ADITYABIRLA} alt="" />
               </div>
             </Col>
             <Col>

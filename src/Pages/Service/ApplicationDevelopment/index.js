@@ -363,7 +363,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
       {/* @@@@@ SECTION- Marquee Tools @@@@@@ */}
 
       {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}
-      <section className="brouchure_sec">
+      {/* <section className="brouchure_sec">
         <div className="container">
           <div className="text-center mb-3 pb-md-3">
             <Fade direction="up" triggerOnce>
@@ -382,7 +382,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
           </div>
         </div>
         <BrouchurePopup show={showModal} onHide={handleCloseModal} />
-      </section>
+      </section> */}
       {/* @@@@@ SECTION- Brouchure end @@@@@@ */}
 
       <section className="service_page_contact_form">
