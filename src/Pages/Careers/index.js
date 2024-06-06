@@ -29,6 +29,15 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { Autoplay } from "swiper/modules";
+
+
 
 
 
@@ -588,6 +597,210 @@ const Career = () => {
       </section> 
       {/*  benfits end*/}
 
+
+
+        {/* testimonials  starts*/}
+        <section className="careers_testimonials">
+        
+        <div className="heading_testimonials text-center mb-4">
+        <Heading heading="What our Client says about us" uppercase="" />
+        </div>
+        <div className="container">
+        <Swiper
+        // cssMode={true}
+        // navigation={true}
+        // pagination={true}
+        // mousewheel={true}
+        // keyboard={true}
+        // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        // className="mySwiper"
+        // slidesPerView={5}
+        //       spaceBetween={30}
+        //       breakpoints={{
+        //         320: {
+        //           slidesPerView: 2,
+        //           spaceBetween: 30,
+        //         },
+        //         481: {
+        //           slidesPerView: 3,
+        //           spaceBetween: 30,
+        //         },
+        //         768: {
+        //           slidesPerView: 4,
+        //           spaceBetween: 30,
+        //         },
+        //         1024: {
+        //           slidesPerView: 5,
+        //           spaceBetween: 30,
+        //         },
+        //       }}
+        //       autoplay={{
+        //         delay: 1500,
+        //         disableOnInteraction: false,
+        //       }}
+        //       loop={true}
+        //       modules={[Autoplay]}
+        //       className="mySwiper"
+        
+        slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+             
+              centeredSlides={true}
+              // autoplay={{
+              //   delay: 1500,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation,Autoplay]}
+      >
+      {/* <div className="container"></div> */}
+      
+        <SwiperSlide>
+          
+            
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
+              <h6><strong>-Mohit Darmal</strong></h6>
+            </div>
+            
+
+            
+
+           
+
+            
+
+            
+
+            
+           
+
+
+
+
+
+        </SwiperSlide>
+        
+        <SwiperSlide>
+       
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
+              <h6><strong>-Mohit Bhai</strong></h6>
+            </div>
+            
+
+        </SwiperSlide>
+        <SwiperSlide>
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
+              <h6><strong>-Mohit Bro</strong></h6>
+            </div>
+            </SwiperSlide>
+        <SwiperSlide>
+       
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
+              <h6><strong>-Mohit Bhaiya</strong></h6>
+            </div>
+           
+        </SwiperSlide>
+        <SwiperSlide>
+        
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
+              <h6><strong>-Mohit Darmal</strong></h6>
+            </div>
+           
+        </SwiperSlide>
+        <SwiperSlide>
+        
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
+              <h6><strong>-Mohit Darmal</strong></h6>
+            </div>
+            
+        </SwiperSlide>
+        <SwiperSlide>
+       
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
+              <h6><strong>-Mohit Darmal</strong></h6>
+            </div>
+            
+        </SwiperSlide>
+        <SwiperSlide>
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
+              <h6><strong>-Mohit Darmal</strong></h6>
+            </div>
+            
+            </SwiperSlide>
+        <SwiperSlide>
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
+              <h6><strong>-Mohit Darmal</strong></h6>
+            </div>
+            
+            </SwiperSlide>
+            
+      </Swiper>
+      </div>
+      
+        
+
+        
+        </section>
+        
+
+        {/* testimonials ends */}
+
+
+
+
       {/* Apply Jobs */}
       
       {/* <section className="jobs">
@@ -754,6 +967,8 @@ const Career = () => {
           </Fade>
         </div>
       </section>
+
+      
     </>
   );
 };
