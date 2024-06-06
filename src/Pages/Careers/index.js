@@ -24,12 +24,30 @@ import { IoTimeOutline } from "react-icons/io5";
 import { REACT_LOGO } from "./Constant";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
 import Heading from "../../Components/Utils/Heading";
+import ImageGallery from "react-image-gallery";
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+
 
 
 
 
 const Career = () => {
   const [modalPopupData, setModalPopupData] = useState({});
+  const images = [
+    {
+      original: "https://picsum.photos/id/1018/1000/600/",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1015/1000/600/",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+  ];
 
   const jobOpening = [
     {
@@ -217,7 +235,7 @@ const Career = () => {
              <div className="join_our_team_wrapper">
              <Fade direction="up" triggerOnce>
                 
-                <Heading heading ="Join our team" uppercase=""/>
+                <Heading heading ="Life At Sakshath" uppercase=""/>
                 </Fade>
                 <Fade direction="up" triggerOnce>
                 <ul>
@@ -302,6 +320,57 @@ const Career = () => {
         </div>
       </div>
         
+      </section>
+
+      <section className="careers_footprint_section">
+      <div className="container">
+        <div className="text-center mb-4 pb-md-1">
+        <Fade direction="up" triggerOnce>
+           <Heading heading= "Our Growing Global Footprint" uppercase="uppercase" />
+           </Fade>
+           <Fade direction="up" triggerOnce>
+           <p>We have a diverse team of professionals working across offices in North America, China and India</p>
+           </Fade>
+           </div>
+      
+      <Tabs
+      defaultActiveKey="profile"
+      id="justify-tab-example"
+      className="mb-3"
+      justify
+    >
+      <Tab eventKey="home" title="Home">
+        
+      </Tab>
+      <Tab eventKey="profile" title="Profile">
+        <div className="careers_footprint_bangalore_section">
+          <div className="career_footprint_left_section">
+
+          <div className="image_gallery_box">
+          <ImageGallery items={images} />
+          </div>
+          
+
+          </div>
+          <div className="career_footprint_right-section">
+          <h6>profile</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veniam at voluptatibus ut consequuntur et ratione architecto odio, id est provident dolore sunt? Voluptatem asperiores, dolorum numquam, atque esse ad non nesciunt voluptates eius eum est animi provident ipsum dolor eos possimus quaerat laboriosam impedit quibusdam, saepe mollitia. Ducimus, ex?</p>
+            
+
+          </div>
+        </div>
+      </Tab>
+      <Tab eventKey="longer-tab" title="Loooonger Tab">
+        Tab content for Loooonger Tab
+      </Tab>
+      <Tab eventKey="contact" title="Contact" disabled>
+        Tab content for Contact
+      </Tab>
+    </Tabs>
+
+
+     </div>
+      
       </section>
 
       {/* <section className="join_our_team">
@@ -496,7 +565,7 @@ const Career = () => {
       Apply Jobs Ends */}
 
 
-
+    
 
 
 

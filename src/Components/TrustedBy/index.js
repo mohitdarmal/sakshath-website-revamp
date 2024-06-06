@@ -10,7 +10,7 @@ import {
     CLIENT_LOGO2,
     CLIENT_LOGO3,
     CLIENT_LOGO4,
-    CLIENT_LOGO5,
+    // CLIENT_LOGO5,
     CLIENT_LOGO6,
     CLIENT_LOGO7,
     CLIENT_LOGO8,
@@ -53,6 +53,10 @@ import {
   const TrustedBy = () => {
     return (
       <>
+      
+ 
+ 
+
       <section className="our_paltform_sec">
       <div className="text-center">
           <Heading
@@ -112,9 +116,7 @@ import {
             <SwiperSlide>
               <img src={CLIENT_LOGO28}  />
             </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO5}  />
-            </SwiperSlide>
+           
             <SwiperSlide>
               <img src={CLIENT_LOGO27}  />
             </SwiperSlide>

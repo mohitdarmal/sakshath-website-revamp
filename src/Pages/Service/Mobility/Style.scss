@@ -1,0 +1,78 @@
+@import "../../../Assets/saas/Main.scss";
+
+.mobility_overview_section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.mobility_overview_img_right {
+  text-align: center;
+  font-family: "Rajdhani";
+  box-shadow: 0 2px 20px #0000003b;
+  padding: 80px 0;
+  background-image: url("../../../Assets/images/contact_us_mobility2.jpg");
+  background-repeat: no-repeat;
+}
+
+// mobility enterprises
+
+.mobility_enterprise_service_section {
+   padding-bottom: 80px;
+}
+.mobility_service_box {
+  padding: 30px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1803921569);
+  border-radius: 6px;
+  min-height: 260px;
+  margin-bottom: 20px;
+  transition: .7s;
+
+  h5 {
+    font-family: rajdhani;
+    font-weight: bold;
+  }
+  &:hover{
+    color: #fff;
+  }
+}
+
+.mobility_service_box:hover {
+  background-color: #32a4d5;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.mobility_service_box:hover p{
+    color: #fff;
+}
+
+.mobility_overview_img_right{
+    transition: .5s;
+    border-radius: 4px;
+    border: 2px solid #dbdbdb;
+    a{
+        text-decoration: none;
+    }
+    h4{
+        color: #fff;
+        font-weight: bold;
+    }
+    &:hover{
+        transform: scale(1.04, 1.05);
+    }
+}
+
+.benefits_mobi_box{
+    box-shadow: 0 2px 20px #00000033;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    border: 1px solid #dbdbdb;
+    // text-align: center;
+     min-height: 161px;
+}
+
+
+.benefit_mobi_section{
+    padding-bottom: 80px;
+}

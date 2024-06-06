@@ -462,6 +462,9 @@ const Automation = () => {
               <div className="container">
                 <div className="row align-items-center">
                   <div className="col-md-6">
+                  <Fade direction="up" delay={500} >
+
+                
                     <div className="cloud_bg_img">
                       <img
                         src={AUTOMATION_BG_IMG}
@@ -470,6 +473,7 @@ const Automation = () => {
                         height="460px"
                       />
                     </div>
+                    </Fade>
                   </div>
                   <div className="col-md-6">
                     <div className="cloud_native_content">
@@ -1220,6 +1224,8 @@ const Automation = () => {
                 <div className="layer_title">
                   <h4>Business Logic Layer</h4>
                 </div>
+                <img src={AUTOMATE_RPA} alt=""  style={{width:'50%',marginLeft: '100px',
+    marginTop: '10px'}}/>
               </div>
               <div className="col-md-4">
                 <div className="box3">
@@ -1410,7 +1416,7 @@ const Automation = () => {
         <WhySaksahthNew whyCrm={whyDevops} />
         {/* why sakshath ends */}
 
-        <section className="automationFaq">
+        {/* <section className="automationFaq">
           <div className="container">
             <div className="row">
               <div className="col-md-1"> </div>
@@ -1420,7 +1426,7 @@ const Automation = () => {
               <div className="col-md-1"> </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </ScrollSpy>
     </>
   );

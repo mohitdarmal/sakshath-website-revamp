@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 // import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import BreadCumb from "../../Components/Breadcumb/index";
 import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
+import {BAN_ABT_IMG  } from "../../Components/Breadcumb/Constant";
 import {
   ABOUT_BANK,
   ABOUT_MISSION,
@@ -94,7 +95,7 @@ const About = () => {
         <meta name="description" content="About SEO" />
       </Helmet>
 
-      <BreadCumb imgUrl={ABOUT_BANNER} title="About Us" />
+      <BreadCumb imgUrl={BAN_ABT_IMG} title="About Us" />
       <section className=" about_who">
         <div className="container mt-4">
           <div className="row mt-4 about_who_we_r ">
@@ -111,17 +112,17 @@ const About = () => {
                     capital, later in the years this small consulting firm
                     providing IT recruitment Services ran into the idea of
                     having an ERP offshore development. If not quite a tale of
-                    rags to riches, the story of Sakshath Technologies’ rise to
-                    stardom certainly came closer. The birth of SAKSHATH
-                    TECHNOLOGIES' in 2015, wouldn’t be possible without the
+                    rags to riches, the story of Sakshath Technologies® rise to
+                    stardom certainly came closer. The birth of Sakshath
+                    Technologies® in 2015, wouldn’t be possible without the
                     utmost faith and trust of family and friends. <br />
                     <br />
-                    Sakshath Technologies’ biggest USP’s are ERP (Epicor, MS
+                    Sakshath Technologies® biggest USP’s are ERP (Epicor, MS
                     Dynamics, JD Edwards and SYSPRO), QA, BI & Analytics (Power
                     BI, Qlik and Tableau).
                     <strong>
                       {" "}
-                      Sakshath Technologies' is the only company in India to
+                      Sakshath Technologies® is the only company in India to
                       provide SYSPRO Services that are designed in a way to
                       support growth and improve profitability
                     </strong>
@@ -136,10 +137,10 @@ const About = () => {
                     We go by the saying <strong>“I’m Sakshath”</strong> the
                     thought behind the phrase is the presence of all the
                     employees<strong> ‘HERE’ and ‘NOW’</strong>. Starting as a
-                    self-funded business Sakshath Technologies' company ethos to
+                    self-funded business Sakshath Technologies® company ethos to
                     date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from
                     the beginning of the journey made what Sakshath
-                    Technologies' is today, we grew gradually to a family of
+                    Technologies® is today, we grew gradually to a family of
                     200+ employees and now have a domestic presence in 3
                     metropolitan cities serving clients from all over the world.
                     Celebrating decade milestones, today we take pride in
@@ -149,7 +150,7 @@ const About = () => {
                 </Fade>
               </div>
             </div>
-            <div className="col-md-6 ipad_full_width">
+            <div className="col-md-6 ipad_full_width about_img_col6">
               <div className="who_we_are_img ipad_full_width ">
                 <img src={about_who_we_Are} alt="" className="img-fluid" />
               </div>
@@ -213,8 +214,8 @@ const About = () => {
   </div>
 </section> */}
 
-      <section className="managed_service_flowchart_sec">
-        {/* //<h2>Process</h2> */}
+      {/* <section className="managed_service_flowchart_sec">
+        
         <div className="container-fluid">
           <div className="row text-center mb-4">
             <Heading heading="Service Industries" />
@@ -223,7 +224,6 @@ const About = () => {
             <div className="row">
               <div className="col-md-2 about_industry_box bg1">
                 <div className="managed_service_content">
-                  {/* <p>1</p> */}
                   <img src={ABOUT_BANK} alt="" />
                   <h5>Banking</h5>
                 </div>
@@ -231,7 +231,7 @@ const About = () => {
 
               <div className="col-md-2  about_industry_box bg2">
                 <div className="managed_service_content">
-                  {/* <p>2</p> */}
+                 
                   <img src={NGO} alt="" />
                   <h5>NGO</h5>
                 </div>
@@ -239,7 +239,7 @@ const About = () => {
 
               <div className="col-md-2 about_industry_box bg3">
                 <div className="managed_service_content">
-                  {/* <p>3</p> */}
+                 
                   <img src={Manufacturing} alt="" />
                   <h5>Manufacturing</h5>
                 </div>
@@ -247,7 +247,7 @@ const About = () => {
 
               <div className="col-md-2 about_industry_box bg4">
                 <div className="managed_service_content">
-                  {/* <p>4</p> */}
+                  
                   <img src={MEDICAL} alt="" />
                   <h5>Healthcare</h5>
                 </div>
@@ -255,7 +255,7 @@ const About = () => {
 
               <div className="col-md-2 about_industry_box bg5">
                 <div className="managed_service_content">
-                  {/* <p>5</p> */}
+                 
                   <img src={NGO} alt="" />
                   <h5>Retail</h5>
                 </div>
@@ -263,7 +263,7 @@ const About = () => {
 
               <div className="col-md-2 about_industry_box bg6">
                 <div className="managed_service_content">
-                  {/* <p>6</p> */}
+                  
                   <img src={NGO} alt="" />
                   <h5>Food & Beverages</h5>
                 </div>
@@ -271,7 +271,7 @@ const About = () => {
             </div>
           </Fade>
         </div>
-      </section>
+      </section> */}
       {/* industry ends */}
       {/* vision misson starts */}
 
@@ -281,9 +281,9 @@ const About = () => {
             <div className="col-md-5">
               <p className="vision_para">
                 <Fade direction="up" delay={150} triggerOnce>
-                  It is the desire of Sakshath Technologies to establish itself
+                  It is the desire of Sakshath Technologies® to establish itself
                   as a powerful business operation with vibrance and growth
-                  built on Sakshath Technologies principles that is highly
+                  built on Sakshath Technologies® principles that is highly
                   regarded by our customers, stake holders and our employees. As
                   an organization, we want to be in a place where customers rely
                   on the excellence of our products and services.
@@ -328,7 +328,7 @@ const About = () => {
 
       {/* Inception starts*/}
 
-<Inception/>
+      <Inception />
       {/* Inception ennds */}
 
       {/* client logo */}
@@ -360,8 +360,6 @@ const About = () => {
         </div>
       </section> */}
 
-
-
       {/* Core values starts */}
       <section className="core_values">
         <div className="container">
@@ -376,7 +374,7 @@ const About = () => {
                     <div className="title d-flex justify-content-between">
                       <Fade direction="up" delay={450} triggerOnce>
                         <p>{data.name}</p>
-                         <img src={data.image} alt="" />
+                        <img src={data.image} alt="" />
                       </Fade>
                     </div>
                     <Fade direction="up" delay={450} triggerOnce>

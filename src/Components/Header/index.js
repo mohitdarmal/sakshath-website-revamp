@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./style.scss";
 import { Link, NavLink } from "react-router-dom";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { BsEnvelope, BsTelephoneInbound } from "react-icons/bs";
 import { TfiLinkedin } from "react-icons/tfi";
@@ -39,18 +39,28 @@ const Header = () => {
           <div className="row">
             <div className="col-md-6">
               <Link className="top_header_location">
-                <MdOutlineLocationOn /> Bengaluru &nbsp;&nbsp; |
-                &nbsp;&nbsp;
+                <MdOutlineLocationOn /> Bengaluru &nbsp;&nbsp; | &nbsp;&nbsp;
               </Link>
               <Link to="mailto:info@sakshath-technologies.com">
                 <BsEnvelope /> &nbsp;info@sakshath-technologies.com &nbsp;
               </Link>
             </div>
             <div className="col-md-6 text-md-end">
+                {/* <div className="dropdown"> */}
+                  {/* <span className="header_translator">
+                    <HiOutlineGlobeAlt /> English
+                  </span> */}
+                {/* </div> */}
+
+                <span>
+                <HiOutlineGlobeAlt /> English &nbsp; | &nbsp;
+                </span>
+              
               <Link to="tel:+918067819998">
                 <BsTelephoneInbound /> &nbsp;+91 80 67819878 &nbsp; | &nbsp;
                 &nbsp;
               </Link>
+
 
               <span className="header_social_icons">
                 Follow us &nbsp; &nbsp;
@@ -131,13 +141,6 @@ const Header = () => {
             </div>
             <div className="offcanvas-body header_menu">
               <ul className="navbar-nav justify-content-center flex-grow-1">
-                {/* home */}
-                {/* <li>
-                  <NavLink to="/" className="nav-link">
-                    Home
-                  </NavLink>
-                </li> */}
-
                 {/* about */}
                 <li className="nav-item dropdown">
                   <NavLink
@@ -164,7 +167,7 @@ const Header = () => {
                         Company Jounery
                       </NavLink>
                     </li> */}
-                    
+
                     <li>
                       <NavLink to="/our-achievements" className="dropdown-item">
                         Our Achievements
@@ -172,7 +175,7 @@ const Header = () => {
                     </li>
                     <li>
                       <NavLink to="/contact-us" className="dropdown-item">
-                       Contact us
+                        Contact us
                       </NavLink>
                     </li>
                   </ul>
@@ -185,7 +188,6 @@ const Header = () => {
                     className="nav-link dropdown-toggle"
                     id="accountDropdown"
                     role="button"
-                    // data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Services
@@ -195,7 +197,15 @@ const Header = () => {
                     aria-labelledby="accountDropdown"
                   >
                     <li>
-                      <NavLink to="/application-development" className="dropdown-item">
+                      <NavLink to="/erp" className="dropdown-item">
+                        ERP
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to="/application-development"
+                        className="dropdown-item"
+                      >
                         Application Development
                       </NavLink>
                     </li>
@@ -209,11 +219,7 @@ const Header = () => {
                         Automation
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/erp" className="dropdown-item">
-                        ERP
-                      </NavLink>
-                    </li>
+
                     <li>
                       <NavLink to="/managed-services" className="dropdown-item">
                         Managed Services
@@ -224,34 +230,73 @@ const Header = () => {
                         Integration
                       </NavLink>
                     </li>
-                    <li>
+
+                   
+                    {/* <li>
                       <NavLink to="/talent-solution" className="dropdown-item">
                        Talent Solution
                       </NavLink>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
-                
-                <li>
+
+                {/* <li>
                   <NavLink to="/banking-solution" className="nav-link">
                     Banking Solution
                   </NavLink>
+                </li> */}
+                <li className="nav-item dropdown">
+                <NavLink
+                     to="/abc"
+                    className="nav-link dropdown-toggle"
+                    id="account1Dropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Solution
+                  </NavLink>
+                  <ul
+                    className="dropdown-menu border-0 shadow bsb-zoomIn"
+                    aria-labelledby="account1Dropdown"
+                  >
+                  
+                    <li>
+                      <NavLink to="/banking-solution" className="dropdown-item">
+                        Banking Solution
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/talent-solution" className="dropdown-item">
+                        Talent Solution
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/staffing" className="nav-link">
+                        Staffing
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/mobility" className="dropdown-item">
+                      Enterprise Mobility
+                      </NavLink>
+                    </li>
+
+                    <li>
+                      <NavLink to="/application-readiness" className="dropdown-item">
+                     Application Readiness
+                      </NavLink>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <NavLink to="/career" className="nav-link">
                     Careers
                   </NavLink>
                 </li>
-             
+
                 <li>
                   <NavLink to="/blogs" className="nav-link">
                     Blogs
-                  </NavLink>
-                </li>
-               
-                <li>
-                  <NavLink to="/staffing" className="nav-link">
-                    Staffing
                   </NavLink>
                 </li>
 
@@ -267,7 +312,7 @@ const Header = () => {
                   <span className="header_translator">
                     <HiOutlineGlobeAlt /> English
                   </span>
-                  <SlideAnimationButton btnName="Get Free Quote" />
+                  <SlideAnimationButton btnName="Contact us"/>
                 </div>
               </div>
             </div>

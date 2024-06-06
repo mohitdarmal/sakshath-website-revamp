@@ -73,7 +73,7 @@ console.log(data, "Dataaaa")
       </Helmet>
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
-        title="Application Development"
+        // title="Application Development"
       />
 {/* 
 <ServicePopup  popUpHeading={
@@ -99,7 +99,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
             <div className="col-md-8 offset-md-2 text-center app_dev_heading">
               <Fade direction="up" triggerOnce>
                 <Heading
-                  heading="Why choose Sakshath Technologies for app development?"
+                  heading="Why Sakshath Technologies?"
                   uppercase=""
                 />
               </Fade>
@@ -237,7 +237,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
       {/* @@@@@ SECTION- App Development end @@@@@@ */}
 
       {/* @@@@@@ SECTION - Happy client counter starts @@@@@*/}
-      <HappyClients />
+      {/* <HappyClients /> */}
       {/* @@@@@ SECTION- Happy client counter end @@@@@@ */}
 
       {/* @@@@@@ SECTION - Our Services starts @@@@@*/}
@@ -412,7 +412,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
         <img src={CONTACT_US} className="w-100" />
       </section>
 
-      <section>
+      {/* <section>
         <div className="container">
           <div className="row">
             <div className="col-md-1"> </div>
@@ -422,7 +422,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
             <div className="col-md-1"> </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <servicePopup/> */}
     </>

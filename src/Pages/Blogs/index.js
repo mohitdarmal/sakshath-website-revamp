@@ -262,7 +262,7 @@ const blogCountChangePage = (data) => {
                            <img src={blognews.blogImg} alt="" className='img-fluid' />
                           </div>
                           
-                          <div className='blog_content'>
+                          <div className='blog_content blog_content_ipad'>
                            
                               <div className="blog_date_author-box">
                                <div className="blog_date_box">
@@ -279,7 +279,10 @@ const blogCountChangePage = (data) => {
                                 
                             </h2>
                             <p className='blog_description'>{`${blognews.blogDescription.substring(0, 150)}`}...</p>
+                            <div className="blogs_read_more_button">
                             <Link to={`/blogs/${blognews.blogTitle}`} className='cta_button' state={blognews}>Read More</Link>
+                            </div>
+                            
                           </div>
  
                        </div>

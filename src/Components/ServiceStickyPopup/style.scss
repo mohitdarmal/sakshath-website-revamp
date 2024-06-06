@@ -149,3 +149,23 @@ border: 5px solid #fff;
   
 }
 
+
+.stickyPopupService{
+  input{
+    padding:10px;
+    border-radius: 5px !important;
+
+  }
+  .submit-button Button{
+    background-color: #32a4d5 !important;
+    color: $white_color !important;
+    width: 30% !important;
+    outline: none;
+    border: none;
+    font-family: $rajdhani_font;
+    font-weight: bold;
+    &:hover{
+      background-color: $ball_blue_color !important;
+    }
+  }
+}

@@ -326,23 +326,35 @@
 // /// @@@@@@@ media quert starts @@@@@@@@@
 
 //   ///@@@@ mobile screen @@@@
-// @media screen and (max-width:480px){
-//      .contact_us{
+ @media screen and (max-width:480px){
 
-//      .contact_card{
-//         margin-left: 0px!important;
-//         margin-right: 10px;
+    .contact_us_sec{
+        padding: 40px 0 !important;
+    }
+      .contact_us{
 
-//     }
-//     .office_box{
+      .contact_card{
+         margin-left: 0px!important;
+         margin-right: 10px;
 
-//         margin-bottom: 30px!important;
-//     }
-//     .contact_us_map_form_section{
-//         padding-top: 20px;
-//     }
-// }
-// }
+     }
+     .office_box{
+
+         margin-bottom: 30px!important;
+     }
+     .contact_us_map_form_section{
+         padding-top: 20px;
+     }
+ }
+ .our_location_tab .map_sec {
+    background-image: -webkit-linear-gradient(360deg, #24688f 75%, #24688f 50%);
+    padding: 40px 0;
+    margin-top: 30px;
+}
+.position-relative{
+    margin-bottom: 30px;
+}
+ }
 //  ///  For Mobile Landscape Screen  
 // @media screen and (min-width:481px) and (max-width:767px){
 //     .contact_card{

@@ -1,7 +1,7 @@
 import React from "react";
 import SubTitle from "../Utils/Title_head";
 import CountUp from "react-countup";
-import { Tabs, Tab } from "react-bootstrap";
+// import { Tabs, Tab } from "react-bootstrap";
 import { GiCommercialAirplane } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
 import { MdOutlineBusinessCenter } from "react-icons/md";
@@ -32,11 +32,10 @@ import {
   CLIENT_LOGO25,
   CLIENT_LOGO26,
   CLIENT_LOGO27,
- CLIENT_LOGO37,
-
+  CLIENT_LOGO37,
   CLIENT_LOGO39,
   CLIENT_LOGO40,
-  CLIENT_LOGO41,
+  // CLIENT_LOGO41,
   CLIENT_LOGO42,
   CLIENT_LOGO43,
   CLIENT_LOGO44,
@@ -44,15 +43,13 @@ import {
   CLIENT_LOGO46,
   CLIENT_LOGO47,
   CLIENT_LOGO3,
-  CLIENT_LOGO4,
-  CLIENT_LOGO5,
   CLIENT_LOGO6,
   CLIENT_LOGO7,
   CLIENT_LOGO8,
   CLIENT_LOGO9,
   CLIENT_LOGO32,
   CLIENT_LOGO33,
-  CLIENT_LOGO34,
+  // CLIENT_LOGO34,
 } from "./Constant";
 
 const ClientLogo = () => {
@@ -64,7 +61,7 @@ const ClientLogo = () => {
           <div className="row text-center">
             {/* <SubTitle SubTitle="Popular Partners" /> */}
             <p className="popular_partner_heading">
-              WE HAVE{" "}
+              {/* WE HAVE{" "}
               <CountUp
                 start={0}
                 end={50}
@@ -75,19 +72,21 @@ const ClientLogo = () => {
                 enableScrollSpy={true}
                 useEasing={true}
               ></CountUp>{" "}
-              WORLD WIDE CLIENTS
+
+              WORLD WIDE CLIENTS */}
+              Trusted By
             </p>
           </div>
 
           <div className="popular_client_tab_sec">
             <div className="row">
-              <Tabs
+              {/* <Tabs
                 defaultActiveKey="internation"
                 id="clients_logo"
                 className="mb-3 client_tabs"
-              >
+              > */}
                 {/* <div className="international"> */}
-                <Tab
+                {/* <Tab
                   eventKey="internation"
                   title={
                     <div className="d-flex">
@@ -95,27 +94,27 @@ const ClientLogo = () => {
                         <GiCommercialAirplane />
                         &nbsp;&nbsp;
                       </p>
-                      <p>International</p>
+                      <p>Overseas</p>
                     </div>
                   }
-                >
+                > */}
                   <Swiper
                     breakpoints={{
                       320: {
-                        slidesPerView:2,
-                        spaceBetween:30
+                        slidesPerView: 2,
+                        spaceBetween: 30,
                       },
                       481: {
-                        slidesPerView:3,
-                        spaceBetween:30
+                        slidesPerView: 3,
+                        spaceBetween: 30,
                       },
                       768: {
-                        slidesPerView:3,
-                        spaceBetween:30
+                        slidesPerView: 3,
+                        spaceBetween: 30,
                       },
                       1024: {
                         slidesPerView: 5,
-                        spaceBetween:30
+                        spaceBetween: 30,
                       },
                     }}
                     autoplay={{
@@ -135,9 +134,7 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO18} />
                     </SwiperSlide>
-                    <SwiperSlide>
-                      {/* <img src={CLIENT_LOGO11} /> */}
-                    </SwiperSlide>
+
                     <SwiperSlide>
                       <img src={CLIENT_LOGO19} />
                     </SwiperSlide>
@@ -191,18 +188,15 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO33} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO34} />
-                    </SwiperSlide>
-                    <SwiperSlide>
                       <img src={CLIENT_LOGO37} />
                     </SwiperSlide>
                     {/* <SwiperSlide>
                       <img src={CLIENT_LOGO38} />
                     </SwiperSlide> */}
                   </Swiper>
-                </Tab>
+                {/* </Tab> */}
                 {/* </div> */}
-                <Tab
+                {/* <Tab
                   eventKey="domestic"
                   title={
                     <div className="d-flex">
@@ -214,28 +208,26 @@ const ClientLogo = () => {
                       <p>Domestic</p>
                     </div>
                   }
-                >
+                > */}
                   <Swiper
-                  breakpoints={{
-                    320: {
-                      slidesPerView:2,
-                      spaceBetween:30
-                    },
-                    481: {
-                      slidesPerView:3,
-                      spaceBetween:30
-                    },
-                    768: {
-                      slidesPerView:3,
-                      spaceBetween:30
-                    },
-                    1024: {
-                      slidesPerView: 5,
-                      spaceBetween:30
-                    },
-                  }}
-                  
-                    
+                    breakpoints={{
+                      320: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                      },
+                      481: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                      },
+                      768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                      },
+                      1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 30,
+                      },
+                    }}
                     autoplay={{
                       delay: 1500,
                       disableOnInteraction: false,
@@ -244,8 +236,7 @@ const ClientLogo = () => {
                     modules={[Autoplay]}
                     className="mySwiper"
                   >
-                    
-                   <SwiperSlide>
+                    <SwiperSlide>
                       <img src={CLIENT_LOGO1} />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -254,12 +245,9 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO3} />
                     </SwiperSlide>
-                    <SwiperSlide>
+                    {/* <SwiperSlide>
                       <img src={CLIENT_LOGO4} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={CLIENT_LOGO5} />
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                     <SwiperSlide>
                       <img src={CLIENT_LOGO6} />
                     </SwiperSlide>
@@ -275,7 +263,7 @@ const ClientLogo = () => {
                     <SwiperSlide>
                       <img src={CLIENT_LOGO10} />
                     </SwiperSlide>
-                    
+
                     <SwiperSlide>
                       <img src={CLIENT_LOGO12} />
                     </SwiperSlide>
@@ -289,7 +277,7 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO15} />
                     </SwiperSlide>
                   </Swiper>
-                </Tab>
+                {/* </Tab>
                 <Tab
                   eventKey="partners"
                   title={
@@ -301,26 +289,26 @@ const ClientLogo = () => {
                       <p>Partners</p>
                     </span>
                   }
-                >
-                  <Swiper
-                   breakpoints={{
-                    320: {
-                      slidesPerView:2,
-                      spaceBetween:30
-                    },
-                    481: {
-                      slidesPerView:3,
-                      spaceBetween:30
-                    },
-                    768: {
-                      slidesPerView:3,
-                      spaceBetween:30
-                    },
-                    1024: {
-                      slidesPerView: 5,
-                      spaceBetween:30
-                    },
-                  }}
+                > */}
+                  {/* <Swiper
+                    breakpoints={{
+                      320: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                      },
+                      481: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                      },
+                      768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                      },
+                      1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 30,
+                      },
+                    }}
                     autoplay={{
                       delay: 1500,
                       disableOnInteraction: false,
@@ -336,9 +324,6 @@ const ClientLogo = () => {
                       <img src={CLIENT_LOGO40} />
                     </SwiperSlide>
                     <SwiperSlide>
-                      <img src={CLIENT_LOGO41} />
-                    </SwiperSlide>
-                    <SwiperSlide>
                       <img src={CLIENT_LOGO42} />
                     </SwiperSlide>
                     <SwiperSlide>
@@ -346,10 +331,10 @@ const ClientLogo = () => {
                     </SwiperSlide>
                     <SwiperSlide>
                       <img src={CLIENT_LOGO44} />
-                    </SwiperSlide>  
-                  </Swiper>
-                </Tab>
-              </Tabs>
+                    </SwiperSlide>
+                  </Swiper> */}
+                {/* </Tab> */}
+              {/* </Tabs> */}
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 @import "../../Assets/saas/Main.scss";
 @import '../../Assets/saas/Main.scss';
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 // .join_our_team
 // {
@@ -282,10 +283,20 @@
  
 
 
+//////////@@@@@@@@@@@@@@@ career footprint @@@@@@@@@@@@@@@@
+.careers_footprint_bangalore_section{
+  display: flex;
 
+}
+.image-gallery-slide-wrapper {
+  width: 118%;
+}
+.career_footprint_right-section{
+  padding-left: 80px;
+}
 
 // new benefits ends
- befits starts
+ //befits starts
  .benfits{     padding-top:34px;
  }
 
@@ -556,6 +567,12 @@
     padding-top: 10px;
     font-weight: bold;
   }
+  .join_our_team_section .join_our_team_wrapper{
+    margin-right: 0px !important;
+  }
+  .benefits_container{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
@@ -617,6 +634,20 @@
   .join_our_team {
     padding-top: 40px;
     padding-bottom: 35px;
+  }
+
+  .staffing_industry_offer_section .col-md-3{
+    margin-bottom: 10px;
+  }
+  .staffing_job_section .col-md-4{
+    margin-bottom: 20px;
+  }
+  .staffing_benifit_section{
+    display: none;
+  }
+  .discovery_section .col-md-4{
+    margin-bottom: 10px;
+
   }
 }
 

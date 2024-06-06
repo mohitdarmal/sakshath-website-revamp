@@ -2,10 +2,28 @@
 
 
 .modal-title {
-  margin-left: 90px;
+  margin-left: 70px !important;
   font-family: "Rajdhani", sans-serif;
   font-weight: 700;
   font-size: 28px;
+  color: #32A4D5 !important;
+
+}
+.modal-header{
+  border-bottom: 1px solid lightgray !important;
+}
+.btn-close{
+  margin-top: -15px !important;
+    margin-right: 25px !important;
+}
+.modal-footer{
+  display: none !important;
+}
+
+.erp_ind_box{
+  li{
+    line-height: 1.75 !important;
+  }
 }
 
 .erp_industries_sec{
@@ -460,3 +478,83 @@ h4{
     transform: scale(1.05,1.04);
   }
 }
+
+
+// media query starts
+@media screen and (max-width:480px){
+ 
+  .epicor_section {
+    padding-top: 40px !important;
+  }
+  .epicor_right_img img{
+    margin-left: 0px !important;
+  }
+
+  .syspro_img img{
+    margin-left: 0px !important;
+  }
+  .box_top {
+  
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.industry_box h4{
+  min-height: 94px !important;
+}
+.erp_industries_sec
+{
+  display: none !important;
+}
+.migration_img{
+  img{
+    margin-left: 0px !important;
+  }
+}
+.industry_erp {
+  padding-bottom: 40px;
+}
+.heading_title {
+      font-size: 30px;
+      line-height: 50px;
+      text-align: center;
+  }
+
+.syspro_8_ways_section{
+margin-bottom: 40px;
+}
+.overview_left_content{
+  margin-left: 0px !important;
+}
+.sap_section{
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.sap_content_box {
+   margin-left: 0px; 
+}
+}
+
+@media screen and (min-width:481px) and (max-width:767px){
+  .epicor_section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+  .epicor_right_img img {
+   width: 0px !important; 
+   height: 0px !important; 
+   transition:05s !important; 
+    margin-left: 50px;
+}
+.erp_industries_sec{
+  display: none !important;
+}
+.sap_img{
+  display: none !important;
+}
+.epicor_left_img{
+
+}
+}
+

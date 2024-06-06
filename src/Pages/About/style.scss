@@ -2,22 +2,22 @@
 
 .about_who {
   padding-top: 80px;
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
 }
 .who_we_r_content {
   background: #fbf4f4;
   padding: 10px;
 }
 .who_we_are_img {
-  position: sticky; 
-  top: 0; width: 750px;
-   height: 100vh; 
+  position: sticky;
+  top: 0;
+  width: 750px;
+  height: 100vh;
 
-
-  img{
+  img {
     position: sticky;
-     height: 100vh; 
-     width: 1000px;
+    height: 100vh;
+    width: 1000px;
   }
 }
 .about_who_we_r_content {
@@ -27,11 +27,11 @@
   padding-left: 0px;
 }
 .about_who_we_r_content p {
-  text-align: start;
+  text-align: justify;
 }
 
 .who_we_are_img_bottom {
-  // padding-right: 90px;
+
 }
 
 // contact starts
@@ -76,16 +76,14 @@
 
 // vision_mission
 
-
-.title{
-  img{
-    width:50px;
+.title {
+  img {
+    width: 50px;
   }
 }
 .vision {
   padding-top: 80px;
   padding-bottom: 80px;
-  // background-image: url("../../Assets/images/mission.png");
   background-image: url("../../Assets/images/wave.svg");
   //  padding: 120px;
   background-size: cover;
@@ -132,6 +130,8 @@
   padding: 30px;
   box-shadow: 0 2px 20px #0000003d;
   border-radius: 15px;
+  text-align: justify;
+  margin-top: 10px;
 }
 
 .vision_rounded {
@@ -143,40 +143,35 @@
   line-height: 100px;
   border-radius: 50%;
   font-weight: bold;
-  font-family: 'Rajdhani';
+  font-family: "Rajdhani";
 }
-
 
 .vision_rounded p::after {
   position: absolute;
   content: "";
   width: 2px;
-  /* background: red; */
-  height: 143px;
+  height: 153px;
   right: 0;
   border-right: 2px dashed #9fc9da;
   top: 101px;
   left: 50%;
 }
 
-
 // core values
 
-.core_values{
+.core_values {
   // padding-top: 80px;
   padding-bottom: 80px;
 }
-.our_values{
+.our_values {
   padding-top: 12px;
 }
-.core_value_box{
+.core_value_box {
   box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
- padding: 30px;
- border-radius: 5px;
- min-height: 255px;
- margin-bottom: 5px;
-
-
+  padding: 30px;
+  border-radius: 5px;
+  min-height: 255px;
+  margin-bottom: 5px;
 }
 
 //media query starts
@@ -191,19 +186,16 @@
     z-index: -1;
   }
   .about_who {
-    // padding-top: 40px;
+  padding-top: 20px;
     padding-bottom: 40px;
   }
 
   .about_who_we_r_content {
     padding-right: 0px;
-    padding-top: 90px;
   }
   .who_we_are_img_bottom {
     padding-right: 0px !important;
-    // margin-top: -107px;
-
-    // padding-bottom: 20px;
+  
   }
 
   .vision_container .col-md-5 {
@@ -227,41 +219,39 @@
     position: sticky;
     top: 0;
     width: 350px;
-    height: 50vh;
+    height: 40vh;
 
-    img{
+    img {
       position: sticky;
-    height: 50vh !important;
-    width: 100%;
+      height: 55vh !important;
+      width: 100%;
+      margin-top: -80px !important;
     }
   }
 }
 
+// @media screen and (max-width: 1023px) {
+//   .about_who_we_r .who_we_are_img {
+//     padding-top: 0px !important;
 
+//   }
 
-@media screen and (max-width: 1023px) {
-  .about_who_we_r .who_we_are_img {
-    padding-top: 0px !important;
-    // margin-top: -107px;
-
-  }
-
-  .contact_map_section {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .about_who_we_r .col-md-6:first-child {
-    order: 2;
-    padding-top: 20px;
-  }
-  .who_we_are_img_bottom {
-    padding-right: 0px !important;
-  }
-  .mision_container .col-md-2 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
+//   .contact_map_section {
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//   }
+//   .about_who_we_r .col-md-6:first-child {
+//     order: 2;
+//     // padding-top: 20px;
+//   }
+//   .who_we_are_img_bottom {
+//     padding-right: 0px !important;
+//   }
+//   .mision_container .col-md-2 {
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//   }
+// }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .about_who_we_r_content {
@@ -295,15 +285,13 @@
 }
 
 // service_indus
-.about_industry_box{
-  img{
+.about_industry_box {
+  img {
     width: 30px;
-
   }
-  h2{
+  h2 {
     font-family: $rajdhani_font;
     font-weight: bold;
-
   }
 }
 .managed_service_content img {
@@ -312,7 +300,16 @@
   filter: brightness(0) invert(1);
 }
 
+@media screen and (max-width: 767px) {
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .core_values .title p {
+    font-size: 20px !important;
+  }
+  .core_value_box {
+    min-height: 378px !important;
+  }
   .who_we_are_img {
     padding-top: 200px !important;
   }
@@ -320,51 +317,72 @@
     padding-right: 0px;
   }
 
-    .vision_rounded p::after {
-      position: absolute;
-      content: "";
-      width: 2px;
-      height: 290px;
-      right: 0;
-      border-right: 2px dashed #9fc9da;
-      top: 101px;
-      left: 50%;
+  .vision_rounded p::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 290px;
+    right: 0;
+    border-right: 2px dashed #9fc9da;
+    top: 101px;
+    left: 50%;
   }
+
+  .about_who {
+    padding-top: 0px !important; 
+    padding-bottom: 0px !important; 
+}
+  .about_who_we_r {
+
+    .who_we_are_img {
+      display: none;
+    }
+    img {
+      display: none;
+    }
+  }
+  .how-it-works p{
+    text-align: start !important;
+  }
+
+  // error
+//   .about_who .col-md-6 {
+//     flex: 0 0 auto;
+//     width: 100%;
+// }
+// .vision_rounded p::after {
+//   height: 200px !important;
+// }
+
+// .about_img_col6
+// {
+//   display: none;
+//  .who_we_are_img img{
+//   display: none;
+// }
+// }
 }
 
 // Media query start
 
-@media screen and (max-width: 480px) {
-  /* For Mobile Screen  */
-}
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  /* For Mobile Landscape Screen  */
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  /* For Tab Screen  */
-}
-// @media screen and (max-width: 1024px) {
-//   .vision_rounded p::after {
-//     position: absolute;
-//     content: "";
-//     width: 2px;
-//     height: 290px;
-//     right: 0;
-//     border-right: 2px dashed #9fc9da;
-//     top: 101px;
-//     left: 50%;
-//   }
-  
-// }
 
-// .about_who_we_r_content_wrapper  {
-//   position: sticky;
-//   top: 100px;
-//   height: fit-content; 
-//   background-color: #fff; 
-//   padding: 20px; 
-// }
-// .about_who_we_r_content {
-//   overflow-y: auto;
-//   max-height: 600px; 
-// }
+
+ @media (max-width: 768px) {
+   .about_who .col-md-6 {
+       flex: 0 0 auto;
+       width: 100%;
+   }
+   .vision_rounded p::after {
+     height: 200px !important;
+   }
+   .about_who .col-md-6{
+    .who_we_are_img img{
+      display: none !important;
+     }
+   }
+ }
+
+
+
+
+
