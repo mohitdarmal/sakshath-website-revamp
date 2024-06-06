@@ -2,6 +2,9 @@
 
 .about_who {
   padding-top: 80px;
+  background-image: url("../../Assets/images/note_bg_img1.png");
+  background-repeat: no-repeat;
+  background-position: top left;
   // padding-bottom: 80px;
 }
 .who_we_r_content {
@@ -31,7 +34,6 @@
 }
 
 .who_we_are_img_bottom {
-
 }
 
 // contact starts
@@ -150,7 +152,7 @@
   position: absolute;
   content: "";
   width: 2px;
-  height: 153px;
+  height: 175px;
   right: 0;
   border-right: 2px dashed #9fc9da;
   top: 101px;
@@ -186,7 +188,7 @@
     z-index: -1;
   }
   .about_who {
-  padding-top: 20px;
+    padding-top: 20px;
     padding-bottom: 40px;
   }
 
@@ -195,7 +197,6 @@
   }
   .who_we_are_img_bottom {
     padding-right: 0px !important;
-  
   }
 
   .vision_container .col-md-5 {
@@ -329,11 +330,10 @@
   }
 
   .about_who {
-    padding-top: 0px !important; 
-    padding-bottom: 0px !important; 
-}
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
   .about_who_we_r {
-
     .who_we_are_img {
       display: none;
     }
@@ -341,48 +341,60 @@
       display: none;
     }
   }
-  .how-it-works p{
+  .how-it-works p {
     text-align: start !important;
   }
 
   // error
-//   .about_who .col-md-6 {
-//     flex: 0 0 auto;
-//     width: 100%;
-// }
-// .vision_rounded p::after {
-//   height: 200px !important;
-// }
+  //   .about_who .col-md-6 {
+  //     flex: 0 0 auto;
+  //     width: 100%;
+  // }
+  // .vision_rounded p::after {
+  //   height: 200px !important;
+  // }
 
-// .about_img_col6
-// {
-//   display: none;
-//  .who_we_are_img img{
-//   display: none;
-// }
-// }
+  // .about_img_col6
+  // {
+  //   display: none;
+  //  .who_we_are_img img{
+  //   display: none;
+  // }
+  // }
 }
 
 // Media query start
 
-
-
- @media (max-width: 768px) {
-   .about_who .col-md-6 {
-       flex: 0 0 auto;
-       width: 100%;
-   }
-   .vision_rounded p::after {
-     height: 200px !important;
-   }
-   .about_who .col-md-6{
-    .who_we_are_img img{
+@media (max-width: 768px) {
+  .about_who .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .vision_rounded p::after {
+    height: 200px !important;
+  }
+  .about_who .col-md-6 {
+    .who_we_are_img img {
       display: none !important;
-     }
-   }
- }
+    }
+  }
+}
+.about_technologies_section{
+  padding-top: 80px;
+}
+.about_technologies_logos {
+  border: 2px solid #dbdbdb59;
+  border-radius: 20px;
+  img {
+    width: 100px;
+  }
+}
 
-
-
-
-
+.about_technologies_logos{
+  .swiper-wrapper{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 75px;
+  }
+}

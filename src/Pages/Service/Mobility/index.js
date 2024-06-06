@@ -73,7 +73,9 @@ const Mobility = () => {
               <div className="mobility_overview_img_right">
                 {/* <img src={CONTACT_IMG_OVERVIEW} alt="" /> */}
                 <Link to="/contact-us">
-                  <h4>Contact us &nbsp; &nbsp; <FaArrowRightLong/> </h4>
+                  <h4>
+                    Contact us &nbsp; &nbsp; <FaArrowRightLong />{" "}
+                  </h4>
                 </Link>
               </div>
             </div>
@@ -92,12 +94,12 @@ const Mobility = () => {
               <div className="mobility_service_box">
                 <h5>SOTI MobiControl</h5>
                 <p>
-                  SOTI MobiControl is a powerful cell phone the board (MDM)
-                  arrangement customized explicitly for B2B
-                  (business-to-business) conditions. It provides a comprehensive
-                  set of features to assist businesses in more effectively
-                  managing and protecting their mobile device fleet,
-                  streamlining operations, and increasing productivity.
+                  SOTI MobiControl is a powerful Enterprise Mobility
+                  Management (MDM) tool which helps for B2B (business-to-business)
+                  conditions. It provides a comprehensive set of features to
+                  assist businesses by effectively managing and protecting their
+                  mobile device fleet, streamlining operations, and increasing
+                  productivity.
                 </p>
               </div>
             </div>
@@ -105,13 +107,13 @@ const Mobility = () => {
               <div className="mobility_service_box">
                 <h5>Microsoft Intune</h5>
                 <p>
-                  Microsoft Intune is a cloud-based help that gives far reaching
-                  cell phone the executives (MDM) and versatile application the
-                  board (MAM) capacities. Microsoft Intune enables businesses to
-                  manage and secure their mobile devices, apps, and data
-                  regardless of the platform or location of the device. It was
-                  designed specifically for B2B (business-to-business)
-                  environments.
+                  Microsoft Intune is a cloud-based tool that helps enterprise mobility management and versatile application management.
+
+
+                  Microsoft Intune enables businesses to manage and secure their
+                  mobile devices, apps, and data regardless of the platform or
+                  location of the device. It was designed specifically for B2B
+                  (business-to-business) environments.
                 </p>
               </div>
             </div>
@@ -124,7 +126,7 @@ const Mobility = () => {
                   designed specifically for B2B (business-to-business) settings,
                   provides an extensive feature set to improve security,
                   simplify device administration, and maximise user experience
-                  across desktop, mobile, and IoT endpoints.ent
+                  across desktop, mobile, and IoT endpoints.
                 </p>
               </div>
             </div>
@@ -201,7 +203,7 @@ const Mobility = () => {
                     <h5>Improved Productivity</h5>
                     <p>
                       Employees can access work tools from anywhere, reducing
-                      time spent in a permanent office1
+                      time spent in a permanent office.
                     </p>
                   </div>
                 </div>
@@ -222,7 +224,7 @@ const Mobility = () => {
                     <h5>Streamlined Workflows</h5>
                     <p>
                       Digitize business communications and engagements carried
-                      out by field agents, increasing sales revenues.
+                      out by field agents, increasing sales & revenues.
                     </p>
                   </div>
                 </div>
