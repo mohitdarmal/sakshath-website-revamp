@@ -52,9 +52,9 @@ const Header = () => {
                   </span> */}
                 {/* </div> */}
 
-                <span>
+                {/* <span>
                 <HiOutlineGlobeAlt /> English &nbsp; | &nbsp;
-                </span>
+                </span> */}
               
               <Link to="tel:+918067819998">
                 <BsTelephoneInbound /> &nbsp;+91 80 67819878 &nbsp; | &nbsp;
@@ -271,7 +271,7 @@ const Header = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/staffing" className="nav-link">
+                      <NavLink to="/staffing" className="dropdown-item">
                         Staffing
                       </NavLink>
                     </li>

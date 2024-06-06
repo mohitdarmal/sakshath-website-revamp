@@ -148,7 +148,7 @@ const Inception = () => {
                   We understood our client's expectations and worked tirelessly
                   on what they wanted each time. Targeting several industries
                   within and outside India such as Healthcare, Software,
-                  Banking, NGO, Hospitality, Retail, Finance, Food and Beverages
+                  Banking, NGO, Hospitality, Retail, Finance, F&B, Transport 
                   etc.
                 </p>
               </Fade>
