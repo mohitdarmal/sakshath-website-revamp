@@ -198,63 +198,63 @@ const OurTeam = () => {
     console.log("Clicked", e.target.textContent);
   };
   useEffect(() => {
-    const script = document.createElement("script");
-
-    script.src =
-      "https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.3.2/tsparticles.bundle.js";
-    script.async = true;
-
-    document.body.appendChild(script);
-
-    script.onload = () => {
-      window.tsParticles.load("tsparticles", {
-        fullScreen: { enable: false },
-        background: {
-          color: "#fff",
-        },
-        interactivity: {
-          detect_on: "window",
-          events: {
-            onHover: {
-              enable: true,
-              mode: "grab",
-            },
+    if (window.matchMedia("(min-width: 1024px)").matches) { // Adjust the min-width value as per your requirement
+      const script = document.createElement("script");
+      script.src = "https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.3.2/tsparticles.bundle.js";
+      script.async = true;
+    
+      document.body.appendChild(script);
+    
+      script.onload = () => {
+        window.tsParticles.load("tsparticles", {
+          fullScreen: { enable: false },
+          background: {
+            color: "#fff",
           },
-          modes: {
-            grab: {
-              distance: 1500,
-              links: {
-                opacity: 0.15,
+          interactivity: {
+            detect_on: "window",
+            events: {
+              onHover: {
+                enable: true,
+                mode: "grab",
+              },
+            },
+            modes: {
+              grab: {
+                distance: 1500,
+                links: {
+                  opacity: 0.15,
+                },
               },
             },
           },
-        },
-        particles: {
-          links: {
-            enable: false,
-            opacity: 0.3,
-            distance: 200,
-            color: "#32A4D5",
+          particles: {
+            links: {
+              enable: false,
+              opacity: 0.3,
+              distance: 200,
+              color: "#32A4D5",
+            },
+            move: {
+              enable: false,
+              speed: { min: 1, max: 3 },
+            },
+            opacity: {
+              value: { min: 0.3, max: 0.7 },
+            },
+            size: {
+              value: 0,
+            },
+            color: "#840C16",
           },
-          move: {
-            enable: false,
-            speed: { min: 1, max: 3 },
-          },
-          opacity: {
-            value: { min: 0.3, max: 0.7 },
-          },
-          size: {
-            value: 0,
-          },
-          color: "#840C16",
-        },
-      });
-    };
-
-    return () => {
-      // Clean up
-      document.body.removeChild(script);
-    };
+        });
+      };
+    
+      return () => {
+        // Clean up
+        document.body.removeChild(script);
+      };
+    }
   }, []);
 
   return (
@@ -262,7 +262,7 @@ const OurTeam = () => {
       <BreadCumb imgUrl={ABOUT_BANNER} title="Our Team" />
 
       <section>
-        <div className="container">
+        <div className="container our_team">
           <div className="row">
             <div style={{ position: "relative", height: "1200px" }}>
               <div id="tsparticles"></div>
@@ -360,13 +360,16 @@ const OurTeam = () => {
                 {/* <h4> {profileData.position}</h4> */}
                 <p>
                   <h4> {profileData.position}</h4>
-                  {profileData.content}
+                  <span> {profileData.content}</span>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
+      
     </>
   );
 };

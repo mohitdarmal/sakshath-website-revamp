@@ -134,16 +134,16 @@
     // .col-f-width{
     //   width: 100%;
     // }
-    
+    .mision_container {
+      margin-top: 20px;
+    .mision_para{margin-top: 30px;}
+    }
 }
 
 
 
 
-@media screen and (max-width:480px){
-  // .col-8{
-  //   display: none;
-  // }
+@media screen and (max-width:767px){
 
 .inception_section .circle{
     width: 100px !important;
@@ -151,10 +151,12 @@
         background-color: #32a4d5 !important;
         color: #fff !important;
         z-index: 2 !important;
-        height: none ;
+        height: 180px !important ;
         line-height: 100px !important ;
         font-size: 15px !important;
   }
+
+
 
   .col-mob1{
     p{
@@ -164,7 +166,7 @@
   }
   .col-mob{
     p{
-      width: 315px;
+      // width: 315px;
       margin-left: -120px;
       text-align: left !important;
     }
