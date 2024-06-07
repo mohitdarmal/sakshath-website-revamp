@@ -20,8 +20,8 @@ export const WCRCINT = require("../../Assets/images/wcrcint_logo.png");
 export const OUT_LOOK=require("../../Assets/images/outloo_bussiness.jpg")
 export const SOTI = require("../../Assets/images/soti_partners.png");
 export const JAMF = require("../../Assets/images/Jamf_partners.png");
-export const Microsoft = require("../../Assets/images/Microsoft_img_logo.png");
-export const DB = require("../../Assets/images/D&b_logo.png");
+export const Microsoft = require("../../Assets/images/microsoft_partners.png");
+export const DB = require("../../Assets/images/db_logo.png");
 
 export const SIMPLIFYQA = require("../../Assets/images/SimplifyQA.png");
 

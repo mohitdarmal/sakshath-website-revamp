@@ -363,7 +363,10 @@
   }
 }
  
-
+.about_technologies_logos{
+  border-radius: 20px;
+    border: 2px solid #dbdbdb69;
+}
 
 .about_technologies_logos{
   .swiper-wrapper{
@@ -371,5 +374,8 @@
       align-items: center;
       justify-content: center;
       margin-left: 75px;
+  }
+  img{
+    width: 100px !important;
   }
 }

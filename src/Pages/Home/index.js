@@ -915,9 +915,8 @@ export const Home = () => {
                     <div className="content">
                       <h3>Microsoft</h3>
                       <p>
-                        Streamline operations, enhance security, and boost
-                        productivity with Microsoft's comprehensive software
-                        solutions.
+                        Enhance security and streamline operations with
+                        Microsoft software.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>
@@ -933,13 +932,14 @@ export const Home = () => {
               >
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="partners_box horizontal-shake">
-                    <div className="icon">
+                    <div className="icon" style={{ mixBlendMode: "darken" }}>
                       <img src={DB} alt="" />
                     </div>
                     <div className="content">
                       <h3>D & B</h3>
                       <p>
-                      Unlock the power of data-driven decisions with Dun & Bradstreet.
+                        Unlock the power of data-driven decisions with Dun &
+                        Bradstreet.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>
