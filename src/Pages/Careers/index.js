@@ -989,32 +989,46 @@ const Career = () => {
         </div>
       </section>
 
-      <section className="find_job">
+      <section className="find_job_section">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 ">
+            <div className="col-md-7 ">
               <div className="dont_see_role_right_box">
                 {/* <h3>Don't See Your Role  Here ?</h3> */}
                 <Heading heading="Don't See Your Role  Here ?" />
                 <p>
                   We're always on the lookout for new talent, so send us your CV
-                  abd if you seem like the right fit , we'll get back to you
+                  abd <br/> if you seem like the right fit , we'll get back to you
                   ASAP.{" "}
                 </p>
 
                 <SlideAnimationButton btnName="Contact us" url="/contact-us" />
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="dont_see_role_left_para">
-                {/* <img src={FIND_YOUR_ROLE} alt="" width="100%" /> */}
+            <div className="col-md-5">
+              <div className="dont_see_role_left_para  card">
+              <div class="card-inner">
+      <div class="card-front">
+        <p>?</p>
+      </div>
+      <div class="card-back">
+        <p>You are next</p>
+      </div>
+    </div>
 
-                <p>?</p>
+                {/* <p>?</p> */}
               </div>
             </div>
+
+
+          
           </div>
         </div>
       </section>
+
+      <div className="bottom_sec mt-4">
+
+      </div>
     </>
   );
 };
