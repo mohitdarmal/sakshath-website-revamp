@@ -1010,6 +1010,7 @@ const Career = () => {
               <div class="card-inner">
       <div class="card-front">
         <p>?</p>
+        {/* <img src={} alt="" /> */}
       </div>
       <div class="card-back">
         <p>You are next</p>

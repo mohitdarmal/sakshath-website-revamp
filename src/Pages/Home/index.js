@@ -937,10 +937,9 @@ export const Home = () => {
                       <img src={DB} alt="" />
                     </div>
                     <div className="content">
-                      <h3>Soti</h3>
+                      <h3>D & B</h3>
                       <p>
-                        Empower your enterprise with SOTI’s innovative solutions
-                        and transform your digital landscape.
+                      Unlock the power of data-driven decisions with Dun & Bradstreet.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>
