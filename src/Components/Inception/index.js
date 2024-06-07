@@ -172,11 +172,7 @@ const Inception = () => {
             <Fade direction="up" triggerOnce>
               <h4>ROAD AHEAD</h4>
               <p>
-              Sakshath Technologies®has an ever-evolving spirit within the
-                organization, led by committed professionals. Sakshath
-                Technologies&#174; continually reviews its service offering,
-                always being at the cutting edge of technology-based business
-                solutions in a dynamic market.
+              Sakshath Technologies® has an ever-evolving spirit within the organization, led by committed professionals. Sakshath Technologies® continually reviews its service offering, always being at the cutting edge of technology-based business solutions in a dynamic market. Recently, we have expanded into the ANZ market with our AVP mobility enterprise and application readiness services, further enhancing our reach and capabilities.
               </p>
               </Fade>
             </div>

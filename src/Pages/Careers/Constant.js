@@ -11,3 +11,5 @@ export const NEW_CHALLENGES = require("../../Assets/images/new_challenges.png");
 //@@@@@  career_footprint @@@@@@@@@@
 export const bangalore_img1 = require("../../Assets/images/career_footprint_bangalore_image.webp");
 export const bangalore_map = require("../../Assets/images/career_footprint_map.webp")
+
+export const FIND_YOUR_ROLE=require("../../Assets/images/find_your_role_img.jpg")

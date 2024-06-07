@@ -511,7 +511,8 @@ h4{
   }
 }
 .industry_erp {
-  padding-bottom: 40px;
+  padding-bottom: 40px !important;
+  padding-top: 20px;
 }
 .heading_title {
       font-size: 30px;
@@ -531,6 +532,18 @@ margin-bottom: 40px;
 }
 .sap_content_box {
    margin-left: 0px; 
+}
+.epicor_left_img{display: none ;}
+.epicor_right_img img {
+  width: 350px !important;
+  height: 350px !important;
+}
+.syspro_section{
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.migration_img{
+  display: none !important;
 }
 }
 
