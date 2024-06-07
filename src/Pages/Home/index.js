@@ -960,10 +960,9 @@ export const Home = () => {
                       <img src={SIMPLIFYQA} alt="" />
                     </div>
                     <div className="content">
-                      <h3>Jamf</h3>
+                      <h3>SimplifyQA</h3>
                       <p>
-                        Ensure seamless integration and real-time management for
-                        all your Apple devices.
+                      Make better business decisions with our data.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>
