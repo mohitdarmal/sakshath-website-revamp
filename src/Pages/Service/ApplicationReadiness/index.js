@@ -134,7 +134,7 @@ const ApplicationReadiness = () => {
               </Fade>
             </div>
             <div className="col-md-6">
-              <Fade direction="down" triggerOnce delay={300}>
+              <Fade direction="up" triggerOnce delay={300}>
                 <div className="benefit_readiness_box">
                   <h4>Application Compatibility</h4>
                   <p>
@@ -166,7 +166,7 @@ const ApplicationReadiness = () => {
               </Fade>
             </div>
             <div className="col-md-6">
-              <Fade direction="down" triggerOnce delay={300}>
+              <Fade direction="up" triggerOnce delay={300}>
                 <div className="benefit_readiness_box">
                   <h4> Enhanced Security</h4>
                   <p>
@@ -195,7 +195,7 @@ const ApplicationReadiness = () => {
               </Fade>
             </div>
             <div className="col-md-6">
-              <Fade direction="down" delay={300}>
+              <Fade direction="up"triggerOnce delay={300}>
                 <div className="benefit_readiness_box">
                   <h4> Efficient Application Arrangement</h4>
                   <p>
@@ -226,7 +226,7 @@ const ApplicationReadiness = () => {
               </Fade>
             </div>
             <div className="col-md-6">
-              <Fade direction="down" delay={300}>
+              <Fade direction="up"  triggerOnce delay={300}>
                 <div className="benefit_readiness_box">
                   <h4> Seller Backing and Package Feed Module</h4>
                   <p>
@@ -242,9 +242,27 @@ const ApplicationReadiness = () => {
         </div>
       </section>
 
-      <div className="section" style="paddingTop:80px">
+      <section className="automation_readiness_sec">
+        <div className="container">
+          <div className="row text-center">
+                    <div className="col-md-12">
+                      <Heading heading="Automated, Streamlined Deployment Processes"/>
+                    <p>
+                      
+Experience the power of automated, streamlined deployment processes designed specifically for B2B environments. Our solution addresses the critical need for efficiency and reliability, eliminating the common challenges associated with manual deployments.
+                    </p>
+                    </div>
 
-      </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      {/* <div className="section" style="paddingTop:80px">
+
+      </div> */}
 
 
       
