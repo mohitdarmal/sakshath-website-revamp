@@ -150,7 +150,7 @@ const Career = () => {
         },
       ],
       experince: "6 years+",
-      location: "Bangalore",
+      location: "Bengaluru",
       position: "5",
     },
     {
@@ -252,7 +252,7 @@ const Career = () => {
         },
       ],
       experince: "3-5 Years",
-      location:'Bangalore',
+      location:'Bengaluru',
       position:'4'
     },
     {
@@ -471,7 +471,7 @@ const Career = () => {
             <div className="col-md-3">
               <div className="fullfillment_box box_height">
               <h5>A GREAT COMMUNITY</h5>
-              <p>The Pointwest environment enables collaboration and creative thought. It's a normal office scene to huddle, brainstorm, and strategize.</p>
+              <p>The Sakshath environment enables collaboration and creative thought. It's a normal office scene to huddle, brainstorm, and strategize.</p>
 
               </div>
             </div>
@@ -527,7 +527,7 @@ const Career = () => {
           </div>
           <div className="career_footprint_right-section">
           <Heading heading= "Bengaluru" uppercase="uppercase" />
-          <p>Our Head Office in Bengaluru is the heart of Sakshath Technologies, where our CEO and management team reside. Imagine stepping out into a world teeming with tech startups, bustling cafes, and serene parks. Here, the dynamic energy fuels creativity and collaboration, making every day an exciting adventure in the thriving business hub of Bangalore.
+          <p>Our Head Office in Bengaluru is the heart of Sakshath Technologies, where our CEO and management team reside. Imagine stepping out into a world teeming with tech startups, bustling cafes, and serene parks. Here, the dynamic energy fuels creativity and collaboration, making every day an exciting adventure in the thriving business hub of Bengaluru.
  </p>
             
 
@@ -762,7 +762,6 @@ const Career = () => {
         <SwiperSlide>
           <img src={bangalore_img1} alt="" className="img-fluid" />
         </SwiperSlide>
-        
         </Swiper>
 
         </div>
@@ -890,7 +889,6 @@ const Career = () => {
         <SwiperSlide>
           <img src={bangalore_img1} alt="" className="img-fluid" />
         </SwiperSlide>
-        
         </Swiper>
 
         </div>
