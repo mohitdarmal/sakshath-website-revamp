@@ -83,7 +83,7 @@ const Contactus = () => {
     //   description: "",
     //   comments: "",
     // });
-    // setFalingLineVisible(true);
+    setFalingLineVisible(true);
 
     try {
       const res = await axios
@@ -95,6 +95,7 @@ const Contactus = () => {
           comments: formData.comments,
         })
         .then((data) => {
+          setShow(true);
           console.log(data, "show data");
         });
     } catch (err) {
@@ -102,14 +103,16 @@ const Contactus = () => {
         toast.error("Connection Timeout")
       }
       else if (err.response.data.status == 404) {
-        setFalingLineVisible(false);
+      
         toast.error("Url Not found");
       } else{
         toast.error("Error Found")
       }
       console.log(err.response, 
       
-      );
+      )
+    }finally(err){
+      setFalingLineVisible(false);
     }
     // finally(se){
     //   console.log()
