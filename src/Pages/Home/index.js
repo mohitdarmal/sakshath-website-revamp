@@ -44,7 +44,8 @@ import {
   SOTI,
   JAMF,
   Microsoft,
-  
+  DB,
+  SIMPLIFYQA,
 } from "./Constant";
 
 import { SlCalender } from "react-icons/sl";
@@ -499,7 +500,7 @@ export const Home = () => {
       </section> */}
       {/* @@@@@@@ SECTION - Banner Section end @@@@@@@ */}
 
-      <section className="overflow-hidden">
+      {/* <section className="overflow-hidden">
         <div className="accreditation_sec specilation_feature">
           <div className="container">
             <div className="row ">
@@ -529,11 +530,10 @@ export const Home = () => {
                         <h3>ISO 27001</h3>
                         <p>2013 (Information Security Management System)</p>
 
-                        {/* <button  style={{background:"none", border:'none', outline:'none'}}> */}
 
                         <p className="learn_more">See Certificate </p>
 
-                        {/* </button> */}
+
                       </div>
                     </div>
                   </Fade>
@@ -554,7 +554,7 @@ export const Home = () => {
                       <div className="content">
                         <h3>ISO 9001</h3>
                         <p> 2015 (Quality Management Systems) </p>
-                        {/* &nbsp;  */}
+
 
                         <p
                           className=""
@@ -597,74 +597,129 @@ export const Home = () => {
                 </Fade>
               </div>
 
-              {/* <div className="row mt-4 pt-2"> */}
-              {/* <div className="col-md-4 d-flex ">
-                <Link>
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={OUT_LOOK} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>Outlook Business</h3>
-                        <p>
-                          Sakshath Technologies® for winning Company of the Year
-                          - IT Services & IT Consulting in IT Industry at
-                          Outlook Business Spotlight- Business Excellence Awards
-                          2023.
-                        </p>
-                   
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
-
-              <div className="col-md-4 d-flex ">
-                <Link>
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={TIMES_OF_INDIA} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>Times 40 Under 40</h3>
-                        <p>
-                          Mr Shravan Kumar was awarded the prestigious "40 under
-                          40" award by Bennett Coleman & Co. Ltd. - The Times of
-                          India.
-                        </p>
-                        
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div>
-
-              <div className="col-md-4 d-flex ">
-                <Link>
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={WCRCINT} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>WCRCINT</h3>
-                        <p>
-                          World’s Leading brands and leaders at the prestigious
-                          House of Lords ceremony at the Palace of Westminster,
-                          London.
-                        </p>
-                    
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-              </div> */}
             </div>
           </div>
         </div>
-        {/* </div> */}
+      </section> */}
+
+      <section className="overflow-hidden">
+        <div className="accreditation_sec specilation_feature">
+          <div className="container-fluid">
+            <div className="row ">
+              <div className="text-center">
+                <Fade direction="up" delay={20} triggerOnce>
+                  <Heading
+                    heading="Certifications"
+                    uppercase="text-uppercase"
+                  />
+                </Fade>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-md-3 d-flex ">
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={ISO_27001} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>ISO 27001</h3>
+                        <p>2013 (Information Security Management System)</p>
+
+                        <p className="learn_more">See Certificate </p>
+                      </div>
+                    </div>
+                  </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-3 d-flex ">
+                <Link
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
+                  <Fade direction="up" delay={400} triggerOnce>
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={ISO_9001} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3>ISO 9001</h3>
+                        <p> 2015 (Quality Management Systems) </p>
+
+                        <p
+                          className=""
+                          style={{
+                            paddingTop: "15px",
+                            color: "#32A4D5",
+                            fontWeight: "bold",
+                            fontFamily: "rajdhani",
+                          }}
+                        >
+                          See Certificate
+                        </p>
+                      </div>
+                    </div>
+                  </Fade>
+                </Link>
+              </div>
+
+              <div className="col-md-3">
+                <Fade direction="up" delay={10} triggerOnce>
+                  <Link
+                    onClick={() => {
+                      setShowModal(true);
+                    }}
+                  >
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={GREAT_PLACE_WORK} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3 className="text">Great Place to Work</h3>
+                        <p>
+                          Sakshath was recognised as a Great Place to Work again
+                          in 2024!
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
+                    </div>
+                  </Link>
+                </Fade>
+              </div>
+              <div className="col-md-3">
+                <Fade direction="up" delay={10} triggerOnce>
+                  <Link
+                    onClick={() => {
+                      setShowModal(true);
+                    }}
+                  >
+                    <div className="d-flex horizontal-shake">
+                      <div className="icon">
+                        <img src={SOTI} alt="" />
+                      </div>
+                      <div className="content">
+                        <h3 className="text">SOTI</h3>
+                        <p>
+                          Empower your enterprise with SOTI’s innovative
+                          solutions and transform your digital landscape.
+                        </p>
+                        <p className="learn_more">See Certificate</p>
+                      </div>
+                    </div>
+                  </Link>
+                </Fade>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* service start */}
@@ -709,20 +764,6 @@ export const Home = () => {
                       <img src={P_IMG} alt="" />
                     </div>
                   </div>
-                  {/* <div className="col-md-4 text-center">
-                  <div className="service_home_box1 ">
-                    <h4>Analytics</h4>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Distinctio sunt, illo sequi labore corrupti minus saepe
-                      optio quod non quibusdam. Lorem ipsum dolor sit, amet
-                      consectetur adipisicing elit. Distinctio sunt, illo sequi
-                      labore corrupti minus saepe optio quod non quibusdam.
-                    </p>
-
-                    <img src={P_IMG} alt="" />
-                  </div>
-                </div> */}
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -874,9 +915,8 @@ export const Home = () => {
                     <div className="content">
                       <h3>Microsoft</h3>
                       <p>
-                        Streamline operations, enhance security, and boost
-                        productivity with Microsoft's comprehensive software
-                        solutions.
+                        Enhance security and streamline operations with
+                        Microsoft software.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>
@@ -892,14 +932,37 @@ export const Home = () => {
               >
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="partners_box horizontal-shake">
-                    <div className="icon">
-                      <img src={SOTI} alt="" />
+                    <div className="icon" style={{ mixBlendMode: "darken" }}>
+                      <img src={DB} alt="" />
                     </div>
                     <div className="content">
-                      <h3>Soti</h3>
+                      <h3>D & B</h3>
                       <p>
-                        Empower your enterprise with SOTI’s innovative solutions
-                        and transform your digital landscape.
+                        Unlock the power of data-driven decisions with Dun &
+                        Bradstreet.
+                      </p>
+                      <p className="learn_more">See Certificate</p>
+                    </div>
+                  </div>
+                </Fade>
+              </Link>
+            </div>
+
+            <div className="col-md-4 d-flex">
+              <Link
+                onClick={() => {
+                  setShowModal(true);
+                }}
+              >
+                <Fade direction="up" delay={400} triggerOnce>
+                  <div className="partners_box horizontal-shake">
+                    <div className="icon">
+                      <img src={SIMPLIFYQA} alt="" />
+                    </div>
+                    <div className="content">
+                      <h3>SimplifyQA</h3>
+                      <p>
+                      Make better business decisions with our data.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>
@@ -968,7 +1031,7 @@ export const Home = () => {
                 <SwiperSlide>
                   
                   <img src={ISO_27001} />
-                </SwiperSlide>
+                </SwiperSlide>`
                 <SwiperSlide>
                   
                   <img src={GREAT_PLACE_WORK} />
@@ -1162,15 +1225,16 @@ export const Home = () => {
     </div> */}
                 </div>
                 <p>
-                  Our story begins in 2012 with a small partnership firm called
-                  Saaksh8 Consulting Services, founded with minimal capital but
-                  grand ambitions. We initially focused on IT recruitment
-                  services, but our vision soon expanded, leading us to explore
-                  ERP offshore development. This pivotal shift marked the
-                  transformation into Sakshath Technologies®. Officially
-                  established in 2015, our journey, though not quite a
-                  rags-to-riches tale, is a testament to relentless effort,
-                  dedication, and unwavering support from family and friends.
+                  Our story begins in 2012 with a small partnership firm called{" "}
+                  <strong>Saaksh8 Consulting Services</strong> , founded with
+                  minimal capital but grand ambitions. We initially focused on
+                  IT recruitment services, but our vision soon expanded, leading
+                  us to explore <strong>ERP</strong> offshore development. This
+                  pivotal shift marked the transformation into Sakshath
+                  Technologies®. Officially <strong>established in 2015</strong>
+                  , our journey, though not quite a rags-to-riches tale, is a
+                  testament to relentless effort, dedication, and unwavering
+                  support from family and friends.
                 </p>
 
                 {/* <br/>

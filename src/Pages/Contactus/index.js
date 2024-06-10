@@ -71,8 +71,7 @@ const Contactus = () => {
     // setIsLoading(true);
     // console.log(e.target.value, "amar");
     try {
-      const res = await axios
-        .post("http://172.20.12.189:8086/confApp/api/v1/contacts", {
+      const res = await axios.post("http://172.20.12.189:8086/confApp/api/v1/contacts", {
           body: {
             fullName: formData.fullName,
             emailId: formData.emailId,

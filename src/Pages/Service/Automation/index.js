@@ -1140,17 +1140,8 @@ const Automation = () => {
               <SwiperSlide>
                 <img src={FLOW_CENTRIC_RPA} />
               </SwiperSlide>
-              {/* <SwiperSlide>
-              <img src={POWER_AUTOMATE_RPA} width="150px" />
-            </SwiperSlide> */}
-
-              {/* <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide> */}
-              {/* <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-            <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>
-            <SwiperSlide><img src={CLIENT_LOGO5} /></SwiperSlide>
-            <SwiperSlide><img src={CLIENT_LOGO2} /></SwiperSlide>
-            <SwiperSlide><img src={CLIENT_LOGO3} /></SwiperSlide>
-            <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide> */}
+             
+      
             </Swiper>
           </div>
         </section>

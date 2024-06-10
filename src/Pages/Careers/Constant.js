@@ -21,3 +21,5 @@ export const bangalore_img1 = require("../../Assets/images/career_footprint_bang
 export const bangalore_map = require("../../Assets/images/career_footprint_map.webp")
 export const mumbai_map = require("../../Assets/images/footprint_map_mumbai.png")
 export const gurugram_map = require("../../Assets/images/footprint_map_gurugram.png")
+
+export const FIND_YOUR_ROLE=require("../../Assets/images/find_your_role_img.jpg")

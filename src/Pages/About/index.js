@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 // import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import BreadCumb from "../../Components/Breadcumb/index";
 import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
-import {BAN_ABT_IMG  } from "../../Components/Breadcumb/Constant";
+import { BAN_ABT_IMG } from "../../Components/Breadcumb/Constant";
 import {
   ABOUT_BANK,
   ABOUT_MISSION,
@@ -20,7 +20,7 @@ import Heading from "../../Components/Utils/Heading";
 import SubTitle from "../../Components/Utils/Title_head";
 import ClientLogo from "../../Components/ClientLogo";
 import { Fade } from "react-awesome-reveal";
-import { WHO_WE_ARE_IMG } from "../Home/Constant";
+import { CLIQ_LOGO, GREAT_PLACE_WORK, ISO_27001, ISO_9001, Microsoft, TALEND, WHO_WE_ARE_IMG } from "../Home/Constant";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { BsEnvelope, BsLinkedin, BsTelephoneInbound } from "react-icons/bs";
@@ -31,6 +31,9 @@ import { Link } from "react-router-dom";
 import Contact from "../../Components/Contact/Contact";
 import Heading2 from "../../Components/Utils/Heading2";
 import Inception from "../../Components/Inception";
+// import Swiper from "swiper";
+import { SwiperSlide, Swiper } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 const About = () => {
   const CoreValueData = [
     {
@@ -106,46 +109,74 @@ const About = () => {
                 </Fade>
                 <Fade direction="up" triggerOnce>
                   <p>
-                    Our journey started way back in the year 2012. It started as
-                    a partnership firm initially under the name{" "}
-                    <strong> Saaksh8 Consulting Services</strong> with smidgen
-                    capital, later in the years this small consulting firm
-                    providing IT recruitment Services ran into the idea of
-                    having an ERP offshore development. If not quite a tale of
-                    rags to riches, the story of Sakshath Technologies® rise to
-                    stardom certainly came closer. The birth of Sakshath
-                    Technologies® in 2015, wouldn’t be possible without the
-                    utmost faith and trust of family and friends. <br />
+                    Our story begins in 2012 with a small partnership firm
+                    called <strong>Saaksh8 Consulting Services</strong> ,
+                    founded with minimal capital but grand ambitions. We
+                    initially focused on IT recruitment services, but our vision
+                    soon expanded, leading us to explore <strong>ERP</strong>{" "}
+                    offshore development. This pivotal shift marked the
+                    transformation into Sakshath Technologies®. Officially{" "}
+                    <strong>established in 2015</strong>, our journey, though
+                    not quite a rags-to-riches tale, is a testament to
+                    relentless effort, dedication, and unwavering support from
+                    family and friends. <br />
                     <br />
-                    Sakshath Technologies® biggest USP’s are ERP (Epicor, MS
-                    Dynamics, JD Edwards and SYSPRO), QA, BI & Analytics (Power
-                    BI, Qlik and Tableau).
+
+                    Imagine a small team with big dreams, navigating challenges
+                    and seizing opportunities. Our breakthrough came with the
+                    realization that ERP systems like{" "}
+                    <strong>
+                      Epicor, MS Dynamics, JD Edwards, and SYSPRO{" "}
+                    </strong>{" "}
+                    could revolutionize businesses. We{" "}
+                    <strong>
+                      embraced QA and BI & Analytics with tools like Power BI,
+                      Qlik, and Tableau{" "}
+                    </strong>
+                    . Today, we proudly stand as the only{" "}
+                    <strong> company in India </strong> offering tailored{" "}
+                    <strong>SYSPRO services </strong> designed to foster growth
+                    and profitability. Our mission is to help clients see that
+                    choosing the right software is a strategic business
+                    decision.
                     <strong>
                       {" "}
                       Sakshath Technologies® is the only company in India to
                       provide SYSPRO Services that are designed in a way to
                       support growth and improve profitability
                     </strong>
-                    . We are committed to helping customers understand that the
-                    software used in their organization is a business decision
-                    that maximizes their software investment. We are equipped
-                    with software-skilled consultants to identify and enhance
-                    the client’s business processes to increase efficiency and
-                    maximize profits.
+
                     <br />
                     <br />
-                    We go by the saying <strong>“I’m Sakshath”</strong> the
+
+                    We go by the saying <strong>“I’m Sakshath®”</strong> the
                     thought behind the phrase is the presence of all the
-                    employees<strong> ‘HERE’ and ‘NOW’</strong>. Starting as a
-                    self-funded business Sakshath Technologies® company ethos to
-                    date is BY THE PEOPLE, FOR THE PEOPLE. Every employee from
-                    the beginning of the journey made what Sakshath
-                    Technologies® is today, we grew gradually to a family of
-                    200+ employees and now have a domestic presence in 3
-                    metropolitan cities serving clients from all over the world.
-                    Celebrating decade milestones, today we take pride in
-                    onboarding the team of Country’s Best and strongly believe
-                    in Growing Together.
+                    employees ‘HERE’ and ‘NOW’. From the beginning, we operated
+                    as a self-funded venture with the ethos <strong>
+                    "BY THE PEOPLE, FOR
+                    THE PEOPLE."
+                    </strong> . Over the years, we have grown into a family of
+                    over 200+ employees, spread across <strong>
+                    3+ metropolitan cities
+                    </strong> ,
+                    serving clients worldwide.
+                    <br />
+                    <br />
+
+                    Now, picture the excitement as we unveiled our new logo last year in 2023, symbolizing growth and paying tribute to our supporters. This design, <strong>
+                    intertwining the letters "S" and "A (Triangle),
+                    </strong> " honors <strong>
+                    Mr. Steve Carr
+                    </strong>  and  <strong>
+                    Mr. Ashwyn Look-Why
+                    </strong>  of Crawford Software. The logo’s elements—lowercase letters, a hexagon, a cube, and a triangle—reflect our approachable culture, universal harmony, stability, and innovation.
+
+                    <br />
+                    <br />
+
+As our CEO says,  <strong>
+"You take care of our clients, and we will take care of you."
+</strong>  Our culture is like a family, with an open-door policy that encourages transparency and collaboration. We enjoy lunches together, fostering a strong sense of community. And that goes without saying, We have the “Country’s beST” with us in this exciting journey and achieving new milestones together.
                   </p>
                 </Fade>
               </div>
@@ -158,6 +189,65 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      <section className="about_technologies_section ">
+          <div className="about_technologies_main_heading text-center">
+            <Fade direction="up" triggerOnce>
+              <Heading heading="TECHNOLOGIES" />
+              
+            </Fade>
+          </div>
+          <div className="container about_technologies_logos">
+            <Swiper
+              breakpoints={{
+                
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              spaceBetween={10}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <img src={Microsoft} />{" "}
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={TALEND} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={ISO_27001} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={GREAT_PLACE_WORK} />
+              </SwiperSlide>
+             
+              <SwiperSlide>
+                <img src={CLIQ_LOGO} />
+              </SwiperSlide>
+             
+            {/* <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>  */}
+            </Swiper>
+          </div>
+        </section>
 
       {/* <section className="mt-4">
         <div className="container mt-4">
@@ -308,11 +398,14 @@ const About = () => {
               <p className="mision_para">
                 <Fade direction="up" delay={150} triggerOnce>
                   To engage businesses from small to medium enterprises to
-                  transition into ERP solutions that are easy to use, scalable,
-                  enable business insight and ultimately benefit the user
-                  community. We want to be a fair, reliable and professional
-                  partners to our customers by offering useful and effective
-                  products and services that contribute to their success
+                  transition into easy-to-use, scalable ERP solutions, enable
+                  business insight, and ultimately benefit the user community.
+                  We want to be fair, reliable, and professional partners to our
+                  customers by offering useful and effective products and
+                  services contribute to their success. Additionally, we offer
+                  Application Development, Analytics, Automation, Managed
+                  Services, Integration, AVP Mobility Enterprise, and
+                  Application Readiness.
                 </Fade>
               </p>
             </div>

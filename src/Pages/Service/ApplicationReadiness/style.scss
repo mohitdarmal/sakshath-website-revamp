@@ -1,10 +1,74 @@
 @import '../../../Assets/saas/Main.scss';
 
 
-.readiness_box{
-    box-shadow: 0 2px 20px #0000001a;
+.overview_application_readiness_sec{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.overview_application_readiness{
+    img{
+        width: 500px;
+        height: 500px;
+        margin-left: 80px;
+    }
+}
+
+.unlock_application_readiness{
+    margin-top: 70px;
+}
+
+.app_readiness_benefit_sec{
+    padding-top: 80px;
+    padding-bottom:80px;
+}
+
+
+.benefit_readiness_box{
+    border-radius: 10px;
+    box-shadow: 0 2px 20px #00000021;
     padding: 25px;
-    margin-bottom: 15px;
-    border: 2px solid #dbdbdb;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff59;
+
+}
+.app_readiness_benefit_sec{
+    background-color: $ball_blue_color;
+}
+.app_readiness_benefit_heading{
+    h3{
+        color: #fff !important;
+    }
+    p{
+        color: #fff !important;
+    }
+}
+
+.benefit_readiness_box{
+    h4{
+        color: #fff !important;
+        font-family: $rajdhani_font;
+        font-weight: bold;
+    }
+    p{
+        color: #fff !important;
+    }
+}
+
+.automation_readiness_sec{
+
+padding-top: 80px;
+padding-bottom: 80px;
+background-color: #000;
+
+    .col-md-12{
+
+        border: 2px solid #dbdbdb;
+        padding: 30px;
+        border-radius: 10px;
+
+        h3, p{
+            color: #fff;
+        }
+    }
 }

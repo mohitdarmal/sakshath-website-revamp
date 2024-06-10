@@ -21,7 +21,7 @@ import {
   DHL,
 } from "./Constant";
 import BreadCumb from "../../Components/Breadcumb";
-import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "./ApplicationDevelopment/Constant";
+import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG, MOBILE_APP_DEVELOPMENT } from "./ApplicationDevelopment/Constant";
 import OurPrincipals from "../../Components/OurPrincipals";
 import TrustedBy from "../../Components/TrustedBy";
 import Faq from "../../Components/Faq";
@@ -32,6 +32,8 @@ import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import environment from "../../Environment";
+import { Fade } from "react-awesome-reveal";
+import { ANGULAR_LOGO, DEDICATED_DEVELOPER_LOGO, DOTNET_LOGO, REACT_LOGO } from "../TalentSolution/Constant";
 
 const Service = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -419,6 +421,66 @@ theme="light"
         </div>
       </section> */}
       {/* FAQ ENDS */}
+
+
+      <section className="technologies_section ">
+          <div className="technologies_main_heading text-center">
+            <Fade direction="up" triggerOnce>
+              <Heading heading="TECHNOLOGIES" />
+              
+            </Fade>
+          </div>
+          <div className="container about_technologies_logos">
+            <Swiper
+              breakpoints={{
+                
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              spaceBetween={10}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <img src={REACT_LOGO} />{" "}
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={ANGULAR_LOGO} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={MOBILE_APP_DEVELOPMENT} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={DEDICATED_DEVELOPER_LOGO} />
+              </SwiperSlide>
+             
+              <SwiperSlide>
+                <img src={DOTNET_LOGO} />
+              </SwiperSlide>
+             
+            {/* <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>  */}
+            </Swiper>
+          </div>
+        </section>
     </>
   );
 };

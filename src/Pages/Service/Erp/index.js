@@ -731,7 +731,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="dynamic_img">
-                <img src={Who_we_r} alt="" width="550px" className="img-fluid" />
+                <img src={Who_we_r} alt=""  className="img-fluid" />
               </div>
             </div>
           </div>
