@@ -5,9 +5,12 @@ import {
   RPA_BOT,
   STAFFING,
   STAFFING_ASSESSMENT,
+  STAFFING_AUTOMATIVE,
   STAFFING_BENIFIT,
   STAFFING_DATABASE,
   STAFFING_FINTECH,
+  STAFFING_IT,
+  STAFFING_TELECOM,
 } from "./Constatnt";
 import Breadcumb from "../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../Service/ApplicationDevelopment/Constant";
@@ -101,7 +104,7 @@ const Staffing = () => {
             <div className="col-md-3">
               <Fade direction="up" triggerOnce>
                 <div className="staffing_industry_offer_box ">
-                  <img src={RPA_BOT} alt="" />
+                  <img src={STAFFING_IT} alt="" />
                   <h5>IT & ITES</h5>
                 </div>
               </Fade>
@@ -109,7 +112,7 @@ const Staffing = () => {
             <div className="col-md-3">
               <Fade direction="up" triggerOnce>
                 <div className="staffing_industry_offer_box ">
-                  <img src={RPA_BOT} alt="" />
+                  <img src={STAFFING_TELECOM} alt="" />
                   <h5>Telecom</h5>
                 </div>
               </Fade>
@@ -117,7 +120,7 @@ const Staffing = () => {
             <div className="col-md-3">
               <Fade direction="up" triggerOnce>
                 <div className="staffing_industry_offer_box ">
-                  <img src={RPA_BOT} alt="" />
+                  <img src={STAFFING_AUTOMATIVE} alt="" />
                   <h5>Automotive</h5>
                 </div>
               </Fade>
