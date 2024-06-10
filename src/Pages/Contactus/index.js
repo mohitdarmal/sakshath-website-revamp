@@ -20,7 +20,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Fade } from "react-awesome-reveal";
 import Loader from "../../Components/Loader";
 
-
 import {
   HEADQUATERS_ICON,
   REGISTERED_ICON,
@@ -35,7 +34,8 @@ import { FaPaperPlane } from "react-icons/fa";
 import Heading from "../../Components/Utils/Heading";
 import { Helmet } from "react-helmet";
 import axios from "axios";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contactus = () => {
   const [key, setKey] = useState("home");
 
@@ -83,11 +83,11 @@ const Contactus = () => {
     //   description: "",
     //   comments: "",
     // });
-    setFalingLineVisible(true);
+    // setFalingLineVisible(true);
 
     try {
       const res = await axios
-        .post("http://172.20.12.189:8086/confApp/api/v1/contacts", {
+        .post("http://172.20.12.189:8086/confApp/api/v1/contactss", {
           fullName: formData.fullName,
           emailId: formData.emailId,
           description: formData.description,
@@ -95,10 +95,19 @@ const Contactus = () => {
           comments: formData.comments,
         })
         .then((data) => {
-          console.log(data);
+          console.log(data, "show data");
         });
     } catch (err) {
-      console.log(err, "err");
+      if (err.response.data.status == 404) {
+        setFalingLineVisible(false);
+        toast.error("Url Not found");
+      }
+      console.log(
+        err instanceof TypeError,
+        "err",
+        err instanceof SyntaxError,
+        typeof err.response.data.status
+      );
     }
     // finally(se){
     //   console.log()
@@ -132,6 +141,19 @@ const Contactus = () => {
 
   return (
     <>
+      <ToastContainer
+        style={{ width: "350px" }}
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <Helmet>
         <title>Contact</title>
         <meta name="description" content="About SEO" />
