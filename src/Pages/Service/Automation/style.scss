@@ -949,3 +949,34 @@
 .rpa_offer_heading h3{
   color: #fff;
 }
+
+
+@media screen and (max-width:480px){
+ 
+
+  .cloud_bg_img{
+    img{
+      width: 100%;
+    }
+  }
+
+  .rpa_graph{
+    img{
+      width: 100% !important;
+    }
+  }
+
+  .devops_img{
+    img{
+      width: 100%;
+    }
+  }
+
+  .devops_layer_section{
+    display: none;
+  }
+
+  .why_sakshath_new_section{
+    display: none;
+  }
+}

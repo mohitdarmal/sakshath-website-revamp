@@ -193,7 +193,7 @@ As our CEO says,  <strong>
       <section className="about_technologies_section ">
           <div className="about_technologies_main_heading text-center">
             <Fade direction="up" triggerOnce>
-              <Heading heading="TECHNOLOGIES" />
+              <Heading heading="PARTNERS" />
               
             </Fade>
           </div>
@@ -227,15 +227,14 @@ As our CEO says,  <strong>
               modules={[Autoplay]}
               className="mySwiper"
             >
+            <SwiperSlide>
+                <img src={ISO_9001} />
+              </SwiperSlide>
               <SwiperSlide>
                 <img src={Microsoft} />{" "}
               </SwiperSlide>
-              <SwiperSlide>
-                <img src={TALEND} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={ISO_27001} />
-              </SwiperSlide>
+              
+              
               <SwiperSlide>
                 <img src={GREAT_PLACE_WORK} />
               </SwiperSlide>
@@ -243,8 +242,12 @@ As our CEO says,  <strong>
               <SwiperSlide>
                 <img src={CLIQ_LOGO} />
               </SwiperSlide>
+
+              <SwiperSlide>
+                <img src={ISO_27001} />
+              </SwiperSlide>
              
-            {/* <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>  */}
+
             </Swiper>
           </div>
         </section>

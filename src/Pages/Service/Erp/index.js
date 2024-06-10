@@ -146,9 +146,13 @@ const Erp = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
-              <div className="epicor_overview_heading">
+              <div className="epicor_overview_heading">  
+
+           
+ 
+
                 <Fade direction="up" triggerOnce>
-                  <Heading heading="Overview" uppercase="" />
+                  <Heading heading="   Unlock Your Business Potential with SYSPRO ERP Solutions" uppercase="" />
                 </Fade>
               </div>
 
@@ -197,7 +201,7 @@ const Erp = () => {
               <div className="overview_left_content">
                 <div className="epicor_overview_heading">
                   <Fade direction="up" triggerOnce>
-                    <Heading heading="Overview" />
+                    <Heading heading="Your Path to Enhanced Efficiency and Growth" />
                   </Fade>
                 </div>
                 <Fade direction="up" triggerOnce>
@@ -240,7 +244,7 @@ const Erp = () => {
             <div className="col-md-6 align-items-center">
               <div className="epicor_overview_heading">
                 <Fade direction="up" triggerOnce>
-                  <Heading heading="SYSPRO" uppercase="" />
+                  <Heading heading="Your Path to Enhanced Efficiency and Growth" uppercase="" />
                 </Fade>
               </div>
               <Fade direction="up" triggerOnce>
@@ -412,53 +416,11 @@ const Erp = () => {
                 </div>
               </Col>
 
-              <Col>
-                <div className="industry_box">
-                  <div className="industry_icon">
-                    <img src={ERP_AUTOMATION} alt="" />
-                  </div>
-                  <h4>Automation</h4>
-                </div>
-              </Col>
+             
             </div>
           </Fade>
 
-          <Fade direction="up" triggerOnce>
-            <div className="row">
-              <Col>
-                <div className="industry_box">
-                  <div className="industry_icon">
-                    <img src={ERP_MANUFATURE} alt="" />
-                  </div>
-                  <h4>Aerospace & Defence</h4>
-                </div>
-              </Col>
-              <Col>
-                <div className="industry_box">
-                  <div className="industry_icon">
-                    <img src={ERP_RUBBER} alt="" />
-                  </div>
-                  <h4> Rubber & Plastics</h4>
-                </div>
-              </Col>
-              <Col>
-                <div className="industry_box">
-                  <div className="industry_icon">
-                    <img src={ERP_ELECTONIC} alt="" />
-                  </div>
-                  <h4>Electronics & High Tech</h4>
-                </div>
-              </Col>
-              <Col>
-                <div className="industry_box">
-                  <div className="industry_icon">
-                    <img src={ERP_METAL} alt="" />
-                  </div>
-                  <h4>Fabricated Metals</h4>
-                </div>
-              </Col>
-            </div>
-          </Fade>
+         
           <Fade direction="up" triggerOnce>
             <div className="row">
               <Col>
@@ -472,19 +434,12 @@ const Erp = () => {
               <Col>
                 <div className="industry_box">
                   <div className="industry_icon">
-                    <img src={ERP_MENTAL_HEALTH} alt="" />
+                    <img src={ERP_AUTOMATION} alt="" />
                   </div>
-                  <h4>Mental Service Centers</h4>
+                  <h4>Automation</h4>
                 </div>
               </Col>
-              <Col>
-                <div className="industry_box">
-                  <div className="industry_icon">
-                    <img src={ERP_CONSTRUCTION} alt="" />
-                  </div>
-                  <h4>Construction & Engineering </h4>
-                </div>
-              </Col>
+             
               <Col>
                 <div className="industry_box">
                   <div className="industry_icon">
