@@ -1386,3 +1386,20 @@ transition: 1s;
 }
 
 
+.our-services-heading{
+  h5{
+
+    text-transform: uppercase;
+    color:#818181;
+    font-family: $roboto_font;
+    font-weight: 600;
+  }
+  h3{
+    text-transform: uppercase;
+  }
+}
+.swipper_service{
+  .service_home_box1{
+    min-height: 300px !important;
+  }
+}

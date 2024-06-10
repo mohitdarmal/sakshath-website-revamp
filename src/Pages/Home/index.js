@@ -725,6 +725,14 @@ export const Home = () => {
       {/* service start */}
       <section>
         <div className="container">
+        <div className="row text-center mt-4">
+          <div className="our-services-heading">
+          <h5>
+Multiple Process in Single Platform 
+ </h5>
+ <Heading heading="Digitise your business by managing multiple process in a single platform." />
+          </div>
+        </div>
           <div className="row">
             <Swiper
               spaceBetween={50}
@@ -750,22 +758,24 @@ export const Home = () => {
                     </div>
                   </div>
                   <div className="col-md-4 text-center">
-                    <div className="service_home_box1 ">
-                      <h4>Analytics</h4>
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Distinctio sunt, illo sequi labore corrupti minus
-                        saepe optio quod non quibusdam. Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. Distinctio sunt, illo
-                        sequi labore corrupti minus saepe optio quod non
-                        quibusdam.
-                      </p>
+                                    <div className="service_home_box1 ">
+                      <h3>Unlocking Productivity, One Automation at a Time</h3>
+                      <p>Revolutionizing Your Workflow with Automation Services</p>
 
                       <img src={P_IMG} alt="" />
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
+
+                  <div className="col-md-4 text-center">
+                                    <div className="service_home_box1 ">
+                      <h3>Profesional IT Solution</h3>
+                      <p>Transforming Ideas into Intelligent Solutions</p>
+
+                      <img src={P_IMG} alt="" />
+                    </div>
+                  </div>
+                  </div>
+                          </SwiperSlide>
               <SwiperSlide>
                 <div className="swipper_service d-flex">
                   <div className="col-md-4 text-center">
