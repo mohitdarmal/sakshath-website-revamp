@@ -30,7 +30,7 @@ import ServiceContactForm from "../../../Components/ServiceContactForm";
 import { Fade } from "react-awesome-reveal";
 
 // import servicePopup from "../../../Components/ServicePopup";
-import ServicePopup from '../../../Components/ServicePopup'
+import ServicePopup from "../../../Components/ServicePopup";
 import MarqueeTools from "../../../Components/MarqueeTools";
 import { Helmet } from "react-helmet";
 import PopUp from "../../../Components/PopUp";
@@ -38,7 +38,7 @@ import axios from "axios";
 
 const ApplicationDevelopment = () => {
   const [showModal, setShowModal] = useState(false);
-  const [data, setData] = useState({})
+  const [data, setData] = useState({});
 
   const handleCloseModal = () => {
     setShowModal(false);
@@ -46,28 +46,26 @@ const ApplicationDevelopment = () => {
 
   const seoTag = () => {
     axios.get("https://dummyjson.com/posts/user/5").then((data) => {
-    console.log(data);
-     if (data.status === 200) {
-      data.data.posts.map((data) => {
-        if(data.id == 17){
-          setData(data)
-        }
-      })
-      //  setServiceSeoData(data.data.posts[0]);
-       console.log(data);
-     }
-   });
-  }
-console.log(data, "Dataaaa")
+      console.log(data);
+      if (data.status === 200) {
+        data.data.posts.map((data) => {
+          if (data.id == 17) {
+            setData(data);
+          }
+        });
+        //  setServiceSeoData(data.data.posts[0]);
+        console.log(data);
+      }
+    });
+  };
+  console.log(data, "Dataaaa");
   useEffect(() => {
-    seoTag()
-  }, [])
+    seoTag();
+  }, []);
 
   return (
     <>
- 
-
-     <Helmet>
+      <Helmet>
         <title>Application Development</title>
         <meta name="description" content="About SEO" />
       </Helmet>
@@ -75,7 +73,7 @@ console.log(data, "Dataaaa")
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         // title="Application Development"
       />
-{/* 
+      {/* 
 <ServicePopup  popUpHeading={
   "Let’s Create Big Stories Together"
   
@@ -83,13 +81,12 @@ console.log(data, "Dataaaa")
 popUpPara={"We don’t just build apps, we create brand.Choosing us will be your best decision."}
 /> */}
 
-<PopUp  popUpHeading={
-  "Let’s Create Big Stories Together"
-  
-}
-popUpPara={"We don’t just build apps, we create brand.Choosing us will be your best decision."}
-/>
-
+      <PopUp
+        popUpHeading={"Let’s Create Big Stories Together"}
+        popUpPara={
+          "We don’t just build apps, we create brand.Choosing us will be your best decision."
+        }
+      />
 
       {/* @@@@@ SECTION- App Development Start @@@@@@ */}
       <section className="why_choose_app_dev_sec">
@@ -98,10 +95,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
           <div className="row">
             <div className="col-md-8 offset-md-2 text-center app_dev_heading">
               <Fade direction="up" triggerOnce>
-                <Heading
-                  heading="Why Sakshath Technologies?"
-                  uppercase=""
-                />
+                <Heading heading="Why Sakshath Technologies?" uppercase="" />
               </Fade>
             </div>
           </div>
@@ -256,12 +250,12 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
                     <div className="our_services_box_img">
                       <img src={MOBILE_APP_DEVELOPMENT} />
                     </div>
-                    <h3>Mobile App Development</h3>
+                    <h3> Mobile Application</h3>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer{" "}
+                      Elevate your business with cutting-edge mobile app
+                      development platforms. Our expert services encompass a
+                      range of platforms, ensuring your B2B mobile applications
+                      are efficient, scalable, and secure.
                     </p>
                   </div>
                 </div>
@@ -273,12 +267,12 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
                     <div className="our_services_box_img">
                       <img src={MOBILE_APP_DEVELOPMENT} />
                     </div>
-                    <h3>Web Application Development</h3>
+                    <h3> Application Development</h3>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer{" "}
+                      Boost your business with state-of-the-art web application
+                      development platforms. Our expert services cover a range
+                      of technologies, ensuring your B2B web applications are
+                      efficient, scalable, and secure.
                     </p>
                   </div>
                 </div>
@@ -292,10 +286,10 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
                     </div>
                     <h3>Dedicated App Development</h3>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer{" "}
+                      Elevate your brand's digital presence with our dedicated
+                      app development solutions. With a focus on innovation and
+                      user engagement, we create apps that leave a lasting
+                      impression.
                     </p>
                   </div>
                 </div>
@@ -309,10 +303,10 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
                     </div>
                     <h3>Cloud App Development</h3>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer{" "}
+                      Discover our comprehensive cloud app development services
+                      designed to drive your business forward. From custom
+                      solutions to seamless integrations, leverage the power of
+                      the cloud for enhanced agility and scalability.
                     </p>
                   </div>
                 </div>
@@ -326,10 +320,10 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
                     </div>
                     <h3>Re-Engineering Migration & Maintainace</h3>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer{" "}
+                      Elevate your business infrastructure with our
+                      re-engineering, migration, and maintenance solutions.
+                      Seamlessly transition legacy systems to modern platforms,
+                      ensuring enhanced performance, security, and scalability.
                     </p>
                   </div>
                 </div>
@@ -341,12 +335,12 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
                     <div className="our_services_box_img">
                       <img src={MOBILE_APP_DEVELOPMENT} />
                     </div>
-                    <h3>Application Testing & QA</h3>
+                    <h3> Financial Applications </h3>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer{" "}
+                      Elevate your financial services with our innovative
+                      application solutions. From streamlined transactions to
+                      robust security features, our tailored applications are
+                      designed to meet the unique needs of the financial sector.
                     </p>
                   </div>
                 </div>
@@ -359,7 +353,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
       <TrustedBy />
 
       {/* @@@@@ SECTION-  Marquee Tools start @@@@@@ */}
-      <MarqueeTools/>
+      <MarqueeTools />
       {/* @@@@@ SECTION- Marquee Tools @@@@@@ */}
 
       {/* @@@@@ SECTION- Brouchure Start @@@@@@ */}

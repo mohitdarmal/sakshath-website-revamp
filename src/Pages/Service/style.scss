@@ -189,7 +189,7 @@
 
       .heading_content {
         //margin-top: 25px;
-        text-decoration: underline;
+        // text-decoration: underline;
       }
     }
 
@@ -409,4 +409,12 @@
     background: $ball_blue_color;
     border: none;
 
+}
+
+.service_technologies_logos{
+  img{
+    width: 120px;
+    // height: 100px ;
+    // line-height: 150px;
+  }
 }
