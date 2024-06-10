@@ -8,6 +8,7 @@ import {
   Form,
   FloatingLabel,
   Button,
+  Modal,
 } from "react-bootstrap";
 import "./style.scss";
 import { GrLocation } from "react-icons/gr";
@@ -17,6 +18,7 @@ import { BsTelephoneInbound } from "react-icons/bs";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Fade } from "react-awesome-reveal";
+import { FallingLines } from "react-loader-spinner";
 
 import {
   HEADQUATERS_ICON,
@@ -35,7 +37,19 @@ import axios from "axios";
 
 const Contactus = () => {
   const [key, setKey] = useState("home");
-  // const [isLoading, setIsLoading] = useState(false);
+
+  const [show, setShow] = useState(false);
+  const [falingLineVisible, setFalingLineVisible] = useState(false);
+  const [loaderShow, setLoaderShow] = useState("none");
+
+  useEffect(() => {
+    if (falingLineVisible) {
+      setLoaderShow("block");
+    } else {
+      setLoaderShow("none");
+    }
+  }, [falingLineVisible]);
+
   const [formData, setFormData] = useState({
     fullName: "",
     emailId: "",
@@ -68,16 +82,16 @@ const Contactus = () => {
     //   description: "",
     //   comments: "",
     // });
+    // setFalingLineVisible(true);
 
     try {
       const res = await axios
         .post("http://172.20.12.189:8086/confApp/api/v1/contacts", {
-           
-            fullName: formData.fullName,
-            emailId: formData.emailId,
-            description: formData.description,
-            contactNumber: formData.contactNumber,
-            comments: formData.comments,
+          fullName: formData.fullName,
+          emailId: formData.emailId,
+          description: formData.description,
+          contactNumber: formData.contactNumber,
+          comments: formData.comments,
         })
         .then((data) => {
           console.log(data);
@@ -88,11 +102,7 @@ const Contactus = () => {
     // finally(se){
     //   console.log()
     // }
-    
-
-
   };
-
 
   //   const handleSubmit = async (e)  => {
   //     e.preventDefault();
@@ -115,6 +125,10 @@ const Contactus = () => {
   // }
   // };
   console.log(formData);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
       <Helmet>
@@ -618,6 +632,50 @@ Gurugram, Haryana 122016
           </div>
         </div>
       </section> */}
+
+      {/* submit form loader */}
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          I will not close if you click outside me. Do not even try to press
+          escape key.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary">Understood</Button>
+        </Modal.Footer>
+      </Modal>
+      {/* <Watch
+          visible={true}
+          height="80"
+          width="80"
+          radius="48"
+          color="#4fa94d"
+          ariaLabel="watch-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+        /> */}
+
+      <div className={`spinner_loader d-${loaderShow}`}>
+        <FallingLines
+          color="#fff"
+          width="100"
+          visible={falingLineVisible}
+          ariaLabel="falling-circles-loading"
+        />
+      </div>
+
+      {/* submit form loader ends */}
     </>
   );
 };
