@@ -238,6 +238,12 @@
 .careers_column_box_1st_row{
   margin-bottom: 20px;
 }
+.fun_n_wellnes_img{
+  img{
+    width: 100%;
+    height: 209px;
+  }
+}
   .fullfillment_box,.fun_n_wellness_box{
     border: 1px solid white;
       padding: 25px 20px;
@@ -262,7 +268,11 @@
   }
   .careers_column_box_3rd_row{
     .box_height{
-      height: 302px;
+      height: 279px;
+    }
+    img{
+      width: 100%;
+    height: 280px;
     }
   }
 
@@ -271,7 +281,7 @@
 .benefits_container {
   padding-top: 80px;
   padding-bottom: 80px;
-  background: #ffffff;
+ background: #f5f5f5;
   margin-top: 40px;
   margin-bottom: -40px;
 }
@@ -331,9 +341,20 @@
   padding-top: 80px;
   // padding-bottom: 80px;
 }
+.career_footprint_gallery{
+  img{
+    width:197px!important;
+    height:197px!important;
+    object-fit:cover;
+  }
+}
+  
+
+
+
 
 .careers_footprint_bangalore_section {
-  display: flex;
+  // display: flex;
   padding: 25px 30px;
 }
 .careers_footprint_tab{
@@ -355,7 +376,14 @@
   padding-left: 80px;
 }
 .career_footprint_gallery{
-  padding: 0px 20px;
+  padding: 40px 20px;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .swiper-button-next:after,.swiper-button-prev:after{
+    background: #24688f38!important;
+  }
 }
   
   
@@ -427,7 +455,7 @@
 //  @@@@@@@@@  testimonials css  starts @@@@@@@@@@@@
 .careers_testimonials {
   padding-top: 80px;
-  padding-bottom: 80px;
+  // padding-bottom: 80px;
 
 .swiper{
   background: aliceblue;
@@ -442,9 +470,12 @@
   margin-right: 50px!important;
 }
  
-}
+
 .swiper-wrapper{
   padding-top: 50px;
+}
+.swiper-button-next:after,.swiper-button-prev:after{
+  background: #24688f38!important;
 }
 .testimonial_box {
   background: white;
@@ -458,9 +489,9 @@
   }
   p{text-align: left;}
 }
-.swiper-button-next:after,.swiper-button-prev:after{
-  background: #24688f38!important;
+
 }
+
 .testimonials_citation_symbol{
   svg{
     font-size: 34px;
@@ -653,6 +684,79 @@
     position: relative;
     margin-right: 0px;
   }
+
+  //  ====== css for career at sakshath new =====================
+  .careers_at_sakshath_section{
+    padding: 28px 0px;
+
+    .careers_at_sakshath_heading_text h6 {
+      
+      text-align: center;
+  }
+  .fullfillment_box, .fun_n_wellness_box {
+    
+    margin-bottom: 20px;
+}
+.mob_screen_design{
+  margin-top: 20px;
+}
+.careers_column_box_3rd_row .box_height {
+   height: auto;
+}
+
+
+  }
+.careers_footprint_section {
+    padding: 40px 0 0!important;
+
+    .careers_footprint_bangalore_section {
+      // display: inline;
+      padding: 0px!important;
+      
+  }
+    .career_footprint_left_section{
+      img{width: 100%;}
+    }
+    .career_footprint_right-section{
+      padding: 0px!important;
+      .heading_title{
+        display: none;
+      }
+      p{
+        padding-top: 35px;
+      }
+    }
+    .career_footprint_gallery{
+      padding: 0px!important;
+      
+      
+    }
+    
+  }
+  .careers_testimonials{
+    padding-top: 40px !important;
+    .swiper-slide {
+      width: 342.2px !important;
+      margin-right: 138px !important;
+  }
+  .testimonial_box{
+    min-height: 478px !important;
+    padding: 40px 30px!important;
+  }
+  .testimonials_citation_symbol svg {
+    font-size: 42px!important;
+    
+}
+
+  
+
+}
+.careers_apply_job_section {
+  padding: 40px 0 40px;
+}
+
+
+
   .benefit_img {
     background: #32a4d5;
     border-radius: 50%;
@@ -698,6 +802,71 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
+  .breadcumb_sec {
+    padding: 80px 0 !important;
+}
+.careers_at_sakshath_section {padding: 40px 0!important;}
+.careers_at_sakshath_heading_text h3, .careers_at_sakshath_heading_text h6 {
+  
+  text-align: center;
+}
+.heading_careers_at_sakshath{
+  .heading_title{
+    padding-bottom: 0px!important;
+  }
+}
+
+.careers_at_sakshath_section{
+  padding: 28px 0px;
+
+  .careers_at_sakshath_heading_text h6 {
+    
+    text-align: center;
+}
+.careers_column_box_1st_row{
+  margin-bottom: 20px;
+}
+  .fullfillment_box,.fun_n_wellness_box{
+    border: 1px solid white;
+      padding: 25px 20px;
+  
+      h5{
+        margin-bottom: 20px;
+        color: white;
+      }
+      p{
+        color: white;
+      }
+      .careers_img_box{
+
+         .img-fluid{
+        max-width: 78%!important;
+      }
+    }
+  }
+  .careers_column_box_3rd_row .box_height {
+    height: auto;
+}
+
+
+}
+.careers_footprint_bangalore_section {
+  padding: 0!important;
+}
+.career_footprint_right-section {
+  padding-left: 0px;
+  padding-top: 30px;
+}
+.career_footprint_right-section{
+  .heading_title{
+    display: none;
+  }
+}
+.career_footprint_gallery {
+   padding: 0px;
+}
+
+
   .benefits_container {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -730,12 +899,23 @@
   }
 
   .benefit_img {
-    background: #32a4d5;
-    border-radius: 50%;
-    line-height: 70px;
-    width: 70px;
-    height: 70px;
+    // background: #32a4d5;
+    // border-radius: 50%;
+    // line-height: 70px;
+    // width: 70px;
+    // height: 70px;
+    .img-fluid{
+      max-width: 120%;
+    }
   }
+  .benefit_img::before {
+    
+    width: 44px!important;
+   
+    margin-top: 46px !important;
+    
+    margin-left: 108px !important;
+}
 
   .cols {
     display: flex;
@@ -770,17 +950,46 @@
   .discovery_section .col-md-4 {
     margin-bottom: 10px;
   }
+
+  .careers_footprint_section {
+    padding-top: 40px!important;
 }
 
-@media screen and (min-width: 768px) {
-  .careers_job_container:nth-child(odd) > div {
-    //margin-right: 40px;
-  }
+  
 
-  .careers_job_container:nth-child(even) > div {
-    // margin-left: 40px;
-  }
+
+
+
 }
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+.careers_at_sakshath_heading_text h6 {
+  text-align: left!important;
+}
+.benefit_icon p {
+  min-height: 48px!important;
+}
+.benefit_img::before{
+  margin-top: 45px!important;
+  
+    margin-left: 122px!important;
+}
+.benefits_container {
+  padding-top: 40px!important;
+}
+.careers_column_box_3rd_row .box_height {
+  height: 200px
+}
+}
+
+
+
+
+
+
+
 
 .find_job_section {
   // background-color: lightblue;

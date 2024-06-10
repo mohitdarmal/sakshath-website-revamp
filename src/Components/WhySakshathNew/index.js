@@ -18,13 +18,11 @@ const WhySaksahthNew = (props) => {
           </div>
 
           {/* <div className="row text-center"> */}
-            {/* <div className="Col why_sak_col"> */}
-              <Row >
-           
-              {props.whyCrm.map((data) => {
-                return (
-               
-                  <>
+          {/* <div className="Col why_sak_col"> */}
+          <Row>
+            {props.whyCrm.map((data) => {
+              return (
+                <>
                   <Col>
                     <div className="why_sakshath_container1 text-center mb-5">
                       <div className="why_sakshath_content1">
@@ -33,16 +31,14 @@ const WhySaksahthNew = (props) => {
                         <p>{data.description}</p>
                       </div>
                     </div>
-                    </Col>
-                  </>
-
-                );
-              })}
+                  </Col>
+                </>
+              );
+            })}
             {/* </div> */}
-         
           </Row>
 
-            {/*             
+          {/*             
             <div className="col-md-2">
               <div className="why_sakshath_container2">
                 <div className="why_sakshath_content2">
@@ -116,7 +112,7 @@ const WhySaksahthNew = (props) => {
                 </div>
               </div>
             </div> */}
-          </div>
+        </div>
         {/* </div> */}
       </section>
     </>

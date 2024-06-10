@@ -11,7 +11,7 @@ import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
 //import BlueHeading from "../../Components/Utils/BlueHeading";
 import SubTitle from "../../Components/Utils/Title_head";
-import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES, bangalore_img1, bangalore_map, FULLFILLMENT_IMG, FULL_WELLNESS_IMG,mumbai_map,gurugram_map,FIND_YOUR_ROLE,} from "./Constant";
+import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES, bangalore_img1, bangalore_map, FULLFILLMENT_IMG, FULL_WELLNESS_IMG,mumbai_map,gurugram_map,FIND_YOUR_ROLE, EXCELLENCE_IMG,bangalore_img2,bangalore_img3,bangalore_img4,bangalore_img5,bangalore_img6,bangalore_img7,mumbai_img1,mumbai_img2,mumbai_img3,mumbai_img4, mumbai_img5,mumbai_img6,mumbai_img7} from "./Constant";
 
 import { BsEnvelope } from "react-icons/bs";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
@@ -296,6 +296,27 @@ const Career = () => {
       experince: "5+ Years",
       location:'Bengaluru',
       position:'4'
+    },
+    {
+      id: 11,
+      title: "Data Engineer",
+      
+      job_img:require("../../Assets/images/Data_engineer (2).png"),
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+      ],
+      experince: "4-6 Years",
+      location:'Bengaluru',
+      position:'1'
     }
 
   ];
@@ -429,22 +450,22 @@ const Career = () => {
 
       </div>
         <div className="careers_at_sakshath_column_box">
-        <div className="container">
+        
           <div className="row careers_column_box_1st_row">
-            <div className="col-md-3">
+            <div className="col-md-3 ipad_full_width">
               <div className="fullfillment_box">
               <h5>FULLFILLMENT</h5>
               <p>When your hard work and ingenuity are rewarded, it feels great. But you know what feels even better? Being part of something big, something meaningful.</p>
 
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 ipad_full_width">
             <div className="careers_img_box">
               <img src={FULLFILLMENT_IMG} alt="" className="img-fluid"/>
             </div>  
             </div>
-            <div className="col-md-3">
-            <div className="fullfillment_box">
+            <div className="col-md-3 ipad_full_width">
+            <div className="fullfillment_box mob_screen_design">
               <h5>NOT-SO-BASIC BASICS</h5>
               <p>A competitive remuneration package: industry-standard salary, health insurance, flexible benefits, learning & development opportunities, and performance-based incentives.</p>
 
@@ -453,14 +474,14 @@ const Career = () => {
           </div>
 
           <div className="row careers_column_box_2nd_row">
-            <div className="col-md-6">
+            <div className="col-md-6 ipad_full_width">
               <div className="fun_n_wellness_box">
               <h5>FUN & WELLNESS</h5>
               <p>We make sure we have enough playtime to get the creative juices going. Summer outings, movie nights, game weeks, sports fests, soirees these events are more than fun; they give us the chance to bond and get to know each other better.</p>
 
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 ipad_full_width">
               <div className="fun_n_wellnes_img">
                 <img src={FULL_WELLNESS_IMG} alt="" className="img-fluid"/>
               </div>
@@ -468,20 +489,20 @@ const Career = () => {
           </div>
 
           <div className="row careers_column_box_3rd_row">
-            <div className="col-md-3">
+            <div className="col-md-3 ipad_full_width">
               <div className="fullfillment_box box_height">
               <h5>A GREAT COMMUNITY</h5>
               <p>The Sakshath environment enables collaboration and creative thought. It's a normal office scene to huddle, brainstorm, and strategize.</p>
 
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 ipad_full_width">
             <div className="careers_img_box">
-              <img src={FULLFILLMENT_IMG} alt="" className="img-fluid"/>
+              <img src={EXCELLENCE_IMG} alt="" className="img-fluid"/>
             </div>  
             </div>
-            <div className="col-md-3">
-            <div className="fullfillment_box">
+            <div className="col-md-3 ipad_full_width">
+            <div className="fullfillment_box mob_screen_design">
               <h5>EXCELLENCE & GROWTH</h5>
               <p>Our Learning & Development team holds Boot Camp training, Brown Bag and Special Interest Learning Sessions, and other coaching programs designed to enhance your skills and help build your career.</p>
 
@@ -492,7 +513,7 @@ const Career = () => {
           
         </div>
 
-      </div>
+      
 
       
 
@@ -516,21 +537,32 @@ const Career = () => {
       justify
     >
     <Tab eventKey="bengaluru" title="Bengaluru">
-        <div className="careers_footprint_bangalore_section">
-          <div className="career_footprint_left_section">
-           <img src={bangalore_map} alt="" />
+    <div className="careers_footprint_bangalore_section">
+    <div className="container">
+    <div className="row">
+    
+       
+        <div className="col-md-6">
+        <div className="career_footprint_left_section">
+           <img src={bangalore_map} alt="" className="img-fluid"/>
           {/* <div className="image_gallery_box">
           <ImageGallery items={images} />
           </div> */}
           
 
           </div>
-          <div className="career_footprint_right-section">
+        </div>
+          <div className="col-md-6">
+          <div className="career_footprint_right-section ">
           <Heading heading= "Bengaluru" uppercase="uppercase" />
           <p>Our Head Office in Bengaluru is the heart of Sakshath Technologies, where our CEO and management team reside. Imagine stepping out into a world teeming with tech startups, bustling cafes, and serene parks. Here, the dynamic energy fuels creativity and collaboration, making every day an exciting adventure in the thriving business hub of Bengaluru.
  </p>
             
 
+          </div>
+          </div>
+          
+          </div>
           </div>
         </div>
         <div className="career_footprint_gallery">
@@ -613,27 +645,30 @@ const Career = () => {
                 clickable: true,
               }}
               navigation={true}
-              modules={[Pagination, Navigation,Autoplay]}
+              modules={[Pagination, Navigation]}
       >
       {/* <div className="container"></div> */}
       
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={bangalore_img1} alt=""  />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={bangalore_img2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={bangalore_img3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={bangalore_img4} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={bangalore_img5} alt=""  />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={bangalore_img6} alt=""  />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img7} alt=""  />
         </SwiperSlide>
         </Swiper>
 
@@ -646,20 +681,32 @@ const Career = () => {
       <Tab eventKey="mumbai" title="Mumbai">
 
       <div className="careers_footprint_bangalore_section">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
           <div className="career_footprint_left_section">
-           <img src={mumbai_map} alt="" />
+           <img src={mumbai_map} alt="" className="img-fluid"/>
           {/* <div className="image_gallery_box">
           <ImageGallery items={images} />
           </div> */}
           
 
           </div>
+
+          </div>
+          <div className="col-md-6">
           <div className="career_footprint_right-section">
           <Heading heading= "Mumbai" uppercase="uppercase" />
           <p>Our Mumbai office pulses with vibrant energy, home to our thriving domestic client team. They flourish in a cityscape surrounded by the city's mix of tall buildings and peaceful coastal views. Every day in this bustling metropolis brings new inspiration and opportunities.</p>
             
 
           </div>
+          
+          </div>
+        </div>
+      </div>
+          
+          
         </div>
         <div className="career_footprint_gallery">
         {/* <Carousel responsive={responsive}>
@@ -740,12 +787,21 @@ const Career = () => {
                 clickable: true,
               }}
               navigation={true}
-              modules={[Pagination, Navigation, Autoplay]}
+              modules={[Pagination, Navigation]}
               // className="mySwiper"
       >
       {/* <div className="container"></div> */}
       <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={mumbai_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img2} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img3} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img4} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={bangalore_img1} alt="" className="img-fluid" />
@@ -754,13 +810,10 @@ const Career = () => {
           <img src={bangalore_img1} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={mumbai_img5} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={mumbai_img6} alt="" className="img-fluid" />
         </SwiperSlide>
         </Swiper>
 
@@ -774,20 +827,30 @@ const Career = () => {
       
       <Tab eventKey="gurugram" title="Gurugram">
       <div className="careers_footprint_bangalore_section">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
           <div className="career_footprint_left_section">
-           <img src={gurugram_map} alt="" />
+           <img src={gurugram_map} alt="" className="img-fluid"/>
           {/* <div className="image_gallery_box">
           <ImageGallery items={images} />
           </div> */}
           
 
           </div>
+          </div>
+          <div className="col-md-6">
           <div className="career_footprint_right-section">
           <Heading heading= "Gurugram" uppercase="uppercase" />
           <p>Step into the vibrant office of Gurugram, where every corner has its own story to tell. In our cozy office nestled in this lively city, our data analysts are the storytellers. With each click and keystroke, they spin tales from the city's data, capturing its essence in every line of code.</p>
             
 
           </div>
+          </div>
+        </div>
+      </div>
+          
+          
         </div>
         <div className="career_footprint_gallery">
         {/* <Carousel responsive={responsive}>
@@ -868,26 +931,26 @@ const Career = () => {
                 clickable: true,
               }}
               navigation={true}
-              modules={[Pagination, Navigation,Autoplay]}
+              modules={[Pagination, Navigation]}
       >
       {/* <div className="container"></div> */}
       <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={bangalore_img4} alt="" className="img-fluid" />
         </SwiperSlide>
       <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={bangalore_img5} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img6} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img7} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={bangalore_img1} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={bangalore_img3} alt="" className="img-fluid" />
         </SwiperSlide>
         </Swiper>
 
@@ -1281,7 +1344,7 @@ const Career = () => {
               {jobOpeningData.map((data) => {
                 return (
                   <div
-                    className="col-md-6 position-relative careers_job_container"
+                    className="col-md-6 position-relative careers_job_container ipad_full_width"
                     key={data.id}
                   >
                     <Fade direction="up" triggerOnce>
