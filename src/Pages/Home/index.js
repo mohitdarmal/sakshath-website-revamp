@@ -755,7 +755,7 @@ export const Home = () => {
                 <div className="swipper_service d-flex">
                   <div className="col-md-4 text-center">
                     <div className="service_home_box1 ">
-                      <h3>ERP</h3>
+                      <h4>ERP</h4>
                       <p>
                         Transform your business with our tailored ERP systems,
                         built to meet your unique needs and scale with your
@@ -767,7 +767,7 @@ export const Home = () => {
                   </div>
                   <div className="col-md-4 text-center">
                     <div className="service_home_box1 ">
-                      <h3>Application development</h3>
+                      <h4>Application development</h4>
                       <p>
                         Optimize performance, maximize impact, and future-proof
                         your business with our cutting-edge application
@@ -780,7 +780,7 @@ export const Home = () => {
 
                   <div className="col-md-4 text-center">
                     <div className="service_home_box1 ">
-                      <h3>Automation</h3>
+                      <h4>Automation</h4>
                       <p>
                         Transform your processes, eliminate manual tasks, and
                         achieve greater accuracy with our cutting-edge
