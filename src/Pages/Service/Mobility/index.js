@@ -235,7 +235,7 @@ const Mobility = () => {
                 <img
                   src={CONTACT_IMG_OVERVIEW}
                   alt=""
-                  width="500px"
+                  width="450px"
                   height="335px"
                 />
               </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
 import "./style.scss";
-import { SERVICE_HAPPY_CUSTOMER } from "./Constant";
+import { Apigee, Appium, Katalon, Oracle, Powerapp, Powerautomates, Python, Qlick, SERVICE_HAPPY_CUSTOMER, Sauselabs, Sharepoint, Uipath, Wso2 } from "./Constant";
 import { Link } from "react-router-dom";
 import {
   IT_BENEFITS_LEFT_TOP_IMG,
@@ -168,7 +168,7 @@ theme="light"
 
       <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
-        title="Services"
+       
       />
 
       {/* @@@@@@@ Experience section starts @@@@@@@@@ */}
@@ -308,7 +308,95 @@ theme="light"
 
       {/* @@@@@@@@  Ready_to_get_our_professional_services ends  @@@@@@@@ */}
 
+
+
+      <section className="technologies_section ">
+          <div className="technologies_main_heading text-center">
+            <Fade direction="up" triggerOnce>
+              <Heading heading="TECHNOLOGIES" />
+              
+            </Fade>
+          </div>
+          <div className="container service_technologies_logos">
+            
+
+              <Swiper
+              slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              modules={[Autoplay]}
+              className="mySwiper"
+            >
+            <SwiperSlide>
+              <img src={Qlick} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Powerautomates} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Python} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Powerapp} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Sharepoint} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Uipath} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Apigee} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Oracle} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Wso2} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Appium} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Katalon} />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Sauselabs} />
+            </SwiperSlide>
+           
+          </Swiper>
+
+            {/* </Swiper> */}
+          </div>
+        </section>
+
       {/* @@@@@@@@  It benefits starts @@@@@@@@ */}
+
+
+
+
 
       <section className="it_benefits">
         <div className="container">
@@ -356,6 +444,7 @@ theme="light"
                       <li>Application Development</li>
                       <li>Automation</li>
                       <li>Analytics</li>
+                      <li>Moblity Enterprise</li>
                     </ul>
                   </div>
                   <div className="right_side_technology">
@@ -363,6 +452,7 @@ theme="light"
                       <li>Managed Services</li>
                       <li>Integration</li>
                       <li>ERP</li>
+                      <li>Application Readliness</li>
                     </ul>
                   </div>
                 </div>
@@ -423,64 +513,7 @@ theme="light"
       {/* FAQ ENDS */}
 
 
-      <section className="technologies_section ">
-          <div className="technologies_main_heading text-center">
-            <Fade direction="up" triggerOnce>
-              <Heading heading="TECHNOLOGIES" />
-              
-            </Fade>
-          </div>
-          <div className="container about_technologies_logos">
-            <Swiper
-              breakpoints={{
-                
-                320: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                },
-                481: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                },
-                1024: {
-                  slidesPerView: 5,
-                  spaceBetween: 30,
-                },
-              }}
-              spaceBetween={10}
-              autoplay={{
-                delay: 1500,
-                disableOnInteraction: false,
-              }}
-              loop={true}
-              modules={[Autoplay]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <img src={REACT_LOGO} />{" "}
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={ANGULAR_LOGO} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={MOBILE_APP_DEVELOPMENT} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src={DEDICATED_DEVELOPER_LOGO} />
-              </SwiperSlide>
-             
-              <SwiperSlide>
-                <img src={DOTNET_LOGO} />
-              </SwiperSlide>
-             
-            {/* <SwiperSlide><img src={CLIENT_LOGO4} /></SwiperSlide>  */}
-            </Swiper>
-          </div>
-        </section>
+    
     </>
   );
 };
