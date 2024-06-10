@@ -135,6 +135,7 @@
   }
 }
 .certification_sec{margin-top: -100px;}
+.banner_tagline_sec{padding-top: 80px; }
 .banner_text_slider {
   .slick-prev {
     top: 100%;
@@ -1278,13 +1279,19 @@
 
 .service_home_box1{
   position: relative;
-  content: "";
   box-shadow: 0 2px 20px #00000021;
   padding: 30px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 6px;
   transition: 1s;
+
+  h4{font-size: 24px;
+    line-height: 32px;
+    font-family: $rajdhani_font;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;;}
 }
 
 .service_home_box1:hover::after{
@@ -1404,8 +1411,4 @@ transition: 1s;
     text-transform: uppercase;
   }
 }
-.swipper_service{
-  .service_home_box1{
-    min-height: 300px !important;
-  }
-}
+ 
