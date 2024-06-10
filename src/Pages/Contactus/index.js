@@ -303,6 +303,12 @@ const Contactus = () => {
                           <Nav.Item>
                             <Nav.Link eventKey="gurgram">Gurugram</Nav.Link>
                           </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="us">US</Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="newzland">New Zealand</Nav.Link>
+                          </Nav.Item>
                         </Nav>
                       </Col>
                       <Col sm={10}>
@@ -331,6 +337,25 @@ const Contactus = () => {
                               loading="lazy"
                             ></iframe>
                           </Tab.Pane>
+
+                          <Tab.Pane eventKey="us">
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.33984257064!2d-74.39321052451666!3d40.423473155229644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cf71aeeca893%3A0xe98bd56ad4bef885!2s1%20Auer%20Ct%2C%20East%20Brunswick%2C%20NJ%2008816%2C%20USA!5e0!3m2!1sen!2sin!4v1708267627433!5m2!1sen!2sin"
+                              width="100%"
+                              height="450"
+                              loading="lazy"
+                            ></iframe>
+                          </Tab.Pane>
+
+                          <Tab.Pane eventKey="newzland">
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.6913416436955!2d174.868978175601!3d-36.969427886256376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4c339b9096bb%3A0x2a16e1def76c6fd7!2s43%20Kimpton%20Road%2C%20Papatoetoe%2C%20Auckland%202025%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1708267432762!5m2!1sen!2sin"
+                              width="100%"
+                              height="450"
+                              loading="lazy"
+                            ></iframe>
+                          </Tab.Pane>
+
                         </Tab.Content>
                       </Col>
                     </Row>
