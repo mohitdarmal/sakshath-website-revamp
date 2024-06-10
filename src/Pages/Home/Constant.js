@@ -1,12 +1,10 @@
 // Banner Slides
-export const tagline_banner_analytic =
-  require("../../Assets/images/Automation4.svg").default;
+ 
 export const tagline_banner_erp =
   require("../../Assets/images/ERP_2.svg").default;
 export const tagline_banner_fintech =
   require("../../Assets/images/Fintech_1.svg").default;
-export const tagline_banner_bank =
-  require("../../Assets/images/BANKING_3.svg").default;
+ 
 // export const SLIDES2 = require("../../Assets/images/slides2.jpg");
 // export const SLIDES3 = require("../../Assets/images/slides3.jpg");
 
