@@ -109,16 +109,8 @@ const Contactus = () => {
       } else {
         toast.error("Error Found");
       }
-<<<<<<< HEAD
-      console.log(err.response, 
-      
-      )
-    }
-    finally{
-=======
       console.log(err.response);
     } finally {
->>>>>>> 325dedb8b5fc1641bb1785c056413c185d1314eb
       setFalingLineVisible(false);
     }
   };
