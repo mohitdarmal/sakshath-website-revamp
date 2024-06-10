@@ -615,113 +615,111 @@ export const Home = () => {
             <div className="row">
               <div className="col-md-3">
                 <div className="d-flex  certificate_box">
-                <Link
-                  onClick={() => {
-                    setShowModal(true);
-                  }}
-                >
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={ISO_27001} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>ISO 27001</h3>
-                        <p>2013 (Information Security Management System)</p>
-
-                        <p className="learn_more">See Certificate </p>
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-                </div>
-              </div>
-
-              <div className="col-md-3">
-                <div className="d-flex certificate_box">
-                <Link
-                  onClick={() => {
-                    setShowModal(true);
-                  }}
-                >
-                  <Fade direction="up" delay={400} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={ISO_9001} alt="" />
-                      </div>
-                      <div className="content">
-                        <h3>ISO 9001</h3>
-                        <p> 2015 (Quality Management Systems) </p>
-
-                        <p
-                          className=""
-                          style={{
-                            paddingTop: "15px",
-                            color: "#32A4D5",
-                            fontWeight: "bold",
-                            fontFamily: "rajdhani",
-                          }}
-                        >
-                          See Certificate
-                        </p>
-                      </div>
-                    </div>
-                  </Fade>
-                </Link>
-                </div>
-              </div>
-
-              <div className="col-md-3">
-                <div className="d-flex certificate_box">
-               
                   <Link
                     onClick={() => {
                       setShowModal(true);
                     }}
                   >
-                     <Fade direction="up" delay={10} triggerOnce> 
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={GREAT_PLACE_WORK} alt="" />
+                    <Fade direction="up" delay={400} triggerOnce>
+                      <div className="d-flex horizontal-shake">
+                        <div className="icon">
+                          <img src={ISO_27001} alt="" />
+                        </div>
+                        <div className="content">
+                          <h3>ISO 27001</h3>
+                          <p>2013 (Information Security Management System)</p>
+
+                          <p className="learn_more">See Certificate </p>
+                        </div>
                       </div>
-                      <div className="content">
-                        <h3 className="text">Great Place to Work</h3>
-                        <p>
-                          Sakshath was recognised as a Great Place to Work again
-                          in 2024!
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
                     </Fade>
                   </Link>
-                  </div>
+                </div>
               </div>
+
               <div className="col-md-3">
-              <div className="d-flex certificate_box">
-               
+                <div className="d-flex certificate_box">
                   <Link
                     onClick={() => {
                       setShowModal(true);
                     }}
-                  > 
-                  <Fade direction="up" delay={10} triggerOnce>
-                    <div className="d-flex horizontal-shake">
-                      <div className="icon">
-                        <img src={SOTI} alt="" />
+                  >
+                    <Fade direction="up" delay={400} triggerOnce>
+                      <div className="d-flex horizontal-shake">
+                        <div className="icon">
+                          <img src={ISO_9001} alt="" />
+                        </div>
+                        <div className="content">
+                          <h3>ISO 9001</h3>
+                          <p> 2015 (Quality Management Systems) </p>
+
+                          <p
+                            className=""
+                            style={{
+                              paddingTop: "15px",
+                              color: "#32A4D5",
+                              fontWeight: "bold",
+                              fontFamily: "rajdhani",
+                            }}
+                          >
+                            See Certificate
+                          </p>
+                        </div>
                       </div>
-                      <div className="content">
-                        <h3 className="text">SOTI  Altitude</h3>
-                        <p>
-                          Empower your enterprise with SOTI’s innovative
-                          solutions and transform your digital landscape.
-                        </p>
-                        <p className="learn_more">See Certificate</p>
-                      </div>
-                    </div>
                     </Fade>
                   </Link>
-                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-3">
+                <div className="d-flex certificate_box">
+                  <Link
+                    onClick={() => {
+                      setShowModal(true);
+                    }}
+                  >
+                    <Fade direction="up" delay={10} triggerOnce>
+                      <div className="d-flex horizontal-shake">
+                        <div className="icon">
+                          <img src={GREAT_PLACE_WORK} alt="" />
+                        </div>
+                        <div className="content">
+                          <h3 className="text">Great Place to Work</h3>
+                          <p>
+                            Sakshath was recognised as a Great Place to Work
+                            again in 2024!
+                          </p>
+                          <p className="learn_more">See Certificate</p>
+                        </div>
+                      </div>
+                    </Fade>
+                  </Link>
+                </div>
+              </div>
+              <div className="col-md-3">
+                <div className="d-flex certificate_box">
+                  <Link
+                    onClick={() => {
+                      setShowModal(true);
+                    }}
+                  >
+                    <Fade direction="up" delay={10} triggerOnce>
+                      <div className="d-flex horizontal-shake">
+                        <div className="icon">
+                          <img src={SOTI} alt="" />
+                        </div>
+                        <div className="content">
+                          <h3 className="text">SOTI Altitude</h3>
+                          <p>
+                            Empower your enterprise with SOTI’s innovative
+                            solutions and transform your digital landscape.
+                          </p>
+                          <p className="learn_more">See Certificate</p>
+                        </div>
+                      </div>
+                    </Fade>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -729,16 +727,16 @@ export const Home = () => {
       </section>
 
       {/* service start */}
-      <section>
+      <section className="banner_tagline_sec">
         <div className="container">
-        <div className="row text-center mt-4">
-          <div className="our-services-heading">
-          <h5>
-              Multiple Process in Single Platform 
- </h5>
- <Heading heading="Digitise your business by managing multiple process in a single platform." />
+          <div className="row text-center">
+            <div className="col-md-8 offset-md-2">
+              <div className="our-services-heading">
+                <SubTitle SubTitle="Multiple Process in Single Platform" />
+                <Heading heading="Digitise your business by managing multiple process in a single platform." />
+              </div>
+            </div>
           </div>
-        </div>
           <div className="row">
             <Swiper
               spaceBetween={50}
@@ -757,43 +755,51 @@ export const Home = () => {
                 <div className="swipper_service d-flex">
                   <div className="col-md-4 text-center">
                     <div className="service_home_box1 ">
-                      <h3>Profesional IT Solution</h3>
-                      <p>Transforming Ideas into Intelligent Solutions</p>
+                      <h3>ERP</h3>
+                      <p>
+                        Transform your business with our tailored ERP systems,
+                        built to meet your unique needs and scale with your
+                        success.
+                      </p>
 
                       <img src={P_IMG} alt="" />
                     </div>
                   </div>
                   <div className="col-md-4 text-center">
-                                    <div className="service_home_box1 ">
-                      <h3>Unlocking Productivity, One Automation at a Time</h3>
-                      <p>Revolutionizing Your Workflow with Automation Services</p>
+                    <div className="service_home_box1 ">
+                      <h3>Application development</h3>
+                      <p>
+                        Optimize performance, maximize impact, and future-proof
+                        your business with our cutting-edge application
+                        services.
+                      </p>
 
                       <img src={P_IMG} alt="" />
                     </div>
                   </div>
 
                   <div className="col-md-4 text-center">
-                                    <div className="service_home_box1 ">
-                      <h3>Profesional IT Solution</h3>
-                      <p>Transforming Ideas into Intelligent Solutions</p>
+                    <div className="service_home_box1 ">
+                      <h3>Automation</h3>
+                      <p>
+                        Transform your processes, eliminate manual tasks, and
+                        achieve greater accuracy with our cutting-edge
+                        automation services.{" "}
+                      </p>
 
                       <img src={P_IMG} alt="" />
                     </div>
                   </div>
-                  </div>
-                          </SwiperSlide>
+                  
+                </div>
+              </SwiperSlide>
               <SwiperSlide>
                 <div className="swipper_service d-flex">
                   <div className="col-md-4 text-center">
                     <div className="service_home_box1 ">
-                      <h4>Automation</h4>
+                      <h4>Application Readiness</h4>
                       <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Distinctio sunt, illo sequi labore corrupti minus
-                        saepe optio quod non quibusdam. Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. Distinctio sunt, illo
-                        sequi labore corrupti minus saepe optio quod non
-                        quibusdam.
+                      Prime your applications for success with our Application Readiness Solutions! Let's ensure flawless launches together!
                       </p>
 
                       <img src={P_IMG} alt="" />
@@ -803,12 +809,7 @@ export const Home = () => {
                     <div className="service_home_box1 ">
                       <h4>Analytics</h4>
                       <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Distinctio sunt, illo sequi labore corrupti minus
-                        saepe optio quod non quibusdam. Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. Distinctio sunt, illo
-                        sequi labore corrupti minus saepe optio quod non
-                        quibusdam.
+                      Unlock the power of advanced analytics and predictive modeling to drive strategic decisions and business growth.
                       </p>
 
                       <img src={P_IMG} alt="" />
@@ -816,14 +817,11 @@ export const Home = () => {
                   </div>
                   <div className="col-md-4 text-center">
                     <div className="service_home_box1 ">
-                      <h4>Analytics</h4>
+                      <h4>Enterprise Mobility</h4>
                       <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Distinctio sunt, illo sequi labore corrupti minus
-                        saepe optio quod non quibusdam. Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. Distinctio sunt, illo
-                        sequi labore corrupti minus saepe optio quod non
-                        quibusdam.
+                        Elevate your business operations with seamless mobility,
+                        boosting productivity and collaboration across your
+                        organization.
                       </p>
 
                       <img src={P_IMG} alt="" />
@@ -977,9 +975,7 @@ export const Home = () => {
                     </div>
                     <div className="content">
                       <h3>SimplifyQA</h3>
-                      <p>
-                      Make better business decisions with our data.
-                      </p>
+                      <p>Make better business decisions with our data.</p>
                       <p className="learn_more">See Certificate</p>
                     </div>
                   </div>
@@ -1313,7 +1309,7 @@ export const Home = () => {
       {/* <ClientLogo /> */}
 
       {/*  SECTION - Client Logo End */}
-      
+
       {/* <section>
         <div className="container">
           <div className="row">
