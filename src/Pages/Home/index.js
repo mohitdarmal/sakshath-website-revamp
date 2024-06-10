@@ -598,9 +598,9 @@ export const Home = () => {
         </div>
       </section> */}
 
-      <section className="overflow-hidden">
+      <section className="overflow-hidden certification_sec">
         <div className="accreditation_sec specilation_feature">
-          <div className="container-fluid">
+          <div className="container accreditation_sec_container">
             <div className="row ">
               <div className="text-center">
                 <Fade direction="up" delay={20} triggerOnce>
@@ -613,7 +613,8 @@ export const Home = () => {
             </div>
 
             <div className="row">
-              <div className="col-md-3 d-flex ">
+              <div className="col-md-3">
+                <div className="d-flex  certificate_box">
                 <Link
                   onClick={() => {
                     setShowModal(true);
@@ -633,9 +634,11 @@ export const Home = () => {
                     </div>
                   </Fade>
                 </Link>
+                </div>
               </div>
 
-              <div className="col-md-3 d-flex ">
+              <div className="col-md-3">
+                <div className="d-flex certificate_box">
                 <Link
                   onClick={() => {
                     setShowModal(true);
@@ -665,15 +668,18 @@ export const Home = () => {
                     </div>
                   </Fade>
                 </Link>
+                </div>
               </div>
 
               <div className="col-md-3">
-                <Fade direction="up" delay={10} triggerOnce>
+                <div className="d-flex certificate_box">
+               
                   <Link
                     onClick={() => {
                       setShowModal(true);
                     }}
                   >
+                     <Fade direction="up" delay={10} triggerOnce> 
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
                         <img src={GREAT_PLACE_WORK} alt="" />
@@ -687,16 +693,19 @@ export const Home = () => {
                         <p className="learn_more">See Certificate</p>
                       </div>
                     </div>
+                    </Fade>
                   </Link>
-                </Fade>
+                  </div>
               </div>
               <div className="col-md-3">
-                <Fade direction="up" delay={10} triggerOnce>
+              <div className="d-flex certificate_box">
+               
                   <Link
                     onClick={() => {
                       setShowModal(true);
                     }}
-                  >
+                  > 
+                  <Fade direction="up" delay={10} triggerOnce>
                     <div className="d-flex horizontal-shake">
                       <div className="icon">
                         <img src={SOTI} alt="" />
@@ -710,8 +719,9 @@ export const Home = () => {
                         <p className="learn_more">See Certificate</p>
                       </div>
                     </div>
+                    </Fade>
                   </Link>
-                </Fade>
+                  </div>
               </div>
             </div>
           </div>

@@ -111,7 +111,8 @@ const Contactus = () => {
       console.log(err.response, 
       
       )
-    }finally(err){
+    }
+    finally{
       setFalingLineVisible(false);
     }
     // finally(se){
