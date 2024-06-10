@@ -391,7 +391,7 @@ const Erp = () => {
           </div>
           <Fade direction="up" triggerOnce>
             <div className="row">
-              <Col>
+              <Col md={4} xs={6}>
                 <div className="industry_box">
                   <div className="industry_icon">
                     <img src={ERP_SUPPLCHAIN} alt="" />
@@ -399,7 +399,7 @@ const Erp = () => {
                   <h4>Supply Chain</h4>
                 </div>
               </Col>
-              <Col>
+              <Col md={4} xs={6}>
                 <div className="industry_box">
                   <div className="industry_icon">
                     <img src={ERP_INDUSTRY} alt="" />
@@ -407,7 +407,7 @@ const Erp = () => {
                   <h4>manufacturing</h4>
                 </div>
               </Col>
-              <Col>
+              <Col md={4} xs={6}>
                 <div className="industry_box">
                   <div className="industry_icon">
                     <img src={ERP_RETAIL} alt="" />
@@ -416,14 +416,7 @@ const Erp = () => {
                 </div>
               </Col>
 
-             
-            </div>
-          </Fade>
-
-         
-          <Fade direction="up" triggerOnce>
-            <div className="row">
-              <Col>
+              <Col md={4} xs={6}>
                 <div className="industry_box">
                   <div className="industry_icon">
                     <img src={ERP_INDUSTRY_MANUFACTURE} alt="" />
@@ -431,7 +424,7 @@ const Erp = () => {
                   <h4>Industrial Machinery</h4>
                 </div>
               </Col>
-              <Col>
+              <Col md={4} xs={6}>
                 <div className="industry_box">
                   <div className="industry_icon">
                     <img src={ERP_AUTOMATION} alt="" />
@@ -440,7 +433,7 @@ const Erp = () => {
                 </div>
               </Col>
              
-              <Col>
+              <Col md={4} xs={6}>
                 <div className="industry_box">
                   <div className="industry_icon">
                     <img src={ERP_MEDICAL} alt="" />
@@ -448,8 +441,11 @@ const Erp = () => {
                   <h4>Medical</h4>
                 </div>
               </Col>
-               </div>
+            </div>
           </Fade>
+
+         
+           
         </div>
       </section>
       {/* Industries ends */}

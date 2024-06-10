@@ -571,8 +571,9 @@
   // text-decoration: underline;
   font-family: "Rajdhani";
   font-weight: 700;
-  color: #236790;
+  color: #000;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .blog_sub_heading {
@@ -1368,20 +1369,21 @@ transition: 1s;
 
 
   .partners_box {
+    background-color: #fff;;
     box-shadow: 0 2px 20px #0000001c;
     padding: 20px;
     display: flex;
     border-radius: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   a{
     text-decoration: none !important;
   }
 
   .learn_more{
-    color: #32A4D5;
+    color: #24688f;
     font-weight: 700;
-    font-family: "Rajdhani", sans-serif;
+    font-size: 14px;
   }
 }
 

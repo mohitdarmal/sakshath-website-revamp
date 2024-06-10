@@ -724,7 +724,7 @@ export const Home = () => {
         <div className="row text-center mt-4">
           <div className="our-services-heading">
           <h5>
-Multiple Process in Single Platform 
+              Multiple Process in Single Platform 
  </h5>
  <Heading heading="Digitise your business by managing multiple process in a single platform." />
           </div>
@@ -1300,10 +1300,10 @@ Multiple Process in Single Platform
 
       {/* SECTION - Client Logo Start*/}
 
-      <ClientLogo />
+      {/* <ClientLogo /> */}
 
       {/*  SECTION - Client Logo End */}
-      <LetsTalk />
+      
       {/* <section>
         <div className="container">
           <div className="row">
@@ -1569,6 +1569,8 @@ Multiple Process in Single Platform
           {/* <SlideAnimationButton btnName="View MORE"  onClick={showLogo} /> */}
         </Container>
       </section>
+
+      <LetsTalk />
 
       {/*  SECTION - Blogs Start  */}
       <section className="blogs">
