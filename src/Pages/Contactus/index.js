@@ -18,7 +18,8 @@ import { BsTelephoneInbound } from "react-icons/bs";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Fade } from "react-awesome-reveal";
-import { FallingLines } from "react-loader-spinner";
+import Loader from "../../Components/Loader";
+
 
 import {
   HEADQUATERS_ICON,
@@ -44,7 +45,7 @@ const Contactus = () => {
 
   useEffect(() => {
     if (falingLineVisible) {
-      setLoaderShow("block");
+      setLoaderShow("flex");
     } else {
       setLoaderShow("none");
     }
@@ -82,7 +83,7 @@ const Contactus = () => {
     //   description: "",
     //   comments: "",
     // });
-    // setFalingLineVisible(true);
+    setFalingLineVisible(true);
 
     try {
       const res = await axios
@@ -666,14 +667,7 @@ Gurugram, Haryana 122016
           wrapperClass=""
         /> */}
 
-      <div className={`spinner_loader d-${loaderShow}`}>
-        <FallingLines
-          color="#fff"
-          width="100"
-          visible={falingLineVisible}
-          ariaLabel="falling-circles-loading"
-        />
-      </div>
+      <Loader showLoader={loaderShow} showFallingLine={falingLineVisible} />
 
       {/* submit form loader ends */}
     </>
