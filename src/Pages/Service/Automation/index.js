@@ -205,13 +205,8 @@ const Automation = () => {
 
   return (
     <>
-
-    
-<ServicePopup  popUpHeading={
-  "Automation Popup"}
- 
-  />
- <Helmet>
+      <ServicePopup popUpHeading={"Automation Popup"} />
+      <Helmet>
         <title>Automation</title>
         <meta name="description" content="About SEO" />
       </Helmet>
@@ -462,17 +457,15 @@ const Automation = () => {
               <div className="container">
                 <div className="row align-items-center">
                   <div className="col-md-6">
-                  <Fade direction="up" delay={500} >
-
-                
-                    <div className="cloud_bg_img">
-                      <img
-                        src={AUTOMATION_BG_IMG}
-                        alt=""
-                        width="550px"
-                        height="460px"
-                      />
-                    </div>
+                    <Fade direction="up" delay={500}>
+                      <div className="cloud_bg_img">
+                        <img
+                          src={AUTOMATION_BG_IMG}
+                          alt=""
+                          width="550px"
+                          height="460px"
+                        />
+                      </div>
                     </Fade>
                   </div>
                   <div className="col-md-6">
@@ -742,18 +735,15 @@ const Automation = () => {
 
         {/* why_Sakshath starts */}
         {/* <Fade direction="up" triggerOnce> */}
-       
-          
-          
-            {/* <div id="rpa">
+
+        {/* <div id="rpa">
           <Element name="RPA"> */}
-          <WhySaksahthNew whyCrm={whyCloud}  />
-          {/* </Element> 
+        <WhySaksahthNew whyCrm={whyCloud} />
+        {/* </Element> 
           </div> */}
-          {/* /> */}
-         
-          
-     {/* </Fade> */}
+        {/* /> */}
+
+        {/* </Fade> */}
 
         {/* why_Sakshath ends*/}
 
@@ -761,61 +751,63 @@ const Automation = () => {
         {/* <div id="rpa"> */}
         {/* <div id="rpa">
           <Element name="RPA"> */}
-         
-        <section className="rpa_section">
-        <div id="rpa">
-          <Element name="RPA">
-          <div className="container">
-            <div className="row ">
-              <div className="col-md-6">
-                <div className="rpa_main_heading">
-                  <Fade direction="up" triggerOnce>
-                    <Heading heading="RPA" uppercase="text-uppercase" />
-                    <h4>(Robotic Process Automation) </h4>
-                  </Fade>
 
-                  <div className="rpa_lists ">
-                    <ul>
-                      <li>
-                        Sakshath RPA as a service is designed to help
-                        organizations to integrate RPA with latest technologies
-                        like AI/ ML, Voice recognition, Language processing.
-                      </li>
-                      <li>
-                        Build scalable apps and enable a faster reaction to
-                        shifting business needs by combining the correct
-                        cloud-centric methodologies and practices with Sakshath.
-                      </li>
-                      <li>
-                        Our RPA can integrate with any software Suite, including
-                        Finance & Accounting Sales & Distribution, Materials
-                        Management, and Human Capital Management it is also
-                        helping our customers to optimize back-end operations
-                        like – On Boarding Process – (Vendor, Partner,
-                        Employee), Procurement Process, Billing/Invoicing
-                        Process Automation etc.
-                      </li>
-                    </ul>
-                    {/* </Fade> */}
+        <section className="rpa_section">
+          <div id="rpa">
+            <Element name="RPA">
+              <div className="container">
+                <div className="row ">
+                  <div className="col-md-6">
+                    <div className="rpa_main_heading">
+                      <Fade direction="up" triggerOnce>
+                        <Heading heading="RPA" uppercase="text-uppercase" />
+                        <h4>(Robotic Process Automation) </h4>
+                      </Fade>
+
+                      <div className="rpa_lists ">
+                        <ul>
+                          <li>
+                            Sakshath RPA as a service is designed to help
+                            organizations to integrate RPA with latest
+                            technologies like AI/ ML, Voice recognition,
+                            Language processing.
+                          </li>
+                          <li>
+                            Build scalable apps and enable a faster reaction to
+                            shifting business needs by combining the correct
+                            cloud-centric methodologies and practices with
+                            Sakshath.
+                          </li>
+                          <li>
+                            Our RPA can integrate with any software Suite,
+                            including Finance & Accounting Sales & Distribution,
+                            Materials Management, and Human Capital Management
+                            it is also helping our customers to optimize
+                            back-end operations like – On Boarding Process –
+                            (Vendor, Partner, Employee), Procurement Process,
+                            Billing/Invoicing Process Automation etc.
+                          </li>
+                        </ul>
+                        {/* </Fade> */}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <Fade direction="up" triggerOnce>
+                      <div className="rpa_graph">
+                        <img src={RPA_GRAPH} alt="" />
+                      </div>
+                    </Fade>
+                    <div className="rpa_text text-center mt-5">
+                      {/* <h4>Robotic Process Automation Business Management</h4> */}
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
-                <Fade direction="up" triggerOnce>
-                  <div className="rpa_graph">
-                    <img src={RPA_GRAPH} alt="" />
-                  </div>
-                </Fade>
-                <div className="rpa_text text-center mt-5">
-                  {/* <h4>Robotic Process Automation Business Management</h4> */}
-                </div>
-              </div>
-            </div>
-          </div>
-          </Element> 
+            </Element>
           </div>
         </section>
-        
+
         {/* </Element> */}
         {/* </div> */}
 
@@ -1140,8 +1132,6 @@ const Automation = () => {
               <SwiperSlide>
                 <img src={FLOW_CENTRIC_RPA} />
               </SwiperSlide>
-             
-      
             </Swiper>
           </div>
         </section>
@@ -1171,6 +1161,14 @@ const Automation = () => {
                           DevOps, Sakshath has been at the forefront of
                           providing best-in-class, tailored “QA Testing
                           Services”.
+                        </p>
+
+                        <p>
+                          Implementing automation in DevOps and Testing ensures
+                          continuous integration and delivery, reduces manual
+                          intervention, and enhances accuracy. Optimize your
+                          workflow, minimize errors, and speed up deployments
+                          with cutting-edge automation tools.
                         </p>
                       </Fade>
                     </div>
