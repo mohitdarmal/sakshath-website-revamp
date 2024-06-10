@@ -3,7 +3,7 @@ import { ABOUT_BANNER } from "../../../Components/Breadcumb/Constant";
 import BreadCumb from "../../../Components/Breadcumb";
 import Heading from "../../../Components/Utils/Heading";
 // import Heading from "../Utils/Heading";
-import { CONTACT_IMG_OVERVIEW } from "./Constant";
+import { CONTACT_IMG_OVERVIEW, MOBILITY_SEC2 } from "./Constant";
 import "./Style.scss";
 // import Faq from "../../../Components/Faq";
 // import Heading from "../Utils/Heading";
@@ -233,7 +233,7 @@ const Mobility = () => {
             <div className="col-md-4">
               <div className="benefits_mobi_img">
                 <img
-                  src={CONTACT_IMG_OVERVIEW}
+                  src={MOBILITY_SEC2}
                   alt=""
                   width="450px"
                   height="335px"

@@ -8,6 +8,7 @@ import {
   Form,
   FloatingLabel,
   Button,
+  Modal,
 } from "react-bootstrap";
 import "./style.scss";
 import { GrLocation } from "react-icons/gr";
@@ -17,6 +18,7 @@ import { BsTelephoneInbound } from "react-icons/bs";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Fade } from "react-awesome-reveal";
+import Loader from "../../Components/Loader";
 
 import {
   HEADQUATERS_ICON,
@@ -24,6 +26,7 @@ import {
   YOUTUBE_ICON,
   INSTAGRAM_ICON,
   LINKEDIN_ICON,
+  STAR,
 } from "./Constant";
 import Contact from "../../Components/Contact/Contact";
 import BreadCumb from "../../Components/Breadcumb";
@@ -32,10 +35,25 @@ import { FaPaperPlane } from "react-icons/fa";
 import Heading from "../../Components/Utils/Heading";
 import { Helmet } from "react-helmet";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { IoCloseCircle } from "react-icons/io5";
 
 const Contactus = () => {
   const [key, setKey] = useState("home");
-  // const [isLoading, setIsLoading] = useState(false);
+
+  const [show, setShow] = useState(true);
+  const [falingLineVisible, setFalingLineVisible] = useState(false);
+  const [loaderShow, setLoaderShow] = useState("none");
+
+  useEffect(() => {
+    if (falingLineVisible) {
+      setLoaderShow("flex");
+    } else {
+      setLoaderShow("none");
+    }
+  }, [falingLineVisible]);
+
   const [formData, setFormData] = useState({
     fullName: "",
     emailId: "",
@@ -61,30 +79,39 @@ const Contactus = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormData({
-      fullName: "", 
-      emailId: "",
-      contactNumber: "",
-      description: "",
-      comments: "",
-    });
-    // setIsLoading(true);
-    // console.log(e.target.value, "amar");
+    // setFormData({
+    //   fullName: "",
+    //   emailId: "",
+    //   contactNumber: "",
+    //   description: "",
+    //   comments: "",
+    // });
+    setFalingLineVisible(true);
+
     try {
-      const res = await axios.post("http://172.20.12.189:8086/confApp/api/v1/contacts", {
-          body: {
-            fullName: formData.fullName,
-            emailId: formData.emailId,
-            description: formData.description,
-            contactNumber: formData.contactNumber,
-            comments: formData.comments,
-          },
+      const res = await axios
+        .post("http://172.20.12.189:8086/confApp/api/v1/contacts", {
+          fullName: formData.fullName,
+          emailId: formData.emailId,
+          description: formData.description,
+          contactNumber: formData.contactNumber,
+          comments: formData.comments,
         })
         .then((data) => {
-          console.log(data);
+          setShow(true);
+          console.log(data, "show data");
         });
     } catch (err) {
-      console.log(err, "err");
+      if (err.response == undefined) {
+        toast.error("Connection Timeout");
+      } else if (err.response.data.status == 404) {
+        toast.error("Url Not found");
+      } else {
+        toast.error("Error Found");
+      }
+      console.log(err.response);
+    } finally {
+      setFalingLineVisible(false);
     }
   };
 
@@ -109,8 +136,25 @@ const Contactus = () => {
   // }
   // };
   console.log(formData);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
+      <ToastContainer
+        style={{ width: "350px" }}
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <Helmet>
         <title>Contact</title>
         <meta name="description" content="About SEO" />
@@ -259,6 +303,12 @@ const Contactus = () => {
                           <Nav.Item>
                             <Nav.Link eventKey="gurgram">Gurugram</Nav.Link>
                           </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="us">US</Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="newzland">New Zealand</Nav.Link>
+                          </Nav.Item>
                         </Nav>
                       </Col>
                       <Col sm={10}>
@@ -287,6 +337,25 @@ const Contactus = () => {
                               loading="lazy"
                             ></iframe>
                           </Tab.Pane>
+
+                          <Tab.Pane eventKey="us">
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.33984257064!2d-74.39321052451666!3d40.423473155229644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cf71aeeca893%3A0xe98bd56ad4bef885!2s1%20Auer%20Ct%2C%20East%20Brunswick%2C%20NJ%2008816%2C%20USA!5e0!3m2!1sen!2sin!4v1708267627433!5m2!1sen!2sin"
+                              width="100%"
+                              height="450"
+                              loading="lazy"
+                            ></iframe>
+                          </Tab.Pane>
+
+                          <Tab.Pane eventKey="newzland">
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.6913416436955!2d174.868978175601!3d-36.969427886256376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4c339b9096bb%3A0x2a16e1def76c6fd7!2s43%20Kimpton%20Road%2C%20Papatoetoe%2C%20Auckland%202025%2C%20New%20Zealand!5e0!3m2!1sen!2sin!4v1708267432762!5m2!1sen!2sin"
+                              width="100%"
+                              height="450"
+                              loading="lazy"
+                            ></iframe>
+                          </Tab.Pane>
+
                         </Tab.Content>
                       </Col>
                     </Row>
@@ -612,6 +681,70 @@ Gurugram, Haryana 122016
           </div>
         </div>
       </section> */}
+
+      {/* submit form loader */}
+      <div className="contact_success_popup">
+        <Modal
+          show={show}
+          onHide={handleClose}
+          backdrop="static"
+          keyboard={false}
+          centered
+          className="contact_submit_popup"
+        >
+          {/* <Modal.Header closeButton>
+        
+        </Modal.Header> */}
+          <Modal.Body>
+            <div onClick={handleClose} className="newsletter_close_btn">
+              <IoCloseCircle />
+            </div>
+            <div>
+              <div className="star_img">
+                <img
+                  src={STAR}
+                  alt=""
+                  style={{
+                    width: "100px",
+                    marginLeft: "175px",
+                    marginTop: "15px",
+                    marginBottom: "15px",
+                  }}
+                />
+              </div>
+
+              <h3>Thank You for contact us</h3>
+              <p>
+                Your details as been recived. <br /> Our team will you contact
+                soon.
+              </p>
+            </div>
+            <div className="button_popup">
+              <button>Cancel</button>
+            </div>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary">Understood</Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
+      {/* <Watch
+          visible={true}
+          height="80"
+          width="80"
+          radius="48"
+          color="#4fa94d"
+          ariaLabel="watch-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+        /> */}
+
+      <Loader showLoader={loaderShow} showFallingLine={falingLineVisible} />
+
+      {/* submit form loader ends */}
     </>
   );
 };

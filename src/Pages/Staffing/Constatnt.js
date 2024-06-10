@@ -10,3 +10,8 @@ export const STAFFING_BENIFIT=require('../../Assets/images/Staffing_benifit_img_
 export const STAFFING_ASSESSMENT=require('../../Assets/images/Assessment_staffing.png')
  export const STAFFING_DATABASE=require('../../Assets/images/database-server.png');
 // export const STAFFING_DATABASE=require('../../Assets/images/database.png');
+
+
+export const STAFFING_AUTOMATIVE=require('../../Assets/images/Staffing_Automative.png');
+export const STAFFING_IT=require('../../Assets/images/Staffing_IT.png');
+export const STAFFING_TELECOM=require('../../Assets/images/Staffing_telecom.png');
