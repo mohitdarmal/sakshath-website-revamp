@@ -11,18 +11,8 @@ import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
 //import BlueHeading from "../../Components/Utils/BlueHeading";
 import SubTitle from "../../Components/Utils/Title_head";
-import {
-  CARRER_BENFIT_IMG,
-  JOIN_OUR_TEAM_IMG,
-  CAREERS_AT_SAKSHATH,
-  EXPRESSIVE,
-  MOTIVATED,
-  ARTICULATE,
-  NEW_CHALLENGES,
-  bangalore_img1,
-  bangalore_map,
-  FIND_YOUR_ROLE,
-} from "./Constant";
+import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES, bangalore_img1, bangalore_map, FULLFILLMENT_IMG, FULL_WELLNESS_IMG,mumbai_map,gurugram_map,FIND_YOUR_ROLE,} from "./Constant";
+
 import { BsEnvelope } from "react-icons/bs";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import axios from "axios";
@@ -52,46 +42,46 @@ import { Autoplay } from "swiper/modules";
 
 const Career = () => {
   const [modalPopupData, setModalPopupData] = useState({});
-  const images = [
-    {
-      original: "https://picsum.photos/id/1018/1000/600/",
-      thumbnail: "https://picsum.photos/id/1018/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1015/1000/600/",
-      thumbnail: "https://picsum.photos/id/1015/250/150/",
-    },
-    {
-      original: "https://picsum.photos/id/1019/1000/600/",
-      thumbnail: "https://picsum.photos/id/1019/250/150/",
-    },
-  ];
+  // const images = [
+  //   {
+  //     original: "https://picsum.photos/id/1018/1000/600/",
+  //     thumbnail: "https://picsum.photos/id/1018/250/150/",
+  //   },
+  //   {
+  //     original: "https://picsum.photos/id/1015/1000/600/",
+  //     thumbnail: "https://picsum.photos/id/1015/250/150/",
+  //   },
+  //   {
+  //     original: "https://picsum.photos/id/1019/1000/600/",
+  //     thumbnail: "https://picsum.photos/id/1019/250/150/",
+  //   },
+  // ];
 
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     // the naming can be any, depends on you.
+  //     breakpoint: { max: 4000, min: 3000 },
+  //     items: 5
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 3
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 464 },
+  //     items: 2
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 464, min: 0 },
+  //     items: 1
+  //   }
+  // };
 
   const jobOpening = [
     {
       id: 1,
-      title: "Senior React Developer",
-      job_img: require("../../Assets/images/physics.png"),
+      title: "Golang Developer",
+      job_img:require("../../Assets/images/golang.png"),
       description: [
         {
           id: 1,
@@ -119,14 +109,14 @@ const Career = () => {
             "Good to having Knowledge of other BI Tools & Platforms: Qlik, Tableau, Looker, Talend, Alteryx, snowflake.",
         },
       ],
-      experince: "4-8 years+",
-      location: "Bangalore",
-      position: "5",
+      experince: "4-6 years",
+      location:'Bengaluru',
+      position:'2'
     },
     {
       id: 2,
-      title: "Junior React Developer",
-      job_img: require("../../Assets/images/physics.png"),
+      title: "Salesforce Lightning Web",
+      job_img:require("../../Assets/images/Salesforce.png"),
       description: [
         {
           id: 1,
@@ -139,14 +129,14 @@ const Career = () => {
             "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
         },
       ],
-      experince: "2.5 years+",
-      location: "Gurugram",
-      position: "3",
+      experince: "5+ years",
+      location:'Pune',
+      position:'5'
     },
     {
       id: 3,
-      title: "Sales",
-      job_img: require("../../Assets/images/analytic.png"),
+      title: "Business Analyst",
+      job_img:require("../../Assets/images/analytic.png"),
       description: [
         {
           id: 1,
@@ -165,7 +155,8 @@ const Career = () => {
     },
     {
       id: 4,
-      title: "Senior MIS Developer",
+      title: "Sr. Talend Developer",
+      job_img:require("../../Assets/images/talend.png"),
       description: [
         {
           id: 1,
@@ -178,13 +169,14 @@ const Career = () => {
             "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
         },
       ],
-      experince: "2.5 years+",
-      location: "Bangalore",
+      experince: "7-9 years",
+      location:'Mumbai',
+      position:'2'
     },
     {
       id: 5,
-      title: "Sr. QA",
-      job_img: require("../../Assets/images/QAlogo.png"),
+      title: "Sr. Power BI Developer",
+      job_img:require("../../Assets/images/Power-BI-Logo.png"),
       description: [
         {
           id: 1,
@@ -197,14 +189,14 @@ const Career = () => {
             "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
         },
       ],
-      experince: "3.5 - 4 years+",
-      location: "Mumbai",
-      position: "6",
+      experince: "8-10years",
+      location:'Mumbai',
+      position:'2'
     },
     {
       id: 6,
-      title: "Dot Net Developer",
-      job_img: require("../../Assets/images/Microsoft_.NET_logo.png"),
+      title: "ASP.Net Developer",
+      job_img:require("../../Assets/images/asp_net.png"),
       description: [
         {
           id: 1,
@@ -217,15 +209,15 @@ const Career = () => {
             "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
         },
       ],
-      experince: "2.5 years+",
-      location: "Mumbai",
-      position: "2",
+      experince: "4-6 years",
+      location:'Bengaluru',
+      position:'2'
     },
     {
       id: 7,
-      title: "Java Developer",
-
-      job_img: require("../../Assets/images/javalogo.png"),
+      title: "Full Stack Angular Developer",
+      
+      job_img:require("../../Assets/images/angular_logo.png"),
       description: [
         {
           id: 1,
@@ -238,10 +230,74 @@ const Career = () => {
             "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
         },
       ],
-      experince: "2.5-4 years+",
-      location: "Hybird",
-      position: "5",
+      experince: "4-6 Years",
+      location:'Mumbai',
+      position:'1'
     },
+    {
+      id: 8,
+      title: "Sr. Java Developer",
+      
+      job_img:require("../../Assets/images/javalogo.png"),
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+      ],
+      experince: "3-5 Years",
+      location:'Bangalore',
+      position:'4'
+    },
+    {
+      id: 9,
+      title: "Bigdata Solutions Engineer",
+      
+      job_img:require("../../Assets/images/big_data.png"),
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+      ],
+      experince: "5+ Years",
+      location:'Bengaluru',
+      position:'4'
+    },
+    {
+      id: 10,
+      title: "Power Bi(ADF) Developer",
+      
+      job_img:require("../../Assets/images/Adf_logo.png"),
+      description: [
+        {
+          id: 1,
+          content:
+            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+        },
+        {
+          id: 2,
+          content:
+            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+        },
+      ],
+      experince: "5+ Years",
+      location:'Bengaluru',
+      position:'4'
+    }
+
   ];
 
   const [jobOpeningData, setJobOpeningData] = useState([]);
@@ -305,193 +361,549 @@ const Career = () => {
             </div>
           </div>
         </div>
+      </section> 
+    
+       {/* @@@@@@@@@@@@@@ career at sakshath @@@@@@@@@@@@@@@@@@ */}
+
+      {/* <section className="careers_at_sakshath">
+        
+        <img src={CAREERS_AT_SAKSHATH} className="w-100" />
+
+          
       </section>
 
       {/* @@@@@@@@@@@@@@ career at sakshath @@@@@@@@@@@@@@@@@@ */}
 
-      <section className="careers_at_sakshath">
+      {/* <section className="careers_at_sakshath">
         <img src={CAREERS_AT_SAKSHATH} className="w-100" />
       </section>
 
       <section classname="careers_at_sakshath_inside_box">
-        <div className="container career_at_sakshath_container">
-          <div className="careers_at_sakshath_content">
-            {/* <Heading heading="careers at sakshath" uppercase="text-uppercase" />
-           <p>Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.</p>
-           <p>We aim to deliver the best experience through absolute novelty and connectivity.</p>
-           <p>We’re dedicated to having an environment where everyone can thrive by emphasizing intense diversity, employment, engagement, ethics, transparency, and deep-rooted learning.</p> */}
-            <div className="row">
-              {/* <div className="col-md-2"></div> */}
-              <div className="col-md-8 careers_at_sakshath_main_box offset-md-2">
-                <Fade direction="up" triggerOnce>
-                  <Heading heading="Careers at sakshath" uppercase="" />
-                </Fade>
-                <Fade direction="up" triggerOnce>
-                  <ul>
-                    <li className="careers_at_sakshath_checkmark">
-                      Sakshath is a platform for the world’s most talented
-                      people to congregate, grow, and make an impact. We place
-                      our employees at the core of everything we do to
-                      accomplish all targets.
-                    </li>
-                    <li>
-                      We aim to deliver the best experience through absolute
-                      novelty and connectivity.
-                    </li>
-                    <li>
-                      We’re dedicated to having an environment where everyone
-                      can thrive by emphasizing intense diversity, employment,
-                      engagement, ethics, transparency, and deep-rooted
-                      learning.
-                    </li>
-                  </ul>
-                </Fade>
+      <div className="container career_at_sakshath_container">
+        <div className="careers_at_sakshath_content">
+                 
+
+
+           <div className="row">
+          
+           <div className="col-md-8 careers_at_sakshath_main_box offset-md-2">
+           <Fade direction="up" triggerOnce>
+           
+           <Heading heading="Careers at sakshath" uppercase="" />
+           </Fade>
+           <Fade direction="up" triggerOnce>
+           <ul>
+            <li className="careers_at_sakshath_checkmark">
+            Sakshath is a platform for the world’s most talented people to congregate, grow, and make an impact. We place our employees at the core of everything we do to accomplish all targets.
+          
+           
+            </li>
+            <li>
+            
+            We aim to deliver the best experience through absolute novelty and connectivity.
+
+            </li>
+            <li>
+             We’re dedicated to having an environment where everyone can thrive by emphasizing intense diversity, employment, engagement, ethics, transparency, and deep-rooted learning.
+            </li>
+           </ul>
+          </Fade>
+           </div>
+           
+           </div>
+
+          
+        </div>
+      </div>
+        
+      </section> */} 
+
+      <section className="careers_at_sakshath_section">
+      <div className="container">
+      <div className="careers_at_sakshath_heading_text">
+      <h6>CAREERS AT SAKSHATH</h6>
+      <div className="heading_careers_at_sakshath">
+      <Heading heading="It's about building the future,"></Heading>
+      <Heading heading="one line of code at a time."></Heading>
+      </div>
+
+      </div>
+        <div className="careers_at_sakshath_column_box">
+        <div className="container">
+          <div className="row careers_column_box_1st_row">
+            <div className="col-md-3">
+              <div className="fullfillment_box">
+              <h5>FULLFILLMENT</h5>
+              <p>When your hard work and ingenuity are rewarded, it feels great. But you know what feels even better? Being part of something big, something meaningful.</p>
+
               </div>
-              {/* <div className="col-md-2"></div> */}
+            </div>
+            <div className="col-md-6">
+            <div className="careers_img_box">
+              <img src={FULLFILLMENT_IMG} alt="" className="img-fluid"/>
+            </div>  
+            </div>
+            <div className="col-md-3">
+            <div className="fullfillment_box">
+              <h5>NOT-SO-BASIC BASICS</h5>
+              <p>A competitive remuneration package: industry-standard salary, health insurance, flexible benefits, learning & development opportunities, and performance-based incentives.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div className="row careers_column_box_2nd_row">
+            <div className="col-md-6">
+              <div className="fun_n_wellness_box">
+              <h5>FUN & WELLNESS</h5>
+              <p>We make sure we have enough playtime to get the creative juices going. Summer outings, movie nights, game weeks, sports fests, soirees these events are more than fun; they give us the chance to bond and get to know each other better.</p>
+
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="fun_n_wellnes_img">
+                <img src={FULL_WELLNESS_IMG} alt="" className="img-fluid"/>
+              </div>
+            </div>
+          </div>
+
+          <div className="row careers_column_box_3rd_row">
+            <div className="col-md-3">
+              <div className="fullfillment_box box_height">
+              <h5>A GREAT COMMUNITY</h5>
+              <p>The Pointwest environment enables collaboration and creative thought. It's a normal office scene to huddle, brainstorm, and strategize.</p>
+
+              </div>
+            </div>
+            <div className="col-md-6">
+            <div className="careers_img_box">
+              <img src={FULLFILLMENT_IMG} alt="" className="img-fluid"/>
+            </div>  
+            </div>
+            <div className="col-md-3">
+            <div className="fullfillment_box">
+              <h5>EXCELLENCE & GROWTH</h5>
+              <p>Our Learning & Development team holds Boot Camp training, Brown Bag and Special Interest Learning Sessions, and other coaching programs designed to enhance your skills and help build your career.</p>
+
+              </div>
             </div>
           </div>
         </div>
+          
+        </div>
+
+      </div>
+
+      
+
       </section>
 
       <section className="careers_footprint_section">
-        <div className="container">
-          <div className="text-center mb-4 pb-md-1">
-            <Fade direction="up" triggerOnce>
-              <Heading
-                heading="Our Growing Global Footprint"
-                uppercase="uppercase"
-              />
-            </Fade>
-            <Fade direction="up" triggerOnce>
-              <p>
-                We have a diverse team of professionals working across offices
-                in Bengaluru, Mumbai and Gurugram
-              </p>
-            </Fade>
-          </div>
+      <div className="container">
+        <div className="text-center mb-4 pb-md-1">
+        <Fade direction="up" triggerOnce>
+           <Heading heading= "Our Growing Global Footprint" uppercase="uppercase" />
+           </Fade>
+           <Fade direction="up" triggerOnce>
+           <p>We have a diverse team of professionals working across offices in Bengaluru, Mumbai and Gurugram</p>
+           </Fade>
+           </div>
+      
+      <Tabs
+      defaultActiveKey="bengaluru"
+      id="justify-tab-example"
+      className="mb-3 careers_footprint_tab"
+      justify
+    >
+    <Tab eventKey="bengaluru" title="Bengaluru">
+        <div className="careers_footprint_bangalore_section">
+          <div className="career_footprint_left_section">
+           <img src={bangalore_map} alt="" />
+          {/* <div className="image_gallery_box">
+          <ImageGallery items={images} />
+          </div> */}
+          
 
-          <Tabs
-            defaultActiveKey="profile"
-            id="justify-tab-example"
-            className="mb-3"
-            justify
-          >
-            <Tab eventKey="mumbai" title="Mumbai">
-              <div className="careers_footprint_bangalore_section">
-                <div className="career_footprint_left_section">
-                  <img src={bangalore_map} alt="" />
-                  {/* <div className="image_gallery_box">
-          <ImageGallery items={images} />
-          </div> */}
-                </div>
-                <div className="career_footprint_right-section">
-                  <Heading heading="Bengaluru" uppercase="uppercase" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Itaque veniam at voluptatibus ut consequuntur et ratione
-                    architecto odio, id est provident dolore sunt? Voluptatem
-                    asperiores, dolorum numquam, atque esse ad non nesciunt
-                    voluptates eius eum est animi provident ipsum dolor eos
-                    possimus quaerat laboriosam impedit quibusdam, saepe
-                    mollitia. Ducimus, ex?
-                  </p>
-                </div>
-              </div>
-              <div className="career_footprint_gallery">
-                <Carousel responsive={responsive}>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" className="image-fluid" />
-                  </div>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" />
-                  </div>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" />
-                  </div>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" />
-                  </div>
-                </Carousel>
-              </div>
-            </Tab>
-            <Tab eventKey="bengaluru" title="Bengaluru">
-              <div className="careers_footprint_bangalore_section">
-                <div className="career_footprint_left_section">
-                  <img src={bangalore_map} alt="" />
-                  {/* <div className="image_gallery_box">
-          <ImageGallery items={images} />
-          </div> */}
-                </div>
-                <div className="career_footprint_right-section">
-                  <Heading heading="Bengaluru" uppercase="uppercase" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Itaque veniam at voluptatibus ut consequuntur et ratione
-                    architecto odio, id est provident dolore sunt? Voluptatem
-                    asperiores, dolorum numquam, atque esse ad non nesciunt
-                    voluptates eius eum est animi provident ipsum dolor eos
-                    possimus quaerat laboriosam impedit quibusdam, saepe
-                    mollitia. Ducimus, ex?
-                  </p>
-                </div>
-              </div>
-              <div className="career_footprint_gallery">
-                <Carousel responsive={responsive}>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" className="image-fluid" />
-                  </div>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" />
-                  </div>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" />
-                  </div>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" />
-                  </div>
-                </Carousel>
-              </div>
-            </Tab>
-            <Tab eventKey="gurugram" title="Gurugram">
-              <div className="careers_footprint_bangalore_section">
-                <div className="career_footprint_left_section">
-                  <img src={bangalore_map} alt="" />
-                  {/* <div className="image_gallery_box">
-          <ImageGallery items={images} />
-          </div> */}
-                </div>
-                <div className="career_footprint_right-section">
-                  <Heading heading="Bengaluru" uppercase="uppercase" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Itaque veniam at voluptatibus ut consequuntur et ratione
-                    architecto odio, id est provident dolore sunt? Voluptatem
-                    asperiores, dolorum numquam, atque esse ad non nesciunt
-                    voluptates eius eum est animi provident ipsum dolor eos
-                    possimus quaerat laboriosam impedit quibusdam, saepe
-                    mollitia. Ducimus, ex?
-                  </p>
-                </div>
-              </div>
-              <div className="career_footprint_gallery">
-                <Carousel responsive={responsive}>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" className="image-fluid" />
-                  </div>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" />
-                  </div>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" />
-                  </div>
-                  <div className="career_footprint_company_images">
-                    <img src={bangalore_img1} alt="" />
-                  </div>
-                </Carousel>
-              </div>
-            </Tab>
-          </Tabs>
+          </div>
+          <div className="career_footprint_right-section">
+          <Heading heading= "Bengaluru" uppercase="uppercase" />
+          <p>Our Head Office in Bengaluru is the heart of Sakshath Technologies, where our CEO and management team reside. Imagine stepping out into a world teeming with tech startups, bustling cafes, and serene parks. Here, the dynamic energy fuels creativity and collaboration, making every day an exciting adventure in the thriving business hub of Bangalore.
+ </p>
+            
+
+          </div>
         </div>
+        <div className="career_footprint_gallery">
+        {/* <Carousel responsive={responsive}>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+</Carousel> */}
+
+<div className="container">
+        <Swiper
+        // cssMode={true}
+        // navigation={true}
+        // pagination={true}
+        // mousewheel={true}
+        // keyboard={true}
+        // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        // className="mySwiper"
+        // slidesPerView={5}
+        //       spaceBetween={30}
+        //       breakpoints={{
+        //         320: {
+        //           slidesPerView: 2,
+        //           spaceBetween: 30,
+        //         },
+        //         481: {
+        //           slidesPerView: 3,
+        //           spaceBetween: 30,
+        //         },
+        //         768: {
+        //           slidesPerView: 4,
+        //           spaceBetween: 30,
+        //         },
+        //         1024: {
+        //           slidesPerView: 5,
+        //           spaceBetween: 30,
+        //         },
+        //       }}
+        //       autoplay={{
+        //         delay: 1500,
+        //         disableOnInteraction: false,
+        //       }}
+        //       loop={true}
+        //       modules={[Autoplay]}
+        //       className="mySwiper"
+        
+        slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+             
+              centeredSlides={true}
+              // autoplay={{
+              //   delay: 1500,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation,Autoplay]}
+      >
+      {/* <div className="container"></div> */}
+      
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        </Swiper>
+
+        </div>
+        </div>
+        
+      </Tab>
+      
+
+      <Tab eventKey="mumbai" title="Mumbai">
+
+      <div className="careers_footprint_bangalore_section">
+          <div className="career_footprint_left_section">
+           <img src={mumbai_map} alt="" />
+          {/* <div className="image_gallery_box">
+          <ImageGallery items={images} />
+          </div> */}
+          
+
+          </div>
+          <div className="career_footprint_right-section">
+          <Heading heading= "Mumbai" uppercase="uppercase" />
+          <p>Our Mumbai office pulses with vibrant energy, home to our thriving domestic client team. They flourish in a cityscape surrounded by the city's mix of tall buildings and peaceful coastal views. Every day in this bustling metropolis brings new inspiration and opportunities.</p>
+            
+
+          </div>
+        </div>
+        <div className="career_footprint_gallery">
+        {/* <Carousel responsive={responsive}>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+</Carousel> */}
+<div className="container">
+        <Swiper
+        // cssMode={true}
+        // navigation={true}
+        // pagination={true}
+        // mousewheel={true}
+        // keyboard={true}
+        // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        // className="mySwiper"
+        // slidesPerView={5}
+        //       spaceBetween={30}
+        //       breakpoints={{
+        //         320: {
+        //           slidesPerView: 2,
+        //           spaceBetween: 30,
+        //         },
+        //         481: {
+        //           slidesPerView: 3,
+        //           spaceBetween: 30,
+        //         },
+        //         768: {
+        //           slidesPerView: 4,
+        //           spaceBetween: 30,
+        //         },
+        //         1024: {
+        //           slidesPerView: 5,
+        //           spaceBetween: 30,
+        //         },
+        //       }}
+        //       autoplay={{
+        //         delay: 1500,
+        //         disableOnInteraction: false,
+        //       }}
+        //       loop={true}
+        //       modules={[Autoplay]}
+        //       className="mySwiper"
+        
+        slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+             
+              centeredSlides={true}
+              // autoplay={{
+              //   delay: 1500,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation, Autoplay]}
+              // className="mySwiper"
+      >
+      {/* <div className="container"></div> */}
+      <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        
+        </Swiper>
+
+        </div>
+        </div>
+
+
+        
+        
+      </Tab>
+      
+      <Tab eventKey="gurugram" title="Gurugram">
+      <div className="careers_footprint_bangalore_section">
+          <div className="career_footprint_left_section">
+           <img src={gurugram_map} alt="" />
+          {/* <div className="image_gallery_box">
+          <ImageGallery items={images} />
+          </div> */}
+          
+
+          </div>
+          <div className="career_footprint_right-section">
+          <Heading heading= "Gurugram" uppercase="uppercase" />
+          <p>Step into the vibrant office of Gurugram, where every corner has its own story to tell. In our cozy office nestled in this lively city, our data analysts are the storytellers. With each click and keystroke, they spin tales from the city's data, capturing its essence in every line of code.</p>
+            
+
+          </div>
+        </div>
+        <div className="career_footprint_gallery">
+        {/* <Carousel responsive={responsive}>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+</Carousel> */}
+<div className="container">
+        <Swiper
+        // cssMode={true}
+        // navigation={true}
+        // pagination={true}
+        // mousewheel={true}
+        // keyboard={true}
+        // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        // className="mySwiper"
+        // slidesPerView={5}
+        //       spaceBetween={30}
+        //       breakpoints={{
+        //         320: {
+        //           slidesPerView: 2,
+        //           spaceBetween: 30,
+        //         },
+        //         481: {
+        //           slidesPerView: 3,
+        //           spaceBetween: 30,
+        //         },
+        //         768: {
+        //           slidesPerView: 4,
+        //           spaceBetween: 30,
+        //         },
+        //         1024: {
+        //           slidesPerView: 5,
+        //           spaceBetween: 30,
+        //         },
+        //       }}
+        //       autoplay={{
+        //         delay: 1500,
+        //         disableOnInteraction: false,
+        //       }}
+        //       loop={true}
+        //       modules={[Autoplay]}
+        //       className="mySwiper"
+        
+        slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+             
+              centeredSlides={true}
+              // autoplay={{
+              //   delay: 1500,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation,Autoplay]}
+      >
+      {/* <div className="container"></div> */}
+      <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+      <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        
+        </Swiper>
+
+        </div>
+        </div>
+
+        
+      </Tab>
+      
+    </Tabs>
+
+
+     </div>
+      
       </section>
 
       {/* <section className="join_our_team">
@@ -717,10 +1129,10 @@ const Career = () => {
           
             
             
-            <div className="testimonial_box text-center">
-            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
-              <h6><strong>-Mohit Darmal</strong></h6>
+            <div className="testimonial_box ">
+            <div className="testimonials_citation_symbol text-center"><RiDoubleQuotesL /></div>
+              <p>Join us! You won’t be sorry! One of the things I enjoy most about working here is the teamwork. Even when it is a hard or hectic day -we support each other where & when needed! Making it-Being the Best you can Be!! </p>
+              <h6><strong>-Eshwari S M <br /> (Talent Acquisition Specialist)</strong></h6>
             </div>
             
 
@@ -746,8 +1158,8 @@ const Career = () => {
             
             <div className="testimonial_box text-center">
             <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
-              <h6><strong>-Mohit Bhai</strong></h6>
+              <p>"I've never seen or heard of an organisation that believes shaping your future, it is their responsibility. While every organisation claims to have an open-door policy, at Sakshath, you will truly experience it when the leadership shares lunch with you and discusses your goals and objectives."</p>
+              <h6><strong>-Aashish Dulal<br />(Sr. RPA Developer)</strong></h6>
             </div>
             
 
@@ -756,8 +1168,8 @@ const Career = () => {
             
             <div className="testimonial_box text-center">
             <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
-              <h6><strong>-Mohit Bro</strong></h6>
+              <p>Service Delivery Manager at Sakshath Technologies for the past three years, supporting our esteemed client, ABInBev. The dynamic and forward-thinking culture at Sakshath Technologies fosters continuous improvement, making it a great place to work and grow professionally. I am honoured to be part of this exceptional company and to contribute to its ongoing success. </p>
+              <h6><strong>-Madhusudhan R<br />(Service Delivery Manager) </strong></h6>
             </div>
             </SwiperSlide>
         <SwiperSlide>
@@ -765,8 +1177,8 @@ const Career = () => {
             
             <div className="testimonial_box text-center">
             <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
-              <h6><strong>-Mohit Bhaiya</strong></h6>
+              <p>“Over the past 2.5 years, my Clix Capital role has been challenging and rewarding. I am proud of the improvements and efficiencies I have helped implement, and I am committed to continuing to deliver exceptional performance and value. Working with the talented team at Clix Capital has been a remarkable experience, and I look forward to furthering our collective success.” </p>
+              <h6><strong>-Pallavi Takkar<br />(BI Developer)</strong></h6>
             </div>
            
         </SwiperSlide>
@@ -775,49 +1187,14 @@ const Career = () => {
             
             <div className="testimonial_box text-center">
             <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
-              <h6><strong>-Mohit Darmal</strong></h6>
+              <p>"Sakshath is the go-to place! As a fresher, I've experienced fast learning, great opportunities, and a flexible, professional environment. I feel valued, and appreciated, and continuously grow in my role. The approachable team and excellent work culture make Sakshath the best company I've ever worked for till date</p>
+              <h6><strong>-Kavya Priya.K<br />
+(Jr.Software
+ Developer)</strong></h6>
             </div>
            
         </SwiperSlide>
-        <SwiperSlide>
         
-            
-            <div className="testimonial_box text-center">
-            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
-              <h6><strong>-Mohit Darmal</strong></h6>
-            </div>
-            
-        </SwiperSlide>
-        <SwiperSlide>
-       
-            
-            <div className="testimonial_box text-center">
-            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
-              <h6><strong>-Mohit Darmal</strong></h6>
-            </div>
-            
-        </SwiperSlide>
-        <SwiperSlide>
-            
-            <div className="testimonial_box text-center">
-            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
-              <h6><strong>-Mohit Darmal</strong></h6>
-            </div>
-            
-            </SwiperSlide>
-        <SwiperSlide>
-            
-            <div className="testimonial_box text-center">
-            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vitae, tempora recusandae eum quia porro pariatur sed </p>
-              <h6><strong>-Mohit Darmal</strong></h6>
-            </div>
-            
-            </SwiperSlide>
             
       </Swiper>
       </div>
@@ -916,7 +1293,7 @@ const Career = () => {
                             <img src={data.job_img} alt="" />
                           </div>
                           <div className="careers_jobs_info_box_job_description_box">
-                            <h5>{data.title}</h5>
+                            <h5 className="job_title">{data.title}</h5>
                             <div className="description_box_withicon">
                               <div className="segment_box">
                                 <span>
