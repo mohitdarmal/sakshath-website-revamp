@@ -98,15 +98,17 @@ const Contactus = () => {
           console.log(data, "show data");
         });
     } catch (err) {
-      if (err.response.data.status == 404) {
+      if(err.response == undefined){
+        toast.error("Connection Timeout")
+      }
+      else if (err.response.data.status == 404) {
         setFalingLineVisible(false);
         toast.error("Url Not found");
+      } else{
+        toast.error("Error Found")
       }
-      console.log(
-        err instanceof TypeError,
-        "err",
-        err instanceof SyntaxError,
-        typeof err.response.data.status
+      console.log(err.response, 
+      
       );
     }
     // finally(se){
