@@ -379,7 +379,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
       </section> */}
       {/* @@@@@ SECTION- Brouchure end @@@@@@ */}
 
-      <section className="service_page_contact_form">
+      {/* <section className="service_page_contact_form">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-7">
@@ -400,11 +400,11 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="contact_us_bg">
+      {/* <section className="contact_us_bg">
         <img src={CONTACT_US} className="w-100" />
-      </section>
+      </section> */}
 
       {/* <section>
         <div className="container">

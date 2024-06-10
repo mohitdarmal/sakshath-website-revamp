@@ -61,24 +61,23 @@ const Contactus = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormData({
-      fullName: "", 
-      emailId: "",
-      contactNumber: "",
-      description: "",
-      comments: "",
-    });
-    // setIsLoading(true);
-    // console.log(e.target.value, "amar");
+    // setFormData({
+    //   fullName: "",
+    //   emailId: "",
+    //   contactNumber: "",
+    //   description: "",
+    //   comments: "",
+    // });
+
     try {
-      const res = await axios.post("http://172.20.12.189:8086/confApp/api/v1/contacts", {
-          body: {
+      const res = await axios
+        .post("http://172.20.12.189:8086/confApp/api/v1/contacts", {
+           
             fullName: formData.fullName,
             emailId: formData.emailId,
             description: formData.description,
             contactNumber: formData.contactNumber,
             comments: formData.comments,
-          },
         })
         .then((data) => {
           console.log(data);
@@ -86,7 +85,14 @@ const Contactus = () => {
     } catch (err) {
       console.log(err, "err");
     }
+    // finally(se){
+    //   console.log()
+    // }
+    
+
+
   };
+
 
   //   const handleSubmit = async (e)  => {
   //     e.preventDefault();
