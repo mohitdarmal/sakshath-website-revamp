@@ -457,7 +457,7 @@ const Automation = () => {
               <div className="container">
                 <div className="row align-items-center">
                   <div className="col-md-6">
-                    <Fade direction="up" delay={500}>
+                    <Fade direction="up" delay={100}>
                       <div className="cloud_bg_img">
                         <img
                           src={AUTOMATION_BG_IMG}

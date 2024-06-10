@@ -952,7 +952,9 @@
 
 
 @media screen and (max-width:480px){
- 
+ .sticky_menu{
+  display: none !important;
+ }
 
   .cloud_bg_img{
     img{
@@ -979,4 +981,47 @@
   .why_sakshath_new_section{
     display: none;
   }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px){
+
+  .overview_sec {
+    padding-top: 40px;
+    .overview_sec_left{
+      h3{
+        line-height: 48px !important;
+      }
+    }
+}
+.sticky_menu{
+  display: none !important;
+}
+
+.rpa_graph{
+  img{
+    width: 100%;
+  }
+}
+
+.automation {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.pillars_box{
+  margin-bottom: 15px !important;
+}
+.mobile_section{
+  margin-top: 0px !important;
+}
+
+.why_sakshath_new_section{
+  padding-bottom: 0px !important;
+}
+.why_sakshath_content1{
+  min-height: 566px !important;
+}
+.devops_layer_section{
+  display: none !important;
+}
+ 
 }
