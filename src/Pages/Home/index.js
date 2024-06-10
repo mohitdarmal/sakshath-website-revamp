@@ -706,7 +706,7 @@ export const Home = () => {
                         <img src={SOTI} alt="" />
                       </div>
                       <div className="content">
-                        <h3 className="text">SOTI</h3>
+                        <h3 className="text">SOTI  Altitude</h3>
                         <p>
                           Empower your enterprise with SOTI’s innovative
                           solutions and transform your digital landscape.
@@ -1566,7 +1566,7 @@ Multiple Process in Single Platform
           </div>
           <div className="client_list_button">
             <button onClick={showLogo}>
-              {showClientToggle ? "Show Less" : "Show More Client"}
+              {showClientToggle ? "Show Less" : "View More Client"}
             </button>
           </div>
 
