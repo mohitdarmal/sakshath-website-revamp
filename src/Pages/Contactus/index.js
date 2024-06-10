@@ -26,6 +26,7 @@ import {
   YOUTUBE_ICON,
   INSTAGRAM_ICON,
   LINKEDIN_ICON,
+  STAR,
 } from "./Constant";
 import Contact from "../../Components/Contact/Contact";
 import BreadCumb from "../../Components/Breadcumb";
@@ -36,10 +37,12 @@ import { Helmet } from "react-helmet";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { IoCloseCircle } from "react-icons/io5";
+
 const Contactus = () => {
   const [key, setKey] = useState("home");
 
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [falingLineVisible, setFalingLineVisible] = useState(false);
   const [loaderShow, setLoaderShow] = useState("none");
 
@@ -87,7 +90,7 @@ const Contactus = () => {
 
     try {
       const res = await axios
-        .post("http://172.20.12.189:8086/confApp/api/v1/contactss", {
+        .post("http://172.20.12.189:8086/confApp/api/v1/contacts", {
           fullName: formData.fullName,
           emailId: formData.emailId,
           description: formData.description,
@@ -99,24 +102,17 @@ const Contactus = () => {
           console.log(data, "show data");
         });
     } catch (err) {
-      if(err.response == undefined){
-        toast.error("Connection Timeout")
-      }
-      else if (err.response.data.status == 404) {
-      
+      if (err.response == undefined) {
+        toast.error("Connection Timeout");
+      } else if (err.response.data.status == 404) {
         toast.error("Url Not found");
-      } else{
-        toast.error("Error Found")
+      } else {
+        toast.error("Error Found");
       }
-      console.log(err.response, 
-      
-      )
-    }finally(err){
+      console.log(err.response);
+    } finally {
       setFalingLineVisible(false);
     }
-    // finally(se){
-    //   console.log()
-    // }
   };
 
   //   const handleSubmit = async (e)  => {
@@ -662,27 +658,54 @@ Gurugram, Haryana 122016
       </section> */}
 
       {/* submit form loader */}
-      <Modal
-        show={show}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          I will not close if you click outside me. Do not even try to press
-          escape key.
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary">Understood</Button>
-        </Modal.Footer>
-      </Modal>
+      <div className="contact_success_popup">
+        <Modal
+          show={show}
+          onHide={handleClose}
+          backdrop="static"
+          keyboard={false}
+          centered
+          className="contact_submit_popup"
+        >
+          {/* <Modal.Header closeButton>
+        
+        </Modal.Header> */}
+          <Modal.Body>
+            <div onClick={handleClose} className="newsletter_close_btn">
+              <IoCloseCircle />
+            </div>
+            <div>
+              <div className="star_img">
+                <img
+                  src={STAR}
+                  alt=""
+                  style={{
+                    width: "100px",
+                    marginLeft: "175px",
+                    marginTop: "15px",
+                    marginBottom: "15px",
+                  }}
+                />
+              </div>
+
+              <h3>Thank You for contact us</h3>
+              <p>
+                Your details as been recived. <br /> Our team will you contact
+                soon.
+              </p>
+            </div>
+            <div className="button_popup">
+              <button>Cancel</button>
+            </div>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary">Understood</Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
       {/* <Watch
           visible={true}
           height="80"
