@@ -53,3 +53,5 @@ export const SUPPLY_CHAIN = require("../../../Assets/images/supply_chain.svg").d
 export const ORGANIZATION=require('../../../Assets/images/ERP_Internal_operations.png')
 export const INFORMATION=require('../../../Assets/images/ERP_InFORMATION.png')
 export const BUSINESS=require('../../../Assets/images/ERP_Business operations.png')
+
+export const MSDYnamic = require("../../../Assets/images/MS Dynamic.svg").default;

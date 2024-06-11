@@ -17,7 +17,7 @@ export const CLIENT_LOGO14=require("../../Assets/images/Jupiter_hospital.png");
 export const CLIENT_LOGO15=require("../../Assets/images/Chaitanya_Microfinance.jpg");
 export const CLIENT_LOGO45=require("../../Assets/images/Fullerton_india.png");
 export const CLIENT_LOGO46=require("../../Assets/images/Inox_air.jpg");
-export const CLIENT_LOGO47=require("../../Assets/images/kens.jpg");
+// export const CLIENT_LOGO47=require("../../Assets/images/kens.jpg");
 
 
 // International Logo

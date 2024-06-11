@@ -171,7 +171,7 @@ export const Home = () => {
         "Highlighting the impactful contributions of our employees across Africa",
       description:
         " Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club...",
-      image: require("../../Assets/images/achievemnt_img_three.jpg"),
+      image: require("../../Assets/images/achivement_img3.jpeg"),
     },
   ];
 
@@ -991,7 +991,7 @@ export const Home = () => {
                       <h3>Talend</h3>
                       <p>
                     
-                      Leverage our expertise and resources to drive success, enhance capabilities, and achieve your strategic objectives in a competitive market.
+                      We excels in implementing Talend's data solutions for optimal client outcomes.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>

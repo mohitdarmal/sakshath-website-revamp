@@ -81,7 +81,7 @@ const OurTeam = () => {
       setActiveGauriProfile(false);
       // setActivePrashantProfile(false);
       setActiveSuchiProfile(false);
-    } 
+    }
     // else if (e.target.textContent === "Nidhi Singh") {
     //   setProfileData({
     //     content:
@@ -96,8 +96,8 @@ const OurTeam = () => {
     //   setActiveSanjayProfile(false);
     //   setActiveManmeetProfile(false);
     //   setActiveGauriProfile(false);
-    // } 
-    else if (e.target.textContent === "Praveen D") {
+    // }
+    else if (e.target.textContent === "Praveen Dasarathi") {
       setProfileData({
         content:
           "Praveen has extensive knowledge and expertise in technical consulting, particularly in end user productivity solutions. He has successfully delivered numerous projects, resulting in increased efficiency, streamlined workflows, and improved user experiences for clients across diverse industries. Praveen’s key strengths lie in understanding complex technical requirements, analyzing business needs, and developing tailored solutions that align with client objectives.",
@@ -113,7 +113,7 @@ const OurTeam = () => {
       setActiveGauriProfile(false);
       // setActivePrashantProfile(false);
       setActiveSuchiProfile(false);
-    } 
+    }
     // else if (e.target.textContent === "Sanjay Ganesh") {
     //   setProfileData({ content: "Sanjay Ganesh" });
     //   setActiveSanjayProfile(true);
@@ -143,11 +143,11 @@ const OurTeam = () => {
     //   setActiveGauriProfile(false);
     //   setActivePrashantProfile(false);
     //   setActiveSuchiProfile(false);
-    // } 
+    // }
     else if (e.target.textContent === "Shuchi Shreshtha") {
       setProfileData({
-           content:
-           "Shuchi is an agile-certified HR professional with over 1.3 decades of experience in Human Resource Management, Consulting, Transformation Projects, HR Analytics, Organizational Development, and Team Building, with exceptional communication and people management. Collaborated with multinational clients in IT/ITES, Banking, Auction, Accounting, Audit, Asset Remarketing, and Education. Shuchi achieves organizational goals with a strategic vision and fosters a positive workplace culture.",
+        content:
+          "Shuchi is an agile-certified HR professional with over 1.3 decades of experience in Human Resource Management, Consulting, Transformation Projects, HR Analytics, Organizational Development, and Team Building, with exceptional communication and people management. Collaborated with multinational clients in IT/ITES, Banking, Auction, Accounting, Audit, Asset Remarketing, and Education. Shuchi achieves organizational goals with a strategic vision and fosters a positive workplace culture.",
         position: "VP – HR",
       });
       setActiveSuchiProfile(true);
@@ -178,7 +178,7 @@ const OurTeam = () => {
     //   setActiveShravanProfile(false);
     //   setActiveSuchiProfile(false);
     // }
-    else if (e.target.textContent === "Gouriprasad") {
+    else if (e.target.textContent === "Gouriprasad Velagada") {
       setProfileData({
         content:
           "Gouri Prasad is a Techno-Functional Consultant with 20+ Years of experience in the Accounting, Finance Domain, ERP Implementation, Software Quality Analysis, and Business Analysis and 10+ years of domain experience. He excels at functional design, planning, analysis, testing, development, and implementation of IT solutions while offering guidance, support, and training in challenging and complex system contexts.",
@@ -198,13 +198,15 @@ const OurTeam = () => {
     console.log("Clicked", e.target.textContent);
   };
   useEffect(() => {
-    if (window.matchMedia("(min-width: 1024px)").matches) { // Adjust the min-width value as per your requirement
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+      // Adjust the min-width value as per your requirement
       const script = document.createElement("script");
-      script.src = "https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.3.2/tsparticles.bundle.js";
+      script.src =
+        "https://cdnjs.cloudflare.com/ajax/libs/tsparticles/2.3.2/tsparticles.bundle.js";
       script.async = true;
-    
+
       document.body.appendChild(script);
-    
+
       script.onload = () => {
         window.tsParticles.load("tsparticles", {
           fullScreen: { enable: false },
@@ -249,7 +251,7 @@ const OurTeam = () => {
           },
         });
       };
-    
+
       return () => {
         // Clean up
         document.body.removeChild(script);
@@ -321,7 +323,7 @@ const OurTeam = () => {
                     <h5>Shuchi Shreshtha</h5>
                     <img src={SUCHI_PIC} />
                   </div>
-                </div>              
+                </div>
 
                 <div
                   className={`our_team_sec_box ${
@@ -330,7 +332,7 @@ const OurTeam = () => {
                   onClick={handleChangeDetail}
                 >
                   <div className="details">
-                    <h5>Gouriprasad</h5>
+                    <h5>Gouriprasad Velagada</h5>
                     <img src={GAURI_PIC} />
                   </div>
                 </div>
@@ -341,11 +343,10 @@ const OurTeam = () => {
                   onClick={handleChangeDetail}
                 >
                   <div className="details">
-                    <h5>Praveen D</h5>
+                    <h5>Praveen Dasarathi</h5>
                     <img src={PRAVEEN_PIC} />
                   </div>
                 </div>
-
               </div>
 
               <div className="our_team_sec_dot">
@@ -367,9 +368,6 @@ const OurTeam = () => {
           </div>
         </div>
       </section>
-
-
-      
     </>
   );
 };
