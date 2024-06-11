@@ -11,7 +11,8 @@ import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
 //import BlueHeading from "../../Components/Utils/BlueHeading";
 import SubTitle from "../../Components/Utils/Title_head";
-import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES, bangalore_img1, bangalore_map, FULLFILLMENT_IMG, FULL_WELLNESS_IMG,mumbai_map,gurugram_map,FIND_YOUR_ROLE, EXCELLENCE_IMG,bangalore_img2,bangalore_img3,bangalore_img4,bangalore_img5,bangalore_img6,bangalore_img7,mumbai_img1,mumbai_img2,mumbai_img3,mumbai_img4, mumbai_img5,mumbai_img6,mumbai_img7,CARRIER_BREAD_CRUM,bangalore_img9}
+import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES, bangalore_img1, bangalore_map, FULLFILLMENT_IMG, FULL_WELLNESS_IMG,mumbai_map,gurugram_map,FIND_YOUR_ROLE, EXCELLENCE_IMG,bangalore_img2,bangalore_img3,bangalore_img4,bangalore_img5,bangalore_img6,bangalore_img7,mumbai_img1,mumbai_img2,mumbai_img3,mumbai_img4, mumbai_img5,mumbai_img6,mumbai_img7,
+  mumbai_img8,mumbai_img9,mumbai_img10,mumbai_img11,mumbai_img12,CARRIER_BREAD_CRUM,bangalore_img9,gurugram_img1,gurugram_img2,gurugram_img3,gurugram_img4,gurugram_img5,gurugram_img6,gurugram_img7,gurugram_img8,gurugram_img9,gurugram_img10,gurugram_img11, bangalore_img10, bangalore_img11,bangalore_img8}
  from "./Constant";
 
 import { BsEnvelope } from "react-icons/bs";
@@ -87,28 +88,102 @@ const Career = () => {
         {
           id: 1,
           content:
-            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+            "Budget: 32 LPA (Max)",
         },
         {
           id: 2,
           content:
-            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+            "Work: Hybrid ",
         },
         {
           id: 3,
           content:
-            "Minimum 2-3 year of experience of working with –I. Tools: Python, Spark, Azure Data factory, AWS Redshift. Postgres SQL, MS SQL Oracle, Power BI API Integration,Power BI Shell Scripting. Azure analytics Services.II. Enterprise of working on data warehouse/ Data marts projects.",
+            "Work Location: Whitefield",
         },
         {
           id: 4,
           content:
-            "Experience working in Agile development environment with tools such as Jira and Bitbucket",
+            "Technical Execution:"
+
+            
         },
         {
-          id: 4,
+          id: 5,
           content:
-            "Good to having Knowledge of other BI Tools & Platforms: Qlik, Tableau, Looker, Talend, Alteryx, snowflake.",
+            "You will improve code structure, have an impact on architecture, and review code of any scope produced by your team."
+
+           
         },
+        {
+          id: 6,
+          content:
+            `Roles & Responsibilities Collaboration & Leadership:
+            `
+
+           
+        },
+        {
+          id: 7,
+          content:
+            "As well as leading from the front regarding technical execution, you'll build relationships with other engineering teams and, identify collaboration opportunities."
+
+           
+        },
+        {
+          id: 8,
+          content:
+            "You'll own larger pieces of work, assist with design and technical / implementation choices and influence the roadmap within your team."
+
+           
+        },
+        {
+          id: 9,
+          content:
+          "You will take an active role in the hiring process and conducting engineering interviews. This will also extend to the current team where you will support the personal growth of colleagues, encouraging efficiency in their roles."
+
+           
+        },
+        {
+          id: 9,
+          content:
+          `Minimum 4+ years of work experience
+          Pride in readable, well-designed, well-tested software
+          `
+
+           
+        },
+        {
+          id: 9,
+          content:
+          `Experience writing web-based applications in any language, and an interest in learning (Golang, Mysql)
+          `
+
+           
+        },
+        {
+          id: 10,
+          content:
+          `Experience with relational databases (PostgreSQL, MySQL)
+          `
+
+           
+        },
+        {
+          id: 10,
+          content:
+          `Experience with "NoSQL" data backends and other (Redis, DynamoDB, ElasticSearch, Memcache)
+          `
+
+           
+        },
+
+
+
+
+        
+        
+
+
       ],
       experince: "4-6 years",
       location:'Bengaluru',
@@ -670,11 +745,20 @@ const Career = () => {
         <SwiperSlide>
           <img src={bangalore_img6} alt=""  />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={bangalore_img7} alt=""  />
+        </SwiperSlide> */}
+        <SwiperSlide>
+          <img src={bangalore_img8} alt=""  />
         </SwiperSlide>
         <SwiperSlide>
           <img src={bangalore_img9} alt=""  />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img10} alt=""  />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img11} alt=""  />
         </SwiperSlide>
         </Swiper>
 
@@ -810,17 +894,30 @@ const Career = () => {
           <img src={mumbai_img4} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
-        </SwiperSlide>
-        <SwiperSlide>
           <img src={mumbai_img5} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={mumbai_img6} alt="" className="img-fluid" />
         </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img7} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img8} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img9} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img10} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img11} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img12} alt="" className="img-fluid" />
+        </SwiperSlide>
+        
         </Swiper>
 
         </div>
@@ -937,27 +1034,43 @@ const Career = () => {
                 clickable: true,
               }}
               navigation={true}
-              modules={[Pagination, Navigation]}
+              modules={[Pagination, Navigation,Autoplay]}
       >
       {/* <div className="container"></div> */}
       <SwiperSlide>
-          <img src={bangalore_img4} alt="" className="img-fluid" />
+          <img src={gurugram_img1} alt="" className="img-fluid" />
         </SwiperSlide>
       <SwiperSlide>
-          <img src={bangalore_img5} alt="" className="img-fluid" />
+          <img src={gurugram_img2} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img6} alt="" className="img-fluid" />
+          <img src={gurugram_img3} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img7} alt="" className="img-fluid" />
+          <img src={gurugram_img4} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img1} alt="" className="img-fluid" />
+          <img src={gurugram_img5} alt="" className="img-fluid" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={bangalore_img3} alt="" className="img-fluid" />
+          <img src={gurugram_img6} alt="" className="img-fluid" />
         </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img7} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img8} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img9} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img10} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img11} alt="" className="img-fluid" />
+        </SwiperSlide>
+       
         </Swiper>
 
         </div>
@@ -1051,7 +1164,7 @@ const Career = () => {
               <div className="benefits_heading text-center">
                 <Fade direction="up" triggerOnce>
                   <Heading
-                    heading="Benefits of working at sakshath"
+                    heading="Benefits of choosing Sakshath Technologies®"
                     uppercase=""
                   />{" "}
                 </Fade>
@@ -1227,6 +1340,17 @@ const Career = () => {
             <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
               <p>"I've never seen or heard of an organisation that believes shaping your future, it is their responsibility. While every organisation claims to have an open-door policy, at Sakshath, you will truly experience it when the leadership shares lunch with you and discusses your goals and objectives."</p>
               <h6><strong>-Aashish Dulal<br />(Sr. RPA Developer)</strong></h6>
+            </div>
+            
+
+        </SwiperSlide>
+        <SwiperSlide>
+       
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>"I love to work at Sakshath, as it is the place where all the teams work together in a harmony encouraging each other. Working at Sakshath will make everyone feel it as a pleasure, but not a pressure."</p>
+              <h6><strong>-Rama Rao<br />(Technical Lead ERP)</strong></h6>
             </div>
             
 
