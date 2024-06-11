@@ -42,7 +42,7 @@ import { IoCloseCircle } from "react-icons/io5";
 const Contactus = () => {
   const [key, setKey] = useState("home");
 
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [falingLineVisible, setFalingLineVisible] = useState(false);
   const [loaderShow, setLoaderShow] = useState("none");
 
@@ -79,13 +79,7 @@ const Contactus = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-     setFormData({
-       fullName: "",
-       emailId: "",
-       contactNumber: "",
-       description: "",
-       comments: "",
-     });
+   
     setFalingLineVisible(true);
 
     try {
@@ -112,6 +106,13 @@ const Contactus = () => {
       console.log(err.response);
     } finally {
       setFalingLineVisible(false);
+      setFormData({
+       fullName: "",
+       emailId: "",
+       contactNumber: "",
+       description: "",
+       comments: "",
+     });
     }
   };
 
@@ -720,7 +721,11 @@ Gurugram, Haryana 122016
               </p>
             </div>
             <div className="button_popup">
-              <button>Cancel</button>
+            <a href="/">
+
+         
+              <button>Back</button>
+              </a>
             </div>
           </Modal.Body>
           <Modal.Footer>
