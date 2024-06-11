@@ -247,7 +247,7 @@ const Header = () => {
                 </li> */}
                 <li className="nav-item dropdown">
                 <NavLink
-                     to="/abc"
+                     to="javascript:void(0)"
                     className="nav-link dropdown-toggle"
                     id="account1Dropdown"
                     role="button"
