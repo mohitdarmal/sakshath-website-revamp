@@ -957,10 +957,10 @@ export const Home = () => {
                 <Fade direction="up" delay={400} triggerOnce>
                   <div className="partners_box horizontal-shake">
                     <div className="icon">
-                      <img src={Microsoft} alt="" />
+                      <img src={TALEND} alt="" />
                     </div>
                     <div className="content">
-                      <h3>Microsoft</h3>
+                      <h3>Talend</h3>
                       <p>
                         Enhance security and streamline operations with
                         Microsoft software.

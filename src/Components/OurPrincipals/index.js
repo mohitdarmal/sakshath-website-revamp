@@ -127,7 +127,7 @@ const OurPrincipals = () => {
                   </Fade>
                   <Fade direction="up" triggerOnce>
                     <Heading
-                      heading="Top Four Reasons to Choose Sakshath Technologies"
+                      heading="Top Four Reasons to Choose Sakshath Technologies®"
                       uppercase=""
                     />
                   </Fade>
