@@ -173,7 +173,29 @@ const Career = () => {
           content:
           `Experience with "NoSQL" data backends and other (Redis, DynamoDB, ElasticSearch, Memcache)
           `
+          
+           
+        },
+        {
+          id: 10,
+          content:
+          `
+          
+          Experience solving logistical problems with software`
 
+       
+          
+           
+        },
+        {
+          id: 10,
+          content:
+          
+          
+          
+
+    `Mandatory Skills Golang, AWS, MySQL`
+          
            
         },
 

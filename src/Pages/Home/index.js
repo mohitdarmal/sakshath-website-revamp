@@ -171,7 +171,7 @@ export const Home = () => {
         "Highlighting the impactful contributions of our employees across Africa",
       description:
         " Sanjay is an esteemed member of the Rotary Club.He identified the benefits of the club...",
-      image: require("../../Assets/images/achievemnt_img_three.jpg"),
+      image: require("../../Assets/images/achivement_img3.jpeg"),
     },
   ];
 

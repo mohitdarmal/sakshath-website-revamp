@@ -23,7 +23,7 @@ import {
     CLIENT_LOGO15,
     CLIENT_LOGO45,
     CLIENT_LOGO46,
-    CLIENT_LOGO47,
+
     CLIENT_LOGO16,
     CLIENT_LOGO17,
     CLIENT_LOGO18,
@@ -101,10 +101,7 @@ import {
             <SwiperSlide>
               <img src={CLIENT_LOGO2}  />
             </SwiperSlide>
-            <SwiperSlide>
-              <img src={CLIENT_LOGO47}  />
-            </SwiperSlide>
-            <SwiperSlide>
+                     <SwiperSlide>
               <img src={CLIENT_LOGO34}  />
             </SwiperSlide>
             <SwiperSlide>

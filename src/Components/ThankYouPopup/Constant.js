@@ -1,0 +1,1 @@
+export const STAR = require("../../Assets/images/start_img_popup.png");

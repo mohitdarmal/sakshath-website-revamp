@@ -68,13 +68,7 @@ const Contactus = () => {
       [name]: value,
     });
 
-    // (e) => {
-    //   setFormData({
-    //     ...formData,
-    //     fullName: e.target.value,
-    //   });
-    // };
-  };
+   };
 
   // Handle form submission
   const handleSubmit = async (e) => {
@@ -653,36 +647,6 @@ Gurugram, Haryana 122016
          </div>
 
 
-
-         
-
-        
-            
-        </section>
-
-
-        <section className='contact_us_map_form_section'>
-        <div className="container mt-4">
-          <div className="row">
-    
-            <div className="col-md-6">
-              <iframe
-                src="https://www.google.com/maps/d/embed?mid=1QtXoNJa4bNr3llNKRLddH_rzCUNktWQ&ehbc=000F&noprof=1"
-                width="100%"
-                height="545"
-              ></iframe>
-
-            </div>
-
-            <div className="col-md-6">
-            
-              <Contact />
-              
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       {/* submit form loader */}
       <div className="contact_success_popup">
         <Modal
@@ -693,9 +657,7 @@ Gurugram, Haryana 122016
           centered
           className="contact_submit_popup"
         >
-          {/* <Modal.Header closeButton>
-        
-        </Modal.Header> */}
+       
           <Modal.Body>
             <div onClick={handleClose} className="newsletter_close_btn">
               <IoCloseCircle />
