@@ -1598,7 +1598,7 @@ export const Home = () => {
           </div>
           <div className="client_list_button">
             <button onClick={showLogo}>
-              {showClientToggle ? "Show Less" : "View More Client"}
+              {showClientToggle ? "Show Less" : "View More Clients"}
             </button>
           </div>
 
