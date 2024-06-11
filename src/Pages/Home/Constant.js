@@ -24,8 +24,6 @@ export const DB = require("../../Assets/images/db_logo.png");
 export const SIMPLIFYQA = require("../../Assets/images/SimplifyQA.png");
 
 
-
-
 export const TEAM_IMG = require("../../Assets/images/teammember.png");
 export const IT_IMG = require("../../Assets/images/it.png");
 export const SERVICE_IMG = require("../../Assets/images/service.png");
@@ -63,3 +61,11 @@ export const DOTTED_IMG1 = require("../../Assets/images/dotted_img.png");
 export const ISO_27001 = require("../../Assets/images/iso_27001.png");
 export const ISO_9001 = require("../../Assets/images/ISO_9001.png");
 export const GREAT_PLACE_WORK = require("../../Assets/images/great_place_worl_logo.png");
+
+
+export const ERP_ICON = require("../../Assets/images/service_erp_icon.png");
+export const APPLICATION_DEVELOPMENT_ICON = require("../../Assets/images/application_dev_icon.png");
+export const AUTOMATION_ICON = require("../../Assets/images/automation_icon.png");
+export const APPLICATION_READINESS_ICON = require("../../Assets/images/app_readiness_icon.png");
+export const ANALYTICS_ICON = require("../../Assets/images/analytics_icon.png");
+export const ENTERPRISES_MOBILITY_ICON = require("../../Assets/images/enterprises_mobility_icon.png");

@@ -3,6 +3,11 @@
 .letstalk {
   padding: 60px;
   background-color: $ball_blue_color;
+
+  .heading_title{
+    color: $light_navy_blue;
+  }
+
 a{
     text-decoration: none;
     cursor: pointer;
@@ -12,13 +17,8 @@ a{
     font-weight: bold;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 100px;
-
-    // &:hover{
-    //     transform: scale(-1.04,-1.02);
-    //     transition: .5s;
-    //     color: black;
-    // }
+    font-size: 70px;
+    animation: zoom-in-zoom-out 2s ease infinite;
   }
   span{
     color:'grey';
@@ -30,16 +30,29 @@ a{
 .letstalk_heading{
     transition: .5s;
 }
-.letstalk_heading:hover{
-    transform: scale(.75, .76);
-    transition: 0.5s;
-    color: #000;
-    h1:hover{
-        color:#000;
+// .letstalk_heading:hover{
+//     transform: scale(.75, .76);
+//     transition: 0.5s;
+//     color: #000;
+//     h1:hover{
+//         color:#000;
         
-    }
-    span{
-        color: #000;
-    }
+//     }
+//     span{
+//         color: #000;
+//     }
 
+// }
+
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }

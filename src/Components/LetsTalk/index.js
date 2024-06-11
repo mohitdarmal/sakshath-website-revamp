@@ -12,7 +12,7 @@ const LetsTalk = () => {
           <Heading heading="CONTACT US" />
         </div>
             <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-12 overflow-hidden">
             <div className="letstalk_heading">
 
             <a href="/contact-us">
