@@ -65,7 +65,7 @@ const JobOpeningPopup = (props) => {
         
           
         <div className="row">
-          <div className="col-md-3 pb-4">
+          <div className="col-md-4 pb-4">
           <div className="box">
 
        
@@ -74,26 +74,20 @@ const JobOpeningPopup = (props) => {
           </h6>
           <p>{props.experince}</p>   </div>
           </div>
-          <div className="col-md-3 pb-4">
+          <div className="col-md-4 pb-4">
           <div className="box">
         <h6><div><IoPersonOutline /></div>
         Number Of Position</h6>
            <p>{props.position}</p>
           </div></div>
-          <div className="col-md-3 pb-4">
+          <div className="col-md-4 pb-4">
           <div className="box">
           <h6><div><IoLocationOutline /></div>
           Location</h6>
             <p>{props.location}</p>
           </div>
           </div>
-          <div className="col-md-3 pb-4">
-          <div className="box">
-          <h6><div><IoLocationOutline /></div>
-          work</h6>
-          <p>{props.location}</p> 
-          </div>
-          </div>
+          
     
         </div>
         
