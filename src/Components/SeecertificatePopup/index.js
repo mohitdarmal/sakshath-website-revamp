@@ -113,26 +113,26 @@ const SeeCertificatePopup = (props) => {
     event.preventDefault();
     console.log("Email submitted:", email);
   };
-const [show,setShow]=useState(false);
-  const handleClose = () => setShow(false);
 
+  console.log(props.onHide, "handleCloseModal")
+ 
+  
   return (
     <>
       <Modal
         {...props}
         size="md"
-        show={show}
-           aria-labelledby="contained-modal-title-vcenter"
+        aria-labelledby="contained-modal-title-vcenter"
         centered
         className="brouchure_popup"
       >
-        <Modal.Header closeButton>
+        <Modal.Header>
           <div className="brouchure_icon">
             <PiCertificateLight />
           </div>
         </Modal.Header>
         <Modal.Body>
-        <div onClick={handleClose} className="newsletter_close_btns">
+        <div onClick={props.onHide} className="newsletter_close_btns">
               <IoCloseCircle />
             </div>
           <h4>Subscribe to View Certificate</h4>
