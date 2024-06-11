@@ -12,14 +12,14 @@
 
 @media screen and (max-width:480px){
     .heading_title{
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 26px;
+        line-height: 28px;
     }
 }
 
 @media screen and (min-width:481px) and (max-width:767px){
     .heading_title{
-        font-size: 26px;
-        line-height: 36px;
+        font-size: 30px !important;
+        line-height: 36px !important;
     }
 }

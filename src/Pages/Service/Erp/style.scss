@@ -478,11 +478,7 @@ li {
 
 // media query starts
 @media screen and (max-width: 480px) {
-  .heading_title {
-    font-size: 22px !important;
-    line-height: 30px !important;
-    text-align: center !important;
-  }
+ 
   .epicor_section {
     padding-top: 40px !important;
   }
@@ -511,11 +507,6 @@ li {
   .industry_erp {
     padding-bottom: 40px !important;
     padding-top: 20px;
-  }
-  .heading_title {
-    font-size: 30px;
-    line-height: 50px;
-    text-align: center;
   }
 
   .syspro_8_ways_section {

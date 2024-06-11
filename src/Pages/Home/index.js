@@ -743,11 +743,28 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row swipper_service">
           
             <Swiper
-              spaceBetween={50}
-              centeredSlides={true}
+              // centeredSlides={true}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                481: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+              }}
               autoplay={{
                 delay: 1500,
                 disableOnInteraction: false,
@@ -757,10 +774,12 @@ export const Home = () => {
               }}
               navigation={true}
               modules={[Pagination, Navigation]}
+              className="mySwiper"
             >
-              <SwiperSlide>
-                <div className="swipper_service d-flex">
-                  <div className="col-md-4 text-center">
+             
+             
+                <SwiperSlide>
+                  <div className="text-center">
                   <Fade direction="up" delay={20} triggerOnce>
                     <div className="service_home_box1 ">
                       <h4>ERP</h4>
@@ -777,7 +796,10 @@ export const Home = () => {
                     </div>
                     </Fade>
                   </div>
-                  <div className="col-md-4 text-center">
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                  <div className="text-center">
                   <Fade direction="up" delay={150} triggerOnce>
                     <div className="service_home_box1 ">
                       <h4>Application development</h4>
@@ -793,8 +815,10 @@ export const Home = () => {
                     </div>
                     </Fade>
                   </div>
+                  </SwiperSlide>
 
-                  <div className="col-md-4 text-center">
+                  <SwiperSlide>
+                  <div className="text-center">
                   <Fade direction="up" delay={300} triggerOnce>
                     <div className="service_home_box1 ">
                       <h4>Automation</h4>
@@ -809,13 +833,12 @@ export const Home = () => {
                     <Link to="/automation">Discover More</Link>
                     </div>
                     </Fade>
-                  </div>
-                  
-                </div>
+                  </div>                
               </SwiperSlide>
+
               <SwiperSlide>
-                <div className="swipper_service d-flex">          
-                  <div className="col-md-4 text-center">
+                      
+                  <div className="text-center">
                   
                     <div className="service_home_box1 ">
                       <h4>Application Readiness</h4>
@@ -829,7 +852,9 @@ export const Home = () => {
                     </div>
                     
                   </div>
-                  <div className="col-md-4 text-center">
+                  </SwiperSlide> 
+                  <SwiperSlide>
+                  <div className="text-center">
                  
                     <div className="service_home_box1 ">
                       <h4>Analytics</h4>
@@ -843,7 +868,9 @@ export const Home = () => {
                     </div>
                   
                   </div>
-                  <div className="col-md-4 text-center">
+                  </SwiperSlide> 
+                  <SwiperSlide>
+                  <div className="text-center">
                 
                     <div className="service_home_box1 ">
                       <h4>Enterprise Mobility</h4>
@@ -859,8 +886,9 @@ export const Home = () => {
                     </div>
                   
                   </div>
-                </div>
-              </SwiperSlide>
+                  </SwiperSlide>
+              
+             
             </Swiper>
          
           </div>
@@ -871,7 +899,7 @@ export const Home = () => {
       {/* partners start */}
       <section className="partners_section">
         <div className="container">
-          <div className="row text-center mb-4">
+          <div className="row text-center mb-md-4">
             <Heading heading="PARTNERS" />
           </div>
           <div className="row">
@@ -1047,7 +1075,7 @@ export const Home = () => {
 
             <div className="row iso_certificate_logo">
               <Swiper
-                breakpoints={{
+                `breakpoints={{
                   320: {
                     slidesPerView: 3,
                     spaceBetween: 30,
@@ -1064,7 +1092,7 @@ export const Home = () => {
                     slidesPerView: 4,
                     spaceBetween: 30,
                   },
-                }}
+                }}`
                 autoplay={{
                   delay: 1500,
                   disableOnInteraction: false,
