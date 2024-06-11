@@ -253,13 +253,23 @@ const Header = () => {
                     role="button"
                     aria-expanded="false"
                   >
-                    Solution
+                    Solutions
                   </NavLink>
                   <ul
                     className="dropdown-menu border-0 shadow bsb-zoomIn"
                     aria-labelledby="account1Dropdown"
                   >
-                  
+                  <li>
+                      <NavLink to="/mobility" className="dropdown-item">
+                      Enterprise Mobility
+                      </NavLink>
+                    </li>
+
+                    <li>
+                      <NavLink to="/application-readiness" className="dropdown-item">
+                     Application Readiness
+                      </NavLink>
+                    </li>
                     <li>
                       <NavLink to="/banking-solution" className="dropdown-item">
                         Banking Solution
@@ -275,17 +285,7 @@ const Header = () => {
                         Staffing
                       </NavLink>
                     </li>
-                    <li>
-                      <NavLink to="/mobility" className="dropdown-item">
-                      Enterprise Mobility
-                      </NavLink>
-                    </li>
-
-                    <li>
-                      <NavLink to="/application-readiness" className="dropdown-item">
-                     Application Readiness
-                      </NavLink>
-                    </li>
+                    
                   </ul>
                 </li>
                 <li>

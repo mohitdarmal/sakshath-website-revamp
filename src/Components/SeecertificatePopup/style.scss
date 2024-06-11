@@ -80,6 +80,7 @@
 
     .modal-header{
         border: none;
+        border-bottom:none !important;
     }
 
     .modal-body{
@@ -127,6 +128,24 @@
             }
         }
     }
+}
+
+
+.newsletter_close_btns {
+    svg{
+    font-size: 34px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    margin-top: -20px;
+    margin-right: 10px;
+
+    color: $ball_blue_color;
+    cursor: pointer;
+    &:hover{
+        color: #e51212;
+    }
+}
 }
 
 
