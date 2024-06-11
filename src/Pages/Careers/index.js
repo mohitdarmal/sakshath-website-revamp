@@ -11,38 +11,9 @@ import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
 //import BlueHeading from "../../Components/Utils/BlueHeading";
 import SubTitle from "../../Components/Utils/Title_head";
-import {
-  CARRER_BENFIT_IMG,
-  JOIN_OUR_TEAM_IMG,
-  CAREERS_AT_SAKSHATH,
-  EXPRESSIVE,
-  MOTIVATED,
-  ARTICULATE,
-  NEW_CHALLENGES,
-  bangalore_img1,
-  bangalore_map,
-  FULLFILLMENT_IMG,
-  FULL_WELLNESS_IMG,
-  mumbai_map,
-  gurugram_map,
-  FIND_YOUR_ROLE,
-  EXCELLENCE_IMG,
-  bangalore_img2,
-  bangalore_img3,
-  bangalore_img4,
-  bangalore_img5,
-  bangalore_img6,
-  bangalore_img7,
-  mumbai_img1,
-  mumbai_img2,
-  mumbai_img3,
-  mumbai_img4,
-  mumbai_img5,
-  mumbai_img6,
-  mumbai_img7,
-  CARRIER_BREAD_CRUM,
-  bangalore_img9,
-} from "./Constant";
+import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES, bangalore_img1, bangalore_map, FULLFILLMENT_IMG, FULL_WELLNESS_IMG,mumbai_map,gurugram_map,FIND_YOUR_ROLE, EXCELLENCE_IMG,bangalore_img2,bangalore_img3,bangalore_img4,bangalore_img5,bangalore_img6,bangalore_img7,mumbai_img1,mumbai_img2,mumbai_img3,mumbai_img4, mumbai_img5,mumbai_img6,mumbai_img7,
+  mumbai_img8,mumbai_img9,mumbai_img10,mumbai_img11,mumbai_img12,CARRIER_BREAD_CRUM,bangalore_img9,gurugram_img1,gurugram_img2,gurugram_img3,gurugram_img4,gurugram_img5,gurugram_img6,gurugram_img7,gurugram_img8,gurugram_img9,gurugram_img10,gurugram_img11, bangalore_img10, bangalore_img11,bangalore_img8}
+ from "./Constant";
 
 import { BsEnvelope } from "react-icons/bs";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
@@ -61,13 +32,15 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { Autoplay } from "swiper/modules";
+
+
 
 const Career = () => {
   const [modalPopupData, setModalPopupData] = useState({});
@@ -110,42 +83,138 @@ const Career = () => {
     {
       id: 1,
       title: "Golang Developer",
-      job_img: require("../../Assets/images/golang.png"),
+      job_img:require("../../Assets/images/golang.png"),
       description: [
         {
           id: 1,
           content:
-            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+            "Budget: 32 LPA (Max)",
         },
         {
           id: 2,
           content:
-            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+            "Work: Hybrid ",
         },
         {
           id: 3,
           content:
-            "Minimum 2-3 year of experience of working with –I. Tools: Python, Spark, Azure Data factory, AWS Redshift. Postgres SQL, MS SQL Oracle, Power BI API Integration,Power BI Shell Scripting. Azure analytics Services.II. Enterprise of working on data warehouse/ Data marts projects.",
+            "Work Location: Whitefield",
         },
         {
           id: 4,
           content:
-            "Experience working in Agile development environment with tools such as Jira and Bitbucket",
+            "Technical Execution:"
+
+            
         },
         {
-          id: 4,
+          id: 5,
           content:
-            "Good to having Knowledge of other BI Tools & Platforms: Qlik, Tableau, Looker, Talend, Alteryx, snowflake.",
+            "You will improve code structure, have an impact on architecture, and review code of any scope produced by your team."
+
+           
         },
+        {
+          id: 6,
+          content:
+            `Roles & Responsibilities Collaboration & Leadership:
+            `
+
+           
+        },
+        {
+          id: 7,
+          content:
+            "As well as leading from the front regarding technical execution, you'll build relationships with other engineering teams and, identify collaboration opportunities."
+
+           
+        },
+        {
+          id: 8,
+          content:
+            "You'll own larger pieces of work, assist with design and technical / implementation choices and influence the roadmap within your team."
+
+           
+        },
+        {
+          id: 9,
+          content:
+          "You will take an active role in the hiring process and conducting engineering interviews. This will also extend to the current team where you will support the personal growth of colleagues, encouraging efficiency in their roles."
+
+           
+        },
+        {
+          id: 9,
+          content:
+          `Minimum 4+ years of work experience
+          Pride in readable, well-designed, well-tested software
+          `
+
+           
+        },
+        {
+          id: 9,
+          content:
+          `Experience writing web-based applications in any language, and an interest in learning (Golang, Mysql)
+          `
+
+           
+        },
+        {
+          id: 10,
+          content:
+          `Experience with relational databases (PostgreSQL, MySQL)
+          `
+
+           
+        },
+        {
+          id: 10,
+          content:
+          `Experience with "NoSQL" data backends and other (Redis, DynamoDB, ElasticSearch, Memcache)
+          `
+          
+           
+        },
+        {
+          id: 10,
+          content:
+          `
+          
+          Experience solving logistical problems with software`
+
+       
+          
+           
+        },
+        {
+          id: 10,
+          content:
+          
+          
+          
+
+    `Mandatory Skills Golang, AWS, MySQL`
+          
+           
+        },
+
+
+
+
+        
+        
+
+
       ],
       experince: "4-6 years",
-      location: "Bengaluru",
-      position: "2",
+      location:'Bengaluru',
+      position:'2'
     },
     {
       id: 2,
       title: "Salesforce Lightning Web",
-      job_img: require("../../Assets/images/Salesforce.png"),
+      job_img:require("../../Assets/images/Salesforce.png"),
       description: [
         {
           id: 1,
@@ -159,13 +228,13 @@ const Career = () => {
         },
       ],
       experince: "5+ years",
-      location: "Pune",
-      position: "5",
+      location:'Pune',
+      position:'5'
     },
     {
       id: 3,
       title: "Business Analyst",
-      job_img: require("../../Assets/images/analytic.png"),
+      job_img:require("../../Assets/images/analytic.png"),
       description: [
         {
           id: 1,
@@ -185,7 +254,7 @@ const Career = () => {
     {
       id: 4,
       title: "Sr. Talend Developer",
-      job_img: require("../../Assets/images/talend.png"),
+      job_img:require("../../Assets/images/talend.png"),
       description: [
         {
           id: 1,
@@ -199,13 +268,13 @@ const Career = () => {
         },
       ],
       experince: "7-9 years",
-      location: "Mumbai",
-      position: "2",
+      location:'Mumbai',
+      position:'2'
     },
     {
       id: 5,
       title: "Sr. Power BI Developer",
-      job_img: require("../../Assets/images/Power-BI-Logo.png"),
+      job_img:require("../../Assets/images/Power-BI-Logo.png"),
       description: [
         {
           id: 1,
@@ -219,13 +288,13 @@ const Career = () => {
         },
       ],
       experince: "8-10years",
-      location: "Mumbai",
-      position: "2",
+      location:'Mumbai',
+      position:'2'
     },
     {
       id: 6,
       title: "ASP.Net Developer",
-      job_img: require("../../Assets/images/asp_net.png"),
+      job_img:require("../../Assets/images/asp_net.png"),
       description: [
         {
           id: 1,
@@ -239,14 +308,14 @@ const Career = () => {
         },
       ],
       experince: "4-6 years",
-      location: "Bengaluru",
-      position: "2",
+      location:'Bengaluru',
+      position:'2'
     },
     {
       id: 7,
       title: "Full Stack Angular Developer",
-
-      job_img: require("../../Assets/images/angular_logo.png"),
+      
+      job_img:require("../../Assets/images/angular_logo.png"),
       description: [
         {
           id: 1,
@@ -260,14 +329,14 @@ const Career = () => {
         },
       ],
       experince: "4-6 Years",
-      location: "Mumbai",
-      position: "1",
+      location:'Mumbai',
+      position:'1'
     },
     {
       id: 8,
       title: "Sr. Java Developer",
-
-      job_img: require("../../Assets/images/javalogo.png"),
+      
+      job_img:require("../../Assets/images/javalogo.png"),
       description: [
         {
           id: 1,
@@ -281,14 +350,14 @@ const Career = () => {
         },
       ],
       experince: "3-5 Years",
-      location: "Bengaluru",
-      position: "4",
+      location:'Bengaluru',
+      position:'4'
     },
     {
       id: 9,
       title: "Bigdata Solutions Engineer",
-
-      job_img: require("../../Assets/images/big_data.png"),
+      
+      job_img:require("../../Assets/images/big_data.png"),
       description: [
         {
           id: 1,
@@ -302,14 +371,14 @@ const Career = () => {
         },
       ],
       experince: "5+ Years",
-      location: "Bengaluru",
-      position: "4",
+      location:'Bengaluru',
+      position:'4'
     },
     {
       id: 10,
       title: "Power Bi(ADF) Developer",
-
-      job_img: require("../../Assets/images/Adf_logo.png"),
+      
+      job_img:require("../../Assets/images/Adf_logo.png"),
       description: [
         {
           id: 1,
@@ -323,14 +392,14 @@ const Career = () => {
         },
       ],
       experince: "5+ Years",
-      location: "Bengaluru",
-      position: "4",
+      location:'Bengaluru',
+      position:'4'
     },
     {
       id: 11,
       title: "Data Engineer",
-
-      job_img: require("../../Assets/images/Data_engineer (2).png"),
+      
+      job_img:require("../../Assets/images/Data_engineer (2).png"),
       description: [
         {
           id: 1,
@@ -344,9 +413,10 @@ const Career = () => {
         },
       ],
       experince: "4-6 Years",
-      location: "Bengaluru",
-      position: "1",
-    },
+      location:'Bengaluru',
+      position:'1'
+    }
+
   ];
 
   const [jobOpeningData, setJobOpeningData] = useState([]);
@@ -370,11 +440,9 @@ const Career = () => {
         <title>Career - Sakshath</title>
         <meta name="description" content="About SEO" />
       </Helmet>
-      <BreadCumb
-        imgUrl={CARRIER_BREAD_CRUM}
-        //  title=" CAREERS"
-        className="img-fluid"
-      />
+      <BreadCumb imgUrl={CARRIER_BREAD_CRUM}
+      //  title=" CAREERS"
+       className="img-fluid" />
 
       <section className="join_our_team_section">
         <div className="container">
@@ -414,9 +482,9 @@ const Career = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* @@@@@@@@@@@@@@ career at sakshath @@@@@@@@@@@@@@@@@@ */}
+      </section> 
+    
+       {/* @@@@@@@@@@@@@@ career at sakshath @@@@@@@@@@@@@@@@@@ */}
 
       {/* <section className="careers_at_sakshath">
         
@@ -469,531 +537,575 @@ const Career = () => {
         </div>
       </div>
         
-      </section> */}
+      </section> */} 
 
       <section className="careers_at_sakshath_section">
-        <div className="container">
-          <div className="careers_at_sakshath_heading_text">
-            <h6>CAREERS AT SAKSHATH</h6>
-            <div className="heading_careers_at_sakshath">
-              <Heading heading="It's about building the future,"></Heading>
-              <Heading heading="one line of code at a time."></Heading>
+      <div className="container">
+      <div className="careers_at_sakshath_heading_text">
+      <h6>CAREERS AT SAKSHATH</h6>
+      <div className="heading_careers_at_sakshath">
+      <Heading heading="It's about building the future,"></Heading>
+      <Heading heading="one line of code at a time."></Heading>
+      </div>
+
+      </div>
+        <div className="careers_at_sakshath_column_box">
+        
+          <div className="row careers_column_box_1st_row">
+            <div className="col-md-3 ipad_full_width">
+              <div className="fullfillment_box">
+              <h5>FULLFILLMENT</h5>
+              <p>When your hard work and ingenuity are rewarded, it feels great. But you know what feels even better? Being part of something big, something meaningful.</p>
+
+              </div>
+            </div>
+            <div className="col-md-6 ipad_full_width">
+            <div className="careers_img_box">
+              <img src={FULLFILLMENT_IMG} alt="" className="img-fluid"/>
+            </div>  
+            </div>
+            <div className="col-md-3 ipad_full_width">
+            <div className="fullfillment_box mob_screen_design">
+              <h5>NOT-SO-BASIC BASICS</h5>
+              <p>A competitive remuneration package: industry-standard salary, health insurance, flexible benefits, learning & development opportunities, and performance-based incentives.</p>
+
+              </div>
             </div>
           </div>
-          <div className="careers_at_sakshath_column_box">
-            <div className="row careers_column_box_1st_row">
-              <div className="col-md-3 ipad_full_width">
-                <div className="fullfillment_box">
-                  <h5>FULLFILLMENT</h5>
-                  <p>
-                    When your hard work and ingenuity are rewarded, it feels
-                    great. But you know what feels even better? Being part of
-                    something big, something meaningful.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6 ipad_full_width">
-                <div className="careers_img_box">
-                  <img src={FULLFILLMENT_IMG} alt="" className="img-fluid" />
-                </div>
-              </div>
-              <div className="col-md-3 ipad_full_width">
-                <div className="fullfillment_box mob_screen_design">
-                  <h5>NOT-SO-BASIC BASICS</h5>
-                  <p>
-                    A competitive remuneration package: industry-standard
-                    salary, health insurance, flexible benefits, learning &
-                    development opportunities, and performance-based incentives.
-                  </p>
-                </div>
+
+          <div className="row careers_column_box_2nd_row">
+            <div className="col-md-6 ipad_full_width">
+              <div className="fun_n_wellness_box">
+              <h5>FUN & WELLNESS</h5>
+              <p>We make sure we have enough playtime to get the creative juices going. Summer outings, movie nights, game weeks, sports fests, soirees these events are more than fun; they give us the chance to bond and get to know each other better.</p>
+
               </div>
             </div>
-
-            <div className="row careers_column_box_2nd_row">
-              <div className="col-md-6 ipad_full_width">
-                <div className="fun_n_wellness_box">
-                  <h5>FUN & WELLNESS</h5>
-                  <p>
-                    We make sure we have enough playtime to get the creative
-                    juices going. Summer outings, movie nights, game weeks,
-                    sports fests, soirees these events are more than fun; they
-                    give us the chance to bond and get to know each other
-                    better.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-6 ipad_full_width">
-                <div className="fun_n_wellnes_img">
-                  <img src={FULL_WELLNESS_IMG} alt="" className="img-fluid" />
-                </div>
+            <div className="col-md-6 ipad_full_width">
+              <div className="fun_n_wellnes_img">
+                <img src={FULL_WELLNESS_IMG} alt="" className="img-fluid"/>
               </div>
             </div>
+          </div>
 
-            <div className="row careers_column_box_3rd_row">
-              <div className="col-md-3 ipad_full_width">
-                <div className="fullfillment_box box_height">
-                  <h5>A GREAT COMMUNITY</h5>
-                  <p>
-                    The Sakshath environment enables collaboration and creative
-                    thought. It's a normal office scene to huddle, brainstorm,
-                    and strategize.
-                  </p>
-                </div>
+          <div className="row careers_column_box_3rd_row">
+            <div className="col-md-3 ipad_full_width">
+              <div className="fullfillment_box box_height">
+              <h5>A GREAT COMMUNITY</h5>
+              <p>The Sakshath environment enables collaboration and creative thought. It's a normal office scene to huddle, brainstorm, and strategize.</p>
+
               </div>
-              <div className="col-md-6 ipad_full_width">
-                <div className="careers_img_box">
-                  <img src={EXCELLENCE_IMG} alt="" className="img-fluid" />
-                </div>
-              </div>
-              <div className="col-md-3 ipad_full_width">
-                <div className="fullfillment_box mob_screen_design">
-                  <h5>EXCELLENCE & GROWTH</h5>
-                  <p>
-                    Our Learning & Development team holds Boot Camp training,
-                    Brown Bag and Special Interest Learning Sessions, and other
-                    coaching programs designed to enhance your skills and help
-                    build your career.
-                  </p>
-                </div>
+            </div>
+            <div className="col-md-6 ipad_full_width">
+            <div className="careers_img_box">
+              <img src={EXCELLENCE_IMG} alt="" className="img-fluid"/>
+            </div>  
+            </div>
+            <div className="col-md-3 ipad_full_width">
+            <div className="fullfillment_box mob_screen_design">
+              <h5>EXCELLENCE & GROWTH</h5>
+              <p>Our Learning & Development team holds Boot Camp training, Brown Bag and Special Interest Learning Sessions, and other coaching programs designed to enhance your skills and help build your career.</p>
+
               </div>
             </div>
           </div>
         </div>
+          
+        </div>
+
+      
+
+      
+
       </section>
 
       <section className="careers_footprint_section">
-        <div className="container">
-          <div className="text-center mb-4 pb-md-1">
-            <Fade direction="up" triggerOnce>
-              <Heading heading="Our Glowing Footprint" uppercase="uppercase" />
-            </Fade>
-            <Fade direction="up" triggerOnce>
-              <p>
-                We have a diverse team of professionals working across offices
-                in Bengaluru, Mumbai and Gurugram
-              </p>
-            </Fade>
+      <div className="container">
+        <div className="text-center mb-4 pb-md-1">
+        <Fade direction="up" triggerOnce>
+           <Heading heading= "Our Glowing Footprint" uppercase="uppercase" />
+           </Fade>
+           <Fade direction="up" triggerOnce>
+           <p>We have a diverse team of professionals working across offices in Bengaluru, Mumbai and Gurugram</p>
+           </Fade>
+           </div>
+      
+      <Tabs
+      defaultActiveKey="bengaluru"
+      id="justify-tab-example"
+      className="mb-3 careers_footprint_tab"
+      justify
+    >
+    <Tab eventKey="bengaluru" title="Bengaluru">
+    <div className="careers_footprint_bangalore_section">
+    <div className="container">
+    <div className="row">
+    
+       
+        <div className="col-md-6">
+        <div className="career_footprint_left_section">
+           <img src={bangalore_map} alt="" className="img-fluid"/>
+          {/* <div className="image_gallery_box">
+          <ImageGallery items={images} />
+          </div> */}
+          
+
+          </div>
+        </div>
+          <div className="col-md-6">
+          <div className="career_footprint_right-section ">
+          <Heading heading= "Bengaluru" uppercase="uppercase" />
+          <p>Our Head Office in Bengaluru is the heart of Sakshath Technologies, where our CEO and management team reside. Imagine stepping out into a world teeming with tech startups, bustling cafes, and serene parks. Here, the dynamic energy fuels creativity and collaboration, making every day an exciting adventure in the thriving business hub of Bengaluru.
+ </p>
+            
+
+          </div>
+          </div>
+          
+          </div>
+          </div>
+        </div>
+        <div className="career_footprint_gallery">
+        {/* <Carousel responsive={responsive}>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+</Carousel> */}
+
+<div className="container">
+        <Swiper
+        // cssMode={true}
+        // navigation={true}
+        // pagination={true}
+        // mousewheel={true}
+        // keyboard={true}
+        // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        // className="mySwiper"
+        // slidesPerView={5}
+        //       spaceBetween={30}
+        //       breakpoints={{
+        //         320: {
+        //           slidesPerView: 2,
+        //           spaceBetween: 30,
+        //         },
+        //         481: {
+        //           slidesPerView: 3,
+        //           spaceBetween: 30,
+        //         },
+        //         768: {
+        //           slidesPerView: 4,
+        //           spaceBetween: 30,
+        //         },
+        //         1024: {
+        //           slidesPerView: 5,
+        //           spaceBetween: 30,
+        //         },
+        //       }}
+        //       autoplay={{
+        //         delay: 1500,
+        //         disableOnInteraction: false,
+        //       }}
+        //       loop={true}
+        //       modules={[Autoplay]}
+        //       className="mySwiper"
+        
+        slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+             
+              centeredSlides={true}
+              // autoplay={{
+              //   delay: 1500,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation,Autoplay]}
+      >
+      {/* <div className="container"></div> */}
+      
+        <SwiperSlide>
+          <img src={bangalore_img1} alt=""  />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img2} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img3} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img4} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img5} alt=""  />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img6} alt=""  />
+        </SwiperSlide>
+        {/* <SwiperSlide>
+          <img src={bangalore_img7} alt=""  />
+        </SwiperSlide> */}
+        <SwiperSlide>
+          <img src={bangalore_img8} alt=""  />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img9} alt=""  />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img10} alt=""  />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img11} alt=""  />
+        </SwiperSlide>
+        </Swiper>
+
+        </div>
+        </div>
+        
+      </Tab>
+      
+
+      <Tab eventKey="mumbai" title="Mumbai">
+
+      <div className="careers_footprint_bangalore_section">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+          <div className="career_footprint_left_section">
+           <img src={mumbai_map} alt="" className="img-fluid"/>
+          {/* <div className="image_gallery_box">
+          <ImageGallery items={images} />
+          </div> */}
+          
+
           </div>
 
-          <Tabs
-            defaultActiveKey="bengaluru"
-            id="justify-tab-example"
-            className="mb-3 careers_footprint_tab"
-            justify
-          >
-            <Tab eventKey="bengaluru" title="Bengaluru">
-              <div className="careers_footprint_bangalore_section">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="career_footprint_left_section">
-                        <img src={bangalore_map} alt="" className="img-fluid" />
-                        {/* <div className="image_gallery_box">
-          <ImageGallery items={images} />
-          </div> */}
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="career_footprint_right-section ">
-                        <Heading heading="Bengaluru" uppercase="uppercase" />
-                        <p>
-                          Our Head Office in Bengaluru is the heart of Sakshath
-                          Technologies, where our CEO and management team
-                          reside. Imagine stepping out into a world teeming with
-                          tech startups, bustling cafes, and serene parks. Here,
-                          the dynamic energy fuels creativity and collaboration,
-                          making every day an exciting adventure in the thriving
-                          business hub of Bengaluru.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="career_footprint_gallery">
-                {/* <Carousel responsive={responsive}>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
-</Carousel> */}
+          </div>
+          <div className="col-md-6">
+          <div className="career_footprint_right-section">
+          <Heading heading= "Mumbai" uppercase="uppercase" />
+          <p>Our Mumbai office pulses with vibrant energy, home to our thriving domestic client team. They flourish in a cityscape surrounded by the city's mix of tall buildings and peaceful coastal views. Every day in this bustling metropolis brings new inspiration and opportunities.</p>
+            
 
-                <div className="container">
-                  <Swiper
-                    // cssMode={true}
-                    // navigation={true}
-                    // pagination={true}
-                    // mousewheel={true}
-                    // keyboard={true}
-                    // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                    // className="mySwiper"
-                    // slidesPerView={5}
-                    //       spaceBetween={30}
-                    //       breakpoints={{
-                    //         320: {
-                    //           slidesPerView: 2,
-                    //           spaceBetween: 30,
-                    //         },
-                    //         481: {
-                    //           slidesPerView: 3,
-                    //           spaceBetween: 30,
-                    //         },
-                    //         768: {
-                    //           slidesPerView: 4,
-                    //           spaceBetween: 30,
-                    //         },
-                    //         1024: {
-                    //           slidesPerView: 5,
-                    //           spaceBetween: 30,
-                    //         },
-                    //       }}
-                    //       autoplay={{
-                    //         delay: 1500,
-                    //         disableOnInteraction: false,
-                    //       }}
-                    //       loop={true}
-                    //       modules={[Autoplay]}
-                    //       className="mySwiper"
-
-                    slidesPerView={5}
-                    spaceBetween={30}
-                    breakpoints={{
-                      320: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
-                      },
-                      481: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                      },
-                      768: {
-                        slidesPerView: 4,
-                        spaceBetween: 30,
-                      },
-                      1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 30,
-                      },
-                    }}
-                    autoplay={{
-                      delay: 1500,
-                      disableOnInteraction: false,
-                    }}
-                    loop={true}
-                    centeredSlides={true}
-                    // autoplay={{
-                    //   delay: 1500,
-                    //   disableOnInteraction: false,
-                    // }}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Pagination, Navigation, Autoplay]}
-                  >
-                    {/* <div className="container"></div> */}
-
-                    <SwiperSlide>
-                      <img src={bangalore_img1} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img2} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img3} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img4} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img5} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img6} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img7} alt="" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img9} alt="" />
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
-              </div>
-            </Tab>
-
-            <Tab eventKey="mumbai" title="Mumbai">
-              <div className="careers_footprint_bangalore_section">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="career_footprint_left_section">
-                        <img src={mumbai_map} alt="" className="img-fluid" />
-                        {/* <div className="image_gallery_box">
-          <ImageGallery items={images} />
-          </div> */}
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="career_footprint_right-section">
-                        <Heading heading="Mumbai" uppercase="uppercase" />
-                        <p>
-                          Our Mumbai office pulses with vibrant energy, home to
-                          our thriving domestic client team. They flourish in a
-                          cityscape surrounded by the city's mix of tall
-                          buildings and peaceful coastal views. Every day in
-                          this bustling metropolis brings new inspiration and
-                          opportunities.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="career_footprint_gallery">
-                {/* <Carousel responsive={responsive}>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
-</Carousel> */}
-                <div className="container">
-                  <Swiper
-                    // cssMode={true}
-                    // navigation={true}
-                    // pagination={true}
-                    // mousewheel={true}
-                    // keyboard={true}
-                    // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                    // className="mySwiper"
-                    // slidesPerView={5}
-                    //       spaceBetween={30}
-                    //       breakpoints={{
-                    //         320: {
-                    //           slidesPerView: 2,
-                    //           spaceBetween: 30,
-                    //         },
-                    //         481: {
-                    //           slidesPerView: 3,
-                    //           spaceBetween: 30,
-                    //         },
-                    //         768: {
-                    //           slidesPerView: 4,
-                    //           spaceBetween: 30,
-                    //         },
-                    //         1024: {
-                    //           slidesPerView: 5,
-                    //           spaceBetween: 30,
-                    //         },
-                    //       }}
-                    //       autoplay={{
-                    //         delay: 1500,
-                    //         disableOnInteraction: false,
-                    //       }}
-                    //       loop={true}
-                    //       modules={[Autoplay]}
-                    //       className="mySwiper"
-
-                    slidesPerView={5}
-                    spaceBetween={30}
-                    breakpoints={{
-                      320: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
-                      },
-                      481: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                      },
-                      768: {
-                        slidesPerView: 4,
-                        spaceBetween: 30,
-                      },
-                      1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 30,
-                      },
-                    }}
-                    autoplay={{
-                      delay: 1500,
-                      disableOnInteraction: false,
-                    }}
-                    loop={true}
-                    centeredSlides={true}
-                    // autoplay={{
-                    //   delay: 1500,
-                    //   disableOnInteraction: false,
-                    // }}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Pagination, Navigation]}
-                    // className="mySwiper"
-                  >
-                    {/* <div className="container"></div> */}
-                    <SwiperSlide>
-                      <img src={mumbai_img1} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={mumbai_img2} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={mumbai_img3} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={mumbai_img4} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img1} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img1} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={mumbai_img5} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={mumbai_img6} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
-              </div>
-            </Tab>
-
-            <Tab eventKey="gurugram" title="Gurugram">
-              <div className="careers_footprint_bangalore_section">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <div className="career_footprint_left_section">
-                        <img src={gurugram_map} alt="" className="img-fluid" />
-                        {/* <div className="image_gallery_box">
-          <ImageGallery items={images} />
-          </div> */}
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="career_footprint_right-section">
-                        <Heading heading="Gurugram" uppercase="uppercase" />
-                        <p>
-                          Step into the vibrant office of Gurugram, where every
-                          corner has its own story to tell. In our cozy office
-                          nestled in this lively city, our data analysts are the
-                          storytellers. With each click and keystroke, they spin
-                          tales from the city's data, capturing its essence in
-                          every line of code.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="career_footprint_gallery">
-                {/* <Carousel responsive={responsive}>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
-  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
-</Carousel> */}
-                <div className="container">
-                  <Swiper
-                    // cssMode={true}
-                    // navigation={true}
-                    // pagination={true}
-                    // mousewheel={true}
-                    // keyboard={true}
-                    // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                    // className="mySwiper"
-                    // slidesPerView={5}
-                    //       spaceBetween={30}
-                    //       breakpoints={{
-                    //         320: {
-                    //           slidesPerView: 2,
-                    //           spaceBetween: 30,
-                    //         },
-                    //         481: {
-                    //           slidesPerView: 3,
-                    //           spaceBetween: 30,
-                    //         },
-                    //         768: {
-                    //           slidesPerView: 4,
-                    //           spaceBetween: 30,
-                    //         },
-                    //         1024: {
-                    //           slidesPerView: 5,
-                    //           spaceBetween: 30,
-                    //         },
-                    //       }}
-                    //       autoplay={{
-                    //         delay: 1500,
-                    //         disableOnInteraction: false,
-                    //       }}
-                    //       loop={true}
-                    //       modules={[Autoplay]}
-                    //       className="mySwiper"
-
-                    slidesPerView={5}
-                    spaceBetween={30}
-                    breakpoints={{
-                      320: {
-                        slidesPerView: 2,
-                        spaceBetween: 30,
-                      },
-                      481: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                      },
-                      768: {
-                        slidesPerView: 4,
-                        spaceBetween: 30,
-                      },
-                      1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 30,
-                      },
-                    }}
-                    autoplay={{
-                      delay: 1500,
-                      disableOnInteraction: false,
-                    }}
-                    loop={true}
-                    centeredSlides={true}
-                    // autoplay={{
-                    //   delay: 1500,
-                    //   disableOnInteraction: false,
-                    // }}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Pagination, Navigation]}
-                  >
-                    {/* <div className="container"></div> */}
-                    <SwiperSlide>
-                      <img src={bangalore_img4} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img5} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img6} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img7} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img1} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src={bangalore_img3} alt="" className="img-fluid" />
-                    </SwiperSlide>
-                  </Swiper>
-                </div>
-              </div>
-            </Tab>
-          </Tabs>
+          </div>
+          
+          </div>
         </div>
+      </div>
+          
+          
+        </div>
+        <div className="career_footprint_gallery">
+        {/* <Carousel responsive={responsive}>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+</Carousel> */}
+<div className="container">
+        <Swiper
+        // cssMode={true}
+        // navigation={true}
+        // pagination={true}
+        // mousewheel={true}
+        // keyboard={true}
+        // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        // className="mySwiper"
+        // slidesPerView={5}
+        //       spaceBetween={30}
+        //       breakpoints={{
+        //         320: {
+        //           slidesPerView: 2,
+        //           spaceBetween: 30,
+        //         },
+        //         481: {
+        //           slidesPerView: 3,
+        //           spaceBetween: 30,
+        //         },
+        //         768: {
+        //           slidesPerView: 4,
+        //           spaceBetween: 30,
+        //         },
+        //         1024: {
+        //           slidesPerView: 5,
+        //           spaceBetween: 30,
+        //         },
+        //       }}
+        //       autoplay={{
+        //         delay: 1500,
+        //         disableOnInteraction: false,
+        //       }}
+        //       loop={true}
+        //       modules={[Autoplay]}
+        //       className="mySwiper"
+        
+        slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+             
+              centeredSlides={true}
+              // autoplay={{
+              //   delay: 1500,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation]}
+              // className="mySwiper"
+      >
+      {/* <div className="container"></div> */}
+      <SwiperSlide>
+          <img src={mumbai_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img2} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img3} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img4} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img5} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img6} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img7} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img8} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img9} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img10} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img11} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={mumbai_img12} alt="" className="img-fluid" />
+        </SwiperSlide>
+        
+        </Swiper>
+
+        </div>
+        </div>
+
+
+        
+        
+      </Tab>
+      
+      <Tab eventKey="gurugram" title="Gurugram">
+      <div className="careers_footprint_bangalore_section">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+          <div className="career_footprint_left_section">
+           <img src={gurugram_map} alt="" className="img-fluid"/>
+          {/* <div className="image_gallery_box">
+          <ImageGallery items={images} />
+          </div> */}
+          
+
+          </div>
+          </div>
+          <div className="col-md-6">
+          <div className="career_footprint_right-section">
+          <Heading heading= "Gurugram" uppercase="uppercase" />
+          <p>Step into the vibrant office of Gurugram, where every corner has its own story to tell. In our cozy office nestled in this lively city, our data analysts are the storytellers. With each click and keystroke, they spin tales from the city's data, capturing its essence in every line of code.</p>
+            
+
+          </div>
+          </div>
+        </div>
+      </div>
+          
+          
+        </div>
+        <div className="career_footprint_gallery">
+        {/* <Carousel responsive={responsive}>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" className="image-fluid"/></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+  <div className="career_footprint_company_images"><img src={bangalore_img1} alt="" /></div>
+</Carousel> */}
+<div className="container">
+        <Swiper
+        // cssMode={true}
+        // navigation={true}
+        // pagination={true}
+        // mousewheel={true}
+        // keyboard={true}
+        // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        // className="mySwiper"
+        // slidesPerView={5}
+        //       spaceBetween={30}
+        //       breakpoints={{
+        //         320: {
+        //           slidesPerView: 2,
+        //           spaceBetween: 30,
+        //         },
+        //         481: {
+        //           slidesPerView: 3,
+        //           spaceBetween: 30,
+        //         },
+        //         768: {
+        //           slidesPerView: 4,
+        //           spaceBetween: 30,
+        //         },
+        //         1024: {
+        //           slidesPerView: 5,
+        //           spaceBetween: 30,
+        //         },
+        //       }}
+        //       autoplay={{
+        //         delay: 1500,
+        //         disableOnInteraction: false,
+        //       }}
+        //       loop={true}
+        //       modules={[Autoplay]}
+        //       className="mySwiper"
+        
+        slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+             
+              centeredSlides={true}
+              // autoplay={{
+              //   delay: 1500,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation,Autoplay]}
+      >
+      {/* <div className="container"></div> */}
+      <SwiperSlide>
+          <img src={gurugram_img1} alt="" className="img-fluid" />
+        </SwiperSlide>
+      <SwiperSlide>
+          <img src={gurugram_img2} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img3} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img4} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img5} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img6} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img7} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img8} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img9} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img10} alt="" className="img-fluid" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={gurugram_img11} alt="" className="img-fluid" />
+        </SwiperSlide>
+       
+        </Swiper>
+
+        </div>
+        </div>
+
+        
+      </Tab>
+      
+    </Tabs>
+
+
+     </div>
+      
       </section>
 
       {/* <section className="join_our_team">
@@ -1074,7 +1186,7 @@ const Career = () => {
               <div className="benefits_heading text-center">
                 <Fade direction="up" triggerOnce>
                   <Heading
-                    heading="Benefits of working at sakshath"
+                    heading="Benefits of choosing Sakshath Technologies®"
                     uppercase=""
                   />{" "}
                 </Fade>
@@ -1131,197 +1243,185 @@ const Career = () => {
       </section>
       {/*  benfits end*/}
 
-      {/* testimonials  starts*/}
-      <section className="careers_testimonials">
+
+
+        {/* testimonials  starts*/}
+        <section className="careers_testimonials">
+        
         <div className="heading_testimonials text-center mb-4">
-          <Heading heading="What our People says about us" uppercase="" />
+        <Heading heading="What our People says about us" uppercase="" />
         </div>
         <div className="container">
-          <Swiper
-            // cssMode={true}
-            // navigation={true}
-            // pagination={true}
-            // mousewheel={true}
-            // keyboard={true}
-            // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-            // className="mySwiper"
-            // slidesPerView={5}
-            //       spaceBetween={30}
-            //       breakpoints={{
-            //         320: {
-            //           slidesPerView: 2,
-            //           spaceBetween: 30,
-            //         },
-            //         481: {
-            //           slidesPerView: 3,
-            //           spaceBetween: 30,
-            //         },
-            //         768: {
-            //           slidesPerView: 4,
-            //           spaceBetween: 30,
-            //         },
-            //         1024: {
-            //           slidesPerView: 5,
-            //           spaceBetween: 30,
-            //         },
-            //       }}
-            //       autoplay={{
-            //         delay: 1500,
-            //         disableOnInteraction: false,
-            //       }}
-            //       loop={true}
-            //       modules={[Autoplay]}
-            //       className="mySwiper"
+        <Swiper
+        // cssMode={true}
+        // navigation={true}
+        // pagination={true}
+        // mousewheel={true}
+        // keyboard={true}
+        // modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        // className="mySwiper"
+        // slidesPerView={5}
+        //       spaceBetween={30}
+        //       breakpoints={{
+        //         320: {
+        //           slidesPerView: 2,
+        //           spaceBetween: 30,
+        //         },
+        //         481: {
+        //           slidesPerView: 3,
+        //           spaceBetween: 30,
+        //         },
+        //         768: {
+        //           slidesPerView: 4,
+        //           spaceBetween: 30,
+        //         },
+        //         1024: {
+        //           slidesPerView: 5,
+        //           spaceBetween: 30,
+        //         },
+        //       }}
+        //       autoplay={{
+        //         delay: 1500,
+        //         disableOnInteraction: false,
+        //       }}
+        //       loop={true}
+        //       modules={[Autoplay]}
+        //       className="mySwiper"
+        
+        slidesPerView={5}
+              spaceBetween={30}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                481: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 30,
+                },
+              }}
+              autoplay={{
+                delay: 1500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+             
+              centeredSlides={true}
+              // autoplay={{
+              //   delay: 1500,
+              //   disableOnInteraction: false,
+              // }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation,Autoplay]}
+      >
+      {/* <div className="container"></div> */}
+      
+        <SwiperSlide>
+          
+            
+            
+            <div className="testimonial_box ">
+            <div className="testimonials_citation_symbol text-center"><RiDoubleQuotesL /></div>
+              <p>Join us! You won’t be sorry! One of the things I enjoy most about working here is the teamwork. Even when it is a hard or hectic day -we support each other where & when needed! Making it-Being the Best you can Be!! </p>
+              <h6><strong>-Eshwari S M <br /> (Talent Acquisition Specialist)</strong></h6>
+            </div>
+            
 
-            slidesPerView={5}
-            spaceBetween={30}
-            breakpoints={{
-              320: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-              },
-              481: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-              },
-              768: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-              },
-              1024: {
-                slidesPerView: 5,
-                spaceBetween: 30,
-              },
-            }}
-            autoplay={{
-              delay: 1500,
-              disableOnInteraction: false,
-            }}
-            loop={true}
-            centeredSlides={true}
-            // autoplay={{
-            //   delay: 1500,
-            //   disableOnInteraction: false,
-            // }}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Pagination, Navigation, Autoplay]}
-          >
-            {/* <div className="container"></div> */}
+            
 
-            <SwiperSlide>
-              <div className="testimonial_box ">
-                <div className="testimonials_citation_symbol text-center">
-                  <RiDoubleQuotesL />
-                </div>
-                <p>
-                  Join us! You won’t be sorry! One of the things I enjoy most
-                  about working here is the teamwork. Even when it is a hard or
-                  hectic day -we support each other where & when needed! Making
-                  it-Being the Best you can Be!!{" "}
-                </p>
-                <h6>
-                  <strong>
-                    -Eshwari S M <br /> (Talent Acquisition Specialist)
-                  </strong>
-                </h6>
-              </div>
-            </SwiperSlide>
+           
 
-            <SwiperSlide>
-              <div className="testimonial_box text-center">
-                <div className="testimonials_citation_symbol">
-                  <RiDoubleQuotesL />
-                </div>
-                <p>
-                  "I've never seen or heard of an organisation that believes
-                  shaping your future, it is their responsibility. While every
-                  organisation claims to have an open-door policy, at Sakshath,
-                  you will truly experience it when the leadership shares lunch
-                  with you and discusses your goals and objectives."
-                </p>
-                <h6>
-                  <strong>
-                    -Aashish Dulal
-                    <br />
-                    (Sr. RPA Developer)
-                  </strong>
-                </h6>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="testimonial_box text-center">
-                <div className="testimonials_citation_symbol">
-                  <RiDoubleQuotesL />
-                </div>
-                <p>
-                  Service Delivery Manager at Sakshath Technologies for the past
-                  three years, supporting our esteemed client, ABInBev. The
-                  dynamic and forward-thinking culture at Sakshath Technologies
-                  fosters continuous improvement, making it a great place to
-                  work and grow professionally. I am honoured to be part of this
-                  exceptional company and to contribute to its ongoing success.{" "}
-                </p>
-                <h6>
-                  <strong>
-                    -Madhusudhan R<br />
-                    (Service Delivery Manager){" "}
-                  </strong>
-                </h6>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="testimonial_box text-center">
-                <div className="testimonials_citation_symbol">
-                  <RiDoubleQuotesL />
-                </div>
-                <p>
-                  “Over the past 2.5 years, my Clix Capital role has been
-                  challenging and rewarding. I am proud of the improvements and
-                  efficiencies I have helped implement, and I am committed to
-                  continuing to deliver exceptional performance and value.
-                  Working with the talented team at Clix Capital has been a
-                  remarkable experience, and I look forward to furthering our
-                  collective success.”{" "}
-                </p>
-                <h6>
-                  <strong>
-                    -Pallavi Takkar
-                    <br />
-                    (BI Developer)
-                  </strong>
-                </h6>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="testimonial_box text-center">
-                <div className="testimonials_citation_symbol">
-                  <RiDoubleQuotesL />
-                </div>
-                <p>
-                  "Sakshath is the go-to place! As a fresher, I've experienced
-                  fast learning, great opportunities, and a flexible,
-                  professional environment. I feel valued, and appreciated, and
-                  continuously grow in my role. The approachable team and
-                  excellent work culture make Sakshath the best company I've
-                  ever worked for till date
-                </p>
-                <h6>
-                  <strong>
-                    -Kavya Priya.K
-                    <br />
-                    (Jr.Software Developer)
-                  </strong>
-                </h6>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
-      </section>
+            
 
-      {/* testimonials ends */}
+            
+
+            
+           
+
+
+
+
+
+        </SwiperSlide>
+        
+        <SwiperSlide>
+       
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>"I've never seen or heard of an organisation that believes shaping your future, it is their responsibility. While every organisation claims to have an open-door policy, at Sakshath, you will truly experience it when the leadership shares lunch with you and discusses your goals and objectives."</p>
+              <h6><strong>-Aashish Dulal<br />(Sr. RPA Developer)</strong></h6>
+            </div>
+            
+
+        </SwiperSlide>
+        <SwiperSlide>
+       
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>"I love to work at Sakshath, as it is the place where all the teams work together in a harmony encouraging each other. Working at Sakshath will make everyone feel it as a pleasure, but not a pressure."</p>
+              <h6><strong>-Rama Rao<br />(Technical Lead ERP)</strong></h6>
+            </div>
+            
+
+        </SwiperSlide>
+        <SwiperSlide>
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>Service Delivery Manager at Sakshath Technologies for the past three years, supporting our esteemed client, ABInBev. The dynamic and forward-thinking culture at Sakshath Technologies fosters continuous improvement, making it a great place to work and grow professionally. I am honoured to be part of this exceptional company and to contribute to its ongoing success. </p>
+              <h6><strong>-Madhusudhan R<br />(Service Delivery Manager) </strong></h6>
+            </div>
+            </SwiperSlide>
+        <SwiperSlide>
+       
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>“Over the past 2.5 years, my Clix Capital role has been challenging and rewarding. I am proud of the improvements and efficiencies I have helped implement, and I am committed to continuing to deliver exceptional performance and value. Working with the talented team at Clix Capital has been a remarkable experience, and I look forward to furthering our collective success.” </p>
+              <h6><strong>-Pallavi Takkar<br />(BI Developer)</strong></h6>
+            </div>
+           
+        </SwiperSlide>
+        <SwiperSlide>
+        
+            
+            <div className="testimonial_box text-center">
+            <div className="testimonials_citation_symbol"><RiDoubleQuotesL /></div>
+              <p>"Sakshath is the go-to place! As a fresher, I've experienced fast learning, great opportunities, and a flexible, professional environment. I feel valued, and appreciated, and continuously grow in my role. The approachable team and excellent work culture make Sakshath the best company I've ever worked for till date</p>
+              <h6><strong>-Kavya Priya.K<br />
+(Jr.Software
+ Developer)</strong></h6>
+            </div>
+           
+        </SwiperSlide>
+        
+            
+      </Swiper>
+      </div>
+      
+        
+
+        
+        </section>
+        
+
+        {/* testimonials ends */}
+
+
+
 
       {/* Apply Jobs */}
 
@@ -1480,7 +1580,7 @@ const Career = () => {
       </section>
 
       <section className="find_job_section">
-        <div className="container find_job_container">
+        <div className="container">
           <div className="row">
             <div className="col-md-7 ">
               <div className="dont_see_role_right_box">
@@ -1488,8 +1588,8 @@ const Career = () => {
                 <Heading heading="Don't See Your Role  Here ?" />
                 <p>
                   We're always on the lookout for new talent, so send us your CV
-                  abd <br /> if you seem like the right fit , we'll get back to
-                  you ASAP.{" "}
+                  abd <br/> if you seem like the right fit , we'll get back to you
+                  ASAP.{" "}
                 </p>
 
                 <SlideAnimationButton btnName="Contact us" url="/contact-us" />
@@ -1497,24 +1597,29 @@ const Career = () => {
             </div>
             <div className="col-md-5">
               <div className="dont_see_role_left_para  card">
-                <div class="card-inner">
-                  <div class="card-front">
-                    <p>?</p>
-                    {/* <img src={} alt="" /> */}
-                  </div>
-                  <div class="card-back">
-                    <p>You will be the next !</p>
-                  </div>
-                </div>
+              <div class="card-inner">
+      <div class="card-front">
+        <p>?</p>
+        {/* <img src={} alt="" /> */}
+      </div>
+      <div class="card-back">
+        <p>You are next</p>
+      </div>
+    </div>
 
                 {/* <p>?</p> */}
               </div>
             </div>
+
+
+          
           </div>
         </div>
       </section>
 
-      <div className="bottom_sec mt-4"></div>
+      <div className="bottom_sec mt-4">
+
+      </div>
     </>
   );
 };

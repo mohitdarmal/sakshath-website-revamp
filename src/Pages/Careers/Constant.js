@@ -1,6 +1,6 @@
 // export const CARRER_IMG= require('../../Assets/images/career_img.png');
 export const CARRER_BENFIT_IMG=require("../../Assets/images/about-1.jpg");
-export const JOIN_OUR_TEAM_IMG = require("../../Assets/images/join_our_team_sakshath.png");
+export const JOIN_OUR_TEAM_IMG = require("../../Assets/images/join_our_team_sakshath (2).png");
 export const CAREERS_AT_SAKSHATH = require("../../Assets/images/careers_at_sakshath.jpg");
 export const REACT_LOGO = require("../../Assets/images/physics.png");
 export const EXPRESSIVE = require("../../Assets/images/expressive.png");
@@ -23,18 +23,59 @@ export const bangalore_img3 = require("../../Assets/images/bang_im3.jpeg");
 export const bangalore_img4 = require("../../Assets/images/bang_img4.jpeg");
 export const bangalore_img5 = require("../../Assets/images/bang_img5.jpeg");
 export const bangalore_img6 = require("../../Assets/images/bang_img6.jpeg");
-export const bangalore_img7 = require("../../Assets/images/bang_img7.jpeg");
+// export const bangalore_img7 = require("../../Assets/images/bang_img7.jpeg");
+export const bangalore_img8 = require("../../Assets/images/bang_img8.jpeg");
+
 export const bangalore_img9 = require("../../Assets/images/bang_img9.png");
+export const bangalore_img10 = require("../../Assets/images/bang_img10.jpg");
+export const bangalore_img11 = require("../../Assets/images/bang_img11.jpg");
 
-export const mumbai_img1 = require("../../Assets/images/mum_img1.jpeg");
 
-export const mumbai_img2 = require("../../Assets/images/mum_img2.jpeg");
+// export const mumbai_img1 = require("../../Assets/images/mum_img1.jpeg");
 
-export const mumbai_img3 = require("../../Assets/images/gur_img1.jpeg");
+// export const mumbai_img2 = require("../../Assets/images/mum_img2.jpeg");
 
-export const mumbai_img4 = require("../../Assets/images/gur_img2.jpg");
-export const mumbai_img5 = require("../../Assets/images/mum_img5.jpeg");
-export const mumbai_img6 = require("../../Assets/images/mum_img8.jpeg");
+// export const mumbai_img3 = require("../../Assets/images/mumbai_img1(1).jpeg");
+
+// export const mumbai_img4 = require("../../Assets/images/gur_img2.jpg");
+// export const mumbai_img5 = require("../../Assets/images/mum_img5.jpeg");
+// export const mumbai_img6 = require("../../Assets/images/mum_img8.jpeg");
+
+
+
+/// gurugram footprint images
+
+export const gurugram_img1 = require("../../Assets/images/gur_img1.jpg");
+export const gurugram_img2 = require("../../Assets/images/gur_img2.jpg");
+export const gurugram_img3 = require("../../Assets/images/gur_img3.jpg");
+export const gurugram_img4 = require("../../Assets/images/gur_img4.jpg");
+export const gurugram_img5 = require("../../Assets/images/gur_img5.jpg");
+export const gurugram_img6 = require("../../Assets/images/gur_img6.jpg");
+export const gurugram_img7 = require("../../Assets/images/gur_img7.jpeg");
+export const gurugram_img8 = require("../../Assets/images/gur_img8.jpg");
+export const gurugram_img9 = require("../../Assets/images/gur_img9.jpg");
+export const gurugram_img10 = require("../../Assets/images/gur_img10.jpg");
+export const gurugram_img11 = require("../../Assets/images/gur_img11.jpg")
+
+
+/// mumbai footprint images
+
+export const mumbai_img1 = require("../../Assets/images/mumb_img1.jpeg");
+export const mumbai_img2 = require("../../Assets/images/mumb_img2.jpeg");
+export const mumbai_img3 = require("../../Assets/images/mumb_img3.jpeg");
+export const mumbai_img4 = require("../../Assets/images/mumb_img4.jpg");
+export const mumbai_img5 = require("../../Assets/images/mumb_img5.jpg");
+export const mumbai_img6 = require("../../Assets/images/mumb_img6.jpg");
+export const mumbai_img7 = require("../../Assets/images/mumb_img7.jpg");
+export const mumbai_img8 = require("../../Assets/images/mumb_img8.jpg");
+export const mumbai_img9 = require("../../Assets/images/mumb_img9.jpg");
+export const mumbai_img10 = require("../../Assets/images/mumb_img10.jpg");
+export const mumbai_img11 = require("../../Assets/images/mumb_img11.jpg");
+export const mumbai_img12 = require("../../Assets/images/mumb_img12.jpg");
+
+
+
+
 
 
 
