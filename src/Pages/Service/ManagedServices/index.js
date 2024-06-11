@@ -3,7 +3,7 @@ import  BreadCumb  from "../../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
 import "./style.scss";
 import SlideAnimationButton from '../../../Components/Utils/SlideAnimationButton';
-import { MANAGED_SERVICE_SECTION_RIGHT_IMG,MANAGED_SERVICE_SECTION_LEFT_IMG } from './Constant';
+import { MANAGED_SERVICE_SECTION_RIGHT_IMG,MANAGED_SERVICE_SECTION_LEFT_IMG,MANAGED_SERVICES_BREAD_CRUM } from './Constant';
 import {Fade} from "react-awesome-reveal";
 import Heading from '../../../Components/Utils/Heading';
 
@@ -11,8 +11,8 @@ const ManagedServices = () => {
   return (
     <>
     <BreadCumb
-        imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
-        title="Managed Services"
+        imgUrl={MANAGED_SERVICES_BREAD_CRUM}
+        // title="Managed Services"
       />
 
 

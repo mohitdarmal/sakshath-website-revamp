@@ -11,6 +11,7 @@ import {
   STAFFING_FINTECH,
   STAFFING_IT,
   STAFFING_TELECOM,
+  STAFFING_BREAD_CRUM
 } from "./Constatnt";
 import Breadcumb from "../../Components/Breadcumb";
 import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../Service/ApplicationDevelopment/Constant";
@@ -27,8 +28,8 @@ const Staffing = () => {
         <meta name="description" content="About SEO" />
       </Helmet>
       <Breadcumb
-        imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
-        title="Staffing"
+        imgUrl={STAFFING_BREAD_CRUM}
+        // title="Staffing"
       />
       {/* staffing main starts */}
       <section className="staffing_main_section">

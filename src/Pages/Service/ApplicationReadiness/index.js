@@ -3,7 +3,7 @@ import "./style.scss";
 import { Helmet } from "react-helmet";
 import BreadCumb from "../../../Components/Breadcumb";
 
-import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../ApplicationDevelopment/Constant";
+import { APPLICATION_READLINESS_BREADCRUM } from "../ApplicationReadiness/Constant";
 import Heading from "../../../Components/Utils/Heading";
 import { Who_we_r } from "./Constant";
 import { Fade } from "react-awesome-reveal";
@@ -16,7 +16,9 @@ const ApplicationReadiness = () => {
         <title>Automation</title>
         <meta name="description" content="About SEO" />
       </Helmet>
-      <BreadCumb imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG} title="" />
+      <BreadCumb imgUrl={APPLICATION_READLINESS_BREADCRUM}
+      //  title=""
+        />
 
       <section className="overview_application_readiness_sec">
         <div className="container">

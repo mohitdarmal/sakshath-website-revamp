@@ -1,4 +1,6 @@
-export const APPLICATION_DEVLOPMENT_BREADCUMB_IMG = require("../../../Assets/images/application_development_banner.svg").default;
+export const APPLICATION_DEVELOPMENT_BREADCRUM = require(
+    "../../../Assets/images/breadcrum_app_dev.png"
+    );
 
 //App Devlopments Icon and Images
 export const EXPERIENCED_APP_DEVELOPERS = require("../../../Assets/images/app-development.png");

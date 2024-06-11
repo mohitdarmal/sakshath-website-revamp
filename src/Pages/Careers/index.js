@@ -11,7 +11,8 @@ import BreadCumb from "../../Components/Breadcumb/index";
 import "./style.scss";
 //import BlueHeading from "../../Components/Utils/BlueHeading";
 import SubTitle from "../../Components/Utils/Title_head";
-import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES, bangalore_img1, bangalore_map, FULLFILLMENT_IMG, FULL_WELLNESS_IMG,mumbai_map,gurugram_map,FIND_YOUR_ROLE, EXCELLENCE_IMG,bangalore_img2,bangalore_img3,bangalore_img4,bangalore_img5,bangalore_img6,bangalore_img7,mumbai_img1,mumbai_img2,mumbai_img3,mumbai_img4, mumbai_img5,mumbai_img6,mumbai_img7} from "./Constant";
+import { CARRER_BENFIT_IMG, JOIN_OUR_TEAM_IMG,CAREERS_AT_SAKSHATH,EXPRESSIVE,MOTIVATED,ARTICULATE,NEW_CHALLENGES, bangalore_img1, bangalore_map, FULLFILLMENT_IMG, FULL_WELLNESS_IMG,mumbai_map,gurugram_map,FIND_YOUR_ROLE, EXCELLENCE_IMG,bangalore_img2,bangalore_img3,bangalore_img4,bangalore_img5,bangalore_img6,bangalore_img7,mumbai_img1,mumbai_img2,mumbai_img3,mumbai_img4, mumbai_img5,mumbai_img6,mumbai_img7,CARRIER_BREAD_CRUM,bangalore_img9}
+ from "./Constant";
 
 import { BsEnvelope } from "react-icons/bs";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
@@ -342,7 +343,9 @@ const Career = () => {
         <title>Career - Sakshath</title>
         <meta name="description" content="About SEO" />
       </Helmet>
-      <BreadCumb imgUrl={CARRER_IMG} title=" CAREERS" className="img-fluid" />
+      <BreadCumb imgUrl={CARRIER_BREAD_CRUM}
+      //  title=" CAREERS"
+       className="img-fluid" />
 
       <section className="join_our_team_section">
         <div className="container">
@@ -355,7 +358,7 @@ const Career = () => {
                 <Fade direction="up" triggerOnce>
                   <ul>
                     <li>
-                      We are a collaborative firm where everyone helps each
+                      We are a collaborative company where everyone helps each
                       other in mutual growth and find a way to flourish. We
                       don’t hire only smart people but also smart people who
                       effectively work as a team.
@@ -523,7 +526,7 @@ const Career = () => {
       <div className="container">
         <div className="text-center mb-4 pb-md-1">
         <Fade direction="up" triggerOnce>
-           <Heading heading= "Our Growing Global Footprint" uppercase="uppercase" />
+           <Heading heading= "Our Glowing Footprint" uppercase="uppercase" />
            </Fade>
            <Fade direction="up" triggerOnce>
            <p>We have a diverse team of professionals working across offices in Bengaluru, Mumbai and Gurugram</p>
@@ -645,7 +648,7 @@ const Career = () => {
                 clickable: true,
               }}
               navigation={true}
-              modules={[Pagination, Navigation]}
+              modules={[Pagination, Navigation,Autoplay]}
       >
       {/* <div className="container"></div> */}
       
@@ -669,6 +672,9 @@ const Career = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={bangalore_img7} alt=""  />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={bangalore_img9} alt=""  />
         </SwiperSlide>
         </Swiper>
 
@@ -1108,7 +1114,7 @@ const Career = () => {
         <section className="careers_testimonials">
         
         <div className="heading_testimonials text-center mb-4">
-        <Heading heading="What our Client says about us" uppercase="" />
+        <Heading heading="What our People says about us" uppercase="" />
         </div>
         <div className="container">
         <Swiper

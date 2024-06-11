@@ -2,7 +2,9 @@ export const SERVICE_HAPPY_CUSTOMER = require("../../Assets/images/service_happy
 export const IT_BENEFITS_LEFT_TOP_IMG = require("../../Assets/images/IT_benefits_img_left_top.jpg");
 export const IT_BENEFITS_LEFT_BOTTOM_IMG = require("../../Assets/images/IT_benefits_left_bottom_img.jpg");
 export const IT_BENEFITS_RIGHT_IMG = require("../../Assets/images/IT_benefits_right_img.jpg");
-
+export const SERVICE_BRAED_CRUM=require(
+    "../../Assets/images/breadcrum_service.png"
+    );
 
 export const TRAEGER = require("../../Assets/images/traeger.jpg");  
 export const GE_HEALTHCARE = require("../../Assets/images/GE_HealthCare.png"); 

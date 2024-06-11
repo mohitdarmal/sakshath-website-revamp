@@ -37,6 +37,7 @@ import {
   SOFTWARE_LOGO_10,
   SOFTWARE_LOGO_11,
   SECTION_VECTOR,
+  INTEGRATION_BREAD_CRUM
 } from "./Constant";
 import PdfViewer from "../../../Components/PdfViewer";
 import Heading from "../../../Components/Utils/Heading";
@@ -72,9 +73,9 @@ const menu = [{
   return (
     <>
       <BreadCumb
-        imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
+        imgUrl={INTEGRATION_BREAD_CRUM}
         className="img-fluid"
-        title="Integration"
+        // title="Integration"
       />
       {/* <!-- overview  start --> */}
       <section className="overview_sec">

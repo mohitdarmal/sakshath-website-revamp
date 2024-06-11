@@ -21,3 +21,7 @@ export const analytics_logo_03=require('../../../Assets/images/analytics_navyblu
 export const analytics_logo_04=require('../../../Assets/images/analytics_navyblue_logo_4.png');
 export const analytics_logo_05=require('../../../Assets/images/analytics_navyblue_logo_5.png');
 export const analytics_logo_05_skyBlue=require('../../../Assets/images/analytics_skyblue_logo_5.png');
+
+export const ANALYTICS_BREAD_CRUM=require("../../../Assets/images/breadcrum_analytics.png");
+
+

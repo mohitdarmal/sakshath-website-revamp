@@ -1280,6 +1280,10 @@
 .banner_tagline_sec{
   padding-top: 80px;
   padding-bottom: 30px;
+  background-image: url("../../Assets/images/tech_bg.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
   .swiper-button-next:after{
     border-radius: 0% !important;
     width: 50px !important;
@@ -1437,7 +1441,9 @@ transition: 1s;
 .partners_section{
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #f5fcff;
+  background-image: url("../../Assets/images/partners-sec-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
 
   .partners_box {

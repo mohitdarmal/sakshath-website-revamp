@@ -26,6 +26,9 @@ import {
   RPA_GRAPH,
   RPA_PILOT,
   UI_PATH_RP,
+ AUTOMATION_BREADCRUM
+       
+
 } from "./Constant";
 import Heading from "../../../Components/Utils/Heading";
 import { HiMiniArrowRightCircle } from "react-icons/hi2";
@@ -211,8 +214,8 @@ const Automation = () => {
         <meta name="description" content="About SEO" />
       </Helmet>
       <BreadCumb
-        imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
-        title="Automation"
+        imgUrl={AUTOMATION_BREADCRUM}
+        // title="Automation"
       />
 
       {/* <!-- section one start --> */}

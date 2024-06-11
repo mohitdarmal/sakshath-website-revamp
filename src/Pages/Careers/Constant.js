@@ -7,6 +7,7 @@ export const EXPRESSIVE = require("../../Assets/images/expressive.png");
 export const MOTIVATED = require("../../Assets/images/motivated.png");
 export const ARTICULATE = require("../../Assets/images/articulate.png");
 export const NEW_CHALLENGES = require("../../Assets/images/new_challenges.png");
+export const CARRIER_BREAD_CRUM=require("../../Assets/images/breadcrum_career.png");
 
 
 //@@@@ careers at sakshath @@@@@@@
@@ -23,6 +24,7 @@ export const bangalore_img4 = require("../../Assets/images/bang_img4.jpeg");
 export const bangalore_img5 = require("../../Assets/images/bang_img5.jpeg");
 export const bangalore_img6 = require("../../Assets/images/bang_img6.jpeg");
 export const bangalore_img7 = require("../../Assets/images/bang_img7.jpeg");
+export const bangalore_img9 = require("../../Assets/images/bang_img9.png");
 
 export const mumbai_img1 = require("../../Assets/images/mum_img1.jpeg");
 
@@ -40,7 +42,7 @@ export const mumbai_img6 = require("../../Assets/images/mum_img8.jpeg");
 
 
 
-export const bangalore_map = require("../../Assets/images/career_footprint_map.webp")
+export const bangalore_map = require("../../Assets/images/career_footprint_map.png")
 export const mumbai_map = require("../../Assets/images/footprint_map_mumbai.png")
 export const gurugram_map = require("../../Assets/images/footprint_map_gurugram.png")
 

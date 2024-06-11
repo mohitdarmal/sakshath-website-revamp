@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import TrustedBy from "../../../Components/TrustedBy";
 import {
-  APPLICATION_DEVLOPMENT_BREADCUMB_IMG,
+  APPLICATION_DEVELOPMENT_BREADCRUM,
   APP_DEV_IMG,
   CONTACT_US,
   COST_EFFECTIVE_SERVICES,
@@ -70,7 +70,7 @@ const ApplicationDevelopment = () => {
         <meta name="description" content="About SEO" />
       </Helmet>
       <BreadCumb
-        imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
+        imgUrl={APPLICATION_DEVELOPMENT_BREADCRUM}
         // title="Application Development"
       />
       {/* 
