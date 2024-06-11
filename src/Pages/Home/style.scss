@@ -135,7 +135,7 @@
   }
 }
 .certification_sec{margin-top: -100px;}
-.banner_tagline_sec{padding-top: 80px; }
+ 
 .banner_text_slider {
   .slick-prev {
     top: 100%;
@@ -1277,21 +1277,72 @@
   margin-top: -100px;
 }
 
+.banner_tagline_sec{
+  padding-top: 80px;
+  padding-bottom: 30px;
+  .swiper-button-next:after{
+    border-radius: 0% !important;
+    width: 50px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+  }
+  .swiper-button-prev:after{
+    border-radius: 0% !important;
+    width: 30px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+  }
+}
+
 .service_home_box1{
   position: relative;
-  box-shadow: 0 2px 20px #00000021;
+  // box-shadow: 0 2px 20px #00000021;
+  border: 1px solid #dbdbdb;
   padding: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 6px;
   transition: 1s;
+
 
   h4{font-size: 24px;
     line-height: 32px;
     font-family: $rajdhani_font;
     font-weight: 700;
     margin-bottom: 5px;
-    text-transform: uppercase;;}
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+  }
+  div{position: relative;}
+  div::after{
+    background: url(../../Assets/images/icon_shadow_img.png) no-repeat 50% / cover;
+    height: 7px;
+    width: 75px;
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: -17px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+
+  a{
+    display: block;
+    font-family: 'Rajdhani';
+    padding-top: 40px;
+    text-decoration: none;
+    color: #24688F;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  img{width: 60px;}
+
+    p{
+      color: #616161;
+      min-height: 96px;
+    }
 }
 
 .service_home_box1:hover::after{
@@ -1322,6 +1373,7 @@ transition: 1s;
 
 
   .c_img{
+    background-color: #fff;
     text-align: center;
       border: 1px solid #ddd;
       padding: 15px;
@@ -1351,11 +1403,20 @@ transition: 1s;
   justify-content: center;
   margin-top: 10px;
   button{
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
     background: #32a4d5;
-    color: white;
+    border: 1px solid #32a4d5;
+    padding: 13px 23px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    margin-top: 15px;
+   
+  }
+  button:hover{
+    background-color: #25678F ;
   }
 }
 

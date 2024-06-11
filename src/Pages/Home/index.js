@@ -42,6 +42,12 @@ import {
   Microsoft,
   DB,
   SIMPLIFYQA,
+  ERP_ICON,
+  AUTOMATION_ICON,
+  ANALYTICS_ICON,
+  APPLICATION_DEVELOPMENT_ICON,
+  APPLICATION_READINESS_ICON,
+  ENTERPRISES_MOBILITY_ICON,
 } from "./Constant";
 
 import { SlCalender } from "react-icons/sl";
@@ -620,7 +626,7 @@ export const Home = () => {
                       setShowModal(true);
                     }}
                   >
-                    <Fade direction="up" delay={400} triggerOnce>
+                    <Fade direction="up"   triggerOnce>
                       <div className="d-flex horizontal-shake">
                         <div className="icon">
                           <img src={ISO_27001} alt="" />
@@ -644,7 +650,7 @@ export const Home = () => {
                       setShowModal(true);
                     }}
                   >
-                    <Fade direction="up" delay={400} triggerOnce>
+                    <Fade direction="up"  triggerOnce>
                       <div className="d-flex horizontal-shake">
                         <div className="icon">
                           <img src={ISO_9001} alt="" />
@@ -678,7 +684,7 @@ export const Home = () => {
                       setShowModal(true);
                     }}
                   >
-                    <Fade direction="up" delay={10} triggerOnce>
+                    <Fade direction="up"  triggerOnce>
                       <div className="d-flex horizontal-shake">
                         <div className="icon">
                           <img src={GREAT_PLACE_WORK} alt="" />
@@ -703,7 +709,7 @@ export const Home = () => {
                       setShowModal(true);
                     }}
                   >
-                    <Fade direction="up" delay={10} triggerOnce>
+                    <Fade direction="up"   triggerOnce>
                       <div className="d-flex horizontal-shake">
                         <div className="icon">
                           <img src={SOTI} alt="" />
@@ -738,6 +744,7 @@ export const Home = () => {
             </div>
           </div>
           <div className="row">
+          
             <Swiper
               spaceBetween={50}
               centeredSlides={true}
@@ -754,6 +761,7 @@ export const Home = () => {
               <SwiperSlide>
                 <div className="swipper_service d-flex">
                   <div className="col-md-4 text-center">
+                  <Fade direction="up" delay={20} triggerOnce>
                     <div className="service_home_box1 ">
                       <h4>ERP</h4>
                       <p>
@@ -761,11 +769,16 @@ export const Home = () => {
                         built to meet your unique needs and scale with your
                         success.
                       </p>
-
-                      <img src={P_IMG} alt="" />
+                    <div>
+                      <img src={ERP_ICON} alt="" />
                     </div>
+                    <Link to="/erp">Discover More</Link>
+                   
+                    </div>
+                    </Fade>
                   </div>
                   <div className="col-md-4 text-center">
+                  <Fade direction="up" delay={150} triggerOnce>
                     <div className="service_home_box1 ">
                       <h4>Application development</h4>
                       <p>
@@ -773,12 +786,16 @@ export const Home = () => {
                         your business with our cutting-edge application
                         services.
                       </p>
-
-                      <img src={P_IMG} alt="" />
+                      <div>
+                      <img src={APPLICATION_DEVELOPMENT_ICON} alt="" />
                     </div>
+                    <Link to="/application-development">Discover More</Link>
+                    </div>
+                    </Fade>
                   </div>
 
                   <div className="col-md-4 text-center">
+                  <Fade direction="up" delay={300} triggerOnce>
                     <div className="service_home_box1 ">
                       <h4>Automation</h4>
                       <p>
@@ -786,36 +803,48 @@ export const Home = () => {
                         achieve greater accuracy with our cutting-edge
                         automation services.{" "}
                       </p>
-
-                      <img src={P_IMG} alt="" />
+                      <div>
+                      <img src={AUTOMATION_ICON} alt="" />
                     </div>
+                    <Link to="/automation">Discover More</Link>
+                    </div>
+                    </Fade>
                   </div>
                   
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="swipper_service d-flex">
+                <div className="swipper_service d-flex">          
                   <div className="col-md-4 text-center">
+                  
                     <div className="service_home_box1 ">
                       <h4>Application Readiness</h4>
                       <p>
                       Prime your applications for success with our Application Readiness Solutions! Let's ensure flawless launches together!
                       </p>
-
-                      <img src={P_IMG} alt="" />
+                      <div>
+                      <img src={APPLICATION_READINESS_ICON} alt="" />
                     </div>
+                    <Link to="/application-readiness">Discover More</Link>
+                    </div>
+                    
                   </div>
                   <div className="col-md-4 text-center">
+                 
                     <div className="service_home_box1 ">
                       <h4>Analytics</h4>
                       <p>
                       Unlock the power of advanced analytics and predictive modeling to drive strategic decisions and business growth.
                       </p>
-
-                      <img src={P_IMG} alt="" />
+                      <div>
+                      <img src={ANALYTICS_ICON} alt="" />
                     </div>
+                    <Link to="/analytics">Discover More</Link>
+                    </div>
+                  
                   </div>
                   <div className="col-md-4 text-center">
+                
                     <div className="service_home_box1 ">
                       <h4>Enterprise Mobility</h4>
                       <p>
@@ -823,13 +852,17 @@ export const Home = () => {
                         boosting productivity and collaboration across your
                         organization.
                       </p>
-
-                      <img src={P_IMG} alt="" />
+                      <div>
+                      <img src={ENTERPRISES_MOBILITY_ICON} alt="" />
+                      </div>
+                      <Link to="/mobility">Discover More</Link>
                     </div>
+                  
                   </div>
                 </div>
               </SwiperSlide>
             </Swiper>
+         
           </div>
         </div>
       </section>
