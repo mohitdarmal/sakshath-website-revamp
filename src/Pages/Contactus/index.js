@@ -79,13 +79,13 @@ const Contactus = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // setFormData({
-    //   fullName: "",
-    //   emailId: "",
-    //   contactNumber: "",
-    //   description: "",
-    //   comments: "",
-    // });
+     setFormData({
+       fullName: "",
+       emailId: "",
+       contactNumber: "",
+       description: "",
+       comments: "",
+     });
     setFalingLineVisible(true);
 
     try {

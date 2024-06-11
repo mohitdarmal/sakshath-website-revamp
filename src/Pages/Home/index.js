@@ -1226,15 +1226,12 @@ export const Home = () => {
                     <SubTitle SubTitle="Who we are" />
                   </Fade>
                   <Heading heading="Our Story" uppercase="text-uppercase" />
-                  {/* <label for="audio-message">Audio Message:</label> */}
-                  {/* <i class="fas fa-volume-up"></i> */}
-                  {/* <input type="speaker" id="audio-message" name="audio-message" placeholder="Enter audio message description"></input> */}
+                  {/* <audio controls>
+  <source src={{}} type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio> */}
 
-                  {/* <div>
-      <button onClick={startListening}>Start Listening</button>
-      <button onClick={stopListening}>Stop Listening</button>
-      <span>{transcript}</span>
-    </div> */}
+                
                 </div>
                 <p>
                   Our story begins in 2012 with a small partnership firm called{" "}
