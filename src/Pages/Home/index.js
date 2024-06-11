@@ -963,7 +963,7 @@ export const Home = () => {
                       <h3>Talend</h3>
                       <p>
                     
-                      Leverage our expertise and resources to drive success, enhance capabilities, and achieve your strategic objectives in a competitive market.
+                       We excels in implementing Talend's data solutions for optimal client outcomes.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>

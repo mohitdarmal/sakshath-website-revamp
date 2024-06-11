@@ -7,26 +7,67 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaRegUser, FaPhone } from "react-icons/fa";
 
 import "./style.scss";
+import axios from "axios";
 
 const PopUp = (props) => {
   const [showModal, setShowModal] = useState(true);
   const [formData, setFormData] = useState({
-    email: "",
-    fName: "",
-    lName: "",
-    phoneNo: "",
+    emailId: "",
+    fullName: "",
+    comments: " ",
+    contactNumber: "",
   });
-  //   const [fName, setFname] = useState("");
-  //   const [lName, setLname] = useState("");
-  //   const [phoneNo, setPhoneNo] = useState("");
-  //   const [companyName,companyName]=useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = axios
+        .post("http://172.20.12.189:8086/confApp/api/v1/popupcontacts", {
+          fullName: formData.fullName,
+          emailId: formData.emailId,
+          contactNumber: formData.contactNumber,
+          comments: formData.comments,
+        })
+        .then((data) => {
+          // setShow(true);
+          console.log(data, "show data");
+        });
+    } catch (err) {
+      if (err.response == undefined) {
+        // toast.error("Connection Timeout");
+        console.log("connection timeout");
+      } else if (err.response.data.status == 404) {
+        // toast.error("Url Not found");
+      } else {
+        // toast.error("Error Found");
+        console.log("err");
+      }
+      console.log(err.response);
+    } finally {
+      setFormData({
+        fullName: "",
+        emailId: "",
+        contactNumber: "",
+        comments: "",
+      });
+    }
+  };
 
   const handleClose = () => setShowModal(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // console.log("Email submitted:", email);
-  };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+
+  // };
 
   useEffect(() => {
     // Open the modal after 20 seconds
@@ -34,9 +75,8 @@ const PopUp = (props) => {
       setShowModal(true);
     }, 20); // 20 seconds in milliseconds
 
-    // Clear the timeout if the component unmounts
     return () => clearTimeout(timeoutId);
-  }, []); // The empty dependency array ensures that this effect runs only once on mount
+  }, []);
 
   return (
     <Modal show={showModal} onHide={handleClose} centered size="lg">
@@ -83,7 +123,9 @@ const PopUp = (props) => {
                         placeholder=" Full Name"
                         //   value={fName}
                         required
-                        onChange={(e) => setFormData(e.target.value)}
+                        name="fullName"
+                        value={formData.fullName}
+                        onChange={handleChange}
                       />
                     </div>
                   </Form.Group>
@@ -98,10 +140,11 @@ const PopUp = (props) => {
 
                       <Form.Control
                         type="tel"
-                        
                         placeholder=" Mobile Number"
                         className="form-control-outline"
-                        onChange={(e) => setFormData(e.target.value)}
+                        name="contactNumber"
+                        value={formData.contactNumber}
+                        onChange={handleChange}
                       />
                     </div>
                   </Form.Group>
@@ -125,10 +168,12 @@ const PopUp = (props) => {
 
                       <Form.Control
                         type="email"
-                        placeholder=" Email Address"
-                        //   value={email}
-                        required
-                        onChange={(e) => setFormData(e.target.value)}
+                        placeholder="Email Address"
+                  
+                        // required
+                        name="   emailId"
+                        value={formData.emailId}
+                        onChange={handleChange}
                       />
                     </div>
                   </Form.Group>
@@ -142,10 +187,12 @@ const PopUp = (props) => {
 
                       <Form.Control
                         type="text"
-                        placeholder=" Comments"
+                        placeholder="Comments"
                         //   value={email}
 
-                        onChange={(e) => setFormData(e.target.value)}
+                        name="comments"
+                        value={formData.comments}
+                        onChange={handleChange}
                       />
                     </div>
                   </Form.Group>

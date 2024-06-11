@@ -95,7 +95,7 @@ popUpPara={"We don’t just build apps, we create brand.Choosing us will be your
           <div className="row">
             <div className="col-md-8 offset-md-2 text-center app_dev_heading">
               <Fade direction="up" triggerOnce>
-                <Heading heading="Why Sakshath Technologies?" uppercase="" />
+                <Heading heading="Empowering Businesses through Innovative Application Solutions" uppercase="" />
               </Fade>
             </div>
           </div>

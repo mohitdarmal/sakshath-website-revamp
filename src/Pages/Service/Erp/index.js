@@ -155,7 +155,7 @@ const Erp = () => {
  
 
                 <Fade direction="up" triggerOnce>
-                  <Heading heading="   Unlock Your Business Potential with SYSPRO ERP Solutions" uppercase="" />
+                  <Heading heading="  Efficiency Meets Precision With Our ERP Solutions" uppercase="" />
                 </Fade>
               </div>
 
@@ -247,7 +247,7 @@ const Erp = () => {
             <div className="col-md-6 align-items-center">
               <div className="epicor_overview_heading">
                 <Fade direction="up" triggerOnce>
-                  <Heading heading="Your Path to Enhanced Efficiency and Growth" uppercase="" />
+                  <Heading heading="Unlock Your Business Potential with SYSPRO ERP Solutions" uppercase="" />
                 </Fade>
               </div>
               <Fade direction="up" triggerOnce>
