@@ -38,7 +38,8 @@ import {
   SYSPRO_SCALE,
   SYSPRO_USER,
   Who_we_r,
-  ERP_BREAD_CRUM
+  ERP_BREAD_CRUM,
+  MSDYnamic
 } from "./Constant";
 import Heading from "../../../Components/Utils/Heading";
 import { ABOUT_BANNER } from "../../../Components/Breadcumb/Constant";
@@ -685,7 +686,7 @@ const Erp = () => {
             </div>
             <div className="col-md-6">
               <div className="dynamic_img">
-                <img src={Who_we_r} alt=""  className="img-fluid" />
+                <img src={MSDYnamic} alt=""  className="img-fluid" />
               </div>
             </div>
           </div>

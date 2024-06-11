@@ -3,7 +3,7 @@ import "./style.scss";
 import { Helmet } from "react-helmet";
 import BreadCumb from "../../../Components/Breadcumb";
 
-import { APPLICATION_READLINESS_BREADCRUM } from "../ApplicationReadiness/Constant";
+import { APPLICATION_READLINESS_BREADCRUM, APRIMG1, APRIMG2 } from "../ApplicationReadiness/Constant";
 import Heading from "../../../Components/Utils/Heading";
 import { Who_we_r } from "./Constant";
 import { Fade } from "react-awesome-reveal";
@@ -51,7 +51,7 @@ const ApplicationReadiness = () => {
               <div className="overview_application_readiness">
                 <Fade direction="up" triggerOnce>
                   <img
-                    src={Who_we_r}
+                    src={APRIMG1}
                     alt=""
                     className="img-fluid"
                     width="500px"
@@ -74,7 +74,7 @@ const ApplicationReadiness = () => {
               <div className="unlock_right_img">
                 <Fade direction="left" triggerOnce>
                   <img
-                    src={Who_we_r}
+                    src={APRIMG2}
                     alt=""
                     className="img-fluid"
                     width="450px"
