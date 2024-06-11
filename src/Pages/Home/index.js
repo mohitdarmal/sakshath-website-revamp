@@ -990,8 +990,8 @@ export const Home = () => {
                     <div className="content">
                       <h3>Talend</h3>
                       <p>
-                        Enhance security and streamline operations with
-                        Microsoft software.
+                    
+                      Leverage our expertise and resources to drive success, enhance capabilities, and achieve your strategic objectives in a competitive market.
                       </p>
                       <p className="learn_more">See Certificate</p>
                     </div>

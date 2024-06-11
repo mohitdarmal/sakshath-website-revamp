@@ -231,7 +231,7 @@ As our CEO says,  <strong>
                 <img src={ISO_9001} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={Microsoft} />{" "}
+                <img src={TALEND} />{" "}
               </SwiperSlide>
               
               
@@ -407,7 +407,7 @@ As our CEO says,  <strong>
                   customers by offering useful and effective products and
                   services contribute to their success. Additionally, we offer
                   Application Development, Analytics, Automation, Managed
-                  Services, Integration, AVP Mobility Enterprise, and
+                  Services, Integration, Mobility Enterprise, and
                   Application Readiness.
                 </Fade>
               </p>
