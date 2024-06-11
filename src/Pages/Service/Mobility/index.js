@@ -3,7 +3,7 @@ import { ABOUT_BANNER } from "../../../Components/Breadcumb/Constant";
 import BreadCumb from "../../../Components/Breadcumb";
 import Heading from "../../../Components/Utils/Heading";
 // import Heading from "../Utils/Heading";
-import { CONTACT_IMG_OVERVIEW, MOBILITY_SEC2 } from "./Constant";
+import { CONTACT_IMG_OVERVIEW, MOBILITY_SEC2,MOBILITY_BRAED_CRUM } from "./Constant";
 import "./Style.scss";
 // import Faq from "../../../Components/Faq";
 // import Heading from "../Utils/Heading";
@@ -49,7 +49,11 @@ const Mobility = () => {
 
   return (
     <>
-      <BreadCumb imgUrl={ABOUT_BANNER} title="Enterprise Mobility" />
+     
+ <BreadCumb imgUrl={MOBILITY_BRAED_CRUM}
+      // title="Enterprise Mobility"
+       />
+
 
       <section className="mobility_overview_section">
         <div className="container">

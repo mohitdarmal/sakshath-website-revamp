@@ -3,7 +3,7 @@ import React from "react";
 import "./style.scss";
 import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import BreadCumb from "../../Components/Breadcumb";
-import { BANKING_BG_IMG, Who_we_r } from "./Constant";
+import { BANKING_BG_IMG, Who_we_r,BANKING_BREAD_CRUM} from "./Constant";
 import Heading from "../../Components/Utils/Heading";
 import { Fade } from "react-awesome-reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -40,7 +40,9 @@ const BankingSolution = () => {
         <title>Sakshath- Banking Solution</title>
         <meta name="description" content="About SEO" />
       </Helmet>
-      <BreadCumb imgUrl={ABOUT_BANNER} title="Banking Solution" />
+      <BreadCumb imgUrl={BANKING_BREAD_CRUM}
+      // title="Banking Solution"
+      />
 
       <section className="banking_section">
         <div className="container">

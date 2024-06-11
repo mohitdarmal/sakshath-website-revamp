@@ -15,3 +15,4 @@ export const STAFFING_ASSESSMENT=require('../../Assets/images/Assessment_staffin
 export const STAFFING_AUTOMATIVE=require('../../Assets/images/Staffing_Automative.png');
 export const STAFFING_IT=require('../../Assets/images/Staffing_IT.png');
 export const STAFFING_TELECOM=require('../../Assets/images/Staffing_telecom.png');
+export const STAFFING_BREAD_CRUM=require('../../Assets/images/breadcum_staffing.png')

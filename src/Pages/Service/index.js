@@ -7,6 +7,7 @@ import {
   IT_BENEFITS_LEFT_TOP_IMG,
   IT_BENEFITS_LEFT_BOTTOM_IMG,
   IT_BENEFITS_RIGHT_IMG,
+  SERVICE_BRAED_CRUM
 } from "./Constant";
 import Heading from "../../Components/Utils/Heading";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
@@ -166,7 +167,7 @@ theme="light"
 
 
       <BreadCumb
-        imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
+        imgUrl={SERVICE_BRAED_CRUM}
        
       />
 

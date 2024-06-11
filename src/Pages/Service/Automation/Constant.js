@@ -1,4 +1,5 @@
 export const AUTOMATION_BG_IMG = require("../../../Assets/images/Automation_Native.svg").default;
+export const AUTOMATION_BREADCRUM=require("../../../Assets/images/breadcrum_automation.png");
 
 // Automation Section1 img right side
 

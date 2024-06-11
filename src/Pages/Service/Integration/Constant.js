@@ -15,5 +15,6 @@ export const SOFTWARE_LOGO_9=require('../../../Assets/images/software_logo_9.png
 export const SOFTWARE_LOGO_10=require('../../../Assets/images/software_logo_10.png');
 export const SOFTWARE_LOGO_11=require('../../../Assets/images/software_logo_11.png');
 export const SECTION_VECTOR=require('../../../Assets/images/check icon psd.png');
+export const INTEGRATION_BREAD_CRUM=require("../../../Assets/images/breadcrum_integration.png");
 
 

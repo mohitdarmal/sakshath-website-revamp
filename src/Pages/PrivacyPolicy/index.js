@@ -2,15 +2,15 @@ import React from "react";
 import BreadCumb from "../../Components/Breadcumb";
 import "./styles.scss";
 import "../../Components/Utils/Heading2";
-import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../Service/ApplicationDevelopment/Constant";
+//import { APPLICATION_DEVLOPMENT_BREADCUMB_IMG } from "../Service/ApplicationDevelopment/Constant";
 export const PrivacyPolicy=()=>
 {
     return(
         <>
-       <BreadCumb
+       {/* <BreadCumb
         imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
         title="Privacy Policy"
-      />
+      /> */}
 
       {/* intro information we collect start */}
       <section className="privacy_policy_intro_information_we_collect">

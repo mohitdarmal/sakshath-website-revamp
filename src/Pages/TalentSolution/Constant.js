@@ -14,3 +14,4 @@ export const PYTHON_LOGO = require("../../Assets/images/python_logo.png");
 export const DEVELOPMENT_TEAMS_LOGO = require("../../Assets/images/development_teams_logo.png");
 export const MOBILE_APP_LOGO = require("../../Assets/images/mobile_app_logo.png");
 export const REACT_NATIVE_LOGO = require("../../Assets/images/react_native_logo.png");
+export const TALENT_SOLUTION_BREAD_CRUM = require("../../Assets/images/breadcrum_talent-sol.png");

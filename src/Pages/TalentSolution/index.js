@@ -4,12 +4,13 @@ import { ABOUT_BANNER } from "../../Components/Breadcumb/Constant";
 import Heading from "../../Components/Utils/Heading";
 import { IoCheckmark } from "react-icons/io5";
 import "./styles.scss";
-import { ANGULAR_LOGO, ANNOUNCEMENT_ICON, DEDICATED_DEVELOPER_LOGO, DEVELOPMENT_TEAMS_LOGO, DOTNET_LOGO, NODEJS_LOGO, PYTHON_LOGO, REACT_LOGO, REACT_NATIVE_LOGO, RUBY_RAILS_LOGO, TALENT_SOLUTION } from "./Constant";
+import { ANGULAR_LOGO, ANNOUNCEMENT_ICON, DEDICATED_DEVELOPER_LOGO, DEVELOPMENT_TEAMS_LOGO, DOTNET_LOGO, NODEJS_LOGO, PYTHON_LOGO, REACT_LOGO, REACT_NATIVE_LOGO, RUBY_RAILS_LOGO, TALENT_SOLUTION,TALENT_SOLUTION_BREAD_CRUM } from "./Constant";
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
 import SlideAnimationButton from "../../Components/Utils/SlideAnimationButton";
 import { Col } from "react-bootstrap";
 import { MOBILE_APP_DEVELOPMENT } from "../Service/ApplicationDevelopment/Constant";
+
 import { Helmet } from "react-helmet";
 
 const TalentSolution = () => {
@@ -19,7 +20,9 @@ const TalentSolution = () => {
         <title>Talent Solution</title>
         <meta name="description" content="About SEO" />
       </Helmet>
-      <BreadCumb imgUrl={ABOUT_BANNER} title="Talent Solution" />
+      <BreadCumb imgUrl={TALENT_SOLUTION_BREAD_CRUM}
+      // title="Talent Solution"
+       />
 
       {/* Managed Team Section Start */}
       <section className="managed_team_sec">

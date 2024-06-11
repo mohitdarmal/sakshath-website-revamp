@@ -28,7 +28,8 @@ import {
   analytics_logo_03,
   analytics_logo_04,
   analytics_logo_05,
-  analytics_logo_05_skyBlue
+  analytics_logo_05_skyBlue,
+  ANALYTICS_BREAD_CRUM 
 } from "./Constant";
 import SubHeading from "../../../Components/Utils/SubHeading";
 import { RPA_DELIVERY } from "../Automation/Constant";
@@ -270,8 +271,8 @@ export const Analytics = () => {
         <meta name="description" content="About SEO" />
       </Helmet>
       <BreadCumb
-        imgUrl={APPLICATION_DEVLOPMENT_BREADCUMB_IMG}
-        title="Analytics"
+        imgUrl={ANALYTICS_BREAD_CRUM}
+        // title="Analytics"
       />
       {/* @@@@@@@@@@  overview for Analytics starts @@@@@@@@@@@@@@@@@ */}
       <section className="overview_analytics_section">

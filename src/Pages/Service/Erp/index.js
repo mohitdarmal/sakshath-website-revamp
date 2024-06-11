@@ -38,6 +38,7 @@ import {
   SYSPRO_SCALE,
   SYSPRO_USER,
   Who_we_r,
+  ERP_BREAD_CRUM
 } from "./Constant";
 import Heading from "../../../Components/Utils/Heading";
 import { ABOUT_BANNER } from "../../../Components/Breadcumb/Constant";
@@ -137,8 +138,10 @@ const Erp = () => {
     <>
       {/* <ServicePopup popUpHeading={"ERP Popup"} /> */}
       <IndustriesPopup show={modalShow} onHide={() => setModalShow(false)} />
-
-      <BreadCumb imgUrl={ABOUT_BANNER} title="ENTERPRISE RESOURCE PLANNING " />
+      <BreadCumb imgUrl={ERP_BREAD_CRUM}
+      // title="ENTERPRISE RESOURCE PLANNING "
+       />
+      
       {/* Syspro  overview Starts*/}
       {/* EPICOR  overview  starts*/}
 
