@@ -714,18 +714,20 @@ Gurugram, Haryana 122016
                 />
               </div>
 
-              <h3>Thank You for contact us</h3>
+              <h3>Thank You for contacting us</h3>
               <p>
                 Your details as been recived. <br /> Our team will you contact
                 soon.
               </p>
             </div>
             <div className="button_popup">
-            <a href="/">
+          <Link to='/'>
+          <button>Back</button>
+          </Link>
 
          
-              <button>Back</button>
-              </a>
+
+             
             </div>
           </Modal.Body>
           <Modal.Footer>
