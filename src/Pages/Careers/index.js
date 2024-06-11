@@ -144,7 +144,7 @@ const Career = () => {
            
         },
         {
-          id: 9,
+          id: 10,
           content:
           `Minimum 4+ years of work experience
           Pride in readable, well-designed, well-tested software
@@ -153,7 +153,7 @@ const Career = () => {
            
         },
         {
-          id: 9,
+          id: 11,
           content:
           `Experience writing web-based applications in any language, and an interest in learning (Golang, Mysql)
           `
@@ -161,7 +161,7 @@ const Career = () => {
            
         },
         {
-          id: 10,
+          id: 12,
           content:
           `Experience with relational databases (PostgreSQL, MySQL)
           `
@@ -169,7 +169,7 @@ const Career = () => {
            
         },
         {
-          id: 10,
+          id: 13,
           content:
           `Experience with "NoSQL" data backends and other (Redis, DynamoDB, ElasticSearch, Memcache)
           `
@@ -177,7 +177,7 @@ const Career = () => {
            
         },
         {
-          id: 10,
+          id: 13,
           content:
           `
           
@@ -188,7 +188,7 @@ const Career = () => {
            
         },
         {
-          id: 10,
+          id: 14,
           content:
           
           
@@ -219,13 +219,65 @@ const Career = () => {
         {
           id: 1,
           content:
-            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+            "Budget: 1,60,000 per month",
         },
         {
           id: 2,
           content:
-            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+            "As a Salesforce Lightning Web Components Application Developer, you will be responsible for designing, building, and configuring applications to meet business process and application requirements. Your typical day will involve working with Salesforce Lightning Web Components, collaborating with cross-functional teams, and delivering impactful data-driven solutions.",
         },
+        {
+          id: 3,
+          content:
+            "As a Salesforce Lightning Web Components Application Developer, you will be responsible for designing, building, and configuring applications to meet business process and application requirements. Your typical day will involve working with Salesforce Lightning Web Components, collaborating with cross-functional teams, and delivering impactful data-driven solutions.",
+        },
+        {
+          id: 4,
+          content:
+            `Roles & Responsibilities:- Design, develop, and maintain Salesforce Lightning Web Components applications.
+            - Collaborate with cross-functional teams to identify business requirements and translate them into technical solutions.
+            - Develop and maintain integrations between Salesforce and other systems.
+            - Ensure the quality of code by writing unit tests and performing code reviews.
+            - Stay updated with the latest advancements in Salesforce Lightning Web Components and integrate innovative approaches for sustained competitive advantage.
+            `
+        },
+        {
+          id: 5,
+          content:
+            `Roles & Responsibilities:- Design, develop, and maintain Salesforce Lightning Web Components applications.
+            - Collaborate with cross-functional teams to identify business requirements and translate them into technical solutions.
+            - Develop and maintain integrations between Salesforce and other systems.
+            - Ensure the quality of code by writing unit tests and performing code reviews.
+            - Stay updated with the latest advancements in Salesforce Lightning Web Components and integrate innovative approaches for sustained competitive advantage.
+            `
+        },
+
+        {
+          id: 6,
+          content:
+            `Professional & Technical Skills:
+            - Must To Have Skills: Proficiency in Salesforce Lightning Web Components.
+            - Good To Have Skills: Experience with Salesforce Apex, Salesforce Visualforce, and Salesforce Aura    Components.
+            - Strong understanding of Salesforce platform and its capabilities.
+            - Experience with Salesforce integration using REST and SOAP APIs.
+            - Experience with Agile development methodologies.
+            - Solid grasp of web development technologies such as HTML, CSS, and JavaScript.
+            `
+        },
+        {
+          id: 6,
+          content:
+            ` Additional Information:- The candidate should have a minimum of 5 years of experience in Salesforce Lightning Web Components.
+            - The ideal candidate will possess a strong educational background in computer science or a related field, along with a proven track record of delivering impactful data-driven solutions.
+            - This position is based at our Pune office.
+            `
+        },
+
+       
+
+        
+
+
       ],
       experince: "5+ years",
       location:'Pune',
@@ -259,13 +311,67 @@ const Career = () => {
         {
           id: 1,
           content:
-            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+            "Work with both technical and business stakeholders to understand current state, future needs and develop solution alternatives."
+            
+            
+            ,
         },
         {
           id: 2,
           content:
-            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+            "Conduct discovery sessions with internal and external stakeholders.",
         },
+        {
+          id: 3,
+          content:
+            " Perform requirement analysis, create architectural models, high level effort estimation.",
+        },
+        {
+          id: 4,
+          content:
+            "	Make recommendations and assesses solution proposals.",
+        },
+        {
+          id: 5,
+          content:
+            "Identify operational issues, recommend and implement strategies to resolve problems",
+        },
+        {
+          id: 6,
+          content:
+            "Clearly communicate (verbally and in written form) with business users to describe the technical solution, and address questions from the business regarding the technical solution.",
+        },
+        {
+          id: 7,
+          content:
+            "Drive end-to-end solution architecture integrity and the functional relationship with other projects and applications, consistent with long term architectural roadmap.",
+        },
+        {
+          id: 8,
+          content:
+            "Validate the alignment of solutions with corporate standards and compliance requirements.",
+        },
+        {
+          id: 9,
+          content:
+            "Develop technical design specifications that can be used by solutions/systems engineers to produce detailed technical design documentation.",
+        },
+        {
+          id: 10,
+          content:
+            "Have knowledge and ability to assess impacts of proposed solution and the need to engage build resources that may be required to modify configuration or code to support implementation of the solution.",
+        },
+        {
+          id: 11,
+          content:
+            "	Follow established architectural standards, frameworks, and policies to ensure conformity and impacts to architecture standards for design under review.",
+        },
+        {
+          id: 12,
+          content:
+            "Talend ETL Development, maintain and support sustainable data movement and transformation for the enterprise-data warehouse and database technologies.",
+        },
+        
       ],
       experince: "7-9 years",
       location:'Mumbai',
@@ -279,12 +385,66 @@ const Career = () => {
         {
           id: 1,
           content:
-            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+            " Engage in prototyping, designing, developing, publishing Power BI Reports",
         },
         {
           id: 2,
           content:
-            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+            "Develop Power BI Data models and recommend best practices for report creation and visualizations",
+        },
+        {
+          id: 3,
+          content:
+            " Integrate Dashboards into applications using Embedded Analytics",
+ 
+        },
+        {
+          id: 4,
+          content:
+            " Gather business requirements for Analytics and Reporting by interacting with business users/ respective stake holders. ",
+ 
+        },
+        {
+          id: 5,
+          content:
+            " Responsible for managing and grooming Jr. BI Developers in the team. ",
+ 
+        },
+        {
+          id: 6,
+          content:
+            " Troubleshoot reporting issues and tune report performance. ",
+ 
+        },
+        {
+          id: 7,
+          content:
+            " Build and modify tables, views and optimize SQL queries, indexes as needed.",
+ 
+        },
+        {
+          id: 7,
+          content:
+            " Implement RLS on developed Dashboards in accordance with security and access requirements",
+ 
+        },
+        {
+          id: 8,
+          content:
+            " Manage Power BI deployment by performance administrative roles and responsibilities. ",
+ 
+        },
+        {
+          id: 9,
+          content:
+            " Ensure agile/scrum practices are followed during the development process.",
+ 
+        },
+        {
+          id: 10,
+          content:
+            " Ensure agile/scrum practices are followed during the development process.",
+ 
         },
       ],
       experince: "8-10years",
@@ -299,13 +459,46 @@ const Career = () => {
         {
           id: 1,
           content:
-            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+            "Senior Software Development Engineer works independently on optmization and migration of monolithic architecture, having a passion for innovative technologies and new challenge and exhibit posstive skils and postive impact in work place.",
         },
         {
           id: 2,
           content:
-            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+            "We are currently seeking a Senior Software Development Engineer will play a key role in the design, development, and implementation of cutting-edge software solutions that will drive our company forward and help us achieve our long-term goals.",
         },
+        {
+          id: 2,
+          content:
+            `Responsibilities:
+            1. Collaborate with cross-functional teams to develop and implement software solutions that meet the needs of the business and our clients.
+            2. Lead the design and architecture of software systems, ensuring scalability, reliability, and performance.
+            3. Write clean, efficient, and maintainable code in a variety of programming languages, with a focus on C#, Asynchronouse architectures, Parallism, LINQ and SQL.
+            `,
+        },
+        {
+          id: 2,
+          content:
+            `Qualifications:
+            1. Bachelor's degree in Computer Science, Engineering, or related field.
+            2. 7+ years of professional software development experience, with a strong understanding of object-oriented design and development principles.
+            
+            `,
+        },
+        {
+          id: 2,
+          content:
+            `Education Qualificaiton:
+            Bachelor's degree in Computer Science, Engineering
+            
+            
+            `,
+        },
+
+        
+
+
+        
+
       ],
       experince: "4-6 years",
       location:'Bengaluru',
@@ -335,42 +528,106 @@ const Career = () => {
     {
       id: 8,
       title: "Sr. Java Developer",
-      
+     
       job_img:require("../../Assets/images/javalogo.png"),
       description: [
         {
           id: 1,
           content:
-            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+            "Work with development teams and product managers to ideate software solutions",
         },
         {
           id: 2,
           content:
-            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+            "Design client-side and server-side architecture.",
+        },
+        {
+          id: 3,
+          content:
+            "Advanced Java development skills",
+        },
+        {
+          id: 4,
+          content:
+            "Exposure to Platform as a Service (Cloud based technologies) such as OpenShift, Dockers, Kubernetes",
+        },
+        {
+          id: 5,
+          content:
+            "Hands-on Java / J2EE project development experience; Sprint MVC; Groovy",
+        },
+        {
+          id: 6,
+          content:
+            "Experience in CI/CD",
+        },
+        {
+          id: 7,
+          content:
+            "Experience in Automation Testing Tools like Cucumber, Junit, Mockito",
+        },
+        {
+          id: 8,
+          content:
+            "Should have worked with at least one NOSQL database.",
+        },
+        {
+          id: 9,
+          content:
+            "Expertise in other backend languages will be an added advantage.",
+        },
+        {
+          id: 10,
+          content:
+            "Build the front-end of applications through appealing visual design.",
+        },
+        {
+          id: 11,
+          content:
+            "Develop and manage well-functioning databases and applications.",
+        },
+        {
+          id: 12,
+          content:
+            "Write effective APIs",
+        },
+        {
+          id: 13,
+          content:
+            "Test software to ensure responsiveness and efficiency.",
+        },
+        {
+          id: 14,
+          content:
+            "Troubleshoot, debug and upgrade software.",
+        },
+        {
+          id: 15,
+          content:
+            "Create security and data protection settings.",
+        },
+        {
+          id: 16,
+          content:
+            "Build features and applications with a mobile responsive design.",
+        },
+        {
+          id: 17,
+          content:
+            "Write technical documentation.",
+        },
+        {
+          id: 18,
+          content:
+            "Write technical documentation.",
+        },
+        {
+          id: 19,
+          content:
+            "· Work with data scientists and analysts to improve software.",
         },
       ],
       experince: "3-5 Years",
-      location:'Bengaluru',
-      position:'4'
-    },
-    {
-      id: 9,
-      title: "Bigdata Solutions Engineer",
-      
-      job_img:require("../../Assets/images/big_data.png"),
-      description: [
-        {
-          id: 1,
-          content:
-            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
-        },
-        {
-          id: 2,
-          content:
-            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
-        },
-      ],
-      experince: "5+ Years",
       location:'Bengaluru',
       position:'4'
     },
@@ -404,12 +661,22 @@ const Career = () => {
         {
           id: 1,
           content:
-            "Strong Communication skills to interact with customers/ Users and team members for effective communication",
+            "Budget: 30Lakhs ",
         },
         {
           id: 2,
           content:
-            "5+ years of experience in Business Analytics tools developing Reporting and Dashboards",
+            `Responsibilities:
+            Mandatory skills – OLTP, OLAP, Catlog Design Model.
+            
+            •	Hands-on relational, dimensional, and/or analytic experience (using RDBMS, dimensional, and ETL and data ingestion protocols)
+            •	Experience with data warehouse, data lake, and enterprise big data (Hadoop, Spark, Hive), BI platforms.
+            •	Good knowledge of Data warehousing concepts, metadata management, data modeling, and related tools like Magic Draw, Erwin or ER Studio.
+            •	Experience in Python, SQL, Oracle, Postgres, Teradata, Mongo DB. 
+            •	Experience in QA testing, Diagraming, Design & Build.
+            •	Experience with Snowflake, AWS Cloud. 
+            •	Good to have banking domain experience with consumer banking, wealth
+            `
         },
       ],
       experince: "4-6 Years",
@@ -899,7 +1166,7 @@ const Career = () => {
                 clickable: true,
               }}
               navigation={true}
-              modules={[Pagination, Navigation]}
+              modules={[Pagination, Navigation,Autoplay]}
               // className="mySwiper"
       >
       {/* <div className="container"></div> */}
