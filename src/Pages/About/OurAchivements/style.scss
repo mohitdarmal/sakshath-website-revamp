@@ -110,6 +110,7 @@
 	z-index: 100;
 }
 
+
 .hardcover_back {
 	-webkit-transform: rotateY(-15deg) translateZ(-8px);
 	-moz-transform: rotateY(-15deg) translateZ(-8px);
@@ -646,3 +647,8 @@ figcaption p {
 		font-size: 90%;
 	}
 }
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	.achievemnt_section{
+		padding-left: 125px;
+	}
+	}
